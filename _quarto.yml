@@ -6,9 +6,8 @@ book:
   title: "Manual del Curso Legal Tech"
   author: "Dante Guerrero y Manuel Santa Cruz"
   chapters:
-    - parte-0/portada.qmd
+    - index.qmd
     - parte-0/profesores.qmd
-    - parte-0/index.qmd
     - parte-0/intro.qmd
 
     - part: "Módulo de aprendizaje 1: Pensamiento Computacional para juristas"
@@ -19,44 +18,34 @@ book:
         - parte-1-modulo-1/03-capitulo.qmd
         - parte-1-modulo-1/04-capitulo.qmd
 
-    - part: "Evaluación Continua 1"
-      chapters:
-        - parte-2-evaluacion-1/00-presentacion.qmd
+    - evaluaciones/evaluacion-1.qmd
 
     - part: "Módulo de aprendizaje 2: Automatización y datos jurídicos"
       chapters:
-        - parte-3-modulo-2/00-presentacion.qmd
-        - parte-3-modulo-2/05-capitulo.qmd
-        - parte-3-modulo-2/06-capitulo.qmd
+        - parte-2-modulo-2/00-presentacion.qmd
+        - parte-2-modulo-2/05-capitulo.qmd
+        - parte-2-modulo-2/06-capitulo.qmd
 
-    - part: "Éxamen Parcial"
-      chapters:
-        - parte-4-examen-parcial/00-presentacion.qmd
+    - evaluaciones/examen-parcial.qmd
 
     - part: "Módulo de aprendizaje 3: Web, nube y seguridad para el sector legal"
       chapters:
-        - parte-5-modulo-3/00-presentacion.qmd
-        - parte-5-modulo-3/07-capitulo.qmd
-        - parte-5-modulo-3/08-capitulo.qmd
+        - parte-3-modulo-3/00-presentacion.qmd
+        - parte-3-modulo-3/07-capitulo.qmd
+        - parte-3-modulo-3/08-capitulo.qmd
 
-    - part: "Evaluación Continua 2"
-      chapters:
-        - parte-6-evaluacion-2/00-presentacion.qmd
+    - evaluaciones/evaluacion-2.qmd
 
     - part: "Módulo de aprendizaje 4: Inteligencia Artificial aplicada al Derecho"
       chapters:
-        - parte-7-modulo-3/00-presentacion.qmd
-        - parte-7-modulo-3/09-capitulo.qmd
-        - parte-7-modulo-3/10-capitulo.qmd
-        - parte-7-modulo-3/11-capitulo.qmd
+        - parte-4-modulo-4/00-presentacion.qmd
+        - parte-4-modulo-4/09-capitulo.qmd
+        - parte-4-modulo-4/10-capitulo.qmd
+        - parte-4-modulo-4/11-capitulo.qmd
 
-    - part: "Evaluación Continua 3"
-      chapters:
-        - parte-8-evaluacion-3/00-presentacion.qmd
+    - evaluaciones/evaluacion-3.qmd
 
-    - part: "Éxamen Final"
-      chapters:
-        - parte-9-examen-final/00-presentacion.qmd
+    - evaluaciones/examen-final.qmd
 
     - referencias.qmd
 
@@ -66,4 +55,4 @@ format:
   html:
     theme: cosmo
     toc: true
-    number-sections: true
+    number-sections: false
