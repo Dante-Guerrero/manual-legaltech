@@ -3,14 +3,16 @@ project:
   output-dir: _book
 
 book:
-  title: "Manual del Curso Legal Tech"
-  author: "Dante Guerrero y Manuel Santa Cruz"
+  title: "Curso Legal Tech"
+  author: 
+    - Dante Guerrero
+    - Manuel Santa Cruz
   chapters:
     - index.qmd
     - parte-0/profesores.qmd
     - parte-0/intro.qmd
 
-    - part: "Módulo de aprendizaje 1: Pensamiento Computacional para juristas"
+    - part: "Módulo de aprendizaje 1"
       chapters:
         - parte-1-modulo-1/00-presentacion.qmd
         - parte-1-modulo-1/01-capitulo.qmd
@@ -20,7 +22,7 @@ book:
 
     - evaluaciones/evaluacion-1.qmd
 
-    - part: "Módulo de aprendizaje 2: Automatización y datos jurídicos"
+    - part: "Módulo de aprendizaje 2"
       chapters:
         - parte-2-modulo-2/00-presentacion.qmd
         - parte-2-modulo-2/05-capitulo.qmd
@@ -28,7 +30,7 @@ book:
 
     - evaluaciones/examen-parcial.qmd
 
-    - part: "Módulo de aprendizaje 3: Web, nube y seguridad para el sector legal"
+    - part: "Módulo de aprendizaje 3"
       chapters:
         - parte-3-modulo-3/00-presentacion.qmd
         - parte-3-modulo-3/07-capitulo.qmd
@@ -36,7 +38,7 @@ book:
 
     - evaluaciones/evaluacion-2.qmd
 
-    - part: "Módulo de aprendizaje 4: Inteligencia Artificial aplicada al Derecho"
+    - part: "Módulo de aprendizaje 4"
       chapters:
         - parte-4-modulo-4/00-presentacion.qmd
         - parte-4-modulo-4/09-capitulo.qmd

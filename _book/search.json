@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Manual del Curso Legal Tech",
+    "title": "Curso Legal Tech",
     "section": "",
     "text": "Bienvenida",
     "crumbs": [
@@ -42,12 +42,12 @@
   {
     "objectID": "parte-1-modulo-1/00-presentacion.html",
     "href": "parte-1-modulo-1/00-presentacion.html",
-    "title": "Presentación",
+    "title": "Pensamiento Computacional para juristas",
     "section": "",
     "text": "[…]",
     "crumbs": [
-      "Módulo de aprendizaje 1: Pensamiento Computacional para juristas",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Presentación</span>"
+      "Módulo de aprendizaje 1",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Pensamiento Computacional para juristas</span>"
     ]
   }
 ]
