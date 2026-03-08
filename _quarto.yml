@@ -10,42 +10,40 @@ book:
     - parte-0/profesores.qmd
     - parte-0/intro.qmd
 
-    - part: "Módulo de aprendizaje 1"
+    - part: "parte-1-modulo-1/00-presentacion.qmd"
       chapters:
-        - parte-1-modulo-1/00-presentacion.qmd
         - parte-1-modulo-1/01-capitulo.qmd
         - parte-1-modulo-1/02-capitulo.qmd
         - parte-1-modulo-1/03-capitulo.qmd
         - parte-1-modulo-1/04-capitulo.qmd
 
-    - evaluaciones/evaluacion-1.qmd
-
-    - part: "Módulo de aprendizaje 2"
+    - part: "parte-2-modulo-2/00-presentacion.qmd"
       chapters:
-        - parte-2-modulo-2/00-presentacion.qmd
         - parte-2-modulo-2/05-capitulo.qmd
         - parte-2-modulo-2/06-capitulo.qmd
 
-    - evaluaciones/examen-parcial.qmd
 
-    - part: "Módulo de aprendizaje 3"
+
+    - part: "parte-3-modulo-3/00-presentacion.qmd"
       chapters:
-        - parte-3-modulo-3/00-presentacion.qmd
         - parte-3-modulo-3/07-capitulo.qmd
         - parte-3-modulo-3/08-capitulo.qmd
 
-    - evaluaciones/evaluacion-2.qmd
 
-    - part: "Módulo de aprendizaje 4"
+
+    - part: "parte-4-modulo-4/00-presentacion.qmd"
       chapters:
-        - parte-4-modulo-4/00-presentacion.qmd
         - parte-4-modulo-4/09-capitulo.qmd
         - parte-4-modulo-4/10-capitulo.qmd
         - parte-4-modulo-4/11-capitulo.qmd
 
-    - evaluaciones/evaluacion-3.qmd
-
-    - evaluaciones/examen-final.qmd
+    - part: "Evaluaciones"
+      chapters:
+        - evaluaciones/evaluacion-1.qmd
+        - evaluaciones/examen-parcial.qmd
+        - evaluaciones/evaluacion-2.qmd
+        - evaluaciones/evaluacion-3.qmd
+        - evaluaciones/examen-final.qmd
 
     - referencias.qmd
 
