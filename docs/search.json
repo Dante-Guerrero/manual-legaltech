@@ -34,7 +34,7 @@
     "href": "parte-0/intro.html",
     "title": "Introducción",
     "section": "",
-    "text": "El curso Legal Tech nace de una constatación simple, aunque a muchos juristas todavía les cueste admitirlo: el derecho ya no opera en un mundo analógico. Hoy, los expedientes se digitalizan, los documentos se automatizan, los conflictos se desarrollan en entornos virtuales, las decisiones pueden apoyarse en sistemas de inteligencia artificial y gran parte de la actividad económica, administrativa y social depende de infraestructuras tecnológicas. En ese contexto, comprender la relación entre derecho y tecnología ya no es un lujo ni una curiosidad académica. Es una competencia cada vez más necesaria para ejercer con solvencia, criterio y responsabilidad en la práctica profesional.\nEste curso ha sido diseñado para que las y los estudiantes de Derecho puedan aproximarse a ese mundo de forma progresiva, crítica y aplicada. No se trata de convertir a cada estudiante en programador ni de reemplazar la formación jurídica clásica por una formación puramente técnica. Se trata, más bien, de desarrollar una manera de pensar que permita dialogar con la tecnología, entender su lógica básica, reconocer sus efectos jurídicos y utilizar herramientas concretas para resolver problemas reales. Dicho sin solemnidad innecesaria: no basta con opinar sobre innovación; hay que aprender a trabajar con ella.\nA lo largo del curso recorrerás cuatro grandes ejes. En el primero, explorarás el pensamiento computacional para juristas y aprenderás a representar instrucciones y problemas legales con lógica estructurada. En el segundo, trabajarás con automatización, datos jurídicos, bases de datos, visualización de información y generación de documentos. En el tercero, estudiarás la arquitectura básica de la web, el uso de servicios en la nube y los principales riesgos de ciberseguridad que afectan al sector legal. Finalmente, en el cuarto módulo, analizarás la inteligencia artificial aplicada al derecho, sus capacidades, límites, riesgos regulatorios y posibilidades de uso responsable en contextos jurídicos.\nLa importancia de este curso no radica solo en aprender herramientas. Radica en formar criterio. En un entorno donde abundan soluciones tecnológicas prometidas como milagrosas, el abogado o la abogada que destaque no será quien use más plataformas, sino quien sepa evaluar su utilidad, identificar sus riesgos, formular buenas preguntas, proteger derechos y tomar decisiones éticamente justificables. Legal Tech exige curiosidad, sí, pero también prudencia, pensamiento crítico y compromiso con el acceso a la justicia.\nEste manual busca acompañarte en ese proceso. Úsalo como una guía de trabajo, no como un simple texto de consulta. Lee con atención, prueba herramientas, equivócate, vuelve a intentar y conecta cada tema con problemas jurídicos concretos. Aprovecha los talleres, los ejercicios y el proyecto del curso para construir una mirada propia sobre la innovación legal. Si sacas el mayor provecho de esta experiencia, no solo entenderás mejor cómo cambia la profesión jurídica: estarás en mejores condiciones para participar activamente en ese cambio, con creatividad, rigor y sentido de responsabilidad.",
+    "text": "El curso Legal Tech parte de una idea simple: el derecho ya no se ejerce en un entorno puramente analógico. Hoy, buena parte de la actividad jurídica se desarrolla en contextos atravesados por plataformas digitales, automatización, datos, servicios en la nube, inteligencia artificial y nuevas formas de interacción económica y social. En consecuencia, comprender la relación entre derecho y tecnología ya no es una habilidad complementaria ni una curiosidad académica. Es una necesidad formativa para cualquier estudiante de Derecho que quiera entender con seriedad el presente de la profesión y prepararse para sus transformaciones futuras.\nEste curso ha sido diseñado para ofrecer una aproximación clara, crítica y aplicada a ese escenario. Su propósito no es reemplazar la formación jurídica clásica, sino ampliarla. Se busca que el estudiante sea capaz de comprender cómo funcionan ciertas herramientas tecnológicas, identificar los problemas jurídicos que generan, evaluar sus riesgos y reconocer también su potencial para mejorar la práctica legal, la gestión de información, la producción documental, la toma de decisiones y el acceso a la justicia. En otras palabras, el curso invita a pensar como jurista en un mundo donde la tecnología ya forma parte del problema, pero también puede formar parte de la solución.\n\n\n\n\n\n\nTipUna idea clave para aprovechar el curso\n\n\n\nNo necesitas venir de un mundo técnico para destacar en Legal Tech. Lo que sí necesitas es curiosidad, disposición para aprender y voluntad para experimentar. Este curso no te pide que dejes de pensar como abogado o abogada; te pide que amplíes esa manera de pensar para dialogar mejor con herramientas, procesos y entornos que ya están transformando el ejercicio profesional.\n\n\nA lo largo del semestre, el curso recorre cuatro grandes ejes. En el primero, aborda el pensamiento computacional para juristas y la representación lógica de instrucciones y problemas legales. En el segundo, se concentra en la automatización y el trabajo con datos jurídicos, incluyendo organización de información, visualización y generación de documentos. En el tercero, introduce la arquitectura básica de la web, el uso de herramientas en la nube y los principales desafíos de seguridad relevantes para el sector legal. Finalmente, en el cuarto módulo, examina la inteligencia artificial aplicada al derecho, sus capacidades, límites, riesgos y exigencias de uso responsable.\nLa importancia del curso no reside únicamente en aprender nuevas herramientas. Su verdadero valor está en desarrollar criterio. En un contexto en el que abundan discursos entusiastas, promesas exageradas y soluciones tecnológicas presentadas como si resolvieran por sí mismas problemas complejos, el profesional del derecho necesita algo más que fascinación por la novedad. Necesita capacidad de análisis, sensibilidad ética, comprensión regulatoria y juicio práctico. Necesita saber cuándo una herramienta aporta valor, cuándo introduce riesgos y cuándo simplemente añade ruido con apariencia de innovación.\nEste manual ha sido concebido para acompañarte en ese proceso de aprendizaje. No está pensado solo para ser leído, sino para ser usado. Revísalo antes y después de cada sesión, vuelve sobre los conceptos principales, desarrolla los ejercicios y procura vincular cada tema con situaciones reales del trabajo jurídico. Mientras más conectes los contenidos con problemas concretos, más sentido tendrá lo aprendido.\nAprovechar bien este curso supone asumir una actitud activa. Probar, preguntar, ensayar, equivocarse, corregir y volver a intentar. Esa es parte normal del aprendizaje cuando se ingresa a un campo nuevo. Si trabajas el curso con apertura, rigor y constancia, no solo entenderás mejor cómo interactúan el derecho y la tecnología. También estarás mejor preparado para participar de esa transformación con inteligencia, responsabilidad y una visión profesional mucho más sólida.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Introducción</span>"
     ]
@@ -47,138 +47,6 @@
     "text": "[…]",
     "crumbs": [
       "I. Pensamiento Computacional para juristas"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/evaluacion-3.html",
-    "href": "evaluaciones/evaluacion-3.html",
-    "title": "🔹 Evaluación Continua 3",
-    "section": "",
-    "text": "Proyecto Legaltech\nLa Evaluación Continua 3 (EC3) consiste en un trabajo grupal orientado al diseño y presentación de un proyecto Legaltech. Cada equipo deberá identificar un problema, necesidad u oportunidad de mejora en el ámbito jurídico y proponer una solución tecnológica pertinente, útil y jurídicamente fundamentada.\nLa propuesta deberá explicar con precisión:\nEl proyecto podrá vincularse, entre otros temas, con automatización documental, acceso a información jurídica, visualización de datos, cumplimiento normativo, servicios legales digitales, firma digital, ciberseguridad, o uso responsable de inteligencia artificial en contextos legales.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>🔹 Evaluación Continua 3</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/evaluacion-3.html#propósito-de-la-evaluación",
-    "href": "evaluaciones/evaluacion-3.html#propósito-de-la-evaluación",
-    "title": "🔹 Evaluación Continua 3",
-    "section": "Propósito de la evaluación",
-    "text": "Propósito de la evaluación\nEsta evaluación busca que los estudiantes integren los aprendizajes desarrollados a lo largo del curso y demuestren que son capaces de:\n\nanalizar críticamente un problema jurídico;\nproponer una solución legaltech coherente y viable;\nsustentarla con claridad desde una perspectiva jurídica y práctica;\ne identificar riesgos y consideraciones éticas o regulatorias asociadas a su implementación.\n\n\n\n\n\n\n\nImportantCriterio central\n\n\n\nNo basta con presentar una idea llamativa. El proyecto debe ser pertinente, comprensible, viable en términos básicos y alineado con el marco jurídico aplicable.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>🔹 Evaluación Continua 3</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/evaluacion-3.html#desarrollo-y-presentación",
-    "href": "evaluaciones/evaluacion-3.html#desarrollo-y-presentación",
-    "title": "🔹 Evaluación Continua 3",
-    "section": "Desarrollo y presentación",
-    "text": "Desarrollo y presentación\nLa EC3 será explicada en clase y los grupos se organizarán previamente para investigar ideas, discutir alternativas y desarrollar su propuesta. El trabajo se culminará en equipo y será presentado en la sesión correspondiente al Demo Day.\nDurante la exposición, cada grupo deberá presentar de manera ordenada:\n\nel problema identificado;\nla solución propuesta;\nsu lógica general de funcionamiento;\nlos beneficios esperados;\ny los principales desafíos de implementación.\n\n\n\n\n\n\n\nWarningEntrega de evidencia\n\n\n\nLa evidencia del proyecto deberá ser cargada en la Plataforma Aula Virtual, de acuerdo con las indicaciones brindadas en clase.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>🔹 Evaluación Continua 3</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/evaluacion-2.html",
-    "href": "evaluaciones/evaluacion-2.html",
-    "title": "🔹 Evaluación Continua 2",
-    "section": "",
-    "text": "Página web personal publicada en GitHub Pages\nLa Evaluación Continua 2 consiste en la elaboración de una página web personal que deberá ser publicada a través de GitHub Pages. Se trata de un trabajo individual en el que cada estudiante desarrollará un sitio sencillo, claro y funcional, orientado a construir una primera presencia profesional en la web.\nEsta evaluación se conecta directamente con los contenidos del módulo sobre web, nube y seguridad para el sector legal, en el que estudiamos la estructura básica de las páginas web, el uso de HTML, CSS y JavaScript, así como la publicación de sitios estáticos mediante GitHub Pages. La idea no es formar diseñadores web en una sola sesión, porque tampoco vamos a fingir milagros técnicos, sino lograr que cada estudiante comprenda cómo funciona una publicación básica en internet y pueda usarla con propósito profesional.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/evaluacion-2.html#página-web-personal-publicada-en-github-pages",
-    "href": "evaluaciones/evaluacion-2.html#página-web-personal-publicada-en-github-pages",
-    "title": "🔹 Evaluación Continua 2",
-    "section": "",
-    "text": "Important¿Cuál es el producto a entregar?\n\n\n\nCada estudiante deberá publicar una página web funcional en GitHub Pages que contenga, como mínimo:\n\nun CV o perfil académico-profesional;\nun post o entrada breve escrita por el propio estudiante;\nun enlace público y operativo al sitio web.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/evaluacion-2.html#objetivo-de-la-evaluación",
-    "href": "evaluaciones/evaluacion-2.html#objetivo-de-la-evaluación",
-    "title": "🔹 Evaluación Continua 2",
-    "section": "Objetivo de la evaluación",
-    "text": "Objetivo de la evaluación\nEsta actividad busca que el estudiante aplique de manera práctica los conocimientos introductorios sobre publicación web y desarrolle una identidad digital básica, ordenada y profesional. No se evalúa únicamente el resultado visual, sino también la capacidad de estructurar información, redactar con claridad, publicar correctamente y presentar contenido pertinente para un entorno académico y jurídico.\n\n\n\n\n\n\nNoteSentido de la actividad\n\n\n\nUn abogado o abogada que comprende cómo funciona una página web no solo adquiere una destreza técnica elemental. También fortalece su capacidad para comunicar, organizar información, construir reputación profesional y entender mejor el entorno digital en el que hoy operan instituciones, estudios y servicios legales.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/evaluacion-2.html#contenido-mínimo-del-sitio",
-    "href": "evaluaciones/evaluacion-2.html#contenido-mínimo-del-sitio",
-    "title": "🔹 Evaluación Continua 2",
-    "section": "Contenido mínimo del sitio",
-    "text": "Contenido mínimo del sitio\nLa página web debe incluir al menos los siguientes componentes:\n\n1. CV o perfil profesional\nDebe presentar información básica del estudiante de forma clara y ordenada. Puede incluir, por ejemplo:\n\nnombre completo;\nbreve presentación;\nformación académica;\nexperiencia relevante;\nhabilidades o intereses;\ndatos de contacto o enlaces profesionales.\n\n\n\n2. Post individual\nEl sitio debe incluir una entrada breve escrita por el estudiante. Este texto debe tener un título y desarrollar una idea concreta con coherencia y buena redacción.\nEl post puede abordar temas como:\n\nuna reflexión sobre el curso;\nuna opinión fundamentada sobre tecnología y derecho;\nel comentario de una herramienta digital útil para juristas;\nuna breve experiencia de aprendizaje vinculada con GitHub, páginas web o transformación digital;\nun problema jurídico actual relacionado con internet, datos, plataformas o inteligencia artificial.\n\n\n\n\n\n\n\nTipRecomendación para el post\n\n\n\nUn buen post no necesita ser largo. Necesita ser claro, propio y bien pensado. Entre 400 y 800 palabras suele ser una extensión razonable para esta actividad.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/evaluacion-2.html#criterios-esperados-de-calidad",
-    "href": "evaluaciones/evaluacion-2.html#criterios-esperados-de-calidad",
-    "title": "🔹 Evaluación Continua 2",
-    "section": "Criterios esperados de calidad",
-    "text": "Criterios esperados de calidad\nSe espera que la página web:\n\nsea accesible mediante un enlace público;\ntenga una estructura comprensible;\npresente un diseño limpio y legible;\nmuestre información pertinente y bien organizada;\nevidencie autoría propia en la redacción del post;\nmantenga un tono profesional y académico.\n\nNo es necesario construir un sitio complejo. Una página sencilla, sobria y bien resuelta vale más que una página recargada, desordenada o copiada de forma mecánica.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/evaluacion-2.html#ideas-para-enriquecer-la-página",
-    "href": "evaluaciones/evaluacion-2.html#ideas-para-enriquecer-la-página",
-    "title": "🔹 Evaluación Continua 2",
-    "section": "Ideas para enriquecer la página",
-    "text": "Ideas para enriquecer la página\nAdemás del contenido mínimo, el estudiante puede incorporar elementos adicionales que mejoren su presentación, tales como:\n\nfotografía o avatar profesional;\nsección “Sobre mí”;\nenlaces a LinkedIn o GitHub;\nmenú de navegación simple;\ndiseño responsivo;\nuna segunda entrada opcional;\nuso cuidadoso de colores, tipografía e identidad visual.\n\n\n\n\n\n\n\nWarningQué debe evitarse\n\n\n\nEvita estos errores frecuentes:\n\npublicar una página incompleta;\nincluir texto copiado de internet o generado sin revisión;\nusar un diseño que dificulte la lectura;\nentregar un enlace roto o privado;\nconvertir el CV en una lista caótica sin jerarquía visual.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/evaluacion-2.html#entrega",
-    "href": "evaluaciones/evaluacion-2.html#entrega",
-    "title": "🔹 Evaluación Continua 2",
-    "section": "Entrega",
-    "text": "Entrega\nLa evidencia de esta evaluación consiste en el enlace público de GitHub Pages y, de ser solicitado en clase, el enlace al repositorio correspondiente. La entrega deberá realizarse conforme a las indicaciones dadas por el docente en el Aula Virtual o en sesión.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/evaluacion-2.html#qué-demuestra-esta-evaluación",
-    "href": "evaluaciones/evaluacion-2.html#qué-demuestra-esta-evaluación",
-    "title": "🔹 Evaluación Continua 2",
-    "section": "¿Qué demuestra esta evaluación?",
-    "text": "¿Qué demuestra esta evaluación?\nAl completar esta actividad, el estudiante demuestra que puede:\n\ntransformar información profesional en contenido web estructurado;\nutilizar herramientas básicas de publicación digital;\ncomunicar una identidad académica o profesional en línea;\nproducir una pieza escrita breve con propósito y claridad;\ncomprender, en términos prácticos, cómo se publica contenido en la web.\n\n\nEsta evaluación no busca que el estudiante sea desarrollador web, sino que sea capaz de construir y publicar una presencia digital básica, funcional y profesional.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/evaluacion-3.html#proyecto-legaltech",
-    "href": "evaluaciones/evaluacion-3.html#proyecto-legaltech",
-    "title": "🔹 Evaluación Continua 3",
-    "section": "",
-    "text": "Note¿Qué se espera del proyecto?\n\n\n\nEl proyecto debe mostrar la capacidad del equipo para conectar el razonamiento jurídico con una propuesta de innovación tecnológica. No se exige necesariamente un producto plenamente terminado, pero sí una propuesta sólida, clara y bien sustentada.\n\n\n\n\nel problema jurídico que se busca abordar;\nel usuario o público objetivo al que se dirige;\nla solución tecnológica planteada;\nla forma en que dicha solución generaría valor práctico;\ny sus principales implicancias éticas, regulatorias y operativas.\n\n\n\n\n\n\n\nTipEnfoque recomendado\n\n\n\nUn buen proyecto no parte de la tecnología por sí sola, sino de un problema real del mundo jurídico. Primero se define el problema; después se justifica por qué cierta herramienta o enfoque tecnológico puede ayudar a resolverlo.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>🔹 Evaluación Continua 3</span>"
     ]
   },
   {
@@ -487,6 +355,138 @@
     "crumbs": [
       "I. Pensamiento Computacional para juristas",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
+    ]
+  },
+  {
+    "objectID": "evaluaciones/evaluacion-2.html",
+    "href": "evaluaciones/evaluacion-2.html",
+    "title": "🔹 Evaluación Continua 2",
+    "section": "",
+    "text": "Página web personal publicada en GitHub Pages\nLa Evaluación Continua 2 consiste en la elaboración de una página web personal que deberá ser publicada a través de GitHub Pages. Se trata de un trabajo individual en el que cada estudiante desarrollará un sitio sencillo, claro y funcional, orientado a construir una primera presencia profesional en la web.\nEsta evaluación se conecta directamente con los contenidos del módulo sobre web, nube y seguridad para el sector legal, en el que estudiamos la estructura básica de las páginas web, el uso de HTML, CSS y JavaScript, así como la publicación de sitios estáticos mediante GitHub Pages. La idea no es formar diseñadores web en una sola sesión, porque tampoco vamos a fingir milagros técnicos, sino lograr que cada estudiante comprenda cómo funciona una publicación básica en internet y pueda usarla con propósito profesional.",
+    "crumbs": [
+      "Evaluaciones",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
+    ]
+  },
+  {
+    "objectID": "evaluaciones/evaluacion-2.html#página-web-personal-publicada-en-github-pages",
+    "href": "evaluaciones/evaluacion-2.html#página-web-personal-publicada-en-github-pages",
+    "title": "🔹 Evaluación Continua 2",
+    "section": "",
+    "text": "Important¿Cuál es el producto a entregar?\n\n\n\nCada estudiante deberá publicar una página web funcional en GitHub Pages que contenga, como mínimo:\n\nun CV o perfil académico-profesional;\nun post o entrada breve escrita por el propio estudiante;\nun enlace público y operativo al sitio web.",
+    "crumbs": [
+      "Evaluaciones",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
+    ]
+  },
+  {
+    "objectID": "evaluaciones/evaluacion-2.html#objetivo-de-la-evaluación",
+    "href": "evaluaciones/evaluacion-2.html#objetivo-de-la-evaluación",
+    "title": "🔹 Evaluación Continua 2",
+    "section": "Objetivo de la evaluación",
+    "text": "Objetivo de la evaluación\nEsta actividad busca que el estudiante aplique de manera práctica los conocimientos introductorios sobre publicación web y desarrolle una identidad digital básica, ordenada y profesional. No se evalúa únicamente el resultado visual, sino también la capacidad de estructurar información, redactar con claridad, publicar correctamente y presentar contenido pertinente para un entorno académico y jurídico.\n\n\n\n\n\n\nNoteSentido de la actividad\n\n\n\nUn abogado o abogada que comprende cómo funciona una página web no solo adquiere una destreza técnica elemental. También fortalece su capacidad para comunicar, organizar información, construir reputación profesional y entender mejor el entorno digital en el que hoy operan instituciones, estudios y servicios legales.",
+    "crumbs": [
+      "Evaluaciones",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
+    ]
+  },
+  {
+    "objectID": "evaluaciones/evaluacion-2.html#contenido-mínimo-del-sitio",
+    "href": "evaluaciones/evaluacion-2.html#contenido-mínimo-del-sitio",
+    "title": "🔹 Evaluación Continua 2",
+    "section": "Contenido mínimo del sitio",
+    "text": "Contenido mínimo del sitio\nLa página web debe incluir al menos los siguientes componentes:\n\n1. CV o perfil profesional\nDebe presentar información básica del estudiante de forma clara y ordenada. Puede incluir, por ejemplo:\n\nnombre completo;\nbreve presentación;\nformación académica;\nexperiencia relevante;\nhabilidades o intereses;\ndatos de contacto o enlaces profesionales.\n\n\n\n2. Post individual\nEl sitio debe incluir una entrada breve escrita por el estudiante. Este texto debe tener un título y desarrollar una idea concreta con coherencia y buena redacción.\nEl post puede abordar temas como:\n\nuna reflexión sobre el curso;\nuna opinión fundamentada sobre tecnología y derecho;\nel comentario de una herramienta digital útil para juristas;\nuna breve experiencia de aprendizaje vinculada con GitHub, páginas web o transformación digital;\nun problema jurídico actual relacionado con internet, datos, plataformas o inteligencia artificial.\n\n\n\n\n\n\n\nTipRecomendación para el post\n\n\n\nUn buen post no necesita ser largo. Necesita ser claro, propio y bien pensado. Entre 400 y 800 palabras suele ser una extensión razonable para esta actividad.",
+    "crumbs": [
+      "Evaluaciones",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
+    ]
+  },
+  {
+    "objectID": "evaluaciones/evaluacion-2.html#criterios-esperados-de-calidad",
+    "href": "evaluaciones/evaluacion-2.html#criterios-esperados-de-calidad",
+    "title": "🔹 Evaluación Continua 2",
+    "section": "Criterios esperados de calidad",
+    "text": "Criterios esperados de calidad\nSe espera que la página web:\n\nsea accesible mediante un enlace público;\ntenga una estructura comprensible;\npresente un diseño limpio y legible;\nmuestre información pertinente y bien organizada;\nevidencie autoría propia en la redacción del post;\nmantenga un tono profesional y académico.\n\nNo es necesario construir un sitio complejo. Una página sencilla, sobria y bien resuelta vale más que una página recargada, desordenada o copiada de forma mecánica.",
+    "crumbs": [
+      "Evaluaciones",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
+    ]
+  },
+  {
+    "objectID": "evaluaciones/evaluacion-2.html#ideas-para-enriquecer-la-página",
+    "href": "evaluaciones/evaluacion-2.html#ideas-para-enriquecer-la-página",
+    "title": "🔹 Evaluación Continua 2",
+    "section": "Ideas para enriquecer la página",
+    "text": "Ideas para enriquecer la página\nAdemás del contenido mínimo, el estudiante puede incorporar elementos adicionales que mejoren su presentación, tales como:\n\nfotografía o avatar profesional;\nsección “Sobre mí”;\nenlaces a LinkedIn o GitHub;\nmenú de navegación simple;\ndiseño responsivo;\nuna segunda entrada opcional;\nuso cuidadoso de colores, tipografía e identidad visual.\n\n\n\n\n\n\n\nWarningQué debe evitarse\n\n\n\nEvita estos errores frecuentes:\n\npublicar una página incompleta;\nincluir texto copiado de internet o generado sin revisión;\nusar un diseño que dificulte la lectura;\nentregar un enlace roto o privado;\nconvertir el CV en una lista caótica sin jerarquía visual.",
+    "crumbs": [
+      "Evaluaciones",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
+    ]
+  },
+  {
+    "objectID": "evaluaciones/evaluacion-2.html#entrega",
+    "href": "evaluaciones/evaluacion-2.html#entrega",
+    "title": "🔹 Evaluación Continua 2",
+    "section": "Entrega",
+    "text": "Entrega\nLa evidencia de esta evaluación consiste en el enlace público de GitHub Pages y, de ser solicitado en clase, el enlace al repositorio correspondiente. La entrega deberá realizarse conforme a las indicaciones dadas por el docente en el Aula Virtual o en sesión.",
+    "crumbs": [
+      "Evaluaciones",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
+    ]
+  },
+  {
+    "objectID": "evaluaciones/evaluacion-2.html#qué-demuestra-esta-evaluación",
+    "href": "evaluaciones/evaluacion-2.html#qué-demuestra-esta-evaluación",
+    "title": "🔹 Evaluación Continua 2",
+    "section": "¿Qué demuestra esta evaluación?",
+    "text": "¿Qué demuestra esta evaluación?\nAl completar esta actividad, el estudiante demuestra que puede:\n\ntransformar información profesional en contenido web estructurado;\nutilizar herramientas básicas de publicación digital;\ncomunicar una identidad académica o profesional en línea;\nproducir una pieza escrita breve con propósito y claridad;\ncomprender, en términos prácticos, cómo se publica contenido en la web.\n\n\nEsta evaluación no busca que el estudiante sea desarrollador web, sino que sea capaz de construir y publicar una presencia digital básica, funcional y profesional.",
+    "crumbs": [
+      "Evaluaciones",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
+    ]
+  },
+  {
+    "objectID": "evaluaciones/evaluacion-3.html",
+    "href": "evaluaciones/evaluacion-3.html",
+    "title": "🔹 Evaluación Continua 3",
+    "section": "",
+    "text": "Proyecto Legaltech\nLa Evaluación Continua 3 (EC3) consiste en un trabajo grupal orientado al diseño y presentación de un proyecto Legaltech. Cada equipo deberá identificar un problema, necesidad u oportunidad de mejora en el ámbito jurídico y proponer una solución tecnológica pertinente, útil y jurídicamente fundamentada.\nLa propuesta deberá explicar con precisión:\nEl proyecto podrá vincularse, entre otros temas, con automatización documental, acceso a información jurídica, visualización de datos, cumplimiento normativo, servicios legales digitales, firma digital, ciberseguridad, o uso responsable de inteligencia artificial en contextos legales.",
+    "crumbs": [
+      "Evaluaciones",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>🔹 Evaluación Continua 3</span>"
+    ]
+  },
+  {
+    "objectID": "evaluaciones/evaluacion-3.html#proyecto-legaltech",
+    "href": "evaluaciones/evaluacion-3.html#proyecto-legaltech",
+    "title": "🔹 Evaluación Continua 3",
+    "section": "",
+    "text": "Note¿Qué se espera del proyecto?\n\n\n\nEl proyecto debe mostrar la capacidad del equipo para conectar el razonamiento jurídico con una propuesta de innovación tecnológica. No se exige necesariamente un producto plenamente terminado, pero sí una propuesta sólida, clara y bien sustentada.\n\n\n\n\nel problema jurídico que se busca abordar;\nel usuario o público objetivo al que se dirige;\nla solución tecnológica planteada;\nla forma en que dicha solución generaría valor práctico;\ny sus principales implicancias éticas, regulatorias y operativas.\n\n\n\n\n\n\n\nTipEnfoque recomendado\n\n\n\nUn buen proyecto no parte de la tecnología por sí sola, sino de un problema real del mundo jurídico. Primero se define el problema; después se justifica por qué cierta herramienta o enfoque tecnológico puede ayudar a resolverlo.",
+    "crumbs": [
+      "Evaluaciones",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>🔹 Evaluación Continua 3</span>"
+    ]
+  },
+  {
+    "objectID": "evaluaciones/evaluacion-3.html#propósito-de-la-evaluación",
+    "href": "evaluaciones/evaluacion-3.html#propósito-de-la-evaluación",
+    "title": "🔹 Evaluación Continua 3",
+    "section": "Propósito de la evaluación",
+    "text": "Propósito de la evaluación\nEsta evaluación busca que los estudiantes integren los aprendizajes desarrollados a lo largo del curso y demuestren que son capaces de:\n\nanalizar críticamente un problema jurídico;\nproponer una solución legaltech coherente y viable;\nsustentarla con claridad desde una perspectiva jurídica y práctica;\ne identificar riesgos y consideraciones éticas o regulatorias asociadas a su implementación.\n\n\n\n\n\n\n\nImportantCriterio central\n\n\n\nNo basta con presentar una idea llamativa. El proyecto debe ser pertinente, comprensible, viable en términos básicos y alineado con el marco jurídico aplicable.",
+    "crumbs": [
+      "Evaluaciones",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>🔹 Evaluación Continua 3</span>"
+    ]
+  },
+  {
+    "objectID": "evaluaciones/evaluacion-3.html#desarrollo-y-presentación",
+    "href": "evaluaciones/evaluacion-3.html#desarrollo-y-presentación",
+    "title": "🔹 Evaluación Continua 3",
+    "section": "Desarrollo y presentación",
+    "text": "Desarrollo y presentación\nLa EC3 será explicada en clase y los grupos se organizarán previamente para investigar ideas, discutir alternativas y desarrollar su propuesta. El trabajo se culminará en equipo y será presentado en la sesión correspondiente al Demo Day.\nDurante la exposición, cada grupo deberá presentar de manera ordenada:\n\nel problema identificado;\nla solución propuesta;\nsu lógica general de funcionamiento;\nlos beneficios esperados;\ny los principales desafíos de implementación.\n\n\n\n\n\n\n\nWarningEntrega de evidencia\n\n\n\nLa evidencia del proyecto deberá ser cargada en la Plataforma Aula Virtual, de acuerdo con las indicaciones brindadas en clase.",
+    "crumbs": [
+      "Evaluaciones",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>🔹 Evaluación Continua 3</span>"
     ]
   }
 ]
