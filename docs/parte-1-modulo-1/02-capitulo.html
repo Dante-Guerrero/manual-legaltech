@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Sesión 2 – Legal Tech, Manual del Curso</title>
+<title>2. Primeros pasos con Python – Legal Tech, Manual del Curso</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -22,6 +22,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -86,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-1-modulo-1/00-presentacion.html">I. Pensamiento Computacional para juristas</a></li><li class="breadcrumb-item"><a href="../parte-1-modulo-1/02-capitulo.html"><span class="chapter-title">Sesión 2</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-1-modulo-1/00-presentacion.html">I. Pensamiento Computacional para juristas</a></li><li class="breadcrumb-item"><a href="../parte-1-modulo-1/02-capitulo.html"><span class="chapter-title">2. Primeros pasos con Python</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -137,12 +172,12 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-1-modulo-1/01-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sesión 1</span></a>
+  <a href="../parte-1-modulo-1/01-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">1. Del sistema binario al razonamiento computacional</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-1-modulo-1/02-capitulo.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Sesión 2</span></a>
+  <a href="../parte-1-modulo-1/02-capitulo.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">2. Primeros pasos con Python</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -271,15 +306,77 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#por-qué-un-estudiante-de-derecho-debería-aprender-python" id="toc-por-qué-un-estudiante-de-derecho-debería-aprender-python" class="nav-link active" data-scroll-target="#por-qué-un-estudiante-de-derecho-debería-aprender-python">¿Por qué un estudiante de Derecho debería aprender Python?</a></li>
+  <li><a href="#objetivos-de-aprendizaje" id="toc-objetivos-de-aprendizaje" class="nav-link" data-scroll-target="#objetivos-de-aprendizaje">Objetivos de aprendizaje</a></li>
+  <li><a href="#antes-de-empezar" id="toc-antes-de-empezar" class="nav-link" data-scroll-target="#antes-de-empezar">Antes de empezar</a></li>
+  <li><a href="#cómo-clonar-y-ejecutar-el-repositorio" id="toc-cómo-clonar-y-ejecutar-el-repositorio" class="nav-link" data-scroll-target="#cómo-clonar-y-ejecutar-el-repositorio">Cómo clonar y ejecutar el repositorio</a>
+  <ul class="collapse">
+  <li><a href="#clonar-el-repositorio" id="toc-clonar-el-repositorio" class="nav-link" data-scroll-target="#clonar-el-repositorio">1. Clonar el repositorio</a></li>
+  <li><a href="#ejecutar-un-archivo" id="toc-ejecutar-un-archivo" class="nav-link" data-scroll-target="#ejecutar-un-archivo">2. Ejecutar un archivo</a></li>
+  </ul></li>
+  <li><a href="#la-ruta-de-aprendizaje-del-repositorio" id="toc-la-ruta-de-aprendizaje-del-repositorio" class="nav-link" data-scroll-target="#la-ruta-de-aprendizaje-del-repositorio">La ruta de aprendizaje del repositorio</a></li>
+  <li><a href="#empezar-por-lo-básico" id="toc-empezar-por-lo-básico" class="nav-link" data-scroll-target="#empezar-por-lo-básico">1. Empezar por lo básico</a>
+  <ul class="collapse">
+  <li><a href="#tu-primer-programa" id="toc-tu-primer-programa" class="nav-link" data-scroll-target="#tu-primer-programa">Tu primer programa</a></li>
+  <li><a href="#variables-guardar-información" id="toc-variables-guardar-información" class="nav-link" data-scroll-target="#variables-guardar-información">Variables: guardar información</a></li>
+  <li><a href="#entradas-y-salidas" id="toc-entradas-y-salidas" class="nav-link" data-scroll-target="#entradas-y-salidas">Entradas y salidas</a></li>
+  <li><a href="#convertir-tipos" id="toc-convertir-tipos" class="nav-link" data-scroll-target="#convertir-tipos">Convertir tipos</a></li>
+  </ul></li>
+  <li><a href="#tomar-decisiones-condicionales" id="toc-tomar-decisiones-condicionales" class="nav-link" data-scroll-target="#tomar-decisiones-condicionales">2. Tomar decisiones: condicionales</a></li>
+  <li><a href="#repetir-instrucciones-bucles" id="toc-repetir-instrucciones-bucles" class="nav-link" data-scroll-target="#repetir-instrucciones-bucles">3. Repetir instrucciones: bucles</a>
+  <ul class="collapse">
+  <li><a href="#for-recorrer-elementos" id="toc-for-recorrer-elementos" class="nav-link" data-scroll-target="#for-recorrer-elementos"><code>for</code>: recorrer elementos</a></li>
+  <li><a href="#while-repetir-mientras-se-cumpla-una-condición" id="toc-while-repetir-mientras-se-cumpla-una-condición" class="nav-link" data-scroll-target="#while-repetir-mientras-se-cumpla-una-condición"><code>while</code>: repetir mientras se cumpla una condición</a></li>
+  </ul></li>
+  <li><a href="#reutilizar-lógica-funciones" id="toc-reutilizar-lógica-funciones" class="nav-link" data-scroll-target="#reutilizar-lógica-funciones">4. Reutilizar lógica: funciones</a>
+  <ul class="collapse">
+  <li><a href="#por-qué-importan-las-funciones" id="toc-por-qué-importan-las-funciones" class="nav-link" data-scroll-target="#por-qué-importan-las-funciones">¿Por qué importan las funciones?</a></li>
+  </ul></li>
+  <li><a href="#trabajar-con-varios-elementos-listas" id="toc-trabajar-con-varios-elementos-listas" class="nav-link" data-scroll-target="#trabajar-con-varios-elementos-listas">5. Trabajar con varios elementos: listas</a></li>
+  <li><a href="#trabajar-con-texto" id="toc-trabajar-con-texto" class="nav-link" data-scroll-target="#trabajar-con-texto">6. Trabajar con texto</a>
+  <ul class="collapse">
+  <li><a href="#para-qué-sirve-esto-en-derecho" id="toc-para-qué-sirve-esto-en-derecho" class="nav-link" data-scroll-target="#para-qué-sirve-esto-en-derecho">¿Para qué sirve esto en Derecho?</a></li>
+  </ul></li>
+  <li><a href="#trabajar-con-fechas-y-plazos" id="toc-trabajar-con-fechas-y-plazos" class="nav-link" data-scroll-target="#trabajar-con-fechas-y-plazos">7. Trabajar con fechas y plazos</a></li>
+  <li><a href="#leer-y-guardar-archivos" id="toc-leer-y-guardar-archivos" class="nav-link" data-scroll-target="#leer-y-guardar-archivos">8. Leer y guardar archivos</a>
+  <ul class="collapse">
+  <li><a href="#por-qué-esto-importa" id="toc-por-qué-esto-importa" class="nav-link" data-scroll-target="#por-qué-esto-importa">¿Por qué esto importa?</a></li>
+  </ul></li>
+  <li><a href="#una-primera-aproximación-a-datos-tabulares" id="toc-una-primera-aproximación-a-datos-tabulares" class="nav-link" data-scroll-target="#una-primera-aproximación-a-datos-tabulares">9. Una primera aproximación a datos tabulares</a>
+  <ul class="collapse">
+  <li><a href="#instalación-opcional-de-pandas" id="toc-instalación-opcional-de-pandas" class="nav-link" data-scroll-target="#instalación-opcional-de-pandas">Instalación opcional de <code>pandas</code></a></li>
+  </ul></li>
+  <li><a href="#python-aplicado-al-derecho" id="toc-python-aplicado-al-derecho" class="nav-link" data-scroll-target="#python-aplicado-al-derecho">10. Python aplicado al Derecho</a>
+  <ul class="collapse">
+  <li><a href="#ejemplo-cálculo-simple-de-multa" id="toc-ejemplo-cálculo-simple-de-multa" class="nav-link" data-scroll-target="#ejemplo-cálculo-simple-de-multa">Ejemplo: cálculo simple de multa</a></li>
+  <li><a href="#lo-importante-no-es-solo-el-resultado" id="toc-lo-importante-no-es-solo-el-resultado" class="nav-link" data-scroll-target="#lo-importante-no-es-solo-el-resultado">Lo importante no es solo el resultado</a></li>
+  </ul></li>
+  <li><a href="#qué-debes-practicar-hoy" id="toc-qué-debes-practicar-hoy" class="nav-link" data-scroll-target="#qué-debes-practicar-hoy">11. Qué debes practicar hoy</a>
+  <ul class="collapse">
+  <li><a href="#ejercicio-1.-cambia-valores" id="toc-ejercicio-1.-cambia-valores" class="nav-link" data-scroll-target="#ejercicio-1.-cambia-valores">Ejercicio 1. Cambia valores</a></li>
+  <li><a href="#ejercicio-2.-crea-una-condición" id="toc-ejercicio-2.-crea-una-condición" class="nav-link" data-scroll-target="#ejercicio-2.-crea-una-condición">Ejercicio 2. Crea una condición</a></li>
+  <li><a href="#ejercicio-3.-recorre-una-lista" id="toc-ejercicio-3.-recorre-una-lista" class="nav-link" data-scroll-target="#ejercicio-3.-recorre-una-lista">Ejercicio 3. Recorre una lista</a></li>
+  <li><a href="#ejercicio-4.-calcula-un-plazo" id="toc-ejercicio-4.-calcula-un-plazo" class="nav-link" data-scroll-target="#ejercicio-4.-calcula-un-plazo">Ejercicio 4. Calcula un plazo</a></li>
+  <li><a href="#ejercicio-5.-adapta-un-ejemplo-jurídico" id="toc-ejercicio-5.-adapta-un-ejemplo-jurídico" class="nav-link" data-scroll-target="#ejercicio-5.-adapta-un-ejemplo-jurídico">Ejercicio 5. Adapta un ejemplo jurídico</a></li>
+  </ul></li>
+  <li><a href="#error-prueba-y-aprendizaje" id="toc-error-prueba-y-aprendizaje" class="nav-link" data-scroll-target="#error-prueba-y-aprendizaje">12. Error, prueba y aprendizaje</a></li>
+  <li><a href="#cierre" id="toc-cierre" class="nav-link" data-scroll-target="#cierre">13. Cierre</a></li>
+  <li><a href="#para-seguir-practicando" id="toc-para-seguir-practicando" class="nav-link" data-scroll-target="#para-seguir-practicando">Para seguir practicando</a></li>
+  <li><a href="#preguntas-de-repaso" id="toc-preguntas-de-repaso" class="nav-link" data-scroll-target="#preguntas-de-repaso">Preguntas de repaso</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-1-modulo-1/00-presentacion.html">I. Pensamiento Computacional para juristas</a></li><li class="breadcrumb-item"><a href="../parte-1-modulo-1/02-capitulo.html"><span class="chapter-title">Sesión 2</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-1-modulo-1/00-presentacion.html">I. Pensamiento Computacional para juristas</a></li><li class="breadcrumb-item"><a href="../parte-1-modulo-1/02-capitulo.html"><span class="chapter-title">2. Primeros pasos con Python</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Sesión 2</span></h1>
+<h1 class="title"><span class="chapter-title">2. Primeros pasos con Python</span></h1>
 </div>
 
 
@@ -296,8 +393,523 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="por-qué-un-estudiante-de-derecho-debería-aprender-python" class="level2">
+<h2 class="anchored" data-anchor-id="por-qué-un-estudiante-de-derecho-debería-aprender-python">¿Por qué un estudiante de Derecho debería aprender Python?</h2>
+<p>Python es un lenguaje de programación conocido por su sintaxis clara y por ser especialmente amigable para quienes empiezan desde cero. En este curso no lo estudiaremos como un fin en sí mismo, sino como una herramienta para aprender a traducir instrucciones, criterios y reglas en pasos ordenados y ejecutables.</p>
+<p>Para un jurista, esto tiene un valor práctico inmediato. Muchas tareas del trabajo legal consisten en revisar información, clasificar documentos, calcular plazos, detectar patrones, ordenar expedientes, verificar requisitos y generar reportes. Todas esas tareas pueden describirse como instrucciones. Y cuando una instrucción puede describirse con claridad, también puede empezar a automatizarse.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Idea central
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Programar no significa “pensar como ingeniero”. Significa <strong>aprender a descomponer un problema en pasos claros, verificables y repetibles</strong>.</p>
+<p>Eso, por cierto, también es una habilidad jurídica.</p>
+</div>
+</div>
+</section>
+<section id="objetivos-de-aprendizaje" class="level2">
+<h2 class="anchored" data-anchor-id="objetivos-de-aprendizaje">Objetivos de aprendizaje</h2>
+<p>Al finalizar este capítulo, deberías poder:</p>
+<ul>
+<li>comprender qué es Python y para qué sirve en contextos legales;</li>
+<li>ejecutar scripts sencillos desde una terminal o desde VS Code;</li>
+<li>reconocer y usar variables, tipos de datos, entradas y salidas;</li>
+<li>escribir condicionales, bucles y funciones básicas;</li>
+<li>entender cómo listas, texto, fechas, archivos y tablas pueden servir para resolver problemas jurídicos simples;</li>
+<li>relacionar el código con tareas reales del ejercicio legal y administrativo.</li>
+</ul>
+</section>
+<section id="antes-de-empezar" class="level2">
+<h2 class="anchored" data-anchor-id="antes-de-empezar">Antes de empezar</h2>
+<p>Para trabajar con este capítulo necesitas tener instalado:</p>
+<ul>
+<li>Python;</li>
+<li>Git;</li>
+<li>una terminal o consola;</li>
+<li>opcionalmente, VS Code.</li>
+</ul>
+<p>El repositorio <code>python-intro</code> está pensado precisamente para estudiantes de Derecho sin experiencia previa en programación y propone una ruta gradual para empezar desde cero. citeturn0view0</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Recomendación de trabajo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>No intentes entender todo en una sola lectura. La mejor forma de aprender aquí es esta:</p>
+<ol type="1">
+<li>ejecutar un archivo;</li>
+<li>leer los comentarios;</li>
+<li>cambiar uno o dos valores;</li>
+<li>volver a ejecutarlo;</li>
+<li>observar qué cambió.</li>
+</ol>
+<p>La mejor pedagogía aquí no es memorizar, sino probar.</p>
+</div>
+</div>
+</section>
+<section id="cómo-clonar-y-ejecutar-el-repositorio" class="level2">
+<h2 class="anchored" data-anchor-id="cómo-clonar-y-ejecutar-el-repositorio">Cómo clonar y ejecutar el repositorio</h2>
+<p>Según el README del repositorio, los requisitos mínimos son Python, Git, una terminal y, de forma opcional, VS Code. También recomienda comenzar ejecutando scripts sencillos desde la carpeta del proyecto. citeturn0view0</p>
+<section id="clonar-el-repositorio" class="level3">
+<h3 class="anchored" data-anchor-id="clonar-el-repositorio">1. Clonar el repositorio</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/Dante-Guerrero/python-intro.git</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> python-intro</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="ejecutar-un-archivo" class="level3">
+<h3 class="anchored" data-anchor-id="ejecutar-un-archivo">2. Ejecutar un archivo</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> 00-basicos/00-helloworld.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>En algunos equipos puede ser necesario usar:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> 00-basicos/00-helloworld.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="la-ruta-de-aprendizaje-del-repositorio" class="level2">
+<h2 class="anchored" data-anchor-id="la-ruta-de-aprendizaje-del-repositorio">La ruta de aprendizaje del repositorio</h2>
+<p>El repositorio está organizado como una progresión gradual, con carpetas dedicadas a básicos, listas, texto, fechas, archivos, datos y ejercicios jurídicos. Esa estructura está descrita en el README y conviene recorrerla en este orden. citeturn0view0</p>
+<ol type="1">
+<li><code>00-basicos/</code></li>
+<li><code>01-listas/</code></li>
+<li><code>02-texto/</code></li>
+<li><code>03-fechas/</code></li>
+<li><code>04-archivos/</code></li>
+<li><code>05-datos/</code></li>
+<li><code>06-ejercicios-derecho/</code></li>
+</ol>
+<p>Cada carpeta introduce una idea nueva y luego la conecta con ejemplos cada vez más cercanos al trabajo jurídico.</p>
+</section>
+<section id="empezar-por-lo-básico" class="level2">
+<h2 class="anchored" data-anchor-id="empezar-por-lo-básico">1. Empezar por lo básico</h2>
+<p>La carpeta <code>00-basicos/</code> contiene el primer contacto con Python: sintaxis elemental, variables, entradas y salidas, conversión de tipos, operadores, condicionales, bucles y funciones. citeturn0view0</p>
+<section id="tu-primer-programa" class="level3">
+<h3 class="anchored" data-anchor-id="tu-primer-programa">Tu primer programa</h3>
+<p>Un programa tan simple como este:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hola, mundo"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>ya muestra una idea importante: <strong>el código es una instrucción escrita con una sintaxis específica</strong>.</p>
+</section>
+<section id="variables-guardar-información" class="level3">
+<h3 class="anchored" data-anchor-id="variables-guardar-información">Variables: guardar información</h3>
+<p>Una variable permite guardar un dato para usarlo después.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>nombre_estudiante <span class="op">=</span> <span class="st">"Manu"</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>edad <span class="op">=</span> <span class="dv">36</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>promedio <span class="op">=</span> <span class="fl">1.75</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>esta_matriculado <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(nombre_estudiante))</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(edad))</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(promedio))</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(esta_matriculado))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Aquí aparecen algunos tipos básicos:</p>
+<ul>
+<li><code>str</code>: texto;</li>
+<li><code>int</code>: número entero;</li>
+<li><code>float</code>: número decimal;</li>
+<li><code>bool</code>: verdadero o falso.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Traducción al mundo jurídico
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Piensa en una variable como un casillero con etiqueta:</p>
+<ul>
+<li><code>numero_expediente</code></li>
+<li><code>monto_multa</code></li>
+<li><code>plazo_dias</code></li>
+<li><code>documento_valido</code></li>
+</ul>
+<p>El nombre cambia, pero la lógica es la misma: <strong>guardar un dato para trabajar con él</strong>.</p>
+</div>
+</div>
+</section>
+<section id="entradas-y-salidas" class="level3">
+<h3 class="anchored" data-anchor-id="entradas-y-salidas">Entradas y salidas</h3>
+<p>Un programa también puede pedir datos al usuario y mostrar resultados.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>nombre <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Escribe tu nombre: "</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hola,"</span>, nombre)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Esto es útil cuando queremos que el programa trabaje con información que no está fija desde el inicio.</p>
+</section>
+<section id="convertir-tipos" class="level3">
+<h3 class="anchored" data-anchor-id="convertir-tipos">Convertir tipos</h3>
+<p>Muchas veces el programa recibe texto y necesitamos convertirlo en número.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>dias <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"¿Cuántos días de retraso hubo? "</span>))</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>multa_por_dia <span class="op">=</span> <span class="dv">25</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>total <span class="op">=</span> dias <span class="op">*</span> multa_por_dia</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Monto total:"</span>, total)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Si no convertimos el dato, Python no sabrá que debe multiplicar números y no simplemente tratar todo como texto.</p>
+</section>
+</section>
+<section id="tomar-decisiones-condicionales" class="level2">
+<h2 class="anchored" data-anchor-id="tomar-decisiones-condicionales">2. Tomar decisiones: condicionales</h2>
+<p>Buena parte del razonamiento jurídico funciona con condiciones:</p>
+<ul>
+<li>si falta un requisito, se observa;</li>
+<li>si el plazo venció, se rechaza;</li>
+<li>si cumple con los requisitos, se admite.</li>
+</ul>
+<p>En Python esa lógica se expresa con <code>if</code>, <code>elif</code> y <code>else</code>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>dias_retraso <span class="op">=</span> <span class="dv">4</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> dias_retraso <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Hay retraso"</span>)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"No hay retraso"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>También puede haber más de una ruta:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>puntaje <span class="op">=</span> <span class="dv">16</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> puntaje <span class="op">&gt;=</span> <span class="dv">18</span>:</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Excelente"</span>)</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> puntaje <span class="op">&gt;=</span> <span class="dv">11</span>:</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Aprobado"</span>)</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Desaprobado"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Conexión con el razonamiento legal
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Un condicional no “piensa”. Solo evalúa una regla.</p>
+<p>Por eso, programar no reemplaza el juicio jurídico. Lo que hace es <strong>ejecutar de forma consistente una regla previamente definida</strong>.</p>
+</div>
+</div>
+</section>
+<section id="repetir-instrucciones-bucles" class="level2">
+<h2 class="anchored" data-anchor-id="repetir-instrucciones-bucles">3. Repetir instrucciones: bucles</h2>
+<p>Cuando una tarea debe repetirse varias veces, usamos bucles.</p>
+<section id="for-recorrer-elementos" class="level3">
+<h3 class="anchored" data-anchor-id="for-recorrer-elementos"><code>for</code>: recorrer elementos</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>expedientes <span class="op">=</span> [<span class="st">"EXP-001"</span>, <span class="st">"EXP-002"</span>, <span class="st">"EXP-003"</span>]</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> expediente <span class="kw">in</span> expedientes:</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Revisando:"</span>, expediente)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="while-repetir-mientras-se-cumpla-una-condición" class="level3">
+<h3 class="anchored" data-anchor-id="while-repetir-mientras-se-cumpla-una-condición"><code>while</code>: repetir mientras se cumpla una condición</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>contador <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> contador <span class="op">&lt;=</span> <span class="dv">3</span>:</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Iteración"</span>, contador)</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    contador <span class="op">=</span> contador <span class="op">+</span> <span class="dv">1</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Los bucles son útiles cuando queremos revisar muchos datos sin copiar la misma instrucción una y otra vez.</p>
+</section>
+</section>
+<section id="reutilizar-lógica-funciones" class="level2">
+<h2 class="anchored" data-anchor-id="reutilizar-lógica-funciones">4. Reutilizar lógica: funciones</h2>
+<p>Una función sirve para agrupar instrucciones bajo un nombre y reutilizarlas.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> sumar(primer_numero, segundo_numero):</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>    resultado <span class="op">=</span> primer_numero <span class="op">+</span> segundo_numero</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> resultado</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(sumar(<span class="dv">3</span>, <span class="dv">4</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="por-qué-importan-las-funciones" class="level3">
+<h3 class="anchored" data-anchor-id="por-qué-importan-las-funciones">¿Por qué importan las funciones?</h3>
+<p>Porque permiten convertir una operación en una herramienta reutilizable.</p>
+<p>Por ejemplo:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calcular_multa(multa_por_dia, dias_retraso):</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> multa_por_dia <span class="op">*</span> dias_retraso</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(calcular_multa(<span class="dv">25</span>, <span class="dv">4</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Ahora no tienes que volver a escribir toda la operación cada vez. Solo llamas a la función.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Piensa así
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Una función se parece a una pequeña regla operativa:</p>
+<ul>
+<li>recibe datos,</li>
+<li>hace algo con ellos,</li>
+<li>devuelve un resultado.</li>
+</ul>
+<p>En lenguaje jurídico: una mini rutina de decisión.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="trabajar-con-varios-elementos-listas" class="level2">
+<h2 class="anchored" data-anchor-id="trabajar-con-varios-elementos-listas">5. Trabajar con varios elementos: listas</h2>
+<p>La carpeta <code>01-listas/</code> está pensada para aprender a guardar y recorrer varios datos, una competencia básica en cualquier introducción a Python. citeturn0view0</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>expedientes <span class="op">=</span> [<span class="st">"EXP-001"</span>, <span class="st">"EXP-002"</span>, <span class="st">"EXP-003"</span>, <span class="st">"EXP-004"</span>, <span class="st">"EXP-005"</span>]</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Cantidad de expedientes:"</span>, <span class="bu">len</span>(expedientes))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Las listas sirven para guardar varios elementos en orden. Son útiles para:</p>
+<ul>
+<li>expedientes;</li>
+<li>nombres de partes;</li>
+<li>artículos;</li>
+<li>resoluciones;</li>
+<li>fechas;</li>
+<li>correos.</li>
+</ul>
+<p>También pueden recorrerse con un bucle:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> expediente <span class="kw">in</span> expedientes:</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(expediente)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="trabajar-con-texto" class="level2">
+<h2 class="anchored" data-anchor-id="trabajar-con-texto">6. Trabajar con texto</h2>
+<p>La carpeta <code>02-texto/</code> se centra en limpiar y revisar cadenas de texto, una habilidad muy útil para documentos y bases jurídicas. citeturn0view0</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>texto <span class="op">=</span> <span class="st">" Hola, Mundo Python "</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>texto_sin_espacios <span class="op">=</span> texto.strip()</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(texto_sin_espacios.lower())</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(texto_sin_espacios.upper())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>También puede hacerse esto:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>archivo <span class="op">=</span> <span class="st">"reporte_2026.pdf"</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(archivo.startswith(<span class="st">"reporte_"</span>))</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(archivo.endswith(<span class="st">".pdf"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="para-qué-sirve-esto-en-derecho" class="level3">
+<h3 class="anchored" data-anchor-id="para-qué-sirve-esto-en-derecho">¿Para qué sirve esto en Derecho?</h3>
+<p>Para tareas como:</p>
+<ul>
+<li>normalizar nombres;</li>
+<li>revisar formatos de archivo;</li>
+<li>detectar palabras clave;</li>
+<li>limpiar correos o campos mal escritos;</li>
+<li>verificar documentos con estructura previsible.</li>
+</ul>
+</section>
+</section>
+<section id="trabajar-con-fechas-y-plazos" class="level2">
+<h2 class="anchored" data-anchor-id="trabajar-con-fechas-y-plazos">7. Trabajar con fechas y plazos</h2>
+<p>La carpeta <code>03-fechas/</code> introduce trabajo con fechas y plazos simples, algo especialmente pertinente para estudiantes de Derecho. citeturn0view0</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datetime <span class="im">import</span> datetime, timedelta</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>fecha_notificacion <span class="op">=</span> datetime.strptime(<span class="st">"2026-03-06"</span>, <span class="st">"%Y-%m-</span><span class="sc">%d</span><span class="st">"</span>)</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>plazo <span class="op">=</span> timedelta(days<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>fecha_vencimiento <span class="op">=</span> fecha_notificacion <span class="op">+</span> plazo</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Fecha de vencimiento:"</span>, fecha_vencimiento.date())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Esto permite modelar una operación muy común: <strong>a partir de una fecha de referencia, calcular otra fecha</strong>.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Ojo jurídico
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>En la práctica legal real, el cómputo de plazos puede depender de reglas más complejas:</p>
+<ul>
+<li>días hábiles o calendario;</li>
+<li>suspensión de plazos;</li>
+<li>horarios de cierre;</li>
+<li>notificación efectiva;</li>
+<li>normas especiales.</li>
+</ul>
+<p>Este tipo de script es una <strong>simplificación didáctica</strong>, no una solución jurídica completa.</p>
+</div>
+</div>
+</section>
+<section id="leer-y-guardar-archivos" class="level2">
+<h2 class="anchored" data-anchor-id="leer-y-guardar-archivos">8. Leer y guardar archivos</h2>
+<p>La carpeta <code>04-archivos/</code> está destinada a leer y guardar información en archivos, incluyendo ejemplos con datos estructurados. citeturn0view0</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> csv</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>ruta_csv <span class="op">=</span> Path(<span class="va">__file__</span>).parent <span class="op">/</span> <span class="st">"data"</span> <span class="op">/</span> <span class="st">"expedientes.csv"</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(ruta_csv, <span class="st">"r"</span>, encoding<span class="op">=</span><span class="st">"utf-8"</span>) <span class="im">as</span> archivo:</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>    lector <span class="op">=</span> csv.DictReader(archivo)</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> fila <span class="kw">in</span> lector:</span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(fila[<span class="st">"codigo"</span>], <span class="st">"-"</span>, fila[<span class="st">"estado"</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="por-qué-esto-importa" class="level3">
+<h3 class="anchored" data-anchor-id="por-qué-esto-importa">¿Por qué esto importa?</h3>
+<p>Porque gran parte del trabajo legal actual consiste en interactuar con documentos y datos almacenados en archivos:</p>
+<ul>
+<li>registros de expedientes;</li>
+<li>bases exportadas en CSV;</li>
+<li>listados;</li>
+<li>reportes;</li>
+<li>plantillas.</li>
+</ul>
+<p>Un archivo CSV puede abrirse en Excel, pero también puede procesarse con Python.</p>
+</section>
+</section>
+<section id="una-primera-aproximación-a-datos-tabulares" class="level2">
+<h2 class="anchored" data-anchor-id="una-primera-aproximación-a-datos-tabulares">9. Una primera aproximación a datos tabulares</h2>
+<p>La carpeta <code>05-datos/</code> ofrece una introducción básica a tablas con <code>pandas</code>, según el README del repositorio. citeturn0view0</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>ruta_csv <span class="op">=</span> Path(<span class="va">__file__</span>).parent <span class="op">/</span> <span class="st">"data"</span> <span class="op">/</span> <span class="st">"multas.csv"</span></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>tabla <span class="op">=</span> pd.read_csv(ruta_csv)</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>pendientes <span class="op">=</span> tabla[tabla[<span class="st">"estado"</span>] <span class="op">==</span> <span class="st">"Pendiente"</span>]</span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(pendientes)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Con esto ya puedes:</p>
+<ul>
+<li>leer tablas;</li>
+<li>filtrar registros;</li>
+<li>contar categorías;</li>
+<li>calcular promedios simples.</li>
+</ul>
+<section id="instalación-opcional-de-pandas" class="level3">
+<h3 class="anchored" data-anchor-id="instalación-opcional-de-pandas">Instalación opcional de <code>pandas</code></h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install pandas</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>O, en algunos equipos:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip3</span> install pandas</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Idea clave
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Cuando los datos crecen, trabajar fila por fila se vuelve tedioso. Las tablas permiten pasar de casos individuales a patrones:</p>
+<ul>
+<li>cuántos expedientes están pendientes;</li>
+<li>cuántos fueron cerrados;</li>
+<li>cuál es el promedio de multas;</li>
+<li>qué responsable tiene más carga.</li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section id="python-aplicado-al-derecho" class="level2">
+<h2 class="anchored" data-anchor-id="python-aplicado-al-derecho">10. Python aplicado al Derecho</h2>
+<p>La carpeta <code>06-ejercicios-derecho/</code> está pensada para practicar con ejemplos sencillos cercanos al ámbito jurídico y administrativo. citeturn0view0</p>
+<p>Entre las tareas que pueden trabajarse en esa lógica están:</p>
+<ul>
+<li>cálculo simple de multa;</li>
+<li>revisión de expedientes;</li>
+<li>validación de documentos;</li>
+<li>búsqueda de palabra clave;</li>
+<li>conteo por categorías.</li>
+</ul>
+<section id="ejemplo-cálculo-simple-de-multa" class="level3">
+<h3 class="anchored" data-anchor-id="ejemplo-cálculo-simple-de-multa">Ejemplo: cálculo simple de multa</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>multa_por_dia <span class="op">=</span> <span class="dv">25</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>dias_retraso <span class="op">=</span> <span class="dv">4</span></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>monto_total <span class="op">=</span> multa_por_dia <span class="op">*</span> dias_retraso</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Monto total:"</span>, monto_total)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="lo-importante-no-es-solo-el-resultado" class="level3">
+<h3 class="anchored" data-anchor-id="lo-importante-no-es-solo-el-resultado">Lo importante no es solo el resultado</h3>
+<p>Lo importante es aprender a ver que detrás de una tarea jurídica puede haber una estructura lógica como esta:</p>
+<ol type="1">
+<li>identificar los datos relevantes;</li>
+<li>definir la regla;</li>
+<li>ejecutar la operación;</li>
+<li>mostrar el resultado.</li>
+</ol>
+<p>Eso es pensamiento computacional aplicado a problemas legales.</p>
+</section>
+</section>
+<section id="qué-debes-practicar-hoy" class="level2">
+<h2 class="anchored" data-anchor-id="qué-debes-practicar-hoy">11. Qué debes practicar hoy</h2>
+<section id="ejercicio-1.-cambia-valores" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-1.-cambia-valores">Ejercicio 1. Cambia valores</h3>
+<p>Abre un archivo de <code>00-basicos/</code> y cambia los valores de las variables. Luego ejecútalo otra vez.</p>
+</section>
+<section id="ejercicio-2.-crea-una-condición" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-2.-crea-una-condición">Ejercicio 2. Crea una condición</h3>
+<p>Escribe un programa que indique si un expediente está “vigente” o “vencido” según el número de días transcurridos.</p>
+</section>
+<section id="ejercicio-3.-recorre-una-lista" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-3.-recorre-una-lista">Ejercicio 3. Recorre una lista</h3>
+<p>Crea una lista con cinco códigos de expediente y recórrela con <code>for</code>.</p>
+</section>
+<section id="ejercicio-4.-calcula-un-plazo" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-4.-calcula-un-plazo">Ejercicio 4. Calcula un plazo</h3>
+<p>Usa <code>datetime</code> y <code>timedelta</code> para sumar 10 días a una fecha de notificación.</p>
+</section>
+<section id="ejercicio-5.-adapta-un-ejemplo-jurídico" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-5.-adapta-un-ejemplo-jurídico">Ejercicio 5. Adapta un ejemplo jurídico</h3>
+<p>Toma un ejemplo simple de cálculo y conviértelo en una función.</p>
+</section>
+</section>
+<section id="error-prueba-y-aprendizaje" class="level2">
+<h2 class="anchored" data-anchor-id="error-prueba-y-aprendizaje">12. Error, prueba y aprendizaje</h2>
+<p>Uno de los mayores obstáculos al empezar no es técnico, sino mental: creer que equivocarse significa no servir para programar.</p>
+<p>No.&nbsp;Significa que estás aprendiendo.</p>
+<p>Un error en pantalla suele indicar una de estas cosas:</p>
+<ul>
+<li>un paréntesis faltante;</li>
+<li>una sangría incorrecta;</li>
+<li>un nombre mal escrito;</li>
+<li>un tipo de dato inesperado.</li>
+</ul>
+<p>Leer errores con calma es parte del proceso.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Regla de supervivencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>No luches contra el error como si fuera un enemigo moral.</p>
+<p>Léelo.<br>
+Ubícalo.<br>
+Corrígelo.<br>
+Vuelve a intentar.</p>
+</div>
+</div>
+</section>
+<section id="cierre" class="level2">
+<h2 class="anchored" data-anchor-id="cierre">13. Cierre</h2>
+<p>En esta sesión no buscamos formar desarrolladores profesionales en un par de horas. Buscamos algo más útil: que puedas reconocer que el código es una forma de representar instrucciones y que muchas tareas jurídicas pueden modelarse paso a paso.</p>
+<p>Python importa en Legal Tech no porque esté de moda, sino porque permite experimentar con lógica, automatización, análisis de información y construcción de soluciones simples.</p>
+<p>En el siguiente tramo del curso, estas bases servirán para pensar mejor procesos, datos, documentos y herramientas aplicadas al trabajo legal.</p>
+</section>
+<section id="para-seguir-practicando" class="level2">
+<h2 class="anchored" data-anchor-id="para-seguir-practicando">Para seguir practicando</h2>
+<p>Te recomiendo recorrer el repositorio en este orden:</p>
+<ol type="1">
+<li><code>00-basicos/</code></li>
+<li><code>01-listas/</code></li>
+<li><code>02-texto/</code></li>
+<li><code>03-fechas/</code></li>
+<li><code>04-archivos/</code></li>
+<li><code>05-datos/</code></li>
+<li><code>06-ejercicios-derecho/</code></li>
+</ol>
+</section>
+<section id="preguntas-de-repaso" class="level2">
+<h2 class="anchored" data-anchor-id="preguntas-de-repaso">Preguntas de repaso</h2>
+<ol type="1">
+<li>¿Qué diferencia hay entre una variable de texto y una de número?</li>
+<li>¿Qué hace un <code>if</code>?</li>
+<li>¿Qué diferencia hay entre <code>for</code> y <code>while</code>?</li>
+<li>¿Para qué sirve una función?</li>
+<li>¿Por qué las listas son útiles?</li>
+<li>¿Cómo puede Python ayudar en tareas jurídicas?</li>
+<li>¿Qué límites tiene automatizar una regla legal sin contexto?</li>
+</ol>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -702,8 +1314,8 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../parte-1-modulo-1/01-capitulo.html" class="pagination-link" aria-label="Sesión 1">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Sesión 1</span></span>
+      <a href="../parte-1-modulo-1/01-capitulo.html" class="pagination-link" aria-label="1. Del sistema binario al razonamiento computacional">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">1. Del sistema binario al razonamiento computacional</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

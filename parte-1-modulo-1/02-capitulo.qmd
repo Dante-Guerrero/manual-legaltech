@@ -1,1 +1,538 @@
-# Sesión 2
+---
+title: "2. Primeros pasos con Python"
+---
+
+## ¿Por qué un estudiante de Derecho debería aprender Python?
+
+Python es un lenguaje de programación conocido por su sintaxis clara y por ser especialmente amigable para quienes empiezan desde cero. En este curso no lo estudiaremos como un fin en sí mismo, sino como una herramienta para aprender a traducir instrucciones, criterios y reglas en pasos ordenados y ejecutables.
+
+Para un jurista, esto tiene un valor práctico inmediato. Muchas tareas del trabajo legal consisten en revisar información, clasificar documentos, calcular plazos, detectar patrones, ordenar expedientes, verificar requisitos y generar reportes. Todas esas tareas pueden describirse como instrucciones. Y cuando una instrucción puede describirse con claridad, también puede empezar a automatizarse.
+
+::: {.callout-important}
+## Idea central
+
+Programar no significa “pensar como ingeniero”. Significa **aprender a descomponer un problema en pasos claros, verificables y repetibles**.
+
+Eso, por cierto, también es una habilidad jurídica.
+:::
+
+## Objetivos de aprendizaje
+
+Al finalizar este capítulo, deberías poder:
+
+- comprender qué es Python y para qué sirve en contextos legales;
+- ejecutar scripts sencillos desde una terminal o desde VS Code;
+- reconocer y usar variables, tipos de datos, entradas y salidas;
+- escribir condicionales, bucles y funciones básicas;
+- entender cómo listas, texto, fechas, archivos y tablas pueden servir para resolver problemas jurídicos simples;
+- relacionar el código con tareas reales del ejercicio legal y administrativo.
+
+## Antes de empezar
+
+Para trabajar con este capítulo necesitas tener instalado:
+
+- Python;
+- Git;
+- una terminal o consola;
+- opcionalmente, VS Code.
+
+El repositorio `python-intro` está pensado precisamente para estudiantes de Derecho sin experiencia previa en programación y propone una ruta gradual para empezar desde cero. citeturn0view0
+
+::: {.callout-note}
+## Recomendación de trabajo
+
+No intentes entender todo en una sola lectura. La mejor forma de aprender aquí es esta:
+
+1. ejecutar un archivo;
+2. leer los comentarios;
+3. cambiar uno o dos valores;
+4. volver a ejecutarlo;
+5. observar qué cambió.
+
+La mejor pedagogía aquí no es memorizar, sino probar.
+:::
+
+## Cómo clonar y ejecutar el repositorio
+
+Según el README del repositorio, los requisitos mínimos son Python, Git, una terminal y, de forma opcional, VS Code. También recomienda comenzar ejecutando scripts sencillos desde la carpeta del proyecto. citeturn0view0
+
+### 1. Clonar el repositorio
+
+```bash
+git clone https://github.com/Dante-Guerrero/python-intro.git
+cd python-intro
+```
+
+### 2. Ejecutar un archivo
+
+```bash
+python 00-basicos/00-helloworld.py
+```
+
+En algunos equipos puede ser necesario usar:
+
+```bash
+python3 00-basicos/00-helloworld.py
+```
+
+## La ruta de aprendizaje del repositorio
+
+El repositorio está organizado como una progresión gradual, con carpetas dedicadas a básicos, listas, texto, fechas, archivos, datos y ejercicios jurídicos. Esa estructura está descrita en el README y conviene recorrerla en este orden. citeturn0view0
+
+1. `00-basicos/`
+2. `01-listas/`
+3. `02-texto/`
+4. `03-fechas/`
+5. `04-archivos/`
+6. `05-datos/`
+7. `06-ejercicios-derecho/`
+
+Cada carpeta introduce una idea nueva y luego la conecta con ejemplos cada vez más cercanos al trabajo jurídico.
+
+## 1. Empezar por lo básico
+
+La carpeta `00-basicos/` contiene el primer contacto con Python: sintaxis elemental, variables, entradas y salidas, conversión de tipos, operadores, condicionales, bucles y funciones. citeturn0view0
+
+### Tu primer programa
+
+Un programa tan simple como este:
+
+```python
+print("Hola, mundo")
+```
+
+ya muestra una idea importante: **el código es una instrucción escrita con una sintaxis específica**.
+
+### Variables: guardar información
+
+Una variable permite guardar un dato para usarlo después.
+
+```python
+nombre_estudiante = "Manu"
+edad = 36
+promedio = 1.75
+esta_matriculado = True
+
+print(type(nombre_estudiante))
+print(type(edad))
+print(type(promedio))
+print(type(esta_matriculado))
+```
+
+Aquí aparecen algunos tipos básicos:
+
+- `str`: texto;
+- `int`: número entero;
+- `float`: número decimal;
+- `bool`: verdadero o falso.
+
+::: {.callout-tip}
+## Traducción al mundo jurídico
+
+Piensa en una variable como un casillero con etiqueta:
+
+- `numero_expediente`
+- `monto_multa`
+- `plazo_dias`
+- `documento_valido`
+
+El nombre cambia, pero la lógica es la misma: **guardar un dato para trabajar con él**.
+:::
+
+### Entradas y salidas
+
+Un programa también puede pedir datos al usuario y mostrar resultados.
+
+```python
+nombre = input("Escribe tu nombre: ")
+print("Hola,", nombre)
+```
+
+Esto es útil cuando queremos que el programa trabaje con información que no está fija desde el inicio.
+
+### Convertir tipos
+
+Muchas veces el programa recibe texto y necesitamos convertirlo en número.
+
+```python
+dias = int(input("¿Cuántos días de retraso hubo? "))
+multa_por_dia = 25
+total = dias * multa_por_dia
+
+print("Monto total:", total)
+```
+
+Si no convertimos el dato, Python no sabrá que debe multiplicar números y no simplemente tratar todo como texto.
+
+## 2. Tomar decisiones: condicionales
+
+Buena parte del razonamiento jurídico funciona con condiciones:
+
+- si falta un requisito, se observa;
+- si el plazo venció, se rechaza;
+- si cumple con los requisitos, se admite.
+
+En Python esa lógica se expresa con `if`, `elif` y `else`.
+
+```python
+dias_retraso = 4
+
+if dias_retraso > 0:
+    print("Hay retraso")
+else:
+    print("No hay retraso")
+```
+
+También puede haber más de una ruta:
+
+```python
+puntaje = 16
+
+if puntaje >= 18:
+    print("Excelente")
+elif puntaje >= 11:
+    print("Aprobado")
+else:
+    print("Desaprobado")
+```
+
+::: {.callout-important}
+## Conexión con el razonamiento legal
+
+Un condicional no “piensa”. Solo evalúa una regla.
+
+Por eso, programar no reemplaza el juicio jurídico. Lo que hace es **ejecutar de forma consistente una regla previamente definida**.
+:::
+
+## 3. Repetir instrucciones: bucles
+
+Cuando una tarea debe repetirse varias veces, usamos bucles.
+
+### `for`: recorrer elementos
+
+```python
+expedientes = ["EXP-001", "EXP-002", "EXP-003"]
+
+for expediente in expedientes:
+    print("Revisando:", expediente)
+```
+
+### `while`: repetir mientras se cumpla una condición
+
+```python
+contador = 1
+
+while contador <= 3:
+    print("Iteración", contador)
+    contador = contador + 1
+```
+
+Los bucles son útiles cuando queremos revisar muchos datos sin copiar la misma instrucción una y otra vez.
+
+## 4. Reutilizar lógica: funciones
+
+Una función sirve para agrupar instrucciones bajo un nombre y reutilizarlas.
+
+```python
+def sumar(primer_numero, segundo_numero):
+    resultado = primer_numero + segundo_numero
+    return resultado
+
+print(sumar(3, 4))
+```
+
+### ¿Por qué importan las funciones?
+
+Porque permiten convertir una operación en una herramienta reutilizable.
+
+Por ejemplo:
+
+```python
+def calcular_multa(multa_por_dia, dias_retraso):
+    return multa_por_dia * dias_retraso
+
+print(calcular_multa(25, 4))
+```
+
+Ahora no tienes que volver a escribir toda la operación cada vez. Solo llamas a la función.
+
+::: {.callout-note}
+## Piensa así
+
+Una función se parece a una pequeña regla operativa:
+
+- recibe datos,
+- hace algo con ellos,
+- devuelve un resultado.
+
+En lenguaje jurídico: una mini rutina de decisión.
+:::
+
+## 5. Trabajar con varios elementos: listas
+
+La carpeta `01-listas/` está pensada para aprender a guardar y recorrer varios datos, una competencia básica en cualquier introducción a Python. citeturn0view0
+
+```python
+expedientes = ["EXP-001", "EXP-002", "EXP-003", "EXP-004", "EXP-005"]
+print("Cantidad de expedientes:", len(expedientes))
+```
+
+Las listas sirven para guardar varios elementos en orden. Son útiles para:
+
+- expedientes;
+- nombres de partes;
+- artículos;
+- resoluciones;
+- fechas;
+- correos.
+
+También pueden recorrerse con un bucle:
+
+```python
+for expediente in expedientes:
+    print(expediente)
+```
+
+## 6. Trabajar con texto
+
+La carpeta `02-texto/` se centra en limpiar y revisar cadenas de texto, una habilidad muy útil para documentos y bases jurídicas. citeturn0view0
+
+```python
+texto = " Hola, Mundo Python "
+texto_sin_espacios = texto.strip()
+
+print(texto_sin_espacios.lower())
+print(texto_sin_espacios.upper())
+```
+
+También puede hacerse esto:
+
+```python
+archivo = "reporte_2026.pdf"
+print(archivo.startswith("reporte_"))
+print(archivo.endswith(".pdf"))
+```
+
+### ¿Para qué sirve esto en Derecho?
+
+Para tareas como:
+
+- normalizar nombres;
+- revisar formatos de archivo;
+- detectar palabras clave;
+- limpiar correos o campos mal escritos;
+- verificar documentos con estructura previsible.
+
+## 7. Trabajar con fechas y plazos
+
+La carpeta `03-fechas/` introduce trabajo con fechas y plazos simples, algo especialmente pertinente para estudiantes de Derecho. citeturn0view0
+
+```python
+from datetime import datetime, timedelta
+
+fecha_notificacion = datetime.strptime("2026-03-06", "%Y-%m-%d")
+plazo = timedelta(days=5)
+fecha_vencimiento = fecha_notificacion + plazo
+
+print("Fecha de vencimiento:", fecha_vencimiento.date())
+```
+
+Esto permite modelar una operación muy común: **a partir de una fecha de referencia, calcular otra fecha**.
+
+::: {.callout-warning}
+## Ojo jurídico
+
+En la práctica legal real, el cómputo de plazos puede depender de reglas más complejas:
+
+- días hábiles o calendario;
+- suspensión de plazos;
+- horarios de cierre;
+- notificación efectiva;
+- normas especiales.
+
+Este tipo de script es una **simplificación didáctica**, no una solución jurídica completa.
+:::
+
+## 8. Leer y guardar archivos
+
+La carpeta `04-archivos/` está destinada a leer y guardar información en archivos, incluyendo ejemplos con datos estructurados. citeturn0view0
+
+```python
+import csv
+from pathlib import Path
+
+ruta_csv = Path(__file__).parent / "data" / "expedientes.csv"
+
+with open(ruta_csv, "r", encoding="utf-8") as archivo:
+    lector = csv.DictReader(archivo)
+    for fila in lector:
+        print(fila["codigo"], "-", fila["estado"])
+```
+
+### ¿Por qué esto importa?
+
+Porque gran parte del trabajo legal actual consiste en interactuar con documentos y datos almacenados en archivos:
+
+- registros de expedientes;
+- bases exportadas en CSV;
+- listados;
+- reportes;
+- plantillas.
+
+Un archivo CSV puede abrirse en Excel, pero también puede procesarse con Python.
+
+## 9. Una primera aproximación a datos tabulares
+
+La carpeta `05-datos/` ofrece una introducción básica a tablas con `pandas`, según el README del repositorio. citeturn0view0
+
+```python
+import pandas as pd
+from pathlib import Path
+
+ruta_csv = Path(__file__).parent / "data" / "multas.csv"
+tabla = pd.read_csv(ruta_csv)
+
+pendientes = tabla[tabla["estado"] == "Pendiente"]
+print(pendientes)
+```
+
+Con esto ya puedes:
+
+- leer tablas;
+- filtrar registros;
+- contar categorías;
+- calcular promedios simples.
+
+### Instalación opcional de `pandas`
+
+```bash
+pip install pandas
+```
+
+O, en algunos equipos:
+
+```bash
+pip3 install pandas
+```
+
+::: {.callout-tip}
+## Idea clave
+
+Cuando los datos crecen, trabajar fila por fila se vuelve tedioso. Las tablas permiten pasar de casos individuales a patrones:
+
+- cuántos expedientes están pendientes;
+- cuántos fueron cerrados;
+- cuál es el promedio de multas;
+- qué responsable tiene más carga.
+:::
+
+## 10. Python aplicado al Derecho
+
+La carpeta `06-ejercicios-derecho/` está pensada para practicar con ejemplos sencillos cercanos al ámbito jurídico y administrativo. citeturn0view0
+
+Entre las tareas que pueden trabajarse en esa lógica están:
+
+- cálculo simple de multa;
+- revisión de expedientes;
+- validación de documentos;
+- búsqueda de palabra clave;
+- conteo por categorías.
+
+### Ejemplo: cálculo simple de multa
+
+```python
+multa_por_dia = 25
+dias_retraso = 4
+monto_total = multa_por_dia * dias_retraso
+
+print("Monto total:", monto_total)
+```
+
+### Lo importante no es solo el resultado
+
+Lo importante es aprender a ver que detrás de una tarea jurídica puede haber una estructura lógica como esta:
+
+1. identificar los datos relevantes;
+2. definir la regla;
+3. ejecutar la operación;
+4. mostrar el resultado.
+
+Eso es pensamiento computacional aplicado a problemas legales.
+
+## 11. Qué debes practicar hoy
+
+### Ejercicio 1. Cambia valores
+
+Abre un archivo de `00-basicos/` y cambia los valores de las variables. Luego ejecútalo otra vez.
+
+### Ejercicio 2. Crea una condición
+
+Escribe un programa que indique si un expediente está “vigente” o “vencido” según el número de días transcurridos.
+
+### Ejercicio 3. Recorre una lista
+
+Crea una lista con cinco códigos de expediente y recórrela con `for`.
+
+### Ejercicio 4. Calcula un plazo
+
+Usa `datetime` y `timedelta` para sumar 10 días a una fecha de notificación.
+
+### Ejercicio 5. Adapta un ejemplo jurídico
+
+Toma un ejemplo simple de cálculo y conviértelo en una función.
+
+## 12. Error, prueba y aprendizaje
+
+Uno de los mayores obstáculos al empezar no es técnico, sino mental: creer que equivocarse significa no servir para programar.
+
+No. Significa que estás aprendiendo.
+
+Un error en pantalla suele indicar una de estas cosas:
+
+- un paréntesis faltante;
+- una sangría incorrecta;
+- un nombre mal escrito;
+- un tipo de dato inesperado.
+
+Leer errores con calma es parte del proceso.
+
+::: {.callout-important}
+## Regla de supervivencia
+
+No luches contra el error como si fuera un enemigo moral.
+
+Léelo.  
+Ubícalo.  
+Corrígelo.  
+Vuelve a intentar.
+:::
+
+## 13. Cierre
+
+En esta sesión no buscamos formar desarrolladores profesionales en un par de horas. Buscamos algo más útil: que puedas reconocer que el código es una forma de representar instrucciones y que muchas tareas jurídicas pueden modelarse paso a paso.
+
+Python importa en Legal Tech no porque esté de moda, sino porque permite experimentar con lógica, automatización, análisis de información y construcción de soluciones simples.
+
+En el siguiente tramo del curso, estas bases servirán para pensar mejor procesos, datos, documentos y herramientas aplicadas al trabajo legal.
+
+## Para seguir practicando
+
+Te recomiendo recorrer el repositorio en este orden:
+
+1. `00-basicos/`
+2. `01-listas/`
+3. `02-texto/`
+4. `03-fechas/`
+5. `04-archivos/`
+6. `05-datos/`
+7. `06-ejercicios-derecho/`
+
+## Preguntas de repaso
+
+1. ¿Qué diferencia hay entre una variable de texto y una de número?
+2. ¿Qué hace un `if`?
+3. ¿Qué diferencia hay entre `for` y `while`?
+4. ¿Para qué sirve una función?
+5. ¿Por qué las listas son útiles?
+6. ¿Cómo puede Python ayudar en tareas jurídicas?
+7. ¿Qué límites tiene automatizar una regla legal sin contexto?

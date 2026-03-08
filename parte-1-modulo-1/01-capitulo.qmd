@@ -1,1 +1,126 @@
-# Sesión 1
+# 1. Del sistema binario al razonamiento computacional
+
+## ¿Por qué empezar por el sistema binario?
+
+En un curso de Legal Tech, puede parecer extraño comenzar hablando de ceros y unos. Después de todo, los abogados estudiamos normas, argumentos, instituciones y procedimientos, no cables ni microchips. Pero hay una buena razón para hacerlo: **si queremos entender cómo funciona la tecnología que hoy impacta al Derecho, primero debemos entender cómo una computadora representa la información y ejecuta instrucciones**.
+
+La idea central de esta sesión es simple: una computadora no “entiende” textos, imágenes, videos, contratos o sentencias como los entendemos nosotros. Lo que hace es **representar toda esa información mediante patrones de bits**, es decir, secuencias de **0** y **1**. A partir de allí puede almacenar datos, hacer cálculos, comparar valores y ejecutar instrucciones.
+
+::: {.callout-important}
+## Idea clave
+
+Una computadora puede procesar números, texto, imágenes y sonido porque **todo puede representarse en binario**.
+:::
+
+## Objetivo de la sesión
+
+Al finalizar esta sesión, deberías ser capaz de:
+
+- comprender qué es el sistema binario;
+- convertir números decimales sencillos a binario y viceversa;
+- entender de forma básica cómo una computadora representa texto;
+- explicar por qué el binario puede verse como el lenguaje más elemental de una computadora;
+- distinguir entre lenguaje máquina, lenguajes de programación y pseudocódigo;
+- conectar estas ideas con el razonamiento jurídico estructurado.
+
+## 1. ¿Qué hace realmente una computadora?
+
+Una computadora recibe, almacena, transforma y devuelve información. Lo hace a gran velocidad, pero siguiendo una lógica bastante simple:
+
+1. **recibe datos**;
+2. **los representa internamente**;
+3. **ejecuta instrucciones** sobre esos datos;
+4. **produce una salida**.
+
+Por ejemplo, cuando escribes una demanda en tu laptop:
+
+- presionas teclas;
+- la computadora detecta esas entradas;
+- cada carácter se representa numéricamente;
+- esos números se almacenan como bits;
+- el procesador ejecuta instrucciones;
+- la pantalla muestra el resultado.
+
+Es decir, detrás de algo aparentemente cotidiano hay una cadena de representación y procesamiento. Muy elegante, muy poderosa, y construida sobre un sistema que solo tiene dos símbolos.
+
+## 2. ¿Por qué binario?
+
+Las computadoras funcionan con circuitos electrónicos. En una explicación simplificada, esos circuitos pueden distinguir entre dos estados:
+
+- encendido / apagado,
+- pasa corriente / no pasa corriente,
+- alto voltaje / bajo voltaje.
+
+Por eso resulta natural usar un sistema con solo dos valores:
+
+- **0**
+- **1**
+
+A cada uno de esos valores se le llama **bit**, abreviatura de *binary digit*.
+
+::: {.callout-note}
+## Vocabulario básico
+
+- **bit**: unidad mínima de información, puede ser 0 o 1.
+- **byte**: grupo de 8 bits.
+- **binario**: sistema numérico en base 2.
+- **decimal**: sistema numérico usual, en base 10.
+:::
+
+## 3. Del sistema decimal al sistema binario
+
+Nosotros usamos normalmente el sistema decimal, que tiene diez símbolos: 0, 1, 2, 3, 4, 5, 6, 7, 8 y 9.
+
+El sistema binario solo tiene dos: 0 y 1.
+
+La diferencia no está solo en los símbolos, sino en el valor posicional.
+
+### Sistema decimal
+
+En decimal, el número 347 significa:
+
+- 3 centenas,
+- 4 decenas,
+- 7 unidades.
+
+Es decir:
+
+347 = 3×10² + 4×10¹ + 7×10⁰
+
+### Sistema binario
+
+En binario, cada posición representa una potencia de 2:
+
+- 2⁰ = 1
+- 2¹ = 2
+- 2² = 4
+- 2³ = 8
+- 2⁴ = 16
+- 2⁵ = 32
+- 2⁶ = 64
+- 2⁷ = 128
+
+Por ejemplo, el número binario `1011` significa:
+
+- 1×2³ = 8
+- 0×2² = 0
+- 1×2¹ = 2
+- 1×2⁰ = 1
+
+Entonces:
+
+`1011₂ = 11₁₀`
+
+## 4. Cómo convertir de binario a decimal
+
+El método más directo es multiplicar cada bit por su potencia de 2 correspondiente y sumar.
+
+### Ejemplo 1
+
+Convertir `1101` a decimal.
+
+```text
+1×2³ = 8
+1×2² = 4
+0×2¹ = 0
+1×2⁰ = 1

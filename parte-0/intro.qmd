@@ -1,1 +1,19 @@
-# Introducción
+---
+title: "Introducción"
+---
+
+El curso **Legal Tech** parte de una idea simple: el derecho ya no se ejerce en un entorno puramente analógico. Hoy, buena parte de la actividad jurídica se desarrolla en contextos atravesados por plataformas digitales, automatización, datos, servicios en la nube, inteligencia artificial y nuevas formas de interacción económica y social. En consecuencia, comprender la relación entre derecho y tecnología ya no es una habilidad complementaria ni una curiosidad académica. Es una necesidad formativa para cualquier estudiante de Derecho que quiera entender con seriedad el presente de la profesión y prepararse para sus transformaciones futuras.
+
+Este curso ha sido diseñado para ofrecer una aproximación clara, crítica y aplicada a ese escenario. Su propósito no es reemplazar la formación jurídica clásica, sino ampliarla. Se busca que el estudiante sea capaz de comprender cómo funcionan ciertas herramientas tecnológicas, identificar los problemas jurídicos que generan, evaluar sus riesgos y reconocer también su potencial para mejorar la práctica legal, la gestión de información, la producción documental, la toma de decisiones y el acceso a la justicia. En otras palabras, el curso invita a pensar como jurista en un mundo donde la tecnología ya forma parte del problema, pero también puede formar parte de la solución.
+
+::: {.callout-tip title="Una idea clave para aprovechar el curso"}
+No necesitas venir de un mundo técnico para destacar en **Legal Tech**. Lo que sí necesitas es curiosidad, disposición para aprender y voluntad para experimentar. Este curso no te pide que dejes de pensar como abogado o abogada; te pide que amplíes esa manera de pensar para dialogar mejor con herramientas, procesos y entornos que ya están transformando el ejercicio profesional.
+:::
+
+A lo largo del semestre, el curso recorre cuatro grandes ejes. En el primero, aborda el pensamiento computacional para juristas y la representación lógica de instrucciones y problemas legales. En el segundo, se concentra en la automatización y el trabajo con datos jurídicos, incluyendo organización de información, visualización y generación de documentos. En el tercero, introduce la arquitectura básica de la web, el uso de herramientas en la nube y los principales desafíos de seguridad relevantes para el sector legal. Finalmente, en el cuarto módulo, examina la inteligencia artificial aplicada al derecho, sus capacidades, límites, riesgos y exigencias de uso responsable.
+
+La importancia del curso no reside únicamente en aprender nuevas herramientas. Su verdadero valor está en desarrollar criterio. En un contexto en el que abundan discursos entusiastas, promesas exageradas y soluciones tecnológicas presentadas como si resolvieran por sí mismas problemas complejos, el profesional del derecho necesita algo más que fascinación por la novedad. Necesita capacidad de análisis, sensibilidad ética, comprensión regulatoria y juicio práctico. Necesita saber cuándo una herramienta aporta valor, cuándo introduce riesgos y cuándo simplemente añade ruido con apariencia de innovación.
+
+Este manual ha sido concebido para acompañarte en ese proceso de aprendizaje. No está pensado solo para ser leído, sino para ser usado. Revísalo antes y después de cada sesión, vuelve sobre los conceptos principales, desarrolla los ejercicios y procura vincular cada tema con situaciones reales del trabajo jurídico. Mientras más conectes los contenidos con problemas concretos, más sentido tendrá lo aprendido.
+
+Aprovechar bien este curso supone asumir una actitud activa. Probar, preguntar, ensayar, equivocarse, corregir y volver a intentar. Esa es parte normal del aprendizaje cuando se ingresa a un campo nuevo. Si trabajas el curso con apertura, rigor y constancia, no solo entenderás mejor cómo interactúan el derecho y la tecnología. También estarás mejor preparado para participar de esa transformación con inteligencia, responsabilidad y una visión profesional mucho más sólida.

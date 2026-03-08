@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Sesión 1 – Legal Tech, Manual del Curso</title>
+<title>1. Del sistema binario al razonamiento computacional – Legal Tech, Manual del Curso</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -86,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-1-modulo-1/00-presentacion.html">I. Pensamiento Computacional para juristas</a></li><li class="breadcrumb-item"><a href="../parte-1-modulo-1/01-capitulo.html"><span class="chapter-title">Sesión 1</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-1-modulo-1/00-presentacion.html">I. Pensamiento Computacional para juristas</a></li><li class="breadcrumb-item"><a href="../parte-1-modulo-1/01-capitulo.html"><span class="chapter-title">1. Del sistema binario al razonamiento computacional</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -137,7 +137,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-1-modulo-1/01-capitulo.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Sesión 1</span></a>
+  <a href="../parte-1-modulo-1/01-capitulo.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">1. Del sistema binario al razonamiento computacional</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -271,15 +271,33 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#por-qué-empezar-por-el-sistema-binario" id="toc-por-qué-empezar-por-el-sistema-binario" class="nav-link active" data-scroll-target="#por-qué-empezar-por-el-sistema-binario">¿Por qué empezar por el sistema binario?</a></li>
+  <li><a href="#objetivo-de-la-sesión" id="toc-objetivo-de-la-sesión" class="nav-link" data-scroll-target="#objetivo-de-la-sesión">Objetivo de la sesión</a></li>
+  <li><a href="#qué-hace-realmente-una-computadora" id="toc-qué-hace-realmente-una-computadora" class="nav-link" data-scroll-target="#qué-hace-realmente-una-computadora">1. ¿Qué hace realmente una computadora?</a></li>
+  <li><a href="#por-qué-binario" id="toc-por-qué-binario" class="nav-link" data-scroll-target="#por-qué-binario">2. ¿Por qué binario?</a></li>
+  <li><a href="#del-sistema-decimal-al-sistema-binario" id="toc-del-sistema-decimal-al-sistema-binario" class="nav-link" data-scroll-target="#del-sistema-decimal-al-sistema-binario">3. Del sistema decimal al sistema binario</a>
+  <ul class="collapse">
+  <li><a href="#sistema-decimal" id="toc-sistema-decimal" class="nav-link" data-scroll-target="#sistema-decimal">Sistema decimal</a></li>
+  <li><a href="#sistema-binario" id="toc-sistema-binario" class="nav-link" data-scroll-target="#sistema-binario">Sistema binario</a></li>
+  </ul></li>
+  <li><a href="#cómo-convertir-de-binario-a-decimal" id="toc-cómo-convertir-de-binario-a-decimal" class="nav-link" data-scroll-target="#cómo-convertir-de-binario-a-decimal">4. Cómo convertir de binario a decimal</a>
+  <ul class="collapse">
+  <li><a href="#ejemplo-1" id="toc-ejemplo-1" class="nav-link" data-scroll-target="#ejemplo-1">Ejemplo 1</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-1-modulo-1/00-presentacion.html">I. Pensamiento Computacional para juristas</a></li><li class="breadcrumb-item"><a href="../parte-1-modulo-1/01-capitulo.html"><span class="chapter-title">Sesión 1</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-1-modulo-1/00-presentacion.html">I. Pensamiento Computacional para juristas</a></li><li class="breadcrumb-item"><a href="../parte-1-modulo-1/01-capitulo.html"><span class="chapter-title">1. Del sistema binario al razonamiento computacional</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Sesión 1</span></h1>
+<h1 class="title"><span class="chapter-title">1. Del sistema binario al razonamiento computacional</span></h1>
 </div>
 
 
@@ -296,8 +314,140 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="por-qué-empezar-por-el-sistema-binario" class="level2">
+<h2 class="anchored" data-anchor-id="por-qué-empezar-por-el-sistema-binario">¿Por qué empezar por el sistema binario?</h2>
+<p>En un curso de Legal Tech, puede parecer extraño comenzar hablando de ceros y unos. Después de todo, los abogados estudiamos normas, argumentos, instituciones y procedimientos, no cables ni microchips. Pero hay una buena razón para hacerlo: <strong>si queremos entender cómo funciona la tecnología que hoy impacta al Derecho, primero debemos entender cómo una computadora representa la información y ejecuta instrucciones</strong>.</p>
+<p>La idea central de esta sesión es simple: una computadora no “entiende” textos, imágenes, videos, contratos o sentencias como los entendemos nosotros. Lo que hace es <strong>representar toda esa información mediante patrones de bits</strong>, es decir, secuencias de <strong>0</strong> y <strong>1</strong>. A partir de allí puede almacenar datos, hacer cálculos, comparar valores y ejecutar instrucciones.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Idea clave
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Una computadora puede procesar números, texto, imágenes y sonido porque <strong>todo puede representarse en binario</strong>.</p>
+</div>
+</div>
+</section>
+<section id="objetivo-de-la-sesión" class="level2">
+<h2 class="anchored" data-anchor-id="objetivo-de-la-sesión">Objetivo de la sesión</h2>
+<p>Al finalizar esta sesión, deberías ser capaz de:</p>
+<ul>
+<li>comprender qué es el sistema binario;</li>
+<li>convertir números decimales sencillos a binario y viceversa;</li>
+<li>entender de forma básica cómo una computadora representa texto;</li>
+<li>explicar por qué el binario puede verse como el lenguaje más elemental de una computadora;</li>
+<li>distinguir entre lenguaje máquina, lenguajes de programación y pseudocódigo;</li>
+<li>conectar estas ideas con el razonamiento jurídico estructurado.</li>
+</ul>
+</section>
+<section id="qué-hace-realmente-una-computadora" class="level2">
+<h2 class="anchored" data-anchor-id="qué-hace-realmente-una-computadora">1. ¿Qué hace realmente una computadora?</h2>
+<p>Una computadora recibe, almacena, transforma y devuelve información. Lo hace a gran velocidad, pero siguiendo una lógica bastante simple:</p>
+<ol type="1">
+<li><strong>recibe datos</strong>;</li>
+<li><strong>los representa internamente</strong>;</li>
+<li><strong>ejecuta instrucciones</strong> sobre esos datos;</li>
+<li><strong>produce una salida</strong>.</li>
+</ol>
+<p>Por ejemplo, cuando escribes una demanda en tu laptop:</p>
+<ul>
+<li>presionas teclas;</li>
+<li>la computadora detecta esas entradas;</li>
+<li>cada carácter se representa numéricamente;</li>
+<li>esos números se almacenan como bits;</li>
+<li>el procesador ejecuta instrucciones;</li>
+<li>la pantalla muestra el resultado.</li>
+</ul>
+<p>Es decir, detrás de algo aparentemente cotidiano hay una cadena de representación y procesamiento. Muy elegante, muy poderosa, y construida sobre un sistema que solo tiene dos símbolos.</p>
+</section>
+<section id="por-qué-binario" class="level2">
+<h2 class="anchored" data-anchor-id="por-qué-binario">2. ¿Por qué binario?</h2>
+<p>Las computadoras funcionan con circuitos electrónicos. En una explicación simplificada, esos circuitos pueden distinguir entre dos estados:</p>
+<ul>
+<li>encendido / apagado,</li>
+<li>pasa corriente / no pasa corriente,</li>
+<li>alto voltaje / bajo voltaje.</li>
+</ul>
+<p>Por eso resulta natural usar un sistema con solo dos valores:</p>
+<ul>
+<li><strong>0</strong></li>
+<li><strong>1</strong></li>
+</ul>
+<p>A cada uno de esos valores se le llama <strong>bit</strong>, abreviatura de <em>binary digit</em>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Vocabulario básico
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>bit</strong>: unidad mínima de información, puede ser 0 o 1.</li>
+<li><strong>byte</strong>: grupo de 8 bits.</li>
+<li><strong>binario</strong>: sistema numérico en base 2.</li>
+<li><strong>decimal</strong>: sistema numérico usual, en base 10.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="del-sistema-decimal-al-sistema-binario" class="level2">
+<h2 class="anchored" data-anchor-id="del-sistema-decimal-al-sistema-binario">3. Del sistema decimal al sistema binario</h2>
+<p>Nosotros usamos normalmente el sistema decimal, que tiene diez símbolos: 0, 1, 2, 3, 4, 5, 6, 7, 8 y 9.</p>
+<p>El sistema binario solo tiene dos: 0 y 1.</p>
+<p>La diferencia no está solo en los símbolos, sino en el valor posicional.</p>
+<section id="sistema-decimal" class="level3">
+<h3 class="anchored" data-anchor-id="sistema-decimal">Sistema decimal</h3>
+<p>En decimal, el número 347 significa:</p>
+<ul>
+<li>3 centenas,</li>
+<li>4 decenas,</li>
+<li>7 unidades.</li>
+</ul>
+<p>Es decir:</p>
+<p>347 = 3×10² + 4×10¹ + 7×10⁰</p>
+</section>
+<section id="sistema-binario" class="level3">
+<h3 class="anchored" data-anchor-id="sistema-binario">Sistema binario</h3>
+<p>En binario, cada posición representa una potencia de 2:</p>
+<ul>
+<li>2⁰ = 1</li>
+<li>2¹ = 2</li>
+<li>2² = 4</li>
+<li>2³ = 8</li>
+<li>2⁴ = 16</li>
+<li>2⁵ = 32</li>
+<li>2⁶ = 64</li>
+<li>2⁷ = 128</li>
+</ul>
+<p>Por ejemplo, el número binario <code>1011</code> significa:</p>
+<ul>
+<li>1×2³ = 8</li>
+<li>0×2² = 0</li>
+<li>1×2¹ = 2</li>
+<li>1×2⁰ = 1</li>
+</ul>
+<p>Entonces:</p>
+<p><code>1011₂ = 11₁₀</code></p>
+</section>
+</section>
+<section id="cómo-convertir-de-binario-a-decimal" class="level2">
+<h2 class="anchored" data-anchor-id="cómo-convertir-de-binario-a-decimal">4. Cómo convertir de binario a decimal</h2>
+<p>El método más directo es multiplicar cada bit por su potencia de 2 correspondiente y sumar.</p>
+<section id="ejemplo-1" class="level3">
+<h3 class="anchored" data-anchor-id="ejemplo-1">Ejemplo 1</h3>
+<p>Convertir <code>1101</code> a decimal.</p>
+<p>```text 1×2³ = 8 1×2² = 4 0×2¹ = 0 1×2⁰ = 1</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -1,1 +1,110 @@
-# 🔹 Evaluación Continua 2
+---
+title: "🔹 Evaluación Continua 2"
+page-layout: article
+---
+
+## Página web personal publicada en GitHub Pages
+
+La Evaluación Continua 2 consiste en la elaboración de una **página web personal** que deberá ser publicada a través de **GitHub Pages**. Se trata de un trabajo **individual** en el que cada estudiante desarrollará un sitio sencillo, claro y funcional, orientado a construir una primera presencia profesional en la web.
+
+Esta evaluación se conecta directamente con los contenidos del módulo sobre **web, nube y seguridad para el sector legal**, en el que estudiamos la estructura básica de las páginas web, el uso de HTML, CSS y JavaScript, así como la publicación de sitios estáticos mediante GitHub Pages. La idea no es formar diseñadores web en una sola sesión, porque tampoco vamos a fingir milagros técnicos, sino lograr que cada estudiante comprenda cómo funciona una publicación básica en internet y pueda usarla con propósito profesional.
+
+::: {.callout-important title="¿Cuál es el producto a entregar?"}
+Cada estudiante deberá publicar una página web funcional en GitHub Pages que contenga, como mínimo:
+
+- un **CV** o perfil académico-profesional;
+- un **post** o entrada breve escrita por el propio estudiante;
+- un enlace público y operativo al sitio web.
+:::
+
+## Objetivo de la evaluación
+
+Esta actividad busca que el estudiante aplique de manera práctica los conocimientos introductorios sobre publicación web y desarrolle una identidad digital básica, ordenada y profesional. No se evalúa únicamente el resultado visual, sino también la capacidad de estructurar información, redactar con claridad, publicar correctamente y presentar contenido pertinente para un entorno académico y jurídico.
+
+::: {.callout-note title="Sentido de la actividad"}
+Un abogado o abogada que comprende cómo funciona una página web no solo adquiere una destreza técnica elemental. También fortalece su capacidad para comunicar, organizar información, construir reputación profesional y entender mejor el entorno digital en el que hoy operan instituciones, estudios y servicios legales.
+:::
+
+## Contenido mínimo del sitio
+
+La página web debe incluir al menos los siguientes componentes:
+
+### 1. CV o perfil profesional
+
+Debe presentar información básica del estudiante de forma clara y ordenada. Puede incluir, por ejemplo:
+
+- nombre completo;
+- breve presentación;
+- formación académica;
+- experiencia relevante;
+- habilidades o intereses;
+- datos de contacto o enlaces profesionales.
+
+### 2. Post individual
+
+El sitio debe incluir una entrada breve escrita por el estudiante. Este texto debe tener un título y desarrollar una idea concreta con coherencia y buena redacción.
+
+El post puede abordar temas como:
+
+- una reflexión sobre el curso;
+- una opinión fundamentada sobre tecnología y derecho;
+- el comentario de una herramienta digital útil para juristas;
+- una breve experiencia de aprendizaje vinculada con GitHub, páginas web o transformación digital;
+- un problema jurídico actual relacionado con internet, datos, plataformas o inteligencia artificial.
+
+::: {.callout-tip title="Recomendación para el post"}
+Un buen post no necesita ser largo. Necesita ser claro, propio y bien pensado. Entre **400 y 800 palabras** suele ser una extensión razonable para esta actividad.
+:::
+
+## Criterios esperados de calidad
+
+Se espera que la página web:
+
+- sea accesible mediante un enlace público;
+- tenga una estructura comprensible;
+- presente un diseño limpio y legible;
+- muestre información pertinente y bien organizada;
+- evidencie autoría propia en la redacción del post;
+- mantenga un tono profesional y académico.
+
+No es necesario construir un sitio complejo. Una página sencilla, sobria y bien resuelta vale más que una página recargada, desordenada o copiada de forma mecánica.
+
+## Ideas para enriquecer la página
+
+Además del contenido mínimo, el estudiante puede incorporar elementos adicionales que mejoren su presentación, tales como:
+
+- fotografía o avatar profesional;
+- sección “Sobre mí”;
+- enlaces a LinkedIn o GitHub;
+- menú de navegación simple;
+- diseño responsivo;
+- una segunda entrada opcional;
+- uso cuidadoso de colores, tipografía e identidad visual.
+
+::: {.callout-warning title="Qué debe evitarse"}
+Evita estos errores frecuentes:
+
+- publicar una página incompleta;
+- incluir texto copiado de internet o generado sin revisión;
+- usar un diseño que dificulte la lectura;
+- entregar un enlace roto o privado;
+- convertir el CV en una lista caótica sin jerarquía visual.
+:::
+
+## Entrega
+
+La evidencia de esta evaluación consiste en el **enlace público de GitHub Pages** y, de ser solicitado en clase, el enlace al repositorio correspondiente. La entrega deberá realizarse conforme a las indicaciones dadas por el docente en el Aula Virtual o en sesión.
+
+## ¿Qué demuestra esta evaluación?
+
+Al completar esta actividad, el estudiante demuestra que puede:
+
+- transformar información profesional en contenido web estructurado;
+- utilizar herramientas básicas de publicación digital;
+- comunicar una identidad académica o profesional en línea;
+- producir una pieza escrita breve con propósito y claridad;
+- comprender, en términos prácticos, cómo se publica contenido en la web.
+
+::: {.callout-success title="En una frase"}
+Esta evaluación no busca que el estudiante sea desarrollador web, sino que sea capaz de **construir y publicar una presencia digital básica, funcional y profesional**.
+:::

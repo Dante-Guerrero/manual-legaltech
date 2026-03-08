@@ -30,6 +30,16 @@
     ]
   },
   {
+    "objectID": "parte-0/intro.html",
+    "href": "parte-0/intro.html",
+    "title": "Introducción",
+    "section": "",
+    "text": "El curso Legal Tech nace de una constatación simple, aunque a muchos juristas todavía les cueste admitirlo: el derecho ya no opera en un mundo analógico. Hoy, los expedientes se digitalizan, los documentos se automatizan, los conflictos se desarrollan en entornos virtuales, las decisiones pueden apoyarse en sistemas de inteligencia artificial y gran parte de la actividad económica, administrativa y social depende de infraestructuras tecnológicas. En ese contexto, comprender la relación entre derecho y tecnología ya no es un lujo ni una curiosidad académica. Es una competencia cada vez más necesaria para ejercer con solvencia, criterio y responsabilidad en la práctica profesional.\nEste curso ha sido diseñado para que las y los estudiantes de Derecho puedan aproximarse a ese mundo de forma progresiva, crítica y aplicada. No se trata de convertir a cada estudiante en programador ni de reemplazar la formación jurídica clásica por una formación puramente técnica. Se trata, más bien, de desarrollar una manera de pensar que permita dialogar con la tecnología, entender su lógica básica, reconocer sus efectos jurídicos y utilizar herramientas concretas para resolver problemas reales. Dicho sin solemnidad innecesaria: no basta con opinar sobre innovación; hay que aprender a trabajar con ella.\nA lo largo del curso recorrerás cuatro grandes ejes. En el primero, explorarás el pensamiento computacional para juristas y aprenderás a representar instrucciones y problemas legales con lógica estructurada. En el segundo, trabajarás con automatización, datos jurídicos, bases de datos, visualización de información y generación de documentos. En el tercero, estudiarás la arquitectura básica de la web, el uso de servicios en la nube y los principales riesgos de ciberseguridad que afectan al sector legal. Finalmente, en el cuarto módulo, analizarás la inteligencia artificial aplicada al derecho, sus capacidades, límites, riesgos regulatorios y posibilidades de uso responsable en contextos jurídicos.\nLa importancia de este curso no radica solo en aprender herramientas. Radica en formar criterio. En un entorno donde abundan soluciones tecnológicas prometidas como milagrosas, el abogado o la abogada que destaque no será quien use más plataformas, sino quien sepa evaluar su utilidad, identificar sus riesgos, formular buenas preguntas, proteger derechos y tomar decisiones éticamente justificables. Legal Tech exige curiosidad, sí, pero también prudencia, pensamiento crítico y compromiso con el acceso a la justicia.\nEste manual busca acompañarte en ese proceso. Úsalo como una guía de trabajo, no como un simple texto de consulta. Lee con atención, prueba herramientas, equivócate, vuelve a intentar y conecta cada tema con problemas jurídicos concretos. Aprovecha los talleres, los ejercicios y el proyecto del curso para construir una mirada propia sobre la innovación legal. Si sacas el mayor provecho de esta experiencia, no solo entenderás mejor cómo cambia la profesión jurídica: estarás en mejores condiciones para participar activamente en ese cambio, con creatividad, rigor y sentido de responsabilidad.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Introducción</span>"
+    ]
+  },
+  {
     "objectID": "parte-1-modulo-1/00-presentacion.html",
     "href": "parte-1-modulo-1/00-presentacion.html",
     "title": "I. Pensamiento Computacional para juristas",
@@ -37,6 +47,446 @@
     "text": "[…]",
     "crumbs": [
       "I. Pensamiento Computacional para juristas"
+    ]
+  },
+  {
+    "objectID": "evaluaciones/evaluacion-3.html",
+    "href": "evaluaciones/evaluacion-3.html",
+    "title": "🔹 Evaluación Continua 3",
+    "section": "",
+    "text": "Proyecto Legaltech\nLa Evaluación Continua 3 (EC3) consiste en un trabajo grupal orientado al diseño y presentación de un proyecto Legaltech. Cada equipo deberá identificar un problema, necesidad u oportunidad de mejora en el ámbito jurídico y proponer una solución tecnológica pertinente, útil y jurídicamente fundamentada.\nLa propuesta deberá explicar con precisión:\nEl proyecto podrá vincularse, entre otros temas, con automatización documental, acceso a información jurídica, visualización de datos, cumplimiento normativo, servicios legales digitales, firma digital, ciberseguridad, o uso responsable de inteligencia artificial en contextos legales.",
+    "crumbs": [
+      "Evaluaciones",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>🔹 Evaluación Continua 3</span>"
+    ]
+  },
+  {
+    "objectID": "evaluaciones/evaluacion-3.html#propósito-de-la-evaluación",
+    "href": "evaluaciones/evaluacion-3.html#propósito-de-la-evaluación",
+    "title": "🔹 Evaluación Continua 3",
+    "section": "Propósito de la evaluación",
+    "text": "Propósito de la evaluación\nEsta evaluación busca que los estudiantes integren los aprendizajes desarrollados a lo largo del curso y demuestren que son capaces de:\n\nanalizar críticamente un problema jurídico;\nproponer una solución legaltech coherente y viable;\nsustentarla con claridad desde una perspectiva jurídica y práctica;\ne identificar riesgos y consideraciones éticas o regulatorias asociadas a su implementación.\n\n\n\n\n\n\n\nImportantCriterio central\n\n\n\nNo basta con presentar una idea llamativa. El proyecto debe ser pertinente, comprensible, viable en términos básicos y alineado con el marco jurídico aplicable.",
+    "crumbs": [
+      "Evaluaciones",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>🔹 Evaluación Continua 3</span>"
+    ]
+  },
+  {
+    "objectID": "evaluaciones/evaluacion-3.html#desarrollo-y-presentación",
+    "href": "evaluaciones/evaluacion-3.html#desarrollo-y-presentación",
+    "title": "🔹 Evaluación Continua 3",
+    "section": "Desarrollo y presentación",
+    "text": "Desarrollo y presentación\nLa EC3 será explicada en clase y los grupos se organizarán previamente para investigar ideas, discutir alternativas y desarrollar su propuesta. El trabajo se culminará en equipo y será presentado en la sesión correspondiente al Demo Day.\nDurante la exposición, cada grupo deberá presentar de manera ordenada:\n\nel problema identificado;\nla solución propuesta;\nsu lógica general de funcionamiento;\nlos beneficios esperados;\ny los principales desafíos de implementación.\n\n\n\n\n\n\n\nWarningEntrega de evidencia\n\n\n\nLa evidencia del proyecto deberá ser cargada en la Plataforma Aula Virtual, de acuerdo con las indicaciones brindadas en clase.",
+    "crumbs": [
+      "Evaluaciones",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>🔹 Evaluación Continua 3</span>"
+    ]
+  },
+  {
+    "objectID": "evaluaciones/evaluacion-2.html",
+    "href": "evaluaciones/evaluacion-2.html",
+    "title": "🔹 Evaluación Continua 2",
+    "section": "",
+    "text": "Página web personal publicada en GitHub Pages\nLa Evaluación Continua 2 consiste en la elaboración de una página web personal que deberá ser publicada a través de GitHub Pages. Se trata de un trabajo individual en el que cada estudiante desarrollará un sitio sencillo, claro y funcional, orientado a construir una primera presencia profesional en la web.\nEsta evaluación se conecta directamente con los contenidos del módulo sobre web, nube y seguridad para el sector legal, en el que estudiamos la estructura básica de las páginas web, el uso de HTML, CSS y JavaScript, así como la publicación de sitios estáticos mediante GitHub Pages. La idea no es formar diseñadores web en una sola sesión, porque tampoco vamos a fingir milagros técnicos, sino lograr que cada estudiante comprenda cómo funciona una publicación básica en internet y pueda usarla con propósito profesional.",
+    "crumbs": [
+      "Evaluaciones",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
+    ]
+  },
+  {
+    "objectID": "evaluaciones/evaluacion-2.html#página-web-personal-publicada-en-github-pages",
+    "href": "evaluaciones/evaluacion-2.html#página-web-personal-publicada-en-github-pages",
+    "title": "🔹 Evaluación Continua 2",
+    "section": "",
+    "text": "Important¿Cuál es el producto a entregar?\n\n\n\nCada estudiante deberá publicar una página web funcional en GitHub Pages que contenga, como mínimo:\n\nun CV o perfil académico-profesional;\nun post o entrada breve escrita por el propio estudiante;\nun enlace público y operativo al sitio web.",
+    "crumbs": [
+      "Evaluaciones",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
+    ]
+  },
+  {
+    "objectID": "evaluaciones/evaluacion-2.html#objetivo-de-la-evaluación",
+    "href": "evaluaciones/evaluacion-2.html#objetivo-de-la-evaluación",
+    "title": "🔹 Evaluación Continua 2",
+    "section": "Objetivo de la evaluación",
+    "text": "Objetivo de la evaluación\nEsta actividad busca que el estudiante aplique de manera práctica los conocimientos introductorios sobre publicación web y desarrolle una identidad digital básica, ordenada y profesional. No se evalúa únicamente el resultado visual, sino también la capacidad de estructurar información, redactar con claridad, publicar correctamente y presentar contenido pertinente para un entorno académico y jurídico.\n\n\n\n\n\n\nNoteSentido de la actividad\n\n\n\nUn abogado o abogada que comprende cómo funciona una página web no solo adquiere una destreza técnica elemental. También fortalece su capacidad para comunicar, organizar información, construir reputación profesional y entender mejor el entorno digital en el que hoy operan instituciones, estudios y servicios legales.",
+    "crumbs": [
+      "Evaluaciones",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
+    ]
+  },
+  {
+    "objectID": "evaluaciones/evaluacion-2.html#contenido-mínimo-del-sitio",
+    "href": "evaluaciones/evaluacion-2.html#contenido-mínimo-del-sitio",
+    "title": "🔹 Evaluación Continua 2",
+    "section": "Contenido mínimo del sitio",
+    "text": "Contenido mínimo del sitio\nLa página web debe incluir al menos los siguientes componentes:\n\n1. CV o perfil profesional\nDebe presentar información básica del estudiante de forma clara y ordenada. Puede incluir, por ejemplo:\n\nnombre completo;\nbreve presentación;\nformación académica;\nexperiencia relevante;\nhabilidades o intereses;\ndatos de contacto o enlaces profesionales.\n\n\n\n2. Post individual\nEl sitio debe incluir una entrada breve escrita por el estudiante. Este texto debe tener un título y desarrollar una idea concreta con coherencia y buena redacción.\nEl post puede abordar temas como:\n\nuna reflexión sobre el curso;\nuna opinión fundamentada sobre tecnología y derecho;\nel comentario de una herramienta digital útil para juristas;\nuna breve experiencia de aprendizaje vinculada con GitHub, páginas web o transformación digital;\nun problema jurídico actual relacionado con internet, datos, plataformas o inteligencia artificial.\n\n\n\n\n\n\n\nTipRecomendación para el post\n\n\n\nUn buen post no necesita ser largo. Necesita ser claro, propio y bien pensado. Entre 400 y 800 palabras suele ser una extensión razonable para esta actividad.",
+    "crumbs": [
+      "Evaluaciones",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
+    ]
+  },
+  {
+    "objectID": "evaluaciones/evaluacion-2.html#criterios-esperados-de-calidad",
+    "href": "evaluaciones/evaluacion-2.html#criterios-esperados-de-calidad",
+    "title": "🔹 Evaluación Continua 2",
+    "section": "Criterios esperados de calidad",
+    "text": "Criterios esperados de calidad\nSe espera que la página web:\n\nsea accesible mediante un enlace público;\ntenga una estructura comprensible;\npresente un diseño limpio y legible;\nmuestre información pertinente y bien organizada;\nevidencie autoría propia en la redacción del post;\nmantenga un tono profesional y académico.\n\nNo es necesario construir un sitio complejo. Una página sencilla, sobria y bien resuelta vale más que una página recargada, desordenada o copiada de forma mecánica.",
+    "crumbs": [
+      "Evaluaciones",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
+    ]
+  },
+  {
+    "objectID": "evaluaciones/evaluacion-2.html#ideas-para-enriquecer-la-página",
+    "href": "evaluaciones/evaluacion-2.html#ideas-para-enriquecer-la-página",
+    "title": "🔹 Evaluación Continua 2",
+    "section": "Ideas para enriquecer la página",
+    "text": "Ideas para enriquecer la página\nAdemás del contenido mínimo, el estudiante puede incorporar elementos adicionales que mejoren su presentación, tales como:\n\nfotografía o avatar profesional;\nsección “Sobre mí”;\nenlaces a LinkedIn o GitHub;\nmenú de navegación simple;\ndiseño responsivo;\nuna segunda entrada opcional;\nuso cuidadoso de colores, tipografía e identidad visual.\n\n\n\n\n\n\n\nWarningQué debe evitarse\n\n\n\nEvita estos errores frecuentes:\n\npublicar una página incompleta;\nincluir texto copiado de internet o generado sin revisión;\nusar un diseño que dificulte la lectura;\nentregar un enlace roto o privado;\nconvertir el CV en una lista caótica sin jerarquía visual.",
+    "crumbs": [
+      "Evaluaciones",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
+    ]
+  },
+  {
+    "objectID": "evaluaciones/evaluacion-2.html#entrega",
+    "href": "evaluaciones/evaluacion-2.html#entrega",
+    "title": "🔹 Evaluación Continua 2",
+    "section": "Entrega",
+    "text": "Entrega\nLa evidencia de esta evaluación consiste en el enlace público de GitHub Pages y, de ser solicitado en clase, el enlace al repositorio correspondiente. La entrega deberá realizarse conforme a las indicaciones dadas por el docente en el Aula Virtual o en sesión.",
+    "crumbs": [
+      "Evaluaciones",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
+    ]
+  },
+  {
+    "objectID": "evaluaciones/evaluacion-2.html#qué-demuestra-esta-evaluación",
+    "href": "evaluaciones/evaluacion-2.html#qué-demuestra-esta-evaluación",
+    "title": "🔹 Evaluación Continua 2",
+    "section": "¿Qué demuestra esta evaluación?",
+    "text": "¿Qué demuestra esta evaluación?\nAl completar esta actividad, el estudiante demuestra que puede:\n\ntransformar información profesional en contenido web estructurado;\nutilizar herramientas básicas de publicación digital;\ncomunicar una identidad académica o profesional en línea;\nproducir una pieza escrita breve con propósito y claridad;\ncomprender, en términos prácticos, cómo se publica contenido en la web.\n\n\nEsta evaluación no busca que el estudiante sea desarrollador web, sino que sea capaz de construir y publicar una presencia digital básica, funcional y profesional.",
+    "crumbs": [
+      "Evaluaciones",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
+    ]
+  },
+  {
+    "objectID": "evaluaciones/evaluacion-3.html#proyecto-legaltech",
+    "href": "evaluaciones/evaluacion-3.html#proyecto-legaltech",
+    "title": "🔹 Evaluación Continua 3",
+    "section": "",
+    "text": "Note¿Qué se espera del proyecto?\n\n\n\nEl proyecto debe mostrar la capacidad del equipo para conectar el razonamiento jurídico con una propuesta de innovación tecnológica. No se exige necesariamente un producto plenamente terminado, pero sí una propuesta sólida, clara y bien sustentada.\n\n\n\n\nel problema jurídico que se busca abordar;\nel usuario o público objetivo al que se dirige;\nla solución tecnológica planteada;\nla forma en que dicha solución generaría valor práctico;\ny sus principales implicancias éticas, regulatorias y operativas.\n\n\n\n\n\n\n\nTipEnfoque recomendado\n\n\n\nUn buen proyecto no parte de la tecnología por sí sola, sino de un problema real del mundo jurídico. Primero se define el problema; después se justifica por qué cierta herramienta o enfoque tecnológico puede ayudar a resolverlo.",
+    "crumbs": [
+      "Evaluaciones",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>🔹 Evaluación Continua 3</span>"
+    ]
+  },
+  {
+    "objectID": "parte-1-modulo-1/01-capitulo.html",
+    "href": "parte-1-modulo-1/01-capitulo.html",
+    "title": "1. Del sistema binario al razonamiento computacional",
+    "section": "",
+    "text": "¿Por qué empezar por el sistema binario?\nEn un curso de Legal Tech, puede parecer extraño comenzar hablando de ceros y unos. Después de todo, los abogados estudiamos normas, argumentos, instituciones y procedimientos, no cables ni microchips. Pero hay una buena razón para hacerlo: si queremos entender cómo funciona la tecnología que hoy impacta al Derecho, primero debemos entender cómo una computadora representa la información y ejecuta instrucciones.\nLa idea central de esta sesión es simple: una computadora no “entiende” textos, imágenes, videos, contratos o sentencias como los entendemos nosotros. Lo que hace es representar toda esa información mediante patrones de bits, es decir, secuencias de 0 y 1. A partir de allí puede almacenar datos, hacer cálculos, comparar valores y ejecutar instrucciones.",
+    "crumbs": [
+      "I. Pensamiento Computacional para juristas",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del sistema binario al razonamiento computacional</span>"
+    ]
+  },
+  {
+    "objectID": "parte-1-modulo-1/01-capitulo.html#por-qué-empezar-por-el-sistema-binario",
+    "href": "parte-1-modulo-1/01-capitulo.html#por-qué-empezar-por-el-sistema-binario",
+    "title": "1. Del sistema binario al razonamiento computacional",
+    "section": "",
+    "text": "ImportantIdea clave\n\n\n\nUna computadora puede procesar números, texto, imágenes y sonido porque todo puede representarse en binario.",
+    "crumbs": [
+      "I. Pensamiento Computacional para juristas",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del sistema binario al razonamiento computacional</span>"
+    ]
+  },
+  {
+    "objectID": "parte-1-modulo-1/01-capitulo.html#objetivo-de-la-sesión",
+    "href": "parte-1-modulo-1/01-capitulo.html#objetivo-de-la-sesión",
+    "title": "1. Del sistema binario al razonamiento computacional",
+    "section": "Objetivo de la sesión",
+    "text": "Objetivo de la sesión\nAl finalizar esta sesión, deberías ser capaz de:\n\ncomprender qué es el sistema binario;\nconvertir números decimales sencillos a binario y viceversa;\nentender de forma básica cómo una computadora representa texto;\nexplicar por qué el binario puede verse como el lenguaje más elemental de una computadora;\ndistinguir entre lenguaje máquina, lenguajes de programación y pseudocódigo;\nconectar estas ideas con el razonamiento jurídico estructurado.",
+    "crumbs": [
+      "I. Pensamiento Computacional para juristas",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del sistema binario al razonamiento computacional</span>"
+    ]
+  },
+  {
+    "objectID": "parte-1-modulo-1/01-capitulo.html#qué-hace-realmente-una-computadora",
+    "href": "parte-1-modulo-1/01-capitulo.html#qué-hace-realmente-una-computadora",
+    "title": "1. Del sistema binario al razonamiento computacional",
+    "section": "1. ¿Qué hace realmente una computadora?",
+    "text": "1. ¿Qué hace realmente una computadora?\nUna computadora recibe, almacena, transforma y devuelve información. Lo hace a gran velocidad, pero siguiendo una lógica bastante simple:\n\nrecibe datos;\nlos representa internamente;\nejecuta instrucciones sobre esos datos;\nproduce una salida.\n\nPor ejemplo, cuando escribes una demanda en tu laptop:\n\npresionas teclas;\nla computadora detecta esas entradas;\ncada carácter se representa numéricamente;\nesos números se almacenan como bits;\nel procesador ejecuta instrucciones;\nla pantalla muestra el resultado.\n\nEs decir, detrás de algo aparentemente cotidiano hay una cadena de representación y procesamiento. Muy elegante, muy poderosa, y construida sobre un sistema que solo tiene dos símbolos.",
+    "crumbs": [
+      "I. Pensamiento Computacional para juristas",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del sistema binario al razonamiento computacional</span>"
+    ]
+  },
+  {
+    "objectID": "parte-1-modulo-1/01-capitulo.html#por-qué-binario",
+    "href": "parte-1-modulo-1/01-capitulo.html#por-qué-binario",
+    "title": "1. Del sistema binario al razonamiento computacional",
+    "section": "2. ¿Por qué binario?",
+    "text": "2. ¿Por qué binario?\nLas computadoras funcionan con circuitos electrónicos. En una explicación simplificada, esos circuitos pueden distinguir entre dos estados:\n\nencendido / apagado,\npasa corriente / no pasa corriente,\nalto voltaje / bajo voltaje.\n\nPor eso resulta natural usar un sistema con solo dos valores:\n\n0\n1\n\nA cada uno de esos valores se le llama bit, abreviatura de binary digit.\n\n\n\n\n\n\nNoteVocabulario básico\n\n\n\n\nbit: unidad mínima de información, puede ser 0 o 1.\nbyte: grupo de 8 bits.\nbinario: sistema numérico en base 2.\ndecimal: sistema numérico usual, en base 10.",
+    "crumbs": [
+      "I. Pensamiento Computacional para juristas",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del sistema binario al razonamiento computacional</span>"
+    ]
+  },
+  {
+    "objectID": "parte-1-modulo-1/01-capitulo.html#del-sistema-decimal-al-sistema-binario",
+    "href": "parte-1-modulo-1/01-capitulo.html#del-sistema-decimal-al-sistema-binario",
+    "title": "1. Del sistema binario al razonamiento computacional",
+    "section": "3. Del sistema decimal al sistema binario",
+    "text": "3. Del sistema decimal al sistema binario\nNosotros usamos normalmente el sistema decimal, que tiene diez símbolos: 0, 1, 2, 3, 4, 5, 6, 7, 8 y 9.\nEl sistema binario solo tiene dos: 0 y 1.\nLa diferencia no está solo en los símbolos, sino en el valor posicional.\n\nSistema decimal\nEn decimal, el número 347 significa:\n\n3 centenas,\n4 decenas,\n7 unidades.\n\nEs decir:\n347 = 3×10² + 4×10¹ + 7×10⁰\n\n\nSistema binario\nEn binario, cada posición representa una potencia de 2:\n\n2⁰ = 1\n2¹ = 2\n2² = 4\n2³ = 8\n2⁴ = 16\n2⁵ = 32\n2⁶ = 64\n2⁷ = 128\n\nPor ejemplo, el número binario 1011 significa:\n\n1×2³ = 8\n0×2² = 0\n1×2¹ = 2\n1×2⁰ = 1\n\nEntonces:\n1011₂ = 11₁₀",
+    "crumbs": [
+      "I. Pensamiento Computacional para juristas",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del sistema binario al razonamiento computacional</span>"
+    ]
+  },
+  {
+    "objectID": "parte-1-modulo-1/01-capitulo.html#cómo-convertir-de-binario-a-decimal",
+    "href": "parte-1-modulo-1/01-capitulo.html#cómo-convertir-de-binario-a-decimal",
+    "title": "1. Del sistema binario al razonamiento computacional",
+    "section": "4. Cómo convertir de binario a decimal",
+    "text": "4. Cómo convertir de binario a decimal\nEl método más directo es multiplicar cada bit por su potencia de 2 correspondiente y sumar.\n\nEjemplo 1\nConvertir 1101 a decimal.\n```text 1×2³ = 8 1×2² = 4 0×2¹ = 0 1×2⁰ = 1",
+    "crumbs": [
+      "I. Pensamiento Computacional para juristas",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del sistema binario al razonamiento computacional</span>"
+    ]
+  },
+  {
+    "objectID": "parte-1-modulo-1/02-capitulo.html",
+    "href": "parte-1-modulo-1/02-capitulo.html",
+    "title": "2. Primeros pasos con Python",
+    "section": "",
+    "text": "¿Por qué un estudiante de Derecho debería aprender Python?\nPython es un lenguaje de programación conocido por su sintaxis clara y por ser especialmente amigable para quienes empiezan desde cero. En este curso no lo estudiaremos como un fin en sí mismo, sino como una herramienta para aprender a traducir instrucciones, criterios y reglas en pasos ordenados y ejecutables.\nPara un jurista, esto tiene un valor práctico inmediato. Muchas tareas del trabajo legal consisten en revisar información, clasificar documentos, calcular plazos, detectar patrones, ordenar expedientes, verificar requisitos y generar reportes. Todas esas tareas pueden describirse como instrucciones. Y cuando una instrucción puede describirse con claridad, también puede empezar a automatizarse.",
+    "crumbs": [
+      "I. Pensamiento Computacional para juristas",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
+    ]
+  },
+  {
+    "objectID": "parte-1-modulo-1/02-capitulo.html#por-qué-un-estudiante-de-derecho-debería-aprender-python",
+    "href": "parte-1-modulo-1/02-capitulo.html#por-qué-un-estudiante-de-derecho-debería-aprender-python",
+    "title": "2. Primeros pasos con Python",
+    "section": "",
+    "text": "ImportantIdea central\n\n\n\nProgramar no significa “pensar como ingeniero”. Significa aprender a descomponer un problema en pasos claros, verificables y repetibles.\nEso, por cierto, también es una habilidad jurídica.",
+    "crumbs": [
+      "I. Pensamiento Computacional para juristas",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
+    ]
+  },
+  {
+    "objectID": "parte-1-modulo-1/02-capitulo.html#objetivos-de-aprendizaje",
+    "href": "parte-1-modulo-1/02-capitulo.html#objetivos-de-aprendizaje",
+    "title": "2. Primeros pasos con Python",
+    "section": "Objetivos de aprendizaje",
+    "text": "Objetivos de aprendizaje\nAl finalizar este capítulo, deberías poder:\n\ncomprender qué es Python y para qué sirve en contextos legales;\nejecutar scripts sencillos desde una terminal o desde VS Code;\nreconocer y usar variables, tipos de datos, entradas y salidas;\nescribir condicionales, bucles y funciones básicas;\nentender cómo listas, texto, fechas, archivos y tablas pueden servir para resolver problemas jurídicos simples;\nrelacionar el código con tareas reales del ejercicio legal y administrativo.",
+    "crumbs": [
+      "I. Pensamiento Computacional para juristas",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
+    ]
+  },
+  {
+    "objectID": "parte-1-modulo-1/02-capitulo.html#antes-de-empezar",
+    "href": "parte-1-modulo-1/02-capitulo.html#antes-de-empezar",
+    "title": "2. Primeros pasos con Python",
+    "section": "Antes de empezar",
+    "text": "Antes de empezar\nPara trabajar con este capítulo necesitas tener instalado:\n\nPython;\nGit;\nuna terminal o consola;\nopcionalmente, VS Code.\n\nEl repositorio python-intro está pensado precisamente para estudiantes de Derecho sin experiencia previa en programación y propone una ruta gradual para empezar desde cero. citeturn0view0\n\n\n\n\n\n\nNoteRecomendación de trabajo\n\n\n\nNo intentes entender todo en una sola lectura. La mejor forma de aprender aquí es esta:\n\nejecutar un archivo;\nleer los comentarios;\ncambiar uno o dos valores;\nvolver a ejecutarlo;\nobservar qué cambió.\n\nLa mejor pedagogía aquí no es memorizar, sino probar.",
+    "crumbs": [
+      "I. Pensamiento Computacional para juristas",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
+    ]
+  },
+  {
+    "objectID": "parte-1-modulo-1/02-capitulo.html#cómo-clonar-y-ejecutar-el-repositorio",
+    "href": "parte-1-modulo-1/02-capitulo.html#cómo-clonar-y-ejecutar-el-repositorio",
+    "title": "2. Primeros pasos con Python",
+    "section": "Cómo clonar y ejecutar el repositorio",
+    "text": "Cómo clonar y ejecutar el repositorio\nSegún el README del repositorio, los requisitos mínimos son Python, Git, una terminal y, de forma opcional, VS Code. También recomienda comenzar ejecutando scripts sencillos desde la carpeta del proyecto. citeturn0view0\n\n1. Clonar el repositorio\ngit clone https://github.com/Dante-Guerrero/python-intro.git\ncd python-intro\n\n\n2. Ejecutar un archivo\npython 00-basicos/00-helloworld.py\nEn algunos equipos puede ser necesario usar:\npython3 00-basicos/00-helloworld.py",
+    "crumbs": [
+      "I. Pensamiento Computacional para juristas",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
+    ]
+  },
+  {
+    "objectID": "parte-1-modulo-1/02-capitulo.html#la-ruta-de-aprendizaje-del-repositorio",
+    "href": "parte-1-modulo-1/02-capitulo.html#la-ruta-de-aprendizaje-del-repositorio",
+    "title": "2. Primeros pasos con Python",
+    "section": "La ruta de aprendizaje del repositorio",
+    "text": "La ruta de aprendizaje del repositorio\nEl repositorio está organizado como una progresión gradual, con carpetas dedicadas a básicos, listas, texto, fechas, archivos, datos y ejercicios jurídicos. Esa estructura está descrita en el README y conviene recorrerla en este orden. citeturn0view0\n\n00-basicos/\n01-listas/\n02-texto/\n03-fechas/\n04-archivos/\n05-datos/\n06-ejercicios-derecho/\n\nCada carpeta introduce una idea nueva y luego la conecta con ejemplos cada vez más cercanos al trabajo jurídico.",
+    "crumbs": [
+      "I. Pensamiento Computacional para juristas",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
+    ]
+  },
+  {
+    "objectID": "parte-1-modulo-1/02-capitulo.html#empezar-por-lo-básico",
+    "href": "parte-1-modulo-1/02-capitulo.html#empezar-por-lo-básico",
+    "title": "2. Primeros pasos con Python",
+    "section": "1. Empezar por lo básico",
+    "text": "1. Empezar por lo básico\nLa carpeta 00-basicos/ contiene el primer contacto con Python: sintaxis elemental, variables, entradas y salidas, conversión de tipos, operadores, condicionales, bucles y funciones. citeturn0view0\n\nTu primer programa\nUn programa tan simple como este:\nprint(\"Hola, mundo\")\nya muestra una idea importante: el código es una instrucción escrita con una sintaxis específica.\n\n\nVariables: guardar información\nUna variable permite guardar un dato para usarlo después.\nnombre_estudiante = \"Manu\"\nedad = 36\npromedio = 1.75\nesta_matriculado = True\n\nprint(type(nombre_estudiante))\nprint(type(edad))\nprint(type(promedio))\nprint(type(esta_matriculado))\nAquí aparecen algunos tipos básicos:\n\nstr: texto;\nint: número entero;\nfloat: número decimal;\nbool: verdadero o falso.\n\n\n\n\n\n\n\nTipTraducción al mundo jurídico\n\n\n\nPiensa en una variable como un casillero con etiqueta:\n\nnumero_expediente\nmonto_multa\nplazo_dias\ndocumento_valido\n\nEl nombre cambia, pero la lógica es la misma: guardar un dato para trabajar con él.\n\n\n\n\nEntradas y salidas\nUn programa también puede pedir datos al usuario y mostrar resultados.\nnombre = input(\"Escribe tu nombre: \")\nprint(\"Hola,\", nombre)\nEsto es útil cuando queremos que el programa trabaje con información que no está fija desde el inicio.\n\n\nConvertir tipos\nMuchas veces el programa recibe texto y necesitamos convertirlo en número.\ndias = int(input(\"¿Cuántos días de retraso hubo? \"))\nmulta_por_dia = 25\ntotal = dias * multa_por_dia\n\nprint(\"Monto total:\", total)\nSi no convertimos el dato, Python no sabrá que debe multiplicar números y no simplemente tratar todo como texto.",
+    "crumbs": [
+      "I. Pensamiento Computacional para juristas",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
+    ]
+  },
+  {
+    "objectID": "parte-1-modulo-1/02-capitulo.html#tomar-decisiones-condicionales",
+    "href": "parte-1-modulo-1/02-capitulo.html#tomar-decisiones-condicionales",
+    "title": "2. Primeros pasos con Python",
+    "section": "2. Tomar decisiones: condicionales",
+    "text": "2. Tomar decisiones: condicionales\nBuena parte del razonamiento jurídico funciona con condiciones:\n\nsi falta un requisito, se observa;\nsi el plazo venció, se rechaza;\nsi cumple con los requisitos, se admite.\n\nEn Python esa lógica se expresa con if, elif y else.\ndias_retraso = 4\n\nif dias_retraso &gt; 0:\n    print(\"Hay retraso\")\nelse:\n    print(\"No hay retraso\")\nTambién puede haber más de una ruta:\npuntaje = 16\n\nif puntaje &gt;= 18:\n    print(\"Excelente\")\nelif puntaje &gt;= 11:\n    print(\"Aprobado\")\nelse:\n    print(\"Desaprobado\")\n\n\n\n\n\n\nImportantConexión con el razonamiento legal\n\n\n\nUn condicional no “piensa”. Solo evalúa una regla.\nPor eso, programar no reemplaza el juicio jurídico. Lo que hace es ejecutar de forma consistente una regla previamente definida.",
+    "crumbs": [
+      "I. Pensamiento Computacional para juristas",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
+    ]
+  },
+  {
+    "objectID": "parte-1-modulo-1/02-capitulo.html#repetir-instrucciones-bucles",
+    "href": "parte-1-modulo-1/02-capitulo.html#repetir-instrucciones-bucles",
+    "title": "2. Primeros pasos con Python",
+    "section": "3. Repetir instrucciones: bucles",
+    "text": "3. Repetir instrucciones: bucles\nCuando una tarea debe repetirse varias veces, usamos bucles.\n\nfor: recorrer elementos\nexpedientes = [\"EXP-001\", \"EXP-002\", \"EXP-003\"]\n\nfor expediente in expedientes:\n    print(\"Revisando:\", expediente)\n\n\nwhile: repetir mientras se cumpla una condición\ncontador = 1\n\nwhile contador &lt;= 3:\n    print(\"Iteración\", contador)\n    contador = contador + 1\nLos bucles son útiles cuando queremos revisar muchos datos sin copiar la misma instrucción una y otra vez.",
+    "crumbs": [
+      "I. Pensamiento Computacional para juristas",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
+    ]
+  },
+  {
+    "objectID": "parte-1-modulo-1/02-capitulo.html#reutilizar-lógica-funciones",
+    "href": "parte-1-modulo-1/02-capitulo.html#reutilizar-lógica-funciones",
+    "title": "2. Primeros pasos con Python",
+    "section": "4. Reutilizar lógica: funciones",
+    "text": "4. Reutilizar lógica: funciones\nUna función sirve para agrupar instrucciones bajo un nombre y reutilizarlas.\ndef sumar(primer_numero, segundo_numero):\n    resultado = primer_numero + segundo_numero\n    return resultado\n\nprint(sumar(3, 4))\n\n¿Por qué importan las funciones?\nPorque permiten convertir una operación en una herramienta reutilizable.\nPor ejemplo:\ndef calcular_multa(multa_por_dia, dias_retraso):\n    return multa_por_dia * dias_retraso\n\nprint(calcular_multa(25, 4))\nAhora no tienes que volver a escribir toda la operación cada vez. Solo llamas a la función.\n\n\n\n\n\n\nNotePiensa así\n\n\n\nUna función se parece a una pequeña regla operativa:\n\nrecibe datos,\nhace algo con ellos,\ndevuelve un resultado.\n\nEn lenguaje jurídico: una mini rutina de decisión.",
+    "crumbs": [
+      "I. Pensamiento Computacional para juristas",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
+    ]
+  },
+  {
+    "objectID": "parte-1-modulo-1/02-capitulo.html#trabajar-con-varios-elementos-listas",
+    "href": "parte-1-modulo-1/02-capitulo.html#trabajar-con-varios-elementos-listas",
+    "title": "2. Primeros pasos con Python",
+    "section": "5. Trabajar con varios elementos: listas",
+    "text": "5. Trabajar con varios elementos: listas\nLa carpeta 01-listas/ está pensada para aprender a guardar y recorrer varios datos, una competencia básica en cualquier introducción a Python. citeturn0view0\nexpedientes = [\"EXP-001\", \"EXP-002\", \"EXP-003\", \"EXP-004\", \"EXP-005\"]\nprint(\"Cantidad de expedientes:\", len(expedientes))\nLas listas sirven para guardar varios elementos en orden. Son útiles para:\n\nexpedientes;\nnombres de partes;\nartículos;\nresoluciones;\nfechas;\ncorreos.\n\nTambién pueden recorrerse con un bucle:\nfor expediente in expedientes:\n    print(expediente)",
+    "crumbs": [
+      "I. Pensamiento Computacional para juristas",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
+    ]
+  },
+  {
+    "objectID": "parte-1-modulo-1/02-capitulo.html#trabajar-con-texto",
+    "href": "parte-1-modulo-1/02-capitulo.html#trabajar-con-texto",
+    "title": "2. Primeros pasos con Python",
+    "section": "6. Trabajar con texto",
+    "text": "6. Trabajar con texto\nLa carpeta 02-texto/ se centra en limpiar y revisar cadenas de texto, una habilidad muy útil para documentos y bases jurídicas. citeturn0view0\ntexto = \" Hola, Mundo Python \"\ntexto_sin_espacios = texto.strip()\n\nprint(texto_sin_espacios.lower())\nprint(texto_sin_espacios.upper())\nTambién puede hacerse esto:\narchivo = \"reporte_2026.pdf\"\nprint(archivo.startswith(\"reporte_\"))\nprint(archivo.endswith(\".pdf\"))\n\n¿Para qué sirve esto en Derecho?\nPara tareas como:\n\nnormalizar nombres;\nrevisar formatos de archivo;\ndetectar palabras clave;\nlimpiar correos o campos mal escritos;\nverificar documentos con estructura previsible.",
+    "crumbs": [
+      "I. Pensamiento Computacional para juristas",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
+    ]
+  },
+  {
+    "objectID": "parte-1-modulo-1/02-capitulo.html#trabajar-con-fechas-y-plazos",
+    "href": "parte-1-modulo-1/02-capitulo.html#trabajar-con-fechas-y-plazos",
+    "title": "2. Primeros pasos con Python",
+    "section": "7. Trabajar con fechas y plazos",
+    "text": "7. Trabajar con fechas y plazos\nLa carpeta 03-fechas/ introduce trabajo con fechas y plazos simples, algo especialmente pertinente para estudiantes de Derecho. citeturn0view0\nfrom datetime import datetime, timedelta\n\nfecha_notificacion = datetime.strptime(\"2026-03-06\", \"%Y-%m-%d\")\nplazo = timedelta(days=5)\nfecha_vencimiento = fecha_notificacion + plazo\n\nprint(\"Fecha de vencimiento:\", fecha_vencimiento.date())\nEsto permite modelar una operación muy común: a partir de una fecha de referencia, calcular otra fecha.\n\n\n\n\n\n\nWarningOjo jurídico\n\n\n\nEn la práctica legal real, el cómputo de plazos puede depender de reglas más complejas:\n\ndías hábiles o calendario;\nsuspensión de plazos;\nhorarios de cierre;\nnotificación efectiva;\nnormas especiales.\n\nEste tipo de script es una simplificación didáctica, no una solución jurídica completa.",
+    "crumbs": [
+      "I. Pensamiento Computacional para juristas",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
+    ]
+  },
+  {
+    "objectID": "parte-1-modulo-1/02-capitulo.html#leer-y-guardar-archivos",
+    "href": "parte-1-modulo-1/02-capitulo.html#leer-y-guardar-archivos",
+    "title": "2. Primeros pasos con Python",
+    "section": "8. Leer y guardar archivos",
+    "text": "8. Leer y guardar archivos\nLa carpeta 04-archivos/ está destinada a leer y guardar información en archivos, incluyendo ejemplos con datos estructurados. citeturn0view0\nimport csv\nfrom pathlib import Path\n\nruta_csv = Path(__file__).parent / \"data\" / \"expedientes.csv\"\n\nwith open(ruta_csv, \"r\", encoding=\"utf-8\") as archivo:\n    lector = csv.DictReader(archivo)\n    for fila in lector:\n        print(fila[\"codigo\"], \"-\", fila[\"estado\"])\n\n¿Por qué esto importa?\nPorque gran parte del trabajo legal actual consiste en interactuar con documentos y datos almacenados en archivos:\n\nregistros de expedientes;\nbases exportadas en CSV;\nlistados;\nreportes;\nplantillas.\n\nUn archivo CSV puede abrirse en Excel, pero también puede procesarse con Python.",
+    "crumbs": [
+      "I. Pensamiento Computacional para juristas",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
+    ]
+  },
+  {
+    "objectID": "parte-1-modulo-1/02-capitulo.html#una-primera-aproximación-a-datos-tabulares",
+    "href": "parte-1-modulo-1/02-capitulo.html#una-primera-aproximación-a-datos-tabulares",
+    "title": "2. Primeros pasos con Python",
+    "section": "9. Una primera aproximación a datos tabulares",
+    "text": "9. Una primera aproximación a datos tabulares\nLa carpeta 05-datos/ ofrece una introducción básica a tablas con pandas, según el README del repositorio. citeturn0view0\nimport pandas as pd\nfrom pathlib import Path\n\nruta_csv = Path(__file__).parent / \"data\" / \"multas.csv\"\ntabla = pd.read_csv(ruta_csv)\n\npendientes = tabla[tabla[\"estado\"] == \"Pendiente\"]\nprint(pendientes)\nCon esto ya puedes:\n\nleer tablas;\nfiltrar registros;\ncontar categorías;\ncalcular promedios simples.\n\n\nInstalación opcional de pandas\npip install pandas\nO, en algunos equipos:\npip3 install pandas\n\n\n\n\n\n\nTipIdea clave\n\n\n\nCuando los datos crecen, trabajar fila por fila se vuelve tedioso. Las tablas permiten pasar de casos individuales a patrones:\n\ncuántos expedientes están pendientes;\ncuántos fueron cerrados;\ncuál es el promedio de multas;\nqué responsable tiene más carga.",
+    "crumbs": [
+      "I. Pensamiento Computacional para juristas",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
+    ]
+  },
+  {
+    "objectID": "parte-1-modulo-1/02-capitulo.html#python-aplicado-al-derecho",
+    "href": "parte-1-modulo-1/02-capitulo.html#python-aplicado-al-derecho",
+    "title": "2. Primeros pasos con Python",
+    "section": "10. Python aplicado al Derecho",
+    "text": "10. Python aplicado al Derecho\nLa carpeta 06-ejercicios-derecho/ está pensada para practicar con ejemplos sencillos cercanos al ámbito jurídico y administrativo. citeturn0view0\nEntre las tareas que pueden trabajarse en esa lógica están:\n\ncálculo simple de multa;\nrevisión de expedientes;\nvalidación de documentos;\nbúsqueda de palabra clave;\nconteo por categorías.\n\n\nEjemplo: cálculo simple de multa\nmulta_por_dia = 25\ndias_retraso = 4\nmonto_total = multa_por_dia * dias_retraso\n\nprint(\"Monto total:\", monto_total)\n\n\nLo importante no es solo el resultado\nLo importante es aprender a ver que detrás de una tarea jurídica puede haber una estructura lógica como esta:\n\nidentificar los datos relevantes;\ndefinir la regla;\nejecutar la operación;\nmostrar el resultado.\n\nEso es pensamiento computacional aplicado a problemas legales.",
+    "crumbs": [
+      "I. Pensamiento Computacional para juristas",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
+    ]
+  },
+  {
+    "objectID": "parte-1-modulo-1/02-capitulo.html#qué-debes-practicar-hoy",
+    "href": "parte-1-modulo-1/02-capitulo.html#qué-debes-practicar-hoy",
+    "title": "2. Primeros pasos con Python",
+    "section": "11. Qué debes practicar hoy",
+    "text": "11. Qué debes practicar hoy\n\nEjercicio 1. Cambia valores\nAbre un archivo de 00-basicos/ y cambia los valores de las variables. Luego ejecútalo otra vez.\n\n\nEjercicio 2. Crea una condición\nEscribe un programa que indique si un expediente está “vigente” o “vencido” según el número de días transcurridos.\n\n\nEjercicio 3. Recorre una lista\nCrea una lista con cinco códigos de expediente y recórrela con for.\n\n\nEjercicio 4. Calcula un plazo\nUsa datetime y timedelta para sumar 10 días a una fecha de notificación.\n\n\nEjercicio 5. Adapta un ejemplo jurídico\nToma un ejemplo simple de cálculo y conviértelo en una función.",
+    "crumbs": [
+      "I. Pensamiento Computacional para juristas",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
+    ]
+  },
+  {
+    "objectID": "parte-1-modulo-1/02-capitulo.html#error-prueba-y-aprendizaje",
+    "href": "parte-1-modulo-1/02-capitulo.html#error-prueba-y-aprendizaje",
+    "title": "2. Primeros pasos con Python",
+    "section": "12. Error, prueba y aprendizaje",
+    "text": "12. Error, prueba y aprendizaje\nUno de los mayores obstáculos al empezar no es técnico, sino mental: creer que equivocarse significa no servir para programar.\nNo. Significa que estás aprendiendo.\nUn error en pantalla suele indicar una de estas cosas:\n\nun paréntesis faltante;\nuna sangría incorrecta;\nun nombre mal escrito;\nun tipo de dato inesperado.\n\nLeer errores con calma es parte del proceso.\n\n\n\n\n\n\nImportantRegla de supervivencia\n\n\n\nNo luches contra el error como si fuera un enemigo moral.\nLéelo.\nUbícalo.\nCorrígelo.\nVuelve a intentar.",
+    "crumbs": [
+      "I. Pensamiento Computacional para juristas",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
+    ]
+  },
+  {
+    "objectID": "parte-1-modulo-1/02-capitulo.html#cierre",
+    "href": "parte-1-modulo-1/02-capitulo.html#cierre",
+    "title": "2. Primeros pasos con Python",
+    "section": "13. Cierre",
+    "text": "13. Cierre\nEn esta sesión no buscamos formar desarrolladores profesionales en un par de horas. Buscamos algo más útil: que puedas reconocer que el código es una forma de representar instrucciones y que muchas tareas jurídicas pueden modelarse paso a paso.\nPython importa en Legal Tech no porque esté de moda, sino porque permite experimentar con lógica, automatización, análisis de información y construcción de soluciones simples.\nEn el siguiente tramo del curso, estas bases servirán para pensar mejor procesos, datos, documentos y herramientas aplicadas al trabajo legal.",
+    "crumbs": [
+      "I. Pensamiento Computacional para juristas",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
+    ]
+  },
+  {
+    "objectID": "parte-1-modulo-1/02-capitulo.html#para-seguir-practicando",
+    "href": "parte-1-modulo-1/02-capitulo.html#para-seguir-practicando",
+    "title": "2. Primeros pasos con Python",
+    "section": "Para seguir practicando",
+    "text": "Para seguir practicando\nTe recomiendo recorrer el repositorio en este orden:\n\n00-basicos/\n01-listas/\n02-texto/\n03-fechas/\n04-archivos/\n05-datos/\n06-ejercicios-derecho/",
+    "crumbs": [
+      "I. Pensamiento Computacional para juristas",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
+    ]
+  },
+  {
+    "objectID": "parte-1-modulo-1/02-capitulo.html#preguntas-de-repaso",
+    "href": "parte-1-modulo-1/02-capitulo.html#preguntas-de-repaso",
+    "title": "2. Primeros pasos con Python",
+    "section": "Preguntas de repaso",
+    "text": "Preguntas de repaso\n\n¿Qué diferencia hay entre una variable de texto y una de número?\n¿Qué hace un if?\n¿Qué diferencia hay entre for y while?\n¿Para qué sirve una función?\n¿Por qué las listas son útiles?\n¿Cómo puede Python ayudar en tareas jurídicas?\n¿Qué límites tiene automatizar una regla legal sin contexto?",
+    "crumbs": [
+      "I. Pensamiento Computacional para juristas",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
     ]
   }
 ]
