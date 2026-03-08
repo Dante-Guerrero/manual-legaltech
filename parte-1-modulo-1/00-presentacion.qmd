@@ -1,3 +1,83 @@
-# I. Pensamiento Computacional para juristas
+---
+title: "Módulo 1. Pensamiento computacional para juristas"
+---
 
-[...]
+# I. Pensamiento computacional para juristas
+
+El primer módulo del curso cumple una función decisiva: construir el puente entre la formación jurídica tradicional y la lógica con la que operan las tecnologías digitales. En otras palabras, antes de hablar de automatización, datos, páginas web o inteligencia artificial, necesitamos entender cómo piensa una máquina, cómo se estructura una instrucción y por qué esa forma de razonar importa para el trabajo jurídico. Según el sílabo, este módulo busca que el estudiante comprenda los conceptos fundamentales del pensamiento computacional y sea capaz de representar instrucciones legales en lógica computacional. Además, abarca cuatro semanas y se organiza alrededor de tres ejes: pensamiento computacional y lenguajes de programación; desarrollo de software, control de versiones y licencias; y fundamentos de programación con Python. fileciteturn0file0
+
+::: {.callout-important appearance="simple"}
+## Idea central del módulo
+Una computadora no “entiende” el derecho como lo hace un abogado. Solo ejecuta instrucciones, evalúa condiciones y procesa información según reglas previamente definidas. Por eso, para trabajar bien con tecnología en el ámbito jurídico, primero hay que aprender a traducir problemas complejos a pasos claros, ordenados y verificables.
+:::
+
+Este módulo no pretende convertirte en ingeniero de software de la noche a la mañana, porque bastante caos produce ya el mundo sin sumar esa fantasía. Su propósito es más útil y más realista: que desarrolles una forma de pensar que te permita dialogar con herramientas tecnológicas, entender sus límites y aprovecharlas con criterio. Un abogado que sabe formular procesos, identificar variables, distinguir condiciones y estructurar decisiones está mejor preparado para diseñar flujos de trabajo, automatizar tareas repetitivas, colaborar con equipos técnicos y evaluar soluciones legaltech con mayor rigor.
+
+## ¿Qué verás en este módulo?
+
+A lo largo de este módulo trabajarás tres grandes bloques temáticos.
+
+### 1. Pensamiento computacional y lenguajes de programación
+Empezaremos por lo esencial: qué es el pensamiento computacional, por qué resulta útil fuera de la informática y cómo puede aplicarse al razonamiento jurídico. Verás ideas como descomposición de problemas, reconocimiento de patrones, abstracción y diseño de instrucciones. También se introducirá el pseudocódigo como una herramienta para representar reglas, procedimientos y decisiones legales de forma estructurada. Este punto es especialmente importante porque muchas tareas jurídicas ya funcionan, en la práctica, como secuencias de pasos, validaciones y condiciones.
+
+::: {.callout-note appearance="simple"}
+## Conexión con el derecho
+Un procedimiento administrativo, un checklist de compliance, una matriz de riesgos o una guía para revisar contratos pueden leerse como sistemas de decisiones. El pensamiento computacional ayuda a hacer explícita esa lógica.
+:::
+
+### 2. Desarrollo de software, Git, GitHub y licencias
+Luego pasaremos a una mirada introductoria sobre cómo se construye software y cómo se organizan sus cambios. Aquí conocerás conceptos básicos de desarrollo, control de versiones, repositorios, Git y GitHub. También se discutirá la diferencia entre código privado y open source, así como algunas nociones elementales sobre licencias de software. Para un jurista, esto importa porque cada vez es más frecuente trabajar con productos digitales, revisar términos de uso, participar en proyectos interdisciplinarios o decidir si una solución tecnológica puede reutilizarse, compartirse o adaptarse legalmente. fileciteturn0file0
+
+::: {.callout-tip appearance="simple"}
+## ¿Por qué esto importa en serio?
+Porque en el mundo profesional no basta con usar herramientas. También hay que entender quién las controla, cómo evolucionan, qué permisos existen para reutilizarlas y qué riesgos jurídicos puede generar una mala gestión del software o de la información.
+:::
+
+### 3. Fundamentos de programación con Python
+Finalmente, ingresarás a la programación con Python. Se revisarán sus características generales y se trabajarán nociones básicas como variables, funciones, condicionales y bucles. La meta no es memorizar comandos por deporte, sino empezar a escribir instrucciones comprensibles y funcionales. Python será la puerta de entrada para que puedas experimentar directamente con la lógica computacional y sentar la base de módulos posteriores del curso. fileciteturn0file0
+
+## ¿Por qué este módulo es importante?
+
+Porque buena parte de la innovación jurídica contemporánea no depende solo de saber normas, sino de saber estructurar problemas. El derecho trabaja con hechos, reglas, excepciones, procedimientos, evidencias y decisiones. La tecnología también trabaja con estructuras, condiciones, entradas, salidas y validaciones. Cuando un jurista desarrolla pensamiento computacional, mejora su capacidad para:
+
+- ordenar problemas complejos;
+- identificar pasos y dependencias en un proceso;
+- detectar tareas repetitivas susceptibles de automatización;
+- comunicarse mejor con desarrolladores, analistas y equipos de innovación;
+- evaluar críticamente herramientas legaltech, en vez de admirarlas como si fueran magia con interfaz bonita.
+
+::: {.callout-warning appearance="simple"}
+## Advertencia útil
+La tecnología jurídica no reemplaza el juicio profesional, la ética ni la interpretación jurídica. Lo que sí hace es exigir mayor claridad, precisión y capacidad de diseño. Si la lógica de un proceso legal está mal pensada, digitalizarlo solo hace que el error viaje más rápido.
+:::
+
+## Objetivos de aprendizaje
+
+Al finalizar este módulo, deberías ser capaz de:
+
+1. **Comprender** qué es el pensamiento computacional y reconocer su utilidad en el análisis de problemas jurídicos.
+2. **Representar** instrucciones, reglas y procedimientos legales mediante lógica estructurada y pseudocódigo.
+3. **Explicar** de manera básica cómo se desarrolla software y por qué el control de versiones resulta relevante en proyectos digitales.
+4. **Distinguir** nociones elementales sobre código privado, open source y licencias de software.
+5. **Aplicar** fundamentos introductorios de programación con Python para resolver ejercicios simples vinculados con lógica, variables, funciones, condicionales y bucles.
+
+## ¿Cómo conviene abordar este módulo?
+
+Este módulo se aprovecha mejor si combinas curiosidad, paciencia y práctica. Leer ayuda, pero aquí aprenderás sobre todo haciendo: probando instrucciones, equivocándote, corrigiendo y volviendo a intentar. Ese pequeño ciclo de ensayo y error, tan irritante y tan útil, es parte natural del aprendizaje técnico.
+
+::: {.callout-tip appearance="simple"}
+## Recomendaciones para trabajar bien
+- No memorices sin comprender la lógica.
+- Intenta describir cada ejercicio en lenguaje natural antes de escribirlo.
+- Piensa siempre en términos de pasos, condiciones y resultados.
+- Cuando algo falle, no asumas que “no eres de tecnología”; revisa qué instrucción no está diciendo exactamente lo que querías decir.
+:::
+
+## Lo que este módulo prepara para lo que viene
+
+El Módulo 1 es la base del resto del curso. Sin estas herramientas iniciales, sería mucho más difícil avanzar hacia automatización documental, tratamiento de datos, páginas web, servicios en la nube o inteligencia artificial aplicada al derecho. Por eso, esta parte del manual no es un simple preámbulo: es la caja de herramientas conceptual que te permitirá entender con más profundidad todo lo que vendrá después. fileciteturn0file0
+
+::: {.callout-important appearance="simple"}
+## En una frase
+Este módulo te enseña a pasar de “usar tecnología” a “entender cómo está organizada”, que es una diferencia bastante relevante cuando uno quiere ejercer el derecho con criterio en el siglo XXI.
+:::
