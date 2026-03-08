@@ -1,9 +1,84 @@
-# Profesores
+---
+title: "Profesores"
+page-layout: full
+---
+
+::: {.prof-page}
+
+::: {.prof-intro}
+El curso es desarrollado por docentes con experiencia en derecho, regulación, gestión pública e innovación. Sus trayectorias combinan trabajo académico y práctica profesional, lo que permite abordar Legal Tech desde una perspectiva aplicada, crítica y conectada con problemas reales del ejercicio jurídico.
+:::
+
+::: {.prof-grid}
+
+::: {.prof-card}
+
+::: {.prof-photo-col}
+::: {.prof-photo-wrap}
+![](../images/dante.png){.prof-photo fig-alt="Fotografía de Dante Guerrero"}
+:::
+
+::: {.prof-contact}
+[**dguerrerob@cientifica.edu.pe**](mailto:dguerrerob@cientifica.edu.pe)
+
+[LinkedIn](https://www.linkedin.com/)
+:::
+:::
+
+::: {.prof-content}
 
 ## Dante Guerrero
 
-[...]
+::: {.prof-role}
+Abogado, MBA y docente universitario
+:::
+
+Dante Guerrero es abogado y docente universitario, con experiencia en gestión pública, fiscalización, innovación y transformación digital. Su trayectoria combina práctica profesional, trabajo académico y participación en procesos de modernización institucional, con especial interés en la relación entre derecho, tecnología y mejora de los servicios públicos.
+
+En el ámbito docente, promueve una aproximación aplicada al aprendizaje jurídico, orientada a vincular conceptos, casos y herramientas con situaciones reales del ejercicio profesional. En este curso, su enfoque busca que los estudiantes comprendan cómo la tecnología puede apoyar el análisis jurídico, la organización de información, el diseño de soluciones y la toma de decisiones con criterio ético y sentido práctico.
+
+::: {.prof-meta}
+**Áreas de trabajo:** derecho administrativo, fiscalización, innovación pública, transformación digital, inteligencia artificial aplicada y legal tech.
+:::
+
+:::
+
+:::
+
+::: {.prof-card}
+
+::: {.prof-photo-col}
+::: {.prof-photo-wrap}
+![](../images/manu.png){.prof-photo fig-alt="Fotografía de Manuel Santa Cruz"}
+:::
+
+::: {.prof-contact}
+[**msantacruzs@cientifica.edu.pe**](mailto:msantacruzs@cientifica.edu.pe)
+
+[LinkedIn](https://www.linkedin.com/)
+:::
+:::
+
+::: {.prof-content}
 
 ## Manuel Santa Cruz
 
-[...]
+::: {.prof-role}
+Abogado y docente universitario
+:::
+
+Manuel Santa Cruz es abogado y docente universitario, con experiencia en regulación, gestión pública y aplicación del derecho en entornos institucionales complejos. Su trayectoria profesional se ha desarrollado en entidades públicas vinculadas con supervisión, fiscalización, política pública y fortalecimiento institucional.
+
+Su aporte al curso se centra en ofrecer una mirada rigurosa y sobria sobre los desafíos contemporáneos del derecho frente al cambio tecnológico, conectando la formación jurídica con problemas concretos de implementación, regulación y servicio al ciudadano. En clase, su perspectiva contribuye a que los estudiantes comprendan la tecnología no como un tema aislado, sino como parte de las transformaciones que ya inciden en la práctica legal y en la función pública.
+
+::: {.prof-meta}
+**Áreas de trabajo:** regulación, fiscalización ambiental, protección al consumidor, competencia, gestión pública y formación jurídica aplicada.
+:::
+
+:::
+
+:::
+
+:::
+
+:::

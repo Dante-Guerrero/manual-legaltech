@@ -3,10 +3,8 @@ project:
   output-dir: _book
 
 book:
-  title: "Curso Legal Tech"
-  author: 
-    - Dante Guerrero
-    - Manuel Santa Cruz
+  title: "Legal Tech, Manual del Curso"
+
   chapters:
     - index.qmd
     - parte-0/profesores.qmd
@@ -58,3 +56,4 @@ format:
     theme: cosmo
     toc: true
     number-sections: false
+    css: styles.css
