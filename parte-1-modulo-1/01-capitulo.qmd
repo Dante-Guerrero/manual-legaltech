@@ -1,83 +1,72 @@
-# 1. Del sistema binario al razonamiento computacional
+# Sesión 1. Del bit al pseudocódigo
 
-## ¿Por qué empezar por el sistema binario?
+## ¿Por qué empezar por aquí?
 
-En un curso de Legal Tech, puede parecer extraño comenzar hablando de ceros y unos. Después de todo, los abogados estudiamos normas, argumentos, instituciones y procedimientos, no cables ni microchips. Pero hay una buena razón para hacerlo: **si queremos entender cómo funciona la tecnología que hoy impacta al Derecho, primero debemos entender cómo una computadora representa la información y ejecuta instrucciones**.
+En un curso de Legal Tech puede parecer extraño comenzar hablando de ceros y unos. Después de todo, el Derecho trabaja con normas, hechos, argumentos, pruebas, procedimientos y decisiones, no con cables ni placas madre. Pero hay una razón muy buena para empezar aquí: si queremos comprender cómo funciona la tecnología que hoy transforma la profesión jurídica, primero debemos entender **cómo una computadora representa la información y ejecuta instrucciones**.
 
-La idea central de esta sesión es simple: una computadora no “entiende” textos, imágenes, videos, contratos o sentencias como los entendemos nosotros. Lo que hace es **representar toda esa información mediante patrones de bits**, es decir, secuencias de **0** y **1**. A partir de allí puede almacenar datos, hacer cálculos, comparar valores y ejecutar instrucciones.
+Una computadora no entiende el mundo como lo entendemos nosotros. No “ve” una demanda, no “lee” una sentencia y no “comprende” una norma en sentido humano. Lo que hace es **representar información** y **procesarla** siguiendo reglas. En su nivel más básico, esa representación se construye con **bits**, es decir, con secuencias de **0** y **1**.
+
+Esta sesión toma esa idea como punto de partida para mostrar tres cosas. Primero, que números y texto pueden representarse en binario. Segundo, que una computadora funciona porque puede almacenar y transformar esa información. Tercero, que programar consiste, en el fondo, en dar instrucciones a una máquina que opera sobre datos representados formalmente. No vamos a quedarnos en el binario para siempre, porque eso sería una forma particularmente cruel de enseñar, pero sí vamos a usarlo para entender el origen de todo lo demás.
 
 ::: {.callout-important}
-## Idea clave
+## Idea central de la sesión
 
-Una computadora puede procesar números, texto, imágenes y sonido porque **todo puede representarse en binario**.
+La computadora puede procesar números, texto, imágenes y sonido porque **todo puede representarse mediante bits**. Comprender eso permite entender por qué existen los lenguajes de programación y por qué el pensamiento computacional también importa para juristas.
 :::
 
-## Objetivo de la sesión
+## Objetivos de aprendizaje
 
 Al finalizar esta sesión, deberías ser capaz de:
 
-- comprender qué es el sistema binario;
-- convertir números decimales sencillos a binario y viceversa;
-- entender de forma básica cómo una computadora representa texto;
+- comprender qué es el sistema binario y por qué una computadora trabaja con él;
+- convertir números sencillos del sistema decimal al binario y viceversa;
+- entender de manera básica cómo se representa el texto dentro de una computadora;
 - explicar por qué el binario puede verse como el lenguaje más elemental de una computadora;
-- distinguir entre lenguaje máquina, lenguajes de programación y pseudocódigo;
-- conectar estas ideas con el razonamiento jurídico estructurado.
+- distinguir entre binario, lenguaje máquina, lenguajes de programación y pseudocódigo;
+- relacionar estas ideas con el razonamiento jurídico estructurado.
 
-## 1. ¿Qué hace realmente una computadora?
+## ¿Qué hace una computadora?
 
-Una computadora recibe, almacena, transforma y devuelve información. Lo hace a gran velocidad, pero siguiendo una lógica bastante simple:
+De manera muy general, una computadora realiza cuatro tareas:
 
-1. **recibe datos**;
-2. **los representa internamente**;
-3. **ejecuta instrucciones** sobre esos datos;
-4. **produce una salida**.
+1. **recibe información**;
+2. **la representa internamente**;
+3. **ejecuta instrucciones** sobre esa información;
+4. **produce un resultado**.
 
-Por ejemplo, cuando escribes una demanda en tu laptop:
+Cuando escribes un correo, editas un documento, buscas una sentencia o rellenas un formulario digital, la computadora recibe entradas, las almacena, ejecuta operaciones y muestra una salida. Todo eso parece intuitivo desde la experiencia del usuario. Pero internamente ocurre algo menos glamoroso y más importante: la información se reduce a estados físicos que pueden distinguirse de manera confiable.
 
-- presionas teclas;
-- la computadora detecta esas entradas;
-- cada carácter se representa numéricamente;
-- esos números se almacenan como bits;
-- el procesador ejecuta instrucciones;
-- la pantalla muestra el resultado.
+En una explicación simplificada, los circuitos electrónicos trabajan distinguiendo entre dos estados posibles, por ejemplo:
 
-Es decir, detrás de algo aparentemente cotidiano hay una cadena de representación y procesamiento. Muy elegante, muy poderosa, y construida sobre un sistema que solo tiene dos símbolos.
-
-## 2. ¿Por qué binario?
-
-Las computadoras funcionan con circuitos electrónicos. En una explicación simplificada, esos circuitos pueden distinguir entre dos estados:
-
-- encendido / apagado,
-- pasa corriente / no pasa corriente,
+- encendido / apagado;
+- pasa corriente / no pasa corriente;
 - alto voltaje / bajo voltaje.
 
-Por eso resulta natural usar un sistema con solo dos valores:
+A partir de esa diferencia básica se construye el sistema binario.
+
+## Bit, byte y sistema binario
+
+El sistema binario usa solo dos símbolos:
 
 - **0**
 - **1**
 
-A cada uno de esos valores se le llama **bit**, abreviatura de *binary digit*.
+Cada uno de esos dígitos binarios se llama **bit**. El término viene de *binary digit*.
+
+Un grupo de 8 bits forma un **byte**, unidad muy utilizada para representar caracteres y otros tipos de información.
 
 ::: {.callout-note}
 ## Vocabulario básico
 
-- **bit**: unidad mínima de información, puede ser 0 o 1.
-- **byte**: grupo de 8 bits.
+- **bit**: unidad mínima de información; solo puede valer 0 o 1.
+- **byte**: conjunto de 8 bits.
 - **binario**: sistema numérico en base 2.
-- **decimal**: sistema numérico usual, en base 10.
+- **decimal**: sistema numérico en base 10, que es el que usamos habitualmente.
 :::
 
-## 3. Del sistema decimal al sistema binario
+## Del sistema decimal al sistema binario
 
-Nosotros usamos normalmente el sistema decimal, que tiene diez símbolos: 0, 1, 2, 3, 4, 5, 6, 7, 8 y 9.
-
-El sistema binario solo tiene dos: 0 y 1.
-
-La diferencia no está solo en los símbolos, sino en el valor posicional.
-
-### Sistema decimal
-
-En decimal, el número 347 significa:
+Nosotros solemos usar el sistema decimal. Tiene diez símbolos: 0, 1, 2, 3, 4, 5, 6, 7, 8 y 9. Su lógica depende del valor posicional. Por ejemplo, el número 347 significa:
 
 - 3 centenas,
 - 4 decenas,
@@ -85,42 +74,573 @@ En decimal, el número 347 significa:
 
 Es decir:
 
+```text
 347 = 3×10² + 4×10¹ + 7×10⁰
+```
 
-### Sistema binario
+El sistema binario funciona igual en la lógica de posiciones, pero cada posición representa una potencia de 2:
 
-En binario, cada posición representa una potencia de 2:
+```text
+2⁰ = 1
+2¹ = 2
+2² = 4
+2³ = 8
+2⁴ = 16
+2⁵ = 32
+2⁶ = 64
+2⁷ = 128
+```
 
-- 2⁰ = 1
-- 2¹ = 2
-- 2² = 4
-- 2³ = 8
-- 2⁴ = 16
-- 2⁵ = 32
-- 2⁶ = 64
-- 2⁷ = 128
+Por eso, el número binario `1011` significa:
 
-Por ejemplo, el número binario `1011` significa:
-
-- 1×2³ = 8
-- 0×2² = 0
-- 1×2¹ = 2
-- 1×2⁰ = 1
+```text
+1×2³ = 8
+0×2² = 0
+1×2¹ = 2
+1×2⁰ = 1
+```
 
 Entonces:
 
-`1011₂ = 11₁₀`
+```text
+1011₂ = 11₁₀
+```
 
-## 4. Cómo convertir de binario a decimal
+## Cómo convertir de binario a decimal
 
-El método más directo es multiplicar cada bit por su potencia de 2 correspondiente y sumar.
+Para convertir un número binario a decimal, basta con multiplicar cada bit por la potencia de 2 que le corresponde y luego sumar.
 
 ### Ejemplo 1
 
-Convertir `1101` a decimal.
+Convierte `1101` a decimal.
 
 ```text
 1×2³ = 8
 1×2² = 4
 0×2¹ = 0
 1×2⁰ = 1
+```
+
+Resultado:
+
+```text
+1101₂ = 13₁₀
+```
+
+### Ejemplo 2
+
+Convierte `10010` a decimal.
+
+```text
+1×2⁴ = 16
+0×2³ = 0
+0×2² = 0
+1×2¹ = 2
+0×2⁰ = 0
+```
+
+Resultado:
+
+```text
+10010₂ = 18₁₀
+```
+
+::: {.callout-tip}
+## Regla práctica
+
+Para pasar de binario a decimal, **suma las potencias de 2 correspondientes a las posiciones donde aparezca un 1**.
+:::
+
+## Cómo convertir de decimal a binario
+
+Para pasar de decimal a binario, hay que descomponer el número como suma de potencias de 2.
+
+### Ejemplo 1
+
+Convierte 13 a binario.
+
+Buscamos las potencias de 2 que suman 13:
+
+```text
+13 = 8 + 4 + 1
+13 = 2³ + 2² + 2⁰
+```
+
+Entonces:
+
+```text
+13₁₀ = 1101₂
+```
+
+### Ejemplo 2
+
+Convierte 19 a binario.
+
+```text
+19 = 16 + 2 + 1
+19 = 2⁴ + 2¹ + 2⁰
+```
+
+Entonces:
+
+```text
+19₁₀ = 10011₂
+```
+
+## Ejercicios guiados de conversión numérica
+
+### Ejercicio 1
+
+Convierte `1010` a decimal.
+
+### Solución
+
+```text
+1×2³ = 8
+0×2² = 0
+1×2¹ = 2
+0×2⁰ = 0
+```
+
+Resultado:
+
+```text
+1010₂ = 10₁₀
+```
+
+### Ejercicio 2
+
+Convierte `111` a decimal.
+
+### Solución
+
+```text
+1×2² = 4
+1×2¹ = 2
+1×2⁰ = 1
+```
+
+Resultado:
+
+```text
+111₂ = 7₁₀
+```
+
+### Ejercicio 3
+
+Convierte 12 a binario.
+
+### Solución
+
+```text
+12 = 8 + 4
+12 = 2³ + 2²
+```
+
+Resultado:
+
+```text
+12₁₀ = 1100₂
+```
+
+### Ejercicio 4
+
+Convierte 9 a binario.
+
+### Solución
+
+```text
+9 = 8 + 1
+9 = 2³ + 2⁰
+```
+
+Resultado:
+
+```text
+9₁₀ = 1001₂
+```
+
+## Propuesta de práctica en clase
+
+Resuelve en parejas los siguientes ejercicios:
+
+1. convierte `1011` a decimal;
+2. convierte `10001` a decimal;
+3. convierte `6` a binario;
+4. convierte `14` a binario;
+5. explica con tus palabras qué representa cada posición en un número binario.
+
+::: {.callout-note}
+## Sugerencia metodológica
+
+No memorices cadenas de números sin sentido. Lo importante es entender la lógica de las potencias de 2. Una vez que entiendes eso, la conversión deja de parecer brujería técnica y pasa a ser solo aritmética ordenada.
+:::
+
+## ¿Cómo puede una computadora representar texto?
+
+Hasta aquí hemos trabajado con números. Pero una computadora también procesa letras, espacios, signos de puntuación y otros caracteres. La clave está en esto: **cada carácter puede asociarse con un número**.
+
+Por ejemplo, en sistemas de codificación clásicos, se asignan valores como estos:
+
+```text
+A = 65
+B = 66
+C = 67
+```
+
+Una vez que una letra se representa como número, ese número también puede representarse en binario.
+
+### Ejemplo: la letra A
+
+Si `A = 65`, entonces:
+
+```text
+65 = 64 + 1
+65 = 2⁶ + 2⁰
+```
+
+En 8 bits, puede escribirse así:
+
+```text
+01000001
+```
+
+### Ejemplo: la letra B
+
+Si `B = 66`, entonces:
+
+```text
+66 = 64 + 2
+66 = 2⁶ + 2¹
+```
+
+En binario:
+
+```text
+01000010
+```
+
+## Del texto al binario
+
+Si cada carácter tiene un valor numérico, una palabra entera puede representarse como una secuencia de bytes.
+
+### Ejemplo
+
+La palabra `AB` puede representarse así:
+
+```text
+A = 65 = 01000001
+B = 66 = 01000010
+```
+
+Entonces:
+
+```text
+AB = 01000001 01000010
+```
+
+::: {.callout-important}
+## Punto clave
+
+La computadora no almacena “letras” como las vemos nosotros. Almacena **números que representan caracteres**, y esos números se almacenan como secuencias binarias.
+:::
+
+## Ejercicio guiado con texto
+
+Supón, para fines didácticos, la siguiente tabla simplificada:
+
+```text
+A = 65
+B = 66
+C = 67
+```
+
+### Ejercicio
+
+Representa la palabra `CAB` primero en números decimales y luego en binario.
+
+### Solución
+
+```text
+C = 67 = 01000011
+A = 65 = 01000001
+B = 66 = 01000010
+```
+
+Entonces:
+
+```text
+CAB = 01000011 01000001 01000010
+```
+
+## ¿Cómo funciona una PC, en términos simples?
+
+No necesitamos una clase completa de arquitectura de computadores para esta sesión, pero sí conviene entender algunas piezas básicas:
+
+### Procesador (CPU)
+
+Es el componente que ejecuta instrucciones. Puede compararse, con todas las simplificaciones del caso, con la unidad que realiza operaciones y toma decisiones lógicas sobre la base de instrucciones previamente definidas.
+
+### Memoria RAM
+
+Es el espacio de trabajo temporal. Allí se cargan los datos y programas que la computadora está usando en ese momento.
+
+### Almacenamiento
+
+Es donde se guardan archivos y programas de manera más permanente, por ejemplo en un disco SSD.
+
+### Dispositivos de entrada y salida
+
+- entrada: teclado, mouse, cámara, micrófono;
+- salida: pantalla, parlantes, impresora.
+
+### Sistema operativo
+
+Es el software que coordina el uso del hardware y permite que otros programas funcionen.
+
+## Una analogía útil
+
+Podemos pensar el funcionamiento básico de una computadora así:
+
+- el **usuario** entrega datos;
+- el **sistema operativo** organiza la interacción;
+- la **memoria** mantiene lo necesario a mano;
+- el **procesador** ejecuta operaciones;
+- la **salida** muestra el resultado.
+
+Todo ello ocurre sobre información codificada de forma binaria. No es magia. Es una máquina obediente que trabaja a una velocidad absurda sobre representaciones formales.
+
+## ¿Es el binario el primer lenguaje de programación?
+
+Pedagógicamente, sí puede explicarse que el binario es el lenguaje más elemental con el que opera una computadora. Pero conviene afinar la idea para no decir barbaridades con mucha seguridad.
+
+### Lo que sí podemos afirmar
+
+- toda la información termina representándose de forma compatible con bits;
+- las instrucciones más básicas que ejecuta la máquina dependen de esa representación elemental;
+- el binario está en la base del funcionamiento computacional.
+
+### Lo que conviene matizar
+
+- normalmente los seres humanos no programan escribiendo largas cadenas de 0 y 1;
+- lo que existe a bajo nivel es el **lenguaje máquina**, estrechamente ligado a la arquitectura del procesador;
+- por razones prácticas, los humanos programan usando lenguajes mucho más expresivos.
+
+::: {.callout-warning}
+## Precisión útil para clase
+
+Puedes explicar que el binario es el nivel más básico en que la computadora representa y procesa información. Pero no conviene presentarlo como si fuera el lenguaje práctico con el que desarrollamos software hoy, porque eso sería como pedirle a alguien que redacte una tesis golpeando piedras.
+:::
+
+## De la máquina a los lenguajes de programación
+
+Podemos imaginar varias capas:
+
+### 1. Hardware
+
+Circuitos físicos capaces de distinguir estados.
+
+### 2. Binario
+
+Representación de información mediante 0 y 1.
+
+### 3. Lenguaje máquina
+
+Instrucciones directamente ejecutables por el procesador.
+
+### 4. Lenguajes de bajo nivel
+
+Formas algo más legibles, pero todavía cercanas al funcionamiento de la máquina.
+
+### 5. Lenguajes de alto nivel
+
+Python, JavaScript, R y otros lenguajes diseñados para que los humanos puedan escribir programas de manera más razonable.
+
+### 6. Pseudocódigo
+
+No es un lenguaje ejecutable, pero sirve para **expresar la lógica de un problema de forma clara y ordenada**.
+
+## ¿Por qué no programamos directamente en binario?
+
+Porque sería insostenible. Y por una vez el drama no es exagerado.
+
+Escribir programas complejos en binario volvería casi imposible:
+
+- leer lo que se hizo;
+- detectar errores;
+- mantener el código;
+- colaborar con otras personas;
+- escalar proyectos reales.
+
+Los lenguajes de programación surgieron precisamente para ofrecer **abstracción**, es decir, una manera de alejarnos del nivel eléctrico o mecánico y concentrarnos en la lógica del problema.
+
+## El puente hacia el pensamiento computacional
+
+Aquí aparece la conexión con el curso. El pensamiento computacional no consiste en memorizar bits ni en admirar cables como si fueran reliquias sagradas. Consiste en **estructurar problemas de forma lógica, secuencial y clara**.
+
+Eso tiene enorme relevancia para juristas porque muchas tareas del Derecho pueden describirse como secuencias con condiciones:
+
+- si se cumplen requisitos, el trámite continúa;
+- si falta documentación, se formula observación;
+- si el plazo venció, se rechaza el recurso;
+- si existe competencia, la autoridad puede actuar.
+
+En otras palabras, parte del razonamiento jurídico puede modelarse como reglas, decisiones y pasos. No todo el Derecho se reduce a eso, por supuesto. También hay interpretación, ponderación, contexto y conflicto. Pero muchas operaciones jurídicas sí admiten representación estructurada.
+
+## Del lenguaje humano al pseudocódigo
+
+El pseudocódigo es una forma de escribir instrucciones de manera comprensible para humanos, sin usar todavía un lenguaje formal como Python.
+
+### Ejemplo general
+
+```text
+INICIO
+
+leer datos
+verificar condición
+
+SI condición verdadera ENTONCES
+    mostrar resultado A
+SI NO
+    mostrar resultado B
+FIN SI
+
+FIN
+```
+
+## Ejemplo jurídico sencillo
+
+Supongamos esta regla:
+
+> Si un recurso fue presentado dentro del plazo, puede admitirse a trámite.  
+> Si fue presentado fuera del plazo, debe rechazarse por extemporáneo.
+
+Podemos representarla así:
+
+```text
+INICIO
+
+leer dias_transcurridos
+
+SI dias_transcurridos <= 15 ENTONCES
+    mostrar "Admitir a trámite"
+SI NO
+    mostrar "Rechazar por extemporáneo"
+FIN SI
+
+FIN
+```
+
+Aquí se ve el recorrido completo de la sesión:
+
+- primero entendimos que la máquina representa información en bits;
+- luego vimos que números y texto pueden expresarse en binario;
+- después entendimos por qué no tiene sentido humano trabajar siempre a ese nivel;
+- finalmente llegamos al pseudocódigo como una capa intermedia entre el lenguaje humano y la lógica programable.
+
+## Actividad de aplicación jurídica
+
+Convierte la siguiente regla en pseudocódigo:
+
+> Para admitir una solicitud se requiere firma y documento de identidad.  
+> Si falta alguno de esos elementos, la solicitud queda observada.
+
+### Posible solución
+
+```text
+INICIO
+
+leer firma
+leer documento_identidad
+
+SI firma = "sí" Y documento_identidad = "sí" ENTONCES
+    mostrar "Solicitud admitida"
+SI NO
+    mostrar "Solicitud observada"
+FIN SI
+
+FIN
+```
+
+## Lo que esto tiene que ver con el Derecho
+
+Esta sesión no busca convertir a estudiantes de Derecho en ingenieros en una hora y media, porque la vida ya tiene suficientes planes absurdos. Lo que busca es mostrar que la tecnología jurídica funciona sobre tres ideas fundamentales:
+
+### Representación
+
+Los problemas jurídicos pueden traducirse a datos relevantes.
+
+### Reglas
+
+Muchos procedimientos jurídicos operan con condiciones y secuencias.
+
+### Abstracción
+
+No trabajamos directamente con voltajes o bits, sino con modelos que simplifican y organizan la realidad para hacerla tratable.
+
+Esto se aplica, por ejemplo, a:
+
+- formularios inteligentes;
+- validación de requisitos documentales;
+- seguimiento de plazos;
+- clasificación de expedientes;
+- automatización básica de decisiones regladas.
+
+## Ideas clave para cerrar la sesión
+
+- una computadora representa información en binario;
+- los números binarios se interpretan mediante potencias de 2;
+- el texto también puede representarse numéricamente y luego en binario;
+- el binario está en la base del funcionamiento de la computadora, aunque los humanos no programan normalmente a ese nivel;
+- los lenguajes de programación existen para trabajar con mayor abstracción;
+- el pseudocódigo permite representar procesos de forma clara;
+- en el Derecho, esa capacidad sirve para modelar reglas, procedimientos y decisiones.
+
+::: {.callout-important}
+## Cierre
+
+Entender el sistema binario no te convierte en programador, pero sí te permite comprender una idea decisiva: **la tecnología no es magia; es representación, estructura e instrucciones**.
+:::
+
+## Ejercicios finales
+
+### Ejercicios de conversión numérica
+
+1. Convierte `1110` a decimal.
+2. Convierte `10011` a decimal.
+3. Convierte `5` a binario.
+4. Convierte `18` a binario.
+
+### Ejercicios de texto
+
+Usando esta tabla simplificada:
+
+```text
+D = 68
+A = 65
+O = 79
+```
+
+1. Representa la palabra `DADO` en decimal.
+2. Representa la palabra `DADO` en binario.
+
+### Ejercicio de reflexión
+
+Explica brevemente por qué no sería razonable programar directamente en binario para desarrollar aplicaciones complejas.
+
+### Ejercicio de aplicación jurídica
+
+Convierte en pseudocódigo la siguiente regla:
+
+> Si una solicitud contiene firma, documento de identidad y pago de tasa, se admite.  
+> Si falta alguno de esos elementos, se formula observación.
+
+## Trabajo autónomo
+
+Como parte de la sesión inicial del curso:
+
+- crea tu cuenta en Zotero;
+- ingresa al grupo del curso;
+- organiza una carpeta o colección básica para tus materiales de la asignatura.
+
+Ese componente también importa. Legal Tech no trata solo de herramientas espectaculares, sino de método, organización y capacidad para trabajar con información de manera rigurosa.
