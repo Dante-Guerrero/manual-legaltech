@@ -62,71 +62,71 @@
   {
     "objectID": "parte-1-modulo-1/00-presentacion.html",
     "href": "parte-1-modulo-1/00-presentacion.html",
-    "title": "Módulo 1. Pensamiento computacional para juristas",
+    "title": "I. Pensamiento computacional para juristas",
     "section": "",
-    "text": "I. Pensamiento computacional para juristas",
+    "text": "¿Por qué importa este módulo?\nEl primer módulo cumple una función decisiva: construir el puente entre la formación jurídica tradicional y la lógica con la que operan las tecnologías digitales. Antes de hablar de automatización, datos, páginas web o inteligencia artificial, necesitamos entender cómo se representa la información, cómo se formulan instrucciones y cómo se traduce un problema jurídico en pasos verificables.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas"
+      "I. Pensamiento computacional para juristas"
     ]
   },
   {
     "objectID": "parte-1-modulo-1/00-presentacion.html#por-qué-importa-este-módulo",
     "href": "parte-1-modulo-1/00-presentacion.html#por-qué-importa-este-módulo",
-    "title": "Módulo 1. Pensamiento computacional para juristas",
-    "section": "¿Por qué importa este módulo?",
-    "text": "¿Por qué importa este módulo?\nEl primer módulo cumple una función decisiva: construir el puente entre la formación jurídica tradicional y la lógica con la que operan las tecnologías digitales. Antes de hablar de automatización, datos, páginas web o inteligencia artificial, necesitamos entender cómo se representa la información, cómo se formulan instrucciones y cómo se traduce un problema jurídico en pasos verificables.\n\n\n\n\n\n\nImportantIdea central del módulo\n\n\n\nUna computadora no interpreta el derecho como lo hace un abogado. Ejecuta instrucciones. Por eso, el primer aprendizaje relevante para un jurista es aprender a estructurar problemas, reglas y decisiones con claridad.",
+    "title": "I. Pensamiento computacional para juristas",
+    "section": "",
+    "text": "ImportantIdea central del módulo\n\n\n\nUna computadora no interpreta el derecho como lo hace un abogado. Ejecuta instrucciones. Por eso, el primer aprendizaje relevante para un jurista es aprender a estructurar problemas, reglas y decisiones con claridad.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas"
+      "I. Pensamiento computacional para juristas"
     ]
   },
   {
     "objectID": "parte-1-modulo-1/00-presentacion.html#qué-aprenderás",
     "href": "parte-1-modulo-1/00-presentacion.html#qué-aprenderás",
-    "title": "Módulo 1. Pensamiento computacional para juristas",
+    "title": "I. Pensamiento computacional para juristas",
     "section": "Qué aprenderás",
     "text": "Qué aprenderás\nEn este módulo trabajarás cuatro piezas de una misma cadena:\n\nrepresentación básica de información y lógica computacional;\npseudocódigo y descomposición de problemas;\nfundamentos de Python aplicados al derecho;\nejercicios jurídicos cada vez más complejos con reglas, datos y documentos.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas"
+      "I. Pensamiento computacional para juristas"
     ]
   },
   {
     "objectID": "parte-1-modulo-1/00-presentacion.html#cómo-se-trabaja-en-este-módulo",
     "href": "parte-1-modulo-1/00-presentacion.html#cómo-se-trabaja-en-este-módulo",
-    "title": "Módulo 1. Pensamiento computacional para juristas",
+    "title": "I. Pensamiento computacional para juristas",
     "section": "Cómo se trabaja en este módulo",
     "text": "Cómo se trabaja en este módulo\nEste módulo se aprovecha mejor si combinas curiosidad, paciencia y práctica. En cada sesión deberías abrir tu editor, modificar archivos, ejecutar código, registrar cambios con Git y avanzar sobre un repositorio en GitHub.\n\n\n\n\n\n\nTipCómo conviene trabajar\n\n\n\n\ndescribe primero el problema en lenguaje natural;\ntradúcelo luego a pasos claros;\nimplementa una versión simple antes de sofisticarla;\nregistra tus cambios con commits breves y útiles;\nusa el PSET para consolidar lo visto en clase.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas"
+      "I. Pensamiento computacional para juristas"
     ]
   },
   {
     "objectID": "parte-1-modulo-1/00-presentacion.html#tabla-de-contenidos-del-módulo",
     "href": "parte-1-modulo-1/00-presentacion.html#tabla-de-contenidos-del-módulo",
-    "title": "Módulo 1. Pensamiento computacional para juristas",
+    "title": "I. Pensamiento computacional para juristas",
     "section": "Tabla de contenidos del módulo",
     "text": "Tabla de contenidos del módulo\n\n\n\n\n\n\n\n\n\n\nSesión\nTema central\nHerramientas\nPráctica principal\nPSET\n\n\n\n\n1\nDel bit al pseudocódigo\nMarkdown, editor, Git\nrepresentar reglas y decisiones\ntraducir reglas jurídicas a pasos\n\n\n2\nPrimeros pasos con Python\nPython, terminal, VS Code\nejecutar y modificar scripts básicos\nlógica jurídica simple en Python\n\n\n3\nDecisiones jurídicas y automatización básica\nPython, funciones, condicionales\nmodelar elegibilidad y validaciones\nresolver un problema con múltiples condiciones\n\n\n4\nDatos, documentos y flujos jurídicos\nPython, archivos, diccionarios, texto\nprocesar información jurídica simple\nautomatización básica con datos o plantillas",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas"
+      "I. Pensamiento computacional para juristas"
     ]
   },
   {
     "objectID": "parte-1-modulo-1/00-presentacion.html#qué-debes-poder-hacer-al-terminar",
     "href": "parte-1-modulo-1/00-presentacion.html#qué-debes-poder-hacer-al-terminar",
-    "title": "Módulo 1. Pensamiento computacional para juristas",
+    "title": "I. Pensamiento computacional para juristas",
     "section": "Qué debes poder hacer al terminar",
     "text": "Qué debes poder hacer al terminar\nAl finalizar el módulo, deberías poder:\n\nexplicar cómo una computadora representa información;\nexpresar procedimientos jurídicos como pasos verificables;\nescribir scripts básicos en Python para resolver tareas jurídicas sencillas;\ncombinar reglas, datos y salidas para automatizar pequeños problemas de práctica legal.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas"
+      "I. Pensamiento computacional para juristas"
     ]
   },
   {
     "objectID": "parte-1-modulo-1/00-presentacion.html#cómo-se-conecta-con-el-resto-del-curso",
     "href": "parte-1-modulo-1/00-presentacion.html#cómo-se-conecta-con-el-resto-del-curso",
-    "title": "Módulo 1. Pensamiento computacional para juristas",
+    "title": "I. Pensamiento computacional para juristas",
     "section": "Cómo se conecta con el resto del curso",
     "text": "Cómo se conecta con el resto del curso\nEste módulo es la base del resto del manual. Sin estas herramientas iniciales, sería mucho más difícil avanzar hacia procesos, datos, web, seguridad e inteligencia artificial.\n\n\n\n\n\n\nWarningAdvertencia útil\n\n\n\nSi la lógica de un proceso legal está mal pensada, digitalizarlo solo hace que el error viaje más rápido. La tecnología no sustituye el juicio jurídico; exige más precisión.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas"
+      "I. Pensamiento computacional para juristas"
     ]
   },
   {
@@ -136,7 +136,7 @@
     "section": "",
     "text": "¿Por qué empezar por aquí?\nEn un curso de Legal Tech puede parecer extraño comenzar hablando de ceros y unos. Después de todo, el Derecho trabaja con normas, hechos, argumentos, pruebas, procedimientos y decisiones, no con cables ni placas madre. Pero hay una razón muy buena para empezar aquí: si queremos comprender cómo funciona la tecnología que hoy transforma la profesión jurídica, primero debemos entender cómo una computadora representa la información y ejecuta instrucciones.\nUna computadora no entiende el mundo como lo entendemos nosotros. No “ve” una demanda, no “lee” una sentencia y no “comprende” una norma en sentido humano. Lo que hace es representar información y procesarla siguiendo reglas. En su nivel más básico, esa representación se construye con bits, es decir, con secuencias de 0 y 1.\nEsta sesión toma esa idea como punto de partida para mostrar tres cosas. Primero, que números y texto pueden representarse en binario. Segundo, que una computadora funciona porque puede almacenar y transformar esa información. Tercero, que programar consiste, en el fondo, en dar instrucciones a una máquina que opera sobre datos representados formalmente. No vamos a quedarnos en el binario para siempre, porque eso sería una forma particularmente cruel de enseñar, pero sí vamos a usarlo para entender el origen de todo lo demás.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
@@ -147,7 +147,7 @@
     "section": "",
     "text": "ImportantIdea central de la sesión\n\n\n\nLa computadora puede procesar números, texto, imágenes y sonido porque todo puede representarse mediante bits. Comprender eso permite entender por qué existen los lenguajes de programación y por qué el pensamiento computacional también importa para juristas.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
@@ -158,7 +158,7 @@
     "section": "Objetivos de aprendizaje",
     "text": "Objetivos de aprendizaje\nAl finalizar esta sesión, deberías ser capaz de:\n\ncomprender qué es el sistema binario y por qué una computadora trabaja con él;\nconvertir números sencillos del sistema decimal al binario y viceversa;\nentender de manera básica cómo se representa el texto dentro de una computadora;\nexplicar por qué el binario puede verse como el lenguaje más elemental de una computadora;\ndistinguir entre binario, lenguaje máquina, lenguajes de programación y pseudocódigo;\nrelacionar estas ideas con el razonamiento jurídico estructurado.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
@@ -169,7 +169,7 @@
     "section": "¿Qué hace una computadora?",
     "text": "¿Qué hace una computadora?\nDe manera muy general, una computadora realiza cuatro tareas:\n\nrecibe información;\nla representa internamente;\nejecuta instrucciones sobre esa información;\nproduce un resultado.\n\nCuando escribes un correo, editas un documento, buscas una sentencia o rellenas un formulario digital, la computadora recibe entradas, las almacena, ejecuta operaciones y muestra una salida. Todo eso parece intuitivo desde la experiencia del usuario. Pero internamente ocurre algo menos glamoroso y más importante: la información se reduce a estados físicos que pueden distinguirse de manera confiable.\nEn una explicación simplificada, los circuitos electrónicos trabajan distinguiendo entre dos estados posibles, por ejemplo:\n\nencendido / apagado;\npasa corriente / no pasa corriente;\nalto voltaje / bajo voltaje.\n\nA partir de esa diferencia básica se construye el sistema binario.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
@@ -180,7 +180,7 @@
     "section": "Bit, byte y sistema binario",
     "text": "Bit, byte y sistema binario\nEl sistema binario usa solo dos símbolos:\n\n0\n1\n\nCada uno de esos dígitos binarios se llama bit. El término viene de binary digit.\nUn grupo de 8 bits forma un byte, unidad muy utilizada para representar caracteres y otros tipos de información.\n\n\n\n\n\n\nNoteVocabulario básico\n\n\n\n\nbit: unidad mínima de información; solo puede valer 0 o 1.\nbyte: conjunto de 8 bits.\nbinario: sistema numérico en base 2.\ndecimal: sistema numérico en base 10, que es el que usamos habitualmente.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
@@ -191,7 +191,7 @@
     "section": "Del sistema decimal al sistema binario",
     "text": "Del sistema decimal al sistema binario\nNosotros solemos usar el sistema decimal. Tiene diez símbolos: 0, 1, 2, 3, 4, 5, 6, 7, 8 y 9. Su lógica depende del valor posicional. Por ejemplo, el número 347 significa:\n\n3 centenas,\n4 decenas,\n7 unidades.\n\nEs decir:\n347 = 3×10² + 4×10¹ + 7×10⁰\nEl sistema binario funciona igual en la lógica de posiciones, pero cada posición representa una potencia de 2:\n2⁰ = 1\n2¹ = 2\n2² = 4\n2³ = 8\n2⁴ = 16\n2⁵ = 32\n2⁶ = 64\n2⁷ = 128\nPor eso, el número binario 1011 significa:\n1×2³ = 8\n0×2² = 0\n1×2¹ = 2\n1×2⁰ = 1\nEntonces:\n1011₂ = 11₁₀",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
@@ -202,7 +202,7 @@
     "section": "Cómo convertir de binario a decimal",
     "text": "Cómo convertir de binario a decimal\nPara convertir un número binario a decimal, basta con multiplicar cada bit por la potencia de 2 que le corresponde y luego sumar.\n\nEjemplo 1\nConvierte 1101 a decimal.\n1×2³ = 8\n1×2² = 4\n0×2¹ = 0\n1×2⁰ = 1\nResultado:\n1101₂ = 13₁₀\n\n\nEjemplo 2\nConvierte 10010 a decimal.\n1×2⁴ = 16\n0×2³ = 0\n0×2² = 0\n1×2¹ = 2\n0×2⁰ = 0\nResultado:\n10010₂ = 18₁₀\n\n\n\n\n\n\nTipRegla práctica\n\n\n\nPara pasar de binario a decimal, suma las potencias de 2 correspondientes a las posiciones donde aparezca un 1.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
@@ -213,7 +213,7 @@
     "section": "Cómo convertir de decimal a binario",
     "text": "Cómo convertir de decimal a binario\nPara pasar de decimal a binario, hay que descomponer el número como suma de potencias de 2.\n\nEjemplo 1\nConvierte 13 a binario.\nBuscamos las potencias de 2 que suman 13:\n13 = 8 + 4 + 1\n13 = 2³ + 2² + 2⁰\nEntonces:\n13₁₀ = 1101₂\n\n\nEjemplo 2\nConvierte 19 a binario.\n19 = 16 + 2 + 1\n19 = 2⁴ + 2¹ + 2⁰\nEntonces:\n19₁₀ = 10011₂",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
@@ -224,7 +224,7 @@
     "section": "Ejercicios guiados de conversión numérica",
     "text": "Ejercicios guiados de conversión numérica\n\nEjercicio 1\nConvierte 1010 a decimal.\n\n\nSolución\n1×2³ = 8\n0×2² = 0\n1×2¹ = 2\n0×2⁰ = 0\nResultado:\n1010₂ = 10₁₀\n\n\nEjercicio 2\nConvierte 111 a decimal.\n\n\nSolución\n1×2² = 4\n1×2¹ = 2\n1×2⁰ = 1\nResultado:\n111₂ = 7₁₀\n\n\nEjercicio 3\nConvierte 12 a binario.\n\n\nSolución\n12 = 8 + 4\n12 = 2³ + 2²\nResultado:\n12₁₀ = 1100₂\n\n\nEjercicio 4\nConvierte 9 a binario.\n\n\nSolución\n9 = 8 + 1\n9 = 2³ + 2⁰\nResultado:\n9₁₀ = 1001₂",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
@@ -235,7 +235,7 @@
     "section": "Propuesta de práctica en clase",
     "text": "Propuesta de práctica en clase\nResuelve en parejas los siguientes ejercicios:\n\nconvierte 1011 a decimal;\nconvierte 10001 a decimal;\nconvierte 6 a binario;\nconvierte 14 a binario;\nexplica con tus palabras qué representa cada posición en un número binario.\n\n\n\n\n\n\n\nNoteSugerencia metodológica\n\n\n\nNo memorices cadenas de números sin sentido. Lo importante es entender la lógica de las potencias de 2. Una vez que entiendes eso, la conversión deja de parecer brujería técnica y pasa a ser solo aritmética ordenada.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
@@ -246,7 +246,7 @@
     "section": "¿Cómo puede una computadora representar texto?",
     "text": "¿Cómo puede una computadora representar texto?\nHasta aquí hemos trabajado con números. Pero una computadora también procesa letras, espacios, signos de puntuación y otros caracteres. La clave está en esto: cada carácter puede asociarse con un número.\nPor ejemplo, en sistemas de codificación clásicos, se asignan valores como estos:\nA = 65\nB = 66\nC = 67\nUna vez que una letra se representa como número, ese número también puede representarse en binario.\n\nEjemplo: la letra A\nSi A = 65, entonces:\n65 = 64 + 1\n65 = 2⁶ + 2⁰\nEn 8 bits, puede escribirse así:\n01000001\n\n\nEjemplo: la letra B\nSi B = 66, entonces:\n66 = 64 + 2\n66 = 2⁶ + 2¹\nEn binario:\n01000010",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
@@ -257,7 +257,7 @@
     "section": "Del texto al binario",
     "text": "Del texto al binario\nSi cada carácter tiene un valor numérico, una palabra entera puede representarse como una secuencia de bytes.\n\nEjemplo\nLa palabra AB puede representarse así:\nA = 65 = 01000001\nB = 66 = 01000010\nEntonces:\nAB = 01000001 01000010\n\n\n\n\n\n\nImportantPunto clave\n\n\n\nLa computadora no almacena “letras” como las vemos nosotros. Almacena números que representan caracteres, y esos números se almacenan como secuencias binarias.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
@@ -268,7 +268,7 @@
     "section": "Ejercicio guiado con texto",
     "text": "Ejercicio guiado con texto\nSupón, para fines didácticos, la siguiente tabla simplificada:\nA = 65\nB = 66\nC = 67\n\nEjercicio\nRepresenta la palabra CAB primero en números decimales y luego en binario.\n\n\nSolución\nC = 67 = 01000011\nA = 65 = 01000001\nB = 66 = 01000010\nEntonces:\nCAB = 01000011 01000001 01000010",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
@@ -279,7 +279,7 @@
     "section": "¿Cómo funciona una PC, en términos simples?",
     "text": "¿Cómo funciona una PC, en términos simples?\nNo necesitamos una clase completa de arquitectura de computadores para esta sesión, pero sí conviene entender algunas piezas básicas:\n\nProcesador (CPU)\nEs el componente que ejecuta instrucciones. Puede compararse, con todas las simplificaciones del caso, con la unidad que realiza operaciones y toma decisiones lógicas sobre la base de instrucciones previamente definidas.\n\n\nMemoria RAM\nEs el espacio de trabajo temporal. Allí se cargan los datos y programas que la computadora está usando en ese momento.\n\n\nAlmacenamiento\nEs donde se guardan archivos y programas de manera más permanente, por ejemplo en un disco SSD.\n\n\nDispositivos de entrada y salida\n\nentrada: teclado, mouse, cámara, micrófono;\nsalida: pantalla, parlantes, impresora.\n\n\n\nSistema operativo\nEs el software que coordina el uso del hardware y permite que otros programas funcionen.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
@@ -290,7 +290,7 @@
     "section": "Una analogía útil",
     "text": "Una analogía útil\nPodemos pensar el funcionamiento básico de una computadora así:\n\nel usuario entrega datos;\nel sistema operativo organiza la interacción;\nla memoria mantiene lo necesario a mano;\nel procesador ejecuta operaciones;\nla salida muestra el resultado.\n\nTodo ello ocurre sobre información codificada de forma binaria. No es magia. Es una máquina obediente que trabaja a una velocidad absurda sobre representaciones formales.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
@@ -301,7 +301,7 @@
     "section": "¿Es el binario el primer lenguaje de programación?",
     "text": "¿Es el binario el primer lenguaje de programación?\nPedagógicamente, sí puede explicarse que el binario es el lenguaje más elemental con el que opera una computadora. Pero conviene afinar la idea para no decir barbaridades con mucha seguridad.\n\nLo que sí podemos afirmar\n\ntoda la información termina representándose de forma compatible con bits;\nlas instrucciones más básicas que ejecuta la máquina dependen de esa representación elemental;\nel binario está en la base del funcionamiento computacional.\n\n\n\nLo que conviene matizar\n\nnormalmente los seres humanos no programan escribiendo largas cadenas de 0 y 1;\nlo que existe a bajo nivel es el lenguaje máquina, estrechamente ligado a la arquitectura del procesador;\npor razones prácticas, los humanos programan usando lenguajes mucho más expresivos.\n\n\n\n\n\n\n\nWarningPrecisión útil para clase\n\n\n\nPuedes explicar que el binario es el nivel más básico en que la computadora representa y procesa información. Pero no conviene presentarlo como si fuera el lenguaje práctico con el que desarrollamos software hoy, porque eso sería como pedirle a alguien que redacte una tesis golpeando piedras.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
@@ -312,7 +312,7 @@
     "section": "De la máquina a los lenguajes de programación",
     "text": "De la máquina a los lenguajes de programación\nPodemos imaginar varias capas:\n\n1. Hardware\nCircuitos físicos capaces de distinguir estados.\n\n\n2. Binario\nRepresentación de información mediante 0 y 1.\n\n\n3. Lenguaje máquina\nInstrucciones directamente ejecutables por el procesador.\n\n\n4. Lenguajes de bajo nivel\nFormas algo más legibles, pero todavía cercanas al funcionamiento de la máquina.\n\n\n5. Lenguajes de alto nivel\nPython, JavaScript, R y otros lenguajes diseñados para que los humanos puedan escribir programas de manera más razonable.\n\n\n6. Pseudocódigo\nNo es un lenguaje ejecutable, pero sirve para expresar la lógica de un problema de forma clara y ordenada.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
@@ -323,7 +323,7 @@
     "section": "¿Por qué no programamos directamente en binario?",
     "text": "¿Por qué no programamos directamente en binario?\nPorque sería insostenible. Y por una vez el drama no es exagerado.\nEscribir programas complejos en binario volvería casi imposible:\n\nleer lo que se hizo;\ndetectar errores;\nmantener el código;\ncolaborar con otras personas;\nescalar proyectos reales.\n\nLos lenguajes de programación surgieron precisamente para ofrecer abstracción, es decir, una manera de alejarnos del nivel eléctrico o mecánico y concentrarnos en la lógica del problema.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
@@ -334,7 +334,7 @@
     "section": "El puente hacia el pensamiento computacional",
     "text": "El puente hacia el pensamiento computacional\nAquí aparece la conexión con el curso. El pensamiento computacional no consiste en memorizar bits ni en admirar cables como si fueran reliquias sagradas. Consiste en estructurar problemas de forma lógica, secuencial y clara.\nEso tiene enorme relevancia para juristas porque muchas tareas del Derecho pueden describirse como secuencias con condiciones:\n\nsi se cumplen requisitos, el trámite continúa;\nsi falta documentación, se formula observación;\nsi el plazo venció, se rechaza el recurso;\nsi existe competencia, la autoridad puede actuar.\n\nEn otras palabras, parte del razonamiento jurídico puede modelarse como reglas, decisiones y pasos. No todo el Derecho se reduce a eso, por supuesto. También hay interpretación, ponderación, contexto y conflicto. Pero muchas operaciones jurídicas sí admiten representación estructurada.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
@@ -345,7 +345,7 @@
     "section": "Del lenguaje humano al pseudocódigo",
     "text": "Del lenguaje humano al pseudocódigo\nEl pseudocódigo es una forma de escribir instrucciones de manera comprensible para humanos, sin usar todavía un lenguaje formal como Python.\n\nEjemplo general\nINICIO\n\nleer datos\nverificar condición\n\nSI condición verdadera ENTONCES\n    mostrar resultado A\nSI NO\n    mostrar resultado B\nFIN SI\n\nFIN",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
@@ -356,7 +356,7 @@
     "section": "Ejemplo jurídico sencillo",
     "text": "Ejemplo jurídico sencillo\nSupongamos esta regla:\n\nSi un recurso fue presentado dentro del plazo, puede admitirse a trámite.\nSi fue presentado fuera del plazo, debe rechazarse por extemporáneo.\n\nPodemos representarla así:\nINICIO\n\nleer dias_transcurridos\n\nSI dias_transcurridos &lt;= 15 ENTONCES\n    mostrar \"Admitir a trámite\"\nSI NO\n    mostrar \"Rechazar por extemporáneo\"\nFIN SI\n\nFIN\nAquí se ve el recorrido completo de la sesión:\n\nprimero entendimos que la máquina representa información en bits;\nluego vimos que números y texto pueden expresarse en binario;\ndespués entendimos por qué no tiene sentido humano trabajar siempre a ese nivel;\nfinalmente llegamos al pseudocódigo como una capa intermedia entre el lenguaje humano y la lógica programable.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
@@ -367,7 +367,7 @@
     "section": "Actividad de aplicación jurídica",
     "text": "Actividad de aplicación jurídica\nConvierte la siguiente regla en pseudocódigo:\n\nPara admitir una solicitud se requiere firma y documento de identidad.\nSi falta alguno de esos elementos, la solicitud queda observada.\n\n\nPosible solución\nINICIO\n\nleer firma\nleer documento_identidad\n\nSI firma = \"sí\" Y documento_identidad = \"sí\" ENTONCES\n    mostrar \"Solicitud admitida\"\nSI NO\n    mostrar \"Solicitud observada\"\nFIN SI\n\nFIN",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
@@ -378,7 +378,7 @@
     "section": "Lo que esto tiene que ver con el Derecho",
     "text": "Lo que esto tiene que ver con el Derecho\nEsta sesión no busca convertir a estudiantes de Derecho en ingenieros en una hora y media, porque la vida ya tiene suficientes planes absurdos. Lo que busca es mostrar que la tecnología jurídica funciona sobre tres ideas fundamentales:\n\nRepresentación\nLos problemas jurídicos pueden traducirse a datos relevantes.\n\n\nReglas\nMuchos procedimientos jurídicos operan con condiciones y secuencias.\n\n\nAbstracción\nNo trabajamos directamente con voltajes o bits, sino con modelos que simplifican y organizan la realidad para hacerla tratable.\nEsto se aplica, por ejemplo, a:\n\nformularios inteligentes;\nvalidación de requisitos documentales;\nseguimiento de plazos;\nclasificación de expedientes;\nautomatización básica de decisiones regladas.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
@@ -389,7 +389,7 @@
     "section": "Ideas clave para cerrar la sesión",
     "text": "Ideas clave para cerrar la sesión\n\nuna computadora representa información en binario;\nlos números binarios se interpretan mediante potencias de 2;\nel texto también puede representarse numéricamente y luego en binario;\nel binario está en la base del funcionamiento de la computadora, aunque los humanos no programan normalmente a ese nivel;\nlos lenguajes de programación existen para trabajar con mayor abstracción;\nel pseudocódigo permite representar procesos de forma clara;\nen el Derecho, esa capacidad sirve para modelar reglas, procedimientos y decisiones.\n\n\n\n\n\n\n\nImportantCierre\n\n\n\nEntender el sistema binario no te convierte en programador, pero sí te permite comprender una idea decisiva: la tecnología no es magia; es representación, estructura e instrucciones.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
@@ -400,7 +400,7 @@
     "section": "Ejercicios finales",
     "text": "Ejercicios finales\n\nEjercicios de conversión numérica\n\nConvierte 1110 a decimal.\nConvierte 10011 a decimal.\nConvierte 5 a binario.\nConvierte 18 a binario.\n\n\n\nEjercicios de texto\nUsando esta tabla simplificada:\nD = 68\nA = 65\nO = 79\n\nRepresenta la palabra DADO en decimal.\nRepresenta la palabra DADO en binario.\n\n\n\nEjercicio de reflexión\nExplica brevemente por qué no sería razonable programar directamente en binario para desarrollar aplicaciones complejas.\n\n\nEjercicio de aplicación jurídica\nConvierte en pseudocódigo la siguiente regla:\n\nSi una solicitud contiene firma, documento de identidad y pago de tasa, se admite.\nSi falta alguno de esos elementos, se formula observación.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
@@ -411,7 +411,7 @@
     "section": "Práctica en editor",
     "text": "Práctica en editor\nAbre tu editor y crea un archivo de notas o pseudocódigo donde traduzcas una regla jurídica sencilla a pasos verificables. Puede ser, por ejemplo, la revisión preliminar de un escrito, el cálculo de un plazo o la validación de requisitos de una solicitud.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
@@ -422,7 +422,7 @@
     "section": "Git y GitHub",
     "text": "Git y GitHub\nSube tu ejercicio al repositorio del curso o a tu repositorio de práctica y registra al menos un commit que deje claro qué cambiaste.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
@@ -433,7 +433,7 @@
     "section": "PSET de la sesión",
     "text": "PSET de la sesión\nEl PSET de esta sesión consiste en traducir reglas o decisiones jurídicas a pseudocódigo o instrucciones estructuradas. El entregable debe mostrar:\n\nel problema planteado;\nla secuencia de pasos o condiciones;\nuna breve explicación de por qué esa lógica representa adecuadamente el caso.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
@@ -444,7 +444,7 @@
     "section": "",
     "text": "2. Primeros pasos con Python",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
     ]
   },
@@ -455,7 +455,7 @@
     "section": "¿Por qué un estudiante de Derecho debería aprender Python?",
     "text": "¿Por qué un estudiante de Derecho debería aprender Python?\nPython es un lenguaje especialmente útil para empezar porque su sintaxis es clara y permite concentrarse en la lógica del problema. En este curso no lo estudiamos como un fin en sí mismo, sino como una herramienta para traducir instrucciones, criterios y reglas jurídicas en pasos ejecutables.\nPara un jurista, esto tiene valor práctico inmediato. Muchas tareas del trabajo legal consisten en revisar información, clasificar documentos, calcular plazos, detectar patrones, verificar requisitos y producir reportes. Todas esas tareas pueden describirse como instrucciones. Y cuando una instrucción puede describirse con claridad, también puede empezar a automatizarse.\n\n\n\n\n\n\nImportantIdea central\n\n\n\nProgramar no significa dejar de pensar como jurista. Significa aprender a expresar una lógica de trabajo con más precisión.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
     ]
   },
@@ -466,7 +466,7 @@
     "section": "Qué aprenderás en esta sesión",
     "text": "Qué aprenderás en esta sesión\nAl finalizar esta sesión, deberías poder:\n\nejecutar scripts sencillos desde una terminal o desde VS Code;\nreconocer variables, tipos de datos, entradas y salidas;\nescribir condicionales, bucles y funciones básicas;\nrelacionar código simple con tareas jurídicas reales;\ndejar evidencia de trabajo en un repositorio.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
     ]
   },
@@ -477,7 +477,7 @@
     "section": "Antes de empezar",
     "text": "Antes de empezar\nPara trabajar con este capítulo necesitas:\n\nPython instalado;\nGit disponible;\nuna terminal;\nVS Code o un editor equivalente.\n\nSi todavía no tienes ese entorno listo, revisa la sección de Tutoriales del manual.\n\n\n\n\n\n\nNoteRecomendación de trabajo\n\n\n\nNo intentes entender todo en una sola lectura. Ejecuta un archivo, cambia uno o dos valores, vuelve a ejecutarlo y observa qué cambió. La mejor pedagogía aquí no es memorizar, sino probar.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
     ]
   },
@@ -488,7 +488,7 @@
     "section": "Cómo piensa Python en nivel básico",
     "text": "Cómo piensa Python en nivel básico\nEl primer contacto con Python debe centrarse en ideas simples:\n\nuna instrucción produce un resultado;\nuna variable guarda información;\nuna condición permite decidir;\nun bucle repite una tarea;\nuna función encapsula lógica reutilizable.\n\nUn ejemplo mínimo:\nnombre = \"Ana\"\nprint(f\"Hola, {nombre}\")\nEse pequeño script ya deja ver varias cosas:\n\nhay una variable llamada nombre;\nesa variable guarda texto;\nprint() muestra un resultado;\nel código tiene una sintaxis que debe respetarse.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
     ]
   },
@@ -499,7 +499,7 @@
     "section": "Variables y tipos de datos",
     "text": "Variables y tipos de datos\nUna variable es un nombre que usamos para guardar un dato y reutilizarlo después. En derecho, esto se parece bastante a trabajar con información etiquetada: número de expediente, monto, fecha de notificación, estado de un trámite o nombre de una parte.\nnumero_expediente = \"EXP-2026-001\"\nplazo_dias = 5\nmonto_multa = 1250.50\ndocumento_firmado = True\n\nprint(numero_expediente)\nprint(plazo_dias)\nprint(monto_multa)\nprint(documento_firmado)\nEn este ejemplo aparecen cuatro tipos básicos:\n\nstr: texto;\nint: número entero;\nfloat: número decimal;\nbool: verdadero o falso.\n\n\n\n\n\n\n\nTipTraducción al mundo jurídico\n\n\n\nPiensa en una variable como un casillero con etiqueta. El contenido puede cambiar, pero la función sigue siendo la misma: guardar información para trabajar con ella después.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
     ]
   },
@@ -510,7 +510,7 @@
     "section": "Entradas y salidas",
     "text": "Entradas y salidas\nUn programa también puede pedir datos al usuario y mostrar resultados. Eso es útil cuando no queremos dejar todos los valores escritos desde el inicio.\nnombre = input(\"Escribe tu nombre: \")\nprint(\"Hola,\", nombre)\nTambién podemos pedir un dato numérico:\ndias_retraso = int(input(\"¿Cuántos días de retraso hubo? \"))\nmulta_por_dia = 25\ntotal = dias_retraso * multa_por_dia\n\nprint(\"Monto total:\", total)\nLo importante aquí es notar que muchas veces input() devuelve texto, y por eso conviene convertir el valor al tipo que realmente queremos usar.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
     ]
   },
@@ -521,7 +521,7 @@
     "section": "Condicionales: tomar decisiones",
     "text": "Condicionales: tomar decisiones\nUna gran parte del trabajo jurídico consiste en decidir qué ocurre si se cumple o no cierta condición. Python permite representar eso con if, elif y else.\nplazo_vencido = True\n\nif plazo_vencido:\n    print(\"Corresponde revisar consecuencias del vencimiento\")\nelse:\n    print(\"El plazo sigue vigente\")\nPodemos hacerlo un poco más interesante:\ntiene_firma = True\ntiene_dni = True\ntiene_pago = False\n\nif tiene_firma and tiene_dni and tiene_pago:\n    print(\"Solicitud admisible\")\nelse:\n    print(\"Solicitud con observaciones\")\nEse tipo de estructura ya se parece bastante a una regla jurídica sencilla.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
     ]
   },
@@ -532,7 +532,7 @@
     "section": "Bucles: repetir tareas",
     "text": "Bucles: repetir tareas\nCuando necesitamos revisar varios elementos, los bucles resultan especialmente útiles.\nexpedientes = [\"EXP-001\", \"EXP-002\", \"EXP-003\"]\n\nfor expediente in expedientes:\n    print(\"Revisar:\", expediente)\nEsto es valioso porque muchas tareas del trabajo legal no se hacen una sola vez, sino sobre varios registros: expedientes, contratos, resoluciones, escritos o correos.\nTambién existe while, aunque conviene empezar con cautela:\ncontador = 0\n\nwhile contador &lt; 3:\n    print(\"Iteracion:\", contador)\n    contador += 1",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
     ]
   },
@@ -543,7 +543,7 @@
     "section": "Funciones: reutilizar lógica",
     "text": "Funciones: reutilizar lógica\nUna función permite agrupar instrucciones para reutilizarlas después. Esto es especialmente importante cuando un criterio o una operación se repite.\ndef calcular_multa(dias_retraso, monto_por_dia):\n    return dias_retraso * monto_por_dia\n\nresultado = calcular_multa(4, 25)\nprint(\"Multa:\", resultado)\nEn vez de repetir la misma fórmula varias veces, la dejamos encapsulada y lista para usar.\n\n\n\n\n\n\nNoteRegla práctica\n\n\n\nSi una lógica empieza a repetirse, probablemente ya conviene convertirla en función.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
     ]
   },
@@ -554,7 +554,7 @@
     "section": "Un ejemplo jurídico más completo",
     "text": "Un ejemplo jurídico más completo\nImagina que quieres verificar si una solicitud cumple tres requisitos básicos:\n\ntiene firma;\ntiene documento de identidad;\ntiene pago de tasa.\n\nPodemos expresarlo así:\ndef evaluar_solicitud(tiene_firma, tiene_dni, tiene_pago):\n    if tiene_firma and tiene_dni and tiene_pago:\n        return \"Solicitud admisible\"\n    return \"Solicitud observada\"\n\nresultado = evaluar_solicitud(True, True, False)\nprint(resultado)\nNo estamos resolviendo todo el problema jurídico. Estamos modelando la parte repetible y verificable de la revisión preliminar.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
     ]
   },
@@ -565,7 +565,7 @@
     "section": "¿Qué relación tiene esto con la práctica jurídica?",
     "text": "¿Qué relación tiene esto con la práctica jurídica?\nMuchas tareas legales consisten en:\n\nclasificar información;\nrevisar requisitos;\ncalcular montos o plazos;\nproducir mensajes según un supuesto;\nrecorrer listas de casos o documentos.\n\nLa utilidad de Python no está en impresionar con código. Está en volver visible una lógica de trabajo que ya existe en la práctica profesional.\n\n\n\n\n\n\nWarningImportante\n\n\n\nUn script didáctico no reemplaza por sí solo el análisis jurídico. Sirve para estructurar la parte operativa y repetible del problema.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
     ]
   },
@@ -576,7 +576,7 @@
     "section": "Práctica en editor",
     "text": "Práctica en editor\nAbre tu repositorio del curso y crea o modifica un archivo de práctica. Haz, como mínimo, estas cuatro pruebas:\n\ndefine variables con información jurídica simple;\ncrea una condición;\nrecorre una lista;\nescribe una función breve.\n\nSi quieres un punto de partida, puedes usar algo como esto:\nnumero_expediente = \"EXP-001\"\nplazo_vencido = False\nobservaciones = [\"falta firma\", \"falta anexo\"]\n\ndef estado_expediente(plazo_vencido):\n    if plazo_vencido:\n        return \"Revisar urgencia\"\n    return \"Plazo vigente\"\n\nprint(numero_expediente)\nprint(estado_expediente(plazo_vencido))\n\nfor observacion in observaciones:\n    print(\"Observacion:\", observacion)",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
     ]
   },
@@ -587,7 +587,7 @@
     "section": "Git y GitHub",
     "text": "Git y GitHub\nDespués de probar tu script, registra el avance en el repositorio:\ngit add .\ngit commit -m \"Resuelve sesion 2 de primeros pasos con Python\"\ngit push",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
     ]
   },
@@ -598,7 +598,7 @@
     "section": "PSET de la sesión",
     "text": "PSET de la sesión\nResuelve un pequeño ejercicio en Python vinculado con una tarea jurídica simple. Por ejemplo:\n\ncalcular un plazo;\nclasificar un expediente;\nvalidar una condición básica;\nproducir un mensaje según un supuesto.\n\nEl PSET debe incluir:\n\nun archivo .py claro y legible;\nal menos un ejemplo de entrada y salida;\nun README breve explicando qué hace el programa;\ncommits verificables en el repositorio.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
     ]
   },
@@ -609,7 +609,7 @@
     "section": "Preguntas de repaso",
     "text": "Preguntas de repaso\n\n¿Qué diferencia hay entre una variable y un valor?\n¿Por qué conviene convertir algunos datos antes de usarlos?\n¿Qué función cumple un if?\n¿Qué problema resuelven los bucles?\n¿Por qué una función puede mejorar la calidad del código?",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
     ]
   },
@@ -620,7 +620,7 @@
     "section": "Ideas clave",
     "text": "Ideas clave\n\nPython sirve para pensar problemas con más claridad;\nempezar simple es una buena decisión pedagógica;\nbuena parte de la lógica jurídica puede expresarse como condiciones, listas y funciones;\nel valor del código está en la lógica que hace visible.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
     ]
   },
@@ -631,7 +631,7 @@
     "section": "",
     "text": "¿Por qué importa este tema?\nMuchas tareas jurídicas no son solo lectura o argumentación. También implican aplicar criterios, validar requisitos, verificar supuestos y producir decisiones preliminares. Ese tipo de trabajo puede expresarse como lógica condicional más compleja.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>3. Python para decisiones jurídicas y automatización básica</span>"
     ]
   },
@@ -642,7 +642,7 @@
     "section": "",
     "text": "ImportantIdea central\n\n\n\nCuando una regla jurídica puede formularse como condiciones claras, también puede convertirse en una función o en un flujo verificable.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>3. Python para decisiones jurídicas y automatización básica</span>"
     ]
   },
@@ -653,7 +653,7 @@
     "section": "Qué aprenderás en esta sesión",
     "text": "Qué aprenderás en esta sesión\nAl finalizar esta sesión, deberías poder:\n\ncombinar varias condiciones en un mismo script;\nusar funciones para encapsular lógica repetible;\nmodelar decisiones jurídicas preliminares;\ndistinguir entre una automatización útil y una simplificación defectuosa;\ndocumentar y versionar una solución simple en Python.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>3. Python para decisiones jurídicas y automatización básica</span>"
     ]
   },
@@ -664,7 +664,7 @@
     "section": "Del ejemplo simple al problema realista",
     "text": "Del ejemplo simple al problema realista\nEn la sesión anterior vimos variables, condicionales, bucles y funciones por separado. Ahora toca combinarlos en problemas más parecidos al trabajo jurídico real.\nLa práctica jurídica suele exigir verificar varios requisitos a la vez:\n\nplazos;\ndocumentos obligatorios;\nmontos;\ncalidad del sujeto;\nexistencia de excepciones;\ncumplimiento de etapas previas.\n\nEso significa que ya no basta con una condición aislada. Necesitamos una estructura un poco más rica.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>3. Python para decisiones jurídicas y automatización básica</span>"
     ]
   },
@@ -675,7 +675,7 @@
     "section": "Un primer modelo: admisibilidad preliminar",
     "text": "Un primer modelo: admisibilidad preliminar\nSupón que una solicitud solo puede pasar a revisión si cumple tres requisitos:\n\npago de tasa;\nfirma del solicitante;\npresentación dentro del plazo.\n\nPodemos empezar así:\ndef evaluar_solicitud(pago_tasa, firma, plazo_vigente):\n    if pago_tasa and firma and plazo_vigente:\n        return \"Solicitud admisible\"\n    return \"Solicitud con observaciones\"\nEsta función es útil, pero todavía es bastante rígida. Solo devuelve dos resultados y no explica por qué observa la solicitud.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>3. Python para decisiones jurídicas y automatización básica</span>"
     ]
   },
@@ -686,7 +686,7 @@
     "section": "Mejorar la lógica: devolver razones",
     "text": "Mejorar la lógica: devolver razones\nEn muchos contextos jurídicos no basta con saber si algo pasa o no pasa. También importa saber por qué.\ndef revisar_solicitud(pago_tasa, firma, plazo_vigente):\n    observaciones = []\n\n    if not pago_tasa:\n        observaciones.append(\"Falta pago de tasa\")\n    if not firma:\n        observaciones.append(\"Falta firma\")\n    if not plazo_vigente:\n        observaciones.append(\"Presentacion fuera de plazo\")\n\n    if len(observaciones) == 0:\n        return \"Solicitud admisible\", observaciones\n\n    return \"Solicitud observada\", observaciones\n\nestado, motivos = revisar_solicitud(True, False, False)\nprint(estado)\nprint(motivos)\nAhora el programa hace algo más cercano a una revisión preliminar: clasifica y además deja rastro de las observaciones.\n\n\n\n\n\n\nTipMejora importante\n\n\n\nCuando el programa devuelve razones, deja de ser solo un filtro binario y se convierte en una herramienta de apoyo más explicable.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>3. Python para decisiones jurídicas y automatización básica</span>"
     ]
   },
@@ -697,7 +697,7 @@
     "section": "Encadenar condiciones sin perder claridad",
     "text": "Encadenar condiciones sin perder claridad\nUno de los riesgos al empezar a programar reglas es escribir condiciones tan largas que terminan siendo difíciles de leer. Por eso conviene dividir la lógica en pasos o funciones.\nUn mal hábito sería este:\nif tiene_firma and tiene_dni and tiene_pago and plazo_vigente and not tiene_impedimento:\n    print(\"Procede\")\nNo es incorrecto, pero escala mal si el problema crece.\nUna alternativa más ordenada:\ndef requisitos_basicos_ok(tiene_firma, tiene_dni, tiene_pago):\n    return tiene_firma and tiene_dni and tiene_pago\n\ndef puede_continuar_revision(requisitos_ok, plazo_vigente, tiene_impedimento):\n    return requisitos_ok and plazo_vigente and not tiene_impedimento\nLa ventaja no es solo estética. Es metodológica: la lógica queda más legible, más testeable y más fácil de explicar.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>3. Python para decisiones jurídicas y automatización básica</span>"
     ]
   },
@@ -708,7 +708,7 @@
     "section": "Ejemplo jurídico 1: elegibilidad para un beneficio",
     "text": "Ejemplo jurídico 1: elegibilidad para un beneficio\nSupón un esquema didáctico de elegibilidad con estas reglas:\n\nel solicitante debe ser mayor de edad;\nno debe tener sanción vigente;\ndebe haber presentado documentos mínimos;\nsi vive en zona priorizada, obtiene prioridad.\n\ndef evaluar_beneficio(edad, sancion_vigente, documentos_completos, zona_priorizada):\n    if edad &lt; 18:\n        return \"No elegible\", \"Menor de edad\"\n\n    if sancion_vigente:\n        return \"No elegible\", \"Sancion vigente\"\n\n    if not documentos_completos:\n        return \"Observado\", \"Documentos incompletos\"\n\n    if zona_priorizada:\n        return \"Elegible con prioridad\", \"Cumple requisitos y tiene prioridad\"\n\n    return \"Elegible\", \"Cumple requisitos\"\nEste ejemplo no pretende reemplazar una regulación real. Sirve para mostrar cómo puede ordenarse una lógica de decisión.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>3. Python para decisiones jurídicas y automatización básica</span>"
     ]
   },
@@ -719,7 +719,7 @@
     "section": "Ejemplo jurídico 2: cálculo de multa con reglas adicionales",
     "text": "Ejemplo jurídico 2: cálculo de multa con reglas adicionales\nUna multa simple puede complejizarse rápido si añadimos supuestos:\n\nun monto base por día de retraso;\nun tope máximo;\nun recargo si hubo reincidencia;\nuna reducción si hubo subsanación voluntaria temprana.\n\ndef calcular_multa(dias_retraso, reincidencia, subsanacion_temprana):\n    multa = dias_retraso * 50\n\n    if reincidencia:\n        multa = multa * 1.25\n\n    if subsanacion_temprana:\n        multa = multa * 0.80\n\n    if multa &gt; 3000:\n        multa = 3000\n\n    return multa\nAquí aparecen varias ideas importantes:\n\nel orden de las reglas puede importar;\nalgunas condiciones agregan valor;\notras reducen o limitan el resultado;\nconviene probar varios casos.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>3. Python para decisiones jurídicas y automatización básica</span>"
     ]
   },
@@ -730,7 +730,7 @@
     "section": "Probar escenarios",
     "text": "Probar escenarios\nCuando un script representa decisiones, conviene ensayarlo con diferentes entradas. Por ejemplo:\ncasos = [\n    {\"dias\": 10, \"reincidencia\": False, \"subsanacion\": False},\n    {\"dias\": 40, \"reincidencia\": True, \"subsanacion\": False},\n    {\"dias\": 20, \"reincidencia\": False, \"subsanacion\": True},\n]\n\nfor caso in casos:\n    multa = calcular_multa(\n        caso[\"dias\"],\n        caso[\"reincidencia\"],\n        caso[\"subsanacion\"]\n    )\n    print(caso, \"=&gt;\", multa)\nEso ayuda a detectar errores y a entender mejor si la lógica hace realmente lo que pensamos que hace.\n\n\n\n\n\n\nWarningOjo metodológico\n\n\n\nModelar una decisión no significa agotar el juicio jurídico. Significa hacer explícita la parte repetible del análisis. Las reglas reales suelen ser más complejas, y por eso siempre conviene declarar los límites del modelo.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>3. Python para decisiones jurídicas y automatización básica</span>"
     ]
   },
@@ -741,7 +741,7 @@
     "section": "Cómo escribir funciones más útiles",
     "text": "Cómo escribir funciones más útiles\nUna buena función inicial suele cumplir al menos tres criterios:\n\nhace una sola cosa reconocible;\nrecibe datos claros;\ndevuelve un resultado fácil de interpretar.\n\nNo siempre conviene hacer una función enorme que resuelva todo de una vez. A veces resulta mejor separar:\n\nvalidación de requisitos;\nclasificación del caso;\ngeneración de observaciones.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>3. Python para decisiones jurídicas y automatización básica</span>"
     ]
   },
@@ -752,7 +752,7 @@
     "section": "Práctica en editor",
     "text": "Práctica en editor\nAbre tu repositorio del curso y crea un archivo como sesion-3/admision.py. Implementa una función que reciba varios datos y devuelva una clasificación preliminar.\nPrueba al menos tres escenarios:\n\nun caso conforme;\nun caso observado;\nun caso prioritario.\n\nSi quieres ampliar la práctica, agrega una lista de observaciones o una justificación breve del resultado.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>3. Python para decisiones jurídicas y automatización básica</span>"
     ]
   },
@@ -763,7 +763,7 @@
     "section": "Git y GitHub",
     "text": "Git y GitHub\nRegistra el avance con commits claros:\ngit add .\ngit commit -m \"Resuelve sesion 3 sobre decisiones juridicas\"\ngit push",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>3. Python para decisiones jurídicas y automatización básica</span>"
     ]
   },
@@ -774,7 +774,7 @@
     "section": "PSET de la sesión",
     "text": "PSET de la sesión\nConstruye un script en Python que resuelva un problema jurídico con múltiples condiciones. Puede ser, por ejemplo:\n\nelegibilidad para un beneficio;\nvalidación preliminar de un trámite;\ncálculo de multa con reglas adicionales;\nclasificación básica de expedientes.\n\nEl entregable debe incluir:\n\nel archivo .py;\nejemplos de entrada y salida;\nun README breve explicando la lógica aplicada;\nal menos dos o tres casos de prueba.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>3. Python para decisiones jurídicas y automatización básica</span>"
     ]
   },
@@ -785,7 +785,7 @@
     "section": "Preguntas de repaso",
     "text": "Preguntas de repaso\n\n¿Por qué conviene devolver razones y no solo un resultado binario?\n¿Qué problema genera una condición demasiado larga?\n¿Por qué es útil probar varios escenarios?\n¿Qué parte del trabajo jurídico puede modelarse bien y cuál requiere cautela adicional?",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>3. Python para decisiones jurídicas y automatización básica</span>"
     ]
   },
@@ -796,7 +796,7 @@
     "section": "Ideas clave",
     "text": "Ideas clave\n\nuna buena parte del trabajo legal puede modelarse como reglas y condiciones;\nlas funciones ayudan a reutilizar lógica sin duplicar código;\nprobar escenarios mejora la calidad de la automatización;\nla automatización básica empieza por decisiones claras, no por sistemas complejos.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>3. Python para decisiones jurídicas y automatización básica</span>"
     ]
   },
@@ -807,7 +807,7 @@
     "section": "",
     "text": "¿Por qué importa este tema?\nLa práctica legal trabaja constantemente con listas de casos, textos, fechas, archivos y documentos que siguen patrones. Aprender a procesar esa información con Python abre la puerta a tareas de organización y automatización bastante útiles.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>4. Python para datos, documentos y flujos jurídicos</span>"
     ]
   },
@@ -818,7 +818,7 @@
     "section": "",
     "text": "ImportantIdea central\n\n\n\nAntes de hablar de grandes sistemas, conviene aprender a transformar información jurídica simple en salidas ordenadas, repetibles y verificables.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>4. Python para datos, documentos y flujos jurídicos</span>"
     ]
   },
@@ -829,7 +829,7 @@
     "section": "Qué aprenderás en esta sesión",
     "text": "Qué aprenderás en esta sesión\nAl finalizar esta sesión, deberías poder:\n\ntrabajar con listas, diccionarios y archivos de texto;\ntransformar datos jurídicos simples;\nproducir salidas estructuradas;\nentender el puente entre scripts sencillos y automatización documental;\npreparar mejor la transición hacia procesos y datos del Módulo II.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>4. Python para datos, documentos y flujos jurídicos</span>"
     ]
   },
@@ -840,7 +840,7 @@
     "section": "Del criterio a los datos",
     "text": "Del criterio a los datos\nEn la sesión anterior modelamos decisiones. Ahora toca trabajar con algo que aparece todo el tiempo en la práctica jurídica: información repetida y estructurada.\nEso puede adoptar muchas formas:\n\nlistas de expedientes;\nregistros de contratos;\nplazos en seguimiento;\ncorreos o escritos con patrones previsibles;\ndatos básicos para generar reportes.\n\nPython resulta útil aquí porque permite recorrer colecciones, transformar texto, filtrar casos y producir salidas nuevas.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>4. Python para datos, documentos y flujos jurídicos</span>"
     ]
   },
@@ -851,7 +851,7 @@
     "section": "Listas y diccionarios como punto de partida",
     "text": "Listas y diccionarios como punto de partida\nUna forma sencilla de representar información jurídica consiste en usar listas de diccionarios.\nexpedientes = [\n    {\"codigo\": \"EXP-001\", \"estado\": \"pendiente\", \"urgente\": True},\n    {\"codigo\": \"EXP-002\", \"estado\": \"revisado\", \"urgente\": False},\n    {\"codigo\": \"EXP-003\", \"estado\": \"pendiente\", \"urgente\": True},\n]\nCada diccionario representa un registro; la lista agrupa varios registros.\nPodemos recorrerlos así:\nfor expediente in expedientes:\n    print(expediente[\"codigo\"], expediente[\"estado\"])\nY filtrar los urgentes:\nfor expediente in expedientes:\n    if expediente[\"urgente\"]:\n        print(\"Priorizar\", expediente[\"codigo\"])",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>4. Python para datos, documentos y flujos jurídicos</span>"
     ]
   },
@@ -862,7 +862,7 @@
     "section": "¿Por qué esto importa en derecho?",
     "text": "¿Por qué esto importa en derecho?\nPorque una gran parte del trabajo legal ya funciona, de hecho, como un conjunto de registros:\n\nexpedientes con atributos;\ncontratos con fechas y montos;\nresoluciones con estado;\ntrámites con responsables;\nobservaciones repetidas en revisión documental.\n\nNo siempre necesitamos bases de datos complejas para empezar a trabajar mejor. A veces basta con estructurar bien la información.\n\n\n\n\n\n\nNoteIdea útil\n\n\n\nSi puedes nombrar los campos relevantes de un problema, ya empezaste a convertirlo en datos.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>4. Python para datos, documentos y flujos jurídicos</span>"
     ]
   },
@@ -873,7 +873,7 @@
     "section": "Trabajar con texto",
     "text": "Trabajar con texto\nEl texto es una materia prima central en el trabajo jurídico. Por eso, incluso operaciones simples pueden resultar valiosas:\ntexto = \"Contrato de prestación de servicios\"\n\nprint(texto.lower())\nprint(texto.upper())\nprint(\"servicios\" in texto.lower())\nTambién podemos limpiar texto:\nnombre_parte = \"  Ana Perez  \"\nprint(nombre_parte.strip())\nEsto ayuda a:\n\nnormalizar nombres;\nrevisar formatos previsibles;\ndetectar palabras clave;\npreparar insumos para reportes o plantillas.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>4. Python para datos, documentos y flujos jurídicos</span>"
     ]
   },
@@ -884,7 +884,7 @@
     "section": "Generar mensajes o salidas estructuradas",
     "text": "Generar mensajes o salidas estructuradas\nUna forma simple de automatización consiste en generar mensajes con base en datos.\ncontrato = {\n    \"codigo\": \"CONT-014\",\n    \"vence_pronto\": True,\n    \"firmado\": False\n}\n\nmensaje = f\"Contrato {contrato['codigo']}: \"\n\nif contrato[\"vence_pronto\"]:\n    mensaje += \"revisar vencimiento. \"\n\nif not contrato[\"firmado\"]:\n    mensaje += \"falta firma.\"\n\nprint(mensaje)\nNo estamos creando todavía un sistema documental complejo, pero sí una lógica que convierte datos en una salida útil.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>4. Python para datos, documentos y flujos jurídicos</span>"
     ]
   },
@@ -895,7 +895,7 @@
     "section": "Un ejemplo jurídico más desarrollado",
     "text": "Un ejemplo jurídico más desarrollado\nImagina que debes revisar una lista de contratos y marcar cuáles tienen:\n\nplazo próximo a vencer;\nausencia de firma;\nmonto superior a un umbral;\ncláusula de renovación automática.\n\ncontratos = [\n    {\n        \"codigo\": \"C-001\",\n        \"dias_para_vencer\": 10,\n        \"firmado\": True,\n        \"monto\": 8000,\n        \"renovacion_automatica\": False\n    },\n    {\n        \"codigo\": \"C-002\",\n        \"dias_para_vencer\": 3,\n        \"firmado\": False,\n        \"monto\": 15000,\n        \"renovacion_automatica\": True\n    }\n]\n\nfor contrato in contratos:\n    alertas = []\n\n    if contrato[\"dias_para_vencer\"] &lt;= 5:\n        alertas.append(\"vence pronto\")\n    if not contrato[\"firmado\"]:\n        alertas.append(\"falta firma\")\n    if contrato[\"monto\"] &gt; 10000:\n        alertas.append(\"monto alto\")\n    if contrato[\"renovacion_automatica\"]:\n        alertas.append(\"revisar renovacion automatica\")\n\n    print(contrato[\"codigo\"], \"=&gt;\", alertas)\nEste ejemplo ya muestra algo importante: el script no resuelve todo el análisis contractual, pero ayuda a ordenar el trabajo y a detectar rápidamente dónde mirar primero.\n\n\n\n\n\n\nTipRegla útil\n\n\n\nEl objetivo no es reemplazar la revisión jurídica. Es reducir trabajo mecánico y hacer más visible la información relevante.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>4. Python para datos, documentos y flujos jurídicos</span>"
     ]
   },
@@ -906,7 +906,7 @@
     "section": "Archivos de texto y salidas simples",
     "text": "Archivos de texto y salidas simples\nOtra posibilidad útil es guardar resultados en un archivo. Por ejemplo:\nlineas = [\n    \"EXP-001: revisar urgencia\",\n    \"EXP-002: sin observaciones\"\n]\n\nwith open(\"reporte.txt\", \"w\", encoding=\"utf-8\") as archivo:\n    for linea in lineas:\n        archivo.write(linea + \"\\n\")\nCon eso ya podemos producir una salida reutilizable, aunque sea básica.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>4. Python para datos, documentos y flujos jurídicos</span>"
     ]
   },
@@ -917,7 +917,7 @@
     "section": "El puente hacia automatización documental",
     "text": "El puente hacia automatización documental\nCuando un script:\n\ntoma datos;\naplica reglas;\ngenera una salida;\n\nya estamos bastante cerca de la lógica básica de automatización documental.\nNo se trata todavía de construir una plataforma sofisticada. Se trata de entender la secuencia:\n\nrecibir información;\ntransformarla;\nproducir un resultado legible.\n\nEse puente es importante porque prepara el terreno para módulos posteriores del curso.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>4. Python para datos, documentos y flujos jurídicos</span>"
     ]
   },
@@ -928,7 +928,7 @@
     "section": "Práctica en editor",
     "text": "Práctica en editor\nCrea un archivo como sesion-4/reporte.py y trabaja con una lista de registros jurídicos. El script debe:\n\nleer una estructura simple de datos;\nidentificar al menos una condición relevante;\nproducir una salida clara en pantalla o en un archivo de texto.\n\nSi quieres profundizar, añade una pequeña función que reciba un registro y devuelva observaciones.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>4. Python para datos, documentos y flujos jurídicos</span>"
     ]
   },
@@ -939,7 +939,7 @@
     "section": "Git y GitHub",
     "text": "Git y GitHub\nVersiona tanto el script como cualquier archivo de datos de prueba o README breve que acompañe tu solución.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>4. Python para datos, documentos y flujos jurídicos</span>"
     ]
   },
@@ -950,7 +950,7 @@
     "section": "PSET de la sesión",
     "text": "PSET de la sesión\nResuelve una tarea básica de procesamiento jurídico con Python. Algunas opciones:\n\ngenerar observaciones sobre expedientes;\ncrear un pequeño reporte de plazos;\nproducir mensajes tipo para situaciones repetitivas;\ntransformar una lista de registros en una salida legible.\n\nEl PSET debe mostrar:\n\nestructura clara de datos;\nlógica comprensible;\nsalida verificable;\ncommits que permitan seguir el trabajo.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>4. Python para datos, documentos y flujos jurídicos</span>"
     ]
   },
@@ -961,7 +961,7 @@
     "section": "Preguntas de repaso",
     "text": "Preguntas de repaso\n\n¿Por qué una lista de diccionarios puede ser útil para modelar información jurídica?\n¿Qué valor tiene transformar texto en tareas legales?\n¿Qué diferencia hay entre revisar datos y producir una salida a partir de esos datos?\n¿Por qué este tipo de ejercicios prepara el paso hacia automatización documental?",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>4. Python para datos, documentos y flujos jurídicos</span>"
     ]
   },
@@ -972,7 +972,7 @@
     "section": "Ideas clave",
     "text": "Ideas clave\n\nPython no sirve solo para cálculos: también sirve para ordenar información jurídica;\nlas estructuras de datos son una forma de pensar mejor el trabajo legal;\nuna salida simple puede ser ya una forma útil de automatización;\nautomatizar documentos o reportes empieza con pequeñas transformaciones bien hechas.",
     "crumbs": [
-      "Módulo 1. Pensamiento computacional para juristas",
+      "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>4. Python para datos, documentos y flujos jurídicos</span>"
     ]
   },

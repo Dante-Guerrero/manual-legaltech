@@ -1,7 +1,3 @@
----
-title: "Módulo 1. Pensamiento computacional para juristas"
----
-
 # I. Pensamiento computacional para juristas
 
 ## ¿Por qué importa este módulo?
