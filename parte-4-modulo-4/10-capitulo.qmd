@@ -1,1 +1,192 @@
-# Sesión 10
+# 10. Evaluar, gobernar e integrar IA en contextos jurídicos
+
+## ¿Por qué importa este tema?
+
+Usar IA en derecho sin criterios de evaluación ni control es una mala idea. La pregunta seria no es solo si una herramienta funciona, sino si conviene usarla, con qué límites y bajo qué responsabilidad.
+
+::: {.callout-important}
+## Idea central
+Gobernar una herramienta de IA significa definir cómo se prueba, qué riesgos se aceptan, qué controles se exigen y quién responde por el resultado.
+:::
+
+## Qué aprenderás en esta sesión
+
+Al finalizar esta sesión, deberías poder:
+
+- construir criterios básicos de evaluación;
+- revisar precisión, utilidad, trazabilidad y control humano;
+- documentar pruebas de manera ordenada;
+- identificar riesgos éticos, regulatorios y operativos;
+- pensar integraciones sencillas con sentido práctico.
+
+## Evaluar no es solo “probar si gusta”
+
+Una herramienta puede parecer impresionante en una demo y resultar poco confiable en un contexto jurídico serio. Por eso, evaluar implica mucho más que preguntar si “funciona”.
+
+Conviene considerar al menos:
+
+- utilidad real para la tarea;
+- calidad de la respuesta;
+- consistencia;
+- necesidad de verificación humana;
+- posibilidad de dejar rastro del proceso;
+- riesgos asociados.
+
+## Criterios mínimos de evaluación
+
+Una evaluación básica puede organizarse con preguntas como estas:
+
+- ¿la salida ayuda realmente a la tarea?;
+- ¿reduce tiempo sin comprometer calidad?;
+- ¿introduce errores frecuentes?;
+- ¿permite explicar cómo se llegó al resultado?;
+- ¿requiere supervisión intensa?;
+- ¿qué daño produciría una respuesta equivocada?
+
+Estos criterios no agotan la gobernanza, pero sí elevan el nivel del análisis.
+
+## Control humano y responsabilidad
+
+En derecho, uno de los puntos más delicados es el control humano. No basta con que una persona “mire por encima” una salida. Hay que poder responder:
+
+- quién revisa;
+- qué revisa exactamente;
+- con qué criterio valida;
+- cuándo se corrige o descarta la respuesta;
+- quién asume responsabilidad final.
+
+Sin esa capa, la herramienta puede terminar funcionando como una autoridad informal, lo cual es especialmente riesgoso.
+
+::: {.callout-note}
+## Punto clave
+La gobernanza no empieza cuando aparece un problema. Empieza cuando decides cómo probar, usar y controlar una herramienta antes de incorporarla al trabajo.
+:::
+
+## Riesgos éticos, regulatorios y operativos
+
+En contextos jurídicos, una evaluación seria no puede limitarse al rendimiento técnico. También debe mirar riesgos como:
+
+- fuga o exposición de información;
+- sesgos en clasificación o recomendación;
+- dependencia excesiva del sistema;
+- pérdida de trazabilidad;
+- errores en documentos o análisis preliminar;
+- incumplimientos respecto de confidencialidad o protección de datos.
+
+En algunos casos, una herramienta puede ser útil para tareas de muy bajo riesgo, pero no recomendable para otras de mayor impacto.
+
+## Ejemplo jurídico
+
+Imagina una herramienta usada para redactar borradores de informes o para clasificar escritos entrantes.
+
+Conviene preguntarse:
+
+- ¿qué errores podría introducir?;
+- ¿cómo se detectan?;
+- ¿qué parte sigue bajo revisión humana?;
+- ¿qué evidencia deja el proceso?;
+- ¿qué pasa si el sistema falla o responde mal?;
+
+Esas preguntas ya son parte de la gobernanza.
+
+## Bitácora de evaluación
+
+Una forma sencilla y muy útil de empezar a gobernar pruebas consiste en construir una bitácora. Esa bitácora puede incluir:
+
+- tarea;
+- prompt o instrucción;
+- salida obtenida;
+- error detectado;
+- nivel de utilidad;
+- decisión final;
+- observaciones.
+
+Por ejemplo:
+
+| Tarea | Prompt | Resultado | Error detectado | Decision |
+|---|---|---|---|---|
+| Resumir resolucion | "Resume en 5 puntos" | resumen plausible | omitio base legal | usar con revision |
+
+La bitácora no solo organiza. También deja evidencia.
+
+## Integraciones sencillas
+
+Hablar de integración no significa necesariamente construir un sistema complejo. A veces basta con un flujo simple:
+
+- texto de entrada;
+- prompt o instrucción;
+- revisión humana;
+- clasificación o salida documentada.
+
+En algunos casos, puede haber también integraciones básicas con Python:
+
+- leer una lista de documentos;
+- enviar bloques de texto a una herramienta;
+- registrar resultados;
+- guardar observaciones.
+
+Lo importante no es la sofisticación técnica, sino que la integración tenga sentido práctico y controles razonables.
+
+## ¿Cuándo no conviene integrar?
+
+También es una decisión válida concluir que una herramienta no debería usarse para determinada tarea. Por ejemplo, cuando:
+
+- el riesgo de error es demasiado alto;
+- no hay trazabilidad suficiente;
+- la revisión humana sería tan costosa que anula la ventaja;
+- la información es demasiado sensible;
+- el sistema se comporta de manera demasiado inconsistente.
+
+::: {.callout-warning}
+## Advertencia útil
+En innovación jurídica, a veces la decisión más responsable no es integrar más tecnología, sino integrar menos y mejor.
+:::
+
+## Práctica en editor
+
+Construye una bitácora de evaluación con columnas o secciones como estas:
+
+- tarea;
+- prompt o instrucción;
+- resultado;
+- error detectado;
+- decisión final.
+
+Si quieres profundizar, añade:
+
+- nivel de riesgo;
+- necesidad de revisión humana;
+- observaciones de trazabilidad.
+
+## Git y GitHub
+
+Sube la bitácora y cualquier script o documento de apoyo al repositorio del curso. Si hiciste varias versiones de la bitácora, conserva esa evolución.
+
+## PSET de la sesión
+
+Evalúa una herramienta o flujo de IA usando criterios jurídicos y técnicos básicos. El entregable debe justificar si su uso sería:
+
+- recomendable;
+- recomendable con controles;
+- o no recomendable para la tarea analizada.
+
+Debe incluir:
+
+- descripción de la tarea;
+- criterios usados;
+- evidencia de pruebas;
+- conclusión argumentada.
+
+## Preguntas de repaso
+
+1. ¿Por qué evaluar una herramienta no es solo preguntar si “funciona”?
+2. ¿Qué papel cumple el control humano?
+3. ¿Qué valor tiene una bitácora de evaluación?
+4. ¿Cuándo podría ser razonable no integrar una herramienta?
+
+## Ideas clave
+
+- la gobernanza empieza en la prueba, no después del problema;
+- la trazabilidad importa tanto como el resultado;
+- una evaluación útil combina criterio técnico y criterio jurídico;
+- integrar IA sin controles suele ser peor que no integrarla.

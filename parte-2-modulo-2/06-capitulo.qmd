@@ -1,1 +1,286 @@
-# Sesión 6
+# 6. Explicar y controlar los resultados
+
+## ¿Por qué importa este tema?
+
+En derecho no basta con tener información: hay que ordenarla, explicarla y usarla para tomar mejores decisiones. Una tabla caótica sirve poco; un reporte claro puede cambiar mucho. Lo mismo ocurre con la gestión legal: si no se mide, no se entiende bien; y si no se entiende bien, se controla mal.
+
+::: {.callout-important}
+## Idea central
+Datos útiles son datos organizados, legibles y conectados con una pregunta concreta.
+:::
+
+## Qué aprenderás en esta sesión
+
+Al finalizar esta sesión, deberías poder:
+
+- distinguir entre dato, registro, campo e indicador;
+- organizar información jurídica básica;
+- limpiar y estructurar una tabla sencilla;
+- producir un reporte o visualización simple;
+- preparar evidencia reproducible para un PSET.
+
+## Del documento al dato
+
+Uno de los cambios más importantes en entornos legaltech consiste en dejar de tratar toda la información como si fuera solo un conjunto de documentos aislados.
+
+Muchas veces conviene separar:
+
+- el documento como pieza completa;
+- los datos que ese documento contiene;
+- los campos que pueden convertirse en variables analizables.
+
+Por ejemplo, una resolución puede ser un documento. Pero dentro de ella hay datos como:
+
+- fecha;
+- órgano emisor;
+- materia;
+- tipo de decisión;
+- monto;
+- estado de cumplimiento.
+
+Cuando distinguimos esas capas, la información empieza a ser más útil para seguimiento, análisis y control.
+
+## Vocabulario mínimo para trabajar con información
+
+Conviene manejar al menos estas cuatro nociones:
+
+- **dato**: unidad básica de información;
+- **campo**: categoría o atributo del dato;
+- **registro**: conjunto de campos relacionados entre sí;
+- **indicador**: medida que ayuda a monitorear una situación.
+
+Pensemos en una tabla de expedientes:
+
+| codigo | estado | responsable | prioridad |
+|---|---|---|---|
+| EXP-001 | pendiente | Ana | alta |
+| EXP-002 | revisado | Luis | media |
+
+Aquí:
+
+- `codigo`, `estado`, `responsable` y `prioridad` son campos;
+- cada fila es un registro;
+- el total de expedientes pendientes podría convertirse luego en un indicador.
+
+::: {.callout-note}
+## Idea útil
+Un buen dato no es solo un dato existente. Es un dato que puede leerse, compararse y reutilizarse con un propósito.
+:::
+
+## Qué vuelve mala a una tabla
+
+Una tabla suele volverse poco útil cuando:
+
+- mezcla demasiadas cosas en una misma columna;
+- usa nombres ambiguos;
+- repite formatos distintos para lo mismo;
+- deja vacíos sin criterio;
+- no permite responder ninguna pregunta concreta.
+
+Por ejemplo, una columna llamada `observaciones varias` que mezcla texto libre, fechas, responsables y estados puede ser cómoda al inicio, pero difícil de analizar después.
+
+## Primer paso: ordenar la información
+
+Antes de pensar en gráficos o dashboards, conviene hacer algo mucho menos glamoroso y mucho más importante: ordenar la tabla.
+
+Eso implica revisar:
+
+- nombres de columnas;
+- consistencia de formatos;
+- duplicados;
+- valores faltantes;
+- categorías comparables.
+
+Un ejemplo didáctico con Python:
+
+```python
+expedientes = [
+    {"codigo": "EXP-001", "estado": "pendiente", "prioridad": "alta"},
+    {"codigo": "EXP-002", "estado": "Pendiente", "prioridad": "media"},
+    {"codigo": "EXP-003", "estado": "revisado", "prioridad": "alta"},
+]
+
+for expediente in expedientes:
+    expediente["estado"] = expediente["estado"].lower()
+
+print(expedientes)
+```
+
+Ese ajuste es simple, pero ya mejora la posibilidad de contar o clasificar registros sin errores evitables.
+
+## Qué preguntas vale la pena hacer a los datos
+
+Una buena práctica consiste en formular una pregunta antes de abrir la tabla. Por ejemplo:
+
+- ¿cuántos casos están pendientes?;
+- ¿qué tipo de observación se repite más?;
+- ¿qué responsable concentra mayor carga?;
+- ¿qué plazos están por vencer?;
+- ¿qué casos deberían priorizarse?
+
+La tabla sirve mejor cuando está subordinada a una pregunta y no al revés.
+
+## Ejemplo jurídico: carga de expedientes
+
+Imagina una tabla con estas columnas:
+
+- código;
+- estado;
+- fecha de ingreso;
+- responsable;
+- prioridad.
+
+Con eso ya puedes producir algo útil, por ejemplo:
+
+- número de expedientes pendientes;
+- casos de prioridad alta;
+- distribución por responsable.
+
+Un script mínimo:
+
+```python
+expedientes = [
+    {"codigo": "EXP-001", "estado": "pendiente", "responsable": "Ana", "prioridad": "alta"},
+    {"codigo": "EXP-002", "estado": "revisado", "responsable": "Luis", "prioridad": "media"},
+    {"codigo": "EXP-003", "estado": "pendiente", "responsable": "Ana", "prioridad": "alta"},
+]
+
+pendientes = 0
+
+for expediente in expedientes:
+    if expediente["estado"] == "pendiente":
+        pendientes += 1
+
+print("Expedientes pendientes:", pendientes)
+```
+
+Eso ya convierte una tabla en una respuesta.
+
+## Indicadores y control
+
+Un indicador no es cualquier número. Es un número que ayuda a monitorear una situación relevante.
+
+En contextos legales, algunos ejemplos de indicadores podrían ser:
+
+- expedientes pendientes por unidad;
+- tiempo promedio de atención;
+- porcentaje de casos observados;
+- número de contratos próximos a vencer;
+- cantidad de casos prioritarios sin revisión.
+
+Lo importante es no confundir acumulación de datos con control real. El control aparece cuando esos datos permiten ver algo accionable.
+
+::: {.callout-tip}
+## Regla práctica
+Si un indicador no ayuda a tomar una decisión o a detectar un problema, probablemente todavía no es un buen indicador.
+:::
+
+## Visualizar no es decorar
+
+La visualización puede ayudar a que ciertos patrones se vean mejor. Pero no toda visualización es útil. A veces una tabla bien ordenada explica más que un gráfico innecesario.
+
+Visualizar bien implica preguntarse:
+
+- ¿qué quiero mostrar?;
+- ¿a quién quiero explicárselo?;
+- ¿qué forma hace más visible el patrón?;
+- ¿qué nivel de detalle conviene?
+
+En algunos casos, bastará con un resumen textual:
+
+- 12 expedientes pendientes;
+- 7 de prioridad alta;
+- 5 asignados a la misma persona.
+
+En otros casos, una barra o una tabla comparativa puede ser suficiente.
+
+## SQL y bases de datos: una intuición inicial
+
+Aunque esta sesión no busca convertirte en especialista en bases de datos, sí conviene introducir una idea básica: cuando la información crece, ya no basta con mirar todo a mano.
+
+Allí aparece la lógica de consulta:
+
+- seleccionar ciertos campos;
+- filtrar registros;
+- ordenar resultados;
+- contar casos.
+
+Esa intuición está muy cerca de lo que luego hace una consulta SQL, aunque aquí todavía podamos trabajar con ejemplos más simples.
+
+## Del dato al reporte
+
+Explicar resultados no significa solo contar cosas. También significa producir un reporte comprensible.
+
+Un reporte útil suele responder:
+
+- qué se observó;
+- por qué importa;
+- qué acción sugiere.
+
+Por ejemplo:
+
+> Se identificaron 12 expedientes pendientes, de los cuales 7 tienen prioridad alta. La mayor carga recae en una sola responsable. Conviene redistribuir revisión o establecer un criterio de priorización más claro.
+
+Ese tipo de salida ya conecta datos con gestión.
+
+## Puente hacia automatización documental
+
+Cuando una tabla bien organizada alimenta un reporte, un resumen o una salida estandarizada, estamos muy cerca de la lógica de automatización documental.
+
+La secuencia es esta:
+
+1. recibir datos;
+2. ordenarlos;
+3. analizarlos;
+4. producir una salida.
+
+Eso puede terminar en:
+
+- un reporte;
+- una alerta;
+- una lista priorizada;
+- una plantilla con datos insertados.
+
+## Práctica en editor
+
+Trabaja con una tabla pequeña o con una lista de registros jurídicos y produce:
+
+- una limpieza mínima de los datos;
+- una salida resumida;
+- una observación breve sobre lo que muestran esos datos.
+
+La herramienta puede ser Python, una tabla estructurada o una consulta simple, según lo que se esté usando en clase.
+
+## Git y GitHub
+
+Sube al repositorio tanto el archivo de datos de prueba como el script, consulta o documento de resultados. Si limpiaste o transformaste la información, deja rastro de qué cambiaste.
+
+## PSET de la sesión
+
+Organiza y explica información jurídica con un objetivo claro. El entregable puede consistir en:
+
+- una tabla limpia;
+- un reporte breve;
+- una visualización simple;
+- una consulta o script que permita reproducir el resultado.
+
+El PSET debe mostrar:
+
+- una pregunta clara;
+- datos mínimamente organizados;
+- un resultado legible;
+- una breve interpretación de por qué importa.
+
+## Preguntas de repaso
+
+1. ¿Qué diferencia hay entre documento, dato, campo y registro?
+2. ¿Por qué no conviene abrir una tabla sin una pregunta previa?
+3. ¿Qué vuelve inútil a un indicador?
+4. ¿Por qué la limpieza de datos importa antes que la visualización?
+
+## Ideas clave
+
+- los datos sin pregunta suelen generar ruido;
+- ordenar información es una forma de pensar mejor el problema;
+- reportar bien es una competencia jurídica y técnica a la vez;
+- controlar resultados exige trazabilidad, no solo intuición.

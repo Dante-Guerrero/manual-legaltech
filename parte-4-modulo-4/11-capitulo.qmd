@@ -1,1 +1,215 @@
-# Sesión 11
+# 11. Ejemplos de proyectos Legal Tech
+
+## ¿Por qué importa este tema?
+
+El curso no busca solo que entiendas herramientas aisladas. Busca que puedas conectar problemas reales del mundo jurídico con soluciones tecnológicas plausibles.
+
+::: {.callout-important}
+## Idea central
+Un proyecto legaltech valioso no parte de una moda técnica. Parte de un problema concreto, un usuario identificable y una solución defendible.
+:::
+
+## Qué aprenderás en esta sesión
+
+Al finalizar esta sesión, deberías poder:
+
+- identificar tipos de proyectos legaltech;
+- distinguir entre idea llamativa y solución útil;
+- bosquejar una propuesta con lógica de problema-solución;
+- reconocer criterios mínimos de viabilidad;
+- preparar un avance verificable para el proyecto final.
+
+## Empezar por el problema
+
+Uno de los errores más frecuentes en proyectos legaltech es empezar por la herramienta:
+
+- “hagamos algo con IA”;
+- “usemos blockchain”;
+- “construyamos un chatbot”.
+
+Ese orden suele ser un mal punto de partida. Un proyecto serio debería comenzar con preguntas como estas:
+
+- ¿qué problema jurídico o de gestión existe?;
+- ¿a quién afecta?;
+- ¿qué tarea es lenta, confusa, costosa o poco trazable?;
+- ¿qué parte de ese problema podría mejorar con apoyo tecnológico?;
+
+En otras palabras: primero el problema, luego la solución.
+
+## Tipos frecuentes de proyectos legaltech
+
+Algunos tipos frecuentes de proyecto son:
+
+- automatización documental;
+- acceso a información jurídica;
+- visualización de datos regulatorios;
+- cumplimiento normativo;
+- asistentes de trabajo interno;
+- trazabilidad de trámites o expedientes;
+- revisión preliminar o clasificación de documentos.
+
+Esto no significa que todo proyecto deba encajar perfectamente en una sola categoría. Pero la tipología ayuda a ordenar ideas.
+
+## ¿Qué vuelve útil a una propuesta?
+
+Una propuesta útil suele cumplir al menos con estas condiciones:
+
+- responde a un problema real;
+- tiene un usuario o público identificable;
+- explica con claridad qué hace la solución;
+- no promete más de lo que puede sostener;
+- reconoce riesgos, límites y condiciones de uso.
+
+Lo contrario también es fácil de identificar:
+
+- solución vaga;
+- problema inflado o mal definido;
+- jerga tecnológica sin necesidad;
+- ausencia de usuario claro;
+- falta de criterio jurídico.
+
+::: {.callout-note}
+## Regla útil
+Una solución sobria, específica y bien justificada vale más que una idea espectacular pero difusa.
+:::
+
+## Ejemplo 1: seguimiento de plazos
+
+Imagina un proyecto orientado a seguimiento de plazos en expedientes o contratos.
+
+Problema:
+
+- plazos dispersos en correos y hojas de cálculo;
+- alertas tardías;
+- baja trazabilidad.
+
+Posible solución:
+
+- un flujo simple que registre casos, fechas y alertas;
+- un tablero básico de seguimiento;
+- un sistema de priorización mínima.
+
+Valor esperado:
+
+- menos omisiones;
+- mejor visibilidad;
+- mayor orden del trabajo.
+
+## Ejemplo 2: automatización documental
+
+Problema:
+
+- formatos repetitivos;
+- errores de copia y pega;
+- documentos inconsistentes.
+
+Posible solución:
+
+- plantilla con campos variables;
+- generación automática de salidas según ciertos datos;
+- revisión humana final.
+
+Valor esperado:
+
+- ahorro de tiempo;
+- reducción de errores mecánicos;
+- mayor consistencia documental.
+
+## Ejemplo 3: acceso a información jurídica
+
+Problema:
+
+- información dispersa o difícil de consultar;
+- poca claridad para usuarios no especializados;
+- sobrecarga en respuestas repetitivas.
+
+Posible solución:
+
+- un repositorio estructurado;
+- un buscador temático simple;
+- una interfaz de consulta inicial con criterios bien definidos.
+
+Este tipo de proyecto puede ser especialmente valioso en contextos de acceso a justicia o atención ciudadana, siempre que se maneje con cuidado el alcance de la herramienta.
+
+## Viabilidad básica
+
+No hace falta que el proyecto esté totalmente construido para ser una buena propuesta académica. Pero sí conviene mostrar alguna idea de viabilidad:
+
+- ¿qué recursos requiere?;
+- ¿qué parte ya puede prototiparse?;
+- ¿qué tan sensible es la información involucrada?;
+- ¿qué controles serían necesarios?;
+- ¿qué limitaciones reconoce el equipo?
+
+Un proyecto académico serio no necesita prometer una startup en dos semanas. Necesita demostrar criterio.
+
+## Riesgos y límites
+
+Toda propuesta razonable debería incluir una sección mínima de riesgos:
+
+- riesgos jurídicos;
+- riesgos operativos;
+- riesgos éticos;
+- riesgos de seguridad o privacidad;
+- riesgos de depender demasiado de una herramienta.
+
+Este punto no debilita el proyecto. Lo fortalece, porque muestra que el equipo no está vendiendo humo.
+
+::: {.callout-warning}
+## Advertencia útil
+Una idea tecnológicamente llamativa puede ser inútil si no mejora nada relevante del trabajo jurídico.
+:::
+
+## Preparar el proyecto final
+
+Esta sesión también funciona como puente hacia la evaluación final o el demo day. Por eso conviene que el proyecto ya empiece a tomar forma en el repositorio y en la documentación.
+
+Una estructura inicial razonable podría incluir:
+
+1. problema;
+2. usuario;
+3. solución propuesta;
+4. flujo o lógica general;
+5. valor esperado;
+6. riesgos y límites;
+7. próximos pasos.
+
+## Práctica en editor
+
+Crea en tu repositorio un documento inicial del proyecto con estas secciones:
+
+1. problema;
+2. usuario;
+3. solución propuesta;
+4. valor esperado;
+5. riesgos o límites.
+
+Si quieres profundizar, agrega un diagrama de flujo, una maqueta simple o una tabla de funcionalidades mínimas.
+
+## Git y GitHub
+
+Prepara la estructura del repositorio del proyecto final o del avance grupal. Lo importante es que el trabajo no quede solo en una idea oral, sino también en un rastro verificable.
+
+## PSET de la sesión
+
+Entrega un avance verificable de tu propuesta legaltech. Puede ser un bosquejo individual o grupal, pero debe mostrar:
+
+- problema claro;
+- solución coherente;
+- alguna evidencia de trabajo en repositorio;
+- criterios iniciales de viabilidad;
+- riesgos o límites identificados.
+
+## Preguntas de repaso
+
+1. ¿Por qué conviene empezar por el problema y no por la herramienta?
+2. ¿Qué diferencia hay entre una idea llamativa y una solución útil?
+3. ¿Qué valor tiene incluir riesgos y límites en la propuesta?
+4. ¿Qué hace que un proyecto sea viable en términos básicos?
+
+## Ideas clave
+
+- una solución útil vale más que una idea grandilocuente;
+- la claridad del problema suele determinar la calidad del proyecto;
+- una buena propuesta legaltech combina criterio jurídico, diseño de proceso y uso razonable de tecnología;
+- documentar el proyecto desde temprano mejora su solidez.

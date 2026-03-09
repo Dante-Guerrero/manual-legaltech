@@ -33,6 +33,14 @@ book:
         - parte-4-modulo-4/10-capitulo.qmd
         - parte-4-modulo-4/11-capitulo.qmd
 
+    - part: "tutoriales/00-presentacion.qmd"
+      chapters:
+        - tutoriales/instalar-python.qmd
+        - tutoriales/visual-studio-code.qmd
+        - tutoriales/git-y-github.qmd
+        - tutoriales/licencias-y-reutilizacion.qmd
+        - tutoriales/github-pages.qmd
+
     - part: "Evaluaciones"
       chapters:
         - evaluaciones/evaluacion-1.qmd

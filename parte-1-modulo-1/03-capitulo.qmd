@@ -1,1 +1,264 @@
-# Sesión 3
+# 3. Python para decisiones jurídicas y automatización básica
+
+## ¿Por qué importa este tema?
+
+Muchas tareas jurídicas no son solo lectura o argumentación. También implican aplicar criterios, validar requisitos, verificar supuestos y producir decisiones preliminares. Ese tipo de trabajo puede expresarse como lógica condicional más compleja.
+
+::: {.callout-important}
+## Idea central
+Cuando una regla jurídica puede formularse como condiciones claras, también puede convertirse en una función o en un flujo verificable.
+:::
+
+## Qué aprenderás en esta sesión
+
+Al finalizar esta sesión, deberías poder:
+
+- combinar varias condiciones en un mismo script;
+- usar funciones para encapsular lógica repetible;
+- modelar decisiones jurídicas preliminares;
+- distinguir entre una automatización útil y una simplificación defectuosa;
+- documentar y versionar una solución simple en Python.
+
+## Del ejemplo simple al problema realista
+
+En la sesión anterior vimos variables, condicionales, bucles y funciones por separado. Ahora toca combinarlos en problemas más parecidos al trabajo jurídico real.
+
+La práctica jurídica suele exigir verificar varios requisitos a la vez:
+
+- plazos;
+- documentos obligatorios;
+- montos;
+- calidad del sujeto;
+- existencia de excepciones;
+- cumplimiento de etapas previas.
+
+Eso significa que ya no basta con una condición aislada. Necesitamos una estructura un poco más rica.
+
+## Un primer modelo: admisibilidad preliminar
+
+Supón que una solicitud solo puede pasar a revisión si cumple tres requisitos:
+
+- pago de tasa;
+- firma del solicitante;
+- presentación dentro del plazo.
+
+Podemos empezar así:
+
+```python
+def evaluar_solicitud(pago_tasa, firma, plazo_vigente):
+    if pago_tasa and firma and plazo_vigente:
+        return "Solicitud admisible"
+    return "Solicitud con observaciones"
+```
+
+Esta función es útil, pero todavía es bastante rígida. Solo devuelve dos resultados y no explica por qué observa la solicitud.
+
+## Mejorar la lógica: devolver razones
+
+En muchos contextos jurídicos no basta con saber si algo pasa o no pasa. También importa saber **por qué**.
+
+```python
+def revisar_solicitud(pago_tasa, firma, plazo_vigente):
+    observaciones = []
+
+    if not pago_tasa:
+        observaciones.append("Falta pago de tasa")
+    if not firma:
+        observaciones.append("Falta firma")
+    if not plazo_vigente:
+        observaciones.append("Presentacion fuera de plazo")
+
+    if len(observaciones) == 0:
+        return "Solicitud admisible", observaciones
+
+    return "Solicitud observada", observaciones
+
+estado, motivos = revisar_solicitud(True, False, False)
+print(estado)
+print(motivos)
+```
+
+Ahora el programa hace algo más cercano a una revisión preliminar: clasifica y además deja rastro de las observaciones.
+
+::: {.callout-tip}
+## Mejora importante
+Cuando el programa devuelve razones, deja de ser solo un filtro binario y se convierte en una herramienta de apoyo más explicable.
+:::
+
+## Encadenar condiciones sin perder claridad
+
+Uno de los riesgos al empezar a programar reglas es escribir condiciones tan largas que terminan siendo difíciles de leer. Por eso conviene dividir la lógica en pasos o funciones.
+
+Un mal hábito sería este:
+
+```python
+if tiene_firma and tiene_dni and tiene_pago and plazo_vigente and not tiene_impedimento:
+    print("Procede")
+```
+
+No es incorrecto, pero escala mal si el problema crece.
+
+Una alternativa más ordenada:
+
+```python
+def requisitos_basicos_ok(tiene_firma, tiene_dni, tiene_pago):
+    return tiene_firma and tiene_dni and tiene_pago
+
+def puede_continuar_revision(requisitos_ok, plazo_vigente, tiene_impedimento):
+    return requisitos_ok and plazo_vigente and not tiene_impedimento
+```
+
+La ventaja no es solo estética. Es metodológica: la lógica queda más legible, más testeable y más fácil de explicar.
+
+## Ejemplo jurídico 1: elegibilidad para un beneficio
+
+Supón un esquema didáctico de elegibilidad con estas reglas:
+
+- el solicitante debe ser mayor de edad;
+- no debe tener sanción vigente;
+- debe haber presentado documentos mínimos;
+- si vive en zona priorizada, obtiene prioridad.
+
+```python
+def evaluar_beneficio(edad, sancion_vigente, documentos_completos, zona_priorizada):
+    if edad < 18:
+        return "No elegible", "Menor de edad"
+
+    if sancion_vigente:
+        return "No elegible", "Sancion vigente"
+
+    if not documentos_completos:
+        return "Observado", "Documentos incompletos"
+
+    if zona_priorizada:
+        return "Elegible con prioridad", "Cumple requisitos y tiene prioridad"
+
+    return "Elegible", "Cumple requisitos"
+```
+
+Este ejemplo no pretende reemplazar una regulación real. Sirve para mostrar cómo puede ordenarse una lógica de decisión.
+
+## Ejemplo jurídico 2: cálculo de multa con reglas adicionales
+
+Una multa simple puede complejizarse rápido si añadimos supuestos:
+
+- un monto base por día de retraso;
+- un tope máximo;
+- un recargo si hubo reincidencia;
+- una reducción si hubo subsanación voluntaria temprana.
+
+```python
+def calcular_multa(dias_retraso, reincidencia, subsanacion_temprana):
+    multa = dias_retraso * 50
+
+    if reincidencia:
+        multa = multa * 1.25
+
+    if subsanacion_temprana:
+        multa = multa * 0.80
+
+    if multa > 3000:
+        multa = 3000
+
+    return multa
+```
+
+Aquí aparecen varias ideas importantes:
+
+- el orden de las reglas puede importar;
+- algunas condiciones agregan valor;
+- otras reducen o limitan el resultado;
+- conviene probar varios casos.
+
+## Probar escenarios
+
+Cuando un script representa decisiones, conviene ensayarlo con diferentes entradas. Por ejemplo:
+
+```python
+casos = [
+    {"dias": 10, "reincidencia": False, "subsanacion": False},
+    {"dias": 40, "reincidencia": True, "subsanacion": False},
+    {"dias": 20, "reincidencia": False, "subsanacion": True},
+]
+
+for caso in casos:
+    multa = calcular_multa(
+        caso["dias"],
+        caso["reincidencia"],
+        caso["subsanacion"]
+    )
+    print(caso, "=>", multa)
+```
+
+Eso ayuda a detectar errores y a entender mejor si la lógica hace realmente lo que pensamos que hace.
+
+::: {.callout-warning}
+## Ojo metodológico
+Modelar una decisión no significa agotar el juicio jurídico. Significa hacer explícita la parte repetible del análisis. Las reglas reales suelen ser más complejas, y por eso siempre conviene declarar los límites del modelo.
+:::
+
+## Cómo escribir funciones más útiles
+
+Una buena función inicial suele cumplir al menos tres criterios:
+
+1. hace una sola cosa reconocible;
+2. recibe datos claros;
+3. devuelve un resultado fácil de interpretar.
+
+No siempre conviene hacer una función enorme que resuelva todo de una vez. A veces resulta mejor separar:
+
+- validación de requisitos;
+- clasificación del caso;
+- generación de observaciones.
+
+## Práctica en editor
+
+Abre tu repositorio del curso y crea un archivo como `sesion-3/admision.py`. Implementa una función que reciba varios datos y devuelva una clasificación preliminar.
+
+Prueba al menos tres escenarios:
+
+- un caso conforme;
+- un caso observado;
+- un caso prioritario.
+
+Si quieres ampliar la práctica, agrega una lista de observaciones o una justificación breve del resultado.
+
+## Git y GitHub
+
+Registra el avance con commits claros:
+
+```bash
+git add .
+git commit -m "Resuelve sesion 3 sobre decisiones juridicas"
+git push
+```
+
+## PSET de la sesión
+
+Construye un script en Python que resuelva un problema jurídico con múltiples condiciones. Puede ser, por ejemplo:
+
+- elegibilidad para un beneficio;
+- validación preliminar de un trámite;
+- cálculo de multa con reglas adicionales;
+- clasificación básica de expedientes.
+
+El entregable debe incluir:
+
+- el archivo `.py`;
+- ejemplos de entrada y salida;
+- un `README` breve explicando la lógica aplicada;
+- al menos dos o tres casos de prueba.
+
+## Preguntas de repaso
+
+1. ¿Por qué conviene devolver razones y no solo un resultado binario?
+2. ¿Qué problema genera una condición demasiado larga?
+3. ¿Por qué es útil probar varios escenarios?
+4. ¿Qué parte del trabajo jurídico puede modelarse bien y cuál requiere cautela adicional?
+
+## Ideas clave
+
+- una buena parte del trabajo legal puede modelarse como reglas y condiciones;
+- las funciones ayudan a reutilizar lógica sin duplicar código;
+- probar escenarios mejora la calidad de la automatización;
+- la automatización básica empieza por decisiones claras, no por sistemas complejos.

@@ -1,0 +1,30 @@
+# Tutoriales
+
+Los tutoriales son una parte complementaria del manual. Su función no es reemplazar la sesión de clase, sino ofrecer explicaciones más detalladas y secuenciales sobre herramientas, instalaciones y procedimientos que conviene revisar fuera del aula.
+
+::: {.callout-note}
+## Cómo usar esta sección
+Si en una sesión te atoras con una instalación, un comando o un flujo de trabajo con Git/GitHub, vuelve a esta parte. Los tutoriales están pensados como material de consulta recurrente.
+:::
+
+## ¿Qué encontrarás aquí?
+
+Esta parte reúne tutoriales sobre:
+
+- instalación de Python;
+- instalación y configuración básica de Visual Studio Code;
+- Git y GitHub como infraestructura mínima de trabajo;
+- licencias y reutilización responsable;
+- publicación con GitHub Pages.
+
+## Criterio de lectura
+
+Los tutoriales asumen menos conocimientos previos que los capítulos de sesión y avanzan paso a paso. Están diseñados para reducir fricción técnica y permitir que las sesiones principales se concentren en el análisis y la práctica jurídica.
+
+| Tutorial | Propósito | Cuándo conviene revisarlo |
+|---|---|---|
+| Instalar Python | dejar listo el entorno de programación | antes o durante el Módulo I |
+| Visual Studio Code | preparar el editor de trabajo | antes de la primera práctica |
+| Git y GitHub | clonar, versionar y entregar trabajo | durante todo el curso |
+| Licencias y reutilización | entender qué puede reutilizarse y cómo | cuando se trabaja con repositorios ajenos |
+| GitHub Pages | publicar un sitio estático | antes de la EC2 |

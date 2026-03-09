@@ -1,2 +1,54 @@
 # IV. Inteligencia Artificial aplicada al Derecho
 
+## ¿Por qué importa este módulo?
+
+La inteligencia artificial ya interviene en búsqueda, clasificación, redacción, análisis y toma de decisiones preliminares en muchos entornos jurídicos. Por eso, un jurista necesita evaluar sus capacidades, límites, riesgos y condiciones de uso responsable.
+
+::: {.callout-important}
+## Idea central del módulo
+La IA debe evaluarse como herramienta, no como autoridad. Puede asistir, acelerar o ampliar ciertas tareas, pero nunca elimina la necesidad de juicio jurídico, verificación y responsabilidad.
+:::
+
+## Qué aprenderás
+
+En este módulo estudiarás:
+
+- fundamentos introductorios de IA y modelos generativos;
+- límites, sesgos, alucinaciones y validación humana;
+- criterios de evaluación y gobernanza;
+- diseño de proyectos legaltech con IA.
+
+## Cómo se trabaja en este módulo
+
+El trabajo del módulo combina lectura crítica, pruebas controladas, registro de prompts o scripts introductorios, documentación de hallazgos y PSETs orientados a evaluar herramientas o flujos de IA.
+
+::: {.callout-tip}
+## Regla práctica del módulo
+No basta con obtener una respuesta convincente. Hay que poder explicar cómo se probó, qué se verificó y por qué sería razonable confiar o no confiar en ese resultado.
+:::
+
+## Tabla de contenidos del módulo
+
+| Sesión | Tema central | Herramientas | Práctica principal | PSET |
+|---|---|---|---|---|
+| 9 | Fundamentos de IA | prompts, bitácoras, editor | comparar respuestas y detectar límites | análisis crítico de salidas |
+| 10 | Evaluar y gobernar IA | matrices, prompts, Python opcional | construir bitácora de evaluación | evaluación básica de una herramienta |
+| 11 | Proyectos legaltech | repositorio, documentación, presentación | bosquejar propuesta final | avance verificable del proyecto |
+
+## Qué debes poder hacer al terminar
+
+Al finalizar este módulo, deberías poder:
+
+1. distinguir entre automatización, IA, machine learning y LLMs;
+2. detectar límites, alucinaciones y riesgos relevantes;
+3. aplicar criterios básicos de evaluación y control;
+4. proponer una solución legaltech razonable y bien sustentada.
+
+## Cómo se conecta con el resto del curso
+
+Este módulo cierra el recorrido del manual. Toma la lógica, los datos, la infraestructura web y la disciplina de trabajo en repositorios para pensar soluciones más sofisticadas sin perder rigor.
+
+::: {.callout-warning}
+## Advertencia útil
+La IA puede acelerar errores, sesgos o malas prácticas con la misma facilidad con la que acelera tareas útiles. Por eso, aquí importa tanto aprender a frenar como aprender a usar.
+:::

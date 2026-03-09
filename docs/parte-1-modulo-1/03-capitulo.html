@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Sesión 3 – Legal Tech, Manual del Curso</title>
+<title>3. Python para decisiones jurídicas y automatización básica – Legal Tech, Manual del Curso</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -22,6 +22,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -86,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-1-modulo-1/00-presentacion.html">Módulo 1. Pensamiento computacional para juristas</a></li><li class="breadcrumb-item"><a href="../parte-1-modulo-1/03-capitulo.html"><span class="chapter-title">Sesión 3</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-1-modulo-1/00-presentacion.html">Módulo 1. Pensamiento computacional para juristas</a></li><li class="breadcrumb-item"><a href="../parte-1-modulo-1/03-capitulo.html"><span class="chapter-title">3. Python para decisiones jurídicas y automatización básica</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -147,12 +182,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-1-modulo-1/03-capitulo.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Sesión 3</span></a>
+  <a href="../parte-1-modulo-1/03-capitulo.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">3. Python para decisiones jurídicas y automatización básica</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-1-modulo-1/04-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sesión 4</span></a>
+  <a href="../parte-1-modulo-1/04-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">4. Python para datos, documentos y flujos jurídicos</span></a>
   </div>
 </li>
       </ul>
@@ -168,12 +203,12 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-2-modulo-2/05-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sesión 5</span></a>
+  <a href="../parte-2-modulo-2/05-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">5. Entender el negocio</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-2-modulo-2/06-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sesión 6</span></a>
+  <a href="../parte-2-modulo-2/06-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">6. Explicar y controlar los resultados</span></a>
   </div>
 </li>
       </ul>
@@ -189,12 +224,12 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-3-modulo-3/07-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sesión 7</span></a>
+  <a href="../parte-3-modulo-3/07-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">7. El internet y la nube</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-3-modulo-3/08-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sesión 8</span></a>
+  <a href="../parte-3-modulo-3/08-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">8. Ciberseguridad</span></a>
   </div>
 </li>
       </ul>
@@ -210,30 +245,66 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-4-modulo-4/09-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sesión 9</span></a>
+  <a href="../parte-4-modulo-4/09-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">9. Fundamentos de inteligencia artificial</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-4-modulo-4/10-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sesión 10</span></a>
+  <a href="../parte-4-modulo-4/10-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">10. Evaluar, gobernar e integrar IA en contextos jurídicos</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-4-modulo-4/11-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sesión 11</span></a>
+  <a href="../parte-4-modulo-4/11-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">11. Ejemplos de proyectos Legal Tech</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
- <span class="menu-text">Evaluaciones</span></a>
+            <a href="../tutoriales/00-presentacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tutoriales</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tutoriales/instalar-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Instalar Python</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tutoriales/visual-studio-code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Visual Studio Code</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tutoriales/git-y-github.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Git y GitHub</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tutoriales/licencias-y-reutilizacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Licencias y reutilización responsable</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tutoriales/github-pages.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: GitHub Pages</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Evaluaciones</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../evaluaciones/evaluacion-1.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">🔹 Evaluación Continua 1</span></a>
@@ -271,15 +342,35 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#por-qué-importa-este-tema" id="toc-por-qué-importa-este-tema" class="nav-link active" data-scroll-target="#por-qué-importa-este-tema">¿Por qué importa este tema?</a></li>
+  <li><a href="#qué-aprenderás-en-esta-sesión" id="toc-qué-aprenderás-en-esta-sesión" class="nav-link" data-scroll-target="#qué-aprenderás-en-esta-sesión">Qué aprenderás en esta sesión</a></li>
+  <li><a href="#del-ejemplo-simple-al-problema-realista" id="toc-del-ejemplo-simple-al-problema-realista" class="nav-link" data-scroll-target="#del-ejemplo-simple-al-problema-realista">Del ejemplo simple al problema realista</a></li>
+  <li><a href="#un-primer-modelo-admisibilidad-preliminar" id="toc-un-primer-modelo-admisibilidad-preliminar" class="nav-link" data-scroll-target="#un-primer-modelo-admisibilidad-preliminar">Un primer modelo: admisibilidad preliminar</a></li>
+  <li><a href="#mejorar-la-lógica-devolver-razones" id="toc-mejorar-la-lógica-devolver-razones" class="nav-link" data-scroll-target="#mejorar-la-lógica-devolver-razones">Mejorar la lógica: devolver razones</a></li>
+  <li><a href="#encadenar-condiciones-sin-perder-claridad" id="toc-encadenar-condiciones-sin-perder-claridad" class="nav-link" data-scroll-target="#encadenar-condiciones-sin-perder-claridad">Encadenar condiciones sin perder claridad</a></li>
+  <li><a href="#ejemplo-jurídico-1-elegibilidad-para-un-beneficio" id="toc-ejemplo-jurídico-1-elegibilidad-para-un-beneficio" class="nav-link" data-scroll-target="#ejemplo-jurídico-1-elegibilidad-para-un-beneficio">Ejemplo jurídico 1: elegibilidad para un beneficio</a></li>
+  <li><a href="#ejemplo-jurídico-2-cálculo-de-multa-con-reglas-adicionales" id="toc-ejemplo-jurídico-2-cálculo-de-multa-con-reglas-adicionales" class="nav-link" data-scroll-target="#ejemplo-jurídico-2-cálculo-de-multa-con-reglas-adicionales">Ejemplo jurídico 2: cálculo de multa con reglas adicionales</a></li>
+  <li><a href="#probar-escenarios" id="toc-probar-escenarios" class="nav-link" data-scroll-target="#probar-escenarios">Probar escenarios</a></li>
+  <li><a href="#cómo-escribir-funciones-más-útiles" id="toc-cómo-escribir-funciones-más-útiles" class="nav-link" data-scroll-target="#cómo-escribir-funciones-más-útiles">Cómo escribir funciones más útiles</a></li>
+  <li><a href="#práctica-en-editor" id="toc-práctica-en-editor" class="nav-link" data-scroll-target="#práctica-en-editor">Práctica en editor</a></li>
+  <li><a href="#git-y-github" id="toc-git-y-github" class="nav-link" data-scroll-target="#git-y-github">Git y GitHub</a></li>
+  <li><a href="#pset-de-la-sesión" id="toc-pset-de-la-sesión" class="nav-link" data-scroll-target="#pset-de-la-sesión">PSET de la sesión</a></li>
+  <li><a href="#preguntas-de-repaso" id="toc-preguntas-de-repaso" class="nav-link" data-scroll-target="#preguntas-de-repaso">Preguntas de repaso</a></li>
+  <li><a href="#ideas-clave" id="toc-ideas-clave" class="nav-link" data-scroll-target="#ideas-clave">Ideas clave</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-1-modulo-1/00-presentacion.html">Módulo 1. Pensamiento computacional para juristas</a></li><li class="breadcrumb-item"><a href="../parte-1-modulo-1/03-capitulo.html"><span class="chapter-title">Sesión 3</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-1-modulo-1/00-presentacion.html">Módulo 1. Pensamiento computacional para juristas</a></li><li class="breadcrumb-item"><a href="../parte-1-modulo-1/03-capitulo.html"><span class="chapter-title">3. Python para decisiones jurídicas y automatización básica</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Sesión 3</span></h1>
+<h1 class="title"><span class="chapter-title">3. Python para decisiones jurídicas y automatización básica</span></h1>
 </div>
 
 
@@ -296,8 +387,270 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="por-qué-importa-este-tema" class="level2">
+<h2 class="anchored" data-anchor-id="por-qué-importa-este-tema">¿Por qué importa este tema?</h2>
+<p>Muchas tareas jurídicas no son solo lectura o argumentación. También implican aplicar criterios, validar requisitos, verificar supuestos y producir decisiones preliminares. Ese tipo de trabajo puede expresarse como lógica condicional más compleja.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Idea central
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Cuando una regla jurídica puede formularse como condiciones claras, también puede convertirse en una función o en un flujo verificable.</p>
+</div>
+</div>
+</section>
+<section id="qué-aprenderás-en-esta-sesión" class="level2">
+<h2 class="anchored" data-anchor-id="qué-aprenderás-en-esta-sesión">Qué aprenderás en esta sesión</h2>
+<p>Al finalizar esta sesión, deberías poder:</p>
+<ul>
+<li>combinar varias condiciones en un mismo script;</li>
+<li>usar funciones para encapsular lógica repetible;</li>
+<li>modelar decisiones jurídicas preliminares;</li>
+<li>distinguir entre una automatización útil y una simplificación defectuosa;</li>
+<li>documentar y versionar una solución simple en Python.</li>
+</ul>
+</section>
+<section id="del-ejemplo-simple-al-problema-realista" class="level2">
+<h2 class="anchored" data-anchor-id="del-ejemplo-simple-al-problema-realista">Del ejemplo simple al problema realista</h2>
+<p>En la sesión anterior vimos variables, condicionales, bucles y funciones por separado. Ahora toca combinarlos en problemas más parecidos al trabajo jurídico real.</p>
+<p>La práctica jurídica suele exigir verificar varios requisitos a la vez:</p>
+<ul>
+<li>plazos;</li>
+<li>documentos obligatorios;</li>
+<li>montos;</li>
+<li>calidad del sujeto;</li>
+<li>existencia de excepciones;</li>
+<li>cumplimiento de etapas previas.</li>
+</ul>
+<p>Eso significa que ya no basta con una condición aislada. Necesitamos una estructura un poco más rica.</p>
+</section>
+<section id="un-primer-modelo-admisibilidad-preliminar" class="level2">
+<h2 class="anchored" data-anchor-id="un-primer-modelo-admisibilidad-preliminar">Un primer modelo: admisibilidad preliminar</h2>
+<p>Supón que una solicitud solo puede pasar a revisión si cumple tres requisitos:</p>
+<ul>
+<li>pago de tasa;</li>
+<li>firma del solicitante;</li>
+<li>presentación dentro del plazo.</li>
+</ul>
+<p>Podemos empezar así:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> evaluar_solicitud(pago_tasa, firma, plazo_vigente):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> pago_tasa <span class="kw">and</span> firma <span class="kw">and</span> plazo_vigente:</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"Solicitud admisible"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">"Solicitud con observaciones"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Esta función es útil, pero todavía es bastante rígida. Solo devuelve dos resultados y no explica por qué observa la solicitud.</p>
+</section>
+<section id="mejorar-la-lógica-devolver-razones" class="level2">
+<h2 class="anchored" data-anchor-id="mejorar-la-lógica-devolver-razones">Mejorar la lógica: devolver razones</h2>
+<p>En muchos contextos jurídicos no basta con saber si algo pasa o no pasa. También importa saber <strong>por qué</strong>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> revisar_solicitud(pago_tasa, firma, plazo_vigente):</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    observaciones <span class="op">=</span> []</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> pago_tasa:</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        observaciones.append(<span class="st">"Falta pago de tasa"</span>)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> firma:</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        observaciones.append(<span class="st">"Falta firma"</span>)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> plazo_vigente:</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>        observaciones.append(<span class="st">"Presentacion fuera de plazo"</span>)</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">len</span>(observaciones) <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"Solicitud admisible"</span>, observaciones</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">"Solicitud observada"</span>, observaciones</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>estado, motivos <span class="op">=</span> revisar_solicitud(<span class="va">True</span>, <span class="va">False</span>, <span class="va">False</span>)</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(estado)</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(motivos)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Ahora el programa hace algo más cercano a una revisión preliminar: clasifica y además deja rastro de las observaciones.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Mejora importante
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Cuando el programa devuelve razones, deja de ser solo un filtro binario y se convierte en una herramienta de apoyo más explicable.</p>
+</div>
+</div>
+</section>
+<section id="encadenar-condiciones-sin-perder-claridad" class="level2">
+<h2 class="anchored" data-anchor-id="encadenar-condiciones-sin-perder-claridad">Encadenar condiciones sin perder claridad</h2>
+<p>Uno de los riesgos al empezar a programar reglas es escribir condiciones tan largas que terminan siendo difíciles de leer. Por eso conviene dividir la lógica en pasos o funciones.</p>
+<p>Un mal hábito sería este:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> tiene_firma <span class="kw">and</span> tiene_dni <span class="kw">and</span> tiene_pago <span class="kw">and</span> plazo_vigente <span class="kw">and</span> <span class="kw">not</span> tiene_impedimento:</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Procede"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>No es incorrecto, pero escala mal si el problema crece.</p>
+<p>Una alternativa más ordenada:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> requisitos_basicos_ok(tiene_firma, tiene_dni, tiene_pago):</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> tiene_firma <span class="kw">and</span> tiene_dni <span class="kw">and</span> tiene_pago</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> puede_continuar_revision(requisitos_ok, plazo_vigente, tiene_impedimento):</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> requisitos_ok <span class="kw">and</span> plazo_vigente <span class="kw">and</span> <span class="kw">not</span> tiene_impedimento</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>La ventaja no es solo estética. Es metodológica: la lógica queda más legible, más testeable y más fácil de explicar.</p>
+</section>
+<section id="ejemplo-jurídico-1-elegibilidad-para-un-beneficio" class="level2">
+<h2 class="anchored" data-anchor-id="ejemplo-jurídico-1-elegibilidad-para-un-beneficio">Ejemplo jurídico 1: elegibilidad para un beneficio</h2>
+<p>Supón un esquema didáctico de elegibilidad con estas reglas:</p>
+<ul>
+<li>el solicitante debe ser mayor de edad;</li>
+<li>no debe tener sanción vigente;</li>
+<li>debe haber presentado documentos mínimos;</li>
+<li>si vive en zona priorizada, obtiene prioridad.</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> evaluar_beneficio(edad, sancion_vigente, documentos_completos, zona_priorizada):</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> edad <span class="op">&lt;</span> <span class="dv">18</span>:</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"No elegible"</span>, <span class="st">"Menor de edad"</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> sancion_vigente:</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"No elegible"</span>, <span class="st">"Sancion vigente"</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> documentos_completos:</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"Observado"</span>, <span class="st">"Documentos incompletos"</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> zona_priorizada:</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"Elegible con prioridad"</span>, <span class="st">"Cumple requisitos y tiene prioridad"</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">"Elegible"</span>, <span class="st">"Cumple requisitos"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Este ejemplo no pretende reemplazar una regulación real. Sirve para mostrar cómo puede ordenarse una lógica de decisión.</p>
+</section>
+<section id="ejemplo-jurídico-2-cálculo-de-multa-con-reglas-adicionales" class="level2">
+<h2 class="anchored" data-anchor-id="ejemplo-jurídico-2-cálculo-de-multa-con-reglas-adicionales">Ejemplo jurídico 2: cálculo de multa con reglas adicionales</h2>
+<p>Una multa simple puede complejizarse rápido si añadimos supuestos:</p>
+<ul>
+<li>un monto base por día de retraso;</li>
+<li>un tope máximo;</li>
+<li>un recargo si hubo reincidencia;</li>
+<li>una reducción si hubo subsanación voluntaria temprana.</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calcular_multa(dias_retraso, reincidencia, subsanacion_temprana):</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    multa <span class="op">=</span> dias_retraso <span class="op">*</span> <span class="dv">50</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> reincidencia:</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>        multa <span class="op">=</span> multa <span class="op">*</span> <span class="fl">1.25</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> subsanacion_temprana:</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>        multa <span class="op">=</span> multa <span class="op">*</span> <span class="fl">0.80</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> multa <span class="op">&gt;</span> <span class="dv">3000</span>:</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>        multa <span class="op">=</span> <span class="dv">3000</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> multa</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Aquí aparecen varias ideas importantes:</p>
+<ul>
+<li>el orden de las reglas puede importar;</li>
+<li>algunas condiciones agregan valor;</li>
+<li>otras reducen o limitan el resultado;</li>
+<li>conviene probar varios casos.</li>
+</ul>
+</section>
+<section id="probar-escenarios" class="level2">
+<h2 class="anchored" data-anchor-id="probar-escenarios">Probar escenarios</h2>
+<p>Cuando un script representa decisiones, conviene ensayarlo con diferentes entradas. Por ejemplo:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>casos <span class="op">=</span> [</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"dias"</span>: <span class="dv">10</span>, <span class="st">"reincidencia"</span>: <span class="va">False</span>, <span class="st">"subsanacion"</span>: <span class="va">False</span>},</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"dias"</span>: <span class="dv">40</span>, <span class="st">"reincidencia"</span>: <span class="va">True</span>, <span class="st">"subsanacion"</span>: <span class="va">False</span>},</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"dias"</span>: <span class="dv">20</span>, <span class="st">"reincidencia"</span>: <span class="va">False</span>, <span class="st">"subsanacion"</span>: <span class="va">True</span>},</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> caso <span class="kw">in</span> casos:</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    multa <span class="op">=</span> calcular_multa(</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>        caso[<span class="st">"dias"</span>],</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>        caso[<span class="st">"reincidencia"</span>],</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>        caso[<span class="st">"subsanacion"</span>]</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(caso, <span class="st">"=&gt;"</span>, multa)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Eso ayuda a detectar errores y a entender mejor si la lógica hace realmente lo que pensamos que hace.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Ojo metodológico
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Modelar una decisión no significa agotar el juicio jurídico. Significa hacer explícita la parte repetible del análisis. Las reglas reales suelen ser más complejas, y por eso siempre conviene declarar los límites del modelo.</p>
+</div>
+</div>
+</section>
+<section id="cómo-escribir-funciones-más-útiles" class="level2">
+<h2 class="anchored" data-anchor-id="cómo-escribir-funciones-más-útiles">Cómo escribir funciones más útiles</h2>
+<p>Una buena función inicial suele cumplir al menos tres criterios:</p>
+<ol type="1">
+<li>hace una sola cosa reconocible;</li>
+<li>recibe datos claros;</li>
+<li>devuelve un resultado fácil de interpretar.</li>
+</ol>
+<p>No siempre conviene hacer una función enorme que resuelva todo de una vez. A veces resulta mejor separar:</p>
+<ul>
+<li>validación de requisitos;</li>
+<li>clasificación del caso;</li>
+<li>generación de observaciones.</li>
+</ul>
+</section>
+<section id="práctica-en-editor" class="level2">
+<h2 class="anchored" data-anchor-id="práctica-en-editor">Práctica en editor</h2>
+<p>Abre tu repositorio del curso y crea un archivo como <code>sesion-3/admision.py</code>. Implementa una función que reciba varios datos y devuelva una clasificación preliminar.</p>
+<p>Prueba al menos tres escenarios:</p>
+<ul>
+<li>un caso conforme;</li>
+<li>un caso observado;</li>
+<li>un caso prioritario.</li>
+</ul>
+<p>Si quieres ampliar la práctica, agrega una lista de observaciones o una justificación breve del resultado.</p>
+</section>
+<section id="git-y-github" class="level2">
+<h2 class="anchored" data-anchor-id="git-y-github">Git y GitHub</h2>
+<p>Registra el avance con commits claros:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Resuelve sesion 3 sobre decisiones juridicas"</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="pset-de-la-sesión" class="level2">
+<h2 class="anchored" data-anchor-id="pset-de-la-sesión">PSET de la sesión</h2>
+<p>Construye un script en Python que resuelva un problema jurídico con múltiples condiciones. Puede ser, por ejemplo:</p>
+<ul>
+<li>elegibilidad para un beneficio;</li>
+<li>validación preliminar de un trámite;</li>
+<li>cálculo de multa con reglas adicionales;</li>
+<li>clasificación básica de expedientes.</li>
+</ul>
+<p>El entregable debe incluir:</p>
+<ul>
+<li>el archivo <code>.py</code>;</li>
+<li>ejemplos de entrada y salida;</li>
+<li>un <code>README</code> breve explicando la lógica aplicada;</li>
+<li>al menos dos o tres casos de prueba.</li>
+</ul>
+</section>
+<section id="preguntas-de-repaso" class="level2">
+<h2 class="anchored" data-anchor-id="preguntas-de-repaso">Preguntas de repaso</h2>
+<ol type="1">
+<li>¿Por qué conviene devolver razones y no solo un resultado binario?</li>
+<li>¿Qué problema genera una condición demasiado larga?</li>
+<li>¿Por qué es útil probar varios escenarios?</li>
+<li>¿Qué parte del trabajo jurídico puede modelarse bien y cuál requiere cautela adicional?</li>
+</ol>
+</section>
+<section id="ideas-clave" class="level2">
+<h2 class="anchored" data-anchor-id="ideas-clave">Ideas clave</h2>
+<ul>
+<li>una buena parte del trabajo legal puede modelarse como reglas y condiciones;</li>
+<li>las funciones ayudan a reutilizar lógica sin duplicar código;</li>
+<li>probar escenarios mejora la calidad de la automatización;</li>
+<li>la automatización básica empieza por decisiones claras, no por sistemas complejos.</li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -707,8 +1060,8 @@ ul.task-list li input[type="checkbox"] {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../parte-1-modulo-1/04-capitulo.html" class="pagination-link" aria-label="Sesión 4">
-        <span class="nav-page-text"><span class="chapter-title">Sesión 4</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../parte-1-modulo-1/04-capitulo.html" class="pagination-link" aria-label="4. Python para datos, documentos y flujos jurídicos">
+        <span class="nav-page-text"><span class="chapter-title">4. Python para datos, documentos y flujos jurídicos</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

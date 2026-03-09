@@ -1,0 +1,56 @@
+# Tutorial: Instalar Python
+
+## ¿Para qué sirve este tutorial?
+
+Este tutorial te ayuda a dejar listo el entorno mínimo para trabajar con scripts en Python durante el curso.
+
+::: {.callout-important}
+## Objetivo
+Al terminar, deberías poder abrir una terminal, verificar que Python está instalado y ejecutar un archivo simple.
+:::
+
+## Paso 1. Descarga Python
+
+Descarga Python desde su sitio oficial y usa una versión estable reciente. Durante la instalación, verifica que quede disponible desde la terminal.
+
+## Paso 2. Verifica la instalación
+
+Abre la terminal y ejecuta:
+
+```bash
+python --version
+```
+
+Si tu sistema usa `python3`, prueba:
+
+```bash
+python3 --version
+```
+
+## Paso 3. Crea una carpeta de prueba
+
+Abre VS Code o tu editor preferido y crea un archivo llamado `hola.py` con este contenido:
+
+```python
+print("Hola, Legal Tech")
+```
+
+Ejecuta luego:
+
+```bash
+python hola.py
+```
+
+## Problemas frecuentes
+
+::: {.callout-warning}
+## Si el comando no funciona
+- revisa si Python quedó agregado al PATH;
+- prueba con `python3`;
+- cierra y vuelve a abrir la terminal;
+- reinstala si fuera necesario.
+:::
+
+## Recomendación final
+
+No esperes a la sesión para descubrir que tu entorno no funciona. Verifica Python antes de cada práctica importante.

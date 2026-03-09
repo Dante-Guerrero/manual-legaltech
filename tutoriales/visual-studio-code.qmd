@@ -1,0 +1,47 @@
+# Tutorial: Visual Studio Code
+
+## ¿Para qué sirve este tutorial?
+
+Este tutorial te ayuda a instalar y usar lo mínimo de **Visual Studio Code** para trabajar durante el curso.
+
+## Paso 1. Instala el editor
+
+Descarga Visual Studio Code desde su sitio oficial e instálalo normalmente.
+
+## Paso 2. Abre una carpeta de trabajo
+
+Usa `File > Open Folder` para abrir la carpeta del repositorio del curso o tu carpeta de práctica.
+
+::: {.callout-note}
+## Buena práctica
+Trabaja siempre con carpetas completas y no con archivos sueltos. Eso hace más fácil navegar, editar y versionar.
+:::
+
+## Paso 3. Usa lo esencial del editor
+
+Conviene familiarizarte con estas áreas:
+
+- explorador de archivos;
+- editor principal;
+- terminal integrada;
+- panel de control de cambios.
+
+## Paso 4. Abre la terminal integrada
+
+Desde la terminal integrada podrás ejecutar Python, Git y otros comandos del curso sin salir del editor.
+
+## Paso 5. Guarda, ejecuta y revisa cambios
+
+Una rutina útil es esta:
+
+1. abrir el archivo;
+2. editar una parte pequeña;
+3. guardar;
+4. ejecutar;
+5. revisar el resultado;
+6. registrar cambios con Git.
+
+::: {.callout-tip}
+## Lo importante
+No necesitas dominar todo VS Code. Necesitas usar bien un conjunto pequeño de funciones de forma consistente.
+:::

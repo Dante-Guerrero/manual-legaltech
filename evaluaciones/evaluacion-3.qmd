@@ -51,5 +51,9 @@ Durante la exposición, cada grupo deberá presentar de manera ordenada:
 5. y los principales desafíos de implementación.
 
 ::: {.callout-warning title="Entrega de evidencia"}
-La **evidencia del proyecto** deberá ser cargada en la **Plataforma Aula Virtual**, de acuerdo con las indicaciones brindadas en clase.
+La **evidencia del proyecto** deberá incluir, cuando corresponda:
+
+- enlace al repositorio del proyecto;
+- materiales de apoyo o prototipo;
+- y la entrega solicitada en la **Plataforma Aula Virtual**, de acuerdo con las indicaciones brindadas en clase.
 :::

@@ -635,12 +635,18 @@ Convierte en pseudocódigo la siguiente regla:
 > Si una solicitud contiene firma, documento de identidad y pago de tasa, se admite.  
 > Si falta alguno de esos elementos, se formula observación.
 
-## Trabajo autónomo
+## Práctica en editor
 
-Como parte de la sesión inicial del curso:
+Abre tu editor y crea un archivo de notas o pseudocódigo donde traduzcas una regla jurídica sencilla a pasos verificables. Puede ser, por ejemplo, la revisión preliminar de un escrito, el cálculo de un plazo o la validación de requisitos de una solicitud.
 
-- crea tu cuenta en Zotero;
-- ingresa al grupo del curso;
-- organiza una carpeta o colección básica para tus materiales de la asignatura.
+## Git y GitHub
 
-Ese componente también importa. Legal Tech no trata solo de herramientas espectaculares, sino de método, organización y capacidad para trabajar con información de manera rigurosa.
+Sube tu ejercicio al repositorio del curso o a tu repositorio de práctica y registra al menos un commit que deje claro qué cambiaste.
+
+## PSET de la sesión
+
+El PSET de esta sesión consiste en traducir reglas o decisiones jurídicas a pseudocódigo o instrucciones estructuradas. El entregable debe mostrar:
+
+- el problema planteado;
+- la secuencia de pasos o condiciones;
+- una breve explicación de por qué esa lógica representa adecuadamente el caso.

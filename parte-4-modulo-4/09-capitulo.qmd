@@ -1,1 +1,186 @@
-# Sesión 9
+# 9. Fundamentos de inteligencia artificial
+
+## ¿Por qué importa este tema?
+
+La IA ya aparece en tareas de búsqueda, clasificación, resumen y redacción asistida. Para usarla con criterio, primero hay que entender qué es, qué no es y dónde empiezan sus límites.
+
+::: {.callout-important}
+## Idea central
+No toda automatización es IA y no toda salida convincente es confiable.
+:::
+
+## Qué aprenderás en esta sesión
+
+Al finalizar esta sesión, deberías poder:
+
+- distinguir entre automatización, IA, machine learning y modelos generativos;
+- reconocer qué hacen los LLMs y qué no hacen;
+- identificar alucinaciones, sesgos y necesidad de validación;
+- analizar usos jurídicos plausibles;
+- registrar pruebas de forma ordenada.
+
+## Empezar por separar conceptos
+
+Uno de los problemas más comunes cuando se habla de IA es que todo termina mezclado en una sola bolsa. Para trabajar con rigor conviene separar al menos estas ideas:
+
+- **automatización**: ejecución de reglas explícitas;
+- **machine learning**: modelos que aprenden patrones a partir de datos;
+- **IA generativa**: sistemas capaces de producir texto, imagen, audio u otros contenidos;
+- **LLM**: modelos de lenguaje entrenados para generar texto plausible a gran escala.
+
+Esta distinción importa porque no todo problema requiere IA, y no toda herramienta que parece “inteligente” funciona del mismo modo.
+
+## Automatización no es lo mismo que IA
+
+Si un sistema aplica reglas claras como:
+
+- si falta firma, observar;
+- si el plazo venció, marcar alerta;
+- si el monto supera un umbral, escalar revisión;
+
+entonces probablemente estamos ante automatización basada en reglas y no necesariamente ante IA.
+
+Eso no le quita valor. Muchas soluciones legaltech útiles son, en el fondo, buenas automatizaciones.
+
+## ¿Qué hace un modelo de lenguaje?
+
+Un modelo de lenguaje como un LLM trabaja prediciendo texto plausible a partir de patrones aprendidos en grandes volúmenes de datos. Eso le permite:
+
+- resumir;
+- completar;
+- reformular;
+- clasificar;
+- contestar con lenguaje natural;
+- generar borradores.
+
+Pero esa capacidad no equivale a comprensión jurídica en sentido humano. El modelo no “entiende” normas, contexto o responsabilidad como lo hace un profesional. Produce salidas plausibles según patrones estadísticos.
+
+::: {.callout-note}
+## Punto clave
+Que una respuesta suene convincente no significa que sea correcta, completa o jurídicamente fiable.
+:::
+
+## Modelos generativos y usos jurídicos
+
+En el ámbito jurídico, los modelos generativos pueden ayudar en tareas como:
+
+- resumir documentos largos;
+- proponer estructuras iniciales de escritos;
+- clasificar consultas frecuentes;
+- extraer temas o patrones preliminares;
+- apoyar revisión inicial de información.
+
+Eso puede ahorrar tiempo. Pero también puede generar riesgos:
+
+- inventar referencias;
+- omitir hechos relevantes;
+- simplificar demasiado;
+- reforzar sesgos;
+- dar apariencia de certeza donde debería haber cautela.
+
+## Alucinaciones y límites
+
+Uno de los conceptos más importantes al trabajar con IA generativa es el de **alucinación**. En términos simples, se refiere a salidas que parecen coherentes pero contienen información falsa, inventada o no verificable.
+
+En derecho, ese riesgo es especialmente delicado porque:
+
+- una fuente inventada puede comprometer toda una argumentación;
+- una omisión relevante puede distorsionar el análisis;
+- una respuesta demasiado segura puede inducir confianza indebida.
+
+Por eso, la validación humana no es un detalle opcional. Es parte del uso responsable.
+
+## Sesgos y contexto
+
+También conviene considerar que los modelos pueden reproducir sesgos presentes en datos, lenguaje o patrones de entrenamiento. En contextos jurídicos, eso puede afectar:
+
+- clasificación de casos;
+- formulación de recomendaciones;
+- tono o enfoque de respuestas;
+- invisibilización de ciertos supuestos o grupos.
+
+No siempre veremos el sesgo de manera evidente. Justamente por eso conviene trabajar con pruebas comparadas y con criterios de revisión.
+
+## ¿Qué es RAG, dicho sin humo?
+
+RAG suele referirse a sistemas que combinan recuperación de información con generación de respuesta. En términos sencillos:
+
+1. primero se busca información relevante en una base o conjunto de documentos;
+2. luego se usa esa información como apoyo para generar una respuesta.
+
+La ventaja esperada es que la respuesta se apoye mejor en fuentes concretas y reduzca algunas invenciones. Aun así, no desaparece la necesidad de verificación.
+
+## Ejemplo jurídico
+
+Un LLM puede ayudar a resumir una resolución larga, proponer una estructura de informe o clasificar consultas frecuentes. Pero también puede inventar una fuente o responder con excesiva seguridad.
+
+Pensemos en una tarea concreta: pedirle a una herramienta que resuma una decisión administrativa y destaque:
+
+- hechos relevantes;
+- norma aplicada;
+- decisión final;
+- consecuencias.
+
+Eso puede ser útil como borrador inicial. Pero el producto sigue necesitando contraste con el documento real.
+
+::: {.callout-warning}
+## Advertencia importante
+En derecho, una salida incorrecta no es solo un error técnico. Puede convertirse en una mala decisión profesional.
+:::
+
+## Cómo probar una herramienta sin autoengañarse
+
+Una buena práctica inicial consiste en no usar la herramienta de forma improvisada, sino hacer pruebas controladas.
+
+Por ejemplo:
+
+- usar el mismo texto con distintos prompts;
+- comparar resultados;
+- revisar si cita correctamente;
+- anotar qué acierta y qué falla;
+- observar si cambia demasiado de tono o de criterio.
+
+Ese registro es importante porque transforma una impresión subjetiva en una observación más seria.
+
+## Práctica en editor
+
+Registra en un archivo de texto o Markdown varias pruebas controladas con prompts sobre una tarea jurídica simple. Compara resultados y anota:
+
+- qué respondió;
+- qué pareció útil;
+- qué requería verificación;
+- qué errores o vacíos aparecieron.
+
+## Git y GitHub
+
+Versiona la bitácora de pruebas y deja trazabilidad de las observaciones. Aunque la práctica sea exploratoria, conviene documentar el proceso y no solo el resultado final.
+
+## PSET de la sesión
+
+Compara respuestas de una herramienta de IA en una tarea jurídica concreta y redacta una evaluación breve de:
+
+- utilidad;
+- errores o vacíos;
+- riesgos de uso directo;
+- criterios de validación humana.
+
+El entregable debe incluir:
+
+- prompts usados;
+- respuestas obtenidas;
+- observaciones propias;
+- una conclusión razonada.
+
+## Preguntas de repaso
+
+1. ¿Qué diferencia hay entre automatización e IA?
+2. ¿Qué problema generan las alucinaciones en contexto jurídico?
+3. ¿Por qué una respuesta plausible no equivale a una respuesta confiable?
+4. ¿Qué valor tiene una bitácora de pruebas?
+
+## Ideas clave
+
+- distinguir conceptos evita exageraciones y malos usos;
+- la IA puede asistir, pero no reemplaza el juicio jurídico;
+- una salida plausible no equivale a una salida correcta;
+- documentar pruebas mejora la calidad del análisis.

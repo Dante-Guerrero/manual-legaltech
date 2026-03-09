@@ -1,1 +1,258 @@
-# Sesión 4
+# 4. Python para datos, documentos y flujos jurídicos
+
+## ¿Por qué importa este tema?
+
+La práctica legal trabaja constantemente con listas de casos, textos, fechas, archivos y documentos que siguen patrones. Aprender a procesar esa información con Python abre la puerta a tareas de organización y automatización bastante útiles.
+
+::: {.callout-important}
+## Idea central
+Antes de hablar de grandes sistemas, conviene aprender a transformar información jurídica simple en salidas ordenadas, repetibles y verificables.
+:::
+
+## Qué aprenderás en esta sesión
+
+Al finalizar esta sesión, deberías poder:
+
+- trabajar con listas, diccionarios y archivos de texto;
+- transformar datos jurídicos simples;
+- producir salidas estructuradas;
+- entender el puente entre scripts sencillos y automatización documental;
+- preparar mejor la transición hacia procesos y datos del Módulo II.
+
+## Del criterio a los datos
+
+En la sesión anterior modelamos decisiones. Ahora toca trabajar con algo que aparece todo el tiempo en la práctica jurídica: información repetida y estructurada.
+
+Eso puede adoptar muchas formas:
+
+- listas de expedientes;
+- registros de contratos;
+- plazos en seguimiento;
+- correos o escritos con patrones previsibles;
+- datos básicos para generar reportes.
+
+Python resulta útil aquí porque permite recorrer colecciones, transformar texto, filtrar casos y producir salidas nuevas.
+
+## Listas y diccionarios como punto de partida
+
+Una forma sencilla de representar información jurídica consiste en usar listas de diccionarios.
+
+```python
+expedientes = [
+    {"codigo": "EXP-001", "estado": "pendiente", "urgente": True},
+    {"codigo": "EXP-002", "estado": "revisado", "urgente": False},
+    {"codigo": "EXP-003", "estado": "pendiente", "urgente": True},
+]
+```
+
+Cada diccionario representa un registro; la lista agrupa varios registros.
+
+Podemos recorrerlos así:
+
+```python
+for expediente in expedientes:
+    print(expediente["codigo"], expediente["estado"])
+```
+
+Y filtrar los urgentes:
+
+```python
+for expediente in expedientes:
+    if expediente["urgente"]:
+        print("Priorizar", expediente["codigo"])
+```
+
+## ¿Por qué esto importa en derecho?
+
+Porque una gran parte del trabajo legal ya funciona, de hecho, como un conjunto de registros:
+
+- expedientes con atributos;
+- contratos con fechas y montos;
+- resoluciones con estado;
+- trámites con responsables;
+- observaciones repetidas en revisión documental.
+
+No siempre necesitamos bases de datos complejas para empezar a trabajar mejor. A veces basta con estructurar bien la información.
+
+::: {.callout-note}
+## Idea útil
+Si puedes nombrar los campos relevantes de un problema, ya empezaste a convertirlo en datos.
+:::
+
+## Trabajar con texto
+
+El texto es una materia prima central en el trabajo jurídico. Por eso, incluso operaciones simples pueden resultar valiosas:
+
+```python
+texto = "Contrato de prestación de servicios"
+
+print(texto.lower())
+print(texto.upper())
+print("servicios" in texto.lower())
+```
+
+También podemos limpiar texto:
+
+```python
+nombre_parte = "  Ana Perez  "
+print(nombre_parte.strip())
+```
+
+Esto ayuda a:
+
+- normalizar nombres;
+- revisar formatos previsibles;
+- detectar palabras clave;
+- preparar insumos para reportes o plantillas.
+
+## Generar mensajes o salidas estructuradas
+
+Una forma simple de automatización consiste en generar mensajes con base en datos.
+
+```python
+contrato = {
+    "codigo": "CONT-014",
+    "vence_pronto": True,
+    "firmado": False
+}
+
+mensaje = f"Contrato {contrato['codigo']}: "
+
+if contrato["vence_pronto"]:
+    mensaje += "revisar vencimiento. "
+
+if not contrato["firmado"]:
+    mensaje += "falta firma."
+
+print(mensaje)
+```
+
+No estamos creando todavía un sistema documental complejo, pero sí una lógica que convierte datos en una salida útil.
+
+## Un ejemplo jurídico más desarrollado
+
+Imagina que debes revisar una lista de contratos y marcar cuáles tienen:
+
+- plazo próximo a vencer;
+- ausencia de firma;
+- monto superior a un umbral;
+- cláusula de renovación automática.
+
+```python
+contratos = [
+    {
+        "codigo": "C-001",
+        "dias_para_vencer": 10,
+        "firmado": True,
+        "monto": 8000,
+        "renovacion_automatica": False
+    },
+    {
+        "codigo": "C-002",
+        "dias_para_vencer": 3,
+        "firmado": False,
+        "monto": 15000,
+        "renovacion_automatica": True
+    }
+]
+
+for contrato in contratos:
+    alertas = []
+
+    if contrato["dias_para_vencer"] <= 5:
+        alertas.append("vence pronto")
+    if not contrato["firmado"]:
+        alertas.append("falta firma")
+    if contrato["monto"] > 10000:
+        alertas.append("monto alto")
+    if contrato["renovacion_automatica"]:
+        alertas.append("revisar renovacion automatica")
+
+    print(contrato["codigo"], "=>", alertas)
+```
+
+Este ejemplo ya muestra algo importante: el script no resuelve todo el análisis contractual, pero ayuda a ordenar el trabajo y a detectar rápidamente dónde mirar primero.
+
+::: {.callout-tip}
+## Regla útil
+El objetivo no es reemplazar la revisión jurídica. Es reducir trabajo mecánico y hacer más visible la información relevante.
+:::
+
+## Archivos de texto y salidas simples
+
+Otra posibilidad útil es guardar resultados en un archivo. Por ejemplo:
+
+```python
+lineas = [
+    "EXP-001: revisar urgencia",
+    "EXP-002: sin observaciones"
+]
+
+with open("reporte.txt", "w", encoding="utf-8") as archivo:
+    for linea in lineas:
+        archivo.write(linea + "\n")
+```
+
+Con eso ya podemos producir una salida reutilizable, aunque sea básica.
+
+## El puente hacia automatización documental
+
+Cuando un script:
+
+- toma datos;
+- aplica reglas;
+- genera una salida;
+
+ya estamos bastante cerca de la lógica básica de automatización documental.
+
+No se trata todavía de construir una plataforma sofisticada. Se trata de entender la secuencia:
+
+1. recibir información;
+2. transformarla;
+3. producir un resultado legible.
+
+Ese puente es importante porque prepara el terreno para módulos posteriores del curso.
+
+## Práctica en editor
+
+Crea un archivo como `sesion-4/reporte.py` y trabaja con una lista de registros jurídicos. El script debe:
+
+1. leer una estructura simple de datos;
+2. identificar al menos una condición relevante;
+3. producir una salida clara en pantalla o en un archivo de texto.
+
+Si quieres profundizar, añade una pequeña función que reciba un registro y devuelva observaciones.
+
+## Git y GitHub
+
+Versiona tanto el script como cualquier archivo de datos de prueba o README breve que acompañe tu solución.
+
+## PSET de la sesión
+
+Resuelve una tarea básica de procesamiento jurídico con Python. Algunas opciones:
+
+- generar observaciones sobre expedientes;
+- crear un pequeño reporte de plazos;
+- producir mensajes tipo para situaciones repetitivas;
+- transformar una lista de registros en una salida legible.
+
+El PSET debe mostrar:
+
+- estructura clara de datos;
+- lógica comprensible;
+- salida verificable;
+- commits que permitan seguir el trabajo.
+
+## Preguntas de repaso
+
+1. ¿Por qué una lista de diccionarios puede ser útil para modelar información jurídica?
+2. ¿Qué valor tiene transformar texto en tareas legales?
+3. ¿Qué diferencia hay entre revisar datos y producir una salida a partir de esos datos?
+4. ¿Por qué este tipo de ejercicios prepara el paso hacia automatización documental?
+
+## Ideas clave
+
+- Python no sirve solo para cálculos: también sirve para ordenar información jurídica;
+- las estructuras de datos son una forma de pensar mejor el trabajo legal;
+- una salida simple puede ser ya una forma útil de automatización;
+- automatizar documentos o reportes empieza con pequeñas transformaciones bien hechas.

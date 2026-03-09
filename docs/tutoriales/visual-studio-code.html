@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Módulo 1. Pensamiento computacional para juristas – Legal Tech, Manual del Curso</title>
+<title>Tutorial: Visual Studio Code – Legal Tech, Manual del Curso</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,8 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../parte-1-modulo-1/01-capitulo.html" rel="next">
-<link href="../parte-0/intro.html" rel="prev">
+<link href="../tutoriales/git-y-github.html" rel="next">
+<link href="../tutoriales/instalar-python.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -86,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-1-modulo-1/00-presentacion.html">Módulo 1. Pensamiento computacional para juristas</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../tutoriales/00-presentacion.html">Tutoriales</a></li><li class="breadcrumb-item"><a href="../tutoriales/visual-studio-code.html"><span class="chapter-title">Tutorial: Visual Studio Code</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -128,7 +128,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../parte-1-modulo-1/00-presentacion.html" class="sidebar-item-text sidebar-link active">
+            <a href="../parte-1-modulo-1/00-presentacion.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Módulo 1. Pensamiento computacional para juristas</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -241,7 +241,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutoriales/visual-studio-code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Visual Studio Code</span></a>
+  <a href="../tutoriales/visual-studio-code.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Tutorial: Visual Studio Code</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -312,24 +312,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#i.-pensamiento-computacional-para-juristas" id="toc-i.-pensamiento-computacional-para-juristas" class="nav-link active" data-scroll-target="#i.-pensamiento-computacional-para-juristas">I. Pensamiento computacional para juristas</a>
-  <ul class="collapse">
-  <li><a href="#por-qué-importa-este-módulo" id="toc-por-qué-importa-este-módulo" class="nav-link" data-scroll-target="#por-qué-importa-este-módulo">¿Por qué importa este módulo?</a></li>
-  <li><a href="#qué-aprenderás" id="toc-qué-aprenderás" class="nav-link" data-scroll-target="#qué-aprenderás">Qué aprenderás</a></li>
-  <li><a href="#cómo-se-trabaja-en-este-módulo" id="toc-cómo-se-trabaja-en-este-módulo" class="nav-link" data-scroll-target="#cómo-se-trabaja-en-este-módulo">Cómo se trabaja en este módulo</a></li>
-  <li><a href="#tabla-de-contenidos-del-módulo" id="toc-tabla-de-contenidos-del-módulo" class="nav-link" data-scroll-target="#tabla-de-contenidos-del-módulo">Tabla de contenidos del módulo</a></li>
-  <li><a href="#qué-debes-poder-hacer-al-terminar" id="toc-qué-debes-poder-hacer-al-terminar" class="nav-link" data-scroll-target="#qué-debes-poder-hacer-al-terminar">Qué debes poder hacer al terminar</a></li>
-  <li><a href="#cómo-se-conecta-con-el-resto-del-curso" id="toc-cómo-se-conecta-con-el-resto-del-curso" class="nav-link" data-scroll-target="#cómo-se-conecta-con-el-resto-del-curso">Cómo se conecta con el resto del curso</a></li>
-  </ul></li>
+  <li><a href="#para-qué-sirve-este-tutorial" id="toc-para-qué-sirve-este-tutorial" class="nav-link active" data-scroll-target="#para-qué-sirve-este-tutorial">¿Para qué sirve este tutorial?</a></li>
+  <li><a href="#paso-1.-instala-el-editor" id="toc-paso-1.-instala-el-editor" class="nav-link" data-scroll-target="#paso-1.-instala-el-editor">Paso 1. Instala el editor</a></li>
+  <li><a href="#paso-2.-abre-una-carpeta-de-trabajo" id="toc-paso-2.-abre-una-carpeta-de-trabajo" class="nav-link" data-scroll-target="#paso-2.-abre-una-carpeta-de-trabajo">Paso 2. Abre una carpeta de trabajo</a></li>
+  <li><a href="#paso-3.-usa-lo-esencial-del-editor" id="toc-paso-3.-usa-lo-esencial-del-editor" class="nav-link" data-scroll-target="#paso-3.-usa-lo-esencial-del-editor">Paso 3. Usa lo esencial del editor</a></li>
+  <li><a href="#paso-4.-abre-la-terminal-integrada" id="toc-paso-4.-abre-la-terminal-integrada" class="nav-link" data-scroll-target="#paso-4.-abre-la-terminal-integrada">Paso 4. Abre la terminal integrada</a></li>
+  <li><a href="#paso-5.-guarda-ejecuta-y-revisa-cambios" id="toc-paso-5.-guarda-ejecuta-y-revisa-cambios" class="nav-link" data-scroll-target="#paso-5.-guarda-ejecuta-y-revisa-cambios">Paso 5. Guarda, ejecuta y revisa cambios</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../tutoriales/00-presentacion.html">Tutoriales</a></li><li class="breadcrumb-item"><a href="../tutoriales/visual-studio-code.html"><span class="chapter-title">Tutorial: Visual Studio Code</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Módulo 1. Pensamiento computacional para juristas</h1>
+<h1 class="title"><span class="chapter-title">Tutorial: Visual Studio Code</span></h1>
 </div>
 
 
@@ -346,138 +343,71 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="i.-pensamiento-computacional-para-juristas" class="level1">
-<h1>I. Pensamiento computacional para juristas</h1>
-<section id="por-qué-importa-este-módulo" class="level2">
-<h2 class="anchored" data-anchor-id="por-qué-importa-este-módulo">¿Por qué importa este módulo?</h2>
-<p>El primer módulo cumple una función decisiva: construir el puente entre la formación jurídica tradicional y la lógica con la que operan las tecnologías digitales. Antes de hablar de automatización, datos, páginas web o inteligencia artificial, necesitamos entender cómo se representa la información, cómo se formulan instrucciones y cómo se traduce un problema jurídico en pasos verificables.</p>
-<div class="callout callout-style-default callout-important callout-titled">
+<section id="para-qué-sirve-este-tutorial" class="level2">
+<h2 class="anchored" data-anchor-id="para-qué-sirve-este-tutorial">¿Para qué sirve este tutorial?</h2>
+<p>Este tutorial te ayuda a instalar y usar lo mínimo de <strong>Visual Studio Code</strong> para trabajar durante el curso.</p>
+</section>
+<section id="paso-1.-instala-el-editor" class="level2">
+<h2 class="anchored" data-anchor-id="paso-1.-instala-el-editor">Paso 1. Instala el editor</h2>
+<p>Descarga Visual Studio Code desde su sitio oficial e instálalo normalmente.</p>
+</section>
+<section id="paso-2.-abre-una-carpeta-de-trabajo" class="level2">
+<h2 class="anchored" data-anchor-id="paso-2.-abre-una-carpeta-de-trabajo">Paso 2. Abre una carpeta de trabajo</h2>
+<p>Usa <code>File &gt; Open Folder</code> para abrir la carpeta del repositorio del curso o tu carpeta de práctica.</p>
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>Idea central del módulo
+<span class="screen-reader-only">Note</span>Buena práctica
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Una computadora no interpreta el derecho como lo hace un abogado. Ejecuta instrucciones. Por eso, el primer aprendizaje relevante para un jurista es aprender a estructurar problemas, reglas y decisiones con claridad.</p>
+<p>Trabaja siempre con carpetas completas y no con archivos sueltos. Eso hace más fácil navegar, editar y versionar.</p>
 </div>
 </div>
 </section>
-<section id="qué-aprenderás" class="level2">
-<h2 class="anchored" data-anchor-id="qué-aprenderás">Qué aprenderás</h2>
-<p>En este módulo trabajarás cuatro piezas de una misma cadena:</p>
+<section id="paso-3.-usa-lo-esencial-del-editor" class="level2">
+<h2 class="anchored" data-anchor-id="paso-3.-usa-lo-esencial-del-editor">Paso 3. Usa lo esencial del editor</h2>
+<p>Conviene familiarizarte con estas áreas:</p>
 <ul>
-<li>representación básica de información y lógica computacional;</li>
-<li>pseudocódigo y descomposición de problemas;</li>
-<li>fundamentos de Python aplicados al derecho;</li>
-<li>ejercicios jurídicos cada vez más complejos con reglas, datos y documentos.</li>
+<li>explorador de archivos;</li>
+<li>editor principal;</li>
+<li>terminal integrada;</li>
+<li>panel de control de cambios.</li>
 </ul>
 </section>
-<section id="cómo-se-trabaja-en-este-módulo" class="level2">
-<h2 class="anchored" data-anchor-id="cómo-se-trabaja-en-este-módulo">Cómo se trabaja en este módulo</h2>
-<p>Este módulo se aprovecha mejor si combinas curiosidad, paciencia y práctica. En cada sesión deberías abrir tu editor, modificar archivos, ejecutar código, registrar cambios con Git y avanzar sobre un repositorio en GitHub.</p>
+<section id="paso-4.-abre-la-terminal-integrada" class="level2">
+<h2 class="anchored" data-anchor-id="paso-4.-abre-la-terminal-integrada">Paso 4. Abre la terminal integrada</h2>
+<p>Desde la terminal integrada podrás ejecutar Python, Git y otros comandos del curso sin salir del editor.</p>
+</section>
+<section id="paso-5.-guarda-ejecuta-y-revisa-cambios" class="level2">
+<h2 class="anchored" data-anchor-id="paso-5.-guarda-ejecuta-y-revisa-cambios">Paso 5. Guarda, ejecuta y revisa cambios</h2>
+<p>Una rutina útil es esta:</p>
+<ol type="1">
+<li>abrir el archivo;</li>
+<li>editar una parte pequeña;</li>
+<li>guardar;</li>
+<li>ejecutar;</li>
+<li>revisar el resultado;</li>
+<li>registrar cambios con Git.</li>
+</ol>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Cómo conviene trabajar
+<span class="screen-reader-only">Tip</span>Lo importante
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li>describe primero el problema en lenguaje natural;</li>
-<li>tradúcelo luego a pasos claros;</li>
-<li>implementa una versión simple antes de sofisticarla;</li>
-<li>registra tus cambios con commits breves y útiles;</li>
-<li>usa el PSET para consolidar lo visto en clase.</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="tabla-de-contenidos-del-módulo" class="level2">
-<h2 class="anchored" data-anchor-id="tabla-de-contenidos-del-módulo">Tabla de contenidos del módulo</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Sesión</th>
-<th>Tema central</th>
-<th>Herramientas</th>
-<th>Práctica principal</th>
-<th>PSET</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td>Del bit al pseudocódigo</td>
-<td>Markdown, editor, Git</td>
-<td>representar reglas y decisiones</td>
-<td>traducir reglas jurídicas a pasos</td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td>Primeros pasos con Python</td>
-<td>Python, terminal, VS Code</td>
-<td>ejecutar y modificar scripts básicos</td>
-<td>lógica jurídica simple en Python</td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td>Decisiones jurídicas y automatización básica</td>
-<td>Python, funciones, condicionales</td>
-<td>modelar elegibilidad y validaciones</td>
-<td>resolver un problema con múltiples condiciones</td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td>Datos, documentos y flujos jurídicos</td>
-<td>Python, archivos, diccionarios, texto</td>
-<td>procesar información jurídica simple</td>
-<td>automatización básica con datos o plantillas</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="qué-debes-poder-hacer-al-terminar" class="level2">
-<h2 class="anchored" data-anchor-id="qué-debes-poder-hacer-al-terminar">Qué debes poder hacer al terminar</h2>
-<p>Al finalizar el módulo, deberías poder:</p>
-<ol type="1">
-<li>explicar cómo una computadora representa información;</li>
-<li>expresar procedimientos jurídicos como pasos verificables;</li>
-<li>escribir scripts básicos en Python para resolver tareas jurídicas sencillas;</li>
-<li>combinar reglas, datos y salidas para automatizar pequeños problemas de práctica legal.</li>
-</ol>
-</section>
-<section id="cómo-se-conecta-con-el-resto-del-curso" class="level2">
-<h2 class="anchored" data-anchor-id="cómo-se-conecta-con-el-resto-del-curso">Cómo se conecta con el resto del curso</h2>
-<p>Este módulo es la base del resto del manual. Sin estas herramientas iniciales, sería mucho más difícil avanzar hacia procesos, datos, web, seguridad e inteligencia artificial.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>Advertencia útil
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Si la lógica de un proceso legal está mal pensada, digitalizarlo solo hace que el error viaje más rápido. La tecnología no sustituye el juicio jurídico; exige más precisión.</p>
+<p>No necesitas dominar todo VS Code. Necesitas usar bien un conjunto pequeño de funciones de forma consistente.</p>
 </div>
 </div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -883,13 +813,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../parte-0/intro.html" class="pagination-link" aria-label="Introducción">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Introducción</span></span>
+      <a href="../tutoriales/instalar-python.html" class="pagination-link" aria-label="Tutorial: Instalar Python">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Tutorial: Instalar Python</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../parte-1-modulo-1/01-capitulo.html" class="pagination-link" aria-label="1. Del bit al pseudocódigo">
-        <span class="nav-page-text"><span class="chapter-title">1. Del bit al pseudocódigo</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../tutoriales/git-y-github.html" class="pagination-link" aria-label="Tutorial: Git y GitHub">
+        <span class="nav-page-text"><span class="chapter-title">Tutorial: Git y GitHub</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

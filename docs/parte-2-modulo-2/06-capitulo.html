@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Sesión 6 – Legal Tech, Manual del Curso</title>
+<title>6. Explicar y controlar los resultados – Legal Tech, Manual del Curso</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -22,6 +22,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -86,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-2-modulo-2/00-presentacion.html">II. Automatización y datos jurídicos</a></li><li class="breadcrumb-item"><a href="../parte-2-modulo-2/06-capitulo.html"><span class="chapter-title">Sesión 6</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-2-modulo-2/00-presentacion.html">II. Automatización y datos jurídicos</a></li><li class="breadcrumb-item"><a href="../parte-2-modulo-2/06-capitulo.html"><span class="chapter-title">6. Explicar y controlar los resultados</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -147,12 +182,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-1-modulo-1/03-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sesión 3</span></a>
+  <a href="../parte-1-modulo-1/03-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">3. Python para decisiones jurídicas y automatización básica</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-1-modulo-1/04-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sesión 4</span></a>
+  <a href="../parte-1-modulo-1/04-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">4. Python para datos, documentos y flujos jurídicos</span></a>
   </div>
 </li>
       </ul>
@@ -168,12 +203,12 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-2-modulo-2/05-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sesión 5</span></a>
+  <a href="../parte-2-modulo-2/05-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">5. Entender el negocio</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-2-modulo-2/06-capitulo.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Sesión 6</span></a>
+  <a href="../parte-2-modulo-2/06-capitulo.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">6. Explicar y controlar los resultados</span></a>
   </div>
 </li>
       </ul>
@@ -189,12 +224,12 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-3-modulo-3/07-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sesión 7</span></a>
+  <a href="../parte-3-modulo-3/07-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">7. El internet y la nube</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-3-modulo-3/08-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sesión 8</span></a>
+  <a href="../parte-3-modulo-3/08-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">8. Ciberseguridad</span></a>
   </div>
 </li>
       </ul>
@@ -210,30 +245,66 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-4-modulo-4/09-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sesión 9</span></a>
+  <a href="../parte-4-modulo-4/09-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">9. Fundamentos de inteligencia artificial</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-4-modulo-4/10-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sesión 10</span></a>
+  <a href="../parte-4-modulo-4/10-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">10. Evaluar, gobernar e integrar IA en contextos jurídicos</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-4-modulo-4/11-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sesión 11</span></a>
+  <a href="../parte-4-modulo-4/11-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">11. Ejemplos de proyectos Legal Tech</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
- <span class="menu-text">Evaluaciones</span></a>
+            <a href="../tutoriales/00-presentacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tutoriales</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tutoriales/instalar-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Instalar Python</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tutoriales/visual-studio-code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Visual Studio Code</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tutoriales/git-y-github.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Git y GitHub</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tutoriales/licencias-y-reutilizacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Licencias y reutilización responsable</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tutoriales/github-pages.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: GitHub Pages</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Evaluaciones</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../evaluaciones/evaluacion-1.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">🔹 Evaluación Continua 1</span></a>
@@ -271,15 +342,38 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#por-qué-importa-este-tema" id="toc-por-qué-importa-este-tema" class="nav-link active" data-scroll-target="#por-qué-importa-este-tema">¿Por qué importa este tema?</a></li>
+  <li><a href="#qué-aprenderás-en-esta-sesión" id="toc-qué-aprenderás-en-esta-sesión" class="nav-link" data-scroll-target="#qué-aprenderás-en-esta-sesión">Qué aprenderás en esta sesión</a></li>
+  <li><a href="#del-documento-al-dato" id="toc-del-documento-al-dato" class="nav-link" data-scroll-target="#del-documento-al-dato">Del documento al dato</a></li>
+  <li><a href="#vocabulario-mínimo-para-trabajar-con-información" id="toc-vocabulario-mínimo-para-trabajar-con-información" class="nav-link" data-scroll-target="#vocabulario-mínimo-para-trabajar-con-información">Vocabulario mínimo para trabajar con información</a></li>
+  <li><a href="#qué-vuelve-mala-a-una-tabla" id="toc-qué-vuelve-mala-a-una-tabla" class="nav-link" data-scroll-target="#qué-vuelve-mala-a-una-tabla">Qué vuelve mala a una tabla</a></li>
+  <li><a href="#primer-paso-ordenar-la-información" id="toc-primer-paso-ordenar-la-información" class="nav-link" data-scroll-target="#primer-paso-ordenar-la-información">Primer paso: ordenar la información</a></li>
+  <li><a href="#qué-preguntas-vale-la-pena-hacer-a-los-datos" id="toc-qué-preguntas-vale-la-pena-hacer-a-los-datos" class="nav-link" data-scroll-target="#qué-preguntas-vale-la-pena-hacer-a-los-datos">Qué preguntas vale la pena hacer a los datos</a></li>
+  <li><a href="#ejemplo-jurídico-carga-de-expedientes" id="toc-ejemplo-jurídico-carga-de-expedientes" class="nav-link" data-scroll-target="#ejemplo-jurídico-carga-de-expedientes">Ejemplo jurídico: carga de expedientes</a></li>
+  <li><a href="#indicadores-y-control" id="toc-indicadores-y-control" class="nav-link" data-scroll-target="#indicadores-y-control">Indicadores y control</a></li>
+  <li><a href="#visualizar-no-es-decorar" id="toc-visualizar-no-es-decorar" class="nav-link" data-scroll-target="#visualizar-no-es-decorar">Visualizar no es decorar</a></li>
+  <li><a href="#sql-y-bases-de-datos-una-intuición-inicial" id="toc-sql-y-bases-de-datos-una-intuición-inicial" class="nav-link" data-scroll-target="#sql-y-bases-de-datos-una-intuición-inicial">SQL y bases de datos: una intuición inicial</a></li>
+  <li><a href="#del-dato-al-reporte" id="toc-del-dato-al-reporte" class="nav-link" data-scroll-target="#del-dato-al-reporte">Del dato al reporte</a></li>
+  <li><a href="#puente-hacia-automatización-documental" id="toc-puente-hacia-automatización-documental" class="nav-link" data-scroll-target="#puente-hacia-automatización-documental">Puente hacia automatización documental</a></li>
+  <li><a href="#práctica-en-editor" id="toc-práctica-en-editor" class="nav-link" data-scroll-target="#práctica-en-editor">Práctica en editor</a></li>
+  <li><a href="#git-y-github" id="toc-git-y-github" class="nav-link" data-scroll-target="#git-y-github">Git y GitHub</a></li>
+  <li><a href="#pset-de-la-sesión" id="toc-pset-de-la-sesión" class="nav-link" data-scroll-target="#pset-de-la-sesión">PSET de la sesión</a></li>
+  <li><a href="#preguntas-de-repaso" id="toc-preguntas-de-repaso" class="nav-link" data-scroll-target="#preguntas-de-repaso">Preguntas de repaso</a></li>
+  <li><a href="#ideas-clave" id="toc-ideas-clave" class="nav-link" data-scroll-target="#ideas-clave">Ideas clave</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-2-modulo-2/00-presentacion.html">II. Automatización y datos jurídicos</a></li><li class="breadcrumb-item"><a href="../parte-2-modulo-2/06-capitulo.html"><span class="chapter-title">Sesión 6</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-2-modulo-2/00-presentacion.html">II. Automatización y datos jurídicos</a></li><li class="breadcrumb-item"><a href="../parte-2-modulo-2/06-capitulo.html"><span class="chapter-title">6. Explicar y controlar los resultados</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Sesión 6</span></h1>
+<h1 class="title"><span class="chapter-title">6. Explicar y controlar los resultados</span></h1>
 </div>
 
 
@@ -296,8 +390,328 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="por-qué-importa-este-tema" class="level2">
+<h2 class="anchored" data-anchor-id="por-qué-importa-este-tema">¿Por qué importa este tema?</h2>
+<p>En derecho no basta con tener información: hay que ordenarla, explicarla y usarla para tomar mejores decisiones. Una tabla caótica sirve poco; un reporte claro puede cambiar mucho. Lo mismo ocurre con la gestión legal: si no se mide, no se entiende bien; y si no se entiende bien, se controla mal.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Idea central
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Datos útiles son datos organizados, legibles y conectados con una pregunta concreta.</p>
+</div>
+</div>
+</section>
+<section id="qué-aprenderás-en-esta-sesión" class="level2">
+<h2 class="anchored" data-anchor-id="qué-aprenderás-en-esta-sesión">Qué aprenderás en esta sesión</h2>
+<p>Al finalizar esta sesión, deberías poder:</p>
+<ul>
+<li>distinguir entre dato, registro, campo e indicador;</li>
+<li>organizar información jurídica básica;</li>
+<li>limpiar y estructurar una tabla sencilla;</li>
+<li>producir un reporte o visualización simple;</li>
+<li>preparar evidencia reproducible para un PSET.</li>
+</ul>
+</section>
+<section id="del-documento-al-dato" class="level2">
+<h2 class="anchored" data-anchor-id="del-documento-al-dato">Del documento al dato</h2>
+<p>Uno de los cambios más importantes en entornos legaltech consiste en dejar de tratar toda la información como si fuera solo un conjunto de documentos aislados.</p>
+<p>Muchas veces conviene separar:</p>
+<ul>
+<li>el documento como pieza completa;</li>
+<li>los datos que ese documento contiene;</li>
+<li>los campos que pueden convertirse en variables analizables.</li>
+</ul>
+<p>Por ejemplo, una resolución puede ser un documento. Pero dentro de ella hay datos como:</p>
+<ul>
+<li>fecha;</li>
+<li>órgano emisor;</li>
+<li>materia;</li>
+<li>tipo de decisión;</li>
+<li>monto;</li>
+<li>estado de cumplimiento.</li>
+</ul>
+<p>Cuando distinguimos esas capas, la información empieza a ser más útil para seguimiento, análisis y control.</p>
+</section>
+<section id="vocabulario-mínimo-para-trabajar-con-información" class="level2">
+<h2 class="anchored" data-anchor-id="vocabulario-mínimo-para-trabajar-con-información">Vocabulario mínimo para trabajar con información</h2>
+<p>Conviene manejar al menos estas cuatro nociones:</p>
+<ul>
+<li><strong>dato</strong>: unidad básica de información;</li>
+<li><strong>campo</strong>: categoría o atributo del dato;</li>
+<li><strong>registro</strong>: conjunto de campos relacionados entre sí;</li>
+<li><strong>indicador</strong>: medida que ayuda a monitorear una situación.</li>
+</ul>
+<p>Pensemos en una tabla de expedientes:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>codigo</th>
+<th>estado</th>
+<th>responsable</th>
+<th>prioridad</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>EXP-001</td>
+<td>pendiente</td>
+<td>Ana</td>
+<td>alta</td>
+</tr>
+<tr class="even">
+<td>EXP-002</td>
+<td>revisado</td>
+<td>Luis</td>
+<td>media</td>
+</tr>
+</tbody>
+</table>
+<p>Aquí:</p>
+<ul>
+<li><code>codigo</code>, <code>estado</code>, <code>responsable</code> y <code>prioridad</code> son campos;</li>
+<li>cada fila es un registro;</li>
+<li>el total de expedientes pendientes podría convertirse luego en un indicador.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Idea útil
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Un buen dato no es solo un dato existente. Es un dato que puede leerse, compararse y reutilizarse con un propósito.</p>
+</div>
+</div>
+</section>
+<section id="qué-vuelve-mala-a-una-tabla" class="level2">
+<h2 class="anchored" data-anchor-id="qué-vuelve-mala-a-una-tabla">Qué vuelve mala a una tabla</h2>
+<p>Una tabla suele volverse poco útil cuando:</p>
+<ul>
+<li>mezcla demasiadas cosas en una misma columna;</li>
+<li>usa nombres ambiguos;</li>
+<li>repite formatos distintos para lo mismo;</li>
+<li>deja vacíos sin criterio;</li>
+<li>no permite responder ninguna pregunta concreta.</li>
+</ul>
+<p>Por ejemplo, una columna llamada <code>observaciones varias</code> que mezcla texto libre, fechas, responsables y estados puede ser cómoda al inicio, pero difícil de analizar después.</p>
+</section>
+<section id="primer-paso-ordenar-la-información" class="level2">
+<h2 class="anchored" data-anchor-id="primer-paso-ordenar-la-información">Primer paso: ordenar la información</h2>
+<p>Antes de pensar en gráficos o dashboards, conviene hacer algo mucho menos glamoroso y mucho más importante: ordenar la tabla.</p>
+<p>Eso implica revisar:</p>
+<ul>
+<li>nombres de columnas;</li>
+<li>consistencia de formatos;</li>
+<li>duplicados;</li>
+<li>valores faltantes;</li>
+<li>categorías comparables.</li>
+</ul>
+<p>Un ejemplo didáctico con Python:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>expedientes <span class="op">=</span> [</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"codigo"</span>: <span class="st">"EXP-001"</span>, <span class="st">"estado"</span>: <span class="st">"pendiente"</span>, <span class="st">"prioridad"</span>: <span class="st">"alta"</span>},</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"codigo"</span>: <span class="st">"EXP-002"</span>, <span class="st">"estado"</span>: <span class="st">"Pendiente"</span>, <span class="st">"prioridad"</span>: <span class="st">"media"</span>},</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"codigo"</span>: <span class="st">"EXP-003"</span>, <span class="st">"estado"</span>: <span class="st">"revisado"</span>, <span class="st">"prioridad"</span>: <span class="st">"alta"</span>},</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> expediente <span class="kw">in</span> expedientes:</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    expediente[<span class="st">"estado"</span>] <span class="op">=</span> expediente[<span class="st">"estado"</span>].lower()</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(expedientes)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Ese ajuste es simple, pero ya mejora la posibilidad de contar o clasificar registros sin errores evitables.</p>
+</section>
+<section id="qué-preguntas-vale-la-pena-hacer-a-los-datos" class="level2">
+<h2 class="anchored" data-anchor-id="qué-preguntas-vale-la-pena-hacer-a-los-datos">Qué preguntas vale la pena hacer a los datos</h2>
+<p>Una buena práctica consiste en formular una pregunta antes de abrir la tabla. Por ejemplo:</p>
+<ul>
+<li>¿cuántos casos están pendientes?;</li>
+<li>¿qué tipo de observación se repite más?;</li>
+<li>¿qué responsable concentra mayor carga?;</li>
+<li>¿qué plazos están por vencer?;</li>
+<li>¿qué casos deberían priorizarse?</li>
+</ul>
+<p>La tabla sirve mejor cuando está subordinada a una pregunta y no al revés.</p>
+</section>
+<section id="ejemplo-jurídico-carga-de-expedientes" class="level2">
+<h2 class="anchored" data-anchor-id="ejemplo-jurídico-carga-de-expedientes">Ejemplo jurídico: carga de expedientes</h2>
+<p>Imagina una tabla con estas columnas:</p>
+<ul>
+<li>código;</li>
+<li>estado;</li>
+<li>fecha de ingreso;</li>
+<li>responsable;</li>
+<li>prioridad.</li>
+</ul>
+<p>Con eso ya puedes producir algo útil, por ejemplo:</p>
+<ul>
+<li>número de expedientes pendientes;</li>
+<li>casos de prioridad alta;</li>
+<li>distribución por responsable.</li>
+</ul>
+<p>Un script mínimo:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>expedientes <span class="op">=</span> [</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"codigo"</span>: <span class="st">"EXP-001"</span>, <span class="st">"estado"</span>: <span class="st">"pendiente"</span>, <span class="st">"responsable"</span>: <span class="st">"Ana"</span>, <span class="st">"prioridad"</span>: <span class="st">"alta"</span>},</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"codigo"</span>: <span class="st">"EXP-002"</span>, <span class="st">"estado"</span>: <span class="st">"revisado"</span>, <span class="st">"responsable"</span>: <span class="st">"Luis"</span>, <span class="st">"prioridad"</span>: <span class="st">"media"</span>},</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"codigo"</span>: <span class="st">"EXP-003"</span>, <span class="st">"estado"</span>: <span class="st">"pendiente"</span>, <span class="st">"responsable"</span>: <span class="st">"Ana"</span>, <span class="st">"prioridad"</span>: <span class="st">"alta"</span>},</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>pendientes <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> expediente <span class="kw">in</span> expedientes:</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> expediente[<span class="st">"estado"</span>] <span class="op">==</span> <span class="st">"pendiente"</span>:</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>        pendientes <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Expedientes pendientes:"</span>, pendientes)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Eso ya convierte una tabla en una respuesta.</p>
+</section>
+<section id="indicadores-y-control" class="level2">
+<h2 class="anchored" data-anchor-id="indicadores-y-control">Indicadores y control</h2>
+<p>Un indicador no es cualquier número. Es un número que ayuda a monitorear una situación relevante.</p>
+<p>En contextos legales, algunos ejemplos de indicadores podrían ser:</p>
+<ul>
+<li>expedientes pendientes por unidad;</li>
+<li>tiempo promedio de atención;</li>
+<li>porcentaje de casos observados;</li>
+<li>número de contratos próximos a vencer;</li>
+<li>cantidad de casos prioritarios sin revisión.</li>
+</ul>
+<p>Lo importante es no confundir acumulación de datos con control real. El control aparece cuando esos datos permiten ver algo accionable.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Regla práctica
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Si un indicador no ayuda a tomar una decisión o a detectar un problema, probablemente todavía no es un buen indicador.</p>
+</div>
+</div>
+</section>
+<section id="visualizar-no-es-decorar" class="level2">
+<h2 class="anchored" data-anchor-id="visualizar-no-es-decorar">Visualizar no es decorar</h2>
+<p>La visualización puede ayudar a que ciertos patrones se vean mejor. Pero no toda visualización es útil. A veces una tabla bien ordenada explica más que un gráfico innecesario.</p>
+<p>Visualizar bien implica preguntarse:</p>
+<ul>
+<li>¿qué quiero mostrar?;</li>
+<li>¿a quién quiero explicárselo?;</li>
+<li>¿qué forma hace más visible el patrón?;</li>
+<li>¿qué nivel de detalle conviene?</li>
+</ul>
+<p>En algunos casos, bastará con un resumen textual:</p>
+<ul>
+<li>12 expedientes pendientes;</li>
+<li>7 de prioridad alta;</li>
+<li>5 asignados a la misma persona.</li>
+</ul>
+<p>En otros casos, una barra o una tabla comparativa puede ser suficiente.</p>
+</section>
+<section id="sql-y-bases-de-datos-una-intuición-inicial" class="level2">
+<h2 class="anchored" data-anchor-id="sql-y-bases-de-datos-una-intuición-inicial">SQL y bases de datos: una intuición inicial</h2>
+<p>Aunque esta sesión no busca convertirte en especialista en bases de datos, sí conviene introducir una idea básica: cuando la información crece, ya no basta con mirar todo a mano.</p>
+<p>Allí aparece la lógica de consulta:</p>
+<ul>
+<li>seleccionar ciertos campos;</li>
+<li>filtrar registros;</li>
+<li>ordenar resultados;</li>
+<li>contar casos.</li>
+</ul>
+<p>Esa intuición está muy cerca de lo que luego hace una consulta SQL, aunque aquí todavía podamos trabajar con ejemplos más simples.</p>
+</section>
+<section id="del-dato-al-reporte" class="level2">
+<h2 class="anchored" data-anchor-id="del-dato-al-reporte">Del dato al reporte</h2>
+<p>Explicar resultados no significa solo contar cosas. También significa producir un reporte comprensible.</p>
+<p>Un reporte útil suele responder:</p>
+<ul>
+<li>qué se observó;</li>
+<li>por qué importa;</li>
+<li>qué acción sugiere.</li>
+</ul>
+<p>Por ejemplo:</p>
+<blockquote class="blockquote">
+<p>Se identificaron 12 expedientes pendientes, de los cuales 7 tienen prioridad alta. La mayor carga recae en una sola responsable. Conviene redistribuir revisión o establecer un criterio de priorización más claro.</p>
+</blockquote>
+<p>Ese tipo de salida ya conecta datos con gestión.</p>
+</section>
+<section id="puente-hacia-automatización-documental" class="level2">
+<h2 class="anchored" data-anchor-id="puente-hacia-automatización-documental">Puente hacia automatización documental</h2>
+<p>Cuando una tabla bien organizada alimenta un reporte, un resumen o una salida estandarizada, estamos muy cerca de la lógica de automatización documental.</p>
+<p>La secuencia es esta:</p>
+<ol type="1">
+<li>recibir datos;</li>
+<li>ordenarlos;</li>
+<li>analizarlos;</li>
+<li>producir una salida.</li>
+</ol>
+<p>Eso puede terminar en:</p>
+<ul>
+<li>un reporte;</li>
+<li>una alerta;</li>
+<li>una lista priorizada;</li>
+<li>una plantilla con datos insertados.</li>
+</ul>
+</section>
+<section id="práctica-en-editor" class="level2">
+<h2 class="anchored" data-anchor-id="práctica-en-editor">Práctica en editor</h2>
+<p>Trabaja con una tabla pequeña o con una lista de registros jurídicos y produce:</p>
+<ul>
+<li>una limpieza mínima de los datos;</li>
+<li>una salida resumida;</li>
+<li>una observación breve sobre lo que muestran esos datos.</li>
+</ul>
+<p>La herramienta puede ser Python, una tabla estructurada o una consulta simple, según lo que se esté usando en clase.</p>
+</section>
+<section id="git-y-github" class="level2">
+<h2 class="anchored" data-anchor-id="git-y-github">Git y GitHub</h2>
+<p>Sube al repositorio tanto el archivo de datos de prueba como el script, consulta o documento de resultados. Si limpiaste o transformaste la información, deja rastro de qué cambiaste.</p>
+</section>
+<section id="pset-de-la-sesión" class="level2">
+<h2 class="anchored" data-anchor-id="pset-de-la-sesión">PSET de la sesión</h2>
+<p>Organiza y explica información jurídica con un objetivo claro. El entregable puede consistir en:</p>
+<ul>
+<li>una tabla limpia;</li>
+<li>un reporte breve;</li>
+<li>una visualización simple;</li>
+<li>una consulta o script que permita reproducir el resultado.</li>
+</ul>
+<p>El PSET debe mostrar:</p>
+<ul>
+<li>una pregunta clara;</li>
+<li>datos mínimamente organizados;</li>
+<li>un resultado legible;</li>
+<li>una breve interpretación de por qué importa.</li>
+</ul>
+</section>
+<section id="preguntas-de-repaso" class="level2">
+<h2 class="anchored" data-anchor-id="preguntas-de-repaso">Preguntas de repaso</h2>
+<ol type="1">
+<li>¿Qué diferencia hay entre documento, dato, campo y registro?</li>
+<li>¿Por qué no conviene abrir una tabla sin una pregunta previa?</li>
+<li>¿Qué vuelve inútil a un indicador?</li>
+<li>¿Por qué la limpieza de datos importa antes que la visualización?</li>
+</ol>
+</section>
+<section id="ideas-clave" class="level2">
+<h2 class="anchored" data-anchor-id="ideas-clave">Ideas clave</h2>
+<ul>
+<li>los datos sin pregunta suelen generar ruido;</li>
+<li>ordenar información es una forma de pensar mejor el problema;</li>
+<li>reportar bien es una competencia jurídica y técnica a la vez;</li>
+<li>controlar resultados exige trazabilidad, no solo intuición.</li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -702,8 +1116,8 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../parte-2-modulo-2/05-capitulo.html" class="pagination-link" aria-label="Sesión 5">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Sesión 5</span></span>
+      <a href="../parte-2-modulo-2/05-capitulo.html" class="pagination-link" aria-label="5. Entender el negocio">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">5. Entender el negocio</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

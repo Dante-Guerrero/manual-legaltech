@@ -1,2 +1,53 @@
 # III. Web, nube y seguridad para el sector legal
 
+## ¿Por qué importa este módulo?
+
+Buena parte de los servicios legales ya operan sobre infraestructura digital: páginas web, formularios, repositorios, plataformas, nubes y sistemas con distintos niveles de exposición pública. Por eso, comprender la web y la seguridad ya no es una rareza técnica; es parte de la alfabetización profesional básica.
+
+::: {.callout-important}
+## Idea central del módulo
+Entender internet no consiste solo en saber publicar una página. También implica comprender cómo circula la información, qué riesgos aparecen y cómo se cuida la trazabilidad de lo que se expone.
+:::
+
+## Qué aprenderás
+
+En este módulo trabajarás:
+
+- conceptos básicos de internet, web y nube;
+- estructura mínima de una página web;
+- publicación con GitHub Pages;
+- riesgos básicos de ciberseguridad en contextos legales.
+
+## Cómo se trabaja en este módulo
+
+Aquí se aprende construyendo y publicando artefactos reales. Abrirás tu editor, crearás archivos HTML/CSS/JS sencillos, trabajarás con repositorios y documentarás riesgos o medidas de seguridad en PSETs.
+
+::: {.callout-tip}
+## Enfoque recomendado
+No pienses la web solo como diseño. Piénsala como infraestructura de comunicación, reputación, servicio y riesgo.
+:::
+
+## Tabla de contenidos del módulo
+
+| Sesión | Tema central | Herramientas | Práctica principal | PSET |
+|---|---|---|---|---|
+| 7 | Internet y nube | HTML, CSS, GitHub Pages | crear y publicar una página simple | sitio mínimo funcional |
+| 8 | Ciberseguridad | checklists, repositorios, documentación | analizar riesgos y controles | informe breve de mitigación |
+
+## Qué debes poder hacer al terminar
+
+Al finalizar este módulo, deberías poder:
+
+1. explicar qué es la web y cómo se publica un sitio sencillo;
+2. distinguir elementos básicos de una página y de la infraestructura que la sostiene;
+3. identificar riesgos de seguridad frecuentes en trabajo jurídico digital;
+4. documentar medidas mínimas de prevención.
+
+## Cómo se conecta con el resto del curso
+
+Este módulo convierte la lógica de procesos y datos en presencia digital y gestión de riesgo. Sobre esa base, el curso puede entrar luego en IA con una mejor comprensión de infraestructura, exposición y control.
+
+::: {.callout-warning}
+## Advertencia útil
+Publicar no es solo subir archivos. Es asumir que la información queda expuesta a personas, sistemas y errores. Esa conciencia importa mucho en derecho.
+:::

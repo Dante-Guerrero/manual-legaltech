@@ -1,0 +1,62 @@
+# Tutorial: Git y GitHub
+
+## ¿Para qué sirve este tutorial?
+
+Git y GitHub son la infraestructura mínima de trabajo del curso. Aquí aprenderás a clonar un repositorio, registrar cambios y sincronizar tu trabajo.
+
+## Qué es cada cosa
+
+- **Git**: sistema de control de versiones.
+- **GitHub**: plataforma para alojar repositorios, colaborar y entregar trabajo.
+
+::: {.callout-important}
+## Regla del curso
+El trabajo del semestre debe dejar rastro verificable: archivos, cambios y entregas en repositorios.
+:::
+
+## Paso 1. Clona un repositorio
+
+```bash
+git clone URL_DEL_REPOSITORIO
+cd NOMBRE_DEL_REPOSITORIO
+```
+
+## Paso 2. Revisa el estado
+
+```bash
+git status
+```
+
+## Paso 3. Haz un cambio y regístralo
+
+```bash
+git add .
+git commit -m "Agrega primer ejercicio"
+```
+
+## Paso 4. Sube el cambio
+
+```bash
+git push
+```
+
+## Buenas prácticas mínimas
+
+- haz commits pequeños;
+- escribe mensajes claros;
+- verifica `git status` antes de cerrar;
+- no trabajes solo en local si la entrega depende del repositorio.
+
+## GitHub en contexto de curso
+
+GitHub sirve aquí para:
+
+- clonar materiales;
+- resolver PSETs;
+- entregar evidencia de trabajo;
+- publicar páginas con GitHub Pages cuando corresponda.
+
+::: {.callout-warning}
+## Error frecuente
+Modificar archivos sin hacer commit ni push. Si tu trabajo no está sincronizado, la entrega puede quedar incompleta o sin evidencia suficiente.
+:::

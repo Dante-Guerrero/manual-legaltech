@@ -1,1 +1,46 @@
 # 🔸 Examen Parcial
+
+## Examen Parcial aplicado
+
+El **Examen Parcial (EP)** evalúa la capacidad del estudiante para integrar lo aprendido durante la primera mitad del curso. No se trata solo de recordar conceptos, sino de aplicarlos a un problema estructurado con criterios claros.
+
+## Modalidad
+
+La modalidad específica será indicada en clase, pero el examen debe mantener un componente práctico. Puede incluir:
+
+- análisis de un caso;
+- modelado de un proceso;
+- resolución de un ejercicio con Python;
+- organización y explicación de información jurídica;
+- entrega de evidencia en repositorio.
+
+::: {.callout-note}
+## Sentido del examen
+El parcial busca medir si el estudiante ya puede pasar de conceptos básicos a una solución razonada, reproducible y mínimamente documentada.
+:::
+
+## Qué se espera del estudiante
+
+Se espera que el estudiante pueda:
+
+- leer un problema con atención;
+- identificar sus componentes jurídicos y técnicos;
+- proponer una solución estructurada;
+- justificar decisiones de forma breve y clara.
+
+## Criterios de calidad
+
+Se valorará:
+
+- claridad del razonamiento;
+- coherencia entre problema y solución;
+- uso correcto de herramientas vistas en clase;
+- orden del entregable;
+- capacidad de explicar límites o supuestos.
+
+## Errores frecuentes
+
+- responder de forma demasiado abstracta;
+- no dejar evidencia suficiente del proceso;
+- olvidar el componente práctico;
+- entregar una solución desordenada o difícil de seguir.

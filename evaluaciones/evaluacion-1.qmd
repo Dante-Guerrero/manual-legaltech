@@ -1,1 +1,50 @@
 # 🔹 Evaluación Continua 1
+
+## Problem Set de lógica y Python para juristas
+
+La **Evaluación Continua 1 (EC1)** consiste en la entrega de un **PSET individual** desarrollado en repositorio de GitHub. Esta evaluación recoge lo trabajado en el Módulo I: pensamiento computacional, pseudocódigo y primeros ejercicios de Python aplicados a problemas jurídicos.
+
+::: {.callout-important}
+## Producto esperado
+El estudiante debe entregar un repositorio o carpeta de trabajo versionada que contenga soluciones funcionales, legibles y explicadas brevemente.
+:::
+
+## Objetivo de la evaluación
+
+Esta actividad busca comprobar que el estudiante puede:
+
+- traducir un problema jurídico a pasos verificables;
+- implementar lógica básica en Python;
+- registrar trabajo con Git y GitHub;
+- explicar brevemente la solución construida.
+
+## Entregable
+
+La EC1 debe incluir, como mínimo:
+
+- archivos de código o pseudocódigo solicitados;
+- un `README` breve con explicación del problema y la solución;
+- commits verificables;
+- enlace al repositorio o mecanismo de entrega indicado por el docente.
+
+## Criterios de evaluación
+
+Se valorará especialmente:
+
+- claridad de la lógica;
+- funcionamiento básico del código;
+- relación entre el problema jurídico y la solución propuesta;
+- orden del repositorio;
+- trazabilidad mínima del trabajo.
+
+::: {.callout-warning}
+## Errores frecuentes
+- entregar archivos sin explicación;
+- subir trabajo sin commits claros;
+- copiar soluciones sin adaptarlas ni comprenderlas;
+- resolver solo la parte técnica y olvidar el sentido jurídico del ejercicio.
+:::
+
+## ¿Qué demuestra esta evaluación?
+
+Demuestra que el estudiante ya puede pasar de la explicación teórica a una práctica concreta y versionada, que es una de las bases metodológicas del curso.

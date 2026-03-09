@@ -1,0 +1,35 @@
+# Tutorial: GitHub Pages
+
+## ¿Para qué sirve este tutorial?
+
+GitHub Pages permite publicar sitios estáticos directamente desde un repositorio. En este curso resulta especialmente útil para la evaluación de página web personal.
+
+## Qué necesitas antes
+
+- una cuenta en GitHub;
+- un repositorio con archivos HTML, CSS y, si hace falta, JavaScript;
+- cambios correctamente sincronizados.
+
+## Flujo general
+
+1. crea o identifica tu repositorio;
+2. sube los archivos del sitio;
+3. activa GitHub Pages desde la configuración del repositorio;
+4. verifica la URL pública;
+5. revisa que el sitio cargue bien.
+
+::: {.callout-important}
+## Evidencia mínima
+No basta con tener el repositorio. Debe existir un enlace público funcional al sitio publicado.
+:::
+
+## Qué revisar si no publica bien
+
+- que el archivo principal sea `index.html`;
+- que las rutas a CSS, imágenes o scripts estén bien escritas;
+- que los cambios estén realmente sincronizados;
+- que la configuración de Pages apunte a la rama correcta.
+
+## Recomendación final
+
+Publica temprano y corrige después. Esperar al último momento suele convertir errores pequeños en bloqueos innecesarios.

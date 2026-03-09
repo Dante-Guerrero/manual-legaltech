@@ -1,0 +1,42 @@
+# Tutorial: Licencias y reutilización responsable
+
+## ¿Para qué sirve este tutorial?
+
+Cuando trabajas con repositorios, código o recursos ajenos, no basta con que algo sea público. También importa bajo qué licencia se comparte y qué permite hacer esa licencia.
+
+## Ideas básicas
+
+- **software propietario**: su uso, copia o modificación suele estar más restringido;
+- **software libre / open source**: puede permitir uso, copia o modificación bajo ciertas condiciones;
+- **licencia**: define qué se puede hacer y bajo qué reglas.
+
+::: {.callout-note}
+## Regla simple
+Que un repositorio sea visible no significa automáticamente que puedas reutilizarlo de cualquier manera.
+:::
+
+## Qué conviene revisar en un repositorio
+
+- si tiene archivo `LICENSE`;
+- qué tipo de licencia usa;
+- si exige atribución;
+- si impone compartir cambios bajo la misma licencia;
+- si limita usos específicos.
+
+## ¿Por qué esto importa a un jurista?
+
+Porque la reutilización tecnológica también tiene dimensión jurídica: cumplimiento, permisos, trazabilidad y responsabilidad.
+
+## Aplicación práctica
+
+Cuando uses recursos ajenos para una práctica o proyecto:
+
+1. identifica la fuente;
+2. revisa la licencia;
+3. documenta qué reutilizaste;
+4. evita copiar sin criterio.
+
+::: {.callout-tip}
+## Lo relevante en este curso
+No se espera una teoría exhaustiva de licencias. Se espera una cultura mínima de reutilización responsable.
+:::

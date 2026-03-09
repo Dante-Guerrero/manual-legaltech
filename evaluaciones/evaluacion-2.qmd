@@ -93,7 +93,13 @@ Evita estos errores frecuentes:
 
 ## Entrega
 
-La evidencia de esta evaluación consiste en el **enlace público de GitHub Pages** y, de ser solicitado en clase, el enlace al repositorio correspondiente. La entrega deberá realizarse conforme a las indicaciones dadas por el docente en el Aula Virtual o en sesión.
+La evidencia de esta evaluación consiste en:
+
+- el **enlace público de GitHub Pages**;
+- el **enlace al repositorio de GitHub** donde vive el sitio;
+- y, si se solicita, una breve explicación de la estructura del proyecto.
+
+La entrega deberá realizarse conforme a las indicaciones dadas por el docente en el Aula Virtual o en sesión.
 
 ## ¿Qué demuestra esta evaluación?
 

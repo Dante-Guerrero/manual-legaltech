@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Sesión 7 – Legal Tech, Manual del Curso</title>
+<title>7. El internet y la nube – Legal Tech, Manual del Curso</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -22,6 +22,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -86,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-3-modulo-3/00-presentacion.html">III. Web, nube y seguridad para el sector legal</a></li><li class="breadcrumb-item"><a href="../parte-3-modulo-3/07-capitulo.html"><span class="chapter-title">Sesión 7</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-3-modulo-3/00-presentacion.html">III. Web, nube y seguridad para el sector legal</a></li><li class="breadcrumb-item"><a href="../parte-3-modulo-3/07-capitulo.html"><span class="chapter-title">7. El internet y la nube</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -147,12 +182,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-1-modulo-1/03-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sesión 3</span></a>
+  <a href="../parte-1-modulo-1/03-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">3. Python para decisiones jurídicas y automatización básica</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-1-modulo-1/04-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sesión 4</span></a>
+  <a href="../parte-1-modulo-1/04-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">4. Python para datos, documentos y flujos jurídicos</span></a>
   </div>
 </li>
       </ul>
@@ -168,12 +203,12 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-2-modulo-2/05-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sesión 5</span></a>
+  <a href="../parte-2-modulo-2/05-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">5. Entender el negocio</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-2-modulo-2/06-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sesión 6</span></a>
+  <a href="../parte-2-modulo-2/06-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">6. Explicar y controlar los resultados</span></a>
   </div>
 </li>
       </ul>
@@ -189,12 +224,12 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-3-modulo-3/07-capitulo.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Sesión 7</span></a>
+  <a href="../parte-3-modulo-3/07-capitulo.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">7. El internet y la nube</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-3-modulo-3/08-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sesión 8</span></a>
+  <a href="../parte-3-modulo-3/08-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">8. Ciberseguridad</span></a>
   </div>
 </li>
       </ul>
@@ -210,30 +245,66 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-4-modulo-4/09-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sesión 9</span></a>
+  <a href="../parte-4-modulo-4/09-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">9. Fundamentos de inteligencia artificial</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-4-modulo-4/10-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sesión 10</span></a>
+  <a href="../parte-4-modulo-4/10-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">10. Evaluar, gobernar e integrar IA en contextos jurídicos</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-4-modulo-4/11-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sesión 11</span></a>
+  <a href="../parte-4-modulo-4/11-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">11. Ejemplos de proyectos Legal Tech</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
- <span class="menu-text">Evaluaciones</span></a>
+            <a href="../tutoriales/00-presentacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tutoriales</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tutoriales/instalar-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Instalar Python</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tutoriales/visual-studio-code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Visual Studio Code</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tutoriales/git-y-github.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Git y GitHub</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tutoriales/licencias-y-reutilizacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Licencias y reutilización responsable</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tutoriales/github-pages.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: GitHub Pages</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Evaluaciones</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../evaluaciones/evaluacion-1.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">🔹 Evaluación Continua 1</span></a>
@@ -271,15 +342,37 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#por-qué-importa-este-tema" id="toc-por-qué-importa-este-tema" class="nav-link active" data-scroll-target="#por-qué-importa-este-tema">¿Por qué importa este tema?</a></li>
+  <li><a href="#qué-aprenderás-en-esta-sesión" id="toc-qué-aprenderás-en-esta-sesión" class="nav-link" data-scroll-target="#qué-aprenderás-en-esta-sesión">Qué aprenderás en esta sesión</a></li>
+  <li><a href="#internet-no-es-lo-mismo-que-la-web" id="toc-internet-no-es-lo-mismo-que-la-web" class="nav-link" data-scroll-target="#internet-no-es-lo-mismo-que-la-web">Internet no es lo mismo que la web</a></li>
+  <li><a href="#qué-tiene-que-ver-esto-con-el-derecho" id="toc-qué-tiene-que-ver-esto-con-el-derecho" class="nav-link" data-scroll-target="#qué-tiene-que-ver-esto-con-el-derecho">¿Qué tiene que ver esto con el derecho?</a></li>
+  <li><a href="#estructura-mínima-de-una-página-web" id="toc-estructura-mínima-de-una-página-web" class="nav-link" data-scroll-target="#estructura-mínima-de-una-página-web">Estructura mínima de una página web</a></li>
+  <li><a href="#un-ejemplo-muy-básico-con-html" id="toc-un-ejemplo-muy-básico-con-html" class="nav-link" data-scroll-target="#un-ejemplo-muy-básico-con-html">Un ejemplo muy básico con HTML</a></li>
+  <li><a href="#qué-hace-css-en-este-contexto" id="toc-qué-hace-css-en-este-contexto" class="nav-link" data-scroll-target="#qué-hace-css-en-este-contexto">Qué hace CSS en este contexto</a></li>
+  <li><a href="#páginas-estáticas-y-dinámicas" id="toc-páginas-estáticas-y-dinámicas" class="nav-link" data-scroll-target="#páginas-estáticas-y-dinámicas">Páginas estáticas y dinámicas</a></li>
+  <li><a href="#la-nube-en-términos-simples" id="toc-la-nube-en-términos-simples" class="nav-link" data-scroll-target="#la-nube-en-términos-simples">La nube, en términos simples</a></li>
+  <li><a href="#ejemplo-jurídico" id="toc-ejemplo-jurídico" class="nav-link" data-scroll-target="#ejemplo-jurídico">Ejemplo jurídico</a></li>
+  <li><a href="#github-pages-como-herramienta-pedagógica" id="toc-github-pages-como-herramienta-pedagógica" class="nav-link" data-scroll-target="#github-pages-como-herramienta-pedagógica">GitHub Pages como herramienta pedagógica</a></li>
+  <li><a href="#qué-se-gana-al-publicar-algo-propio" id="toc-qué-se-gana-al-publicar-algo-propio" class="nav-link" data-scroll-target="#qué-se-gana-al-publicar-algo-propio">Qué se gana al publicar algo propio</a></li>
+  <li><a href="#práctica-en-editor" id="toc-práctica-en-editor" class="nav-link" data-scroll-target="#práctica-en-editor">Práctica en editor</a></li>
+  <li><a href="#git-y-github" id="toc-git-y-github" class="nav-link" data-scroll-target="#git-y-github">Git y GitHub</a></li>
+  <li><a href="#pset-de-la-sesión" id="toc-pset-de-la-sesión" class="nav-link" data-scroll-target="#pset-de-la-sesión">PSET de la sesión</a></li>
+  <li><a href="#preguntas-de-repaso" id="toc-preguntas-de-repaso" class="nav-link" data-scroll-target="#preguntas-de-repaso">Preguntas de repaso</a></li>
+  <li><a href="#ideas-clave" id="toc-ideas-clave" class="nav-link" data-scroll-target="#ideas-clave">Ideas clave</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-3-modulo-3/00-presentacion.html">III. Web, nube y seguridad para el sector legal</a></li><li class="breadcrumb-item"><a href="../parte-3-modulo-3/07-capitulo.html"><span class="chapter-title">Sesión 7</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-3-modulo-3/00-presentacion.html">III. Web, nube y seguridad para el sector legal</a></li><li class="breadcrumb-item"><a href="../parte-3-modulo-3/07-capitulo.html"><span class="chapter-title">7. El internet y la nube</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Sesión 7</span></h1>
+<h1 class="title"><span class="chapter-title">7. El internet y la nube</span></h1>
 </div>
 
 
@@ -296,8 +389,249 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="por-qué-importa-este-tema" class="level2">
+<h2 class="anchored" data-anchor-id="por-qué-importa-este-tema">¿Por qué importa este tema?</h2>
+<p>Muchos servicios jurídicos actuales se prestan, difunden o documentan a través de la web. Entender qué es una página, cómo se publica y qué significa alojarla en infraestructura externa ayuda a leer mejor el entorno digital donde opera el derecho.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Idea central
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>La web no es solo un espacio de diseño. Es una estructura técnica donde se publica información, se construye reputación, se prestan servicios y se exponen riesgos.</p>
+</div>
+</div>
+</section>
+<section id="qué-aprenderás-en-esta-sesión" class="level2">
+<h2 class="anchored" data-anchor-id="qué-aprenderás-en-esta-sesión">Qué aprenderás en esta sesión</h2>
+<p>Al finalizar esta sesión, deberías poder:</p>
+<ul>
+<li>distinguir entre internet, web, servidor, dominio y hosting;</li>
+<li>entender la estructura mínima de una página;</li>
+<li>diferenciar páginas estáticas y dinámicas;</li>
+<li>crear una página simple con HTML y CSS;</li>
+<li>preparar o publicar un sitio usando GitHub Pages.</li>
+</ul>
+</section>
+<section id="internet-no-es-lo-mismo-que-la-web" class="level2">
+<h2 class="anchored" data-anchor-id="internet-no-es-lo-mismo-que-la-web">Internet no es lo mismo que la web</h2>
+<p>En conversación cotidiana solemos usar ambas palabras como si fueran sinónimos, pero no lo son.</p>
+<ul>
+<li><strong>internet</strong>: la red de redes, la infraestructura general de comunicación;</li>
+<li><strong>web</strong>: uno de los servicios que funciona sobre internet;</li>
+<li><strong>navegador</strong>: el programa que usamos para acceder a páginas;</li>
+<li><strong>servidor</strong>: la máquina o servicio donde vive el contenido;</li>
+<li><strong>dominio</strong>: la dirección legible que usamos para encontrarlo;</li>
+<li><strong>hosting</strong>: el lugar donde el sitio está alojado.</li>
+</ul>
+<p>Esta distinción importa porque ayuda a entender que publicar contenido no es un acto abstracto. Implica infraestructura, acceso, exposición y mantenimiento.</p>
+</section>
+<section id="qué-tiene-que-ver-esto-con-el-derecho" class="level2">
+<h2 class="anchored" data-anchor-id="qué-tiene-que-ver-esto-con-el-derecho">¿Qué tiene que ver esto con el derecho?</h2>
+<p>Muchísimo más de lo que parece. Hoy buena parte de la actividad jurídica circula por sitios web, plataformas o servicios en línea:</p>
+<ul>
+<li>páginas institucionales;</li>
+<li>formularios de atención;</li>
+<li>publicaciones regulatorias;</li>
+<li>portales de transparencia;</li>
+<li>sistemas de consulta de expedientes;</li>
+<li>páginas profesionales de estudios o abogados.</li>
+</ul>
+<p>Por eso, aunque una persona no se dedique a desarrollar software, sí le conviene entender qué significa que algo esté “en la web”.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Idea útil
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Comprender la web no convierte a un jurista en ingeniero. Pero sí evita que dependa completamente de explicaciones ajenas para entender cómo se publica, circula o expone información.</p>
+</div>
+</div>
+</section>
+<section id="estructura-mínima-de-una-página-web" class="level2">
+<h2 class="anchored" data-anchor-id="estructura-mínima-de-una-página-web">Estructura mínima de una página web</h2>
+<p>Una página simple suele combinar tres capas:</p>
+<ul>
+<li><strong>HTML</strong>: estructura del contenido;</li>
+<li><strong>CSS</strong>: apariencia y estilo;</li>
+<li><strong>JavaScript</strong>: comportamiento o interacción cuando hace falta.</li>
+</ul>
+<p>HTML dice qué cosa es cada parte:</p>
+<ul>
+<li>un título;</li>
+<li>un párrafo;</li>
+<li>una lista;</li>
+<li>un enlace;</li>
+<li>una imagen.</li>
+</ul>
+<p>CSS define cómo se ve:</p>
+<ul>
+<li>colores;</li>
+<li>márgenes;</li>
+<li>tipografía;</li>
+<li>disposición.</li>
+</ul>
+<p>JavaScript permite comportamiento dinámico, aunque en una sesión introductoria puede mantenerse al mínimo.</p>
+</section>
+<section id="un-ejemplo-muy-básico-con-html" class="level2">
+<h2 class="anchored" data-anchor-id="un-ejemplo-muy-básico-con-html">Un ejemplo muy básico con HTML</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE</span> html<span class="dt">&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">html</span><span class="ot"> lang</span><span class="op">=</span><span class="st">"es"</span><span class="dt">&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">meta</span><span class="ot"> charset</span><span class="op">=</span><span class="st">"UTF-8"</span><span class="dt">&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">title</span><span class="dt">&gt;</span>Perfil Legal Tech<span class="dt">&lt;/</span><span class="kw">title</span><span class="dt">&gt;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">h1</span><span class="dt">&gt;</span>Ana Perez<span class="dt">&lt;/</span><span class="kw">h1</span><span class="dt">&gt;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>Estudiante de Derecho interesada en tecnologia y regulacion.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">"https://github.com/"</span><span class="dt">&gt;</span>Mi GitHub<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Este archivo ya es, en sentido estricto, una página web muy simple.</p>
+</section>
+<section id="qué-hace-css-en-este-contexto" class="level2">
+<h2 class="anchored" data-anchor-id="qué-hace-css-en-este-contexto">Qué hace CSS en este contexto</h2>
+<p>Si agregamos CSS, la página puede verse más legible y ordenada:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>body {</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">font-family</span><span class="ch">:</span> <span class="dv">Georgia</span><span class="op">,</span> <span class="dv">serif</span><span class="op">;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">max-width</span><span class="ch">:</span> <span class="dv">720</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">margin</span><span class="ch">:</span> <span class="dv">2</span><span class="dt">rem</span> <span class="bu">auto</span><span class="op">;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">line-height</span><span class="ch">:</span> <span class="dv">1.6</span><span class="op">;</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>h1 {</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="kw">color</span><span class="ch">:</span> <span class="cn">#1f3c88</span><span class="op">;</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>No hace falta buscar complejidad visual de inmediato. Una página sobria, clara y profesional suele ser mucho más útil para el curso.</p>
+</section>
+<section id="páginas-estáticas-y-dinámicas" class="level2">
+<h2 class="anchored" data-anchor-id="páginas-estáticas-y-dinámicas">Páginas estáticas y dinámicas</h2>
+<p>También conviene distinguir dos ideas:</p>
+<ul>
+<li><strong>página estática</strong>: su contenido se sirve tal como fue escrito en archivos;</li>
+<li><strong>página dinámica</strong>: su contenido puede construirse o cambiar en tiempo real según base de datos, usuario u otras condiciones.</li>
+</ul>
+<p>Para este curso, una página estática es ideal como punto de partida porque:</p>
+<ul>
+<li>obliga a entender estructura;</li>
+<li>es fácil de publicar;</li>
+<li>se integra muy bien con GitHub;</li>
+<li>permite concentrarse en conceptos fundamentales sin complejidad innecesaria.</li>
+</ul>
+</section>
+<section id="la-nube-en-términos-simples" class="level2">
+<h2 class="anchored" data-anchor-id="la-nube-en-términos-simples">La nube, en términos simples</h2>
+<p>Cuando hablamos de “nube”, muchas veces nos referimos a servicios que corren en infraestructura remota accesible por internet. No es magia: son servidores, almacenamiento, servicios y aplicaciones que no viven necesariamente en tu computadora personal.</p>
+<p>En términos pedagógicos, basta con entender que:</p>
+<ul>
+<li>publicar un sitio suele implicar usar infraestructura ajena;</li>
+<li>guardar archivos en plataformas también implica confiar en servicios remotos;</li>
+<li>trabajar en la nube supone considerar acceso, disponibilidad y seguridad.</li>
+</ul>
+</section>
+<section id="ejemplo-jurídico" class="level2">
+<h2 class="anchored" data-anchor-id="ejemplo-jurídico">Ejemplo jurídico</h2>
+<p>Para un estudiante o profesional del derecho, una página simple puede servir para:</p>
+<ul>
+<li>presentar perfil académico o profesional;</li>
+<li>publicar un comentario breve;</li>
+<li>organizar un portafolio de trabajos;</li>
+<li>difundir contenido jurídico con estructura clara;</li>
+<li>construir una primera presencia digital seria.</li>
+</ul>
+<p>Eso no es trivial. La web también es parte del entorno reputacional y profesional.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Criterio útil
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Una buena página para este curso no necesita ser compleja. Necesita ser clara, legible, propia y públicamente accesible.</p>
+</div>
+</div>
+</section>
+<section id="github-pages-como-herramienta-pedagógica" class="level2">
+<h2 class="anchored" data-anchor-id="github-pages-como-herramienta-pedagógica">GitHub Pages como herramienta pedagógica</h2>
+<p>GitHub Pages resulta especialmente útil porque conecta varias cosas a la vez:</p>
+<ul>
+<li>repositorio;</li>
+<li>control de versiones;</li>
+<li>publicación;</li>
+<li>evidencia de trabajo.</li>
+</ul>
+<p>Eso lo vuelve ideal para el curso, ya que permite que el producto final no quede separado del proceso que lo produjo.</p>
+<p>En otras palabras: el mismo ecosistema donde editas y versionas puede servir también para publicar.</p>
+</section>
+<section id="qué-se-gana-al-publicar-algo-propio" class="level2">
+<h2 class="anchored" data-anchor-id="qué-se-gana-al-publicar-algo-propio">Qué se gana al publicar algo propio</h2>
+<p>Publicar una página simple deja ver varias competencias al mismo tiempo:</p>
+<ul>
+<li>organización de contenido;</li>
+<li>escritura con propósito;</li>
+<li>estructura básica de HTML;</li>
+<li>uso de repositorio;</li>
+<li>comprensión elemental de infraestructura web.</li>
+</ul>
+<p>No se trata de formar diseñadores web en una sesión. Se trata de que el estudiante entienda cómo funciona una publicación digital básica y la use con sentido profesional.</p>
+</section>
+<section id="práctica-en-editor" class="level2">
+<h2 class="anchored" data-anchor-id="práctica-en-editor">Práctica en editor</h2>
+<p>Crea una página mínima con:</p>
+<ul>
+<li>un título;</li>
+<li>una breve presentación;</li>
+<li>una sección sobre intereses o experiencia;</li>
+<li>un enlace;</li>
+<li>un archivo HTML y, si es posible, un archivo CSS separado.</li>
+</ul>
+</section>
+<section id="git-y-github" class="level2">
+<h2 class="anchored" data-anchor-id="git-y-github">Git y GitHub</h2>
+<p>Sube los archivos al repositorio y deja preparado el sitio para publicación con GitHub Pages. Si aún no lo publicas, al menos deja clara la estructura del proyecto y la ruta de trabajo.</p>
+</section>
+<section id="pset-de-la-sesión" class="level2">
+<h2 class="anchored" data-anchor-id="pset-de-la-sesión">PSET de la sesión</h2>
+<p>Construye una página funcional mínima vinculada con tu identidad académica o profesional. Debe incluir:</p>
+<ul>
+<li>estructura clara;</li>
+<li>texto propio;</li>
+<li>archivos versionados en el repositorio;</li>
+<li>una breve explicación de qué contiene y para qué sirve.</li>
+</ul>
+<p>Si ya tienes el tutorial revisado, intenta publicarla.</p>
+</section>
+<section id="preguntas-de-repaso" class="level2">
+<h2 class="anchored" data-anchor-id="preguntas-de-repaso">Preguntas de repaso</h2>
+<ol type="1">
+<li>¿Qué diferencia hay entre internet y web?</li>
+<li>¿Qué función cumple HTML y qué función cumple CSS?</li>
+<li>¿Qué distingue una página estática de una dinámica?</li>
+<li>¿Por qué GitHub Pages es útil en este curso?</li>
+</ol>
+</section>
+<section id="ideas-clave" class="level2">
+<h2 class="anchored" data-anchor-id="ideas-clave">Ideas clave</h2>
+<ul>
+<li>publicar en la web es una competencia básica, no una extravagancia;</li>
+<li>una página sencilla y clara vale más que una compleja y desordenada;</li>
+<li>entender la infraestructura ayuda a comprender mejor la exposición de la información;</li>
+<li>GitHub Pages vincula publicación y trazabilidad.</li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -707,8 +1041,8 @@ ul.task-list li input[type="checkbox"] {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../parte-3-modulo-3/08-capitulo.html" class="pagination-link" aria-label="Sesión 8">
-        <span class="nav-page-text"><span class="chapter-title">Sesión 8</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../parte-3-modulo-3/08-capitulo.html" class="pagination-link" aria-label="8. Ciberseguridad">
+        <span class="nav-page-text"><span class="chapter-title">8. Ciberseguridad</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
