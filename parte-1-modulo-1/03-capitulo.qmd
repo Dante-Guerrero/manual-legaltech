@@ -34,6 +34,28 @@ La práctica jurídica suele exigir verificar varios requisitos a la vez:
 
 Eso significa que ya no basta con una condición aislada. Necesitamos una estructura un poco más rica.
 
+## Un primer puente desde la sesión anterior
+
+En la sesión anterior vimos ejemplos simples de variables, condicionales y funciones. Un paso intermedio razonable consiste en modelar una revisión muy básica:
+
+- tiene firma;
+- tiene documento de identidad;
+- tiene pago de tasa.
+
+Podemos expresarlo así:
+
+```python
+def evaluar_solicitud(tiene_firma, tiene_dni, tiene_pago):
+    if tiene_firma and tiene_dni and tiene_pago:
+        return "Solicitud admisible"
+    return "Solicitud observada"
+
+resultado = evaluar_solicitud(True, True, False)
+print(resultado)
+```
+
+Este ejemplo todavía es simple, pero cumple una función importante: mostrar cómo varias condiciones pueden combinarse para producir una clasificación preliminar.
+
 ## Un primer modelo: admisibilidad preliminar
 
 Supón que una solicitud solo puede pasar a revisión si cumple tres requisitos:

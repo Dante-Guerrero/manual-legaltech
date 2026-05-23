@@ -357,6 +357,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <li><a href="#por-qué-importa-este-tema" id="toc-por-qué-importa-este-tema" class="nav-link active" data-scroll-target="#por-qué-importa-este-tema">¿Por qué importa este tema?</a></li>
   <li><a href="#qué-aprenderás-en-esta-sesión" id="toc-qué-aprenderás-en-esta-sesión" class="nav-link" data-scroll-target="#qué-aprenderás-en-esta-sesión">Qué aprenderás en esta sesión</a></li>
   <li><a href="#del-ejemplo-simple-al-problema-realista" id="toc-del-ejemplo-simple-al-problema-realista" class="nav-link" data-scroll-target="#del-ejemplo-simple-al-problema-realista">Del ejemplo simple al problema realista</a></li>
+  <li><a href="#un-primer-puente-desde-la-sesión-anterior" id="toc-un-primer-puente-desde-la-sesión-anterior" class="nav-link" data-scroll-target="#un-primer-puente-desde-la-sesión-anterior">Un primer puente desde la sesión anterior</a></li>
   <li><a href="#un-primer-modelo-admisibilidad-preliminar" id="toc-un-primer-modelo-admisibilidad-preliminar" class="nav-link" data-scroll-target="#un-primer-modelo-admisibilidad-preliminar">Un primer modelo: admisibilidad preliminar</a></li>
   <li><a href="#mejorar-la-lógica-devolver-razones" id="toc-mejorar-la-lógica-devolver-razones" class="nav-link" data-scroll-target="#mejorar-la-lógica-devolver-razones">Mejorar la lógica: devolver razones</a></li>
   <li><a href="#encadenar-condiciones-sin-perder-claridad" id="toc-encadenar-condiciones-sin-perder-claridad" class="nav-link" data-scroll-target="#encadenar-condiciones-sin-perder-claridad">Encadenar condiciones sin perder claridad</a></li>
@@ -439,6 +440,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </ul>
 <p>Eso significa que ya no basta con una condición aislada. Necesitamos una estructura un poco más rica.</p>
 </section>
+<section id="un-primer-puente-desde-la-sesión-anterior" class="level2">
+<h2 class="anchored" data-anchor-id="un-primer-puente-desde-la-sesión-anterior">Un primer puente desde la sesión anterior</h2>
+<p>En la sesión anterior vimos ejemplos simples de variables, condicionales y funciones. Un paso intermedio razonable consiste en modelar una revisión muy básica:</p>
+<ul>
+<li>tiene firma;</li>
+<li>tiene documento de identidad;</li>
+<li>tiene pago de tasa.</li>
+</ul>
+<p>Podemos expresarlo así:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> evaluar_solicitud(tiene_firma, tiene_dni, tiene_pago):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> tiene_firma <span class="kw">and</span> tiene_dni <span class="kw">and</span> tiene_pago:</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"Solicitud admisible"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">"Solicitud observada"</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>resultado <span class="op">=</span> evaluar_solicitud(<span class="va">True</span>, <span class="va">True</span>, <span class="va">False</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(resultado)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Este ejemplo todavía es simple, pero cumple una función importante: mostrar cómo varias condiciones pueden combinarse para producir una clasificación preliminar.</p>
+</section>
 <section id="un-primer-modelo-admisibilidad-preliminar" class="level2">
 <h2 class="anchored" data-anchor-id="un-primer-modelo-admisibilidad-preliminar">Un primer modelo: admisibilidad preliminar</h2>
 <p>Supón que una solicitud solo puede pasar a revisión si cumple tres requisitos:</p>
@@ -448,33 +467,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li>presentación dentro del plazo.</li>
 </ul>
 <p>Podemos empezar así:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> evaluar_solicitud(pago_tasa, firma, plazo_vigente):</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> pago_tasa <span class="kw">and</span> firma <span class="kw">and</span> plazo_vigente:</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"Solicitud admisible"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">"Solicitud con observaciones"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> evaluar_solicitud(pago_tasa, firma, plazo_vigente):</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> pago_tasa <span class="kw">and</span> firma <span class="kw">and</span> plazo_vigente:</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"Solicitud admisible"</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">"Solicitud con observaciones"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Esta función es útil, pero todavía es bastante rígida. Solo devuelve dos resultados y no explica por qué observa la solicitud.</p>
 </section>
 <section id="mejorar-la-lógica-devolver-razones" class="level2">
 <h2 class="anchored" data-anchor-id="mejorar-la-lógica-devolver-razones">Mejorar la lógica: devolver razones</h2>
 <p>En muchos contextos jurídicos no basta con saber si algo pasa o no pasa. También importa saber <strong>por qué</strong>.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> revisar_solicitud(pago_tasa, firma, plazo_vigente):</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    observaciones <span class="op">=</span> []</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> pago_tasa:</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        observaciones.append(<span class="st">"Falta pago de tasa"</span>)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> firma:</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        observaciones.append(<span class="st">"Falta firma"</span>)</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> plazo_vigente:</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>        observaciones.append(<span class="st">"Presentacion fuera de plazo"</span>)</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">len</span>(observaciones) <span class="op">==</span> <span class="dv">0</span>:</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"Solicitud admisible"</span>, observaciones</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">"Solicitud observada"</span>, observaciones</span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>estado, motivos <span class="op">=</span> revisar_solicitud(<span class="va">True</span>, <span class="va">False</span>, <span class="va">False</span>)</span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(estado)</span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(motivos)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> revisar_solicitud(pago_tasa, firma, plazo_vigente):</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    observaciones <span class="op">=</span> []</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> pago_tasa:</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>        observaciones.append(<span class="st">"Falta pago de tasa"</span>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> firma:</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>        observaciones.append(<span class="st">"Falta firma"</span>)</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> plazo_vigente:</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>        observaciones.append(<span class="st">"Presentacion fuera de plazo"</span>)</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">len</span>(observaciones) <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"Solicitud admisible"</span>, observaciones</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">"Solicitud observada"</span>, observaciones</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>estado, motivos <span class="op">=</span> revisar_solicitud(<span class="va">True</span>, <span class="va">False</span>, <span class="va">False</span>)</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(estado)</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(motivos)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Ahora el programa hace algo más cercano a una revisión preliminar: clasifica y además deja rastro de las observaciones.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -494,15 +513,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <h2 class="anchored" data-anchor-id="encadenar-condiciones-sin-perder-claridad">Encadenar condiciones sin perder claridad</h2>
 <p>Uno de los riesgos al empezar a programar reglas es escribir condiciones tan largas que terminan siendo difíciles de leer. Por eso conviene dividir la lógica en pasos o funciones.</p>
 <p>Un mal hábito sería este:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> tiene_firma <span class="kw">and</span> tiene_dni <span class="kw">and</span> tiene_pago <span class="kw">and</span> plazo_vigente <span class="kw">and</span> <span class="kw">not</span> tiene_impedimento:</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Procede"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> tiene_firma <span class="kw">and</span> tiene_dni <span class="kw">and</span> tiene_pago <span class="kw">and</span> plazo_vigente <span class="kw">and</span> <span class="kw">not</span> tiene_impedimento:</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Procede"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>No es incorrecto, pero escala mal si el problema crece.</p>
 <p>Una alternativa más ordenada:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> requisitos_basicos_ok(tiene_firma, tiene_dni, tiene_pago):</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> tiene_firma <span class="kw">and</span> tiene_dni <span class="kw">and</span> tiene_pago</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> puede_continuar_revision(requisitos_ok, plazo_vigente, tiene_impedimento):</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> requisitos_ok <span class="kw">and</span> plazo_vigente <span class="kw">and</span> <span class="kw">not</span> tiene_impedimento</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> requisitos_basicos_ok(tiene_firma, tiene_dni, tiene_pago):</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> tiene_firma <span class="kw">and</span> tiene_dni <span class="kw">and</span> tiene_pago</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> puede_continuar_revision(requisitos_ok, plazo_vigente, tiene_impedimento):</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> requisitos_ok <span class="kw">and</span> plazo_vigente <span class="kw">and</span> <span class="kw">not</span> tiene_impedimento</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>La ventaja no es solo estética. Es metodológica: la lógica queda más legible, más testeable y más fácil de explicar.</p>
 </section>
 <section id="ejemplo-jurídico-1-elegibilidad-para-un-beneficio" class="level2">
@@ -514,20 +533,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li>debe haber presentado documentos mínimos;</li>
 <li>si vive en zona priorizada, obtiene prioridad.</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> evaluar_beneficio(edad, sancion_vigente, documentos_completos, zona_priorizada):</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> edad <span class="op">&lt;</span> <span class="dv">18</span>:</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"No elegible"</span>, <span class="st">"Menor de edad"</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> sancion_vigente:</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"No elegible"</span>, <span class="st">"Sancion vigente"</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> documentos_completos:</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"Observado"</span>, <span class="st">"Documentos incompletos"</span></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> zona_priorizada:</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"Elegible con prioridad"</span>, <span class="st">"Cumple requisitos y tiene prioridad"</span></span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">"Elegible"</span>, <span class="st">"Cumple requisitos"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> evaluar_beneficio(edad, sancion_vigente, documentos_completos, zona_priorizada):</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> edad <span class="op">&lt;</span> <span class="dv">18</span>:</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"No elegible"</span>, <span class="st">"Menor de edad"</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> sancion_vigente:</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"No elegible"</span>, <span class="st">"Sancion vigente"</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> documentos_completos:</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"Observado"</span>, <span class="st">"Documentos incompletos"</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> zona_priorizada:</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"Elegible con prioridad"</span>, <span class="st">"Cumple requisitos y tiene prioridad"</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">"Elegible"</span>, <span class="st">"Cumple requisitos"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Este ejemplo no pretende reemplazar una regulación real. Sirve para mostrar cómo puede ordenarse una lógica de decisión.</p>
 </section>
 <section id="ejemplo-jurídico-2-cálculo-de-multa-con-reglas-adicionales" class="level2">
@@ -539,19 +558,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li>un recargo si hubo reincidencia;</li>
 <li>una reducción si hubo subsanación voluntaria temprana.</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calcular_multa(dias_retraso, reincidencia, subsanacion_temprana):</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    multa <span class="op">=</span> dias_retraso <span class="op">*</span> <span class="dv">50</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> reincidencia:</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>        multa <span class="op">=</span> multa <span class="op">*</span> <span class="fl">1.25</span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> subsanacion_temprana:</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>        multa <span class="op">=</span> multa <span class="op">*</span> <span class="fl">0.80</span></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> multa <span class="op">&gt;</span> <span class="dv">3000</span>:</span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>        multa <span class="op">=</span> <span class="dv">3000</span></span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> multa</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calcular_multa(dias_retraso, reincidencia, subsanacion_temprana):</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    multa <span class="op">=</span> dias_retraso <span class="op">*</span> <span class="dv">50</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> reincidencia:</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>        multa <span class="op">=</span> multa <span class="op">*</span> <span class="fl">1.25</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> subsanacion_temprana:</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>        multa <span class="op">=</span> multa <span class="op">*</span> <span class="fl">0.80</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> multa <span class="op">&gt;</span> <span class="dv">3000</span>:</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>        multa <span class="op">=</span> <span class="dv">3000</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> multa</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Aquí aparecen varias ideas importantes:</p>
 <ul>
 <li>el orden de las reglas puede importar;</li>
@@ -563,19 +582,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <section id="probar-escenarios" class="level2">
 <h2 class="anchored" data-anchor-id="probar-escenarios">Probar escenarios</h2>
 <p>Cuando un script representa decisiones, conviene ensayarlo con diferentes entradas. Por ejemplo:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>casos <span class="op">=</span> [</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"dias"</span>: <span class="dv">10</span>, <span class="st">"reincidencia"</span>: <span class="va">False</span>, <span class="st">"subsanacion"</span>: <span class="va">False</span>},</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"dias"</span>: <span class="dv">40</span>, <span class="st">"reincidencia"</span>: <span class="va">True</span>, <span class="st">"subsanacion"</span>: <span class="va">False</span>},</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"dias"</span>: <span class="dv">20</span>, <span class="st">"reincidencia"</span>: <span class="va">False</span>, <span class="st">"subsanacion"</span>: <span class="va">True</span>},</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>]</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> caso <span class="kw">in</span> casos:</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    multa <span class="op">=</span> calcular_multa(</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>        caso[<span class="st">"dias"</span>],</span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>        caso[<span class="st">"reincidencia"</span>],</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>        caso[<span class="st">"subsanacion"</span>]</span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(caso, <span class="st">"=&gt;"</span>, multa)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>casos <span class="op">=</span> [</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"dias"</span>: <span class="dv">10</span>, <span class="st">"reincidencia"</span>: <span class="va">False</span>, <span class="st">"subsanacion"</span>: <span class="va">False</span>},</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"dias"</span>: <span class="dv">40</span>, <span class="st">"reincidencia"</span>: <span class="va">True</span>, <span class="st">"subsanacion"</span>: <span class="va">False</span>},</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"dias"</span>: <span class="dv">20</span>, <span class="st">"reincidencia"</span>: <span class="va">False</span>, <span class="st">"subsanacion"</span>: <span class="va">True</span>},</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> caso <span class="kw">in</span> casos:</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    multa <span class="op">=</span> calcular_multa(</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>        caso[<span class="st">"dias"</span>],</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>        caso[<span class="st">"reincidencia"</span>],</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>        caso[<span class="st">"subsanacion"</span>]</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(caso, <span class="st">"=&gt;"</span>, multa)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Eso ayuda a detectar errores y a entender mejor si la lógica hace realmente lo que pensamos que hace.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -620,9 +639,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <section id="git-y-github" class="level2">
 <h2 class="anchored" data-anchor-id="git-y-github">Git y GitHub</h2>
 <p>Registra el avance con commits claros:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Resuelve sesion 3 sobre decisiones juridicas"</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Resuelve sesion 3 sobre decisiones juridicas"</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="pset-de-la-sesión" class="level2">
 <h2 class="anchored" data-anchor-id="pset-de-la-sesión">PSET de la sesión</h2>
