@@ -2,8 +2,6 @@
 title: "2. Primeros pasos con Python"
 ---
 
-# 2. Primeros pasos con Python
-
 ## ¿Por qué un estudiante de Derecho debería aprender Python?
 
 Python es un lenguaje especialmente útil para empezar porque su sintaxis es clara y permite concentrarse en la lógica del problema. En este curso no lo estudiamos como un fin en sí mismo, sino como una herramienta para traducir instrucciones, criterios y reglas jurídicas en pasos ejecutables.

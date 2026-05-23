@@ -442,7 +442,7 @@
     "href": "parte-1-modulo-1/02-capitulo.html",
     "title": "2. Primeros pasos con Python",
     "section": "",
-    "text": "2. Primeros pasos con Python",
+    "text": "¿Por qué un estudiante de Derecho debería aprender Python?\nPython es un lenguaje especialmente útil para empezar porque su sintaxis es clara y permite concentrarse en la lógica del problema. En este curso no lo estudiamos como un fin en sí mismo, sino como una herramienta para traducir instrucciones, criterios y reglas jurídicas en pasos ejecutables.\nPara un jurista, esto tiene valor práctico inmediato. Muchas tareas del trabajo legal consisten en revisar información, clasificar documentos, calcular plazos, detectar patrones, verificar requisitos y producir reportes. Todas esas tareas pueden describirse como instrucciones. Y cuando una instrucción puede describirse con claridad, también puede empezar a automatizarse.",
     "crumbs": [
       "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
@@ -452,8 +452,8 @@
     "objectID": "parte-1-modulo-1/02-capitulo.html#por-qué-un-estudiante-de-derecho-debería-aprender-python",
     "href": "parte-1-modulo-1/02-capitulo.html#por-qué-un-estudiante-de-derecho-debería-aprender-python",
     "title": "2. Primeros pasos con Python",
-    "section": "¿Por qué un estudiante de Derecho debería aprender Python?",
-    "text": "¿Por qué un estudiante de Derecho debería aprender Python?\nPython es un lenguaje especialmente útil para empezar porque su sintaxis es clara y permite concentrarse en la lógica del problema. En este curso no lo estudiamos como un fin en sí mismo, sino como una herramienta para traducir instrucciones, criterios y reglas jurídicas en pasos ejecutables.\nPara un jurista, esto tiene valor práctico inmediato. Muchas tareas del trabajo legal consisten en revisar información, clasificar documentos, calcular plazos, detectar patrones, verificar requisitos y producir reportes. Todas esas tareas pueden describirse como instrucciones. Y cuando una instrucción puede describirse con claridad, también puede empezar a automatizarse.\n\n\n\n\n\n\nImportantIdea central\n\n\n\nProgramar no significa dejar de pensar como jurista. Significa aprender a expresar una lógica de trabajo con más precisión.",
+    "section": "",
+    "text": "ImportantIdea central\n\n\n\nProgramar no significa dejar de pensar como jurista. Significa aprender a expresar una lógica de trabajo con más precisión.",
     "crumbs": [
       "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>2. Primeros pasos con Python</span>"
