@@ -52,6 +52,7 @@ book:
     - referencias.qmd
 
 bibliography: bibliografia.bib
+suppress-bibliography: true
 
 format:
   html:

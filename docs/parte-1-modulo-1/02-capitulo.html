@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.9.30">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -76,10 +76,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-b6a8276bf55561bdbc268162d41bd1f7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-9e3e5b9121e68b3f077afb32f2c64d95.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -108,18 +108,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 <!-- Google Tag Manager -->
-
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-
 'https://www.googletagmanager.com/gtm.js?id=GTM-P4DXS39K'+dl;f.parentNode.insertBefore(j,f);
-
 })(window,document,'script','dataLayer','GTM-P4DXS39K');</script>
-
 <!-- End Google Tag Manager -->
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -360,7 +357,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#por-qué-un-estudiante-de-derecho-debería-aprender-python" id="toc-por-qué-un-estudiante-de-derecho-debería-aprender-python" class="nav-link active" data-scroll-target="#por-qué-un-estudiante-de-derecho-debería-aprender-python">¿Por qué un estudiante de Derecho debería aprender Python?</a></li>
+  <li><a href="#qué-es-python-y-por-qué-es-útil" id="toc-qué-es-python-y-por-qué-es-útil" class="nav-link active" data-scroll-target="#qué-es-python-y-por-qué-es-útil">¿Qué es Python y por qué es útil?</a></li>
+  <li><a href="#breve-historia-de-python" id="toc-breve-historia-de-python" class="nav-link" data-scroll-target="#breve-historia-de-python">Breve historia de Python</a></li>
+  <li><a href="#línea-de-tiempo-de-python" id="toc-línea-de-tiempo-de-python" class="nav-link" data-scroll-target="#línea-de-tiempo-de-python">Línea de tiempo de Python</a></li>
+  <li><a href="#por-qué-un-estudiante-de-derecho-debería-aprender-python" id="toc-por-qué-un-estudiante-de-derecho-debería-aprender-python" class="nav-link" data-scroll-target="#por-qué-un-estudiante-de-derecho-debería-aprender-python">¿Por qué un estudiante de Derecho debería aprender Python?</a></li>
   <li><a href="#qué-aprenderás-en-esta-sesión" id="toc-qué-aprenderás-en-esta-sesión" class="nav-link" data-scroll-target="#qué-aprenderás-en-esta-sesión">Qué aprenderás en esta sesión</a></li>
   <li><a href="#antes-de-empezar" id="toc-antes-de-empezar" class="nav-link" data-scroll-target="#antes-de-empezar">Antes de empezar</a></li>
   <li><a href="#cómo-piensa-python-en-nivel-básico" id="toc-cómo-piensa-python-en-nivel-básico" class="nav-link" data-scroll-target="#cómo-piensa-python-en-nivel-básico">Cómo piensa Python en nivel básico</a></li>
@@ -382,9 +382,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- main -->
 <main class="content" id="quarto-document-content">
 <!-- Google Tag Manager (noscript) -->
-
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4DXS39K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-
 <!-- End Google Tag Manager (noscript) -->
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-1-modulo-1/00-presentacion.html">I. Pensamiento computacional para juristas</a></li><li class="breadcrumb-item"><a href="../parte-1-modulo-1/02-capitulo.html"><span class="chapter-title">2. Primeros pasos con Python</span></a></li></ol></nav>
@@ -406,10 +404,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </header>
 
 
-<section id="por-qué-un-estudiante-de-derecho-debería-aprender-python" class="level2">
-<h2 class="anchored" data-anchor-id="por-qué-un-estudiante-de-derecho-debería-aprender-python">¿Por qué un estudiante de Derecho debería aprender Python?</h2>
-<p>Python es un lenguaje especialmente útil para empezar porque su sintaxis es clara y permite concentrarse en la lógica del problema. En este curso no lo estudiamos como un fin en sí mismo, sino como una herramienta para traducir instrucciones, criterios y reglas jurídicas en pasos ejecutables.</p>
-<p>Para un jurista, esto tiene valor práctico inmediato. Muchas tareas del trabajo legal consisten en revisar información, clasificar documentos, calcular plazos, detectar patrones, verificar requisitos y producir reportes. Todas esas tareas pueden describirse como instrucciones. Y cuando una instrucción puede describirse con claridad, también puede empezar a automatizarse.</p>
+<section id="qué-es-python-y-por-qué-es-útil" class="level2">
+<h2 class="anchored" data-anchor-id="qué-es-python-y-por-qué-es-útil">¿Qué es Python y por qué es útil?</h2>
+<p>Python es un lenguaje de programación de propósito general que hoy ocupa un lugar central en ámbitos como la computación científica, el análisis de datos y el aprendizaje automático, en buena medida por la amplitud de su ecosistema y por la posibilidad de combinar herramientas de alto nivel con bibliotecas especializadas <span class="citation" data-cites="raschka2020machine">(Raschka et al. 2020)</span>.</p>
+<p>En un curso de Legal Tech, Python no aparece como un fin en sí mismo. Aparece como un medio para representar instrucciones, procesar información y modelar tareas repetibles con una lógica explícita. Ese punto importa para estudiantes de Derecho porque buena parte del trabajo jurídico puede descomponerse en pasos observables: revisar requisitos, ordenar datos, calcular plazos, clasificar documentos, detectar patrones o generar reportes preliminares.</p>
+<p>La literatura sobre educación jurídica y tecnología insiste en que la formación legal contemporánea ya no puede limitarse a una alfabetización puramente doctrinal. Se necesita también desarrollar competencias técnicas y criterio para entender cómo operan las herramientas digitales que están transformando la práctica profesional <span class="citation" data-cites="contreras2020pedagogy volini2020technology">(Contreras and McGrath 2020; Volini 2020)</span>. En esa misma línea, Ryan muestra que la enseñanza de código puede reforzar habilidades complementarias como el pensamiento crítico y la capacidad de estructurar problemas con mayor precisión <span class="citation" data-cites="ryan2021coding">(Ryan 2021)</span>.</p>
+<p>Además, cuando el trabajo jurídico empieza a cruzarse con analítica, automatización o inteligencia artificial, los estudiantes necesitan entender al menos los fundamentos operativos de esas herramientas para poder usarlas y evaluarlas responsablemente. Savelka et al.&nbsp;sostienen precisamente que la formación legal debe preparar a los estudiantes para comprender y valorar técnicas de análisis textual, aprendizaje automático e inteligencia artificial aplicadas al derecho <span class="citation" data-cites="savelka2021applied">(Ashley et al. 2021)</span>.</p>
+<p>Por eso, en este manual aprender Python significa algo muy concreto: empezar a traducir una lógica jurídica o administrativa en pasos que puedan revisarse, probarse y mejorarse. No se trata de reemplazar el juicio jurídico, sino de volver más visible la parte estructurable del problema.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -423,6 +424,108 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>Programar no significa dejar de pensar como jurista. Significa aprender a expresar una lógica de trabajo con más precisión.</p>
 </div>
 </div>
+</section>
+<section id="breve-historia-de-python" class="level2">
+<h2 class="anchored" data-anchor-id="breve-historia-de-python">Breve historia de Python</h2>
+<p>Python nació a inicios de la década de 1990, creado por Guido van Rossum en el Centrum Wiskunde &amp; Informatica (CWI), en los Países Bajos. Fue concebido como un sucesor del lenguaje ABC, pero con una orientación más práctica: debía ser legible, expresivo, extensible y útil para resolver problemas reales.</p>
+<p>El nombre “Python” no proviene de la serpiente. Guido van Rossum lo eligió inspirado en <em>Monty Python’s Flying Circus</em>, la serie cómica británica. Quería un nombre breve, distintivo y fácil de recordar. Con el tiempo, ese nombre quedó asociado a uno de los lenguajes más influyentes de la programación contemporánea.</p>
+<p>La primera versión pública apareció en 1991 y, en 1994, Python 1.0 consolidó varias ideas fundamentales del lenguaje: sintaxis clara, manejo de excepciones y módulos reutilizables. Más adelante, Python 2.0, publicado en 2000, amplió de forma importante sus capacidades y ayudó a consolidarlo como una herramienta seria para automatización, scripting, educación y desarrollo general.</p>
+<p>En 2001 se creó la Python Software Foundation (PSF), organización encargada de apoyar y proteger el desarrollo del lenguaje y de su comunidad. El siguiente gran cambio llegó con Python 3.0, en 2008, que corrigió problemas históricos del lenguaje, aunque a costa de romper compatibilidad con Python 2. La transición fue larga y Python 2 recién llegó a su fin de vida en 2020.</p>
+<p>Desde entonces, Python 3 se ha mantenido como la línea principal del lenguaje. Las versiones más recientes han reforzado el rendimiento, la claridad del lenguaje y el trabajo sobre paralelismo y ejecución. En otras palabras, Python no solo es útil para aprender a programar: también es un lenguaje maduro, vivo y en evolución constante.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Contexto útil
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Conocer un poco la historia de Python ayuda a entender por qué tantas personas lo usan para enseñar, automatizar tareas y construir herramientas en campos muy distintos, incluido el derecho.</p>
+</div>
+</div>
+</section>
+<section id="línea-de-tiempo-de-python" class="level2">
+<h2 class="anchored" data-anchor-id="línea-de-tiempo-de-python">Línea de tiempo de Python</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">timeline
+    title Historia de Python: hitos principales
+
+    1989 : Guido van Rossum comienza a trabajar en Python durante las vacaciones de Navidad en CWI, Países Bajos
+         : Python nace como sucesor práctico del lenguaje ABC
+
+    1991 : Primera publicación pública de Python
+         : Se libera la versión inicial al público
+
+    1994 : Python 1.0
+         : Primera versión formal importante
+         : Incluye módulos, excepciones y funciones básicas del lenguaje
+
+    1995 : Guido van Rossum se incorpora a CNRI
+         : Python continúa desarrollándose fuera del CWI
+
+    2000 : Python 1.6
+         : Última versión publicada bajo CNRI
+         : Transición institucional del proyecto
+
+    2000 : Python 2.0
+         : Lanzado el 16 de octubre de 2000
+         : Introduce list comprehensions y garbage collection con detección de ciclos
+
+    2001 : Creación de la Python Software Foundation
+         : La PSF asume el rol de apoyar, proteger y promover Python
+
+    2008 : Python 3.0
+         : Gran rediseño del lenguaje
+         : Rompe compatibilidad con Python 2 para corregir problemas históricos
+
+    2010 : Python 2.7
+         : Última gran versión de la rama Python 2
+         : Se convierte en una versión de transición de larga duración
+
+    2020 : Fin de vida de Python 2
+         : Python 2 deja de recibir soporte oficial
+         : Python 3 queda como línea principal del lenguaje
+
+    2021 : Python 3.10
+         : Introduce structural pattern matching
+         : Mejora la expresividad del lenguaje
+
+    2022 : Python 3.11
+         : Grandes mejoras de rendimiento
+         : Mejoras en trazas de error y experiencia de desarrollo
+
+    2023 : Python 3.12
+         : Refinamiento del lenguaje y de la biblioteca estándar
+         : Avances internos de rendimiento y mantenimiento
+
+    2024 : Python 3.13
+         : Nuevo intérprete interactivo
+         : Compilador JIT experimental
+         : Builds experimentales free-threaded sin GIL
+
+    2025 : Python 3.14
+         : Consolidación de mejoras modernas
+         : Avances en soporte free-threaded y evolución del ecosistema
+
+    2026 : Python moderno
+         : Python se mantiene como lenguaje central en ciencia de datos, automatización, educación, web e inteligencia artificial
+         : La comunidad trabaja en rendimiento, paralelismo y sostenibilidad del ecosistema
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="por-qué-un-estudiante-de-derecho-debería-aprender-python" class="level2">
+<h2 class="anchored" data-anchor-id="por-qué-un-estudiante-de-derecho-debería-aprender-python">¿Por qué un estudiante de Derecho debería aprender Python?</h2>
+<p>Para un jurista, aprender Python tiene valor práctico inmediato. Muchas tareas del trabajo legal consisten en revisar información, clasificar documentos, calcular plazos, detectar patrones, verificar requisitos y producir reportes. Todas esas tareas pueden describirse como instrucciones. Y cuando una instrucción puede describirse con claridad, también puede empezar a automatizarse.</p>
 </section>
 <section id="qué-aprenderás-en-esta-sesión" class="level2">
 <h2 class="anchored" data-anchor-id="qué-aprenderás-en-esta-sesión">Qué aprenderás en esta sesión</h2>
@@ -558,7 +661,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>contador <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> contador <span class="op">&lt;</span> <span class="dv">3</span>:</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Iteracion:"</span>, contador)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Iteración:"</span>, contador)</span>
 <span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    contador <span class="op">+=</span> <span class="dv">1</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="funciones-reutilizar-lógica" class="level2">
@@ -650,13 +753,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(estado_expediente(plazo_vencido))</span>
 <span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> observacion <span class="kw">in</span> observaciones:</span>
-<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Observacion:"</span>, observacion)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Observación:"</span>, observacion)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="git-y-github" class="level2">
 <h2 class="anchored" data-anchor-id="git-y-github">Git y GitHub</h2>
 <p>Después de probar tu script, registra el avance en el repositorio:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Resuelve sesion 2 de primeros pasos con Python"</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Resuelve sesión 2 de primeros pasos con Python"</span></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="pset-de-la-sesión" class="level2">
