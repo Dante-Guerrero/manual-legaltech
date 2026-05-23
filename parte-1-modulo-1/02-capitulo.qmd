@@ -65,7 +65,15 @@ flowchart TB
 
 ## ¿Por qué un estudiante de Derecho debería aprender Python?
 
-Para un jurista, aprender Python tiene valor práctico inmediato. Muchas tareas del trabajo legal consisten en revisar información, clasificar documentos, calcular plazos, detectar patrones, verificar requisitos y producir reportes. Todas esas tareas pueden describirse como instrucciones. Y cuando una instrucción puede describirse con claridad, también puede empezar a automatizarse.
+Para un estudiante de Derecho, aprender Python no significa dejar de pensar jurídicamente ni convertirse en ingeniero. Significa adquirir una forma más precisa de representar instrucciones, revisar información y descomponer problemas en pasos verificables. Esa capacidad importa porque buena parte del trabajo legal contemporáneo incluye tareas repetibles y estructurables: clasificar documentos, revisar requisitos, calcular plazos, limpiar datos, producir reportes preliminares o detectar patrones en grandes volúmenes de información [@contreras2020pedagogy; @volini2020technology].
+
+Además, varios trabajos sobre educación jurídica sostienen que enseñar código no solo agrega una habilidad técnica instrumental, sino que también fortalece capacidades intelectuales complementarias. Ryan, por ejemplo, muestra que programar puede ayudar a desarrollar pensamiento crítico, precisión lógica y una mejor comprensión de cómo se estructuran los problemas antes de intentar resolverlos [@ryan2021coding]. En un contexto jurídico, eso es especialmente valioso porque obliga a distinguir con claridad entre hechos, condiciones, excepciones y resultados posibles.
+
+Python resulta particularmente adecuado para esa entrada inicial porque combina legibilidad con un ecosistema muy amplio. Raschka et al. destacan su papel central en ciencia de datos, aprendizaje automático e inteligencia artificial, mientras que trabajos como los de Pedregosa et al. y Virtanen et al. muestran que alrededor del lenguaje se ha construido una infraestructura robusta para análisis, modelado y computación científica [@raschka2020machine; @pedregosa2011scikit; @virtanen2020scipy]. Para estudiantes de Derecho, esto significa que aprender Python no es aprender una herramienta aislada, sino entrar en contacto con un lenguaje que ya está conectado con automatización, analítica, visualización y sistemas más complejos.
+
+Esa conexión también explica su relevancia para Legal Tech. Savelka et al. sostienen que la formación jurídica necesita preparar a los estudiantes para comprender y evaluar herramientas de analítica legal e inteligencia artificial, no solo usarlas superficialmente [@savelka2021applied]. Python sirve justamente como una puerta de entrada práctica a ese mundo: permite empezar con ejercicios simples, pero también escalar hacia flujos de trabajo donde el derecho se cruza con datos, automatización y evaluación de sistemas.
+
+En suma, aprender Python en Derecho tiene un valor doble. Por un lado, mejora la capacidad de pensar con rigor y expresar reglas o procesos con claridad. Por otro, acerca al estudiante a un ecosistema técnico que ya forma parte de muchas transformaciones relevantes del trabajo jurídico contemporáneo [@contreras2020pedagogy; @ryan2021coding; @savelka2021applied].
 
 ## Ejercicios prácticos para aprender los fundamentos de Python
 
