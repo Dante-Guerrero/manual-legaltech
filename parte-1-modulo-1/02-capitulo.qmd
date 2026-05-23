@@ -115,6 +115,346 @@ Ese pequeño script ya deja ver varias cosas:
 - `print()` muestra un resultado;
 - el código tiene una sintaxis que debe respetarse.
 
+## Aprender Python con ejercicios guiados
+
+En la carpeta `x/ejercicios de Python` hay una secuencia muy útil para aprender practicando. Si recién estás empezando, no conviene abrir todos los archivos a la vez. Lo mejor es seguir un orden: primero lo básico, después listas y luego texto.
+
+La idea no es copiar sin pensar. La idea es leer cada ejercicio, ejecutarlo, cambiar uno o dos valores y observar qué ocurre. Esa es una forma mucho más efectiva de aprender que limitarse a memorizar definiciones.
+
+::: {.callout-tip}
+## Sugerencia de trabajo
+Abre un ejercicio, léelo línea por línea, ejecútalo, cambia algo pequeño y vuelve a ejecutarlo. Si no entiendes una línea, no avances todavía: prueba esa línea hasta que te resulte clara.
+:::
+
+## Carpeta `00-basicos`
+
+Esta carpeta construye el lenguaje desde lo más elemental. Cada archivo añade una idea nueva.
+
+### `00-helloworld.py`
+
+Este es el punto de partida:
+
+```python
+print("Hola, mundo")
+```
+
+Aquí solo está ocurriendo una cosa importante: `print()` muestra un resultado en la terminal. Parece un ejemplo demasiado simple, pero cumple una función decisiva: comprobar que Python está instalado, que el archivo corre y que puedes producir una salida visible.
+
+Si quieres practicar, cambia el texto por algo más cercano al curso:
+
+```python
+print("Hola, Legal Tech")
+```
+
+### `01-variables.py`
+
+El siguiente ejercicio introduce variables:
+
+```python
+nombre_estudiante = "Manu"
+edad = 36
+promedio = 1.75
+esta_matriculado = True
+```
+
+Aquí conviene detenerse con calma:
+
+- `nombre_estudiante` guarda texto;
+- `edad` guarda un número entero;
+- `promedio` guarda un número decimal;
+- `esta_matriculado` guarda un valor lógico: verdadero o falso.
+
+Luego el ejercicio usa `type()` para mostrar qué tipo de dato tiene cada variable. Esto es importante porque Python no trata igual a un texto, a un número o a un valor booleano.
+
+Si lo piensas desde el derecho, una variable funciona como un casillero con nombre. Puedes tener un casillero para `numero_expediente`, otro para `monto_tasa` y otro para `plazo_vencido`.
+
+### `02-entradasysalidas.py`
+
+Aquí aparece `input()`:
+
+```python
+nombre_usuario = input("Como te llamas? ")
+print("Hola,", nombre_usuario)
+```
+
+Este ejercicio enseña dos movimientos básicos:
+
+1. el programa pide un dato;
+2. el programa responde usando ese dato.
+
+Eso ya se parece a muchas tareas reales. Por ejemplo, un programa podría pedir un nombre de cliente, un número de expediente o una fecha, y luego trabajar con esa información.
+
+### `03-convertirtipos.py`
+
+Este archivo resuelve una confusión muy común: `input()` devuelve texto, incluso si escribes un número.
+
+```python
+texto_numero = input("Escribe un numero: ")
+numero_entero = int(texto_numero)
+numero_como_texto = str(numero_entero)
+```
+
+Aquí la lección central es que a veces necesitas convertir el dato antes de usarlo.
+
+- `int()` transforma texto en entero;
+- `str()` transforma un valor en texto.
+
+Esto importa mucho en problemas prácticos. Si el usuario escribe `"5"` y quieres calcular un plazo o una multa, primero necesitas convertir ese `"5"` a número.
+
+### `04-operadores.py`
+
+En este ejercicio ya aparecen operaciones aritméticas y comparaciones:
+
+```python
+print("Suma:", primer_numero + segundo_numero)
+print("Resta:", primer_numero - segundo_numero)
+print("Multiplicacion:", primer_numero * segundo_numero)
+```
+
+Luego se añade un detalle importante:
+
+```python
+if segundo_numero != 0:
+    print("Division:", primer_numero / segundo_numero)
+```
+
+Eso enseña una idea clave: no basta con saber una operación; también hay que controlar errores o situaciones inválidas. Dividir entre cero no se puede, así que el programa lo revisa antes.
+
+Después el archivo usa comparaciones como:
+
+```python
+print("El primer numero es mayor?:", primer_numero > segundo_numero)
+```
+
+Ese paso es importante porque muchas decisiones jurídicas también dependen de comparaciones: si un plazo es mayor que otro, si un monto supera un umbral o si una condición se cumple.
+
+### `05-condicionales1.py` y `06-condicionales2.py`
+
+Estos dos ejercicios enseñan a tomar decisiones con `if`, `else` y `elif`.
+
+El primero usa una estructura simple:
+
+```python
+if nota >= 11:
+    print("Aprobado")
+else:
+    print("Desaprobado")
+```
+
+El segundo agrega una tercera posibilidad:
+
+```python
+if nota >= 18:
+    print("Excelente")
+elif nota >= 11:
+    print("Aprobado")
+else:
+    print("Desaprobado")
+```
+
+Lo importante aquí no es la nota en sí. Lo importante es entender que Python puede modelar reglas con varias salidas posibles. Esa lógica se parece mucho a una revisión jurídica básica: si cumple todos los requisitos, pasa; si cumple algunos, se observa; si no cumple, se rechaza.
+
+### `07-buclefor.py`
+
+Este ejercicio introduce la repetición con `for`:
+
+```python
+for numero in range(5):
+    print("Numero actual:", numero)
+```
+
+`range(5)` genera cinco valores: `0`, `1`, `2`, `3` y `4`. El programa recorre esos valores uno por uno.
+
+La idea de fondo es muy poderosa: cuando una tarea debe repetirse varias veces, no hace falta escribir la misma instrucción manualmente una y otra vez. El bucle la repite por ti.
+
+### `08-buclewhile.py`
+
+Aquí la repetición depende de una condición:
+
+```python
+clave_ingresada = ""
+
+while clave_ingresada != "1234":
+    clave_ingresada = input("Escribe la clave de acceso: ")
+```
+
+Este programa sigue pidiendo la clave mientras la persona no escriba el valor correcto. A diferencia de `for`, que repite una cantidad conocida de veces, `while` repite hasta que algo cambie.
+
+Eso es útil cuando no sabes de antemano cuántas repeticiones harán falta.
+
+### `09-funciones.py`
+
+El último archivo de esta carpeta introduce funciones:
+
+```python
+def sumar(primer_numero, segundo_numero):
+    resultado = primer_numero + segundo_numero
+    return resultado
+```
+
+Aquí pasan varias cosas a la vez:
+
+1. `def` inicia la definición de una función;
+2. la función recibe dos datos de entrada;
+3. calcula un resultado;
+4. lo devuelve con `return`.
+
+Luego el programa llama varias veces a esa misma función con valores distintos. Esa es la gran ventaja: escribir una lógica una sola vez y reutilizarla.
+
+## Carpeta `01-listas`
+
+Después de aprender variables, decisiones y repeticiones, el siguiente paso natural es trabajar con conjuntos de datos. Para eso sirven las listas.
+
+### `01-listaymedida.py`
+
+Este archivo crea una lista de expedientes:
+
+```python
+expedientes = ["EXP-001", "EXP-002", "EXP-003", "EXP-004", "EXP-005"]
+print("Cantidad de expedientes:", len(expedientes))
+```
+
+Aquí hay dos ideas importantes:
+
+- una lista puede guardar varios valores en orden;
+- `len()` permite saber cuántos elementos hay.
+
+En trabajo jurídico esto es muy natural: puedes tener listas de expedientes, clientes, contratos, observaciones o artículos.
+
+### `02-emparejar.py`
+
+Este ejercicio es especialmente útil porque muestra cómo juntar información relacionada:
+
+```python
+codigos = ["EXP-001", "EXP-002", "EXP-003"]
+estados = ["En revision", "Archivado", "Resuelto"]
+prioridades = [1, 2, 1]
+
+for codigo, estado, prioridad in zip(codigos, estados, prioridades):
+    print(codigo, "-", estado, "- prioridad", prioridad)
+```
+
+`zip()` toma varias listas y las recorre al mismo tiempo. Eso permite leer, en cada vuelta, los datos que están en la misma posición.
+
+Dicho de forma simple:
+
+- el primer código se junta con el primer estado y la primera prioridad;
+- el segundo código se junta con el segundo estado y la segunda prioridad;
+- y así sucesivamente.
+
+Este patrón aparece mucho cuando trabajas con información paralela.
+
+### `03-ordenar.py`
+
+Aquí aparece `sorted()`:
+
+```python
+palabras = ["demanda", "audiencia", "prueba", "apelacion", "contrato"]
+palabras_ordenadas = sorted(palabras)
+```
+
+La función `sorted()` devuelve una nueva lista ordenada. Este tipo de operación es útil cuando quieres presentar información de manera más legible o comparar elementos con más facilidad.
+
+::: {.callout-note}
+## Idea práctica
+Las listas son una puerta de entrada a casi todo el trabajo posterior con datos. Antes de usar tablas o bases de datos, conviene entender muy bien cómo recorrer, contar, emparejar y ordenar listas.
+:::
+
+## Carpeta `02-texto`
+
+Una gran parte del trabajo legal ocurre sobre texto: nombres, documentos, correos, escritos, resoluciones, cláusulas y observaciones. Por eso este ejercicio merece atención especial.
+
+### `01-funcionesdetexto.py`
+
+Este archivo reúne varias operaciones pequeñas, pero muy útiles.
+
+Primero trabaja con espacios sobrantes:
+
+```python
+texto = "   Hola, Mundo Python   "
+texto_sin_espacios = texto.strip()
+```
+
+`strip()` elimina espacios al inicio y al final. Esto es muy útil cuando una persona escribe algo con espacios accidentales y quieres limpiar el dato antes de usarlo.
+
+Luego aparecen `lower()` y `upper()`:
+
+```python
+print("En minusculas:", texto_sin_espacios.lower())
+print("En mayusculas:", texto_sin_espacios.upper())
+```
+
+Estas funciones ayudan a normalizar texto. Por ejemplo, si quieres comparar correos electrónicos o palabras clave, suele convenir pasarlos antes a minúsculas.
+
+Después el ejercicio usa `split()`:
+
+```python
+frase = "python es simple"
+palabras = frase.split()
+```
+
+Aquí `split()` separa la frase en partes y produce una lista. También puede separar usando un carácter específico:
+
+```python
+linea_csv = "Ana,Bruno,Carla"
+nombres = linea_csv.split(",")
+```
+
+Esto ya se parece a leer datos simples desde una línea de texto.
+
+Más adelante aparece `replace()`:
+
+```python
+mensaje = "Me gusta Java"
+print("Texto reemplazado:", mensaje.replace("Java", "Python"))
+```
+
+Con `replace()` cambias una parte del texto por otra. Puede servir para correcciones simples, normalización o ajustes automáticos.
+
+Por último, el ejercicio usa `startswith()` y `endswith()`:
+
+```python
+archivo = "reporte_2026.pdf"
+print("Empieza con 'reporte_'?:", archivo.startswith("reporte_"))
+print("Termina en '.pdf'?:", archivo.endswith(".pdf"))
+```
+
+Estas funciones permiten verificar el inicio o el final de un texto. Eso sirve, por ejemplo, para revisar nombres de archivo, extensiones o prefijos esperados.
+
+El cierre del ejercicio es muy útil porque junta varias operaciones en un solo paso:
+
+```python
+correo = "  estudiante@ejemplo.com  "
+correo_limpio = correo.strip().lower()
+print("Correo limpio:", correo_limpio)
+```
+
+Aquí el programa:
+
+1. elimina espacios sobrantes;
+2. convierte todo a minúsculas;
+3. deja el correo listo para comparación o validación posterior.
+
+Ese pequeño ejemplo muestra una idea muy importante: en programación, muchas tareas reales no dependen de una sola función, sino de combinar varias operaciones sencillas de forma ordenada.
+
+## Cómo estudiar estos ejercicios
+
+Si quieres aprovechar bien este material, prueba esta secuencia:
+
+1. ejecuta todos los ejercicios de `00-basicos` en orden;
+2. modifica variables, mensajes y números para ver qué cambia;
+3. pasa luego a `01-listas` y prueba agregando o quitando elementos;
+4. termina con `02-texto`, cambiando frases, nombres de archivo y correos.
+
+Una práctica especialmente buena para este curso es reescribir los ejemplos con vocabulario jurídico. Por ejemplo:
+
+- cambiar `nombre_usuario` por `nombre_cliente`;
+- cambiar listas de palabras por listas de expedientes;
+- cambiar archivos genéricos por nombres como `demanda_2026.pdf`;
+- cambiar funciones de suma por funciones de cálculo de multa o plazo.
+
+Así, el estudiante no solo aprende sintaxis. También aprende a conectar Python con problemas que ya puede imaginar dentro de la práctica legal.
+
 ## Variables y tipos de datos
 
 Una variable es un nombre que usamos para guardar un dato y reutilizarlo después. En derecho, esto se parece bastante a trabajar con información etiquetada: número de expediente, monto, fecha de notificación, estado de un trámite o nombre de una parte.
