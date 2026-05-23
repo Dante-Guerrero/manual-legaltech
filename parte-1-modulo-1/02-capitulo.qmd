@@ -2,6 +2,10 @@
 title: "2. Primeros pasos con Python"
 ---
 
+## Qué aprenderás en esta sesión
+
+En este capítulo empezarás a ver por qué Python se volvió un lenguaje tan importante, cómo fue evolucionando y, sobre todo, cómo se aprende a usar paso a paso sin necesidad de venir del mundo de la ingeniería. Verás ejercicios breves para comprender qué hacen `print()`, las variables, `input()`, las conversiones de tipo, los operadores, los condicionales, los bucles, las funciones, las listas y varias operaciones sobre texto. La invitación no es solo a leer: es a descubrir cómo, a partir de instrucciones pequeñas, se puede empezar a pensar con más claridad problemas que luego se conectan con el trabajo jurídico.
+
 ## ¿Qué es Python y por qué es útil?
 
 Python es un lenguaje de programación de propósito general que hoy ocupa un lugar central en ámbitos como la computación científica, el análisis de datos y el aprendizaje automático, en buena medida por la amplitud de su ecosistema y por la posibilidad de combinar herramientas de alto nivel con bibliotecas especializadas [@raschka2020machine].
@@ -36,8 +40,6 @@ Desde entonces, Python 3 se ha mantenido como la línea principal del lenguaje. 
 Conocer un poco la historia de Python ayuda a entender por qué tantas personas lo usan para enseñar, automatizar tareas y construir herramientas en campos muy distintos, incluido el derecho.
 :::
 
-## Línea de tiempo de Python
-
 La siguiente línea de tiempo resume algunos de los hitos principales en la evolución del lenguaje, a partir de la documentación oficial de Python y de la PSF [@pythonlicense2026; @pythonversions2026; @psfabout2026; @whatsnew3132024; @whatsnew3142025; @pep7032023].
 
 ```{mermaid}
@@ -65,16 +67,6 @@ flowchart TB
 
 Para un jurista, aprender Python tiene valor práctico inmediato. Muchas tareas del trabajo legal consisten en revisar información, clasificar documentos, calcular plazos, detectar patrones, verificar requisitos y producir reportes. Todas esas tareas pueden describirse como instrucciones. Y cuando una instrucción puede describirse con claridad, también puede empezar a automatizarse.
 
-## Qué aprenderás en esta sesión
-
-Al finalizar esta sesión, deberías poder:
-
-- ejecutar scripts sencillos desde una terminal o desde VS Code;
-- reconocer variables, tipos de datos y operaciones básicas;
-- entender cómo funcionan entradas, salidas, condicionales, bucles y funciones;
-- trabajar con listas y operaciones básicas de texto;
-- leer código simple con más seguridad y menos ansiedad técnica.
-
 ## Antes de empezar
 
 Para trabajar con este capítulo necesitas:
@@ -92,6 +84,8 @@ No intentes entender todo en una sola lectura. Ejecuta un archivo, cambia uno o 
 ## Ejercicios prácticos para aprender los fundamentos de Python
 
 La mejor manera de empezar con Python es trabajar con ejercicios pequeños y progresivos. La idea no es copiar sin pensar. La idea es leer cada ejemplo, ejecutarlo, cambiar uno o dos valores y observar qué ocurre. Esa es una forma mucho más efectiva de aprender que limitarse a memorizar definiciones.
+
+Si quieres aprovechar bien esta parte del capítulo, conviene seguir un orden simple: empieza por los ejercicios más breves, ejecútalos en secuencia, modifica variables, mensajes o números para ver qué cambia, y luego avanza hacia listas y texto. Una práctica especialmente buena para este curso es reescribir los ejemplos con vocabulario jurídico. Por ejemplo, puedes cambiar `nombre_usuario` por `nombre_cliente`, listas genéricas por listas de expedientes, o nombres de archivo simples por algo como `demanda_2026.pdf`. Así, el aprendizaje de la sintaxis se conecta desde el inicio con situaciones que ya resultan familiares.
 
 ::: {.callout-tip}
 ## Sugerencia de trabajo
@@ -669,35 +663,29 @@ El estudiante debería identificar que muchas tareas reales con texto consisten 
 
 La terminal mostrará varios resultados sucesivos: el texto original con espacios, la versión limpiada, cambios a mayúsculas y minúsculas, listas obtenidas con `split()`, un reemplazo de palabras, verificaciones sobre el nombre del archivo y finalmente un correo limpio. Eso ocurre porque cada línea del programa aplica una operación distinta sobre texto y muestra inmediatamente el resultado.
 
-## Cómo estudiar estos ejercicios
-
-Si quieres aprovechar bien este material, prueba esta secuencia:
-
-1. empieza por los ejercicios más breves y ejecútalos en orden;
-2. modifica variables, mensajes y números para ver qué cambia;
-3. pasa luego a los ejercicios con listas y prueba agregando o quitando elementos;
-4. termina con el ejercicio de texto, cambiando frases, nombres de archivo y correos.
-
-Una práctica especialmente buena para este curso es reescribir los ejemplos con vocabulario jurídico. Por ejemplo:
-
-- cambiar `nombre_usuario` por `nombre_cliente`;
-- cambiar listas de palabras por listas de expedientes;
-- cambiar archivos genéricos por nombres como `demanda_2026.pdf`;
-- cambiar funciones de suma por funciones de cálculo de multa o plazo.
-
-Así, el estudiante no solo aprende sintaxis. También aprende a conectar Python con problemas que ya puede imaginar dentro de la práctica legal.
-
-## Preguntas de repaso
-
-1. ¿Qué diferencia hay entre una variable y un valor?
-2. ¿Por qué conviene convertir algunos datos antes de usarlos?
-3. ¿Qué función cumple un `if`?
-4. ¿Qué problema resuelven los bucles?
-5. ¿Por qué una función puede mejorar la calidad del código?
-
 ## Ideas clave
 
-- Python sirve para pensar problemas con más claridad;
-- empezar simple es una buena decisión pedagógica;
-- buena parte de la lógica jurídica puede expresarse como condiciones, listas y funciones;
-- el valor del código está en la lógica que hace visible.
+- Python es útil no solo por su popularidad actual, sino porque permite traducir instrucciones y problemas en pasos legibles y ejecutables.
+- La historia de Python muestra que su claridad, su comunidad y su evolución técnica explican por qué sigue siendo un lenguaje central en tantos campos.
+- El primer ejercicio enseña que `print()` permite producir una salida visible en la terminal y comprobar que el programa realmente está corriendo.
+- El ejercicio de variables enseña que Python distingue entre texto, enteros, decimales y booleanos, y que cada tipo de dato cumple una función distinta.
+- El ejercicio de entradas y salidas muestra que un programa puede pedir información al usuario y reutilizarla inmediatamente.
+- El ejercicio de conversión de tipos enseña que los datos ingresados con `input()` no siempre vienen en el formato que necesitamos y a veces deben transformarse.
+- El ejercicio de operadores muestra que programar también implica comparar, calcular y prevenir situaciones inválidas, como una división entre cero.
+- El ejercicio de condicionales simples enseña que Python puede tomar decisiones binarias según una regla explícita.
+- El ejercicio de condicionales con varias opciones muestra que una misma situación puede tener más de dos resultados y que el orden de las condiciones importa.
+- El ejercicio con `for` enseña a repetir una acción una cantidad conocida de veces sin duplicar código.
+- El ejercicio con `while` enseña a repetir una acción hasta que una condición cambie, incluso cuando no sabemos cuántos intentos harán falta.
+- El ejercicio de funciones muestra que una lógica puede escribirse una sola vez y reutilizarse muchas veces con distintos datos.
+- El ejercicio de listas enseña que varios valores pueden agruparse en una misma estructura y que `len()` permite medir su tamaño.
+- El ejercicio de `zip()` muestra cómo recorrer información relacionada en paralelo, algo clave cuando distintos datos pertenecen al mismo registro.
+- El ejercicio de `sorted()` enseña que ordenar información mejora su lectura y que Python puede generar una nueva versión ordenada de una lista.
+- El ejercicio de texto muestra que muchas tareas útiles dependen de limpiar, normalizar, dividir, reemplazar y verificar cadenas de caracteres.
+
+## Para pensar y reflexionar
+
+1. ¿Qué cambia en tu manera de entender la programación cuando ves que un programa puede leerse como una secuencia ordenada de instrucciones comprensibles?
+2. ¿Por qué crees que aprender variables, condicionales, bucles, listas y texto por separado ayuda a preparar problemas más complejos después?
+3. ¿Qué ejercicio te mostró con mayor claridad que una tarea aparentemente simple puede requerir varios pasos distintos para funcionar bien?
+4. ¿De qué manera la historia de Python ayuda a entender por qué este lenguaje se usa tanto para enseñar, automatizar y construir herramientas reales?
+5. Si tuvieras que adaptar uno de los ejercicios del capítulo a una situación jurídica concreta, ¿cuál elegirías y qué cambiarías para volverlo más cercano a esa práctica?
