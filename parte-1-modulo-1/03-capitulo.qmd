@@ -5,14 +5,14 @@ title: "3. Python para fechas, archivos y datos"
 ::: {.callout-note}
 ## Qué aprenderás en esta sesión
 
-En este capítulo darás un paso muy importante: pasarás de los fundamentos generales de Python a tareas que se parecen más al trabajo cotidiano con información jurídica. Verás cómo obtener fechas, calcular plazos simples, leer y guardar archivos de texto, trabajar con archivos CSV y explorar tablas de datos con `pandas`. La idea central es que empieces a notar cómo un programa puede ayudarte no solo a mostrar mensajes en pantalla, sino también a organizar información, revisar registros y producir resultados útiles para tareas legales y administrativas.
+Este capítulo marca un cambio importante en el recorrido. Python deja de aparecer solo como un lenguaje para aprender sintaxis y empieza a mostrar su utilidad en tareas próximas al trabajo con información jurídica. A través de fechas, plazos simples, archivos de texto, registros en CSV y tablas con `pandas`, el objetivo es ver cómo un programa puede organizar, revisar y resumir datos de una manera más controlada.
 :::
 
 ## ¿Por qué importa este tema?
 
 En la práctica jurídica, muchos problemas no se resuelven solo con definiciones abstractas. Hace falta revisar fechas, calcular días entre actos procesales, leer documentos, registrar observaciones, ordenar expedientes y mirar tablas con datos. Todo eso forma parte del trabajo real y, precisamente por eso, es un buen terreno para seguir aprendiendo Python.
 
-En la sesión anterior viste variables, tipos de datos, condicionales, bucles, funciones, listas y texto. Ahora toca usar esas bases en contextos más cercanos a tareas concretas. Un jurista que empieza a manejar fechas, archivos y tablas con un poco de soltura ya está dando un paso importante hacia la automatización básica y el análisis más ordenado de información.
+En la sesión anterior aparecieron variables, tipos de datos, condicionales, bucles, funciones, listas y texto. Ahora esas bases se desplazan hacia contextos más concretos. Manejar fechas, archivos y tablas con cierta soltura ya supone entrar en una forma de trabajo más próxima a la automatización básica y al análisis ordenado de información.
 
 ## Del fundamento al uso práctico
 
@@ -36,9 +36,9 @@ Lo importante aquí no es imaginar que Python reemplaza el criterio jurídico. L
 
 ## Ejercicios prácticos para trabajar con fechas, archivos y datos
 
-La mejor manera de aprender esta parte es avanzar en secuencia. Primero conviene trabajar con fechas, porque allí aparecen objetos nuevos pero fáciles de entender. Luego tiene sentido pasar a archivos, porque eso te muestra cómo un programa se conecta con documentos reales. Finalmente, el cierre con datos permite ver cómo Python y `pandas` ayudan a leer tablas y extraer información útil.
+La secuencia del capítulo no es arbitraria. Primero aparecen las fechas, porque introducen objetos nuevos pero cercanos a problemas muy reconocibles. Luego vienen los archivos, donde el programa ya se vincula con documentos reales. Finalmente, la sección de datos permite ver cómo Python y `pandas` ayudan a leer tablas y a extraer de ellas información relevante.
 
-Si quieres aprovechar bien este capítulo, te conviene ejecutar cada ejercicio, revisar la salida, cambiar uno o dos valores y volver a correr el script. Esa práctica de probar pequeñas variaciones sigue siendo la mejor forma de aprender.
+La mejor manera de trabajar esta parte sigue siendo práctica: ejecutar cada ejercicio, revisar la salida, cambiar uno o dos valores y volver a correr el script. Esas variaciones pequeñas permiten entender con precisión de qué depende el resultado.
 
 ::: {.callout-important}
 ## Antes de empezar
@@ -59,7 +59,7 @@ Si todavía no tienes `pandas`, puedes instalarla con:
 pip install pandas
 ```
 
-La recomendación práctica sigue siendo la misma del capítulo anterior: ejecuta el código, observa la salida, cambia algo pequeño y vuelve a ejecutarlo antes de pasar al siguiente ejercicio.
+La recomendación práctica sigue siendo la misma del capítulo anterior: ejecutar el código, observar la salida, introducir un cambio pequeño y volver a correrlo antes de pasar al siguiente ejercicio.
 :::
 
 ## Fechas: empezar a pensar el tiempo con Python
@@ -108,7 +108,7 @@ Dia: 24
 ```
 :::
 
-Ese resultado aparece porque `date.today()` devuelve un objeto fecha y `print()` muestra tanto el objeto completo como cada atributo por separado. Para experimentar, no puedes cambiar la fecha del sistema desde el script, pero sí puedes agregar nuevas líneas como `print("Dia de hoy en texto:", hoy.day)` o guardar otra fecha manual con `date(2026, 12, 31)` para compararla con la actual.
+Ese resultado aparece porque `date.today()` devuelve un objeto fecha y `print()` muestra tanto el objeto completo como cada atributo por separado. Conviene añadir líneas como `print("Dia de hoy en texto:", hoy.day)` o crear otra fecha manual con `date(2026, 12, 31)` para compararla con la actual. Así se entiende mejor que una fecha no es solo un texto visible, sino una estructura con partes que pueden aislarse y reutilizarse.
 
 ### Ejercicio 2. Contar días entre dos actuaciones
 
@@ -152,7 +152,7 @@ Dias entre ambas fechas: 17
 ```
 :::
 
-El resultado `17` aparece porque Python interpreta ambas fechas como objetos comparables y luego calcula la distancia temporal entre ellas. Para experimentar, cambia una de las fechas y observa cómo varía `diferencia.days`. También puedes probar qué ocurre si inviertes el orden de la resta: verás que el resultado puede volverse negativo, lo cual ayuda a entender por qué el orden de los eventos sí importa.
+El resultado `17` aparece porque Python interpreta ambas fechas como objetos comparables y luego calcula la distancia temporal entre ellas. Si cambias una de las fechas, `diferencia.days` varía de inmediato. También es útil invertir el orden de la resta: el resultado puede volverse negativo, y eso deja ver que en los cálculos temporales el orden de los actos sí importa.
 
 ### Ejercicio 3. Sumar días para calcular un vencimiento
 
@@ -195,7 +195,7 @@ Fecha de vencimiento: 2026-03-11
 ```
 :::
 
-La fecha final aparece porque Python suma cinco días corridos a la fecha de notificación y devuelve un nuevo objeto fecha. Para experimentar, cambia `days=5` por `days=10` o usa otra fecha inicial para comprobar cómo cambia el vencimiento. También puedes probar con una fecha cercana al final de un mes para ver cómo Python gestiona automáticamente el cambio de mes sin que tengas que calcularlo a mano.
+La fecha final aparece porque Python suma cinco días corridos a la fecha de notificación y devuelve un nuevo objeto fecha. Cambiar `days=5` por `days=10` o usar otra fecha inicial permite ver cómo se modifica el vencimiento. También resulta instructivo probar con una fecha cercana al final de un mes: Python gestiona automáticamente el cambio de mes sin necesidad de hacerlo a mano.
 
 ## Archivos: hacer que el programa lea y escriba documentos
 
@@ -252,7 +252,7 @@ Se comunica que la audiencia del expediente EXP-001 ha sido programada para el 1
 ```
 :::
 
-Esa salida aparece porque `archivo.read()` recupera todo el contenido del documento tal como está guardado y `print()` lo muestra en la terminal. Para experimentar, cambia el texto del archivo, agrega un segundo párrafo o modifica el nombre del archivo en la carpeta `data`. Así podrás comprobar que el programa no está inventando el contenido: está leyendo exactamente lo que existe en el documento.
+Esa salida aparece porque `archivo.read()` recupera todo el contenido del documento tal como está guardado y `print()` lo muestra en la terminal. Si cambias el texto del archivo, agregas un segundo párrafo o modificas el nombre del documento en la carpeta `data`, el resultado cambia en consecuencia. La prueba es útil porque confirma que el programa no inventa el contenido: lee exactamente lo que encuentra.
 
 ### Ejercicio 5. Guardar una observación en un archivo nuevo
 
@@ -295,7 +295,7 @@ Archivo guardado en: data/nota_generada.txt
 ```
 :::
 
-Lo más importante aquí no es solo el mensaje de la terminal, sino el efecto que deja el script en tu carpeta: se crea un archivo con el texto indicado. Para experimentar, cambia el contenido de `texto`, ejecuta de nuevo el script y abre el archivo generado para ver el resultado. También puedes modificar el nombre del archivo de salida o agregar `\n` dentro del texto para escribir varias líneas en lugar de una sola.
+Lo importante aquí no es solo el mensaje de la terminal, sino el efecto que deja el script en la carpeta: se crea un archivo con el texto indicado. Cambiar el contenido de `texto`, volver a ejecutar el script y abrir el archivo generado permite comprobar esa relación directa entre código y documento. También puede modificarse el nombre del archivo de salida o añadir `\n` dentro del texto para escribir varias líneas en lugar de una sola.
 
 ### Ejercicio 6. Leer registros desde un archivo CSV
 
@@ -354,7 +354,7 @@ EXP-003 - Resuelto - responsable: Carla Ruiz
 ```
 :::
 
-Cada línea aparece porque el bucle `for` toma una fila distinta del CSV y extrae tres campos: código, estado y responsable. Para experimentar, agrega una nueva fila al archivo CSV, cambia un estado o modifica el texto del `print()`. Verás de inmediato cómo el programa refleja las modificaciones del archivo sin necesidad de tocar la lógica principal.
+Cada línea aparece porque el bucle `for` toma una fila distinta del CSV y extrae tres campos: código, estado y responsable. Si agregas una nueva fila al archivo, cambias un estado o modificas el texto del `print()`, el programa refleja esas variaciones sin tocar la lógica principal. Esa relación entre una fuente de datos y una salida controlada es una de las bases del trabajo posterior con tablas.
 
 ## Datos tabulares: empezar a pensar con `pandas`
 
@@ -405,7 +405,7 @@ Verás algo parecido a esto:
 ```
 :::
 
-La tabla aparece así porque `pandas` organiza automáticamente los datos en filas indexadas y columnas con nombre. Para experimentar, cambia un monto, agrega una fila nueva o incorpora una columna adicional como `responsable`. Esa es una buena forma de comprobar que un `DataFrame` no es solo una impresión bonita: es una estructura que luego permitirá filtrar, contar y resumir información.
+La tabla aparece así porque `pandas` organiza automáticamente los datos en filas indexadas y columnas con nombre. Cambiar un monto, agregar una fila nueva o incorporar una columna adicional como `responsable` permite comprobar que un `DataFrame` no es solo una impresión ordenada: es una estructura sobre la que después se podrá filtrar, contar y resumir información.
 
 ### Ejercicio 8. Filtrar solo los registros pendientes
 
@@ -459,7 +459,7 @@ Verás una salida similar a esta:
 ```
 :::
 
-Aparecen solo dos filas porque son las únicas donde la columna `estado` contiene el valor `"Pendiente"`. Para experimentar, cambia un estado en el CSV, reemplaza `"Pendiente"` por `"Pagado"` en el filtro o añade nuevas filas al archivo. Así podrás ver que el filtro no depende del número de registros, sino del criterio que tú definas.
+Aparecen solo dos filas porque son las únicas donde la columna `estado` contiene el valor `"Pendiente"`. Cambiar un estado en el CSV, reemplazar `"Pendiente"` por `"Pagado"` en el filtro o añadir nuevas filas al archivo permite advertir que el resultado no depende del número total de registros, sino del criterio definido para seleccionar.
 
 ### Ejercicio 9. Contar cuántos registros hay en cada estado
 
@@ -503,7 +503,7 @@ Name: count, dtype: int64
 ```
 :::
 
-Ese resultado aparece porque `value_counts()` agrupa automáticamente los valores repetidos y calcula su frecuencia. Según la versión de `pandas`, la última línea puede variar un poco, pero la idea central es la misma: obtener un resumen por categorías. Para experimentar, agrega más filas al CSV o introduce un nuevo estado como `Observado`; verás cómo el conteo se actualiza sin necesidad de cambiar la lógica del programa.
+Ese resultado aparece porque `value_counts()` agrupa automáticamente los valores repetidos y calcula su frecuencia. Según la versión de `pandas`, la última línea puede variar un poco, pero la idea central es la misma: obtener un resumen por categorías. Si agregas más filas al CSV o introduces un nuevo estado como `Observado`, el conteo se actualiza sin necesidad de cambiar la lógica del programa.
 
 ### Ejercicio 10. Calcular un promedio de montos
 
@@ -542,7 +542,7 @@ Promedio de multas: 1025.0
 ```
 :::
 
-Ese valor aparece porque `pandas` suma los montos `1200`, `800`, `1500` y `600`, y luego divide el total entre cuatro registros. Para experimentar, cambia uno de los montos, añade una nueva fila o prueba con una columna distinta si amplías el CSV. Así verás cómo un pequeño cambio en los datos puede modificar el indicador general.
+Ese valor aparece porque `pandas` suma los montos `1200`, `800`, `1500` y `600`, y luego divide el total entre cuatro registros. Cambiar uno de los montos, añadir una nueva fila o probar con otra columna si amplías el CSV permite observar cómo una variación puntual puede modificar el indicador general.
 
 ## Conclusiones del capítulo
 
@@ -565,7 +565,7 @@ Las ideas que siguen reúnen lo más importante de este avance. Conviene leerlas
 - programar estas tareas no reemplaza el juicio jurídico, pero sí vuelve más visible, repetible y controlable la parte estructurada del análisis.
 :::
 
-Antes de pasar al siguiente tramo del módulo, también conviene detenerse a pensar qué tipo de razonamiento empezó a aparecer aquí. Ahora ya no solo escribes instrucciones para aprender sintaxis: empiezas a organizar información, a formular pequeñas preguntas sobre los datos y a convertir tareas repetibles en procesos más claros. Las preguntas siguientes buscan ayudarte a notar ese cambio.
+Antes de pasar al siguiente tramo del módulo, conviene detenerse a pensar qué tipo de razonamiento empezó a aparecer aquí. Ya no se trata solo de escribir instrucciones para aprender sintaxis, sino de organizar información, formular preguntas sobre los datos y convertir tareas repetibles en procesos más claros. Las preguntas siguientes buscan hacer visible ese cambio.
 
 ::: {.callout-caution}
 ## Para pensar y reflexionar

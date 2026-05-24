@@ -416,13 +416,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>En este capítulo darás un paso muy importante: pasarás de los fundamentos generales de Python a tareas que se parecen más al trabajo cotidiano con información jurídica. Verás cómo obtener fechas, calcular plazos simples, leer y guardar archivos de texto, trabajar con archivos CSV y explorar tablas de datos con <code>pandas</code>. La idea central es que empieces a notar cómo un programa puede ayudarte no solo a mostrar mensajes en pantalla, sino también a organizar información, revisar registros y producir resultados útiles para tareas legales y administrativas.</p>
+<p>Este capítulo marca un cambio importante en el recorrido. Python deja de aparecer solo como un lenguaje para aprender sintaxis y empieza a mostrar su utilidad en tareas próximas al trabajo con información jurídica. A través de fechas, plazos simples, archivos de texto, registros en CSV y tablas con <code>pandas</code>, el objetivo es ver cómo un programa puede organizar, revisar y resumir datos de una manera más controlada.</p>
 </div>
 </div>
 <section id="por-qué-importa-este-tema" class="level2">
 <h2 class="anchored" data-anchor-id="por-qué-importa-este-tema">¿Por qué importa este tema?</h2>
 <p>En la práctica jurídica, muchos problemas no se resuelven solo con definiciones abstractas. Hace falta revisar fechas, calcular días entre actos procesales, leer documentos, registrar observaciones, ordenar expedientes y mirar tablas con datos. Todo eso forma parte del trabajo real y, precisamente por eso, es un buen terreno para seguir aprendiendo Python.</p>
-<p>En la sesión anterior viste variables, tipos de datos, condicionales, bucles, funciones, listas y texto. Ahora toca usar esas bases en contextos más cercanos a tareas concretas. Un jurista que empieza a manejar fechas, archivos y tablas con un poco de soltura ya está dando un paso importante hacia la automatización básica y el análisis más ordenado de información.</p>
+<p>En la sesión anterior aparecieron variables, tipos de datos, condicionales, bucles, funciones, listas y texto. Ahora esas bases se desplazan hacia contextos más concretos. Manejar fechas, archivos y tablas con cierta soltura ya supone entrar en una forma de trabajo más próxima a la automatización básica y al análisis ordenado de información.</p>
 </section>
 <section id="del-fundamento-al-uso-práctico" class="level2">
 <h2 class="anchored" data-anchor-id="del-fundamento-al-uso-práctico">Del fundamento al uso práctico</h2>
@@ -445,8 +445,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </section>
 <section id="ejercicios-prácticos-para-trabajar-con-fechas-archivos-y-datos" class="level2">
 <h2 class="anchored" data-anchor-id="ejercicios-prácticos-para-trabajar-con-fechas-archivos-y-datos">Ejercicios prácticos para trabajar con fechas, archivos y datos</h2>
-<p>La mejor manera de aprender esta parte es avanzar en secuencia. Primero conviene trabajar con fechas, porque allí aparecen objetos nuevos pero fáciles de entender. Luego tiene sentido pasar a archivos, porque eso te muestra cómo un programa se conecta con documentos reales. Finalmente, el cierre con datos permite ver cómo Python y <code>pandas</code> ayudan a leer tablas y extraer información útil.</p>
-<p>Si quieres aprovechar bien este capítulo, te conviene ejecutar cada ejercicio, revisar la salida, cambiar uno o dos valores y volver a correr el script. Esa práctica de probar pequeñas variaciones sigue siendo la mejor forma de aprender.</p>
+<p>La secuencia del capítulo no es arbitraria. Primero aparecen las fechas, porque introducen objetos nuevos pero cercanos a problemas muy reconocibles. Luego vienen los archivos, donde el programa ya se vincula con documentos reales. Finalmente, la sección de datos permite ver cómo Python y <code>pandas</code> ayudan a leer tablas y a extraer de ellas información relevante.</p>
+<p>La mejor manera de trabajar esta parte sigue siendo práctica: ejecutar cada ejercicio, revisar la salida, cambiar uno o dos valores y volver a correr el script. Esas variaciones pequeñas permiten entender con precisión de qué depende el resultado.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -468,7 +468,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>Una forma ordenada de trabajar es crear una carpeta como <code>sesion-3</code> y guardar allí tus scripts. Cuando llegues a los ejercicios de archivos y datos, crea dentro una carpeta <code>data</code> para colocar los textos y CSV que el programa leerá.</p>
 <p>Si todavía no tienes <code>pandas</code>, puedes instalarla con:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install pandas</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>La recomendación práctica sigue siendo la misma del capítulo anterior: ejecuta el código, observa la salida, cambia algo pequeño y vuelve a ejecutarlo antes de pasar al siguiente ejercicio.</p>
+<p>La recomendación práctica sigue siendo la misma del capítulo anterior: ejecutar el código, observar la salida, introducir un cambio pequeño y volver a correrlo antes de pasar al siguiente ejercicio.</p>
 </div>
 </div>
 </section>
@@ -510,7 +510,7 @@ Año: 2026
 Mes: 5
 Dia: 24</code></pre>
 </div>
-<p>Ese resultado aparece porque <code>date.today()</code> devuelve un objeto fecha y <code>print()</code> muestra tanto el objeto completo como cada atributo por separado. Para experimentar, no puedes cambiar la fecha del sistema desde el script, pero sí puedes agregar nuevas líneas como <code>print("Dia de hoy en texto:", hoy.day)</code> o guardar otra fecha manual con <code>date(2026, 12, 31)</code> para compararla con la actual.</p>
+<p>Ese resultado aparece porque <code>date.today()</code> devuelve un objeto fecha y <code>print()</code> muestra tanto el objeto completo como cada atributo por separado. Conviene añadir líneas como <code>print("Dia de hoy en texto:", hoy.day)</code> o crear otra fecha manual con <code>date(2026, 12, 31)</code> para compararla con la actual. Así se entiende mejor que una fecha no es solo un texto visible, sino una estructura con partes que pueden aislarse y reutilizarse.</p>
 </section>
 </section>
 <section id="ejercicio-2.-contar-días-entre-dos-actuaciones" class="level3">
@@ -549,7 +549,7 @@ Dia: 24</code></pre>
 Fecha de audiencia: 2026-03-18
 Dias entre ambas fechas: 17</code></pre>
 </div>
-<p>El resultado <code>17</code> aparece porque Python interpreta ambas fechas como objetos comparables y luego calcula la distancia temporal entre ellas. Para experimentar, cambia una de las fechas y observa cómo varía <code>diferencia.days</code>. También puedes probar qué ocurre si inviertes el orden de la resta: verás que el resultado puede volverse negativo, lo cual ayuda a entender por qué el orden de los eventos sí importa.</p>
+<p>El resultado <code>17</code> aparece porque Python interpreta ambas fechas como objetos comparables y luego calcula la distancia temporal entre ellas. Si cambias una de las fechas, <code>diferencia.days</code> varía de inmediato. También es útil invertir el orden de la resta: el resultado puede volverse negativo, y eso deja ver que en los cálculos temporales el orden de los actos sí importa.</p>
 </section>
 </section>
 <section id="ejercicio-3.-sumar-días-para-calcular-un-vencimiento" class="level3">
@@ -587,7 +587,7 @@ Dias entre ambas fechas: 17</code></pre>
 Plazo en dias: 5
 Fecha de vencimiento: 2026-03-11</code></pre>
 </div>
-<p>La fecha final aparece porque Python suma cinco días corridos a la fecha de notificación y devuelve un nuevo objeto fecha. Para experimentar, cambia <code>days=5</code> por <code>days=10</code> o usa otra fecha inicial para comprobar cómo cambia el vencimiento. También puedes probar con una fecha cercana al final de un mes para ver cómo Python gestiona automáticamente el cambio de mes sin que tengas que calcularlo a mano.</p>
+<p>La fecha final aparece porque Python suma cinco días corridos a la fecha de notificación y devuelve un nuevo objeto fecha. Cambiar <code>days=5</code> por <code>days=10</code> o usar otra fecha inicial permite ver cómo se modifica el vencimiento. También resulta instructivo probar con una fecha cercana al final de un mes: Python gestiona automáticamente el cambio de mes sin necesidad de hacerlo a mano.</p>
 </section>
 </section>
 </section>
@@ -635,7 +635,7 @@ Edicto de ejemplo
 
 Se comunica que la audiencia del expediente EXP-001 ha sido programada para el 18 de marzo de 2026.</code></pre>
 </div>
-<p>Esa salida aparece porque <code>archivo.read()</code> recupera todo el contenido del documento tal como está guardado y <code>print()</code> lo muestra en la terminal. Para experimentar, cambia el texto del archivo, agrega un segundo párrafo o modifica el nombre del archivo en la carpeta <code>data</code>. Así podrás comprobar que el programa no está inventando el contenido: está leyendo exactamente lo que existe en el documento.</p>
+<p>Esa salida aparece porque <code>archivo.read()</code> recupera todo el contenido del documento tal como está guardado y <code>print()</code> lo muestra en la terminal. Si cambias el texto del archivo, agregas un segundo párrafo o modificas el nombre del documento en la carpeta <code>data</code>, el resultado cambia en consecuencia. La prueba es útil porque confirma que el programa no inventa el contenido: lee exactamente lo que encuentra.</p>
 </section>
 </section>
 <section id="ejercicio-5.-guardar-una-observación-en-un-archivo-nuevo" class="level3">
@@ -672,7 +672,7 @@ Se comunica que la audiencia del expediente EXP-001 ha sido programada para el 1
 <div class="terminal-output">
 <pre class="text"><code>Archivo guardado en: data/nota_generada.txt</code></pre>
 </div>
-<p>Lo más importante aquí no es solo el mensaje de la terminal, sino el efecto que deja el script en tu carpeta: se crea un archivo con el texto indicado. Para experimentar, cambia el contenido de <code>texto</code>, ejecuta de nuevo el script y abre el archivo generado para ver el resultado. También puedes modificar el nombre del archivo de salida o agregar <code>\n</code> dentro del texto para escribir varias líneas en lugar de una sola.</p>
+<p>Lo importante aquí no es solo el mensaje de la terminal, sino el efecto que deja el script en la carpeta: se crea un archivo con el texto indicado. Cambiar el contenido de <code>texto</code>, volver a ejecutar el script y abrir el archivo generado permite comprobar esa relación directa entre código y documento. También puede modificarse el nombre del archivo de salida o añadir <code>\n</code> dentro del texto para escribir varias líneas en lugar de una sola.</p>
 </section>
 </section>
 <section id="ejercicio-6.-leer-registros-desde-un-archivo-csv" class="level3">
@@ -722,7 +722,7 @@ EXP-003,Resuelto,Carla Ruiz</code></pre>
 EXP-002 - Archivado - responsable: Luis Soto
 EXP-003 - Resuelto - responsable: Carla Ruiz</code></pre>
 </div>
-<p>Cada línea aparece porque el bucle <code>for</code> toma una fila distinta del CSV y extrae tres campos: código, estado y responsable. Para experimentar, agrega una nueva fila al archivo CSV, cambia un estado o modifica el texto del <code>print()</code>. Verás de inmediato cómo el programa refleja las modificaciones del archivo sin necesidad de tocar la lógica principal.</p>
+<p>Cada línea aparece porque el bucle <code>for</code> toma una fila distinta del CSV y extrae tres campos: código, estado y responsable. Si agregas una nueva fila al archivo, cambias un estado o modificas el texto del <code>print()</code>, el programa refleja esas variaciones sin tocar la lógica principal. Esa relación entre una fuente de datos y una salida controlada es una de las bases del trabajo posterior con tablas.</p>
 </section>
 </section>
 </section>
@@ -767,7 +767,7 @@ EXP-003 - Resuelto - responsable: Carla Ruiz</code></pre>
 1    EXP-002   Archivado      0
 2    EXP-003  En revision    800</code></pre>
 </div>
-<p>La tabla aparece así porque <code>pandas</code> organiza automáticamente los datos en filas indexadas y columnas con nombre. Para experimentar, cambia un monto, agrega una fila nueva o incorpora una columna adicional como <code>responsable</code>. Esa es una buena forma de comprobar que un <code>DataFrame</code> no es solo una impresión bonita: es una estructura que luego permitirá filtrar, contar y resumir información.</p>
+<p>La tabla aparece así porque <code>pandas</code> organiza automáticamente los datos en filas indexadas y columnas con nombre. Cambiar un monto, agregar una fila nueva o incorporar una columna adicional como <code>responsable</code> permite comprobar que un <code>DataFrame</code> no es solo una impresión ordenada: es una estructura sobre la que después se podrá filtrar, contar y resumir información.</p>
 </section>
 </section>
 <section id="ejercicio-8.-filtrar-solo-los-registros-pendientes" class="level3">
@@ -811,7 +811,7 @@ EXP-004,Pagado,600</code></pre>
 0    EXP-001  Pendiente   1200
 2    EXP-003  Pendiente   1500</code></pre>
 </div>
-<p>Aparecen solo dos filas porque son las únicas donde la columna <code>estado</code> contiene el valor <code>"Pendiente"</code>. Para experimentar, cambia un estado en el CSV, reemplaza <code>"Pendiente"</code> por <code>"Pagado"</code> en el filtro o añade nuevas filas al archivo. Así podrás ver que el filtro no depende del número de registros, sino del criterio que tú definas.</p>
+<p>Aparecen solo dos filas porque son las únicas donde la columna <code>estado</code> contiene el valor <code>"Pendiente"</code>. Cambiar un estado en el CSV, reemplazar <code>"Pendiente"</code> por <code>"Pagado"</code> en el filtro o añadir nuevas filas al archivo permite advertir que el resultado no depende del número total de registros, sino del criterio definido para seleccionar.</p>
 </section>
 </section>
 <section id="ejercicio-9.-contar-cuántos-registros-hay-en-cada-estado" class="level3">
@@ -849,7 +849,7 @@ Pendiente    2
 Pagado       2
 Name: count, dtype: int64</code></pre>
 </div>
-<p>Ese resultado aparece porque <code>value_counts()</code> agrupa automáticamente los valores repetidos y calcula su frecuencia. Según la versión de <code>pandas</code>, la última línea puede variar un poco, pero la idea central es la misma: obtener un resumen por categorías. Para experimentar, agrega más filas al CSV o introduce un nuevo estado como <code>Observado</code>; verás cómo el conteo se actualiza sin necesidad de cambiar la lógica del programa.</p>
+<p>Ese resultado aparece porque <code>value_counts()</code> agrupa automáticamente los valores repetidos y calcula su frecuencia. Según la versión de <code>pandas</code>, la última línea puede variar un poco, pero la idea central es la misma: obtener un resumen por categorías. Si agregas más filas al CSV o introduces un nuevo estado como <code>Observado</code>, el conteo se actualiza sin necesidad de cambiar la lógica del programa.</p>
 </section>
 </section>
 <section id="ejercicio-10.-calcular-un-promedio-de-montos" class="level3">
@@ -883,7 +883,7 @@ Name: count, dtype: int64</code></pre>
 <div class="terminal-output">
 <pre class="text"><code>Promedio de multas: 1025.0</code></pre>
 </div>
-<p>Ese valor aparece porque <code>pandas</code> suma los montos <code>1200</code>, <code>800</code>, <code>1500</code> y <code>600</code>, y luego divide el total entre cuatro registros. Para experimentar, cambia uno de los montos, añade una nueva fila o prueba con una columna distinta si amplías el CSV. Así verás cómo un pequeño cambio en los datos puede modificar el indicador general.</p>
+<p>Ese valor aparece porque <code>pandas</code> suma los montos <code>1200</code>, <code>800</code>, <code>1500</code> y <code>600</code>, y luego divide el total entre cuatro registros. Cambiar uno de los montos, añadir una nueva fila o probar con otra columna si amplías el CSV permite observar cómo una variación puntual puede modificar el indicador general.</p>
 </section>
 </section>
 </section>
@@ -915,7 +915,7 @@ Name: count, dtype: int64</code></pre>
 </ul>
 </div>
 </div>
-<p>Antes de pasar al siguiente tramo del módulo, también conviene detenerse a pensar qué tipo de razonamiento empezó a aparecer aquí. Ahora ya no solo escribes instrucciones para aprender sintaxis: empiezas a organizar información, a formular pequeñas preguntas sobre los datos y a convertir tareas repetibles en procesos más claros. Las preguntas siguientes buscan ayudarte a notar ese cambio.</p>
+<p>Antes de pasar al siguiente tramo del módulo, conviene detenerse a pensar qué tipo de razonamiento empezó a aparecer aquí. Ya no se trata solo de escribir instrucciones para aprender sintaxis, sino de organizar información, formular preguntas sobre los datos y convertir tareas repetibles en procesos más claros. Las preguntas siguientes buscan hacer visible ese cambio.</p>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">

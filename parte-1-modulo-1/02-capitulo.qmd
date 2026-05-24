@@ -5,7 +5,7 @@ title: "2. Primeros pasos con Python"
 ::: {.callout-note}
 ## Qué aprenderás en esta sesión
 
-En este capítulo empezarás a ver por qué Python se volvió un lenguaje tan importante, cómo fue evolucionando y, sobre todo, cómo se aprende a usar paso a paso sin necesidad de venir del mundo de la ingeniería. Verás ejercicios breves para comprender qué hacen `print()`, las variables, `input()`, las conversiones de tipo, los operadores, los condicionales, los bucles, las funciones, las listas y varias operaciones sobre texto. La invitación no es solo a leer: es a descubrir cómo, a partir de instrucciones pequeñas, se puede empezar a pensar con más claridad problemas que luego se conectan con el trabajo jurídico.
+Python ocupa hoy un lugar central porque permite expresar instrucciones con claridad y trabajar con problemas muy distintos sin perder legibilidad. En este capítulo esa idea se aborda desde su forma más elemental: una breve mirada a la historia del lenguaje y una secuencia de ejercicios para entender `print()`, las variables, `input()`, las conversiones de tipo, los operadores, los condicionales, los bucles, las funciones, las listas y varias operaciones sobre texto. El objetivo no es solo aprender sintaxis, sino advertir cómo una serie de instrucciones simples puede convertirse en una manera más precisa de pensar tareas que después reaparecen en el trabajo jurídico.
 :::
 
 ## ¿Qué es Python y por qué es útil?
@@ -83,9 +83,9 @@ En suma, aprender Python en Derecho tiene un valor doble. Por un lado, mejora la
 
 ## Ejercicios prácticos para aprender los fundamentos de Python
 
-La mejor manera de empezar con Python es trabajar con ejercicios pequeños y progresivos. La idea no es copiar sin pensar. La idea es leer cada ejemplo, ejecutarlo, cambiar uno o dos valores y observar qué ocurre. Esa es una forma mucho más efectiva de aprender que limitarse a memorizar definiciones.
+Aprender Python exige una práctica atenta. Estos ejercicios están pensados para leerse, ejecutarse y volver a ejecutarse después de introducir cambios pequeños. Ese movimiento, aparentemente simple, permite ver con claridad qué parte del resultado depende de cada instrucción y por qué la sintaxis importa.
 
-Si quieres aprovechar bien esta parte del capítulo, conviene seguir un orden simple: empieza por los ejercicios más breves, ejecútalos en secuencia, modifica variables, mensajes o números para ver qué cambia, y luego avanza hacia listas y texto. Una práctica especialmente buena para este curso es reescribir los ejemplos con vocabulario jurídico. Por ejemplo, puedes cambiar `nombre_usuario` por `nombre_cliente`, listas genéricas por listas de expedientes, o nombres de archivo simples por algo como `demanda_2026.pdf`. Así, el aprendizaje de la sintaxis se conecta desde el inicio con situaciones que ya resultan familiares.
+La secuencia también importa. Conviene empezar por los ejemplos más breves, ejecutarlos en orden y alterar variables, mensajes o números antes de pasar a estructuras más amplias como listas y operaciones de texto. Una buena práctica para este curso consiste en reescribir los ejemplos con vocabulario jurídico: `nombre_usuario` puede convertirse en `nombre_cliente`, una lista genérica en una lista de expedientes y un archivo simple en `demanda_2026.pdf`. De ese modo, la sintaxis se aprende desde el comienzo en relación con situaciones reconocibles.
 
 ::: {.callout-important}
 ## Antes de empezar
@@ -95,7 +95,7 @@ Para trabajar bien estos ejercicios necesitas dos cosas muy concretas:
 - Python 3 instalado;
 - Visual Studio Code o un editor de texto equivalente.
 
-Si todavía no tienes ese entorno listo, revisa la sección de **Tutoriales** del manual, especialmente las guías de instalación de Python y de uso de Visual Studio Code. La idea es que llegues a los ejercicios con un espacio de trabajo sencillo, estable y listo para probar código sin fricción innecesaria.
+Si todavía no tienes ese entorno listo, revisa la sección de **Tutoriales** del manual, especialmente las guías de instalación de Python y de uso de Visual Studio Code. Lo importante es llegar a los ejercicios con un espacio de trabajo estable, de modo que la atención pueda ponerse en el código y no en problemas de configuración.
 
 :::
 
@@ -172,11 +172,11 @@ Tipo de esta_matriculado: <class 'bool'>
 ```
 :::
 
-Ese resultado ayuda a ver que Python no trata todos los datos por igual: distingue entre texto, enteros, decimales y valores lógicos porque cada tipo sirve para operaciones distintas. Para experimentar, cambia `"Manu"` por otro nombre, reemplaza `36` por `36.5` o sustituye `True` por `False`, y observa cómo cambia lo que muestra `type(...)`. Así podrás comprobar que no solo importa el valor, sino también la forma en que Python lo clasifica.
+Ese resultado muestra que Python no trata todos los datos del mismo modo. Distingue entre texto, enteros, decimales y valores lógicos porque cada tipo habilita operaciones distintas y también impone límites distintos. Conviene probar variantes sencillas: cambiar `"Manu"` por otro nombre, reemplazar `36` por `36.5` o sustituir `True` por `False`. La salida permite comprobar que no solo importa el valor, sino también la categoría bajo la cual Python lo interpreta.
 
 ### Ejercicio 3. Hacer que el programa te escuche: entradas y salidas
 
-Hasta aquí el programa trabaja solo con datos escritos de antemano. Ahora toca dar un paso importante: hacer que el programa espere una respuesta del usuario. En este ejercicio aprenderás a pedir un dato con `input()` y a responder con `print()`.
+Hasta aquí el programa trabajó con datos escritos de antemano. El paso siguiente consiste en incorporar una entrada externa: hacer que el programa espere una respuesta del usuario, la reciba y la utilice de inmediato.
 
 Crea un archivo nuevo y copia este código:
 
@@ -371,7 +371,7 @@ Desaprobado
 ```
 :::
 
-La diferencia entre una salida y otra muestra que Python no ejecuta ambos bloques: evalúa la condición y elige solo el camino que corresponde. Si quieres experimentar, prueba con `11`, `10` y `20` para ver con claridad dónde está el límite, o cambia la regla a `nota >= 13` para observar cómo una pequeña modificación en la condición altera el comportamiento completo del programa.
+La diferencia entre una salida y otra muestra que Python no ejecuta ambos bloques: evalúa la condición y toma un solo camino. Vale la pena probar con `11`, `10` y `20` para ver con precisión dónde queda el umbral, y también modificar la regla a `nota >= 13`. Esa variación deja ver algo importante: una alteración mínima en la condición puede cambiar por completo la decisión del programa.
 
 ### Ejercicio 7. Cuando no basta con dos caminos
 
@@ -510,11 +510,11 @@ Acceso permitido
 ```
 :::
 
-La idea clave es que `while` revisa la condición antes de cada nueva vuelta. Mientras la comparación siga siendo verdadera, el ciclo continúa; cuando deja de serlo, el programa sale del bucle y pasa a la siguiente línea. Para experimentar, cambia la clave esperada por otro valor, añade un mensaje como `print("Clave incorrecta")` dentro del ciclo o escribe varias claves erróneas seguidas para sentir mejor cómo funciona la repetición condicionada.
+`while` revisa la condición antes de cada nueva vuelta. Mientras la comparación siga siendo verdadera, el ciclo continúa; cuando deja de serlo, el programa sale del bucle y pasa a la siguiente línea. Se entiende mejor si cambias la clave esperada, añades un mensaje como `print("Clave incorrecta")` dentro del ciclo o escribes varias claves erróneas seguidas. Así se vuelve visible que la repetición no depende de un número fijo de vueltas, sino de que una condición permanezca abierta.
 
 ### Ejercicio 10. Escribir una vez, usar muchas veces
 
-Cuando una operación empieza a repetirse, conviene encapsularla. Este ejercicio introduce la idea de función: un pequeño bloque reutilizable que recibe datos, hace algo con ellos y devuelve un resultado.
+Cuando una operación empieza a repetirse, conviene encapsularla. Este ejercicio introduce la noción de función: un bloque reutilizable que recibe datos, opera sobre ellos y devuelve un resultado.
 
 Crea un archivo nuevo y copia este código:
 
@@ -586,7 +586,7 @@ Cantidad de expedientes: 5
 ```
 :::
 
-Este resultado es pequeño, pero la idea que introduce es grande: una lista permite manejar varias piezas de información bajo un mismo nombre y luego operar con el conjunto completo. Para experimentar, agrega o elimina elementos de `expedientes` y observa cómo cambia automáticamente el resultado de `len()`. También puedes reemplazar los códigos por nombres de clientes, artículos o documentos para ver que la estructura sigue funcionando igual aunque cambie el contenido.
+El resultado es breve, pero introduce una herramienta central: una lista permite reunir varias piezas de información bajo un mismo nombre y trabajar con el conjunto sin perder el orden. Si agregas o eliminas elementos de `expedientes`, `len()` cambia de inmediato porque cuenta la estructura completa en su estado actual. También puedes reemplazar los códigos por nombres de clientes, artículos o documentos; la operación será la misma aunque cambie el contenido.
 
 ### Ejercicio 12. Hacer que varias listas caminen juntas
 
@@ -733,11 +733,11 @@ Correo limpio: estudiante@ejemplo.com
 ```
 :::
 
-Este ejercicio resume muy bien una idea transversal del capítulo: una tarea aparentemente pequeña puede requerir varios pasos bien ordenados para producir un resultado limpio y útil. Cada línea transforma el texto de una manera específica, y la terminal te deja ver ese proceso casi como si fuera una bitácora paso a paso. Para experimentar, cambia el contenido de `texto`, usa otra frase en `mensaje`, modifica la extensión del archivo o reemplaza la coma del CSV por otro separador. También puedes probar qué ocurre si eliminas `strip()` del correo: notarás enseguida por qué limpiar antes de trabajar con texto suele ser tan importante.
+Este ejercicio condensa una idea transversal del capítulo: una tarea modesta puede requerir varios pasos bien ordenados para producir un resultado limpio y útil. Cada línea transforma el texto de un modo distinto, y la terminal permite seguir ese proceso casi como una bitácora. Conviene cambiar el contenido de `texto`, usar otra frase en `mensaje`, modificar la extensión del archivo o reemplazar la coma del CSV por otro separador. Si eliminas `strip()` del correo, se aprecia con facilidad por qué limpiar antes de procesar texto suele ser indispensable.
 
 ## Conclusiones del capítulo
 
-Después de recorrer la historia breve de Python y de practicar con instrucciones fundamentales, conviene detenerse un momento para mirar el conjunto. El capítulo no solo presentó comandos aislados: mostró una forma de pensar. Poco a poco viste que programar consiste en dar instrucciones claras, observar resultados, corregir, probar de nuevo y entender por qué una decisión en el código cambia lo que ocurre en la terminal.
+Después de recorrer la historia breve de Python y de practicar con instrucciones fundamentales, conviene mirar el conjunto. El capítulo no reunió comandos sueltos: presentó una manera de ordenar problemas. Programar apareció aquí como una práctica de precisión: dar instrucciones claras, observar resultados, corregir, probar de nuevo y entender por qué una decisión en el código modifica lo que ocurre en la terminal.
 
 Las ideas que siguen reúnen lo más importante de este recorrido. Léelas no como una lista para memorizar, sino como un mapa de lo que ya empezaste a comprender y de lo que después servirá como base para ejercicios más cercanos al trabajo jurídico.
 
@@ -762,7 +762,7 @@ Las ideas que siguen reúnen lo más importante de este recorrido. Léelas no co
 - Las operaciones sobre texto permiten limpiar, normalizar, separar, reemplazar y verificar cadenas de caracteres con precisión.
 :::
 
-Antes de pasar al siguiente capítulo, también vale la pena hacer una pausa más personal. Aprender a programar no consiste únicamente en saber qué hace una función o una estructura de control; también implica notar qué tipo de razonamiento se va formando mientras practicas. Las preguntas siguientes buscan precisamente eso: ayudarte a conectar la técnica con tu manera de pensar, con tus dudas y con posibles usos jurídicos de lo que acabas de aprender.
+Antes de pasar al siguiente capítulo, conviene hacer una pausa más reflexiva. Aprender a programar no consiste únicamente en reconocer funciones o estructuras de control; también supone advertir qué forma de razonamiento se va consolidando con la práctica. Las preguntas siguientes buscan conectar la técnica con esa transformación intelectual y con sus posibles usos jurídicos.
 
 ::: {.callout-caution}
 ## Para pensar y reflexionar

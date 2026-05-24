@@ -5,7 +5,7 @@ title: "4. Python para documentos, reportes y automatización jurídica básica"
 ::: {.callout-note}
 ## Qué aprenderás en esta sesión
 
-En este capítulo empezarás a ver cómo Python puede acercarse todavía más a tareas reconocibles del trabajo legal. A partir de ejercicios sencillos, aprenderás a calcular multas básicas, revisar expedientes, validar códigos, buscar palabras clave y contar categorías. Después darás un paso más ambicioso: generar PDF, crear cartas desde datos, unir documentos, producir gráficos simples, automatizar correos de ejemplo y observar una introducción a la automatización de acciones en pantalla. La meta no es convertirte de inmediato en especialista, sino mostrarte cómo pequeños scripts pueden transformarse en herramientas útiles para organizar y producir trabajo jurídico.
+En este capítulo Python se aproxima de manera más visible a tareas reconocibles del trabajo legal. Los ejercicios iniciales trabajan con reglas simples de cálculo, revisión y clasificación; luego aparecen scripts capaces de generar PDF, producir cartas desde datos, unir documentos, construir gráficos y mostrar formas básicas de automatización. El propósito sigue siendo pedagógico, pero ahora la relación entre código y producto de trabajo se vuelve mucho más concreta.
 :::
 
 ## ¿Por qué importa este tema?
@@ -37,7 +37,7 @@ Eso puede verse en ejemplos muy modestos, como validar un código o contar exped
 
 La secuencia de este capítulo va de menos a más. Primero aparecen ejercicios jurídicos sencillos, donde el foco está en la lógica de revisión y clasificación. Luego entran ejemplos más avanzados, donde el programa ya produce archivos, imágenes o interacciones visibles sobre el sistema.
 
-La recomendación sigue siendo la misma: ejecuta cada ejemplo, revisa lo que ocurre, cambia algo pequeño y vuelve a ejecutarlo. En esta etapa, además, ya no solo conviene mirar la terminal. También importa revisar los archivos que el programa genera o modifica.
+La recomendación sigue siendo la misma: ejecutar cada ejemplo, revisar lo que ocurre, cambiar algo pequeño y volver a correrlo. En esta etapa ya no basta con mirar la terminal; también importa revisar los archivos que el programa genera o modifica, porque allí aparece una parte sustancial del aprendizaje.
 
 ::: {.callout-important}
 ## Antes de empezar
@@ -107,7 +107,7 @@ Monto total: 100
 ```
 :::
 
-Ese resultado aparece porque Python multiplica `25` por `4` y guarda el valor en `monto_total`. Para experimentar, cambia la cantidad de días, prueba otro valor de multa por día o añade una nueva línea con un descuento o un recargo. Así verás cómo una regla sencilla puede ir creciendo paso a paso.
+Ese resultado aparece porque Python multiplica `25` por `4` y guarda el valor en `monto_total`. Cambiar la cantidad de días, probar otro valor de multa por día o añadir una línea con un descuento o un recargo permite ver cómo una regla sencilla puede ampliarse sin alterar su lógica básica.
 
 ### Ejercicio 2. Revisar una lista de expedientes
 
@@ -148,7 +148,7 @@ EXP-003 -> En revision
 ```
 :::
 
-Cada línea aparece porque el bucle toma un expediente distinto y muestra dos de sus campos. Para experimentar, añade un nuevo expediente, cambia un estado o agrega una clave más, como `responsable`. Luego modifica el `print()` para mostrar esa información adicional y comprobar cómo el registro puede enriquecerse.
+Cada línea aparece porque el bucle toma un expediente distinto y muestra dos de sus campos. Si añades un nuevo expediente, cambias un estado o incorporas una clave más, como `responsable`, el `print()` puede ampliarse para reflejar esa información. Así se aprecia cómo un registro jurídico puede enriquecerse sin cambiar la estructura general del recorrido.
 
 ### Ejercicio 3. Validar el formato de un código documental
 
@@ -184,7 +184,7 @@ Formato valido
 ```
 :::
 
-Ese resultado aparece porque el código efectivamente empieza con `DOC-`. Para experimentar, cambia el valor por `EXP-2026-15` o por `doc-2026-15` y observa qué ocurre. También puedes combinar esta revisión con otras, por ejemplo comprobando longitud o presencia de guiones, para volver más precisa la validación.
+Ese resultado aparece porque el código efectivamente empieza con `DOC-`. Cambiar el valor por `EXP-2026-15` o por `doc-2026-15` permite ver cómo responde la condición. También conviene combinar esta revisión con otras, por ejemplo comprobando longitud o presencia de guiones, para volver más precisa la validación.
 
 ### Ejercicio 4. Buscar una palabra clave dentro de un texto
 
@@ -222,7 +222,7 @@ La palabra clave si aparece en el texto
 ```
 :::
 
-Ese mensaje aparece porque la palabra `fundada` sí está dentro del texto. Para experimentar, prueba con otra palabra, cambia el texto de la resolución o usa una expresión compuesta. Así verás que esta técnica es útil para búsquedas rápidas, aunque también tiene límites cuando el lenguaje se vuelve más ambiguo o complejo.
+Ese mensaje aparece porque la palabra `fundada` sí está dentro del texto. Probar con otra palabra, cambiar el texto de la resolución o usar una expresión compuesta permite advertir tanto la utilidad de la técnica como su límite: funciona bien para búsquedas puntuales, pero no resuelve por sí sola la ambigüedad del lenguaje jurídico.
 
 ### Ejercicio 5. Contar cuántos casos hay por categoría
 
@@ -264,7 +264,7 @@ El programa recorre una lista de categorías y va sumando una unidad cada vez qu
 ```
 :::
 
-Ese resultado aparece porque el programa recorre toda la lista y acumula los conteos categoría por categoría. Para experimentar, agrega nuevos valores, cambia una categoría o intenta imprimir el diccionario línea por línea con un `for`. Así verás mejor cómo una colección de casos puede convertirse en un resumen rápido.
+Ese resultado aparece porque el programa recorre toda la lista y acumula los conteos categoría por categoría. Agregar nuevos valores, cambiar una categoría o imprimir el diccionario línea por línea con un `for` permite observar mejor cómo una colección de casos puede convertirse en un resumen inmediato.
 
 ## Ejemplos avanzados: cuando el script ya produce artefactos
 
@@ -272,7 +272,7 @@ La segunda parte del capítulo muestra algo especialmente valioso: Python no sol
 
 ### Ejercicio 6. Crear un PDF simple con una lista de estudiantes
 
-Este ejercicio introduce `reportlab`, una biblioteca que permite escribir texto directamente dentro de un PDF. La idea es generar una lista ordenada a partir de un bucle.
+Este ejercicio introduce `reportlab`, una biblioteca que permite escribir texto directamente dentro de un PDF. El punto ya no es solo procesar datos, sino convertirlos en un documento legible.
 
 Crea un archivo nuevo y copia este código:
 
@@ -329,7 +329,7 @@ PDF creado en: pdfs_entrada/01-lista-estudiantes.pdf
 ```
 :::
 
-La salida de la terminal confirma que el archivo fue generado, pero el efecto importante está en el propio PDF. Para experimentar, agrega más nombres, cambia el título o modifica la posición vertical inicial. Así verás que el documento no es estático: se construye a partir de tus datos y de las coordenadas que definas.
+La salida de la terminal confirma que el archivo fue generado, pero el efecto principal está en el propio PDF. Agregar más nombres, cambiar el título o modificar la posición vertical inicial permite ver que el documento no es estático: se construye a partir de datos y de decisiones de composición.
 
 ### Ejercicio 7. Colocar un logo centrado dentro de un PDF
 
@@ -401,13 +401,13 @@ PDF creado en: pdfs_entrada/02-logo-centrado.pdf
 ```
 :::
 
-La terminal solo confirma la creación del archivo, pero el aprendizaje real está en observar el PDF y notar cómo texto, color y posición pueden controlarse desde código. Para experimentar, cambia el ancho del logo, usa otra imagen o mueve las coordenadas. Así verás cómo pequeñas variaciones alteran la composición final del documento.
+La terminal solo confirma la creación del archivo, pero el aprendizaje real está en observar el PDF y notar cómo texto, color y posición pueden controlarse desde código. Cambiar el ancho del logo, usar otra imagen o mover las coordenadas permite advertir cómo pequeñas variaciones alteran la composición final del documento.
 
 ### Ejercicio 8. Generar una carta PDF por cada registro de un CSV
 
-Este ejercicio ya se parece mucho más a automatización documental. La idea es tomar un archivo CSV con varios destinatarios y producir una carta PDF para cada uno.
+Este ejercicio se acerca ya a una lógica de automatización documental. A partir de un CSV con varios destinatarios, el programa produce una carta PDF para cada uno.
 
-Si quieres seguir el ejemplo, crea un archivo `cartas_destinatarios.csv` en `data` con columnas como `nombre`, `domicilio`, `distrito` y `motivo`.
+Para seguir el ejemplo, crea un archivo `cartas_destinatarios.csv` en `data` con columnas como `nombre`, `domicilio`, `distrito` y `motivo`.
 
 Crea un archivo nuevo y copia este código:
 
@@ -474,7 +474,7 @@ Carta creada: pdfs_entrada/05-carta-maria_lopez.pdf
 ```
 :::
 
-Cada línea aparece porque el bucle produce un PDF distinto por cada fila del CSV. Para experimentar, agrega una nueva persona al archivo, cambia el texto que se imprime o añade más campos dentro de la carta. Así verás con claridad cómo los datos alimentan directamente la generación de documentos.
+Cada línea aparece porque el bucle produce un PDF distinto por cada fila del CSV. Agregar una nueva persona al archivo, cambiar el texto que se imprime o añadir más campos dentro de la carta permite ver con claridad cómo los datos alimentan directamente la generación de documentos.
 
 ### Ejercicio 9. Crear un comunicado PDF con un diseño más elaborado
 
@@ -549,7 +549,7 @@ Comunicado creado en: pdfs_entrada/00-comunicado-bienvenida.pdf
 ```
 :::
 
-La terminal confirma la creación, pero el efecto importante está en el propio documento: el script genera una pieza visual más rica y mejor compuesta. Para experimentar, cambia el color del fondo, modifica el texto del párrafo o agrega un subtítulo nuevo. Así verás cómo el diseño básico también puede controlarse desde el código.
+La terminal confirma la creación, pero el efecto importante está en el propio documento: el script genera una pieza visual más rica y mejor compuesta. Cambiar el color del fondo, modificar el texto del párrafo o agregar un subtítulo nuevo permite ver que el diseño básico también puede controlarse desde el código.
 
 ### Ejercicio 10. Unir varios PDF en un solo documento
 
@@ -613,13 +613,13 @@ PDF combinado creado en: pdfs_salida/documento_unido.pdf
 ```
 :::
 
-Cada línea de `Agregando:` aparece porque el programa va incorporando un PDF a la vez al documento final. Para experimentar, cambia el nombre de algunos archivos, quita uno de la carpeta o agrega otros nuevos. Así verás cómo el orden y el contenido de la carpeta influyen directamente en el resultado final.
+Cada línea de `Agregando:` aparece porque el programa va incorporando un PDF a la vez al documento final. Cambiar el nombre de algunos archivos, quitar uno de la carpeta o agregar otros nuevos permite advertir cómo el orden y el contenido disponibles influyen directamente en el resultado final.
 
 ### Ejercicio 11. Construir un gráfico de barras desde un CSV
 
 No toda salida útil es un documento textual. A veces conviene resumir información visualmente. Este ejercicio muestra cómo leer un CSV y producir un gráfico de barras simple con `matplotlib`.
 
-Si quieres seguir el ejemplo, crea un archivo `grafico_ventas.csv` en `data` con columnas como `categoria` y `total`.
+Para seguir el ejemplo, crea un archivo `grafico_ventas.csv` en `data` con columnas como `categoria` y `total`.
 
 Crea un archivo nuevo y copia este código:
 
@@ -679,13 +679,13 @@ Grafico guardado en: grafico_ventas.png
 ```
 :::
 
-La terminal confirma el guardado, pero el aprendizaje principal está en la ventana del gráfico y en la imagen PNG generada. Para experimentar, cambia los valores del CSV, añade otra categoría o prueba otro color para las barras. Así verás cómo pequeños cambios en los datos modifican inmediatamente la visualización.
+La terminal confirma el guardado, pero el aprendizaje principal está en la ventana del gráfico y en la imagen PNG generada. Cambiar los valores del CSV, añadir otra categoría o probar otro color para las barras permite ver cómo pequeñas variaciones en los datos modifican la visualización.
 
 ### Ejercicio 12. Preparar el envío de correos desde un CSV
 
-Este ejercicio introduce una automatización muy sensible: el envío de correos. Justamente por eso conviene entenderlo primero como un ejemplo controlado y no como algo para usar sin revisión.
+Este ejercicio introduce una automatización especialmente sensible: el envío de correos. Precisamente por eso conviene entenderlo primero como un ejemplo controlado y no como algo para usar sin revisión.
 
-Si quieres seguir el ejemplo, crea un CSV con columnas `correo` y `nombre`.
+Para seguir el ejemplo, crea un CSV con columnas `correo` y `nombre`.
 
 Crea un archivo nuevo y copia este código:
 
@@ -757,7 +757,7 @@ Debes editar la configuracion del remitente antes de enviar correos.
 ```
 :::
 
-Ese mensaje es útil porque evita que el script intente enviar correos con datos de ejemplo. Si más adelante lo adaptas en un entorno de prueba, conviene hacerlo con mucho cuidado, usando credenciales seguras y destinatarios controlados. Para experimentar sin riesgo, modifica solo el texto del mensaje o imprime el correo antes de enviarlo en lugar de conectarte realmente al servidor.
+Ese mensaje es útil porque evita que el script intente enviar correos con datos de ejemplo. Si más adelante lo adaptas en un entorno de prueba, conviene hacerlo con mucho cuidado, usando credenciales seguras y destinatarios controlados. Para ensayar sin riesgo, basta con modificar el texto del mensaje o imprimir el correo antes de enviarlo en lugar de conectarse realmente al servidor.
 
 ### Ejercicio 13. Automatizar acciones básicas con mouse y teclado
 
@@ -823,7 +823,7 @@ Ejemplo terminado.
 ```
 :::
 
-Además de lo que aparece en la terminal, verás que el programa abre una aplicación, escribe dentro de ella y guarda una captura. Para experimentar, conviene hacerlo con mucha cautela: cambia primero solo el texto que se escribe o la ruta de la captura. Si estás en otro sistema operativo, también tendrás que adaptar el programa que se abre. Aquí el aprendizaje principal no es “hacer clics por hacer clics”, sino entender que ciertas tareas repetitivas de interfaz también pueden automatizarse, aunque exigen mucha más prudencia.
+Además de lo que aparece en la terminal, el programa abre una aplicación, escribe dentro de ella y guarda una captura. Conviene modificar primero solo el texto que se escribe o la ruta de la captura, y hacerlo con mucha cautela. Si estás en otro sistema operativo, también tendrás que adaptar el programa que se abre. El aprendizaje principal no está en ejecutar clics de manera automática, sino en advertir que ciertas tareas repetitivas de interfaz pueden automatizarse, aunque exigen bastante más prudencia que otros ejemplos del capítulo.
 
 ## Conclusiones del capítulo
 
@@ -845,7 +845,7 @@ Las ideas que siguen resumen el valor de esta transición. Conviene leerlas como
 - cuanto más claro esté el flujo de entrada, transformación y salida, más útil y verificable será el script.
 :::
 
-Antes de pasar al siguiente módulo, también conviene hacer una pausa crítica. Este capítulo puede entusiasmar porque ya muestra resultados visibles, pero justamente por eso es importante pensar en límites, riesgos y decisiones de diseño. Las preguntas siguientes buscan ayudarte a no confundir automatización con solución automática de cualquier problema.
+Antes de pasar al siguiente módulo, conviene hacer una pausa crítica. Este capítulo muestra resultados visibles y, justamente por eso, obliga a pensar en límites, riesgos y decisiones de diseño. Las preguntas siguientes buscan evitar que la automatización se confunda con una solución automática para cualquier problema.
 
 ::: {.callout-caution}
 ## Para pensar y reflexionar

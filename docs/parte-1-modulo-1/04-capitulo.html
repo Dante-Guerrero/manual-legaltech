@@ -416,7 +416,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>En este capítulo empezarás a ver cómo Python puede acercarse todavía más a tareas reconocibles del trabajo legal. A partir de ejercicios sencillos, aprenderás a calcular multas básicas, revisar expedientes, validar códigos, buscar palabras clave y contar categorías. Después darás un paso más ambicioso: generar PDF, crear cartas desde datos, unir documentos, producir gráficos simples, automatizar correos de ejemplo y observar una introducción a la automatización de acciones en pantalla. La meta no es convertirte de inmediato en especialista, sino mostrarte cómo pequeños scripts pueden transformarse en herramientas útiles para organizar y producir trabajo jurídico.</p>
+<p>En este capítulo Python se aproxima de manera más visible a tareas reconocibles del trabajo legal. Los ejercicios iniciales trabajan con reglas simples de cálculo, revisión y clasificación; luego aparecen scripts capaces de generar PDF, producir cartas desde datos, unir documentos, construir gráficos y mostrar formas básicas de automatización. El propósito sigue siendo pedagógico, pero ahora la relación entre código y producto de trabajo se vuelve mucho más concreta.</p>
 </div>
 </div>
 <section id="por-qué-importa-este-tema" class="level2">
@@ -444,7 +444,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <section id="ejercicios-prácticos-para-documentos-y-automatización-jurídica-básica" class="level2">
 <h2 class="anchored" data-anchor-id="ejercicios-prácticos-para-documentos-y-automatización-jurídica-básica">Ejercicios prácticos para documentos y automatización jurídica básica</h2>
 <p>La secuencia de este capítulo va de menos a más. Primero aparecen ejercicios jurídicos sencillos, donde el foco está en la lógica de revisión y clasificación. Luego entran ejemplos más avanzados, donde el programa ya produce archivos, imágenes o interacciones visibles sobre el sistema.</p>
-<p>La recomendación sigue siendo la misma: ejecuta cada ejemplo, revisa lo que ocurre, cambia algo pequeño y vuelve a ejecutarlo. En esta etapa, además, ya no solo conviene mirar la terminal. También importa revisar los archivos que el programa genera o modifica.</p>
+<p>La recomendación sigue siendo la misma: ejecutar cada ejemplo, revisar lo que ocurre, cambiar algo pequeño y volver a correrlo. En esta etapa ya no basta con mirar la terminal; también importa revisar los archivos que el programa genera o modifica, porque allí aparece una parte sustancial del aprendizaje.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -510,7 +510,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 Dias de retraso: 4
 Monto total: 100</code></pre>
 </div>
-<p>Ese resultado aparece porque Python multiplica <code>25</code> por <code>4</code> y guarda el valor en <code>monto_total</code>. Para experimentar, cambia la cantidad de días, prueba otro valor de multa por día o añade una nueva línea con un descuento o un recargo. Así verás cómo una regla sencilla puede ir creciendo paso a paso.</p>
+<p>Ese resultado aparece porque Python multiplica <code>25</code> por <code>4</code> y guarda el valor en <code>monto_total</code>. Cambiar la cantidad de días, probar otro valor de multa por día o añadir una línea con un descuento o un recargo permite ver cómo una regla sencilla puede ampliarse sin alterar su lógica básica.</p>
 </section>
 </section>
 <section id="ejercicio-2.-revisar-una-lista-de-expedientes" class="level3">
@@ -546,7 +546,7 @@ Monto total: 100</code></pre>
 EXP-002 -&gt; Archivado
 EXP-003 -&gt; En revision</code></pre>
 </div>
-<p>Cada línea aparece porque el bucle toma un expediente distinto y muestra dos de sus campos. Para experimentar, añade un nuevo expediente, cambia un estado o agrega una clave más, como <code>responsable</code>. Luego modifica el <code>print()</code> para mostrar esa información adicional y comprobar cómo el registro puede enriquecerse.</p>
+<p>Cada línea aparece porque el bucle toma un expediente distinto y muestra dos de sus campos. Si añades un nuevo expediente, cambias un estado o incorporas una clave más, como <code>responsable</code>, el <code>print()</code> puede ampliarse para reflejar esa información. Así se aprecia cómo un registro jurídico puede enriquecerse sin cambiar la estructura general del recorrido.</p>
 </section>
 </section>
 <section id="ejercicio-3.-validar-el-formato-de-un-código-documental" class="level3">
@@ -577,7 +577,7 @@ EXP-003 -&gt; En revision</code></pre>
 <div class="terminal-output">
 <pre class="text"><code>Formato valido</code></pre>
 </div>
-<p>Ese resultado aparece porque el código efectivamente empieza con <code>DOC-</code>. Para experimentar, cambia el valor por <code>EXP-2026-15</code> o por <code>doc-2026-15</code> y observa qué ocurre. También puedes combinar esta revisión con otras, por ejemplo comprobando longitud o presencia de guiones, para volver más precisa la validación.</p>
+<p>Ese resultado aparece porque el código efectivamente empieza con <code>DOC-</code>. Cambiar el valor por <code>EXP-2026-15</code> o por <code>doc-2026-15</code> permite ver cómo responde la condición. También conviene combinar esta revisión con otras, por ejemplo comprobando longitud o presencia de guiones, para volver más precisa la validación.</p>
 </section>
 </section>
 <section id="ejercicio-4.-buscar-una-palabra-clave-dentro-de-un-texto" class="level3">
@@ -610,7 +610,7 @@ EXP-003 -&gt; En revision</code></pre>
 <div class="terminal-output">
 <pre class="text"><code>La palabra clave si aparece en el texto</code></pre>
 </div>
-<p>Ese mensaje aparece porque la palabra <code>fundada</code> sí está dentro del texto. Para experimentar, prueba con otra palabra, cambia el texto de la resolución o usa una expresión compuesta. Así verás que esta técnica es útil para búsquedas rápidas, aunque también tiene límites cuando el lenguaje se vuelve más ambiguo o complejo.</p>
+<p>Ese mensaje aparece porque la palabra <code>fundada</code> sí está dentro del texto. Probar con otra palabra, cambiar el texto de la resolución o usar una expresión compuesta permite advertir tanto la utilidad de la técnica como su límite: funciona bien para búsquedas puntuales, pero no resuelve por sí sola la ambigüedad del lenguaje jurídico.</p>
 </section>
 </section>
 <section id="ejercicio-5.-contar-cuántos-casos-hay-por-categoría" class="level3">
@@ -647,7 +647,7 @@ EXP-003 -&gt; En revision</code></pre>
 <div class="terminal-output">
 <pre class="text"><code>{'Laboral': 2, 'Civil': 3, 'Penal': 1}</code></pre>
 </div>
-<p>Ese resultado aparece porque el programa recorre toda la lista y acumula los conteos categoría por categoría. Para experimentar, agrega nuevos valores, cambia una categoría o intenta imprimir el diccionario línea por línea con un <code>for</code>. Así verás mejor cómo una colección de casos puede convertirse en un resumen rápido.</p>
+<p>Ese resultado aparece porque el programa recorre toda la lista y acumula los conteos categoría por categoría. Agregar nuevos valores, cambiar una categoría o imprimir el diccionario línea por línea con un <code>for</code> permite observar mejor cómo una colección de casos puede convertirse en un resumen inmediato.</p>
 </section>
 </section>
 </section>
@@ -656,7 +656,7 @@ EXP-003 -&gt; En revision</code></pre>
 <p>La segunda parte del capítulo muestra algo especialmente valioso: Python no solo puede analizar o clasificar información. También puede generar documentos, consolidar archivos, producir gráficos y automatizar acciones. Es aquí donde el vínculo con la automatización documental se vuelve más visible.</p>
 <section id="ejercicio-6.-crear-un-pdf-simple-con-una-lista-de-estudiantes" class="level3">
 <h3 class="anchored" data-anchor-id="ejercicio-6.-crear-un-pdf-simple-con-una-lista-de-estudiantes">Ejercicio 6. Crear un PDF simple con una lista de estudiantes</h3>
-<p>Este ejercicio introduce <code>reportlab</code>, una biblioteca que permite escribir texto directamente dentro de un PDF. La idea es generar una lista ordenada a partir de un bucle.</p>
+<p>Este ejercicio introduce <code>reportlab</code>, una biblioteca que permite escribir texto directamente dentro de un PDF. El punto ya no es solo procesar datos, sino convertirlos en un documento legible.</p>
 <p>Crea un archivo nuevo y copia este código:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -707,7 +707,7 @@ EXP-003 -&gt; En revision</code></pre>
 <div class="terminal-output">
 <pre class="text"><code>PDF creado en: pdfs_entrada/01-lista-estudiantes.pdf</code></pre>
 </div>
-<p>La salida de la terminal confirma que el archivo fue generado, pero el efecto importante está en el propio PDF. Para experimentar, agrega más nombres, cambia el título o modifica la posición vertical inicial. Así verás que el documento no es estático: se construye a partir de tus datos y de las coordenadas que definas.</p>
+<p>La salida de la terminal confirma que el archivo fue generado, pero el efecto principal está en el propio PDF. Agregar más nombres, cambiar el título o modificar la posición vertical inicial permite ver que el documento no es estático: se construye a partir de datos y de decisiones de composición.</p>
 </section>
 </section>
 <section id="ejercicio-7.-colocar-un-logo-centrado-dentro-de-un-pdf" class="level3">
@@ -773,13 +773,13 @@ EXP-003 -&gt; En revision</code></pre>
 <div class="terminal-output">
 <pre class="text"><code>PDF creado en: pdfs_entrada/02-logo-centrado.pdf</code></pre>
 </div>
-<p>La terminal solo confirma la creación del archivo, pero el aprendizaje real está en observar el PDF y notar cómo texto, color y posición pueden controlarse desde código. Para experimentar, cambia el ancho del logo, usa otra imagen o mueve las coordenadas. Así verás cómo pequeñas variaciones alteran la composición final del documento.</p>
+<p>La terminal solo confirma la creación del archivo, pero el aprendizaje real está en observar el PDF y notar cómo texto, color y posición pueden controlarse desde código. Cambiar el ancho del logo, usar otra imagen o mover las coordenadas permite advertir cómo pequeñas variaciones alteran la composición final del documento.</p>
 </section>
 </section>
 <section id="ejercicio-8.-generar-una-carta-pdf-por-cada-registro-de-un-csv" class="level3">
 <h3 class="anchored" data-anchor-id="ejercicio-8.-generar-una-carta-pdf-por-cada-registro-de-un-csv">Ejercicio 8. Generar una carta PDF por cada registro de un CSV</h3>
-<p>Este ejercicio ya se parece mucho más a automatización documental. La idea es tomar un archivo CSV con varios destinatarios y producir una carta PDF para cada uno.</p>
-<p>Si quieres seguir el ejemplo, crea un archivo <code>cartas_destinatarios.csv</code> en <code>data</code> con columnas como <code>nombre</code>, <code>domicilio</code>, <code>distrito</code> y <code>motivo</code>.</p>
+<p>Este ejercicio se acerca ya a una lógica de automatización documental. A partir de un CSV con varios destinatarios, el programa produce una carta PDF para cada uno.</p>
+<p>Para seguir el ejemplo, crea un archivo <code>cartas_destinatarios.csv</code> en <code>data</code> con columnas como <code>nombre</code>, <code>domicilio</code>, <code>distrito</code> y <code>motivo</code>.</p>
 <p>Crea un archivo nuevo y copia este código:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> csv</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
@@ -839,7 +839,7 @@ EXP-003 -&gt; En revision</code></pre>
 Carta creada: pdfs_entrada/04-carta-luis_torres.pdf
 Carta creada: pdfs_entrada/05-carta-maria_lopez.pdf</code></pre>
 </div>
-<p>Cada línea aparece porque el bucle produce un PDF distinto por cada fila del CSV. Para experimentar, agrega una nueva persona al archivo, cambia el texto que se imprime o añade más campos dentro de la carta. Así verás con claridad cómo los datos alimentan directamente la generación de documentos.</p>
+<p>Cada línea aparece porque el bucle produce un PDF distinto por cada fila del CSV. Agregar una nueva persona al archivo, cambiar el texto que se imprime o añadir más campos dentro de la carta permite ver con claridad cómo los datos alimentan directamente la generación de documentos.</p>
 </section>
 </section>
 <section id="ejercicio-9.-crear-un-comunicado-pdf-con-un-diseño-más-elaborado" class="level3">
@@ -909,7 +909,7 @@ Carta creada: pdfs_entrada/05-carta-maria_lopez.pdf</code></pre>
 <div class="terminal-output">
 <pre class="text"><code>Comunicado creado en: pdfs_entrada/00-comunicado-bienvenida.pdf</code></pre>
 </div>
-<p>La terminal confirma la creación, pero el efecto importante está en el propio documento: el script genera una pieza visual más rica y mejor compuesta. Para experimentar, cambia el color del fondo, modifica el texto del párrafo o agrega un subtítulo nuevo. Así verás cómo el diseño básico también puede controlarse desde el código.</p>
+<p>La terminal confirma la creación, pero el efecto importante está en el propio documento: el script genera una pieza visual más rica y mejor compuesta. Cambiar el color del fondo, modificar el texto del párrafo o agregar un subtítulo nuevo permite ver que el diseño básico también puede controlarse desde el código.</p>
 </section>
 </section>
 <section id="ejercicio-10.-unir-varios-pdf-en-un-solo-documento" class="level3">
@@ -967,13 +967,13 @@ Agregando: 01-lista-estudiantes.pdf
 Agregando: 02-logo-centrado.pdf
 PDF combinado creado en: pdfs_salida/documento_unido.pdf</code></pre>
 </div>
-<p>Cada línea de <code>Agregando:</code> aparece porque el programa va incorporando un PDF a la vez al documento final. Para experimentar, cambia el nombre de algunos archivos, quita uno de la carpeta o agrega otros nuevos. Así verás cómo el orden y el contenido de la carpeta influyen directamente en el resultado final.</p>
+<p>Cada línea de <code>Agregando:</code> aparece porque el programa va incorporando un PDF a la vez al documento final. Cambiar el nombre de algunos archivos, quitar uno de la carpeta o agregar otros nuevos permite advertir cómo el orden y el contenido disponibles influyen directamente en el resultado final.</p>
 </section>
 </section>
 <section id="ejercicio-11.-construir-un-gráfico-de-barras-desde-un-csv" class="level3">
 <h3 class="anchored" data-anchor-id="ejercicio-11.-construir-un-gráfico-de-barras-desde-un-csv">Ejercicio 11. Construir un gráfico de barras desde un CSV</h3>
 <p>No toda salida útil es un documento textual. A veces conviene resumir información visualmente. Este ejercicio muestra cómo leer un CSV y producir un gráfico de barras simple con <code>matplotlib</code>.</p>
-<p>Si quieres seguir el ejemplo, crea un archivo <code>grafico_ventas.csv</code> en <code>data</code> con columnas como <code>categoria</code> y <code>total</code>.</p>
+<p>Para seguir el ejemplo, crea un archivo <code>grafico_ventas.csv</code> en <code>data</code> con columnas como <code>categoria</code> y <code>total</code>.</p>
 <p>Crea un archivo nuevo y copia este código:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> csv</span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
@@ -1027,13 +1027,13 @@ PDF combinado creado en: pdfs_salida/documento_unido.pdf</code></pre>
 <div class="terminal-output">
 <pre class="text"><code>Grafico guardado en: grafico_ventas.png</code></pre>
 </div>
-<p>La terminal confirma el guardado, pero el aprendizaje principal está en la ventana del gráfico y en la imagen PNG generada. Para experimentar, cambia los valores del CSV, añade otra categoría o prueba otro color para las barras. Así verás cómo pequeños cambios en los datos modifican inmediatamente la visualización.</p>
+<p>La terminal confirma el guardado, pero el aprendizaje principal está en la ventana del gráfico y en la imagen PNG generada. Cambiar los valores del CSV, añadir otra categoría o probar otro color para las barras permite ver cómo pequeñas variaciones en los datos modifican la visualización.</p>
 </section>
 </section>
 <section id="ejercicio-12.-preparar-el-envío-de-correos-desde-un-csv" class="level3">
 <h3 class="anchored" data-anchor-id="ejercicio-12.-preparar-el-envío-de-correos-desde-un-csv">Ejercicio 12. Preparar el envío de correos desde un CSV</h3>
-<p>Este ejercicio introduce una automatización muy sensible: el envío de correos. Justamente por eso conviene entenderlo primero como un ejemplo controlado y no como algo para usar sin revisión.</p>
-<p>Si quieres seguir el ejemplo, crea un CSV con columnas <code>correo</code> y <code>nombre</code>.</p>
+<p>Este ejercicio introduce una automatización especialmente sensible: el envío de correos. Precisamente por eso conviene entenderlo primero como un ejemplo controlado y no como algo para usar sin revisión.</p>
+<p>Para seguir el ejemplo, crea un CSV con columnas <code>correo</code> y <code>nombre</code>.</p>
 <p>Crea un archivo nuevo y copia este código:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> csv</span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> smtplib</span>
@@ -1098,7 +1098,7 @@ PDF combinado creado en: pdfs_salida/documento_unido.pdf</code></pre>
 <div class="terminal-output">
 <pre class="text"><code>Debes editar la configuracion del remitente antes de enviar correos.</code></pre>
 </div>
-<p>Ese mensaje es útil porque evita que el script intente enviar correos con datos de ejemplo. Si más adelante lo adaptas en un entorno de prueba, conviene hacerlo con mucho cuidado, usando credenciales seguras y destinatarios controlados. Para experimentar sin riesgo, modifica solo el texto del mensaje o imprime el correo antes de enviarlo en lugar de conectarte realmente al servidor.</p>
+<p>Ese mensaje es útil porque evita que el script intente enviar correos con datos de ejemplo. Si más adelante lo adaptas en un entorno de prueba, conviene hacerlo con mucho cuidado, usando credenciales seguras y destinatarios controlados. Para ensayar sin riesgo, basta con modificar el texto del mensaje o imprimir el correo antes de enviarlo en lugar de conectarse realmente al servidor.</p>
 </section>
 </section>
 <section id="ejercicio-13.-automatizar-acciones-básicas-con-mouse-y-teclado" class="level3">
@@ -1158,7 +1158,7 @@ El script empezara en 3 segundos...
 Captura guardada en: captura_pyautogui.png
 Ejemplo terminado.</code></pre>
 </div>
-<p>Además de lo que aparece en la terminal, verás que el programa abre una aplicación, escribe dentro de ella y guarda una captura. Para experimentar, conviene hacerlo con mucha cautela: cambia primero solo el texto que se escribe o la ruta de la captura. Si estás en otro sistema operativo, también tendrás que adaptar el programa que se abre. Aquí el aprendizaje principal no es “hacer clics por hacer clics”, sino entender que ciertas tareas repetitivas de interfaz también pueden automatizarse, aunque exigen mucha más prudencia.</p>
+<p>Además de lo que aparece en la terminal, el programa abre una aplicación, escribe dentro de ella y guarda una captura. Conviene modificar primero solo el texto que se escribe o la ruta de la captura, y hacerlo con mucha cautela. Si estás en otro sistema operativo, también tendrás que adaptar el programa que se abre. El aprendizaje principal no está en ejecutar clics de manera automática, sino en advertir que ciertas tareas repetitivas de interfaz pueden automatizarse, aunque exigen bastante más prudencia que otros ejemplos del capítulo.</p>
 </section>
 </section>
 </section>
@@ -1189,7 +1189,7 @@ Ejemplo terminado.</code></pre>
 </ul>
 </div>
 </div>
-<p>Antes de pasar al siguiente módulo, también conviene hacer una pausa crítica. Este capítulo puede entusiasmar porque ya muestra resultados visibles, pero justamente por eso es importante pensar en límites, riesgos y decisiones de diseño. Las preguntas siguientes buscan ayudarte a no confundir automatización con solución automática de cualquier problema.</p>
+<p>Antes de pasar al siguiente módulo, conviene hacer una pausa crítica. Este capítulo muestra resultados visibles y, justamente por eso, obliga a pensar en límites, riesgos y decisiones de diseño. Las preguntas siguientes buscan evitar que la automatización se confunda con una solución automática para cualquier problema.</p>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
