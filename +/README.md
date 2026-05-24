@@ -37,13 +37,14 @@ La lógica es deliberadamente acumulativa: `+/y` conserva las fuentes, `+/z` con
 
 Es la zona de coordinación del subsistema.
 
-Contiene dos subcarpetas:
+Contiene tres subcarpetas:
 
-- [+/x/instrucciones](/Users/dante/github/manual-legaltech/+/x/instrucciones): documentos Markdown que explican reglas, flujos, criterios de estilo, plan editorial y uso del sistema.
+- [+/x/instrucciones](/Users/dante/github/manual-legaltech/+/x/instrucciones): guías operativas, procedimientos y documentos de aplicación.
+- [+/x/editorial](/Users/dante/github/manual-legaltech/+/x/editorial): documentos normativos del manual que fijan criterios relativamente estables y no funcionan como instructivos.
 - [+/x/scripts](/Users/dante/github/manual-legaltech/+/x/scripts): scripts utilitarios para conversión y materiales de código asociados a este espacio de trabajo.
 
 Regla práctica:
-si un archivo explica cómo usar el sistema, debe vivir en `+/x/instrucciones`; si ejecuta una tarea, debe vivir en `+/x/scripts`.
+si un archivo fija una norma editorial general, debe vivir en `+/x/editorial`; si explica cómo hacer algo, debe vivir en `+/x/instrucciones`; si ejecuta una tarea, debe vivir en `+/x/scripts`.
 
 ### `+/y`
 
@@ -114,7 +115,7 @@ Este subsistema está pensado para apoyar el libro, no para invadirlo. Por eso:
 
 Si vas a continuar o retomar el trabajo, el orden más útil es este:
 
-1. [+/x/instrucciones/PLAN.md](/Users/dante/github/manual-legaltech/+/x/instrucciones/PLAN.md)
+1. [+/x/editorial/PLAN.md](/Users/dante/github/manual-legaltech/+/x/editorial/PLAN.md)
 2. [+/x/instrucciones/estructura-del-directorio.md](/Users/dante/github/manual-legaltech/+/x/instrucciones/estructura-del-directorio.md)
 3. [+/x/instrucciones/instrucciones-conversion-papers.md](/Users/dante/github/manual-legaltech/+/x/instrucciones/instrucciones-conversion-papers.md)
 4. [+/z/instrucciones.md](/Users/dante/github/manual-legaltech/+/z/instrucciones.md)

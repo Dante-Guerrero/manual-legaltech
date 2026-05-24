@@ -62,7 +62,7 @@ Convertir nuevos papers agregados a `+/y/papers`:
 
 El libro debe mantenerse como un manual autocontenido, claro y pedagógico. Las instrucciones internas, notas metodológicas, propuestas de citas y materiales de apoyo no deben vivir dentro de los capítulos, sino en la carpeta `+`.
 
-El plan editorial vigente está en [+/x/instrucciones/PLAN.md](/Users/dante/github/manual-legaltech/+/x/instrucciones/PLAN.md).
+El plan editorial vigente está en [+/x/editorial/PLAN.md](/Users/dante/github/manual-legaltech/+/x/editorial/PLAN.md).
 
 ## Estado actual
 

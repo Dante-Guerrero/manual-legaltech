@@ -59,11 +59,11 @@ Ese comando:
 1. Copiar los PDF nuevos dentro de `+/y/papers`.
 2. Renombrarlos al formato `autor-año-titulo-del-paper.pdf`.
 3. Ejecutar `./+/x/scripts/convert_papers.sh --new`.
+4. Verificar que exista un `.md` correspondiente en `+/y/papers_md`.
+5. Confirmar que el PDF nuevo haya quedado incorporado en `+/x/instrucciones/papers-convertidos.md`.
 
 Nota:
 al comenzar la ruta con `+`, conviene invocar el script desde la raíz del repositorio con el prefijo `./`.
-4. Verificar que exista un `.md` correspondiente en `+/y/papers_md`.
-5. Confirmar que el PDF nuevo haya quedado incorporado en `+/x/instrucciones/papers-convertidos.md`.
 
 ## Observación práctica
 

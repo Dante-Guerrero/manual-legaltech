@@ -1,35 +1,51 @@
-# Estructura del directorio `+`
+# Mapa de `+/x`
 
-La carpeta `+` concentra los materiales auxiliares del proyecto en tres zonas claramente diferenciadas.
+La carpeta `+/x` es la zona de coordinación del subsistema auxiliar. Aquí no viven ni las fuentes ni las notas atómicas, sino los documentos y scripts que permiten operar el sistema con orden.
 
-## Estructura general
+## Estructura interna
 
-- `+/x`: documentación operativa y scripts.
-- `+/y`: corpus de papers en PDF y sus conversiones a Markdown.
-- `+/z`: notas atómicas en lógica zettelkasten.
+`+/x` se organiza en tres áreas:
 
-## Qué va en `+/x`
+- [+/x/instrucciones](/Users/dante/github/manual-legaltech/+/x/instrucciones): guías operativas y documentos de aplicación.
+- [+/x/editorial](/Users/dante/github/manual-legaltech/+/x/editorial): documentos normativos del manual que fijan criterios relativamente estables y no funcionan como instructivos.
+- [+/x/scripts](/Users/dante/github/manual-legaltech/+/x/scripts): scripts utilitarios y código asociado a este espacio de trabajo.
 
-`+/x/instrucciones` reúne archivos Markdown que explican cómo se usa este subsistema: flujos de conversión, criterios de citas, formulaciones de estilo y notas metodológicas.
+## Qué va en `+/x/editorial`
 
-`+/x/scripts` reúne los scripts utilitarios y, de forma conservadora, también el directorio `ejercicios de Python`, que contiene código de apoyo ya existente en el repositorio.
+Aquí deben vivir los documentos rectores del proyecto cuando su función principal sea **normativa o definicional**, no instructiva.
 
-## Qué va en `+/y`
+Hoy esta carpeta contiene:
 
-`+/y/papers` guarda los PDF originales.
+- [PLAN.md](/Users/dante/github/manual-legaltech/+/x/editorial/PLAN.md): documento rector editorial y pedagógico.
+- [formulacion-estilo-autor-manual.md](/Users/dante/github/manual-legaltech/+/x/editorial/formulacion-estilo-autor-manual.md): definición estable de la voz deseada del manual.
 
-`+/y/papers_md` guarda la versión Markdown de cada PDF, con el mismo nombre base.
+## Qué va en `+/x/instrucciones`
 
-## Qué va en `+/z`
+Aquí deben vivir los documentos que explican **cómo usar el sistema** o cómo aplicar criterios ya fijados.
 
-`+/z` guarda notas atómicas. Cada archivo contiene una sola idea reutilizable extraída de un paper y pensada para alimentar el manual, las propuestas de citas o futuras reescrituras.
+Hoy esta carpeta contiene:
 
-## Regla práctica
+- [cambios-estilo-capitulos-2-3-4-segun-estilo-del-autor.md](/Users/dante/github/manual-legaltech/+/x/instrucciones/cambios-estilo-capitulos-2-3-4-segun-estilo-del-autor.md): lista aplicada de ajustes de estilo.
+- [instrucciones-conversion-papers.md](/Users/dante/github/manual-legaltech/+/x/instrucciones/instrucciones-conversion-papers.md): procedimiento para incorporar y convertir papers.
+- [papers-convertidos.md](/Users/dante/github/manual-legaltech/+/x/instrucciones/papers-convertidos.md): lista de control de PDF ya convertidos.
+- [propuestas-citas-capitulos-2-3-4.md](/Users/dante/github/manual-legaltech/+/x/instrucciones/propuestas-citas-capitulos-2-3-4.md): documento de trabajo para inserción de citas.
 
-Si un archivo nuevo explica la lógica del sistema, debe ir en `+/x/instrucciones`.
+## Regla práctica de clasificación
 
-Si un archivo nuevo ejecuta o automatiza una tarea, debe ir en `+/x/scripts`.
+Si un archivo fija un criterio general y puede durar como referencia estable, conviene que vaya en `+/x/editorial`.
 
-Si un archivo nuevo es un paper fuente, debe ir en `+/y/papers` o en `+/y/papers_md` según corresponda.
+Si un archivo explica un procedimiento, una forma de uso o una aplicación concreta de esos criterios, conviene que vaya en `+/x/instrucciones`.
 
-Si un archivo nuevo es una idea breve extraída de un paper, debe ir en `+/z`.
+Si un archivo ejecuta una tarea, conviene que vaya en `+/x/scripts`.
+
+## Qué no debería pasar
+
+- `+/x/editorial` no debería llenarse de listas de tareas o instructivos operativos.
+- `+/x/instrucciones` no debería duplicar definiciones ya estables en `+/x/editorial`.
+- `+/x/scripts` no debería usarse como depósito de documentación narrativa.
+
+## Relación con otras carpetas
+
+- `+/y` conserva las fuentes.
+- `+/z` conserva las ideas extraídas de las fuentes.
+- `+/x` conserva los criterios, las instrucciones y las herramientas para usar ambas cosas en el manual.
