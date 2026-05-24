@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3. Python para decisiones jurídicas y automatización básica – Legal Tech, Manual del Curso</title>
+<title>3. Python para fechas, archivos y datos – Legal Tech, Manual del Curso</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -128,7 +128,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-1-modulo-1/00-presentacion.html">I. Pensamiento computacional para juristas</a></li><li class="breadcrumb-item"><a href="../parte-1-modulo-1/03-capitulo.html"><span class="chapter-title">3. Python para decisiones jurídicas y automatización básica</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-1-modulo-1/00-presentacion.html">I. Pensamiento computacional para juristas</a></li><li class="breadcrumb-item"><a href="../parte-1-modulo-1/03-capitulo.html"><span class="chapter-title">3. Python para fechas, archivos y datos</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -189,12 +189,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-1-modulo-1/03-capitulo.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">3. Python para decisiones jurídicas y automatización básica</span></a>
+  <a href="../parte-1-modulo-1/03-capitulo.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">3. Python para fechas, archivos y datos</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-1-modulo-1/04-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">4. Python para datos, documentos y flujos jurídicos</span></a>
+  <a href="../parte-1-modulo-1/04-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">4. Python para documentos, reportes y automatización jurídica básica</span></a>
   </div>
 </li>
       </ul>
@@ -355,21 +355,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
    
   <ul>
   <li><a href="#por-qué-importa-este-tema" id="toc-por-qué-importa-este-tema" class="nav-link active" data-scroll-target="#por-qué-importa-este-tema">¿Por qué importa este tema?</a></li>
-  <li><a href="#qué-aprenderás-en-esta-sesión" id="toc-qué-aprenderás-en-esta-sesión" class="nav-link" data-scroll-target="#qué-aprenderás-en-esta-sesión">Qué aprenderás en esta sesión</a></li>
-  <li><a href="#del-ejemplo-simple-al-problema-realista" id="toc-del-ejemplo-simple-al-problema-realista" class="nav-link" data-scroll-target="#del-ejemplo-simple-al-problema-realista">Del ejemplo simple al problema realista</a></li>
-  <li><a href="#un-primer-puente-desde-la-sesión-anterior" id="toc-un-primer-puente-desde-la-sesión-anterior" class="nav-link" data-scroll-target="#un-primer-puente-desde-la-sesión-anterior">Un primer puente desde la sesión anterior</a></li>
-  <li><a href="#un-primer-modelo-admisibilidad-preliminar" id="toc-un-primer-modelo-admisibilidad-preliminar" class="nav-link" data-scroll-target="#un-primer-modelo-admisibilidad-preliminar">Un primer modelo: admisibilidad preliminar</a></li>
-  <li><a href="#mejorar-la-lógica-devolver-razones" id="toc-mejorar-la-lógica-devolver-razones" class="nav-link" data-scroll-target="#mejorar-la-lógica-devolver-razones">Mejorar la lógica: devolver razones</a></li>
-  <li><a href="#encadenar-condiciones-sin-perder-claridad" id="toc-encadenar-condiciones-sin-perder-claridad" class="nav-link" data-scroll-target="#encadenar-condiciones-sin-perder-claridad">Encadenar condiciones sin perder claridad</a></li>
-  <li><a href="#ejemplo-jurídico-1-elegibilidad-para-un-beneficio" id="toc-ejemplo-jurídico-1-elegibilidad-para-un-beneficio" class="nav-link" data-scroll-target="#ejemplo-jurídico-1-elegibilidad-para-un-beneficio">Ejemplo jurídico 1: elegibilidad para un beneficio</a></li>
-  <li><a href="#ejemplo-jurídico-2-cálculo-de-multa-con-reglas-adicionales" id="toc-ejemplo-jurídico-2-cálculo-de-multa-con-reglas-adicionales" class="nav-link" data-scroll-target="#ejemplo-jurídico-2-cálculo-de-multa-con-reglas-adicionales">Ejemplo jurídico 2: cálculo de multa con reglas adicionales</a></li>
-  <li><a href="#probar-escenarios" id="toc-probar-escenarios" class="nav-link" data-scroll-target="#probar-escenarios">Probar escenarios</a></li>
-  <li><a href="#cómo-escribir-funciones-más-útiles" id="toc-cómo-escribir-funciones-más-útiles" class="nav-link" data-scroll-target="#cómo-escribir-funciones-más-útiles">Cómo escribir funciones más útiles</a></li>
-  <li><a href="#práctica-en-editor" id="toc-práctica-en-editor" class="nav-link" data-scroll-target="#práctica-en-editor">Práctica en editor</a></li>
-  <li><a href="#git-y-github" id="toc-git-y-github" class="nav-link" data-scroll-target="#git-y-github">Git y GitHub</a></li>
-  <li><a href="#pset-de-la-sesión" id="toc-pset-de-la-sesión" class="nav-link" data-scroll-target="#pset-de-la-sesión">PSET de la sesión</a></li>
-  <li><a href="#preguntas-de-repaso" id="toc-preguntas-de-repaso" class="nav-link" data-scroll-target="#preguntas-de-repaso">Preguntas de repaso</a></li>
-  <li><a href="#ideas-clave" id="toc-ideas-clave" class="nav-link" data-scroll-target="#ideas-clave">Ideas clave</a></li>
+  <li><a href="#del-fundamento-al-uso-práctico" id="toc-del-fundamento-al-uso-práctico" class="nav-link" data-scroll-target="#del-fundamento-al-uso-práctico">Del fundamento al uso práctico</a></li>
+  <li><a href="#fechas-archivos-y-datos-en-clave-jurídica" id="toc-fechas-archivos-y-datos-en-clave-jurídica" class="nav-link" data-scroll-target="#fechas-archivos-y-datos-en-clave-jurídica">Fechas, archivos y datos en clave jurídica</a></li>
+  <li><a href="#ejercicios-prácticos-para-trabajar-con-fechas-archivos-y-datos" id="toc-ejercicios-prácticos-para-trabajar-con-fechas-archivos-y-datos" class="nav-link" data-scroll-target="#ejercicios-prácticos-para-trabajar-con-fechas-archivos-y-datos">Ejercicios prácticos para trabajar con fechas, archivos y datos</a></li>
+  <li><a href="#fechas-empezar-a-pensar-el-tiempo-con-python" id="toc-fechas-empezar-a-pensar-el-tiempo-con-python" class="nav-link" data-scroll-target="#fechas-empezar-a-pensar-el-tiempo-con-python">Fechas: empezar a pensar el tiempo con Python</a>
+  <ul class="collapse">
+  <li><a href="#ejercicio-1.-mirar-el-reloj-del-sistema-obtener-la-fecha-actual" id="toc-ejercicio-1.-mirar-el-reloj-del-sistema-obtener-la-fecha-actual" class="nav-link" data-scroll-target="#ejercicio-1.-mirar-el-reloj-del-sistema-obtener-la-fecha-actual">Ejercicio 1. Mirar el reloj del sistema: obtener la fecha actual</a></li>
+  <li><a href="#ejercicio-2.-contar-días-entre-dos-actuaciones" id="toc-ejercicio-2.-contar-días-entre-dos-actuaciones" class="nav-link" data-scroll-target="#ejercicio-2.-contar-días-entre-dos-actuaciones">Ejercicio 2. Contar días entre dos actuaciones</a></li>
+  <li><a href="#ejercicio-3.-sumar-días-para-calcular-un-vencimiento" id="toc-ejercicio-3.-sumar-días-para-calcular-un-vencimiento" class="nav-link" data-scroll-target="#ejercicio-3.-sumar-días-para-calcular-un-vencimiento">Ejercicio 3. Sumar días para calcular un vencimiento</a></li>
+  </ul></li>
+  <li><a href="#archivos-hacer-que-el-programa-lea-y-escriba-documentos" id="toc-archivos-hacer-que-el-programa-lea-y-escriba-documentos" class="nav-link" data-scroll-target="#archivos-hacer-que-el-programa-lea-y-escriba-documentos">Archivos: hacer que el programa lea y escriba documentos</a>
+  <ul class="collapse">
+  <li><a href="#ejercicio-4.-leer-un-archivo-de-texto" id="toc-ejercicio-4.-leer-un-archivo-de-texto" class="nav-link" data-scroll-target="#ejercicio-4.-leer-un-archivo-de-texto">Ejercicio 4. Leer un archivo de texto</a></li>
+  <li><a href="#ejercicio-5.-guardar-una-observación-en-un-archivo-nuevo" id="toc-ejercicio-5.-guardar-una-observación-en-un-archivo-nuevo" class="nav-link" data-scroll-target="#ejercicio-5.-guardar-una-observación-en-un-archivo-nuevo">Ejercicio 5. Guardar una observación en un archivo nuevo</a></li>
+  <li><a href="#ejercicio-6.-leer-registros-desde-un-archivo-csv" id="toc-ejercicio-6.-leer-registros-desde-un-archivo-csv" class="nav-link" data-scroll-target="#ejercicio-6.-leer-registros-desde-un-archivo-csv">Ejercicio 6. Leer registros desde un archivo CSV</a></li>
+  </ul></li>
+  <li><a href="#datos-tabulares-empezar-a-pensar-con-pandas" id="toc-datos-tabulares-empezar-a-pensar-con-pandas" class="nav-link" data-scroll-target="#datos-tabulares-empezar-a-pensar-con-pandas">Datos tabulares: empezar a pensar con <code>pandas</code></a>
+  <ul class="collapse">
+  <li><a href="#ejercicio-7.-crear-una-tabla-simple-en-memoria" id="toc-ejercicio-7.-crear-una-tabla-simple-en-memoria" class="nav-link" data-scroll-target="#ejercicio-7.-crear-una-tabla-simple-en-memoria">Ejercicio 7. Crear una tabla simple en memoria</a></li>
+  <li><a href="#ejercicio-8.-filtrar-solo-los-registros-pendientes" id="toc-ejercicio-8.-filtrar-solo-los-registros-pendientes" class="nav-link" data-scroll-target="#ejercicio-8.-filtrar-solo-los-registros-pendientes">Ejercicio 8. Filtrar solo los registros pendientes</a></li>
+  <li><a href="#ejercicio-9.-contar-cuántos-registros-hay-en-cada-estado" id="toc-ejercicio-9.-contar-cuántos-registros-hay-en-cada-estado" class="nav-link" data-scroll-target="#ejercicio-9.-contar-cuántos-registros-hay-en-cada-estado">Ejercicio 9. Contar cuántos registros hay en cada estado</a></li>
+  <li><a href="#ejercicio-10.-calcular-un-promedio-de-montos" id="toc-ejercicio-10.-calcular-un-promedio-de-montos" class="nav-link" data-scroll-target="#ejercicio-10.-calcular-un-promedio-de-montos">Ejercicio 10. Calcular un promedio de montos</a></li>
+  </ul></li>
+  <li><a href="#conclusiones-del-capítulo" id="toc-conclusiones-del-capítulo" class="nav-link" data-scroll-target="#conclusiones-del-capítulo">Conclusiones del capítulo</a></li>
   </ul>
 </nav>
     </div>
@@ -379,9 +387,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4DXS39K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-1-modulo-1/00-presentacion.html">I. Pensamiento computacional para juristas</a></li><li class="breadcrumb-item"><a href="../parte-1-modulo-1/03-capitulo.html"><span class="chapter-title">3. Python para decisiones jurídicas y automatización básica</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-1-modulo-1/00-presentacion.html">I. Pensamiento computacional para juristas</a></li><li class="breadcrumb-item"><a href="../parte-1-modulo-1/03-capitulo.html"><span class="chapter-title">3. Python para fechas, archivos y datos</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">3. Python para decisiones jurídicas y automatización básica</span></h1>
+<h1 class="title"><span class="chapter-title">3. Python para fechas, archivos y datos</span></h1>
 </div>
 
 
@@ -398,285 +406,535 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </header>
 
 
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Qué aprenderás en esta sesión
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>En este capítulo darás un paso muy importante: pasarás de los fundamentos generales de Python a tareas que se parecen más al trabajo cotidiano con información jurídica. Verás cómo obtener fechas, calcular plazos simples, leer y guardar archivos de texto, trabajar con archivos CSV y explorar tablas de datos con <code>pandas</code>. La idea central es que empieces a notar cómo un programa puede ayudarte no solo a mostrar mensajes en pantalla, sino también a organizar información, revisar registros y producir resultados útiles para tareas legales y administrativas.</p>
+</div>
+</div>
 <section id="por-qué-importa-este-tema" class="level2">
 <h2 class="anchored" data-anchor-id="por-qué-importa-este-tema">¿Por qué importa este tema?</h2>
-<p>Muchas tareas jurídicas no son solo lectura o argumentación. También implican aplicar criterios, validar requisitos, verificar supuestos y producir decisiones preliminares. Ese tipo de trabajo puede expresarse como lógica condicional más compleja.</p>
+<p>En la práctica jurídica, muchos problemas no se resuelven solo con definiciones abstractas. Hace falta revisar fechas, calcular días entre actos procesales, leer documentos, registrar observaciones, ordenar expedientes y mirar tablas con datos. Todo eso forma parte del trabajo real y, precisamente por eso, es un buen terreno para seguir aprendiendo Python.</p>
+<p>En la sesión anterior viste variables, tipos de datos, condicionales, bucles, funciones, listas y texto. Ahora toca usar esas bases en contextos más cercanos a tareas concretas. Un jurista que empieza a manejar fechas, archivos y tablas con un poco de soltura ya está dando un paso importante hacia la automatización básica y el análisis más ordenado de información.</p>
+</section>
+<section id="del-fundamento-al-uso-práctico" class="level2">
+<h2 class="anchored" data-anchor-id="del-fundamento-al-uso-práctico">Del fundamento al uso práctico</h2>
+<p>El paso que da este capítulo es muy natural. Primero aprendiste a escribir instrucciones simples y a entender qué hace cada línea. Ahora vas a usar esa misma lógica para responder preguntas como estas:</p>
+<ul>
+<li>¿qué fecha tiene hoy el sistema?;</li>
+<li>¿cuántos días han pasado entre una presentación y una audiencia?;</li>
+<li>¿cuándo vence un plazo si se suman ciertos días?;</li>
+<li>¿cómo se lee un documento desde un archivo?;</li>
+<li>¿cómo se guarda una nota generada por el programa?;</li>
+<li>¿cómo se leen registros de un CSV?;</li>
+<li>¿cómo se filtran o resumen datos en una tabla?</li>
+</ul>
+<p>Es decir, el capítulo empieza a mostrar que programar no solo sirve para aprender sintaxis. También sirve para trabajar con información de una manera más precisa y trazable.</p>
+</section>
+<section id="fechas-archivos-y-datos-en-clave-jurídica" class="level2">
+<h2 class="anchored" data-anchor-id="fechas-archivos-y-datos-en-clave-jurídica">Fechas, archivos y datos en clave jurídica</h2>
+<p>Estos tres temas tienen una relación muy directa con el trabajo legal. Las fechas importan porque muchos procedimientos dependen de plazos y secuencias temporales. Los archivos importan porque una parte enorme del trabajo profesional consiste en leer, guardar y mover documentos. Y los datos importan porque expedientes, multas, registros, estados y categorías suelen terminar organizados en tablas que necesitan revisarse y resumirse.</p>
+<p>Lo importante aquí no es imaginar que Python reemplaza el criterio jurídico. Lo importante es ver que puede ayudar a hacer visible y repetible la parte estructurada del trabajo: calcular, leer, ordenar, filtrar y resumir.</p>
+</section>
+<section id="ejercicios-prácticos-para-trabajar-con-fechas-archivos-y-datos" class="level2">
+<h2 class="anchored" data-anchor-id="ejercicios-prácticos-para-trabajar-con-fechas-archivos-y-datos">Ejercicios prácticos para trabajar con fechas, archivos y datos</h2>
+<p>La mejor manera de aprender esta parte es avanzar en secuencia. Primero conviene trabajar con fechas, porque allí aparecen objetos nuevos pero fáciles de entender. Luego tiene sentido pasar a archivos, porque eso te muestra cómo un programa se conecta con documentos reales. Finalmente, el cierre con datos permite ver cómo Python y <code>pandas</code> ayudan a leer tablas y extraer información útil.</p>
+<p>Si quieres aprovechar bien este capítulo, te conviene ejecutar cada ejercicio, revisar la salida, cambiar uno o dos valores y volver a correr el script. Esa práctica de probar pequeñas variaciones sigue siendo la mejor forma de aprender.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>Idea central
+<span class="screen-reader-only">Important</span>Antes de empezar
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Cuando una regla jurídica puede formularse como condiciones claras, también puede convertirse en una función o en un flujo verificable.</p>
+<p>Para trabajar con estos ejercicios necesitas:</p>
+<ul>
+<li>Python 3 instalado;</li>
+<li>Visual Studio Code o un editor equivalente;</li>
+<li>una carpeta de trabajo para esta sesión;</li>
+<li>una subcarpeta <code>data</code> cuando el ejercicio use archivos;</li>
+<li>la biblioteca <code>pandas</code> para la parte final del capítulo.</li>
+</ul>
+<p>Una forma ordenada de trabajar es crear una carpeta como <code>sesion-3</code> y guardar allí tus scripts. Cuando llegues a los ejercicios de archivos y datos, crea dentro una carpeta <code>data</code> para colocar los textos y CSV que el programa leerá.</p>
+<p>Si todavía no tienes <code>pandas</code>, puedes instalarla con:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install pandas</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>La recomendación práctica sigue siendo la misma del capítulo anterior: ejecuta el código, observa la salida, cambia algo pequeño y vuelve a ejecutarlo antes de pasar al siguiente ejercicio.</p>
 </div>
 </div>
 </section>
-<section id="qué-aprenderás-en-esta-sesión" class="level2">
-<h2 class="anchored" data-anchor-id="qué-aprenderás-en-esta-sesión">Qué aprenderás en esta sesión</h2>
-<p>Al finalizar esta sesión, deberías poder:</p>
+<section id="fechas-empezar-a-pensar-el-tiempo-con-python" class="level2">
+<h2 class="anchored" data-anchor-id="fechas-empezar-a-pensar-el-tiempo-con-python">Fechas: empezar a pensar el tiempo con Python</h2>
+<p>Trabajar con fechas es una habilidad especialmente útil en contextos jurídicos. Muchos trámites, audiencias, notificaciones y vencimientos dependen de contar días o ubicar un acto en el tiempo. Por eso, esta sección sirve como un primer puente entre Python y tareas que ya se parecen más a la práctica real.</p>
+<section id="ejercicio-1.-mirar-el-reloj-del-sistema-obtener-la-fecha-actual" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-1.-mirar-el-reloj-del-sistema-obtener-la-fecha-actual">Ejercicio 1. Mirar el reloj del sistema: obtener la fecha actual</h3>
+<p>El punto de partida más simple es pedirle a Python la fecha de hoy. Este ejercicio es pequeño, pero enseña una idea importante: las fechas no se manejan solo como texto, sino como objetos que luego permiten extraer partes concretas como el año, el mes o el día.</p>
+<p>Crea un archivo nuevo y copia este código:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datetime <span class="im">import</span> date</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>hoy <span class="op">=</span> date.today()</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Fecha de hoy:"</span>, hoy)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Año:"</span>, hoy.year)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Mes:"</span>, hoy.month)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Dia:"</span>, hoy.day)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="qué-hace-este-código" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-este-código">Qué hace este código</h4>
+<p>El programa importa una herramienta de Python para trabajar con fechas, obtiene la fecha actual del sistema y luego muestra esa fecha completa y también sus partes por separado.</p>
+</section>
+<section id="qué-hace-cada-parte" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-cada-parte">Qué hace cada parte</h4>
 <ul>
-<li>combinar varias condiciones en un mismo script;</li>
-<li>usar funciones para encapsular lógica repetible;</li>
-<li>modelar decisiones jurídicas preliminares;</li>
-<li>distinguir entre una automatización útil y una simplificación defectuosa;</li>
-<li>documentar y versionar una solución simple en Python.</li>
+<li><code>from datetime import date</code> importa la clase <code>date</code> desde el módulo <code>datetime</code>.</li>
+<li><code>date</code> representa una fecha sin hora: año, mes y día.</li>
+<li><code>date.today()</code> consulta la fecha actual del sistema donde se está ejecutando el programa.</li>
+<li><code>hoy.year</code>, <code>hoy.month</code> y <code>hoy.day</code> acceden a atributos del objeto fecha.</li>
+<li>Se usan esos atributos porque muchas veces no basta con ver la fecha completa: también interesa extraer partes concretas para compararlas o mostrarlas de otra forma.</li>
 </ul>
 </section>
-<section id="del-ejemplo-simple-al-problema-realista" class="level2">
-<h2 class="anchored" data-anchor-id="del-ejemplo-simple-al-problema-realista">Del ejemplo simple al problema realista</h2>
-<p>En la sesión anterior vimos variables, condicionales, bucles y funciones por separado. Ahora toca combinarlos en problemas más parecidos al trabajo jurídico real.</p>
-<p>La práctica jurídica suele exigir verificar varios requisitos a la vez:</p>
-<ul>
-<li>plazos;</li>
-<li>documentos obligatorios;</li>
-<li>montos;</li>
-<li>calidad del sujeto;</li>
-<li>existencia de excepciones;</li>
-<li>cumplimiento de etapas previas.</li>
-</ul>
-<p>Eso significa que ya no basta con una condición aislada. Necesitamos una estructura un poco más rica.</p>
+<section id="qué-verás-en-la-terminal" class="level4">
+<h4 class="anchored" data-anchor-id="qué-verás-en-la-terminal">Qué verás en la terminal</h4>
+<p>Si el programa se ejecutara, por ejemplo, el 24 de mayo de 2026, verías algo parecido a esto:</p>
+<div class="terminal-output">
+<pre class="text"><code>Fecha de hoy: 2026-05-24
+Año: 2026
+Mes: 5
+Dia: 24</code></pre>
+</div>
+<p>Ese resultado aparece porque <code>date.today()</code> devuelve un objeto fecha y <code>print()</code> muestra tanto el objeto completo como cada atributo por separado. Para experimentar, no puedes cambiar la fecha del sistema desde el script, pero sí puedes agregar nuevas líneas como <code>print("Dia de hoy en texto:", hoy.day)</code> o guardar otra fecha manual con <code>date(2026, 12, 31)</code> para compararla con la actual.</p>
 </section>
-<section id="un-primer-puente-desde-la-sesión-anterior" class="level2">
-<h2 class="anchored" data-anchor-id="un-primer-puente-desde-la-sesión-anterior">Un primer puente desde la sesión anterior</h2>
-<p>En la sesión anterior vimos ejemplos simples de variables, condicionales y funciones. Un paso intermedio razonable consiste en modelar una revisión muy básica:</p>
-<ul>
-<li>tiene firma;</li>
-<li>tiene documento de identidad;</li>
-<li>tiene pago de tasa.</li>
-</ul>
-<p>Podemos expresarlo así:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> evaluar_solicitud(tiene_firma, tiene_dni, tiene_pago):</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> tiene_firma <span class="kw">and</span> tiene_dni <span class="kw">and</span> tiene_pago:</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"Solicitud admisible"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">"Solicitud observada"</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>resultado <span class="op">=</span> evaluar_solicitud(<span class="va">True</span>, <span class="va">True</span>, <span class="va">False</span>)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(resultado)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Este ejemplo todavía es simple, pero cumple una función importante: mostrar cómo varias condiciones pueden combinarse para producir una clasificación preliminar.</p>
 </section>
-<section id="un-primer-modelo-admisibilidad-preliminar" class="level2">
-<h2 class="anchored" data-anchor-id="un-primer-modelo-admisibilidad-preliminar">Un primer modelo: admisibilidad preliminar</h2>
-<p>Supón que una solicitud solo puede pasar a revisión si cumple tres requisitos:</p>
-<ul>
-<li>pago de tasa;</li>
-<li>firma del solicitante;</li>
-<li>presentación dentro del plazo.</li>
-</ul>
-<p>Podemos empezar así:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> evaluar_solicitud(pago_tasa, firma, plazo_vigente):</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> pago_tasa <span class="kw">and</span> firma <span class="kw">and</span> plazo_vigente:</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"Solicitud admisible"</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">"Solicitud con observaciones"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Esta función es útil, pero todavía es bastante rígida. Solo devuelve dos resultados y no explica por qué observa la solicitud.</p>
+<section id="ejercicio-2.-contar-días-entre-dos-actuaciones" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-2.-contar-días-entre-dos-actuaciones">Ejercicio 2. Contar días entre dos actuaciones</h3>
+<p>Una tarea muy común en el trabajo jurídico consiste en medir el tiempo entre dos eventos: presentación y audiencia, notificación y respuesta, inicio y vencimiento. Este ejercicio muestra cómo convertir texto en fechas reales y luego restarlas para obtener una diferencia de días.</p>
+<p>Crea un archivo nuevo y copia este código:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datetime <span class="im">import</span> datetime</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>fecha_presentacion <span class="op">=</span> datetime.strptime(<span class="st">"2026-03-01"</span>, <span class="st">"%Y-%m-</span><span class="sc">%d</span><span class="st">"</span>)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>fecha_audiencia <span class="op">=</span> datetime.strptime(<span class="st">"2026-03-18"</span>, <span class="st">"%Y-%m-</span><span class="sc">%d</span><span class="st">"</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>diferencia <span class="op">=</span> fecha_audiencia <span class="op">-</span> fecha_presentacion</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Fecha de presentacion:"</span>, fecha_presentacion.date())</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Fecha de audiencia:"</span>, fecha_audiencia.date())</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Dias entre ambas fechas:"</span>, diferencia.days)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="qué-hace-este-código-1" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-este-código-1">Qué hace este código</h4>
+<p>El programa toma dos fechas escritas como texto, las convierte en objetos de fecha y hora, las resta y luego muestra cuántos días hay entre ambas.</p>
 </section>
-<section id="mejorar-la-lógica-devolver-razones" class="level2">
-<h2 class="anchored" data-anchor-id="mejorar-la-lógica-devolver-razones">Mejorar la lógica: devolver razones</h2>
-<p>En muchos contextos jurídicos no basta con saber si algo pasa o no pasa. También importa saber <strong>por qué</strong>.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> revisar_solicitud(pago_tasa, firma, plazo_vigente):</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    observaciones <span class="op">=</span> []</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> pago_tasa:</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>        observaciones.append(<span class="st">"Falta pago de tasa"</span>)</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> firma:</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>        observaciones.append(<span class="st">"Falta firma"</span>)</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> plazo_vigente:</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>        observaciones.append(<span class="st">"Presentacion fuera de plazo"</span>)</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">len</span>(observaciones) <span class="op">==</span> <span class="dv">0</span>:</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"Solicitud admisible"</span>, observaciones</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">"Solicitud observada"</span>, observaciones</span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>estado, motivos <span class="op">=</span> revisar_solicitud(<span class="va">True</span>, <span class="va">False</span>, <span class="va">False</span>)</span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(estado)</span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(motivos)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Ahora el programa hace algo más cercano a una revisión preliminar: clasifica y además deja rastro de las observaciones.</p>
+<section id="qué-hace-cada-parte-1" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-cada-parte-1">Qué hace cada parte</h4>
+<ul>
+<li><code>from datetime import datetime</code> importa la clase <code>datetime</code>, que permite representar fecha y hora.</li>
+<li><code>datetime.strptime(...)</code> convierte una cadena de texto en un objeto fecha usando un formato específico.</li>
+<li><code>"%Y-%m-%d"</code> le dice a Python que espere año con cuatro dígitos, luego mes y luego día.</li>
+<li><code>fecha_audiencia - fecha_presentacion</code> produce una diferencia de tiempo.</li>
+<li><code>diferencia.days</code> extrae el número de días de esa diferencia.</li>
+<li><code>fecha_presentacion.date()</code> y <code>fecha_audiencia.date()</code> muestran solo la parte de fecha, sin la hora.</li>
+</ul>
+</section>
+<section id="qué-verás-en-la-terminal-1" class="level4">
+<h4 class="anchored" data-anchor-id="qué-verás-en-la-terminal-1">Qué verás en la terminal</h4>
+<div class="terminal-output">
+<pre class="text"><code>Fecha de presentacion: 2026-03-01
+Fecha de audiencia: 2026-03-18
+Dias entre ambas fechas: 17</code></pre>
+</div>
+<p>El resultado <code>17</code> aparece porque Python interpreta ambas fechas como objetos comparables y luego calcula la distancia temporal entre ellas. Para experimentar, cambia una de las fechas y observa cómo varía <code>diferencia.days</code>. También puedes probar qué ocurre si inviertes el orden de la resta: verás que el resultado puede volverse negativo, lo cual ayuda a entender por qué el orden de los eventos sí importa.</p>
+</section>
+</section>
+<section id="ejercicio-3.-sumar-días-para-calcular-un-vencimiento" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-3.-sumar-días-para-calcular-un-vencimiento">Ejercicio 3. Sumar días para calcular un vencimiento</h3>
+<p>Si el ejercicio anterior servía para medir la distancia entre dos fechas, este sirve para proyectar una fecha futura. Es un tipo de cálculo muy útil cuando se quiere obtener un vencimiento simple a partir de una notificación o una actuación inicial.</p>
+<p>Crea un archivo nuevo y copia este código:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datetime <span class="im">import</span> datetime, timedelta</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>fecha_notificacion <span class="op">=</span> datetime.strptime(<span class="st">"2026-03-06"</span>, <span class="st">"%Y-%m-</span><span class="sc">%d</span><span class="st">"</span>)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>plazo <span class="op">=</span> timedelta(days<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>fecha_vencimiento <span class="op">=</span> fecha_notificacion <span class="op">+</span> plazo</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Fecha de notificacion:"</span>, fecha_notificacion.date())</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Plazo en dias:"</span>, plazo.days)</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Fecha de vencimiento:"</span>, fecha_vencimiento.date())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="qué-hace-este-código-2" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-este-código-2">Qué hace este código</h4>
+<p>El programa convierte una fecha escrita como texto en un objeto fecha, construye un plazo de cinco días y luego lo suma para obtener una fecha de vencimiento.</p>
+</section>
+<section id="qué-hace-cada-parte-2" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-cada-parte-2">Qué hace cada parte</h4>
+<ul>
+<li><code>timedelta(days=5)</code> crea una duración de cinco días.</li>
+<li><code>timedelta</code> no representa una fecha, sino una cantidad de tiempo.</li>
+<li><code>fecha_notificacion + plazo</code> suma esa duración a la fecha inicial.</li>
+<li><code>plazo.days</code> muestra el número de días contenidos en el objeto plazo.</li>
+<li>Se usa esta lógica porque, en muchos contextos, el problema no es comparar dos fechas ya dadas, sino calcular una nueva fecha a partir de una regla temporal.</li>
+</ul>
+</section>
+<section id="qué-verás-en-la-terminal-2" class="level4">
+<h4 class="anchored" data-anchor-id="qué-verás-en-la-terminal-2">Qué verás en la terminal</h4>
+<div class="terminal-output">
+<pre class="text"><code>Fecha de notificacion: 2026-03-06
+Plazo en dias: 5
+Fecha de vencimiento: 2026-03-11</code></pre>
+</div>
+<p>La fecha final aparece porque Python suma cinco días corridos a la fecha de notificación y devuelve un nuevo objeto fecha. Para experimentar, cambia <code>days=5</code> por <code>days=10</code> o usa otra fecha inicial para comprobar cómo cambia el vencimiento. También puedes probar con una fecha cercana al final de un mes para ver cómo Python gestiona automáticamente el cambio de mes sin que tengas que calcularlo a mano.</p>
+</section>
+</section>
+</section>
+<section id="archivos-hacer-que-el-programa-lea-y-escriba-documentos" class="level2">
+<h2 class="anchored" data-anchor-id="archivos-hacer-que-el-programa-lea-y-escriba-documentos">Archivos: hacer que el programa lea y escriba documentos</h2>
+<p>Después de trabajar con fechas, el paso natural es permitir que el programa se conecte con archivos reales. Esto importa mucho porque gran parte del trabajo profesional ocurre sobre documentos: leer un texto, guardar una nota, revisar un CSV o recuperar registros almacenados.</p>
+<section id="ejercicio-4.-leer-un-archivo-de-texto" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-4.-leer-un-archivo-de-texto">Ejercicio 4. Leer un archivo de texto</h3>
+<p>Un programa se vuelve más útil cuando no depende solo de información escrita dentro del propio código. Este ejercicio muestra cómo abrir un archivo <code>.txt</code>, leer su contenido completo y mostrarlo en pantalla.</p>
+<p>Antes de ejecutar el script, crea un archivo llamado <code>edicto.txt</code> dentro de tu carpeta <code>data</code> con este contenido:</p>
+<pre class="text"><code>Edicto de ejemplo
+
+Se comunica que la audiencia del expediente EXP-001 ha sido programada para el 18 de marzo de 2026.</code></pre>
+<p>Luego crea un archivo nuevo y copia este código:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>ruta_archivo <span class="op">=</span> Path(<span class="va">__file__</span>).parent <span class="op">/</span> <span class="st">"data"</span> <span class="op">/</span> <span class="st">"edicto.txt"</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(ruta_archivo, <span class="st">"r"</span>, encoding<span class="op">=</span><span class="st">"utf-8"</span>) <span class="im">as</span> archivo:</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    contenido <span class="op">=</span> archivo.read()</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Contenido del archivo:"</span>)</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(contenido)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="qué-hace-este-código-3" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-este-código-3">Qué hace este código</h4>
+<p>El programa construye la ruta del archivo de texto, lo abre en modo lectura, guarda todo su contenido en una variable y luego lo imprime en la terminal.</p>
+</section>
+<section id="qué-hace-cada-parte-3" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-cada-parte-3">Qué hace cada parte</h4>
+<ul>
+<li><code>from pathlib import Path</code> importa una herramienta moderna para trabajar con rutas de archivos.</li>
+<li><code>Path(__file__).parent</code> se refiere a la carpeta donde está guardado el script.</li>
+<li><code>/ "data" / "edicto.txt"</code> completa la ruta hacia el archivo que se quiere leer.</li>
+<li><code>open(ruta_archivo, "r", encoding="utf-8")</code> abre el archivo en modo lectura.</li>
+<li><code>encoding="utf-8"</code> ayuda a leer bien acentos y caracteres propios del español.</li>
+<li><code>archivo.read()</code> toma todo el contenido del archivo como un solo bloque de texto.</li>
+<li><code>with ... as archivo:</code> asegura que el archivo se cierre correctamente cuando termina la lectura.</li>
+</ul>
+</section>
+<section id="qué-verás-en-la-terminal-3" class="level4">
+<h4 class="anchored" data-anchor-id="qué-verás-en-la-terminal-3">Qué verás en la terminal</h4>
+<div class="terminal-output">
+<pre class="text"><code>Contenido del archivo:
+Edicto de ejemplo
+
+Se comunica que la audiencia del expediente EXP-001 ha sido programada para el 18 de marzo de 2026.</code></pre>
+</div>
+<p>Esa salida aparece porque <code>archivo.read()</code> recupera todo el contenido del documento tal como está guardado y <code>print()</code> lo muestra en la terminal. Para experimentar, cambia el texto del archivo, agrega un segundo párrafo o modifica el nombre del archivo en la carpeta <code>data</code>. Así podrás comprobar que el programa no está inventando el contenido: está leyendo exactamente lo que existe en el documento.</p>
+</section>
+</section>
+<section id="ejercicio-5.-guardar-una-observación-en-un-archivo-nuevo" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-5.-guardar-una-observación-en-un-archivo-nuevo">Ejercicio 5. Guardar una observación en un archivo nuevo</h3>
+<p>Leer archivos es útil, pero escribirlos lo es todavía más cuando quieres dejar constancia de un resultado o generar una nota breve automáticamente. Este ejercicio muestra cómo crear o reemplazar un archivo de texto desde Python.</p>
+<p>Crea un archivo nuevo y copia este código:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>ruta_salida <span class="op">=</span> Path(<span class="va">__file__</span>).parent <span class="op">/</span> <span class="st">"data"</span> <span class="op">/</span> <span class="st">"nota_generada.txt"</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>texto <span class="op">=</span> <span class="st">"Se registro una observacion simple sobre el expediente EXP-010."</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(ruta_salida, <span class="st">"w"</span>, encoding<span class="op">=</span><span class="st">"utf-8"</span>) <span class="im">as</span> archivo:</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>    archivo.write(texto)</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Archivo guardado en:"</span>, ruta_salida)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="qué-hace-este-código-4" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-este-código-4">Qué hace este código</h4>
+<p>El programa define una ruta de salida, prepara un texto y luego lo guarda en un archivo nuevo. Si el archivo ya existía, reemplaza su contenido por el texto actual.</p>
+</section>
+<section id="qué-hace-cada-parte-4" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-cada-parte-4">Qué hace cada parte</h4>
+<ul>
+<li><code>ruta_salida = ...</code> define dónde se guardará el archivo.</li>
+<li><code>texto = ...</code> contiene el mensaje que quieres escribir.</li>
+<li><code>open(ruta_salida, "w", encoding="utf-8")</code> abre el archivo en modo escritura.</li>
+<li>El modo <code>"w"</code> crea el archivo si no existe o borra y reemplaza el contenido si ya existe.</li>
+<li><code>archivo.write(texto)</code> escribe el texto en el archivo.</li>
+<li><code>print("Archivo guardado en:", ruta_salida)</code> sirve para confirmar visualmente dónde quedó guardado el documento.</li>
+</ul>
+</section>
+<section id="qué-verás-en-la-terminal-4" class="level4">
+<h4 class="anchored" data-anchor-id="qué-verás-en-la-terminal-4">Qué verás en la terminal</h4>
+<p>Verás una salida similar a esta:</p>
+<div class="terminal-output">
+<pre class="text"><code>Archivo guardado en: data/nota_generada.txt</code></pre>
+</div>
+<p>Lo más importante aquí no es solo el mensaje de la terminal, sino el efecto que deja el script en tu carpeta: se crea un archivo con el texto indicado. Para experimentar, cambia el contenido de <code>texto</code>, ejecuta de nuevo el script y abre el archivo generado para ver el resultado. También puedes modificar el nombre del archivo de salida o agregar <code>\n</code> dentro del texto para escribir varias líneas en lugar de una sola.</p>
+</section>
+</section>
+<section id="ejercicio-6.-leer-registros-desde-un-archivo-csv" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-6.-leer-registros-desde-un-archivo-csv">Ejercicio 6. Leer registros desde un archivo CSV</h3>
+<p>Muchos datos del trabajo jurídico no están guardados en un solo bloque de texto, sino en tablas con columnas y filas. Un formato muy común para eso es el CSV. Este ejercicio muestra cómo leer un CSV básico y recorrer sus registros uno por uno.</p>
+<p>Antes de ejecutar el script, crea un archivo llamado <code>expedientes.csv</code> dentro de tu carpeta <code>data</code> con este contenido:</p>
+<pre class="text"><code>codigo,estado,responsable
+EXP-001,En revision,Ana Perez
+EXP-002,Archivado,Luis Soto
+EXP-003,Resuelto,Carla Ruiz</code></pre>
+<p>Luego crea un archivo nuevo y copia este código:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> csv</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>ruta_csv <span class="op">=</span> Path(<span class="va">__file__</span>).parent <span class="op">/</span> <span class="st">"data"</span> <span class="op">/</span> <span class="st">"expedientes.csv"</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(ruta_csv, <span class="st">"r"</span>, encoding<span class="op">=</span><span class="st">"utf-8"</span>) <span class="im">as</span> archivo:</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>    lector <span class="op">=</span> csv.DictReader(archivo)</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> fila <span class="kw">in</span> lector:</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>            fila[<span class="st">"codigo"</span>],</span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>            <span class="st">"-"</span>,</span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>            fila[<span class="st">"estado"</span>],</span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>            <span class="st">"- responsable:"</span>,</span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>            fila[<span class="st">"responsable"</span>],</span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>        )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="qué-hace-este-código-5" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-este-código-5">Qué hace este código</h4>
+<p>El programa abre un CSV, lo interpreta como una secuencia de filas con nombres de columna y luego imprime cada registro con una pequeña frase de salida.</p>
+</section>
+<section id="qué-hace-cada-parte-5" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-cada-parte-5">Qué hace cada parte</h4>
+<ul>
+<li><code>import csv</code> carga la biblioteca estándar de Python para trabajar con archivos CSV.</li>
+<li><code>csv.DictReader(archivo)</code> lee cada fila como un diccionario.</li>
+<li>Eso significa que puedes acceder a cada dato usando el nombre de la columna, por ejemplo <code>fila["codigo"]</code>.</li>
+<li><code>for fila in lector:</code> recorre una fila por vez.</li>
+<li>El <code>print(...)</code> final arma una salida más legible combinando varios campos.</li>
+<li>Se usa <code>DictReader</code> porque permite pensar cada fila como un pequeño registro con etiquetas claras, algo muy útil cuando trabajas con datos administrativos.</li>
+</ul>
+</section>
+<section id="qué-verás-en-la-terminal-5" class="level4">
+<h4 class="anchored" data-anchor-id="qué-verás-en-la-terminal-5">Qué verás en la terminal</h4>
+<div class="terminal-output">
+<pre class="text"><code>EXP-001 - En revision - responsable: Ana Perez
+EXP-002 - Archivado - responsable: Luis Soto
+EXP-003 - Resuelto - responsable: Carla Ruiz</code></pre>
+</div>
+<p>Cada línea aparece porque el bucle <code>for</code> toma una fila distinta del CSV y extrae tres campos: código, estado y responsable. Para experimentar, agrega una nueva fila al archivo CSV, cambia un estado o modifica el texto del <code>print()</code>. Verás de inmediato cómo el programa refleja las modificaciones del archivo sin necesidad de tocar la lógica principal.</p>
+</section>
+</section>
+</section>
+<section id="datos-tabulares-empezar-a-pensar-con-pandas" class="level2">
+<h2 class="anchored" data-anchor-id="datos-tabulares-empezar-a-pensar-con-pandas">Datos tabulares: empezar a pensar con <code>pandas</code></h2>
+<p>Cuando las tablas crecen, leer fila por fila ya no siempre es la manera más cómoda de trabajar. Ahí aparece <code>pandas</code>, una biblioteca muy usada para manejar datos en forma de tabla. En esta parte del capítulo no se busca dominarla por completo, sino empezar a verla como una herramienta que permite observar, filtrar, contar y resumir información.</p>
+<section id="ejercicio-7.-crear-una-tabla-simple-en-memoria" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-7.-crear-una-tabla-simple-en-memoria">Ejercicio 7. Crear una tabla simple en memoria</h3>
+<p>Antes de leer archivos con <code>pandas</code>, conviene ver cómo se construye una tabla básica directamente desde Python. Este ejercicio introduce el objeto más importante de la biblioteca: el <code>DataFrame</code>.</p>
+<p>Crea un archivo nuevo y copia este código:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>datos <span class="op">=</span> {</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"expediente"</span>: [<span class="st">"EXP-001"</span>, <span class="st">"EXP-002"</span>, <span class="st">"EXP-003"</span>],</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"estado"</span>: [<span class="st">"En revision"</span>, <span class="st">"Archivado"</span>, <span class="st">"En revision"</span>],</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"monto"</span>: [<span class="dv">1500</span>, <span class="dv">0</span>, <span class="dv">800</span>],</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>tabla <span class="op">=</span> pd.DataFrame(datos)</span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(tabla)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="qué-hace-este-código-6" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-este-código-6">Qué hace este código</h4>
+<p>El programa construye un diccionario con tres columnas y luego lo convierte en una tabla de <code>pandas</code>, que finalmente se muestra en la terminal.</p>
+</section>
+<section id="qué-hace-cada-parte-6" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-cada-parte-6">Qué hace cada parte</h4>
+<ul>
+<li><code>import pandas as pd</code> importa la biblioteca <code>pandas</code> usando el alias <code>pd</code>, que es la convención más común.</li>
+<li><code>datos = {...}</code> crea una estructura donde cada clave será una columna.</li>
+<li><code>pd.DataFrame(datos)</code> convierte ese diccionario en una tabla.</li>
+<li><code>tabla</code> es un <code>DataFrame</code>, es decir, una estructura tabular con filas y columnas.</li>
+<li><code>print(tabla)</code> muestra la tabla completa.</li>
+<li>Se usa <code>DataFrame</code> porque permite trabajar con datos de una forma muy similar a una hoja de cálculo, pero programable.</li>
+</ul>
+</section>
+<section id="qué-verás-en-la-terminal-6" class="level4">
+<h4 class="anchored" data-anchor-id="qué-verás-en-la-terminal-6">Qué verás en la terminal</h4>
+<p>Verás algo parecido a esto:</p>
+<div class="terminal-output">
+<pre class="text"><code>  expediente       estado  monto
+0    EXP-001  En revision   1500
+1    EXP-002   Archivado      0
+2    EXP-003  En revision    800</code></pre>
+</div>
+<p>La tabla aparece así porque <code>pandas</code> organiza automáticamente los datos en filas indexadas y columnas con nombre. Para experimentar, cambia un monto, agrega una fila nueva o incorpora una columna adicional como <code>responsable</code>. Esa es una buena forma de comprobar que un <code>DataFrame</code> no es solo una impresión bonita: es una estructura que luego permitirá filtrar, contar y resumir información.</p>
+</section>
+</section>
+<section id="ejercicio-8.-filtrar-solo-los-registros-pendientes" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-8.-filtrar-solo-los-registros-pendientes">Ejercicio 8. Filtrar solo los registros pendientes</h3>
+<p>Una de las operaciones más útiles sobre tablas consiste en quedarte solo con los registros que cumplen una condición. Este ejercicio muestra cómo filtrar una tabla para ver únicamente los expedientes o multas que siguen pendientes.</p>
+<p>Antes de ejecutar este ejercicio, crea un archivo llamado <code>multas.csv</code> dentro de tu carpeta <code>data</code> con este contenido:</p>
+<pre class="text"><code>expediente,estado,monto
+EXP-001,Pendiente,1200
+EXP-002,Pagado,800
+EXP-003,Pendiente,1500
+EXP-004,Pagado,600</code></pre>
+<p>Luego crea un archivo nuevo y copia este código:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>ruta_csv <span class="op">=</span> Path(<span class="va">__file__</span>).parent <span class="op">/</span> <span class="st">"data"</span> <span class="op">/</span> <span class="st">"multas.csv"</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>tabla <span class="op">=</span> pd.read_csv(ruta_csv)</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>pendientes <span class="op">=</span> tabla[tabla[<span class="st">"estado"</span>] <span class="op">==</span> <span class="st">"Pendiente"</span>]</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(pendientes)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="qué-hace-este-código-7" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-este-código-7">Qué hace este código</h4>
+<p>El programa lee un CSV con <code>pandas</code>, construye una tabla y luego crea una versión filtrada que conserva solo las filas cuyo estado es <code>"Pendiente"</code>.</p>
+</section>
+<section id="qué-hace-cada-parte-7" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-cada-parte-7">Qué hace cada parte</h4>
+<ul>
+<li><code>pd.read_csv(ruta_csv)</code> abre el archivo CSV y lo convierte en un <code>DataFrame</code>.</li>
+<li><code>tabla["estado"]</code> selecciona la columna <code>estado</code>.</li>
+<li><code>tabla["estado"] == "Pendiente"</code> produce una serie de valores verdaderos o falsos.</li>
+<li><code>tabla[...]</code> usa esa comparación como filtro para quedarse solo con las filas que cumplen la condición.</li>
+<li><code>pendientes</code> guarda la tabla filtrada.</li>
+<li>Se usa este tipo de filtro porque muchas preguntas reales empiezan así: mostrar solo los casos abiertos, pendientes, observados o archivados.</li>
+</ul>
+</section>
+<section id="qué-verás-en-la-terminal-7" class="level4">
+<h4 class="anchored" data-anchor-id="qué-verás-en-la-terminal-7">Qué verás en la terminal</h4>
+<p>Verás una salida similar a esta:</p>
+<div class="terminal-output">
+<pre class="text"><code>  expediente     estado  monto
+0    EXP-001  Pendiente   1200
+2    EXP-003  Pendiente   1500</code></pre>
+</div>
+<p>Aparecen solo dos filas porque son las únicas donde la columna <code>estado</code> contiene el valor <code>"Pendiente"</code>. Para experimentar, cambia un estado en el CSV, reemplaza <code>"Pendiente"</code> por <code>"Pagado"</code> en el filtro o añade nuevas filas al archivo. Así podrás ver que el filtro no depende del número de registros, sino del criterio que tú definas.</p>
+</section>
+</section>
+<section id="ejercicio-9.-contar-cuántos-registros-hay-en-cada-estado" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-9.-contar-cuántos-registros-hay-en-cada-estado">Ejercicio 9. Contar cuántos registros hay en cada estado</h3>
+<p>Filtrar sirve para mirar una parte de la tabla. Contar sirve para resumirla. Este ejercicio muestra cómo averiguar cuántas veces aparece cada categoría dentro de una columna.</p>
+<p>Crea un archivo nuevo y copia este código:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>ruta_csv <span class="op">=</span> Path(<span class="va">__file__</span>).parent <span class="op">/</span> <span class="st">"data"</span> <span class="op">/</span> <span class="st">"multas.csv"</span></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>tabla <span class="op">=</span> pd.read_csv(ruta_csv)</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>conteo_estados <span class="op">=</span> tabla[<span class="st">"estado"</span>].value_counts()</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(conteo_estados)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="qué-hace-este-código-8" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-este-código-8">Qué hace este código</h4>
+<p>El programa vuelve a leer la tabla y luego cuenta cuántas veces aparece cada valor distinto dentro de la columna <code>estado</code>.</p>
+</section>
+<section id="qué-hace-cada-parte-8" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-cada-parte-8">Qué hace cada parte</h4>
+<ul>
+<li><code>tabla["estado"]</code> selecciona la columna que quieres resumir.</li>
+<li><code>value_counts()</code> cuenta la frecuencia de cada categoría.</li>
+<li>El resultado ya no es una tabla completa como antes, sino una serie resumida.</li>
+<li><code>print(conteo_estados)</code> muestra ese resumen en la terminal.</li>
+<li>Se usa esta operación porque muchas veces no interesa revisar expediente por expediente, sino obtener una visión rápida del conjunto.</li>
+</ul>
+</section>
+<section id="qué-verás-en-la-terminal-8" class="level4">
+<h4 class="anchored" data-anchor-id="qué-verás-en-la-terminal-8">Qué verás en la terminal</h4>
+<p>Verás algo parecido a esto:</p>
+<div class="terminal-output">
+<pre class="text"><code>estado
+Pendiente    2
+Pagado       2
+Name: count, dtype: int64</code></pre>
+</div>
+<p>Ese resultado aparece porque <code>value_counts()</code> agrupa automáticamente los valores repetidos y calcula su frecuencia. Según la versión de <code>pandas</code>, la última línea puede variar un poco, pero la idea central es la misma: obtener un resumen por categorías. Para experimentar, agrega más filas al CSV o introduce un nuevo estado como <code>Observado</code>; verás cómo el conteo se actualiza sin necesidad de cambiar la lógica del programa.</p>
+</section>
+</section>
+<section id="ejercicio-10.-calcular-un-promedio-de-montos" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-10.-calcular-un-promedio-de-montos">Ejercicio 10. Calcular un promedio de montos</h3>
+<p>Además de filtrar o contar, las tablas también permiten hacer operaciones numéricas simples. Este último ejercicio del capítulo muestra cómo obtener el promedio de una columna de montos.</p>
+<p>Crea un archivo nuevo y copia este código:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>ruta_csv <span class="op">=</span> Path(<span class="va">__file__</span>).parent <span class="op">/</span> <span class="st">"data"</span> <span class="op">/</span> <span class="st">"multas.csv"</span></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>tabla <span class="op">=</span> pd.read_csv(ruta_csv)</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>promedio_monto <span class="op">=</span> tabla[<span class="st">"monto"</span>].mean()</span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Promedio de multas:"</span>, promedio_monto)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="qué-hace-este-código-9" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-este-código-9">Qué hace este código</h4>
+<p>El programa lee el mismo archivo CSV, selecciona la columna numérica <code>monto</code> y calcula su promedio.</p>
+</section>
+<section id="qué-hace-cada-parte-9" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-cada-parte-9">Qué hace cada parte</h4>
+<ul>
+<li><code>tabla["monto"]</code> selecciona la columna de valores numéricos.</li>
+<li><code>mean()</code> calcula la media aritmética de esa columna.</li>
+<li><code>promedio_monto</code> guarda el resultado.</li>
+<li><code>print(...)</code> muestra el promedio en la terminal.</li>
+<li>Se usa esta operación porque muchas preguntas sobre datos no se responden leyendo fila por fila, sino resumiendo con indicadores simples.</li>
+</ul>
+</section>
+<section id="qué-verás-en-la-terminal-9" class="level4">
+<h4 class="anchored" data-anchor-id="qué-verás-en-la-terminal-9">Qué verás en la terminal</h4>
+<div class="terminal-output">
+<pre class="text"><code>Promedio de multas: 1025.0</code></pre>
+</div>
+<p>Ese valor aparece porque <code>pandas</code> suma los montos <code>1200</code>, <code>800</code>, <code>1500</code> y <code>600</code>, y luego divide el total entre cuatro registros. Para experimentar, cambia uno de los montos, añade una nueva fila o prueba con una columna distinta si amplías el CSV. Así verás cómo un pequeño cambio en los datos puede modificar el indicador general.</p>
+</section>
+</section>
+</section>
+<section id="conclusiones-del-capítulo" class="level2">
+<h2 class="anchored" data-anchor-id="conclusiones-del-capítulo">Conclusiones del capítulo</h2>
+<p>Este capítulo mostró un cambio importante en el recorrido del curso. Ya no se trató solo de entender instrucciones básicas, sino de usarlas para resolver tareas más cercanas a la práctica real: leer fechas, calcular plazos, abrir documentos, guardar notas y resumir tablas. En otras palabras, Python empezó a parecerse menos a un conjunto de ejemplos aislados y más a una herramienta de trabajo.</p>
+<p>Las ideas que siguen reúnen lo más importante de este avance. Conviene leerlas como un mapa de transición entre la iniciación en Python y un uso cada vez más aplicado al tratamiento de información jurídica y administrativa.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Mejora importante
+<span class="screen-reader-only">Tip</span>Ideas clave
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Cuando el programa devuelve razones, deja de ser solo un filtro binario y se convierte en una herramienta de apoyo más explicable.</p>
+<ul>
+<li>trabajar con fechas permite modelar de forma básica problemas de plazos, diferencias temporales y vencimientos;</li>
+<li>un programa puede leer y escribir archivos, lo que lo vuelve útil para interactuar con documentos reales;</li>
+<li>los archivos CSV son una forma simple y muy común de almacenar registros en filas y columnas;</li>
+<li><code>Path</code> ayuda a construir rutas de archivo de una forma más ordenada y portable;</li>
+<li><code>open()</code>, <code>read()</code> y <code>write()</code> permiten recuperar o guardar contenido textual;</li>
+<li><code>csv.DictReader()</code> ayuda a pensar cada fila como un registro con campos nombrados;</li>
+<li><code>pandas</code> permite pasar de una lectura manual de filas a una exploración tabular más potente;</li>
+<li>un <code>DataFrame</code> sirve para observar, filtrar, contar y resumir información;</li>
+<li>filtrar, contar categorías y calcular promedios son pasos iniciales muy importantes en cualquier trabajo con datos;</li>
+<li>programar estas tareas no reemplaza el juicio jurídico, pero sí vuelve más visible, repetible y controlable la parte estructurada del análisis.</li>
+</ul>
 </div>
 </div>
-</section>
-<section id="encadenar-condiciones-sin-perder-claridad" class="level2">
-<h2 class="anchored" data-anchor-id="encadenar-condiciones-sin-perder-claridad">Encadenar condiciones sin perder claridad</h2>
-<p>Uno de los riesgos al empezar a programar reglas es escribir condiciones tan largas que terminan siendo difíciles de leer. Por eso conviene dividir la lógica en pasos o funciones.</p>
-<p>Un mal hábito sería este:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> tiene_firma <span class="kw">and</span> tiene_dni <span class="kw">and</span> tiene_pago <span class="kw">and</span> plazo_vigente <span class="kw">and</span> <span class="kw">not</span> tiene_impedimento:</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Procede"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>No es incorrecto, pero escala mal si el problema crece.</p>
-<p>Una alternativa más ordenada:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> requisitos_basicos_ok(tiene_firma, tiene_dni, tiene_pago):</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> tiene_firma <span class="kw">and</span> tiene_dni <span class="kw">and</span> tiene_pago</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> puede_continuar_revision(requisitos_ok, plazo_vigente, tiene_impedimento):</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> requisitos_ok <span class="kw">and</span> plazo_vigente <span class="kw">and</span> <span class="kw">not</span> tiene_impedimento</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>La ventaja no es solo estética. Es metodológica: la lógica queda más legible, más testeable y más fácil de explicar.</p>
-</section>
-<section id="ejemplo-jurídico-1-elegibilidad-para-un-beneficio" class="level2">
-<h2 class="anchored" data-anchor-id="ejemplo-jurídico-1-elegibilidad-para-un-beneficio">Ejemplo jurídico 1: elegibilidad para un beneficio</h2>
-<p>Supón un esquema didáctico de elegibilidad con estas reglas:</p>
-<ul>
-<li>el solicitante debe ser mayor de edad;</li>
-<li>no debe tener sanción vigente;</li>
-<li>debe haber presentado documentos mínimos;</li>
-<li>si vive en zona priorizada, obtiene prioridad.</li>
-</ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> evaluar_beneficio(edad, sancion_vigente, documentos_completos, zona_priorizada):</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> edad <span class="op">&lt;</span> <span class="dv">18</span>:</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"No elegible"</span>, <span class="st">"Menor de edad"</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> sancion_vigente:</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"No elegible"</span>, <span class="st">"Sancion vigente"</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> documentos_completos:</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"Observado"</span>, <span class="st">"Documentos incompletos"</span></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> zona_priorizada:</span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"Elegible con prioridad"</span>, <span class="st">"Cumple requisitos y tiene prioridad"</span></span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">"Elegible"</span>, <span class="st">"Cumple requisitos"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Este ejemplo no pretende reemplazar una regulación real. Sirve para mostrar cómo puede ordenarse una lógica de decisión.</p>
-</section>
-<section id="ejemplo-jurídico-2-cálculo-de-multa-con-reglas-adicionales" class="level2">
-<h2 class="anchored" data-anchor-id="ejemplo-jurídico-2-cálculo-de-multa-con-reglas-adicionales">Ejemplo jurídico 2: cálculo de multa con reglas adicionales</h2>
-<p>Una multa simple puede complejizarse rápido si añadimos supuestos:</p>
-<ul>
-<li>un monto base por día de retraso;</li>
-<li>un tope máximo;</li>
-<li>un recargo si hubo reincidencia;</li>
-<li>una reducción si hubo subsanación voluntaria temprana.</li>
-</ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calcular_multa(dias_retraso, reincidencia, subsanacion_temprana):</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    multa <span class="op">=</span> dias_retraso <span class="op">*</span> <span class="dv">50</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> reincidencia:</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>        multa <span class="op">=</span> multa <span class="op">*</span> <span class="fl">1.25</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> subsanacion_temprana:</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>        multa <span class="op">=</span> multa <span class="op">*</span> <span class="fl">0.80</span></span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> multa <span class="op">&gt;</span> <span class="dv">3000</span>:</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>        multa <span class="op">=</span> <span class="dv">3000</span></span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> multa</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Aquí aparecen varias ideas importantes:</p>
-<ul>
-<li>el orden de las reglas puede importar;</li>
-<li>algunas condiciones agregan valor;</li>
-<li>otras reducen o limitan el resultado;</li>
-<li>conviene probar varios casos.</li>
-</ul>
-</section>
-<section id="probar-escenarios" class="level2">
-<h2 class="anchored" data-anchor-id="probar-escenarios">Probar escenarios</h2>
-<p>Cuando un script representa decisiones, conviene ensayarlo con diferentes entradas. Por ejemplo:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>casos <span class="op">=</span> [</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"dias"</span>: <span class="dv">10</span>, <span class="st">"reincidencia"</span>: <span class="va">False</span>, <span class="st">"subsanacion"</span>: <span class="va">False</span>},</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"dias"</span>: <span class="dv">40</span>, <span class="st">"reincidencia"</span>: <span class="va">True</span>, <span class="st">"subsanacion"</span>: <span class="va">False</span>},</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"dias"</span>: <span class="dv">20</span>, <span class="st">"reincidencia"</span>: <span class="va">False</span>, <span class="st">"subsanacion"</span>: <span class="va">True</span>},</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>]</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> caso <span class="kw">in</span> casos:</span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    multa <span class="op">=</span> calcular_multa(</span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>        caso[<span class="st">"dias"</span>],</span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>        caso[<span class="st">"reincidencia"</span>],</span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>        caso[<span class="st">"subsanacion"</span>]</span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(caso, <span class="st">"=&gt;"</span>, multa)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Eso ayuda a detectar errores y a entender mejor si la lógica hace realmente lo que pensamos que hace.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
+<p>Antes de pasar al siguiente tramo del módulo, también conviene detenerse a pensar qué tipo de razonamiento empezó a aparecer aquí. Ahora ya no solo escribes instrucciones para aprender sintaxis: empiezas a organizar información, a formular pequeñas preguntas sobre los datos y a convertir tareas repetibles en procesos más claros. Las preguntas siguientes buscan ayudarte a notar ese cambio.</p>
+<div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>Ojo metodológico
+<span class="screen-reader-only">Caution</span>Para pensar y reflexionar
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Modelar una decisión no significa agotar el juicio jurídico. Significa hacer explícita la parte repetible del análisis. Las reglas reales suelen ser más complejas, y por eso siempre conviene declarar los límites del modelo.</p>
+<ol type="1">
+<li>¿Qué diferencia notas entre escribir código para practicar sintaxis y escribir código para resolver una tarea concreta con fechas o archivos?</li>
+<li>¿Por qué puede ser útil representar un plazo o una diferencia de días con objetos de fecha en lugar de hacerlo manualmente?</li>
+<li>¿Qué ventajas tiene leer un CSV como tabla frente a revisar sus filas una por una sin estructura?</li>
+<li>¿Qué riesgos habría si intentaras automatizar una tarea jurídica sin revisar primero la calidad de los datos o del archivo de entrada?</li>
+<li>Si tuvieras que adaptar uno de estos ejercicios a una tarea legal real, ¿cuál elegirías y qué información cambiarías para volverlo más cercano a esa práctica?</li>
+</ol>
 </div>
 </div>
-</section>
-<section id="cómo-escribir-funciones-más-útiles" class="level2">
-<h2 class="anchored" data-anchor-id="cómo-escribir-funciones-más-útiles">Cómo escribir funciones más útiles</h2>
-<p>Una buena función inicial suele cumplir al menos tres criterios:</p>
-<ol type="1">
-<li>hace una sola cosa reconocible;</li>
-<li>recibe datos claros;</li>
-<li>devuelve un resultado fácil de interpretar.</li>
-</ol>
-<p>No siempre conviene hacer una función enorme que resuelva todo de una vez. A veces resulta mejor separar:</p>
-<ul>
-<li>validación de requisitos;</li>
-<li>clasificación del caso;</li>
-<li>generación de observaciones.</li>
-</ul>
-</section>
-<section id="práctica-en-editor" class="level2">
-<h2 class="anchored" data-anchor-id="práctica-en-editor">Práctica en editor</h2>
-<p>Abre tu repositorio del curso y crea un archivo como <code>sesion-3/admision.py</code>. Implementa una función que reciba varios datos y devuelva una clasificación preliminar.</p>
-<p>Prueba al menos tres escenarios:</p>
-<ul>
-<li>un caso conforme;</li>
-<li>un caso observado;</li>
-<li>un caso prioritario.</li>
-</ul>
-<p>Si quieres ampliar la práctica, agrega una lista de observaciones o una justificación breve del resultado.</p>
-</section>
-<section id="git-y-github" class="level2">
-<h2 class="anchored" data-anchor-id="git-y-github">Git y GitHub</h2>
-<p>Registra el avance con commits claros:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Resuelve sesion 3 sobre decisiones juridicas"</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="pset-de-la-sesión" class="level2">
-<h2 class="anchored" data-anchor-id="pset-de-la-sesión">PSET de la sesión</h2>
-<p>Construye un script en Python que resuelva un problema jurídico con múltiples condiciones. Puede ser, por ejemplo:</p>
-<ul>
-<li>elegibilidad para un beneficio;</li>
-<li>validación preliminar de un trámite;</li>
-<li>cálculo de multa con reglas adicionales;</li>
-<li>clasificación básica de expedientes.</li>
-</ul>
-<p>El entregable debe incluir:</p>
-<ul>
-<li>el archivo <code>.py</code>;</li>
-<li>ejemplos de entrada y salida;</li>
-<li>un <code>README</code> breve explicando la lógica aplicada;</li>
-<li>al menos dos o tres casos de prueba.</li>
-</ul>
-</section>
-<section id="preguntas-de-repaso" class="level2">
-<h2 class="anchored" data-anchor-id="preguntas-de-repaso">Preguntas de repaso</h2>
-<ol type="1">
-<li>¿Por qué conviene devolver razones y no solo un resultado binario?</li>
-<li>¿Qué problema genera una condición demasiado larga?</li>
-<li>¿Por qué es útil probar varios escenarios?</li>
-<li>¿Qué parte del trabajo jurídico puede modelarse bien y cuál requiere cautela adicional?</li>
-</ol>
-</section>
-<section id="ideas-clave" class="level2">
-<h2 class="anchored" data-anchor-id="ideas-clave">Ideas clave</h2>
-<ul>
-<li>una buena parte del trabajo legal puede modelarse como reglas y condiciones;</li>
-<li>las funciones ayudan a reutilizar lógica sin duplicar código;</li>
-<li>probar escenarios mejora la calidad de la automatización;</li>
-<li>la automatización básica empieza por decisiones claras, no por sistemas complejos.</li>
-</ul>
 
 
 </section>
@@ -1089,8 +1347,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../parte-1-modulo-1/04-capitulo.html" class="pagination-link" aria-label="4. Python para datos, documentos y flujos jurídicos">
-        <span class="nav-page-text"><span class="chapter-title">4. Python para datos, documentos y flujos jurídicos</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../parte-1-modulo-1/04-capitulo.html" class="pagination-link" aria-label="4. Python para documentos, reportes y automatización jurídica básica">
+        <span class="nav-page-text"><span class="chapter-title">4. Python para documentos, reportes y automatización jurídica básica</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

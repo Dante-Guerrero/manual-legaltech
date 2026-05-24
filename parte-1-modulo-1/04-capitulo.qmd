@@ -1,258 +1,858 @@
-# 4. Python para datos, documentos y flujos jurídicos
+---
+title: "4. Python para documentos, reportes y automatización jurídica básica"
+---
+
+::: {.callout-note}
+## Qué aprenderás en esta sesión
+
+En este capítulo empezarás a ver cómo Python puede acercarse todavía más a tareas reconocibles del trabajo legal. A partir de ejercicios sencillos, aprenderás a calcular multas básicas, revisar expedientes, validar códigos, buscar palabras clave y contar categorías. Después darás un paso más ambicioso: generar PDF, crear cartas desde datos, unir documentos, producir gráficos simples, automatizar correos de ejemplo y observar una introducción a la automatización de acciones en pantalla. La meta no es convertirte de inmediato en especialista, sino mostrarte cómo pequeños scripts pueden transformarse en herramientas útiles para organizar y producir trabajo jurídico.
+:::
 
 ## ¿Por qué importa este tema?
 
-La práctica legal trabaja constantemente con listas de casos, textos, fechas, archivos y documentos que siguen patrones. Aprender a procesar esa información con Python abre la puerta a tareas de organización y automatización bastante útiles.
+En la práctica jurídica, gran parte del trabajo consiste en repetir operaciones que siguen patrones reconocibles: calcular un monto, revisar un estado, comprobar un formato, detectar una palabra relevante, generar un documento, consolidar archivos o resumir información. Cuando esas tareas se vuelven frecuentes, Python empieza a ser algo más que un lenguaje para practicar. Empieza a parecerse a una herramienta de apoyo real.
+
+En los capítulos anteriores ya viste fundamentos, fechas, archivos y tablas. El paso que damos ahora consiste en combinar esas bases para producir salidas más cercanas a la lógica de Legal Tech: no solo leer información, sino transformarla en reportes, documentos, mensajes o automatizaciones sencillas.
+
+## Del análisis al producto
+
+Una parte importante del valor de programar aparece cuando el código no se queda solo en el análisis. Es decir, cuando a partir de datos o reglas se obtiene un resultado concreto que otra persona puede usar: un documento PDF, una carta, un gráfico, un correo de ejemplo o una lista de observaciones.
+
+Ese paso importa mucho porque refleja una lógica muy presente en el trabajo profesional:
+
+- recibir información;
+- revisarla o transformarla;
+- producir una salida legible;
+- dejar trazabilidad del proceso.
+
+En términos pedagógicos, este capítulo funciona como un puente entre la iniciación en Python y formas más aplicadas de automatización documental y organización de flujos.
+
+## Automatización básica en clave jurídica
+
+Conviene insistir en una idea central: automatizar no significa reemplazar el juicio jurídico. Significa volver más explícita y repetible la parte estructurada del trabajo. Si una tarea puede describirse como una secuencia de pasos relativamente clara, entonces probablemente Python puede ayudarte a ejecutarla con mayor consistencia.
+
+Eso puede verse en ejemplos muy modestos, como validar un código o contar expedientes por categoría, pero también en tareas más visibles, como generar cartas o unir varios PDF. La lógica de fondo es la misma: datos de entrada, reglas de transformación y una salida verificable.
+
+## Ejercicios prácticos para documentos y automatización jurídica básica
+
+La secuencia de este capítulo va de menos a más. Primero aparecen ejercicios jurídicos sencillos, donde el foco está en la lógica de revisión y clasificación. Luego entran ejemplos más avanzados, donde el programa ya produce archivos, imágenes o interacciones visibles sobre el sistema.
+
+La recomendación sigue siendo la misma: ejecuta cada ejemplo, revisa lo que ocurre, cambia algo pequeño y vuelve a ejecutarlo. En esta etapa, además, ya no solo conviene mirar la terminal. También importa revisar los archivos que el programa genera o modifica.
 
 ::: {.callout-important}
-## Idea central
-Antes de hablar de grandes sistemas, conviene aprender a transformar información jurídica simple en salidas ordenadas, repetibles y verificables.
+## Antes de empezar
+
+Para trabajar bien esta sesión conviene preparar una carpeta ordenada con subcarpetas como estas:
+
+- `data` para CSV y textos de entrada;
+- `images` para logos o imágenes;
+- `pdfs_entrada` para PDF generados o reunidos;
+- `pdfs_salida` para documentos finales.
+
+Además de Python 3 y tu editor de texto, algunos ejercicios de esta sesión requieren bibliotecas adicionales:
+
+- `reportlab` para crear PDF;
+- `pypdf` para unir PDF;
+- `matplotlib` para gráficos;
+- `pyautogui` para automatizar acciones de mouse y teclado.
+
+Puedes instalarlas según el ejercicio que vayas a probar:
+
+```bash
+pip install reportlab pypdf matplotlib pyautogui
+```
+
+Hay dos advertencias importantes. La primera: el ejercicio de envío de correos debe hacerse solo con cuentas de prueba o configuraciones controladas. La segunda: el ejercicio con `pyautogui` controla el mouse y el teclado reales, así que conviene leerlo con mucha atención antes de ejecutarlo.
 :::
 
-## Qué aprenderás en esta sesión
+## Ejercicios jurídicos iniciales
 
-Al finalizar esta sesión, deberías poder:
+La primera parte del capítulo toma problemas pequeños pero muy cercanos al trabajo legal. Son ejercicios ideales para ver cómo una regla sencilla puede transformarse en una salida clara.
 
-- trabajar con listas, diccionarios y archivos de texto;
-- transformar datos jurídicos simples;
-- producir salidas estructuradas;
-- entender el puente entre scripts sencillos y automatización documental;
-- preparar mejor la transición hacia procesos y datos del Módulo II.
+### Ejercicio 1. Calcular una multa simple por días de retraso
 
-## Del criterio a los datos
+Un buen punto de partida para automatización básica es tomar una regla simple y volverla cálculo. En este caso, la regla dice que existe una multa fija por cada día de retraso.
 
-En la sesión anterior modelamos decisiones. Ahora toca trabajar con algo que aparece todo el tiempo en la práctica jurídica: información repetida y estructurada.
+Crea un archivo nuevo y copia este código:
 
-Eso puede adoptar muchas formas:
+```python
+multa_por_dia = 25
+dias_retraso = 4
+monto_total = multa_por_dia * dias_retraso
 
-- listas de expedientes;
-- registros de contratos;
-- plazos en seguimiento;
-- correos o escritos con patrones previsibles;
-- datos básicos para generar reportes.
+print("Multa por dia:", multa_por_dia)
+print("Dias de retraso:", dias_retraso)
+print("Monto total:", monto_total)
+```
 
-Python resulta útil aquí porque permite recorrer colecciones, transformar texto, filtrar casos y producir salidas nuevas.
+#### Qué hace este código
 
-## Listas y diccionarios como punto de partida
+El programa define un valor fijo por día, lo multiplica por la cantidad de días de retraso y luego muestra cada parte del cálculo en la terminal.
 
-Una forma sencilla de representar información jurídica consiste en usar listas de diccionarios.
+#### Qué hace cada parte
+
+- `multa_por_dia = 25` guarda la tarifa diaria de la multa.
+- `dias_retraso = 4` representa la cantidad de días.
+- `monto_total = multa_por_dia * dias_retraso` aplica la multiplicación.
+- `print(...)` se usa para mostrar tanto los datos de entrada como el resultado final.
+- Se presenta así porque, cuando recién empiezas, conviene que el cálculo no quede oculto en una sola línea.
+
+#### Qué verás en la terminal
+
+::: {.terminal-output}
+```text
+Multa por dia: 25
+Dias de retraso: 4
+Monto total: 100
+```
+:::
+
+Ese resultado aparece porque Python multiplica `25` por `4` y guarda el valor en `monto_total`. Para experimentar, cambia la cantidad de días, prueba otro valor de multa por día o añade una nueva línea con un descuento o un recargo. Así verás cómo una regla sencilla puede ir creciendo paso a paso.
+
+### Ejercicio 2. Revisar una lista de expedientes
+
+Muchos problemas jurídicos pueden pensarse como una colección de registros. Este ejercicio sirve para recorrer una lista de expedientes y mostrar la situación de cada uno.
+
+Crea un archivo nuevo y copia este código:
 
 ```python
 expedientes = [
-    {"codigo": "EXP-001", "estado": "pendiente", "urgente": True},
-    {"codigo": "EXP-002", "estado": "revisado", "urgente": False},
-    {"codigo": "EXP-003", "estado": "pendiente", "urgente": True},
+    {"codigo": "EXP-001", "estado": "En revision"},
+    {"codigo": "EXP-002", "estado": "Archivado"},
+    {"codigo": "EXP-003", "estado": "En revision"},
 ]
-```
 
-Cada diccionario representa un registro; la lista agrupa varios registros.
-
-Podemos recorrerlos así:
-
-```python
 for expediente in expedientes:
-    print(expediente["codigo"], expediente["estado"])
+    print(expediente["codigo"], "->", expediente["estado"])
 ```
 
-Y filtrar los urgentes:
+#### Qué hace este código
 
-```python
-for expediente in expedientes:
-    if expediente["urgente"]:
-        print("Priorizar", expediente["codigo"])
+El programa crea una lista donde cada elemento representa un expediente y luego recorre esa lista para mostrar el código y el estado de cada registro.
+
+#### Qué hace cada parte
+
+- Cada `{...}` es un diccionario con claves como `codigo` y `estado`.
+- La lista `expedientes` agrupa varios registros del mismo tipo.
+- `for expediente in expedientes:` recorre uno por uno los elementos de la lista.
+- `expediente["codigo"]` y `expediente["estado"]` extraen campos concretos del registro actual.
+- Este patrón importa mucho porque una gran parte del trabajo con datos jurídicos empieza justamente así: una lista de casos con atributos nombrados.
+
+#### Qué verás en la terminal
+
+::: {.terminal-output}
+```text
+EXP-001 -> En revision
+EXP-002 -> Archivado
+EXP-003 -> En revision
 ```
-
-## ¿Por qué esto importa en derecho?
-
-Porque una gran parte del trabajo legal ya funciona, de hecho, como un conjunto de registros:
-
-- expedientes con atributos;
-- contratos con fechas y montos;
-- resoluciones con estado;
-- trámites con responsables;
-- observaciones repetidas en revisión documental.
-
-No siempre necesitamos bases de datos complejas para empezar a trabajar mejor. A veces basta con estructurar bien la información.
-
-::: {.callout-note}
-## Idea útil
-Si puedes nombrar los campos relevantes de un problema, ya empezaste a convertirlo en datos.
 :::
 
-## Trabajar con texto
+Cada línea aparece porque el bucle toma un expediente distinto y muestra dos de sus campos. Para experimentar, añade un nuevo expediente, cambia un estado o agrega una clave más, como `responsable`. Luego modifica el `print()` para mostrar esa información adicional y comprobar cómo el registro puede enriquecerse.
 
-El texto es una materia prima central en el trabajo jurídico. Por eso, incluso operaciones simples pueden resultar valiosas:
+### Ejercicio 3. Validar el formato de un código documental
+
+No toda automatización consiste en cálculos. A veces lo importante es verificar si un texto sigue un formato previsto. Este ejercicio comprueba si un código empieza con un prefijo específico.
+
+Crea un archivo nuevo y copia este código:
 
 ```python
-texto = "Contrato de prestación de servicios"
+codigo_documento = "DOC-2026-15"
 
-print(texto.lower())
-print(texto.upper())
-print("servicios" in texto.lower())
+if codigo_documento.startswith("DOC-"):
+    print("Formato valido")
+else:
+    print("Formato invalido")
 ```
 
-También podemos limpiar texto:
+#### Qué hace este código
+
+El programa revisa si el texto guardado en `codigo_documento` comienza con `DOC-`. Si es así, considera que el formato es válido; de lo contrario, marca el formato como inválido.
+
+#### Qué hace cada parte
+
+- `codigo_documento = ...` guarda el texto que se quiere revisar.
+- `startswith("DOC-")` es una función de texto que devuelve `True` o `False`.
+- `if ...:` usa ese resultado para elegir entre dos caminos.
+- Se usa este tipo de validación porque muchos documentos y archivos dependen de convenciones mínimas de nombre o numeración.
+
+#### Qué verás en la terminal
+
+::: {.terminal-output}
+```text
+Formato valido
+```
+:::
+
+Ese resultado aparece porque el código efectivamente empieza con `DOC-`. Para experimentar, cambia el valor por `EXP-2026-15` o por `doc-2026-15` y observa qué ocurre. También puedes combinar esta revisión con otras, por ejemplo comprobando longitud o presencia de guiones, para volver más precisa la validación.
+
+### Ejercicio 4. Buscar una palabra clave dentro de un texto
+
+Otra tarea frecuente consiste en revisar si un documento contiene una palabra o expresión relevante. Este ejercicio muestra una forma simple de hacerlo sin que las mayúsculas o minúsculas arruinen la comparación.
+
+Crea un archivo nuevo y copia este código:
 
 ```python
-nombre_parte = "  Ana Perez  "
-print(nombre_parte.strip())
+texto_resolucion = "La resolucion declara fundada la solicitud presentada por la parte demandante."
+palabra_clave = "fundada"
+
+if palabra_clave.lower() in texto_resolucion.lower():
+    print("La palabra clave si aparece en el texto")
+else:
+    print("La palabra clave no aparece en el texto")
 ```
 
-Esto ayuda a:
+#### Qué hace este código
 
-- normalizar nombres;
-- revisar formatos previsibles;
-- detectar palabras clave;
-- preparar insumos para reportes o plantillas.
+El programa toma un texto largo y una palabra clave, convierte ambos a minúsculas y luego revisa si la palabra aparece dentro del contenido.
 
-## Generar mensajes o salidas estructuradas
+#### Qué hace cada parte
 
-Una forma simple de automatización consiste en generar mensajes con base en datos.
+- `texto_resolucion` contiene el texto principal.
+- `palabra_clave` guarda la expresión que quieres buscar.
+- `.lower()` convierte el texto a minúsculas.
+- `in` verifica si una cadena está contenida dentro de otra.
+- Se convierten ambos textos a minúsculas para que la búsqueda no falle por diferencias de capitalización.
+
+#### Qué verás en la terminal
+
+::: {.terminal-output}
+```text
+La palabra clave si aparece en el texto
+```
+:::
+
+Ese mensaje aparece porque la palabra `fundada` sí está dentro del texto. Para experimentar, prueba con otra palabra, cambia el texto de la resolución o usa una expresión compuesta. Así verás que esta técnica es útil para búsquedas rápidas, aunque también tiene límites cuando el lenguaje se vuelve más ambiguo o complejo.
+
+### Ejercicio 5. Contar cuántos casos hay por categoría
+
+Además de leer y revisar registros individuales, muchas veces hace falta resumir información. Este ejercicio cuenta cuántos casos hay en cada tipo de trámite usando un diccionario como contador.
+
+Crea un archivo nuevo y copia este código:
 
 ```python
-contrato = {
-    "codigo": "CONT-014",
-    "vence_pronto": True,
-    "firmado": False
-}
+casos = ["Laboral", "Civil", "Civil", "Penal", "Laboral", "Civil"]
+conteo = {}
 
-mensaje = f"Contrato {contrato['codigo']}: "
+for categoria in casos:
+    if categoria in conteo:
+        conteo[categoria] = conteo[categoria] + 1
+    else:
+        conteo[categoria] = 1
 
-if contrato["vence_pronto"]:
-    mensaje += "revisar vencimiento. "
-
-if not contrato["firmado"]:
-    mensaje += "falta firma."
-
-print(mensaje)
+print(conteo)
 ```
 
-No estamos creando todavía un sistema documental complejo, pero sí una lógica que convierte datos en una salida útil.
+#### Qué hace este código
 
-## Un ejemplo jurídico más desarrollado
+El programa recorre una lista de categorías y va sumando una unidad cada vez que encuentra una categoría ya vista. Si es la primera vez que la encuentra, la crea con valor inicial de 1.
 
-Imagina que debes revisar una lista de contratos y marcar cuáles tienen:
+#### Qué hace cada parte
 
-- plazo próximo a vencer;
-- ausencia de firma;
-- monto superior a un umbral;
-- cláusula de renovación automática.
+- `casos = [...]` contiene las categorías observadas.
+- `conteo = {}` crea un diccionario vacío donde se guardarán los resultados.
+- `if categoria in conteo:` revisa si la categoría ya tiene contador.
+- Si ya existe, se incrementa en uno.
+- Si no existe, se crea con valor `1`.
+- Este patrón importa porque muchas tareas reales empiezan justamente así: contar cuántas veces aparece cada tipo de asunto o estado.
+
+#### Qué verás en la terminal
+
+::: {.terminal-output}
+```text
+{'Laboral': 2, 'Civil': 3, 'Penal': 1}
+```
+:::
+
+Ese resultado aparece porque el programa recorre toda la lista y acumula los conteos categoría por categoría. Para experimentar, agrega nuevos valores, cambia una categoría o intenta imprimir el diccionario línea por línea con un `for`. Así verás mejor cómo una colección de casos puede convertirse en un resumen rápido.
+
+## Ejemplos avanzados: cuando el script ya produce artefactos
+
+La segunda parte del capítulo muestra algo especialmente valioso: Python no solo puede analizar o clasificar información. También puede generar documentos, consolidar archivos, producir gráficos y automatizar acciones. Es aquí donde el vínculo con la automatización documental se vuelve más visible.
+
+### Ejercicio 6. Crear un PDF simple con una lista de estudiantes
+
+Este ejercicio introduce `reportlab`, una biblioteca que permite escribir texto directamente dentro de un PDF. La idea es generar una lista ordenada a partir de un bucle.
+
+Crea un archivo nuevo y copia este código:
 
 ```python
-contratos = [
-    {
-        "codigo": "C-001",
-        "dias_para_vencer": 10,
-        "firmado": True,
-        "monto": 8000,
-        "renovacion_automatica": False
-    },
-    {
-        "codigo": "C-002",
-        "dias_para_vencer": 3,
-        "firmado": False,
-        "monto": 15000,
-        "renovacion_automatica": True
-    }
+from pathlib import Path
+
+from reportlab.lib.pagesizes import LETTER
+from reportlab.pdfgen import canvas
+
+ruta_pdf = Path("pdfs_entrada") / "01-lista-estudiantes.pdf"
+
+estudiantes = [
+    "Ana Perez",
+    "Luis Torres",
+    "Maria Lopez",
+    "Carlos Vega",
+    "Julia Ramos",
 ]
 
-for contrato in contratos:
-    alertas = []
+pdf = canvas.Canvas(str(ruta_pdf), pagesize=LETTER)
+ancho, alto = LETTER
 
-    if contrato["dias_para_vencer"] <= 5:
-        alertas.append("vence pronto")
-    if not contrato["firmado"]:
-        alertas.append("falta firma")
-    if contrato["monto"] > 10000:
-        alertas.append("monto alto")
-    if contrato["renovacion_automatica"]:
-        alertas.append("revisar renovacion automatica")
+pdf.setFont("Helvetica-Bold", 16)
+pdf.drawString(72, alto - 72, "Bienvenidos al curso de Python")
 
-    print(contrato["codigo"], "=>", alertas)
+y = alto - 150
+for numero, nombre in enumerate(estudiantes, start=1):
+    pdf.drawString(90, y, f"{numero}. {nombre}")
+    y -= 24
+
+pdf.save()
+
+print("PDF creado en:", ruta_pdf)
 ```
 
-Este ejemplo ya muestra algo importante: el script no resuelve todo el análisis contractual, pero ayuda a ordenar el trabajo y a detectar rápidamente dónde mirar primero.
+#### Qué hace este código
+
+El programa crea un PDF nuevo, escribe un título y luego usa un bucle para agregar una línea por cada estudiante de la lista.
+
+#### Qué hace cada parte
+
+- `canvas.Canvas(...)` crea el lienzo PDF donde se dibujará el contenido.
+- `LETTER` define el tamaño de página.
+- `drawString(...)` escribe texto en una posición específica.
+- `enumerate(..., start=1)` sirve para numerar la lista.
+- La variable `y` va bajando en cada vuelta para que las líneas no se superpongan.
+- Se usa un bucle porque el objetivo es mostrar cómo una estructura de datos puede transformarse en un documento repetible.
+
+#### Qué verás en la terminal
+
+::: {.terminal-output}
+```text
+PDF creado en: pdfs_entrada/01-lista-estudiantes.pdf
+```
+:::
+
+La salida de la terminal confirma que el archivo fue generado, pero el efecto importante está en el propio PDF. Para experimentar, agrega más nombres, cambia el título o modifica la posición vertical inicial. Así verás que el documento no es estático: se construye a partir de tus datos y de las coordenadas que definas.
+
+### Ejercicio 7. Colocar un logo centrado dentro de un PDF
+
+El siguiente paso consiste en introducir una imagen dentro del documento. Este ejercicio muestra cómo centrar un logo y combinarlo con texto simple.
+
+Necesitarás un archivo PNG, por ejemplo `logo_legaltech.png`, dentro de tu carpeta `images`.
+
+Crea un archivo nuevo y copia este código:
+
+```python
+from pathlib import Path
+
+from reportlab.lib import colors
+from reportlab.lib.pagesizes import LETTER
+from reportlab.lib.utils import ImageReader
+from reportlab.pdfgen import canvas
+
+ruta_logo = Path("images") / "logo_legaltech.png"
+ruta_pdf = Path("pdfs_entrada") / "02-logo-centrado.pdf"
+
+pdf = canvas.Canvas(str(ruta_pdf), pagesize=LETTER)
+ancho, alto = LETTER
+
+pdf.setFillColor(colors.HexColor("#F7F7F7"))
+pdf.rect(0, 0, ancho, alto, stroke=0, fill=1)
+
+pdf.setFont("Helvetica-Bold", 18)
+pdf.setFillColor(colors.HexColor("#0E3A5D"))
+pdf.drawCentredString(ancho / 2, alto - 80, "Logo del curso centrado en el PDF")
+
+logo = ImageReader(str(ruta_logo))
+logo_ancho, logo_alto = logo.getSize()
+logo_destino_ancho = 240
+logo_destino_alto = logo_destino_ancho * (logo_alto / logo_ancho)
+posicion_x = (ancho - logo_destino_ancho) / 2
+posicion_y = (alto - logo_destino_alto) / 2 - 20
+
+pdf.drawImage(
+    logo,
+    posicion_x,
+    posicion_y,
+    width=logo_destino_ancho,
+    height=logo_destino_alto,
+    mask="auto",
+)
+
+pdf.save()
+
+print("PDF creado en:", ruta_pdf)
+```
+
+#### Qué hace este código
+
+El programa crea un PDF, pinta un fondo claro, escribe un título, carga una imagen y la coloca centrada dentro de la página.
+
+#### Qué hace cada parte
+
+- `ImageReader(...)` carga la imagen para que `reportlab` pueda usarla.
+- `getSize()` permite conocer su tamaño original.
+- `posicion_x` y `posicion_y` calculan dónde ubicarla para que quede centrada.
+- `drawImage(...)` inserta la imagen dentro del PDF.
+- Se calculan tamaño y posición porque trabajar con documentos generados también implica controlar composición visual básica.
+
+#### Qué verás en la terminal
+
+::: {.terminal-output}
+```text
+PDF creado en: pdfs_entrada/02-logo-centrado.pdf
+```
+:::
+
+La terminal solo confirma la creación del archivo, pero el aprendizaje real está en observar el PDF y notar cómo texto, color y posición pueden controlarse desde código. Para experimentar, cambia el ancho del logo, usa otra imagen o mueve las coordenadas. Así verás cómo pequeñas variaciones alteran la composición final del documento.
+
+### Ejercicio 8. Generar una carta PDF por cada registro de un CSV
+
+Este ejercicio ya se parece mucho más a automatización documental. La idea es tomar un archivo CSV con varios destinatarios y producir una carta PDF para cada uno.
+
+Si quieres seguir el ejemplo, crea un archivo `cartas_destinatarios.csv` en `data` con columnas como `nombre`, `domicilio`, `distrito` y `motivo`.
+
+Crea un archivo nuevo y copia este código:
+
+```python
+import csv
+from pathlib import Path
+
+from reportlab.lib.pagesizes import LETTER
+from reportlab.pdfgen import canvas
+
+ruta_csv = Path("data") / "cartas_destinatarios.csv"
+carpeta_salida = Path("pdfs_entrada")
+carpeta_salida.mkdir(parents=True, exist_ok=True)
+
+
+def limpiar_nombre_archivo(texto):
+    return texto.lower().replace(" ", "_")
+
+
+with open(ruta_csv, "r", encoding="utf-8") as archivo:
+    lector = csv.DictReader(archivo)
+
+    for numero, fila in enumerate(lector, start=3):
+        nombre_archivo = f"{numero:02d}-carta-{limpiar_nombre_archivo(fila['nombre'])}.pdf"
+        ruta_pdf = carpeta_salida / nombre_archivo
+
+        pdf = canvas.Canvas(str(ruta_pdf), pagesize=LETTER)
+        ancho, alto = LETTER
+
+        pdf.setFont("Helvetica-Bold", 14)
+        pdf.drawString(72, alto - 72, "Carta de notificacion")
+
+        pdf.setFont("Helvetica", 11)
+        pdf.drawString(72, alto - 120, f"Nombre: {fila['nombre']}")
+        pdf.drawString(72, alto - 145, f"Domicilio: {fila['domicilio']}")
+        pdf.drawString(72, alto - 170, f"Distrito: {fila['distrito']}")
+        pdf.drawString(72, alto - 245, f"Motivo: {fila['motivo']}")
+
+        pdf.save()
+        print("Carta creada:", ruta_pdf)
+```
+
+#### Qué hace este código
+
+El programa lee un CSV, toma cada fila como un destinatario distinto y genera una carta PDF independiente para cada registro.
+
+#### Qué hace cada parte
+
+- `csv.DictReader(...)` permite leer cada fila como diccionario.
+- `limpiar_nombre_archivo(...)` ayuda a transformar el nombre de la persona en una parte usable del nombre del archivo.
+- `enumerate(..., start=3)` agrega una numeración a cada carta.
+- Dentro del bucle se construye un PDF nuevo para cada fila.
+- Se usa este patrón porque muchas tareas documentales repiten una misma estructura cambiando solo algunos datos.
+
+#### Qué verás en la terminal
+
+Si tu CSV tuviera tres personas, verías una salida similar a esta:
+
+::: {.terminal-output}
+```text
+Carta creada: pdfs_entrada/03-carta-steve_waterdrinker.pdf
+Carta creada: pdfs_entrada/04-carta-luis_torres.pdf
+Carta creada: pdfs_entrada/05-carta-maria_lopez.pdf
+```
+:::
+
+Cada línea aparece porque el bucle produce un PDF distinto por cada fila del CSV. Para experimentar, agrega una nueva persona al archivo, cambia el texto que se imprime o añade más campos dentro de la carta. Así verás con claridad cómo los datos alimentan directamente la generación de documentos.
+
+### Ejercicio 9. Crear un comunicado PDF con un diseño más elaborado
+
+El ejercicio anterior mostraba automatización documental básica. Este va un poco más allá: usa colores, paneles, un logo y párrafos más largos para construir un comunicado con una apariencia más cuidada.
+
+Crea un archivo nuevo y copia este código:
+
+```python
+from pathlib import Path
+
+from reportlab.lib import colors
+from reportlab.lib.pagesizes import LETTER
+from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
+from reportlab.lib.utils import ImageReader
+from reportlab.platypus import Paragraph
+from reportlab.pdfgen import canvas
+
+ruta_logo = Path("images") / "logo_legaltech.png"
+ruta_pdf = Path("pdfs_entrada") / "00-comunicado-bienvenida.pdf"
+
+pdf = canvas.Canvas(str(ruta_pdf), pagesize=LETTER)
+ancho, alto = LETTER
+
+pdf.setFillColor(colors.HexColor("#F3F4F6"))
+pdf.rect(0, 0, ancho, alto, stroke=0, fill=1)
+
+logo = ImageReader(str(ruta_logo))
+pdf.drawImage(logo, 54, alto - 112, width=180, height=60, mask="auto")
+
+pdf.setFillColor(colors.HexColor("#0E3A5D"))
+pdf.setFont("Helvetica-Bold", 24)
+pdf.drawString(96, alto - 180, "Bienvenidos al mundo de Python")
+
+styles = getSampleStyleSheet()
+estilo = ParagraphStyle(
+    "Cuerpo",
+    parent=styles["BodyText"],
+    fontName="Helvetica",
+    fontSize=11,
+    leading=18,
+)
+
+parrafo = Paragraph(
+    "Este comunicado fue generado automaticamente y muestra que un PDF puede combinar texto, imagen y composicion visual desde Python.",
+    estilo,
+)
+ancho_p, alto_p = parrafo.wrap(ancho - 120, 200)
+parrafo.drawOn(pdf, 72, alto - 280 - alto_p)
+
+pdf.save()
+
+print("Comunicado creado en:", ruta_pdf)
+```
+
+#### Qué hace este código
+
+El programa construye un PDF más elaborado que combina fondo, logo, título y un párrafo con ajuste automático de línea.
+
+#### Qué hace cada parte
+
+- `colors.HexColor(...)` define colores personalizados.
+- `ParagraphStyle(...)` crea un estilo de texto reutilizable.
+- `Paragraph(...)` permite escribir párrafos largos con mejor ajuste de línea que `drawString()`.
+- `drawOn(...)` coloca ese párrafo en una posición específica de la página.
+- Este tipo de ejercicio importa porque muestra que la automatización documental no tiene que limitarse a documentos visualmente pobres.
+
+#### Qué verás en la terminal
+
+::: {.terminal-output}
+```text
+Comunicado creado en: pdfs_entrada/00-comunicado-bienvenida.pdf
+```
+:::
+
+La terminal confirma la creación, pero el efecto importante está en el propio documento: el script genera una pieza visual más rica y mejor compuesta. Para experimentar, cambia el color del fondo, modifica el texto del párrafo o agrega un subtítulo nuevo. Así verás cómo el diseño básico también puede controlarse desde el código.
+
+### Ejercicio 10. Unir varios PDF en un solo documento
+
+Cuando ya tienes varios PDF producidos o reunidos, puede resultar útil consolidarlos en un solo archivo. Este ejercicio muestra cómo recorrer una carpeta y combinarlos en un documento final.
+
+Crea un archivo nuevo y copia este código:
+
+```python
+from pathlib import Path
+
+from pypdf import PdfWriter
+
+carpeta_entrada = Path("pdfs_entrada")
+carpeta_salida = Path("pdfs_salida")
+archivo_salida = carpeta_salida / "documento_unido.pdf"
+
+carpeta_salida.mkdir(exist_ok=True)
+
+archivos_pdf = sorted(carpeta_entrada.glob("*.pdf"))
+
+if not archivos_pdf:
+    print("No se encontraron PDF en:", carpeta_entrada)
+else:
+    writer = PdfWriter()
+
+    for ruta_pdf in archivos_pdf:
+        print("Agregando:", ruta_pdf.name)
+        writer.append(str(ruta_pdf))
+
+    with open(archivo_salida, "wb") as archivo_final:
+        writer.write(archivo_final)
+
+    writer.close()
+
+    print("PDF combinado creado en:", archivo_salida)
+```
+
+#### Qué hace este código
+
+El programa busca todos los PDF dentro de una carpeta, los ordena por nombre y los agrega a un único documento final.
+
+#### Qué hace cada parte
+
+- `glob("*.pdf")` busca todos los archivos PDF de la carpeta.
+- `sorted(...)` los ordena por nombre.
+- `PdfWriter()` crea el objeto que irá reuniendo los documentos.
+- `writer.append(...)` agrega cada PDF al resultado final.
+- El archivo final se escribe en modo binario con `"wb"`.
+- Se usa este proceso porque muchas tareas documentales no terminan al crear un archivo: a veces también hace falta consolidar varios insumos en un solo expediente o reporte.
+
+#### Qué verás en la terminal
+
+Si hay varios archivos en la carpeta de entrada, verás algo parecido a esto:
+
+::: {.terminal-output}
+```text
+Agregando: 00-comunicado-bienvenida.pdf
+Agregando: 01-lista-estudiantes.pdf
+Agregando: 02-logo-centrado.pdf
+PDF combinado creado en: pdfs_salida/documento_unido.pdf
+```
+:::
+
+Cada línea de `Agregando:` aparece porque el programa va incorporando un PDF a la vez al documento final. Para experimentar, cambia el nombre de algunos archivos, quita uno de la carpeta o agrega otros nuevos. Así verás cómo el orden y el contenido de la carpeta influyen directamente en el resultado final.
+
+### Ejercicio 11. Construir un gráfico de barras desde un CSV
+
+No toda salida útil es un documento textual. A veces conviene resumir información visualmente. Este ejercicio muestra cómo leer un CSV y producir un gráfico de barras simple con `matplotlib`.
+
+Si quieres seguir el ejemplo, crea un archivo `grafico_ventas.csv` en `data` con columnas como `categoria` y `total`.
+
+Crea un archivo nuevo y copia este código:
+
+```python
+import csv
+from pathlib import Path
+
+import matplotlib.pyplot as plt
+
+ruta_csv = Path("data") / "grafico_ventas.csv"
+ruta_imagen = Path("grafico_ventas.png")
+
+categorias = []
+valores = []
+
+with open(ruta_csv, "r", encoding="utf-8") as archivo:
+    lector = csv.DictReader(archivo)
+
+    for fila in lector:
+        categorias.append(fila["categoria"])
+        valores.append(int(fila["total"]))
+
+plt.figure(figsize=(8, 5))
+barras = plt.bar(categorias, valores, color="#2f6db3")
+plt.title("Ventas por categoria")
+plt.xlabel("Categoria")
+plt.ylabel("Total")
+
+for barra, valor in zip(barras, valores):
+    plt.text(barra.get_x() + barra.get_width() / 2, valor + 1, str(valor), ha="center")
+
+plt.tight_layout()
+plt.savefig(ruta_imagen)
+plt.show()
+
+print("Grafico guardado en:", ruta_imagen)
+```
+
+#### Qué hace este código
+
+El programa lee categorías y valores desde un CSV, construye un gráfico de barras, lo guarda como imagen y además lo muestra en pantalla.
+
+#### Qué hace cada parte
+
+- `csv.DictReader(...)` recupera cada fila como diccionario.
+- Las listas `categorias` y `valores` guardan la información que usará el gráfico.
+- `plt.bar(...)` dibuja las barras.
+- `plt.text(...)` coloca etiquetas numéricas encima de cada barra.
+- `plt.savefig(...)` guarda una copia del gráfico como archivo PNG.
+- Se usa este enfoque porque una visualización puede resumir información de un vistazo, algo útil cuando los datos empiezan a crecer.
+
+#### Qué verás en la terminal
+
+::: {.terminal-output}
+```text
+Grafico guardado en: grafico_ventas.png
+```
+:::
+
+La terminal confirma el guardado, pero el aprendizaje principal está en la ventana del gráfico y en la imagen PNG generada. Para experimentar, cambia los valores del CSV, añade otra categoría o prueba otro color para las barras. Así verás cómo pequeños cambios en los datos modifican inmediatamente la visualización.
+
+### Ejercicio 12. Preparar el envío de correos desde un CSV
+
+Este ejercicio introduce una automatización muy sensible: el envío de correos. Justamente por eso conviene entenderlo primero como un ejemplo controlado y no como algo para usar sin revisión.
+
+Si quieres seguir el ejemplo, crea un CSV con columnas `correo` y `nombre`.
+
+Crea un archivo nuevo y copia este código:
+
+```python
+import csv
+import smtplib
+from email.message import EmailMessage
+from pathlib import Path
+
+REMITENTE = "tu_correo@ejemplo.com"
+CLAVE = "tu_clave_de_aplicacion"
+SERVIDOR_SMTP = "smtp.ejemplo.com"
+PUERTO_SMTP = 587
+
+ruta_csv = Path("data") / "destinatarios.csv"
+
+
+def crear_mensaje(destinatario, nombre):
+    mensaje = EmailMessage()
+    mensaje["Subject"] = "Comunicado automatico"
+    mensaje["From"] = REMITENTE
+    mensaje["To"] = destinatario
+    mensaje.set_content(
+        f"Hola {nombre},\n\n"
+        "Este es un correo de ejemplo enviado desde Python.\n\n"
+        "Saludos."
+    )
+    return mensaje
+
+
+with open(ruta_csv, "r", encoding="utf-8") as archivo:
+    lector = csv.DictReader(archivo)
+    destinatarios = list(lector)
+
+if REMITENTE == "tu_correo@ejemplo.com":
+    print("Debes editar la configuracion del remitente antes de enviar correos.")
+else:
+    with smtplib.SMTP(SERVIDOR_SMTP, PUERTO_SMTP) as servidor:
+        servidor.starttls()
+        servidor.login(REMITENTE, CLAVE)
+
+        for fila in destinatarios:
+            mensaje = crear_mensaje(fila["correo"], fila["nombre"])
+            servidor.send_message(mensaje)
+            print("Correo enviado a:", fila["correo"])
+```
+
+#### Qué hace este código
+
+El programa lee un CSV con destinatarios, construye un mensaje para cada persona y, si la configuración fue completada correctamente, se conecta al servidor SMTP para enviarlo.
+
+#### Qué hace cada parte
+
+- `EmailMessage()` crea el objeto correo.
+- `set_content(...)` define el cuerpo del mensaje.
+- `csv.DictReader(...)` lee los destinatarios desde el archivo.
+- `smtplib.SMTP(...)` abre la conexión con el servidor de correo.
+- `starttls()` activa cifrado para la conexión.
+- `login(...)` autentica la cuenta antes del envío.
+- El `if REMITENTE == "tu_correo@ejemplo.com":` funciona como barrera pedagógica para evitar un envío accidental sin configuración real.
+
+#### Qué verás en la terminal
+
+Si todavía no cambias la configuración, verás esto:
+
+::: {.terminal-output}
+```text
+Debes editar la configuracion del remitente antes de enviar correos.
+```
+:::
+
+Ese mensaje es útil porque evita que el script intente enviar correos con datos de ejemplo. Si más adelante lo adaptas en un entorno de prueba, conviene hacerlo con mucho cuidado, usando credenciales seguras y destinatarios controlados. Para experimentar sin riesgo, modifica solo el texto del mensaje o imprime el correo antes de enviarlo en lugar de conectarte realmente al servidor.
+
+### Ejercicio 13. Automatizar acciones básicas con mouse y teclado
+
+El último ejercicio del capítulo muestra una forma distinta de automatización: controlar acciones visibles del sistema. Es un ejemplo llamativo, pero también delicado, porque el script interactúa con el mouse, el teclado y la pantalla reales.
+
+Crea un archivo nuevo y copia este código:
+
+```python
+from pathlib import Path
+import subprocess
+import time
+
+import pyautogui
+
+pyautogui.FAILSAFE = True
+pyautogui.PAUSE = 1
+
+print("Tamano de pantalla:", pyautogui.size())
+print("Posicion actual del mouse:", pyautogui.position())
+print("El script empezara en 3 segundos...")
+time.sleep(3)
+
+subprocess.Popen(["notepad.exe"])
+
+time.sleep(2)
+
+pyautogui.write("Hola, este texto fue escrito con pyautogui.", interval=0.05)
+pyautogui.press("enter")
+pyautogui.write("Este ejemplo abrio un editor automaticamente.", interval=0.05)
+
+ruta_captura = Path("captura_pyautogui.png")
+pyautogui.screenshot(str(ruta_captura))
+
+print("Captura guardada en:", ruta_captura)
+print("Ejemplo terminado.")
+```
+
+#### Qué hace este código
+
+El programa muestra información básica sobre pantalla y mouse, abre una aplicación, escribe texto automáticamente, toma una captura y la guarda como archivo.
+
+#### Qué hace cada parte
+
+- `pyautogui.FAILSAFE = True` permite detener la ejecución moviendo el mouse a una esquina.
+- `pyautogui.PAUSE = 1` agrega una pausa entre acciones para que sean visibles y más seguras.
+- `subprocess.Popen(...)` abre una aplicación externa.
+- `pyautogui.write(...)` simula escritura desde el teclado.
+- `pyautogui.press(...)` simula pulsaciones concretas.
+- `pyautogui.screenshot(...)` toma una captura de pantalla.
+- Este tipo de script importa porque muestra que la automatización no solo transforma datos: también puede interactuar con interfaces.
+
+#### Qué verás en la terminal
+
+La salida será parecida a esta:
+
+::: {.terminal-output}
+```text
+Tamano de pantalla: Size(width=..., height=...)
+Posicion actual del mouse: Point(x=..., y=...)
+El script empezara en 3 segundos...
+Captura guardada en: captura_pyautogui.png
+Ejemplo terminado.
+```
+:::
+
+Además de lo que aparece en la terminal, verás que el programa abre una aplicación, escribe dentro de ella y guarda una captura. Para experimentar, conviene hacerlo con mucha cautela: cambia primero solo el texto que se escribe o la ruta de la captura. Si estás en otro sistema operativo, también tendrás que adaptar el programa que se abre. Aquí el aprendizaje principal no es “hacer clics por hacer clics”, sino entender que ciertas tareas repetitivas de interfaz también pueden automatizarse, aunque exigen mucha más prudencia.
+
+## Conclusiones del capítulo
+
+Este capítulo mostró un momento importante del recorrido: Python empezó a comportarse como una herramienta que no solo calcula o clasifica, sino que también genera productos visibles. A partir de reglas simples, listas, texto y archivos, el programa pudo transformarse en una pequeña máquina de trabajo: producir cartas, consolidar PDF, construir gráficos o preparar comunicaciones.
+
+Las ideas que siguen resumen el valor de esta transición. Conviene leerlas como una síntesis de lo que ya puedes empezar a hacer cuando conectas datos, reglas y salidas concretas.
 
 ::: {.callout-tip}
-## Regla útil
-El objetivo no es reemplazar la revisión jurídica. Es reducir trabajo mecánico y hacer más visible la información relevante.
-:::
-
-## Archivos de texto y salidas simples
-
-Otra posibilidad útil es guardar resultados en un archivo. Por ejemplo:
-
-```python
-lineas = [
-    "EXP-001: revisar urgencia",
-    "EXP-002: sin observaciones"
-]
-
-with open("reporte.txt", "w", encoding="utf-8") as archivo:
-    for linea in lineas:
-        archivo.write(linea + "\n")
-```
-
-Con eso ya podemos producir una salida reutilizable, aunque sea básica.
-
-## El puente hacia automatización documental
-
-Cuando un script:
-
-- toma datos;
-- aplica reglas;
-- genera una salida;
-
-ya estamos bastante cerca de la lógica básica de automatización documental.
-
-No se trata todavía de construir una plataforma sofisticada. Se trata de entender la secuencia:
-
-1. recibir información;
-2. transformarla;
-3. producir un resultado legible.
-
-Ese puente es importante porque prepara el terreno para módulos posteriores del curso.
-
-## Práctica en editor
-
-Crea un archivo como `sesion-4/reporte.py` y trabaja con una lista de registros jurídicos. El script debe:
-
-1. leer una estructura simple de datos;
-2. identificar al menos una condición relevante;
-3. producir una salida clara en pantalla o en un archivo de texto.
-
-Si quieres profundizar, añade una pequeña función que reciba un registro y devuelva observaciones.
-
-## Git y GitHub
-
-Versiona tanto el script como cualquier archivo de datos de prueba o README breve que acompañe tu solución.
-
-## PSET de la sesión
-
-Resuelve una tarea básica de procesamiento jurídico con Python. Algunas opciones:
-
-- generar observaciones sobre expedientes;
-- crear un pequeño reporte de plazos;
-- producir mensajes tipo para situaciones repetitivas;
-- transformar una lista de registros en una salida legible.
-
-El PSET debe mostrar:
-
-- estructura clara de datos;
-- lógica comprensible;
-- salida verificable;
-- commits que permitan seguir el trabajo.
-
-## Preguntas de repaso
-
-1. ¿Por qué una lista de diccionarios puede ser útil para modelar información jurídica?
-2. ¿Qué valor tiene transformar texto en tareas legales?
-3. ¿Qué diferencia hay entre revisar datos y producir una salida a partir de esos datos?
-4. ¿Por qué este tipo de ejercicios prepara el paso hacia automatización documental?
-
 ## Ideas clave
 
-- Python no sirve solo para cálculos: también sirve para ordenar información jurídica;
-- las estructuras de datos son una forma de pensar mejor el trabajo legal;
-- una salida simple puede ser ya una forma útil de automatización;
-- automatizar documentos o reportes empieza con pequeñas transformaciones bien hechas.
+- una buena parte de la automatización jurídica básica empieza con reglas simples y tareas repetibles;
+- listas, diccionarios y texto siguen siendo la base de muchos problemas más avanzados;
+- generar documentos desde código permite pasar del análisis a la producción de artefactos concretos;
+- los PDF pueden construirse, personalizarse y unirse automáticamente cuando el flujo está bien organizado;
+- un CSV puede servir como fuente de datos para cartas, correos, reportes o gráficos;
+- la visualización de datos también forma parte del ecosistema Legal Tech cuando ayuda a resumir información;
+- algunas automatizaciones, como el envío de correos o el control de interfaces, requieren mucha más cautela que otras;
+- automatizar no equivale a reemplazar criterio profesional, sino a estructurar mejor la parte repetible del trabajo;
+- cuanto más claro esté el flujo de entrada, transformación y salida, más útil y verificable será el script.
+:::
+
+Antes de pasar al siguiente módulo, también conviene hacer una pausa crítica. Este capítulo puede entusiasmar porque ya muestra resultados visibles, pero justamente por eso es importante pensar en límites, riesgos y decisiones de diseño. Las preguntas siguientes buscan ayudarte a no confundir automatización con solución automática de cualquier problema.
+
+::: {.callout-caution}
+## Para pensar y reflexionar
+
+1. ¿Qué diferencia notas entre un script que solo analiza información y otro que además produce un documento o un archivo reutilizable?
+2. ¿Por qué crees que generar cartas o PDF desde datos puede ser útil en ciertos flujos jurídicos repetitivos?
+3. ¿Qué riesgos aparecerían si enviaras correos o automatizaras interfaces sin revisar antes los datos y el contexto?
+4. ¿Qué ejercicios de este capítulo te parecen más directamente conectados con Legal Tech y por qué?
+5. Si tuvieras que transformar uno de estos ejemplos en una herramienta más cercana a una oficina legal real, ¿cuál elegirías y qué tendrías que mejorar antes de usarlo?
+:::

@@ -1,286 +1,578 @@
-# 3. Python para decisiones jurídicas y automatización básica
+---
+title: "3. Python para fechas, archivos y datos"
+---
+
+::: {.callout-note}
+## Qué aprenderás en esta sesión
+
+En este capítulo darás un paso muy importante: pasarás de los fundamentos generales de Python a tareas que se parecen más al trabajo cotidiano con información jurídica. Verás cómo obtener fechas, calcular plazos simples, leer y guardar archivos de texto, trabajar con archivos CSV y explorar tablas de datos con `pandas`. La idea central es que empieces a notar cómo un programa puede ayudarte no solo a mostrar mensajes en pantalla, sino también a organizar información, revisar registros y producir resultados útiles para tareas legales y administrativas.
+:::
 
 ## ¿Por qué importa este tema?
 
-Muchas tareas jurídicas no son solo lectura o argumentación. También implican aplicar criterios, validar requisitos, verificar supuestos y producir decisiones preliminares. Ese tipo de trabajo puede expresarse como lógica condicional más compleja.
+En la práctica jurídica, muchos problemas no se resuelven solo con definiciones abstractas. Hace falta revisar fechas, calcular días entre actos procesales, leer documentos, registrar observaciones, ordenar expedientes y mirar tablas con datos. Todo eso forma parte del trabajo real y, precisamente por eso, es un buen terreno para seguir aprendiendo Python.
+
+En la sesión anterior viste variables, tipos de datos, condicionales, bucles, funciones, listas y texto. Ahora toca usar esas bases en contextos más cercanos a tareas concretas. Un jurista que empieza a manejar fechas, archivos y tablas con un poco de soltura ya está dando un paso importante hacia la automatización básica y el análisis más ordenado de información.
+
+## Del fundamento al uso práctico
+
+El paso que da este capítulo es muy natural. Primero aprendiste a escribir instrucciones simples y a entender qué hace cada línea. Ahora vas a usar esa misma lógica para responder preguntas como estas:
+
+- ¿qué fecha tiene hoy el sistema?;
+- ¿cuántos días han pasado entre una presentación y una audiencia?;
+- ¿cuándo vence un plazo si se suman ciertos días?;
+- ¿cómo se lee un documento desde un archivo?;
+- ¿cómo se guarda una nota generada por el programa?;
+- ¿cómo se leen registros de un CSV?;
+- ¿cómo se filtran o resumen datos en una tabla?
+
+Es decir, el capítulo empieza a mostrar que programar no solo sirve para aprender sintaxis. También sirve para trabajar con información de una manera más precisa y trazable.
+
+## Fechas, archivos y datos en clave jurídica
+
+Estos tres temas tienen una relación muy directa con el trabajo legal. Las fechas importan porque muchos procedimientos dependen de plazos y secuencias temporales. Los archivos importan porque una parte enorme del trabajo profesional consiste en leer, guardar y mover documentos. Y los datos importan porque expedientes, multas, registros, estados y categorías suelen terminar organizados en tablas que necesitan revisarse y resumirse.
+
+Lo importante aquí no es imaginar que Python reemplaza el criterio jurídico. Lo importante es ver que puede ayudar a hacer visible y repetible la parte estructurada del trabajo: calcular, leer, ordenar, filtrar y resumir.
+
+## Ejercicios prácticos para trabajar con fechas, archivos y datos
+
+La mejor manera de aprender esta parte es avanzar en secuencia. Primero conviene trabajar con fechas, porque allí aparecen objetos nuevos pero fáciles de entender. Luego tiene sentido pasar a archivos, porque eso te muestra cómo un programa se conecta con documentos reales. Finalmente, el cierre con datos permite ver cómo Python y `pandas` ayudan a leer tablas y extraer información útil.
+
+Si quieres aprovechar bien este capítulo, te conviene ejecutar cada ejercicio, revisar la salida, cambiar uno o dos valores y volver a correr el script. Esa práctica de probar pequeñas variaciones sigue siendo la mejor forma de aprender.
 
 ::: {.callout-important}
-## Idea central
-Cuando una regla jurídica puede formularse como condiciones claras, también puede convertirse en una función o en un flujo verificable.
-:::
+## Antes de empezar
 
-## Qué aprenderás en esta sesión
+Para trabajar con estos ejercicios necesitas:
 
-Al finalizar esta sesión, deberías poder:
+- Python 3 instalado;
+- Visual Studio Code o un editor equivalente;
+- una carpeta de trabajo para esta sesión;
+- una subcarpeta `data` cuando el ejercicio use archivos;
+- la biblioteca `pandas` para la parte final del capítulo.
 
-- combinar varias condiciones en un mismo script;
-- usar funciones para encapsular lógica repetible;
-- modelar decisiones jurídicas preliminares;
-- distinguir entre una automatización útil y una simplificación defectuosa;
-- documentar y versionar una solución simple en Python.
+Una forma ordenada de trabajar es crear una carpeta como `sesion-3` y guardar allí tus scripts. Cuando llegues a los ejercicios de archivos y datos, crea dentro una carpeta `data` para colocar los textos y CSV que el programa leerá.
 
-## Del ejemplo simple al problema realista
-
-En la sesión anterior vimos variables, condicionales, bucles y funciones por separado. Ahora toca combinarlos en problemas más parecidos al trabajo jurídico real.
-
-La práctica jurídica suele exigir verificar varios requisitos a la vez:
-
-- plazos;
-- documentos obligatorios;
-- montos;
-- calidad del sujeto;
-- existencia de excepciones;
-- cumplimiento de etapas previas.
-
-Eso significa que ya no basta con una condición aislada. Necesitamos una estructura un poco más rica.
-
-## Un primer puente desde la sesión anterior
-
-En la sesión anterior vimos ejemplos simples de variables, condicionales y funciones. Un paso intermedio razonable consiste en modelar una revisión muy básica:
-
-- tiene firma;
-- tiene documento de identidad;
-- tiene pago de tasa.
-
-Podemos expresarlo así:
-
-```python
-def evaluar_solicitud(tiene_firma, tiene_dni, tiene_pago):
-    if tiene_firma and tiene_dni and tiene_pago:
-        return "Solicitud admisible"
-    return "Solicitud observada"
-
-resultado = evaluar_solicitud(True, True, False)
-print(resultado)
-```
-
-Este ejemplo todavía es simple, pero cumple una función importante: mostrar cómo varias condiciones pueden combinarse para producir una clasificación preliminar.
-
-## Un primer modelo: admisibilidad preliminar
-
-Supón que una solicitud solo puede pasar a revisión si cumple tres requisitos:
-
-- pago de tasa;
-- firma del solicitante;
-- presentación dentro del plazo.
-
-Podemos empezar así:
-
-```python
-def evaluar_solicitud(pago_tasa, firma, plazo_vigente):
-    if pago_tasa and firma and plazo_vigente:
-        return "Solicitud admisible"
-    return "Solicitud con observaciones"
-```
-
-Esta función es útil, pero todavía es bastante rígida. Solo devuelve dos resultados y no explica por qué observa la solicitud.
-
-## Mejorar la lógica: devolver razones
-
-En muchos contextos jurídicos no basta con saber si algo pasa o no pasa. También importa saber **por qué**.
-
-```python
-def revisar_solicitud(pago_tasa, firma, plazo_vigente):
-    observaciones = []
-
-    if not pago_tasa:
-        observaciones.append("Falta pago de tasa")
-    if not firma:
-        observaciones.append("Falta firma")
-    if not plazo_vigente:
-        observaciones.append("Presentacion fuera de plazo")
-
-    if len(observaciones) == 0:
-        return "Solicitud admisible", observaciones
-
-    return "Solicitud observada", observaciones
-
-estado, motivos = revisar_solicitud(True, False, False)
-print(estado)
-print(motivos)
-```
-
-Ahora el programa hace algo más cercano a una revisión preliminar: clasifica y además deja rastro de las observaciones.
-
-::: {.callout-tip}
-## Mejora importante
-Cuando el programa devuelve razones, deja de ser solo un filtro binario y se convierte en una herramienta de apoyo más explicable.
-:::
-
-## Encadenar condiciones sin perder claridad
-
-Uno de los riesgos al empezar a programar reglas es escribir condiciones tan largas que terminan siendo difíciles de leer. Por eso conviene dividir la lógica en pasos o funciones.
-
-Un mal hábito sería este:
-
-```python
-if tiene_firma and tiene_dni and tiene_pago and plazo_vigente and not tiene_impedimento:
-    print("Procede")
-```
-
-No es incorrecto, pero escala mal si el problema crece.
-
-Una alternativa más ordenada:
-
-```python
-def requisitos_basicos_ok(tiene_firma, tiene_dni, tiene_pago):
-    return tiene_firma and tiene_dni and tiene_pago
-
-def puede_continuar_revision(requisitos_ok, plazo_vigente, tiene_impedimento):
-    return requisitos_ok and plazo_vigente and not tiene_impedimento
-```
-
-La ventaja no es solo estética. Es metodológica: la lógica queda más legible, más testeable y más fácil de explicar.
-
-## Ejemplo jurídico 1: elegibilidad para un beneficio
-
-Supón un esquema didáctico de elegibilidad con estas reglas:
-
-- el solicitante debe ser mayor de edad;
-- no debe tener sanción vigente;
-- debe haber presentado documentos mínimos;
-- si vive en zona priorizada, obtiene prioridad.
-
-```python
-def evaluar_beneficio(edad, sancion_vigente, documentos_completos, zona_priorizada):
-    if edad < 18:
-        return "No elegible", "Menor de edad"
-
-    if sancion_vigente:
-        return "No elegible", "Sancion vigente"
-
-    if not documentos_completos:
-        return "Observado", "Documentos incompletos"
-
-    if zona_priorizada:
-        return "Elegible con prioridad", "Cumple requisitos y tiene prioridad"
-
-    return "Elegible", "Cumple requisitos"
-```
-
-Este ejemplo no pretende reemplazar una regulación real. Sirve para mostrar cómo puede ordenarse una lógica de decisión.
-
-## Ejemplo jurídico 2: cálculo de multa con reglas adicionales
-
-Una multa simple puede complejizarse rápido si añadimos supuestos:
-
-- un monto base por día de retraso;
-- un tope máximo;
-- un recargo si hubo reincidencia;
-- una reducción si hubo subsanación voluntaria temprana.
-
-```python
-def calcular_multa(dias_retraso, reincidencia, subsanacion_temprana):
-    multa = dias_retraso * 50
-
-    if reincidencia:
-        multa = multa * 1.25
-
-    if subsanacion_temprana:
-        multa = multa * 0.80
-
-    if multa > 3000:
-        multa = 3000
-
-    return multa
-```
-
-Aquí aparecen varias ideas importantes:
-
-- el orden de las reglas puede importar;
-- algunas condiciones agregan valor;
-- otras reducen o limitan el resultado;
-- conviene probar varios casos.
-
-## Probar escenarios
-
-Cuando un script representa decisiones, conviene ensayarlo con diferentes entradas. Por ejemplo:
-
-```python
-casos = [
-    {"dias": 10, "reincidencia": False, "subsanacion": False},
-    {"dias": 40, "reincidencia": True, "subsanacion": False},
-    {"dias": 20, "reincidencia": False, "subsanacion": True},
-]
-
-for caso in casos:
-    multa = calcular_multa(
-        caso["dias"],
-        caso["reincidencia"],
-        caso["subsanacion"]
-    )
-    print(caso, "=>", multa)
-```
-
-Eso ayuda a detectar errores y a entender mejor si la lógica hace realmente lo que pensamos que hace.
-
-::: {.callout-warning}
-## Ojo metodológico
-Modelar una decisión no significa agotar el juicio jurídico. Significa hacer explícita la parte repetible del análisis. Las reglas reales suelen ser más complejas, y por eso siempre conviene declarar los límites del modelo.
-:::
-
-## Cómo escribir funciones más útiles
-
-Una buena función inicial suele cumplir al menos tres criterios:
-
-1. hace una sola cosa reconocible;
-2. recibe datos claros;
-3. devuelve un resultado fácil de interpretar.
-
-No siempre conviene hacer una función enorme que resuelva todo de una vez. A veces resulta mejor separar:
-
-- validación de requisitos;
-- clasificación del caso;
-- generación de observaciones.
-
-## Práctica en editor
-
-Abre tu repositorio del curso y crea un archivo como `sesion-3/admision.py`. Implementa una función que reciba varios datos y devuelva una clasificación preliminar.
-
-Prueba al menos tres escenarios:
-
-- un caso conforme;
-- un caso observado;
-- un caso prioritario.
-
-Si quieres ampliar la práctica, agrega una lista de observaciones o una justificación breve del resultado.
-
-## Git y GitHub
-
-Registra el avance con commits claros:
+Si todavía no tienes `pandas`, puedes instalarla con:
 
 ```bash
-git add .
-git commit -m "Resuelve sesion 3 sobre decisiones juridicas"
-git push
+pip install pandas
 ```
 
-## PSET de la sesión
+La recomendación práctica sigue siendo la misma del capítulo anterior: ejecuta el código, observa la salida, cambia algo pequeño y vuelve a ejecutarlo antes de pasar al siguiente ejercicio.
+:::
 
-Construye un script en Python que resuelva un problema jurídico con múltiples condiciones. Puede ser, por ejemplo:
+## Fechas: empezar a pensar el tiempo con Python
 
-- elegibilidad para un beneficio;
-- validación preliminar de un trámite;
-- cálculo de multa con reglas adicionales;
-- clasificación básica de expedientes.
+Trabajar con fechas es una habilidad especialmente útil en contextos jurídicos. Muchos trámites, audiencias, notificaciones y vencimientos dependen de contar días o ubicar un acto en el tiempo. Por eso, esta sección sirve como un primer puente entre Python y tareas que ya se parecen más a la práctica real.
 
-El entregable debe incluir:
+### Ejercicio 1. Mirar el reloj del sistema: obtener la fecha actual
 
-- el archivo `.py`;
-- ejemplos de entrada y salida;
-- un `README` breve explicando la lógica aplicada;
-- al menos dos o tres casos de prueba.
+El punto de partida más simple es pedirle a Python la fecha de hoy. Este ejercicio es pequeño, pero enseña una idea importante: las fechas no se manejan solo como texto, sino como objetos que luego permiten extraer partes concretas como el año, el mes o el día.
 
-## Preguntas de repaso
+Crea un archivo nuevo y copia este código:
 
-1. ¿Por qué conviene devolver razones y no solo un resultado binario?
-2. ¿Qué problema genera una condición demasiado larga?
-3. ¿Por qué es útil probar varios escenarios?
-4. ¿Qué parte del trabajo jurídico puede modelarse bien y cuál requiere cautela adicional?
+```python
+from datetime import date
 
+hoy = date.today()
+
+print("Fecha de hoy:", hoy)
+print("Año:", hoy.year)
+print("Mes:", hoy.month)
+print("Dia:", hoy.day)
+```
+
+#### Qué hace este código
+
+El programa importa una herramienta de Python para trabajar con fechas, obtiene la fecha actual del sistema y luego muestra esa fecha completa y también sus partes por separado.
+
+#### Qué hace cada parte
+
+- `from datetime import date` importa la clase `date` desde el módulo `datetime`.
+- `date` representa una fecha sin hora: año, mes y día.
+- `date.today()` consulta la fecha actual del sistema donde se está ejecutando el programa.
+- `hoy.year`, `hoy.month` y `hoy.day` acceden a atributos del objeto fecha.
+- Se usan esos atributos porque muchas veces no basta con ver la fecha completa: también interesa extraer partes concretas para compararlas o mostrarlas de otra forma.
+
+#### Qué verás en la terminal
+
+Si el programa se ejecutara, por ejemplo, el 24 de mayo de 2026, verías algo parecido a esto:
+
+::: {.terminal-output}
+```text
+Fecha de hoy: 2026-05-24
+Año: 2026
+Mes: 5
+Dia: 24
+```
+:::
+
+Ese resultado aparece porque `date.today()` devuelve un objeto fecha y `print()` muestra tanto el objeto completo como cada atributo por separado. Para experimentar, no puedes cambiar la fecha del sistema desde el script, pero sí puedes agregar nuevas líneas como `print("Dia de hoy en texto:", hoy.day)` o guardar otra fecha manual con `date(2026, 12, 31)` para compararla con la actual.
+
+### Ejercicio 2. Contar días entre dos actuaciones
+
+Una tarea muy común en el trabajo jurídico consiste en medir el tiempo entre dos eventos: presentación y audiencia, notificación y respuesta, inicio y vencimiento. Este ejercicio muestra cómo convertir texto en fechas reales y luego restarlas para obtener una diferencia de días.
+
+Crea un archivo nuevo y copia este código:
+
+```python
+from datetime import datetime
+
+fecha_presentacion = datetime.strptime("2026-03-01", "%Y-%m-%d")
+fecha_audiencia = datetime.strptime("2026-03-18", "%Y-%m-%d")
+
+diferencia = fecha_audiencia - fecha_presentacion
+
+print("Fecha de presentacion:", fecha_presentacion.date())
+print("Fecha de audiencia:", fecha_audiencia.date())
+print("Dias entre ambas fechas:", diferencia.days)
+```
+
+#### Qué hace este código
+
+El programa toma dos fechas escritas como texto, las convierte en objetos de fecha y hora, las resta y luego muestra cuántos días hay entre ambas.
+
+#### Qué hace cada parte
+
+- `from datetime import datetime` importa la clase `datetime`, que permite representar fecha y hora.
+- `datetime.strptime(...)` convierte una cadena de texto en un objeto fecha usando un formato específico.
+- `"%Y-%m-%d"` le dice a Python que espere año con cuatro dígitos, luego mes y luego día.
+- `fecha_audiencia - fecha_presentacion` produce una diferencia de tiempo.
+- `diferencia.days` extrae el número de días de esa diferencia.
+- `fecha_presentacion.date()` y `fecha_audiencia.date()` muestran solo la parte de fecha, sin la hora.
+
+#### Qué verás en la terminal
+
+::: {.terminal-output}
+```text
+Fecha de presentacion: 2026-03-01
+Fecha de audiencia: 2026-03-18
+Dias entre ambas fechas: 17
+```
+:::
+
+El resultado `17` aparece porque Python interpreta ambas fechas como objetos comparables y luego calcula la distancia temporal entre ellas. Para experimentar, cambia una de las fechas y observa cómo varía `diferencia.days`. También puedes probar qué ocurre si inviertes el orden de la resta: verás que el resultado puede volverse negativo, lo cual ayuda a entender por qué el orden de los eventos sí importa.
+
+### Ejercicio 3. Sumar días para calcular un vencimiento
+
+Si el ejercicio anterior servía para medir la distancia entre dos fechas, este sirve para proyectar una fecha futura. Es un tipo de cálculo muy útil cuando se quiere obtener un vencimiento simple a partir de una notificación o una actuación inicial.
+
+Crea un archivo nuevo y copia este código:
+
+```python
+from datetime import datetime, timedelta
+
+fecha_notificacion = datetime.strptime("2026-03-06", "%Y-%m-%d")
+
+plazo = timedelta(days=5)
+fecha_vencimiento = fecha_notificacion + plazo
+
+print("Fecha de notificacion:", fecha_notificacion.date())
+print("Plazo en dias:", plazo.days)
+print("Fecha de vencimiento:", fecha_vencimiento.date())
+```
+
+#### Qué hace este código
+
+El programa convierte una fecha escrita como texto en un objeto fecha, construye un plazo de cinco días y luego lo suma para obtener una fecha de vencimiento.
+
+#### Qué hace cada parte
+
+- `timedelta(days=5)` crea una duración de cinco días.
+- `timedelta` no representa una fecha, sino una cantidad de tiempo.
+- `fecha_notificacion + plazo` suma esa duración a la fecha inicial.
+- `plazo.days` muestra el número de días contenidos en el objeto plazo.
+- Se usa esta lógica porque, en muchos contextos, el problema no es comparar dos fechas ya dadas, sino calcular una nueva fecha a partir de una regla temporal.
+
+#### Qué verás en la terminal
+
+::: {.terminal-output}
+```text
+Fecha de notificacion: 2026-03-06
+Plazo en dias: 5
+Fecha de vencimiento: 2026-03-11
+```
+:::
+
+La fecha final aparece porque Python suma cinco días corridos a la fecha de notificación y devuelve un nuevo objeto fecha. Para experimentar, cambia `days=5` por `days=10` o usa otra fecha inicial para comprobar cómo cambia el vencimiento. También puedes probar con una fecha cercana al final de un mes para ver cómo Python gestiona automáticamente el cambio de mes sin que tengas que calcularlo a mano.
+
+## Archivos: hacer que el programa lea y escriba documentos
+
+Después de trabajar con fechas, el paso natural es permitir que el programa se conecte con archivos reales. Esto importa mucho porque gran parte del trabajo profesional ocurre sobre documentos: leer un texto, guardar una nota, revisar un CSV o recuperar registros almacenados.
+
+### Ejercicio 4. Leer un archivo de texto
+
+Un programa se vuelve más útil cuando no depende solo de información escrita dentro del propio código. Este ejercicio muestra cómo abrir un archivo `.txt`, leer su contenido completo y mostrarlo en pantalla.
+
+Antes de ejecutar el script, crea un archivo llamado `edicto.txt` dentro de tu carpeta `data` con este contenido:
+
+```text
+Edicto de ejemplo
+
+Se comunica que la audiencia del expediente EXP-001 ha sido programada para el 18 de marzo de 2026.
+```
+
+Luego crea un archivo nuevo y copia este código:
+
+```python
+from pathlib import Path
+
+ruta_archivo = Path(__file__).parent / "data" / "edicto.txt"
+
+with open(ruta_archivo, "r", encoding="utf-8") as archivo:
+    contenido = archivo.read()
+
+print("Contenido del archivo:")
+print(contenido)
+```
+
+#### Qué hace este código
+
+El programa construye la ruta del archivo de texto, lo abre en modo lectura, guarda todo su contenido en una variable y luego lo imprime en la terminal.
+
+#### Qué hace cada parte
+
+- `from pathlib import Path` importa una herramienta moderna para trabajar con rutas de archivos.
+- `Path(__file__).parent` se refiere a la carpeta donde está guardado el script.
+- `/ "data" / "edicto.txt"` completa la ruta hacia el archivo que se quiere leer.
+- `open(ruta_archivo, "r", encoding="utf-8")` abre el archivo en modo lectura.
+- `encoding="utf-8"` ayuda a leer bien acentos y caracteres propios del español.
+- `archivo.read()` toma todo el contenido del archivo como un solo bloque de texto.
+- `with ... as archivo:` asegura que el archivo se cierre correctamente cuando termina la lectura.
+
+#### Qué verás en la terminal
+
+::: {.terminal-output}
+```text
+Contenido del archivo:
+Edicto de ejemplo
+
+Se comunica que la audiencia del expediente EXP-001 ha sido programada para el 18 de marzo de 2026.
+```
+:::
+
+Esa salida aparece porque `archivo.read()` recupera todo el contenido del documento tal como está guardado y `print()` lo muestra en la terminal. Para experimentar, cambia el texto del archivo, agrega un segundo párrafo o modifica el nombre del archivo en la carpeta `data`. Así podrás comprobar que el programa no está inventando el contenido: está leyendo exactamente lo que existe en el documento.
+
+### Ejercicio 5. Guardar una observación en un archivo nuevo
+
+Leer archivos es útil, pero escribirlos lo es todavía más cuando quieres dejar constancia de un resultado o generar una nota breve automáticamente. Este ejercicio muestra cómo crear o reemplazar un archivo de texto desde Python.
+
+Crea un archivo nuevo y copia este código:
+
+```python
+from pathlib import Path
+
+ruta_salida = Path(__file__).parent / "data" / "nota_generada.txt"
+texto = "Se registro una observacion simple sobre el expediente EXP-010."
+
+with open(ruta_salida, "w", encoding="utf-8") as archivo:
+    archivo.write(texto)
+
+print("Archivo guardado en:", ruta_salida)
+```
+
+#### Qué hace este código
+
+El programa define una ruta de salida, prepara un texto y luego lo guarda en un archivo nuevo. Si el archivo ya existía, reemplaza su contenido por el texto actual.
+
+#### Qué hace cada parte
+
+- `ruta_salida = ...` define dónde se guardará el archivo.
+- `texto = ...` contiene el mensaje que quieres escribir.
+- `open(ruta_salida, "w", encoding="utf-8")` abre el archivo en modo escritura.
+- El modo `"w"` crea el archivo si no existe o borra y reemplaza el contenido si ya existe.
+- `archivo.write(texto)` escribe el texto en el archivo.
+- `print("Archivo guardado en:", ruta_salida)` sirve para confirmar visualmente dónde quedó guardado el documento.
+
+#### Qué verás en la terminal
+
+Verás una salida similar a esta:
+
+::: {.terminal-output}
+```text
+Archivo guardado en: data/nota_generada.txt
+```
+:::
+
+Lo más importante aquí no es solo el mensaje de la terminal, sino el efecto que deja el script en tu carpeta: se crea un archivo con el texto indicado. Para experimentar, cambia el contenido de `texto`, ejecuta de nuevo el script y abre el archivo generado para ver el resultado. También puedes modificar el nombre del archivo de salida o agregar `\n` dentro del texto para escribir varias líneas en lugar de una sola.
+
+### Ejercicio 6. Leer registros desde un archivo CSV
+
+Muchos datos del trabajo jurídico no están guardados en un solo bloque de texto, sino en tablas con columnas y filas. Un formato muy común para eso es el CSV. Este ejercicio muestra cómo leer un CSV básico y recorrer sus registros uno por uno.
+
+Antes de ejecutar el script, crea un archivo llamado `expedientes.csv` dentro de tu carpeta `data` con este contenido:
+
+```text
+codigo,estado,responsable
+EXP-001,En revision,Ana Perez
+EXP-002,Archivado,Luis Soto
+EXP-003,Resuelto,Carla Ruiz
+```
+
+Luego crea un archivo nuevo y copia este código:
+
+```python
+import csv
+from pathlib import Path
+
+ruta_csv = Path(__file__).parent / "data" / "expedientes.csv"
+
+with open(ruta_csv, "r", encoding="utf-8") as archivo:
+    lector = csv.DictReader(archivo)
+
+    for fila in lector:
+        print(
+            fila["codigo"],
+            "-",
+            fila["estado"],
+            "- responsable:",
+            fila["responsable"],
+        )
+```
+
+#### Qué hace este código
+
+El programa abre un CSV, lo interpreta como una secuencia de filas con nombres de columna y luego imprime cada registro con una pequeña frase de salida.
+
+#### Qué hace cada parte
+
+- `import csv` carga la biblioteca estándar de Python para trabajar con archivos CSV.
+- `csv.DictReader(archivo)` lee cada fila como un diccionario.
+- Eso significa que puedes acceder a cada dato usando el nombre de la columna, por ejemplo `fila["codigo"]`.
+- `for fila in lector:` recorre una fila por vez.
+- El `print(...)` final arma una salida más legible combinando varios campos.
+- Se usa `DictReader` porque permite pensar cada fila como un pequeño registro con etiquetas claras, algo muy útil cuando trabajas con datos administrativos.
+
+#### Qué verás en la terminal
+
+::: {.terminal-output}
+```text
+EXP-001 - En revision - responsable: Ana Perez
+EXP-002 - Archivado - responsable: Luis Soto
+EXP-003 - Resuelto - responsable: Carla Ruiz
+```
+:::
+
+Cada línea aparece porque el bucle `for` toma una fila distinta del CSV y extrae tres campos: código, estado y responsable. Para experimentar, agrega una nueva fila al archivo CSV, cambia un estado o modifica el texto del `print()`. Verás de inmediato cómo el programa refleja las modificaciones del archivo sin necesidad de tocar la lógica principal.
+
+## Datos tabulares: empezar a pensar con `pandas`
+
+Cuando las tablas crecen, leer fila por fila ya no siempre es la manera más cómoda de trabajar. Ahí aparece `pandas`, una biblioteca muy usada para manejar datos en forma de tabla. En esta parte del capítulo no se busca dominarla por completo, sino empezar a verla como una herramienta que permite observar, filtrar, contar y resumir información.
+
+### Ejercicio 7. Crear una tabla simple en memoria
+
+Antes de leer archivos con `pandas`, conviene ver cómo se construye una tabla básica directamente desde Python. Este ejercicio introduce el objeto más importante de la biblioteca: el `DataFrame`.
+
+Crea un archivo nuevo y copia este código:
+
+```python
+import pandas as pd
+
+datos = {
+    "expediente": ["EXP-001", "EXP-002", "EXP-003"],
+    "estado": ["En revision", "Archivado", "En revision"],
+    "monto": [1500, 0, 800],
+}
+
+tabla = pd.DataFrame(datos)
+print(tabla)
+```
+
+#### Qué hace este código
+
+El programa construye un diccionario con tres columnas y luego lo convierte en una tabla de `pandas`, que finalmente se muestra en la terminal.
+
+#### Qué hace cada parte
+
+- `import pandas as pd` importa la biblioteca `pandas` usando el alias `pd`, que es la convención más común.
+- `datos = {...}` crea una estructura donde cada clave será una columna.
+- `pd.DataFrame(datos)` convierte ese diccionario en una tabla.
+- `tabla` es un `DataFrame`, es decir, una estructura tabular con filas y columnas.
+- `print(tabla)` muestra la tabla completa.
+- Se usa `DataFrame` porque permite trabajar con datos de una forma muy similar a una hoja de cálculo, pero programable.
+
+#### Qué verás en la terminal
+
+Verás algo parecido a esto:
+
+::: {.terminal-output}
+```text
+  expediente       estado  monto
+0    EXP-001  En revision   1500
+1    EXP-002   Archivado      0
+2    EXP-003  En revision    800
+```
+:::
+
+La tabla aparece así porque `pandas` organiza automáticamente los datos en filas indexadas y columnas con nombre. Para experimentar, cambia un monto, agrega una fila nueva o incorpora una columna adicional como `responsable`. Esa es una buena forma de comprobar que un `DataFrame` no es solo una impresión bonita: es una estructura que luego permitirá filtrar, contar y resumir información.
+
+### Ejercicio 8. Filtrar solo los registros pendientes
+
+Una de las operaciones más útiles sobre tablas consiste en quedarte solo con los registros que cumplen una condición. Este ejercicio muestra cómo filtrar una tabla para ver únicamente los expedientes o multas que siguen pendientes.
+
+Antes de ejecutar este ejercicio, crea un archivo llamado `multas.csv` dentro de tu carpeta `data` con este contenido:
+
+```text
+expediente,estado,monto
+EXP-001,Pendiente,1200
+EXP-002,Pagado,800
+EXP-003,Pendiente,1500
+EXP-004,Pagado,600
+```
+
+Luego crea un archivo nuevo y copia este código:
+
+```python
+import pandas as pd
+from pathlib import Path
+
+ruta_csv = Path(__file__).parent / "data" / "multas.csv"
+tabla = pd.read_csv(ruta_csv)
+
+pendientes = tabla[tabla["estado"] == "Pendiente"]
+print(pendientes)
+```
+
+#### Qué hace este código
+
+El programa lee un CSV con `pandas`, construye una tabla y luego crea una versión filtrada que conserva solo las filas cuyo estado es `"Pendiente"`.
+
+#### Qué hace cada parte
+
+- `pd.read_csv(ruta_csv)` abre el archivo CSV y lo convierte en un `DataFrame`.
+- `tabla["estado"]` selecciona la columna `estado`.
+- `tabla["estado"] == "Pendiente"` produce una serie de valores verdaderos o falsos.
+- `tabla[...]` usa esa comparación como filtro para quedarse solo con las filas que cumplen la condición.
+- `pendientes` guarda la tabla filtrada.
+- Se usa este tipo de filtro porque muchas preguntas reales empiezan así: mostrar solo los casos abiertos, pendientes, observados o archivados.
+
+#### Qué verás en la terminal
+
+Verás una salida similar a esta:
+
+::: {.terminal-output}
+```text
+  expediente     estado  monto
+0    EXP-001  Pendiente   1200
+2    EXP-003  Pendiente   1500
+```
+:::
+
+Aparecen solo dos filas porque son las únicas donde la columna `estado` contiene el valor `"Pendiente"`. Para experimentar, cambia un estado en el CSV, reemplaza `"Pendiente"` por `"Pagado"` en el filtro o añade nuevas filas al archivo. Así podrás ver que el filtro no depende del número de registros, sino del criterio que tú definas.
+
+### Ejercicio 9. Contar cuántos registros hay en cada estado
+
+Filtrar sirve para mirar una parte de la tabla. Contar sirve para resumirla. Este ejercicio muestra cómo averiguar cuántas veces aparece cada categoría dentro de una columna.
+
+Crea un archivo nuevo y copia este código:
+
+```python
+import pandas as pd
+from pathlib import Path
+
+ruta_csv = Path(__file__).parent / "data" / "multas.csv"
+tabla = pd.read_csv(ruta_csv)
+
+conteo_estados = tabla["estado"].value_counts()
+print(conteo_estados)
+```
+
+#### Qué hace este código
+
+El programa vuelve a leer la tabla y luego cuenta cuántas veces aparece cada valor distinto dentro de la columna `estado`.
+
+#### Qué hace cada parte
+
+- `tabla["estado"]` selecciona la columna que quieres resumir.
+- `value_counts()` cuenta la frecuencia de cada categoría.
+- El resultado ya no es una tabla completa como antes, sino una serie resumida.
+- `print(conteo_estados)` muestra ese resumen en la terminal.
+- Se usa esta operación porque muchas veces no interesa revisar expediente por expediente, sino obtener una visión rápida del conjunto.
+
+#### Qué verás en la terminal
+
+Verás algo parecido a esto:
+
+::: {.terminal-output}
+```text
+estado
+Pendiente    2
+Pagado       2
+Name: count, dtype: int64
+```
+:::
+
+Ese resultado aparece porque `value_counts()` agrupa automáticamente los valores repetidos y calcula su frecuencia. Según la versión de `pandas`, la última línea puede variar un poco, pero la idea central es la misma: obtener un resumen por categorías. Para experimentar, agrega más filas al CSV o introduce un nuevo estado como `Observado`; verás cómo el conteo se actualiza sin necesidad de cambiar la lógica del programa.
+
+### Ejercicio 10. Calcular un promedio de montos
+
+Además de filtrar o contar, las tablas también permiten hacer operaciones numéricas simples. Este último ejercicio del capítulo muestra cómo obtener el promedio de una columna de montos.
+
+Crea un archivo nuevo y copia este código:
+
+```python
+import pandas as pd
+from pathlib import Path
+
+ruta_csv = Path(__file__).parent / "data" / "multas.csv"
+tabla = pd.read_csv(ruta_csv)
+
+promedio_monto = tabla["monto"].mean()
+print("Promedio de multas:", promedio_monto)
+```
+
+#### Qué hace este código
+
+El programa lee el mismo archivo CSV, selecciona la columna numérica `monto` y calcula su promedio.
+
+#### Qué hace cada parte
+
+- `tabla["monto"]` selecciona la columna de valores numéricos.
+- `mean()` calcula la media aritmética de esa columna.
+- `promedio_monto` guarda el resultado.
+- `print(...)` muestra el promedio en la terminal.
+- Se usa esta operación porque muchas preguntas sobre datos no se responden leyendo fila por fila, sino resumiendo con indicadores simples.
+
+#### Qué verás en la terminal
+
+::: {.terminal-output}
+```text
+Promedio de multas: 1025.0
+```
+:::
+
+Ese valor aparece porque `pandas` suma los montos `1200`, `800`, `1500` y `600`, y luego divide el total entre cuatro registros. Para experimentar, cambia uno de los montos, añade una nueva fila o prueba con una columna distinta si amplías el CSV. Así verás cómo un pequeño cambio en los datos puede modificar el indicador general.
+
+## Conclusiones del capítulo
+
+Este capítulo mostró un cambio importante en el recorrido del curso. Ya no se trató solo de entender instrucciones básicas, sino de usarlas para resolver tareas más cercanas a la práctica real: leer fechas, calcular plazos, abrir documentos, guardar notas y resumir tablas. En otras palabras, Python empezó a parecerse menos a un conjunto de ejemplos aislados y más a una herramienta de trabajo.
+
+Las ideas que siguen reúnen lo más importante de este avance. Conviene leerlas como un mapa de transición entre la iniciación en Python y un uso cada vez más aplicado al tratamiento de información jurídica y administrativa.
+
+::: {.callout-tip}
 ## Ideas clave
 
-- una buena parte del trabajo legal puede modelarse como reglas y condiciones;
-- las funciones ayudan a reutilizar lógica sin duplicar código;
-- probar escenarios mejora la calidad de la automatización;
-- la automatización básica empieza por decisiones claras, no por sistemas complejos.
+- trabajar con fechas permite modelar de forma básica problemas de plazos, diferencias temporales y vencimientos;
+- un programa puede leer y escribir archivos, lo que lo vuelve útil para interactuar con documentos reales;
+- los archivos CSV son una forma simple y muy común de almacenar registros en filas y columnas;
+- `Path` ayuda a construir rutas de archivo de una forma más ordenada y portable;
+- `open()`, `read()` y `write()` permiten recuperar o guardar contenido textual;
+- `csv.DictReader()` ayuda a pensar cada fila como un registro con campos nombrados;
+- `pandas` permite pasar de una lectura manual de filas a una exploración tabular más potente;
+- un `DataFrame` sirve para observar, filtrar, contar y resumir información;
+- filtrar, contar categorías y calcular promedios son pasos iniciales muy importantes en cualquier trabajo con datos;
+- programar estas tareas no reemplaza el juicio jurídico, pero sí vuelve más visible, repetible y controlable la parte estructurada del análisis.
+:::
+
+Antes de pasar al siguiente tramo del módulo, también conviene detenerse a pensar qué tipo de razonamiento empezó a aparecer aquí. Ahora ya no solo escribes instrucciones para aprender sintaxis: empiezas a organizar información, a formular pequeñas preguntas sobre los datos y a convertir tareas repetibles en procesos más claros. Las preguntas siguientes buscan ayudarte a notar ese cambio.
+
+::: {.callout-caution}
+## Para pensar y reflexionar
+
+1. ¿Qué diferencia notas entre escribir código para practicar sintaxis y escribir código para resolver una tarea concreta con fechas o archivos?
+2. ¿Por qué puede ser útil representar un plazo o una diferencia de días con objetos de fecha en lugar de hacerlo manualmente?
+3. ¿Qué ventajas tiene leer un CSV como tabla frente a revisar sus filas una por una sin estructura?
+4. ¿Qué riesgos habría si intentaras automatizar una tarea jurídica sin revisar primero la calidad de los datos o del archivo de entrada?
+5. Si tuvieras que adaptar uno de estos ejercicios a una tarea legal real, ¿cuál elegirías y qué información cambiarías para volverlo más cercano a esa práctica?
+:::

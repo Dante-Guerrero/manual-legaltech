@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>4. Python para datos, documentos y flujos jurídicos – Legal Tech, Manual del Curso</title>
+<title>4. Python para documentos, reportes y automatización jurídica básica – Legal Tech, Manual del Curso</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -128,7 +128,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-1-modulo-1/00-presentacion.html">I. Pensamiento computacional para juristas</a></li><li class="breadcrumb-item"><a href="../parte-1-modulo-1/04-capitulo.html"><span class="chapter-title">4. Python para datos, documentos y flujos jurídicos</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-1-modulo-1/00-presentacion.html">I. Pensamiento computacional para juristas</a></li><li class="breadcrumb-item"><a href="../parte-1-modulo-1/04-capitulo.html"><span class="chapter-title">4. Python para documentos, reportes y automatización jurídica básica</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -189,12 +189,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-1-modulo-1/03-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">3. Python para decisiones jurídicas y automatización básica</span></a>
+  <a href="../parte-1-modulo-1/03-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">3. Python para fechas, archivos y datos</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-1-modulo-1/04-capitulo.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">4. Python para datos, documentos y flujos jurídicos</span></a>
+  <a href="../parte-1-modulo-1/04-capitulo.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">4. Python para documentos, reportes y automatización jurídica básica</span></a>
   </div>
 </li>
       </ul>
@@ -355,20 +355,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
    
   <ul>
   <li><a href="#por-qué-importa-este-tema" id="toc-por-qué-importa-este-tema" class="nav-link active" data-scroll-target="#por-qué-importa-este-tema">¿Por qué importa este tema?</a></li>
-  <li><a href="#qué-aprenderás-en-esta-sesión" id="toc-qué-aprenderás-en-esta-sesión" class="nav-link" data-scroll-target="#qué-aprenderás-en-esta-sesión">Qué aprenderás en esta sesión</a></li>
-  <li><a href="#del-criterio-a-los-datos" id="toc-del-criterio-a-los-datos" class="nav-link" data-scroll-target="#del-criterio-a-los-datos">Del criterio a los datos</a></li>
-  <li><a href="#listas-y-diccionarios-como-punto-de-partida" id="toc-listas-y-diccionarios-como-punto-de-partida" class="nav-link" data-scroll-target="#listas-y-diccionarios-como-punto-de-partida">Listas y diccionarios como punto de partida</a></li>
-  <li><a href="#por-qué-esto-importa-en-derecho" id="toc-por-qué-esto-importa-en-derecho" class="nav-link" data-scroll-target="#por-qué-esto-importa-en-derecho">¿Por qué esto importa en derecho?</a></li>
-  <li><a href="#trabajar-con-texto" id="toc-trabajar-con-texto" class="nav-link" data-scroll-target="#trabajar-con-texto">Trabajar con texto</a></li>
-  <li><a href="#generar-mensajes-o-salidas-estructuradas" id="toc-generar-mensajes-o-salidas-estructuradas" class="nav-link" data-scroll-target="#generar-mensajes-o-salidas-estructuradas">Generar mensajes o salidas estructuradas</a></li>
-  <li><a href="#un-ejemplo-jurídico-más-desarrollado" id="toc-un-ejemplo-jurídico-más-desarrollado" class="nav-link" data-scroll-target="#un-ejemplo-jurídico-más-desarrollado">Un ejemplo jurídico más desarrollado</a></li>
-  <li><a href="#archivos-de-texto-y-salidas-simples" id="toc-archivos-de-texto-y-salidas-simples" class="nav-link" data-scroll-target="#archivos-de-texto-y-salidas-simples">Archivos de texto y salidas simples</a></li>
-  <li><a href="#el-puente-hacia-automatización-documental" id="toc-el-puente-hacia-automatización-documental" class="nav-link" data-scroll-target="#el-puente-hacia-automatización-documental">El puente hacia automatización documental</a></li>
-  <li><a href="#práctica-en-editor" id="toc-práctica-en-editor" class="nav-link" data-scroll-target="#práctica-en-editor">Práctica en editor</a></li>
-  <li><a href="#git-y-github" id="toc-git-y-github" class="nav-link" data-scroll-target="#git-y-github">Git y GitHub</a></li>
-  <li><a href="#pset-de-la-sesión" id="toc-pset-de-la-sesión" class="nav-link" data-scroll-target="#pset-de-la-sesión">PSET de la sesión</a></li>
-  <li><a href="#preguntas-de-repaso" id="toc-preguntas-de-repaso" class="nav-link" data-scroll-target="#preguntas-de-repaso">Preguntas de repaso</a></li>
-  <li><a href="#ideas-clave" id="toc-ideas-clave" class="nav-link" data-scroll-target="#ideas-clave">Ideas clave</a></li>
+  <li><a href="#del-análisis-al-producto" id="toc-del-análisis-al-producto" class="nav-link" data-scroll-target="#del-análisis-al-producto">Del análisis al producto</a></li>
+  <li><a href="#automatización-básica-en-clave-jurídica" id="toc-automatización-básica-en-clave-jurídica" class="nav-link" data-scroll-target="#automatización-básica-en-clave-jurídica">Automatización básica en clave jurídica</a></li>
+  <li><a href="#ejercicios-prácticos-para-documentos-y-automatización-jurídica-básica" id="toc-ejercicios-prácticos-para-documentos-y-automatización-jurídica-básica" class="nav-link" data-scroll-target="#ejercicios-prácticos-para-documentos-y-automatización-jurídica-básica">Ejercicios prácticos para documentos y automatización jurídica básica</a></li>
+  <li><a href="#ejercicios-jurídicos-iniciales" id="toc-ejercicios-jurídicos-iniciales" class="nav-link" data-scroll-target="#ejercicios-jurídicos-iniciales">Ejercicios jurídicos iniciales</a>
+  <ul class="collapse">
+  <li><a href="#ejercicio-1.-calcular-una-multa-simple-por-días-de-retraso" id="toc-ejercicio-1.-calcular-una-multa-simple-por-días-de-retraso" class="nav-link" data-scroll-target="#ejercicio-1.-calcular-una-multa-simple-por-días-de-retraso">Ejercicio 1. Calcular una multa simple por días de retraso</a></li>
+  <li><a href="#ejercicio-2.-revisar-una-lista-de-expedientes" id="toc-ejercicio-2.-revisar-una-lista-de-expedientes" class="nav-link" data-scroll-target="#ejercicio-2.-revisar-una-lista-de-expedientes">Ejercicio 2. Revisar una lista de expedientes</a></li>
+  <li><a href="#ejercicio-3.-validar-el-formato-de-un-código-documental" id="toc-ejercicio-3.-validar-el-formato-de-un-código-documental" class="nav-link" data-scroll-target="#ejercicio-3.-validar-el-formato-de-un-código-documental">Ejercicio 3. Validar el formato de un código documental</a></li>
+  <li><a href="#ejercicio-4.-buscar-una-palabra-clave-dentro-de-un-texto" id="toc-ejercicio-4.-buscar-una-palabra-clave-dentro-de-un-texto" class="nav-link" data-scroll-target="#ejercicio-4.-buscar-una-palabra-clave-dentro-de-un-texto">Ejercicio 4. Buscar una palabra clave dentro de un texto</a></li>
+  <li><a href="#ejercicio-5.-contar-cuántos-casos-hay-por-categoría" id="toc-ejercicio-5.-contar-cuántos-casos-hay-por-categoría" class="nav-link" data-scroll-target="#ejercicio-5.-contar-cuántos-casos-hay-por-categoría">Ejercicio 5. Contar cuántos casos hay por categoría</a></li>
+  </ul></li>
+  <li><a href="#ejemplos-avanzados-cuando-el-script-ya-produce-artefactos" id="toc-ejemplos-avanzados-cuando-el-script-ya-produce-artefactos" class="nav-link" data-scroll-target="#ejemplos-avanzados-cuando-el-script-ya-produce-artefactos">Ejemplos avanzados: cuando el script ya produce artefactos</a>
+  <ul class="collapse">
+  <li><a href="#ejercicio-6.-crear-un-pdf-simple-con-una-lista-de-estudiantes" id="toc-ejercicio-6.-crear-un-pdf-simple-con-una-lista-de-estudiantes" class="nav-link" data-scroll-target="#ejercicio-6.-crear-un-pdf-simple-con-una-lista-de-estudiantes">Ejercicio 6. Crear un PDF simple con una lista de estudiantes</a></li>
+  <li><a href="#ejercicio-7.-colocar-un-logo-centrado-dentro-de-un-pdf" id="toc-ejercicio-7.-colocar-un-logo-centrado-dentro-de-un-pdf" class="nav-link" data-scroll-target="#ejercicio-7.-colocar-un-logo-centrado-dentro-de-un-pdf">Ejercicio 7. Colocar un logo centrado dentro de un PDF</a></li>
+  <li><a href="#ejercicio-8.-generar-una-carta-pdf-por-cada-registro-de-un-csv" id="toc-ejercicio-8.-generar-una-carta-pdf-por-cada-registro-de-un-csv" class="nav-link" data-scroll-target="#ejercicio-8.-generar-una-carta-pdf-por-cada-registro-de-un-csv">Ejercicio 8. Generar una carta PDF por cada registro de un CSV</a></li>
+  <li><a href="#ejercicio-9.-crear-un-comunicado-pdf-con-un-diseño-más-elaborado" id="toc-ejercicio-9.-crear-un-comunicado-pdf-con-un-diseño-más-elaborado" class="nav-link" data-scroll-target="#ejercicio-9.-crear-un-comunicado-pdf-con-un-diseño-más-elaborado">Ejercicio 9. Crear un comunicado PDF con un diseño más elaborado</a></li>
+  <li><a href="#ejercicio-10.-unir-varios-pdf-en-un-solo-documento" id="toc-ejercicio-10.-unir-varios-pdf-en-un-solo-documento" class="nav-link" data-scroll-target="#ejercicio-10.-unir-varios-pdf-en-un-solo-documento">Ejercicio 10. Unir varios PDF en un solo documento</a></li>
+  <li><a href="#ejercicio-11.-construir-un-gráfico-de-barras-desde-un-csv" id="toc-ejercicio-11.-construir-un-gráfico-de-barras-desde-un-csv" class="nav-link" data-scroll-target="#ejercicio-11.-construir-un-gráfico-de-barras-desde-un-csv">Ejercicio 11. Construir un gráfico de barras desde un CSV</a></li>
+  <li><a href="#ejercicio-12.-preparar-el-envío-de-correos-desde-un-csv" id="toc-ejercicio-12.-preparar-el-envío-de-correos-desde-un-csv" class="nav-link" data-scroll-target="#ejercicio-12.-preparar-el-envío-de-correos-desde-un-csv">Ejercicio 12. Preparar el envío de correos desde un CSV</a></li>
+  <li><a href="#ejercicio-13.-automatizar-acciones-básicas-con-mouse-y-teclado" id="toc-ejercicio-13.-automatizar-acciones-básicas-con-mouse-y-teclado" class="nav-link" data-scroll-target="#ejercicio-13.-automatizar-acciones-básicas-con-mouse-y-teclado">Ejercicio 13. Automatizar acciones básicas con mouse y teclado</a></li>
+  </ul></li>
+  <li><a href="#conclusiones-del-capítulo" id="toc-conclusiones-del-capítulo" class="nav-link" data-scroll-target="#conclusiones-del-capítulo">Conclusiones del capítulo</a></li>
   </ul>
 </nav>
     </div>
@@ -378,9 +387,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4DXS39K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-1-modulo-1/00-presentacion.html">I. Pensamiento computacional para juristas</a></li><li class="breadcrumb-item"><a href="../parte-1-modulo-1/04-capitulo.html"><span class="chapter-title">4. Python para datos, documentos y flujos jurídicos</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-1-modulo-1/00-presentacion.html">I. Pensamiento computacional para juristas</a></li><li class="breadcrumb-item"><a href="../parte-1-modulo-1/04-capitulo.html"><span class="chapter-title">4. Python para documentos, reportes y automatización jurídica básica</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">4. Python para datos, documentos y flujos jurídicos</span></h1>
+<h1 class="title"><span class="chapter-title">4. Python para documentos, reportes y automatización jurídica básica</span></h1>
 </div>
 
 
@@ -397,260 +406,809 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </header>
 
 
-<section id="por-qué-importa-este-tema" class="level2">
-<h2 class="anchored" data-anchor-id="por-qué-importa-este-tema">¿Por qué importa este tema?</h2>
-<p>La práctica legal trabaja constantemente con listas de casos, textos, fechas, archivos y documentos que siguen patrones. Aprender a procesar esa información con Python abre la puerta a tareas de organización y automatización bastante útiles.</p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>Idea central
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Antes de hablar de grandes sistemas, conviene aprender a transformar información jurídica simple en salidas ordenadas, repetibles y verificables.</p>
-</div>
-</div>
-</section>
-<section id="qué-aprenderás-en-esta-sesión" class="level2">
-<h2 class="anchored" data-anchor-id="qué-aprenderás-en-esta-sesión">Qué aprenderás en esta sesión</h2>
-<p>Al finalizar esta sesión, deberías poder:</p>
-<ul>
-<li>trabajar con listas, diccionarios y archivos de texto;</li>
-<li>transformar datos jurídicos simples;</li>
-<li>producir salidas estructuradas;</li>
-<li>entender el puente entre scripts sencillos y automatización documental;</li>
-<li>preparar mejor la transición hacia procesos y datos del Módulo II.</li>
-</ul>
-</section>
-<section id="del-criterio-a-los-datos" class="level2">
-<h2 class="anchored" data-anchor-id="del-criterio-a-los-datos">Del criterio a los datos</h2>
-<p>En la sesión anterior modelamos decisiones. Ahora toca trabajar con algo que aparece todo el tiempo en la práctica jurídica: información repetida y estructurada.</p>
-<p>Eso puede adoptar muchas formas:</p>
-<ul>
-<li>listas de expedientes;</li>
-<li>registros de contratos;</li>
-<li>plazos en seguimiento;</li>
-<li>correos o escritos con patrones previsibles;</li>
-<li>datos básicos para generar reportes.</li>
-</ul>
-<p>Python resulta útil aquí porque permite recorrer colecciones, transformar texto, filtrar casos y producir salidas nuevas.</p>
-</section>
-<section id="listas-y-diccionarios-como-punto-de-partida" class="level2">
-<h2 class="anchored" data-anchor-id="listas-y-diccionarios-como-punto-de-partida">Listas y diccionarios como punto de partida</h2>
-<p>Una forma sencilla de representar información jurídica consiste en usar listas de diccionarios.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>expedientes <span class="op">=</span> [</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"codigo"</span>: <span class="st">"EXP-001"</span>, <span class="st">"estado"</span>: <span class="st">"pendiente"</span>, <span class="st">"urgente"</span>: <span class="va">True</span>},</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"codigo"</span>: <span class="st">"EXP-002"</span>, <span class="st">"estado"</span>: <span class="st">"revisado"</span>, <span class="st">"urgente"</span>: <span class="va">False</span>},</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"codigo"</span>: <span class="st">"EXP-003"</span>, <span class="st">"estado"</span>: <span class="st">"pendiente"</span>, <span class="st">"urgente"</span>: <span class="va">True</span>},</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Cada diccionario representa un registro; la lista agrupa varios registros.</p>
-<p>Podemos recorrerlos así:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> expediente <span class="kw">in</span> expedientes:</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(expediente[<span class="st">"codigo"</span>], expediente[<span class="st">"estado"</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Y filtrar los urgentes:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> expediente <span class="kw">in</span> expedientes:</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> expediente[<span class="st">"urgente"</span>]:</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Priorizar"</span>, expediente[<span class="st">"codigo"</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="por-qué-esto-importa-en-derecho" class="level2">
-<h2 class="anchored" data-anchor-id="por-qué-esto-importa-en-derecho">¿Por qué esto importa en derecho?</h2>
-<p>Porque una gran parte del trabajo legal ya funciona, de hecho, como un conjunto de registros:</p>
-<ul>
-<li>expedientes con atributos;</li>
-<li>contratos con fechas y montos;</li>
-<li>resoluciones con estado;</li>
-<li>trámites con responsables;</li>
-<li>observaciones repetidas en revisión documental.</li>
-</ul>
-<p>No siempre necesitamos bases de datos complejas para empezar a trabajar mejor. A veces basta con estructurar bien la información.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Idea útil
+<span class="screen-reader-only">Note</span>Qué aprenderás en esta sesión
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Si puedes nombrar los campos relevantes de un problema, ya empezaste a convertirlo en datos.</p>
+<p>En este capítulo empezarás a ver cómo Python puede acercarse todavía más a tareas reconocibles del trabajo legal. A partir de ejercicios sencillos, aprenderás a calcular multas básicas, revisar expedientes, validar códigos, buscar palabras clave y contar categorías. Después darás un paso más ambicioso: generar PDF, crear cartas desde datos, unir documentos, producir gráficos simples, automatizar correos de ejemplo y observar una introducción a la automatización de acciones en pantalla. La meta no es convertirte de inmediato en especialista, sino mostrarte cómo pequeños scripts pueden transformarse en herramientas útiles para organizar y producir trabajo jurídico.</p>
+</div>
+</div>
+<section id="por-qué-importa-este-tema" class="level2">
+<h2 class="anchored" data-anchor-id="por-qué-importa-este-tema">¿Por qué importa este tema?</h2>
+<p>En la práctica jurídica, gran parte del trabajo consiste en repetir operaciones que siguen patrones reconocibles: calcular un monto, revisar un estado, comprobar un formato, detectar una palabra relevante, generar un documento, consolidar archivos o resumir información. Cuando esas tareas se vuelven frecuentes, Python empieza a ser algo más que un lenguaje para practicar. Empieza a parecerse a una herramienta de apoyo real.</p>
+<p>En los capítulos anteriores ya viste fundamentos, fechas, archivos y tablas. El paso que damos ahora consiste en combinar esas bases para producir salidas más cercanas a la lógica de Legal Tech: no solo leer información, sino transformarla en reportes, documentos, mensajes o automatizaciones sencillas.</p>
+</section>
+<section id="del-análisis-al-producto" class="level2">
+<h2 class="anchored" data-anchor-id="del-análisis-al-producto">Del análisis al producto</h2>
+<p>Una parte importante del valor de programar aparece cuando el código no se queda solo en el análisis. Es decir, cuando a partir de datos o reglas se obtiene un resultado concreto que otra persona puede usar: un documento PDF, una carta, un gráfico, un correo de ejemplo o una lista de observaciones.</p>
+<p>Ese paso importa mucho porque refleja una lógica muy presente en el trabajo profesional:</p>
+<ul>
+<li>recibir información;</li>
+<li>revisarla o transformarla;</li>
+<li>producir una salida legible;</li>
+<li>dejar trazabilidad del proceso.</li>
+</ul>
+<p>En términos pedagógicos, este capítulo funciona como un puente entre la iniciación en Python y formas más aplicadas de automatización documental y organización de flujos.</p>
+</section>
+<section id="automatización-básica-en-clave-jurídica" class="level2">
+<h2 class="anchored" data-anchor-id="automatización-básica-en-clave-jurídica">Automatización básica en clave jurídica</h2>
+<p>Conviene insistir en una idea central: automatizar no significa reemplazar el juicio jurídico. Significa volver más explícita y repetible la parte estructurada del trabajo. Si una tarea puede describirse como una secuencia de pasos relativamente clara, entonces probablemente Python puede ayudarte a ejecutarla con mayor consistencia.</p>
+<p>Eso puede verse en ejemplos muy modestos, como validar un código o contar expedientes por categoría, pero también en tareas más visibles, como generar cartas o unir varios PDF. La lógica de fondo es la misma: datos de entrada, reglas de transformación y una salida verificable.</p>
+</section>
+<section id="ejercicios-prácticos-para-documentos-y-automatización-jurídica-básica" class="level2">
+<h2 class="anchored" data-anchor-id="ejercicios-prácticos-para-documentos-y-automatización-jurídica-básica">Ejercicios prácticos para documentos y automatización jurídica básica</h2>
+<p>La secuencia de este capítulo va de menos a más. Primero aparecen ejercicios jurídicos sencillos, donde el foco está en la lógica de revisión y clasificación. Luego entran ejemplos más avanzados, donde el programa ya produce archivos, imágenes o interacciones visibles sobre el sistema.</p>
+<p>La recomendación sigue siendo la misma: ejecuta cada ejemplo, revisa lo que ocurre, cambia algo pequeño y vuelve a ejecutarlo. En esta etapa, además, ya no solo conviene mirar la terminal. También importa revisar los archivos que el programa genera o modifica.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Antes de empezar
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Para trabajar bien esta sesión conviene preparar una carpeta ordenada con subcarpetas como estas:</p>
+<ul>
+<li><code>data</code> para CSV y textos de entrada;</li>
+<li><code>images</code> para logos o imágenes;</li>
+<li><code>pdfs_entrada</code> para PDF generados o reunidos;</li>
+<li><code>pdfs_salida</code> para documentos finales.</li>
+</ul>
+<p>Además de Python 3 y tu editor de texto, algunos ejercicios de esta sesión requieren bibliotecas adicionales:</p>
+<ul>
+<li><code>reportlab</code> para crear PDF;</li>
+<li><code>pypdf</code> para unir PDF;</li>
+<li><code>matplotlib</code> para gráficos;</li>
+<li><code>pyautogui</code> para automatizar acciones de mouse y teclado.</li>
+</ul>
+<p>Puedes instalarlas según el ejercicio que vayas a probar:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install reportlab pypdf matplotlib pyautogui</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Hay dos advertencias importantes. La primera: el ejercicio de envío de correos debe hacerse solo con cuentas de prueba o configuraciones controladas. La segunda: el ejercicio con <code>pyautogui</code> controla el mouse y el teclado reales, así que conviene leerlo con mucha atención antes de ejecutarlo.</p>
 </div>
 </div>
 </section>
-<section id="trabajar-con-texto" class="level2">
-<h2 class="anchored" data-anchor-id="trabajar-con-texto">Trabajar con texto</h2>
-<p>El texto es una materia prima central en el trabajo jurídico. Por eso, incluso operaciones simples pueden resultar valiosas:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>texto <span class="op">=</span> <span class="st">"Contrato de prestación de servicios"</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(texto.lower())</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(texto.upper())</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"servicios"</span> <span class="kw">in</span> texto.lower())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>También podemos limpiar texto:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>nombre_parte <span class="op">=</span> <span class="st">"  Ana Perez  "</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(nombre_parte.strip())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Esto ayuda a:</p>
+<section id="ejercicios-jurídicos-iniciales" class="level2">
+<h2 class="anchored" data-anchor-id="ejercicios-jurídicos-iniciales">Ejercicios jurídicos iniciales</h2>
+<p>La primera parte del capítulo toma problemas pequeños pero muy cercanos al trabajo legal. Son ejercicios ideales para ver cómo una regla sencilla puede transformarse en una salida clara.</p>
+<section id="ejercicio-1.-calcular-una-multa-simple-por-días-de-retraso" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-1.-calcular-una-multa-simple-por-días-de-retraso">Ejercicio 1. Calcular una multa simple por días de retraso</h3>
+<p>Un buen punto de partida para automatización básica es tomar una regla simple y volverla cálculo. En este caso, la regla dice que existe una multa fija por cada día de retraso.</p>
+<p>Crea un archivo nuevo y copia este código:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>multa_por_dia <span class="op">=</span> <span class="dv">25</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>dias_retraso <span class="op">=</span> <span class="dv">4</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>monto_total <span class="op">=</span> multa_por_dia <span class="op">*</span> dias_retraso</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Multa por dia:"</span>, multa_por_dia)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Dias de retraso:"</span>, dias_retraso)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Monto total:"</span>, monto_total)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="qué-hace-este-código" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-este-código">Qué hace este código</h4>
+<p>El programa define un valor fijo por día, lo multiplica por la cantidad de días de retraso y luego muestra cada parte del cálculo en la terminal.</p>
+</section>
+<section id="qué-hace-cada-parte" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-cada-parte">Qué hace cada parte</h4>
 <ul>
-<li>normalizar nombres;</li>
-<li>revisar formatos previsibles;</li>
-<li>detectar palabras clave;</li>
-<li>preparar insumos para reportes o plantillas.</li>
+<li><code>multa_por_dia = 25</code> guarda la tarifa diaria de la multa.</li>
+<li><code>dias_retraso = 4</code> representa la cantidad de días.</li>
+<li><code>monto_total = multa_por_dia * dias_retraso</code> aplica la multiplicación.</li>
+<li><code>print(...)</code> se usa para mostrar tanto los datos de entrada como el resultado final.</li>
+<li>Se presenta así porque, cuando recién empiezas, conviene que el cálculo no quede oculto en una sola línea.</li>
 </ul>
 </section>
-<section id="generar-mensajes-o-salidas-estructuradas" class="level2">
-<h2 class="anchored" data-anchor-id="generar-mensajes-o-salidas-estructuradas">Generar mensajes o salidas estructuradas</h2>
-<p>Una forma simple de automatización consiste en generar mensajes con base en datos.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>contrato <span class="op">=</span> {</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"codigo"</span>: <span class="st">"CONT-014"</span>,</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"vence_pronto"</span>: <span class="va">True</span>,</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"firmado"</span>: <span class="va">False</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>mensaje <span class="op">=</span> <span class="ss">f"Contrato </span><span class="sc">{</span>contrato[<span class="st">'codigo'</span>]<span class="sc">}</span><span class="ss">: "</span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> contrato[<span class="st">"vence_pronto"</span>]:</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    mensaje <span class="op">+=</span> <span class="st">"revisar vencimiento. "</span></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="kw">not</span> contrato[<span class="st">"firmado"</span>]:</span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    mensaje <span class="op">+=</span> <span class="st">"falta firma."</span></span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(mensaje)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>No estamos creando todavía un sistema documental complejo, pero sí una lógica que convierte datos en una salida útil.</p>
+<section id="qué-verás-en-la-terminal" class="level4">
+<h4 class="anchored" data-anchor-id="qué-verás-en-la-terminal">Qué verás en la terminal</h4>
+<div class="terminal-output">
+<pre class="text"><code>Multa por dia: 25
+Dias de retraso: 4
+Monto total: 100</code></pre>
+</div>
+<p>Ese resultado aparece porque Python multiplica <code>25</code> por <code>4</code> y guarda el valor en <code>monto_total</code>. Para experimentar, cambia la cantidad de días, prueba otro valor de multa por día o añade una nueva línea con un descuento o un recargo. Así verás cómo una regla sencilla puede ir creciendo paso a paso.</p>
 </section>
-<section id="un-ejemplo-jurídico-más-desarrollado" class="level2">
-<h2 class="anchored" data-anchor-id="un-ejemplo-jurídico-más-desarrollado">Un ejemplo jurídico más desarrollado</h2>
-<p>Imagina que debes revisar una lista de contratos y marcar cuáles tienen:</p>
+</section>
+<section id="ejercicio-2.-revisar-una-lista-de-expedientes" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-2.-revisar-una-lista-de-expedientes">Ejercicio 2. Revisar una lista de expedientes</h3>
+<p>Muchos problemas jurídicos pueden pensarse como una colección de registros. Este ejercicio sirve para recorrer una lista de expedientes y mostrar la situación de cada uno.</p>
+<p>Crea un archivo nuevo y copia este código:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>expedientes <span class="op">=</span> [</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"codigo"</span>: <span class="st">"EXP-001"</span>, <span class="st">"estado"</span>: <span class="st">"En revision"</span>},</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"codigo"</span>: <span class="st">"EXP-002"</span>, <span class="st">"estado"</span>: <span class="st">"Archivado"</span>},</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"codigo"</span>: <span class="st">"EXP-003"</span>, <span class="st">"estado"</span>: <span class="st">"En revision"</span>},</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> expediente <span class="kw">in</span> expedientes:</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(expediente[<span class="st">"codigo"</span>], <span class="st">"-&gt;"</span>, expediente[<span class="st">"estado"</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="qué-hace-este-código-1" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-este-código-1">Qué hace este código</h4>
+<p>El programa crea una lista donde cada elemento representa un expediente y luego recorre esa lista para mostrar el código y el estado de cada registro.</p>
+</section>
+<section id="qué-hace-cada-parte-1" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-cada-parte-1">Qué hace cada parte</h4>
 <ul>
-<li>plazo próximo a vencer;</li>
-<li>ausencia de firma;</li>
-<li>monto superior a un umbral;</li>
-<li>cláusula de renovación automática.</li>
+<li>Cada <code>{...}</code> es un diccionario con claves como <code>codigo</code> y <code>estado</code>.</li>
+<li>La lista <code>expedientes</code> agrupa varios registros del mismo tipo.</li>
+<li><code>for expediente in expedientes:</code> recorre uno por uno los elementos de la lista.</li>
+<li><code>expediente["codigo"]</code> y <code>expediente["estado"]</code> extraen campos concretos del registro actual.</li>
+<li>Este patrón importa mucho porque una gran parte del trabajo con datos jurídicos empieza justamente así: una lista de casos con atributos nombrados.</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>contratos <span class="op">=</span> [</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    {</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>        <span class="st">"codigo"</span>: <span class="st">"C-001"</span>,</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>        <span class="st">"dias_para_vencer"</span>: <span class="dv">10</span>,</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>        <span class="st">"firmado"</span>: <span class="va">True</span>,</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>        <span class="st">"monto"</span>: <span class="dv">8000</span>,</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>        <span class="st">"renovacion_automatica"</span>: <span class="va">False</span></span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    },</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    {</span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>        <span class="st">"codigo"</span>: <span class="st">"C-002"</span>,</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>        <span class="st">"dias_para_vencer"</span>: <span class="dv">3</span>,</span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>        <span class="st">"firmado"</span>: <span class="va">False</span>,</span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>        <span class="st">"monto"</span>: <span class="dv">15000</span>,</span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>        <span class="st">"renovacion_automatica"</span>: <span class="va">True</span></span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>]</span>
-<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> contrato <span class="kw">in</span> contratos:</span>
-<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>    alertas <span class="op">=</span> []</span>
-<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> contrato[<span class="st">"dias_para_vencer"</span>] <span class="op">&lt;=</span> <span class="dv">5</span>:</span>
-<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>        alertas.append(<span class="st">"vence pronto"</span>)</span>
-<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> contrato[<span class="st">"firmado"</span>]:</span>
-<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>        alertas.append(<span class="st">"falta firma"</span>)</span>
-<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> contrato[<span class="st">"monto"</span>] <span class="op">&gt;</span> <span class="dv">10000</span>:</span>
-<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>        alertas.append(<span class="st">"monto alto"</span>)</span>
-<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> contrato[<span class="st">"renovacion_automatica"</span>]:</span>
-<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>        alertas.append(<span class="st">"revisar renovacion automatica"</span>)</span>
-<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(contrato[<span class="st">"codigo"</span>], <span class="st">"=&gt;"</span>, alertas)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Este ejemplo ya muestra algo importante: el script no resuelve todo el análisis contractual, pero ayuda a ordenar el trabajo y a detectar rápidamente dónde mirar primero.</p>
+</section>
+<section id="qué-verás-en-la-terminal-1" class="level4">
+<h4 class="anchored" data-anchor-id="qué-verás-en-la-terminal-1">Qué verás en la terminal</h4>
+<div class="terminal-output">
+<pre class="text"><code>EXP-001 -&gt; En revision
+EXP-002 -&gt; Archivado
+EXP-003 -&gt; En revision</code></pre>
+</div>
+<p>Cada línea aparece porque el bucle toma un expediente distinto y muestra dos de sus campos. Para experimentar, añade un nuevo expediente, cambia un estado o agrega una clave más, como <code>responsable</code>. Luego modifica el <code>print()</code> para mostrar esa información adicional y comprobar cómo el registro puede enriquecerse.</p>
+</section>
+</section>
+<section id="ejercicio-3.-validar-el-formato-de-un-código-documental" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-3.-validar-el-formato-de-un-código-documental">Ejercicio 3. Validar el formato de un código documental</h3>
+<p>No toda automatización consiste en cálculos. A veces lo importante es verificar si un texto sigue un formato previsto. Este ejercicio comprueba si un código empieza con un prefijo específico.</p>
+<p>Crea un archivo nuevo y copia este código:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>codigo_documento <span class="op">=</span> <span class="st">"DOC-2026-15"</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> codigo_documento.startswith(<span class="st">"DOC-"</span>):</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Formato valido"</span>)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Formato invalido"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="qué-hace-este-código-2" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-este-código-2">Qué hace este código</h4>
+<p>El programa revisa si el texto guardado en <code>codigo_documento</code> comienza con <code>DOC-</code>. Si es así, considera que el formato es válido; de lo contrario, marca el formato como inválido.</p>
+</section>
+<section id="qué-hace-cada-parte-2" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-cada-parte-2">Qué hace cada parte</h4>
+<ul>
+<li><code>codigo_documento = ...</code> guarda el texto que se quiere revisar.</li>
+<li><code>startswith("DOC-")</code> es una función de texto que devuelve <code>True</code> o <code>False</code>.</li>
+<li><code>if ...:</code> usa ese resultado para elegir entre dos caminos.</li>
+<li>Se usa este tipo de validación porque muchos documentos y archivos dependen de convenciones mínimas de nombre o numeración.</li>
+</ul>
+</section>
+<section id="qué-verás-en-la-terminal-2" class="level4">
+<h4 class="anchored" data-anchor-id="qué-verás-en-la-terminal-2">Qué verás en la terminal</h4>
+<div class="terminal-output">
+<pre class="text"><code>Formato valido</code></pre>
+</div>
+<p>Ese resultado aparece porque el código efectivamente empieza con <code>DOC-</code>. Para experimentar, cambia el valor por <code>EXP-2026-15</code> o por <code>doc-2026-15</code> y observa qué ocurre. También puedes combinar esta revisión con otras, por ejemplo comprobando longitud o presencia de guiones, para volver más precisa la validación.</p>
+</section>
+</section>
+<section id="ejercicio-4.-buscar-una-palabra-clave-dentro-de-un-texto" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-4.-buscar-una-palabra-clave-dentro-de-un-texto">Ejercicio 4. Buscar una palabra clave dentro de un texto</h3>
+<p>Otra tarea frecuente consiste en revisar si un documento contiene una palabra o expresión relevante. Este ejercicio muestra una forma simple de hacerlo sin que las mayúsculas o minúsculas arruinen la comparación.</p>
+<p>Crea un archivo nuevo y copia este código:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>texto_resolucion <span class="op">=</span> <span class="st">"La resolucion declara fundada la solicitud presentada por la parte demandante."</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>palabra_clave <span class="op">=</span> <span class="st">"fundada"</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> palabra_clave.lower() <span class="kw">in</span> texto_resolucion.lower():</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"La palabra clave si aparece en el texto"</span>)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"La palabra clave no aparece en el texto"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="qué-hace-este-código-3" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-este-código-3">Qué hace este código</h4>
+<p>El programa toma un texto largo y una palabra clave, convierte ambos a minúsculas y luego revisa si la palabra aparece dentro del contenido.</p>
+</section>
+<section id="qué-hace-cada-parte-3" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-cada-parte-3">Qué hace cada parte</h4>
+<ul>
+<li><code>texto_resolucion</code> contiene el texto principal.</li>
+<li><code>palabra_clave</code> guarda la expresión que quieres buscar.</li>
+<li><code>.lower()</code> convierte el texto a minúsculas.</li>
+<li><code>in</code> verifica si una cadena está contenida dentro de otra.</li>
+<li>Se convierten ambos textos a minúsculas para que la búsqueda no falle por diferencias de capitalización.</li>
+</ul>
+</section>
+<section id="qué-verás-en-la-terminal-3" class="level4">
+<h4 class="anchored" data-anchor-id="qué-verás-en-la-terminal-3">Qué verás en la terminal</h4>
+<div class="terminal-output">
+<pre class="text"><code>La palabra clave si aparece en el texto</code></pre>
+</div>
+<p>Ese mensaje aparece porque la palabra <code>fundada</code> sí está dentro del texto. Para experimentar, prueba con otra palabra, cambia el texto de la resolución o usa una expresión compuesta. Así verás que esta técnica es útil para búsquedas rápidas, aunque también tiene límites cuando el lenguaje se vuelve más ambiguo o complejo.</p>
+</section>
+</section>
+<section id="ejercicio-5.-contar-cuántos-casos-hay-por-categoría" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-5.-contar-cuántos-casos-hay-por-categoría">Ejercicio 5. Contar cuántos casos hay por categoría</h3>
+<p>Además de leer y revisar registros individuales, muchas veces hace falta resumir información. Este ejercicio cuenta cuántos casos hay en cada tipo de trámite usando un diccionario como contador.</p>
+<p>Crea un archivo nuevo y copia este código:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>casos <span class="op">=</span> [<span class="st">"Laboral"</span>, <span class="st">"Civil"</span>, <span class="st">"Civil"</span>, <span class="st">"Penal"</span>, <span class="st">"Laboral"</span>, <span class="st">"Civil"</span>]</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>conteo <span class="op">=</span> {}</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> categoria <span class="kw">in</span> casos:</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> categoria <span class="kw">in</span> conteo:</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>        conteo[categoria] <span class="op">=</span> conteo[categoria] <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>        conteo[categoria] <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(conteo)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="qué-hace-este-código-4" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-este-código-4">Qué hace este código</h4>
+<p>El programa recorre una lista de categorías y va sumando una unidad cada vez que encuentra una categoría ya vista. Si es la primera vez que la encuentra, la crea con valor inicial de 1.</p>
+</section>
+<section id="qué-hace-cada-parte-4" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-cada-parte-4">Qué hace cada parte</h4>
+<ul>
+<li><code>casos = [...]</code> contiene las categorías observadas.</li>
+<li><code>conteo = {}</code> crea un diccionario vacío donde se guardarán los resultados.</li>
+<li><code>if categoria in conteo:</code> revisa si la categoría ya tiene contador.</li>
+<li>Si ya existe, se incrementa en uno.</li>
+<li>Si no existe, se crea con valor <code>1</code>.</li>
+<li>Este patrón importa porque muchas tareas reales empiezan justamente así: contar cuántas veces aparece cada tipo de asunto o estado.</li>
+</ul>
+</section>
+<section id="qué-verás-en-la-terminal-4" class="level4">
+<h4 class="anchored" data-anchor-id="qué-verás-en-la-terminal-4">Qué verás en la terminal</h4>
+<div class="terminal-output">
+<pre class="text"><code>{'Laboral': 2, 'Civil': 3, 'Penal': 1}</code></pre>
+</div>
+<p>Ese resultado aparece porque el programa recorre toda la lista y acumula los conteos categoría por categoría. Para experimentar, agrega nuevos valores, cambia una categoría o intenta imprimir el diccionario línea por línea con un <code>for</code>. Así verás mejor cómo una colección de casos puede convertirse en un resumen rápido.</p>
+</section>
+</section>
+</section>
+<section id="ejemplos-avanzados-cuando-el-script-ya-produce-artefactos" class="level2">
+<h2 class="anchored" data-anchor-id="ejemplos-avanzados-cuando-el-script-ya-produce-artefactos">Ejemplos avanzados: cuando el script ya produce artefactos</h2>
+<p>La segunda parte del capítulo muestra algo especialmente valioso: Python no solo puede analizar o clasificar información. También puede generar documentos, consolidar archivos, producir gráficos y automatizar acciones. Es aquí donde el vínculo con la automatización documental se vuelve más visible.</p>
+<section id="ejercicio-6.-crear-un-pdf-simple-con-una-lista-de-estudiantes" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-6.-crear-un-pdf-simple-con-una-lista-de-estudiantes">Ejercicio 6. Crear un PDF simple con una lista de estudiantes</h3>
+<p>Este ejercicio introduce <code>reportlab</code>, una biblioteca que permite escribir texto directamente dentro de un PDF. La idea es generar una lista ordenada a partir de un bucle.</p>
+<p>Crea un archivo nuevo y copia este código:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> reportlab.lib.pagesizes <span class="im">import</span> LETTER</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> reportlab.pdfgen <span class="im">import</span> canvas</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>ruta_pdf <span class="op">=</span> Path(<span class="st">"pdfs_entrada"</span>) <span class="op">/</span> <span class="st">"01-lista-estudiantes.pdf"</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>estudiantes <span class="op">=</span> [</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Ana Perez"</span>,</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Luis Torres"</span>,</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Maria Lopez"</span>,</span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Carlos Vega"</span>,</span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Julia Ramos"</span>,</span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>pdf <span class="op">=</span> canvas.Canvas(<span class="bu">str</span>(ruta_pdf), pagesize<span class="op">=</span>LETTER)</span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a>ancho, alto <span class="op">=</span> LETTER</span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>pdf.setFont(<span class="st">"Helvetica-Bold"</span>, <span class="dv">16</span>)</span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a>pdf.drawString(<span class="dv">72</span>, alto <span class="op">-</span> <span class="dv">72</span>, <span class="st">"Bienvenidos al curso de Python"</span>)</span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> alto <span class="op">-</span> <span class="dv">150</span></span>
+<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> numero, nombre <span class="kw">in</span> <span class="bu">enumerate</span>(estudiantes, start<span class="op">=</span><span class="dv">1</span>):</span>
+<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a>    pdf.drawString(<span class="dv">90</span>, y, <span class="ss">f"</span><span class="sc">{</span>numero<span class="sc">}</span><span class="ss">. </span><span class="sc">{</span>nombre<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a>    y <span class="op">-=</span> <span class="dv">24</span></span>
+<span id="cb12-26"><a href="#cb12-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-27"><a href="#cb12-27" aria-hidden="true" tabindex="-1"></a>pdf.save()</span>
+<span id="cb12-28"><a href="#cb12-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-29"><a href="#cb12-29" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"PDF creado en:"</span>, ruta_pdf)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="qué-hace-este-código-5" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-este-código-5">Qué hace este código</h4>
+<p>El programa crea un PDF nuevo, escribe un título y luego usa un bucle para agregar una línea por cada estudiante de la lista.</p>
+</section>
+<section id="qué-hace-cada-parte-5" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-cada-parte-5">Qué hace cada parte</h4>
+<ul>
+<li><code>canvas.Canvas(...)</code> crea el lienzo PDF donde se dibujará el contenido.</li>
+<li><code>LETTER</code> define el tamaño de página.</li>
+<li><code>drawString(...)</code> escribe texto en una posición específica.</li>
+<li><code>enumerate(..., start=1)</code> sirve para numerar la lista.</li>
+<li>La variable <code>y</code> va bajando en cada vuelta para que las líneas no se superpongan.</li>
+<li>Se usa un bucle porque el objetivo es mostrar cómo una estructura de datos puede transformarse en un documento repetible.</li>
+</ul>
+</section>
+<section id="qué-verás-en-la-terminal-5" class="level4">
+<h4 class="anchored" data-anchor-id="qué-verás-en-la-terminal-5">Qué verás en la terminal</h4>
+<div class="terminal-output">
+<pre class="text"><code>PDF creado en: pdfs_entrada/01-lista-estudiantes.pdf</code></pre>
+</div>
+<p>La salida de la terminal confirma que el archivo fue generado, pero el efecto importante está en el propio PDF. Para experimentar, agrega más nombres, cambia el título o modifica la posición vertical inicial. Así verás que el documento no es estático: se construye a partir de tus datos y de las coordenadas que definas.</p>
+</section>
+</section>
+<section id="ejercicio-7.-colocar-un-logo-centrado-dentro-de-un-pdf" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-7.-colocar-un-logo-centrado-dentro-de-un-pdf">Ejercicio 7. Colocar un logo centrado dentro de un PDF</h3>
+<p>El siguiente paso consiste en introducir una imagen dentro del documento. Este ejercicio muestra cómo centrar un logo y combinarlo con texto simple.</p>
+<p>Necesitarás un archivo PNG, por ejemplo <code>logo_legaltech.png</code>, dentro de tu carpeta <code>images</code>.</p>
+<p>Crea un archivo nuevo y copia este código:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> reportlab.lib <span class="im">import</span> colors</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> reportlab.lib.pagesizes <span class="im">import</span> LETTER</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> reportlab.lib.utils <span class="im">import</span> ImageReader</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> reportlab.pdfgen <span class="im">import</span> canvas</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>ruta_logo <span class="op">=</span> Path(<span class="st">"images"</span>) <span class="op">/</span> <span class="st">"logo_legaltech.png"</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>ruta_pdf <span class="op">=</span> Path(<span class="st">"pdfs_entrada"</span>) <span class="op">/</span> <span class="st">"02-logo-centrado.pdf"</span></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>pdf <span class="op">=</span> canvas.Canvas(<span class="bu">str</span>(ruta_pdf), pagesize<span class="op">=</span>LETTER)</span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>ancho, alto <span class="op">=</span> LETTER</span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>pdf.setFillColor(colors.HexColor(<span class="st">"#F7F7F7"</span>))</span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>pdf.rect(<span class="dv">0</span>, <span class="dv">0</span>, ancho, alto, stroke<span class="op">=</span><span class="dv">0</span>, fill<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>pdf.setFont(<span class="st">"Helvetica-Bold"</span>, <span class="dv">18</span>)</span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>pdf.setFillColor(colors.HexColor(<span class="st">"#0E3A5D"</span>))</span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a>pdf.drawCentredString(ancho <span class="op">/</span> <span class="dv">2</span>, alto <span class="op">-</span> <span class="dv">80</span>, <span class="st">"Logo del curso centrado en el PDF"</span>)</span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a>logo <span class="op">=</span> ImageReader(<span class="bu">str</span>(ruta_logo))</span>
+<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a>logo_ancho, logo_alto <span class="op">=</span> logo.getSize()</span>
+<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a>logo_destino_ancho <span class="op">=</span> <span class="dv">240</span></span>
+<span id="cb14-24"><a href="#cb14-24" aria-hidden="true" tabindex="-1"></a>logo_destino_alto <span class="op">=</span> logo_destino_ancho <span class="op">*</span> (logo_alto <span class="op">/</span> logo_ancho)</span>
+<span id="cb14-25"><a href="#cb14-25" aria-hidden="true" tabindex="-1"></a>posicion_x <span class="op">=</span> (ancho <span class="op">-</span> logo_destino_ancho) <span class="op">/</span> <span class="dv">2</span></span>
+<span id="cb14-26"><a href="#cb14-26" aria-hidden="true" tabindex="-1"></a>posicion_y <span class="op">=</span> (alto <span class="op">-</span> logo_destino_alto) <span class="op">/</span> <span class="dv">2</span> <span class="op">-</span> <span class="dv">20</span></span>
+<span id="cb14-27"><a href="#cb14-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-28"><a href="#cb14-28" aria-hidden="true" tabindex="-1"></a>pdf.drawImage(</span>
+<span id="cb14-29"><a href="#cb14-29" aria-hidden="true" tabindex="-1"></a>    logo,</span>
+<span id="cb14-30"><a href="#cb14-30" aria-hidden="true" tabindex="-1"></a>    posicion_x,</span>
+<span id="cb14-31"><a href="#cb14-31" aria-hidden="true" tabindex="-1"></a>    posicion_y,</span>
+<span id="cb14-32"><a href="#cb14-32" aria-hidden="true" tabindex="-1"></a>    width<span class="op">=</span>logo_destino_ancho,</span>
+<span id="cb14-33"><a href="#cb14-33" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span>logo_destino_alto,</span>
+<span id="cb14-34"><a href="#cb14-34" aria-hidden="true" tabindex="-1"></a>    mask<span class="op">=</span><span class="st">"auto"</span>,</span>
+<span id="cb14-35"><a href="#cb14-35" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb14-36"><a href="#cb14-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-37"><a href="#cb14-37" aria-hidden="true" tabindex="-1"></a>pdf.save()</span>
+<span id="cb14-38"><a href="#cb14-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-39"><a href="#cb14-39" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"PDF creado en:"</span>, ruta_pdf)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="qué-hace-este-código-6" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-este-código-6">Qué hace este código</h4>
+<p>El programa crea un PDF, pinta un fondo claro, escribe un título, carga una imagen y la coloca centrada dentro de la página.</p>
+</section>
+<section id="qué-hace-cada-parte-6" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-cada-parte-6">Qué hace cada parte</h4>
+<ul>
+<li><code>ImageReader(...)</code> carga la imagen para que <code>reportlab</code> pueda usarla.</li>
+<li><code>getSize()</code> permite conocer su tamaño original.</li>
+<li><code>posicion_x</code> y <code>posicion_y</code> calculan dónde ubicarla para que quede centrada.</li>
+<li><code>drawImage(...)</code> inserta la imagen dentro del PDF.</li>
+<li>Se calculan tamaño y posición porque trabajar con documentos generados también implica controlar composición visual básica.</li>
+</ul>
+</section>
+<section id="qué-verás-en-la-terminal-6" class="level4">
+<h4 class="anchored" data-anchor-id="qué-verás-en-la-terminal-6">Qué verás en la terminal</h4>
+<div class="terminal-output">
+<pre class="text"><code>PDF creado en: pdfs_entrada/02-logo-centrado.pdf</code></pre>
+</div>
+<p>La terminal solo confirma la creación del archivo, pero el aprendizaje real está en observar el PDF y notar cómo texto, color y posición pueden controlarse desde código. Para experimentar, cambia el ancho del logo, usa otra imagen o mueve las coordenadas. Así verás cómo pequeñas variaciones alteran la composición final del documento.</p>
+</section>
+</section>
+<section id="ejercicio-8.-generar-una-carta-pdf-por-cada-registro-de-un-csv" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-8.-generar-una-carta-pdf-por-cada-registro-de-un-csv">Ejercicio 8. Generar una carta PDF por cada registro de un CSV</h3>
+<p>Este ejercicio ya se parece mucho más a automatización documental. La idea es tomar un archivo CSV con varios destinatarios y producir una carta PDF para cada uno.</p>
+<p>Si quieres seguir el ejemplo, crea un archivo <code>cartas_destinatarios.csv</code> en <code>data</code> con columnas como <code>nombre</code>, <code>domicilio</code>, <code>distrito</code> y <code>motivo</code>.</p>
+<p>Crea un archivo nuevo y copia este código:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> csv</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> reportlab.lib.pagesizes <span class="im">import</span> LETTER</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> reportlab.pdfgen <span class="im">import</span> canvas</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>ruta_csv <span class="op">=</span> Path(<span class="st">"data"</span>) <span class="op">/</span> <span class="st">"cartas_destinatarios.csv"</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>carpeta_salida <span class="op">=</span> Path(<span class="st">"pdfs_entrada"</span>)</span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>carpeta_salida.mkdir(parents<span class="op">=</span><span class="va">True</span>, exist_ok<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> limpiar_nombre_archivo(texto):</span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> texto.lower().replace(<span class="st">" "</span>, <span class="st">"_"</span>)</span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(ruta_csv, <span class="st">"r"</span>, encoding<span class="op">=</span><span class="st">"utf-8"</span>) <span class="im">as</span> archivo:</span>
+<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a>    lector <span class="op">=</span> csv.DictReader(archivo)</span>
+<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> numero, fila <span class="kw">in</span> <span class="bu">enumerate</span>(lector, start<span class="op">=</span><span class="dv">3</span>):</span>
+<span id="cb16-20"><a href="#cb16-20" aria-hidden="true" tabindex="-1"></a>        nombre_archivo <span class="op">=</span> <span class="ss">f"</span><span class="sc">{</span>numero<span class="sc">:02d}</span><span class="ss">-carta-</span><span class="sc">{</span>limpiar_nombre_archivo(fila[<span class="st">'nombre'</span>])<span class="sc">}</span><span class="ss">.pdf"</span></span>
+<span id="cb16-21"><a href="#cb16-21" aria-hidden="true" tabindex="-1"></a>        ruta_pdf <span class="op">=</span> carpeta_salida <span class="op">/</span> nombre_archivo</span>
+<span id="cb16-22"><a href="#cb16-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-23"><a href="#cb16-23" aria-hidden="true" tabindex="-1"></a>        pdf <span class="op">=</span> canvas.Canvas(<span class="bu">str</span>(ruta_pdf), pagesize<span class="op">=</span>LETTER)</span>
+<span id="cb16-24"><a href="#cb16-24" aria-hidden="true" tabindex="-1"></a>        ancho, alto <span class="op">=</span> LETTER</span>
+<span id="cb16-25"><a href="#cb16-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-26"><a href="#cb16-26" aria-hidden="true" tabindex="-1"></a>        pdf.setFont(<span class="st">"Helvetica-Bold"</span>, <span class="dv">14</span>)</span>
+<span id="cb16-27"><a href="#cb16-27" aria-hidden="true" tabindex="-1"></a>        pdf.drawString(<span class="dv">72</span>, alto <span class="op">-</span> <span class="dv">72</span>, <span class="st">"Carta de notificacion"</span>)</span>
+<span id="cb16-28"><a href="#cb16-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-29"><a href="#cb16-29" aria-hidden="true" tabindex="-1"></a>        pdf.setFont(<span class="st">"Helvetica"</span>, <span class="dv">11</span>)</span>
+<span id="cb16-30"><a href="#cb16-30" aria-hidden="true" tabindex="-1"></a>        pdf.drawString(<span class="dv">72</span>, alto <span class="op">-</span> <span class="dv">120</span>, <span class="ss">f"Nombre: </span><span class="sc">{</span>fila[<span class="st">'nombre'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb16-31"><a href="#cb16-31" aria-hidden="true" tabindex="-1"></a>        pdf.drawString(<span class="dv">72</span>, alto <span class="op">-</span> <span class="dv">145</span>, <span class="ss">f"Domicilio: </span><span class="sc">{</span>fila[<span class="st">'domicilio'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb16-32"><a href="#cb16-32" aria-hidden="true" tabindex="-1"></a>        pdf.drawString(<span class="dv">72</span>, alto <span class="op">-</span> <span class="dv">170</span>, <span class="ss">f"Distrito: </span><span class="sc">{</span>fila[<span class="st">'distrito'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb16-33"><a href="#cb16-33" aria-hidden="true" tabindex="-1"></a>        pdf.drawString(<span class="dv">72</span>, alto <span class="op">-</span> <span class="dv">245</span>, <span class="ss">f"Motivo: </span><span class="sc">{</span>fila[<span class="st">'motivo'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb16-34"><a href="#cb16-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-35"><a href="#cb16-35" aria-hidden="true" tabindex="-1"></a>        pdf.save()</span>
+<span id="cb16-36"><a href="#cb16-36" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Carta creada:"</span>, ruta_pdf)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="qué-hace-este-código-7" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-este-código-7">Qué hace este código</h4>
+<p>El programa lee un CSV, toma cada fila como un destinatario distinto y genera una carta PDF independiente para cada registro.</p>
+</section>
+<section id="qué-hace-cada-parte-7" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-cada-parte-7">Qué hace cada parte</h4>
+<ul>
+<li><code>csv.DictReader(...)</code> permite leer cada fila como diccionario.</li>
+<li><code>limpiar_nombre_archivo(...)</code> ayuda a transformar el nombre de la persona en una parte usable del nombre del archivo.</li>
+<li><code>enumerate(..., start=3)</code> agrega una numeración a cada carta.</li>
+<li>Dentro del bucle se construye un PDF nuevo para cada fila.</li>
+<li>Se usa este patrón porque muchas tareas documentales repiten una misma estructura cambiando solo algunos datos.</li>
+</ul>
+</section>
+<section id="qué-verás-en-la-terminal-7" class="level4">
+<h4 class="anchored" data-anchor-id="qué-verás-en-la-terminal-7">Qué verás en la terminal</h4>
+<p>Si tu CSV tuviera tres personas, verías una salida similar a esta:</p>
+<div class="terminal-output">
+<pre class="text"><code>Carta creada: pdfs_entrada/03-carta-steve_waterdrinker.pdf
+Carta creada: pdfs_entrada/04-carta-luis_torres.pdf
+Carta creada: pdfs_entrada/05-carta-maria_lopez.pdf</code></pre>
+</div>
+<p>Cada línea aparece porque el bucle produce un PDF distinto por cada fila del CSV. Para experimentar, agrega una nueva persona al archivo, cambia el texto que se imprime o añade más campos dentro de la carta. Así verás con claridad cómo los datos alimentan directamente la generación de documentos.</p>
+</section>
+</section>
+<section id="ejercicio-9.-crear-un-comunicado-pdf-con-un-diseño-más-elaborado" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-9.-crear-un-comunicado-pdf-con-un-diseño-más-elaborado">Ejercicio 9. Crear un comunicado PDF con un diseño más elaborado</h3>
+<p>El ejercicio anterior mostraba automatización documental básica. Este va un poco más allá: usa colores, paneles, un logo y párrafos más largos para construir un comunicado con una apariencia más cuidada.</p>
+<p>Crea un archivo nuevo y copia este código:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> reportlab.lib <span class="im">import</span> colors</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> reportlab.lib.pagesizes <span class="im">import</span> LETTER</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> reportlab.lib.styles <span class="im">import</span> ParagraphStyle, getSampleStyleSheet</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> reportlab.lib.utils <span class="im">import</span> ImageReader</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> reportlab.platypus <span class="im">import</span> Paragraph</span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> reportlab.pdfgen <span class="im">import</span> canvas</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>ruta_logo <span class="op">=</span> Path(<span class="st">"images"</span>) <span class="op">/</span> <span class="st">"logo_legaltech.png"</span></span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>ruta_pdf <span class="op">=</span> Path(<span class="st">"pdfs_entrada"</span>) <span class="op">/</span> <span class="st">"00-comunicado-bienvenida.pdf"</span></span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a>pdf <span class="op">=</span> canvas.Canvas(<span class="bu">str</span>(ruta_pdf), pagesize<span class="op">=</span>LETTER)</span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a>ancho, alto <span class="op">=</span> LETTER</span>
+<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a>pdf.setFillColor(colors.HexColor(<span class="st">"#F3F4F6"</span>))</span>
+<span id="cb18-17"><a href="#cb18-17" aria-hidden="true" tabindex="-1"></a>pdf.rect(<span class="dv">0</span>, <span class="dv">0</span>, ancho, alto, stroke<span class="op">=</span><span class="dv">0</span>, fill<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb18-18"><a href="#cb18-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-19"><a href="#cb18-19" aria-hidden="true" tabindex="-1"></a>logo <span class="op">=</span> ImageReader(<span class="bu">str</span>(ruta_logo))</span>
+<span id="cb18-20"><a href="#cb18-20" aria-hidden="true" tabindex="-1"></a>pdf.drawImage(logo, <span class="dv">54</span>, alto <span class="op">-</span> <span class="dv">112</span>, width<span class="op">=</span><span class="dv">180</span>, height<span class="op">=</span><span class="dv">60</span>, mask<span class="op">=</span><span class="st">"auto"</span>)</span>
+<span id="cb18-21"><a href="#cb18-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-22"><a href="#cb18-22" aria-hidden="true" tabindex="-1"></a>pdf.setFillColor(colors.HexColor(<span class="st">"#0E3A5D"</span>))</span>
+<span id="cb18-23"><a href="#cb18-23" aria-hidden="true" tabindex="-1"></a>pdf.setFont(<span class="st">"Helvetica-Bold"</span>, <span class="dv">24</span>)</span>
+<span id="cb18-24"><a href="#cb18-24" aria-hidden="true" tabindex="-1"></a>pdf.drawString(<span class="dv">96</span>, alto <span class="op">-</span> <span class="dv">180</span>, <span class="st">"Bienvenidos al mundo de Python"</span>)</span>
+<span id="cb18-25"><a href="#cb18-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-26"><a href="#cb18-26" aria-hidden="true" tabindex="-1"></a>styles <span class="op">=</span> getSampleStyleSheet()</span>
+<span id="cb18-27"><a href="#cb18-27" aria-hidden="true" tabindex="-1"></a>estilo <span class="op">=</span> ParagraphStyle(</span>
+<span id="cb18-28"><a href="#cb18-28" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Cuerpo"</span>,</span>
+<span id="cb18-29"><a href="#cb18-29" aria-hidden="true" tabindex="-1"></a>    parent<span class="op">=</span>styles[<span class="st">"BodyText"</span>],</span>
+<span id="cb18-30"><a href="#cb18-30" aria-hidden="true" tabindex="-1"></a>    fontName<span class="op">=</span><span class="st">"Helvetica"</span>,</span>
+<span id="cb18-31"><a href="#cb18-31" aria-hidden="true" tabindex="-1"></a>    fontSize<span class="op">=</span><span class="dv">11</span>,</span>
+<span id="cb18-32"><a href="#cb18-32" aria-hidden="true" tabindex="-1"></a>    leading<span class="op">=</span><span class="dv">18</span>,</span>
+<span id="cb18-33"><a href="#cb18-33" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb18-34"><a href="#cb18-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-35"><a href="#cb18-35" aria-hidden="true" tabindex="-1"></a>parrafo <span class="op">=</span> Paragraph(</span>
+<span id="cb18-36"><a href="#cb18-36" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Este comunicado fue generado automaticamente y muestra que un PDF puede combinar texto, imagen y composicion visual desde Python."</span>,</span>
+<span id="cb18-37"><a href="#cb18-37" aria-hidden="true" tabindex="-1"></a>    estilo,</span>
+<span id="cb18-38"><a href="#cb18-38" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb18-39"><a href="#cb18-39" aria-hidden="true" tabindex="-1"></a>ancho_p, alto_p <span class="op">=</span> parrafo.wrap(ancho <span class="op">-</span> <span class="dv">120</span>, <span class="dv">200</span>)</span>
+<span id="cb18-40"><a href="#cb18-40" aria-hidden="true" tabindex="-1"></a>parrafo.drawOn(pdf, <span class="dv">72</span>, alto <span class="op">-</span> <span class="dv">280</span> <span class="op">-</span> alto_p)</span>
+<span id="cb18-41"><a href="#cb18-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-42"><a href="#cb18-42" aria-hidden="true" tabindex="-1"></a>pdf.save()</span>
+<span id="cb18-43"><a href="#cb18-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-44"><a href="#cb18-44" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Comunicado creado en:"</span>, ruta_pdf)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="qué-hace-este-código-8" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-este-código-8">Qué hace este código</h4>
+<p>El programa construye un PDF más elaborado que combina fondo, logo, título y un párrafo con ajuste automático de línea.</p>
+</section>
+<section id="qué-hace-cada-parte-8" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-cada-parte-8">Qué hace cada parte</h4>
+<ul>
+<li><code>colors.HexColor(...)</code> define colores personalizados.</li>
+<li><code>ParagraphStyle(...)</code> crea un estilo de texto reutilizable.</li>
+<li><code>Paragraph(...)</code> permite escribir párrafos largos con mejor ajuste de línea que <code>drawString()</code>.</li>
+<li><code>drawOn(...)</code> coloca ese párrafo en una posición específica de la página.</li>
+<li>Este tipo de ejercicio importa porque muestra que la automatización documental no tiene que limitarse a documentos visualmente pobres.</li>
+</ul>
+</section>
+<section id="qué-verás-en-la-terminal-8" class="level4">
+<h4 class="anchored" data-anchor-id="qué-verás-en-la-terminal-8">Qué verás en la terminal</h4>
+<div class="terminal-output">
+<pre class="text"><code>Comunicado creado en: pdfs_entrada/00-comunicado-bienvenida.pdf</code></pre>
+</div>
+<p>La terminal confirma la creación, pero el efecto importante está en el propio documento: el script genera una pieza visual más rica y mejor compuesta. Para experimentar, cambia el color del fondo, modifica el texto del párrafo o agrega un subtítulo nuevo. Así verás cómo el diseño básico también puede controlarse desde el código.</p>
+</section>
+</section>
+<section id="ejercicio-10.-unir-varios-pdf-en-un-solo-documento" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-10.-unir-varios-pdf-en-un-solo-documento">Ejercicio 10. Unir varios PDF en un solo documento</h3>
+<p>Cuando ya tienes varios PDF producidos o reunidos, puede resultar útil consolidarlos en un solo archivo. Este ejercicio muestra cómo recorrer una carpeta y combinarlos en un documento final.</p>
+<p>Crea un archivo nuevo y copia este código:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pypdf <span class="im">import</span> PdfWriter</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>carpeta_entrada <span class="op">=</span> Path(<span class="st">"pdfs_entrada"</span>)</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>carpeta_salida <span class="op">=</span> Path(<span class="st">"pdfs_salida"</span>)</span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>archivo_salida <span class="op">=</span> carpeta_salida <span class="op">/</span> <span class="st">"documento_unido.pdf"</span></span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>carpeta_salida.mkdir(exist_ok<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a>archivos_pdf <span class="op">=</span> <span class="bu">sorted</span>(carpeta_entrada.glob(<span class="st">"*.pdf"</span>))</span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="kw">not</span> archivos_pdf:</span>
+<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"No se encontraron PDF en:"</span>, carpeta_entrada)</span>
+<span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a>    writer <span class="op">=</span> PdfWriter()</span>
+<span id="cb20-17"><a href="#cb20-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-18"><a href="#cb20-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> ruta_pdf <span class="kw">in</span> archivos_pdf:</span>
+<span id="cb20-19"><a href="#cb20-19" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Agregando:"</span>, ruta_pdf.name)</span>
+<span id="cb20-20"><a href="#cb20-20" aria-hidden="true" tabindex="-1"></a>        writer.append(<span class="bu">str</span>(ruta_pdf))</span>
+<span id="cb20-21"><a href="#cb20-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-22"><a href="#cb20-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> <span class="bu">open</span>(archivo_salida, <span class="st">"wb"</span>) <span class="im">as</span> archivo_final:</span>
+<span id="cb20-23"><a href="#cb20-23" aria-hidden="true" tabindex="-1"></a>        writer.write(archivo_final)</span>
+<span id="cb20-24"><a href="#cb20-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-25"><a href="#cb20-25" aria-hidden="true" tabindex="-1"></a>    writer.close()</span>
+<span id="cb20-26"><a href="#cb20-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-27"><a href="#cb20-27" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"PDF combinado creado en:"</span>, archivo_salida)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="qué-hace-este-código-9" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-este-código-9">Qué hace este código</h4>
+<p>El programa busca todos los PDF dentro de una carpeta, los ordena por nombre y los agrega a un único documento final.</p>
+</section>
+<section id="qué-hace-cada-parte-9" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-cada-parte-9">Qué hace cada parte</h4>
+<ul>
+<li><code>glob("*.pdf")</code> busca todos los archivos PDF de la carpeta.</li>
+<li><code>sorted(...)</code> los ordena por nombre.</li>
+<li><code>PdfWriter()</code> crea el objeto que irá reuniendo los documentos.</li>
+<li><code>writer.append(...)</code> agrega cada PDF al resultado final.</li>
+<li>El archivo final se escribe en modo binario con <code>"wb"</code>.</li>
+<li>Se usa este proceso porque muchas tareas documentales no terminan al crear un archivo: a veces también hace falta consolidar varios insumos en un solo expediente o reporte.</li>
+</ul>
+</section>
+<section id="qué-verás-en-la-terminal-9" class="level4">
+<h4 class="anchored" data-anchor-id="qué-verás-en-la-terminal-9">Qué verás en la terminal</h4>
+<p>Si hay varios archivos en la carpeta de entrada, verás algo parecido a esto:</p>
+<div class="terminal-output">
+<pre class="text"><code>Agregando: 00-comunicado-bienvenida.pdf
+Agregando: 01-lista-estudiantes.pdf
+Agregando: 02-logo-centrado.pdf
+PDF combinado creado en: pdfs_salida/documento_unido.pdf</code></pre>
+</div>
+<p>Cada línea de <code>Agregando:</code> aparece porque el programa va incorporando un PDF a la vez al documento final. Para experimentar, cambia el nombre de algunos archivos, quita uno de la carpeta o agrega otros nuevos. Así verás cómo el orden y el contenido de la carpeta influyen directamente en el resultado final.</p>
+</section>
+</section>
+<section id="ejercicio-11.-construir-un-gráfico-de-barras-desde-un-csv" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-11.-construir-un-gráfico-de-barras-desde-un-csv">Ejercicio 11. Construir un gráfico de barras desde un CSV</h3>
+<p>No toda salida útil es un documento textual. A veces conviene resumir información visualmente. Este ejercicio muestra cómo leer un CSV y producir un gráfico de barras simple con <code>matplotlib</code>.</p>
+<p>Si quieres seguir el ejemplo, crea un archivo <code>grafico_ventas.csv</code> en <code>data</code> con columnas como <code>categoria</code> y <code>total</code>.</p>
+<p>Crea un archivo nuevo y copia este código:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> csv</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>ruta_csv <span class="op">=</span> Path(<span class="st">"data"</span>) <span class="op">/</span> <span class="st">"grafico_ventas.csv"</span></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>ruta_imagen <span class="op">=</span> Path(<span class="st">"grafico_ventas.png"</span>)</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>categorias <span class="op">=</span> []</span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>valores <span class="op">=</span> []</span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(ruta_csv, <span class="st">"r"</span>, encoding<span class="op">=</span><span class="st">"utf-8"</span>) <span class="im">as</span> archivo:</span>
+<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a>    lector <span class="op">=</span> csv.DictReader(archivo)</span>
+<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> fila <span class="kw">in</span> lector:</span>
+<span id="cb22-16"><a href="#cb22-16" aria-hidden="true" tabindex="-1"></a>        categorias.append(fila[<span class="st">"categoria"</span>])</span>
+<span id="cb22-17"><a href="#cb22-17" aria-hidden="true" tabindex="-1"></a>        valores.append(<span class="bu">int</span>(fila[<span class="st">"total"</span>]))</span>
+<span id="cb22-18"><a href="#cb22-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-19"><a href="#cb22-19" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">5</span>))</span>
+<span id="cb22-20"><a href="#cb22-20" aria-hidden="true" tabindex="-1"></a>barras <span class="op">=</span> plt.bar(categorias, valores, color<span class="op">=</span><span class="st">"#2f6db3"</span>)</span>
+<span id="cb22-21"><a href="#cb22-21" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Ventas por categoria"</span>)</span>
+<span id="cb22-22"><a href="#cb22-22" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Categoria"</span>)</span>
+<span id="cb22-23"><a href="#cb22-23" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Total"</span>)</span>
+<span id="cb22-24"><a href="#cb22-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-25"><a href="#cb22-25" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> barra, valor <span class="kw">in</span> <span class="bu">zip</span>(barras, valores):</span>
+<span id="cb22-26"><a href="#cb22-26" aria-hidden="true" tabindex="-1"></a>    plt.text(barra.get_x() <span class="op">+</span> barra.get_width() <span class="op">/</span> <span class="dv">2</span>, valor <span class="op">+</span> <span class="dv">1</span>, <span class="bu">str</span>(valor), ha<span class="op">=</span><span class="st">"center"</span>)</span>
+<span id="cb22-27"><a href="#cb22-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-28"><a href="#cb22-28" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb22-29"><a href="#cb22-29" aria-hidden="true" tabindex="-1"></a>plt.savefig(ruta_imagen)</span>
+<span id="cb22-30"><a href="#cb22-30" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb22-31"><a href="#cb22-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-32"><a href="#cb22-32" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Grafico guardado en:"</span>, ruta_imagen)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="qué-hace-este-código-10" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-este-código-10">Qué hace este código</h4>
+<p>El programa lee categorías y valores desde un CSV, construye un gráfico de barras, lo guarda como imagen y además lo muestra en pantalla.</p>
+</section>
+<section id="qué-hace-cada-parte-10" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-cada-parte-10">Qué hace cada parte</h4>
+<ul>
+<li><code>csv.DictReader(...)</code> recupera cada fila como diccionario.</li>
+<li>Las listas <code>categorias</code> y <code>valores</code> guardan la información que usará el gráfico.</li>
+<li><code>plt.bar(...)</code> dibuja las barras.</li>
+<li><code>plt.text(...)</code> coloca etiquetas numéricas encima de cada barra.</li>
+<li><code>plt.savefig(...)</code> guarda una copia del gráfico como archivo PNG.</li>
+<li>Se usa este enfoque porque una visualización puede resumir información de un vistazo, algo útil cuando los datos empiezan a crecer.</li>
+</ul>
+</section>
+<section id="qué-verás-en-la-terminal-10" class="level4">
+<h4 class="anchored" data-anchor-id="qué-verás-en-la-terminal-10">Qué verás en la terminal</h4>
+<div class="terminal-output">
+<pre class="text"><code>Grafico guardado en: grafico_ventas.png</code></pre>
+</div>
+<p>La terminal confirma el guardado, pero el aprendizaje principal está en la ventana del gráfico y en la imagen PNG generada. Para experimentar, cambia los valores del CSV, añade otra categoría o prueba otro color para las barras. Así verás cómo pequeños cambios en los datos modifican inmediatamente la visualización.</p>
+</section>
+</section>
+<section id="ejercicio-12.-preparar-el-envío-de-correos-desde-un-csv" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-12.-preparar-el-envío-de-correos-desde-un-csv">Ejercicio 12. Preparar el envío de correos desde un CSV</h3>
+<p>Este ejercicio introduce una automatización muy sensible: el envío de correos. Justamente por eso conviene entenderlo primero como un ejemplo controlado y no como algo para usar sin revisión.</p>
+<p>Si quieres seguir el ejemplo, crea un CSV con columnas <code>correo</code> y <code>nombre</code>.</p>
+<p>Crea un archivo nuevo y copia este código:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> csv</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> smtplib</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> email.message <span class="im">import</span> EmailMessage</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>REMITENTE <span class="op">=</span> <span class="st">"tu_correo@ejemplo.com"</span></span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>CLAVE <span class="op">=</span> <span class="st">"tu_clave_de_aplicacion"</span></span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>SERVIDOR_SMTP <span class="op">=</span> <span class="st">"smtp.ejemplo.com"</span></span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>PUERTO_SMTP <span class="op">=</span> <span class="dv">587</span></span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>ruta_csv <span class="op">=</span> Path(<span class="st">"data"</span>) <span class="op">/</span> <span class="st">"destinatarios.csv"</span></span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> crear_mensaje(destinatario, nombre):</span>
+<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a>    mensaje <span class="op">=</span> EmailMessage()</span>
+<span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a>    mensaje[<span class="st">"Subject"</span>] <span class="op">=</span> <span class="st">"Comunicado automatico"</span></span>
+<span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a>    mensaje[<span class="st">"From"</span>] <span class="op">=</span> REMITENTE</span>
+<span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a>    mensaje[<span class="st">"To"</span>] <span class="op">=</span> destinatario</span>
+<span id="cb24-19"><a href="#cb24-19" aria-hidden="true" tabindex="-1"></a>    mensaje.set_content(</span>
+<span id="cb24-20"><a href="#cb24-20" aria-hidden="true" tabindex="-1"></a>        <span class="ss">f"Hola </span><span class="sc">{</span>nombre<span class="sc">}</span><span class="ss">,</span><span class="ch">\n\n</span><span class="ss">"</span></span>
+<span id="cb24-21"><a href="#cb24-21" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Este es un correo de ejemplo enviado desde Python.</span><span class="ch">\n\n</span><span class="st">"</span></span>
+<span id="cb24-22"><a href="#cb24-22" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Saludos."</span></span>
+<span id="cb24-23"><a href="#cb24-23" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb24-24"><a href="#cb24-24" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> mensaje</span>
+<span id="cb24-25"><a href="#cb24-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-26"><a href="#cb24-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-27"><a href="#cb24-27" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(ruta_csv, <span class="st">"r"</span>, encoding<span class="op">=</span><span class="st">"utf-8"</span>) <span class="im">as</span> archivo:</span>
+<span id="cb24-28"><a href="#cb24-28" aria-hidden="true" tabindex="-1"></a>    lector <span class="op">=</span> csv.DictReader(archivo)</span>
+<span id="cb24-29"><a href="#cb24-29" aria-hidden="true" tabindex="-1"></a>    destinatarios <span class="op">=</span> <span class="bu">list</span>(lector)</span>
+<span id="cb24-30"><a href="#cb24-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-31"><a href="#cb24-31" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> REMITENTE <span class="op">==</span> <span class="st">"tu_correo@ejemplo.com"</span>:</span>
+<span id="cb24-32"><a href="#cb24-32" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Debes editar la configuracion del remitente antes de enviar correos."</span>)</span>
+<span id="cb24-33"><a href="#cb24-33" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb24-34"><a href="#cb24-34" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> smtplib.SMTP(SERVIDOR_SMTP, PUERTO_SMTP) <span class="im">as</span> servidor:</span>
+<span id="cb24-35"><a href="#cb24-35" aria-hidden="true" tabindex="-1"></a>        servidor.starttls()</span>
+<span id="cb24-36"><a href="#cb24-36" aria-hidden="true" tabindex="-1"></a>        servidor.login(REMITENTE, CLAVE)</span>
+<span id="cb24-37"><a href="#cb24-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-38"><a href="#cb24-38" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> fila <span class="kw">in</span> destinatarios:</span>
+<span id="cb24-39"><a href="#cb24-39" aria-hidden="true" tabindex="-1"></a>            mensaje <span class="op">=</span> crear_mensaje(fila[<span class="st">"correo"</span>], fila[<span class="st">"nombre"</span>])</span>
+<span id="cb24-40"><a href="#cb24-40" aria-hidden="true" tabindex="-1"></a>            servidor.send_message(mensaje)</span>
+<span id="cb24-41"><a href="#cb24-41" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="st">"Correo enviado a:"</span>, fila[<span class="st">"correo"</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="qué-hace-este-código-11" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-este-código-11">Qué hace este código</h4>
+<p>El programa lee un CSV con destinatarios, construye un mensaje para cada persona y, si la configuración fue completada correctamente, se conecta al servidor SMTP para enviarlo.</p>
+</section>
+<section id="qué-hace-cada-parte-11" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-cada-parte-11">Qué hace cada parte</h4>
+<ul>
+<li><code>EmailMessage()</code> crea el objeto correo.</li>
+<li><code>set_content(...)</code> define el cuerpo del mensaje.</li>
+<li><code>csv.DictReader(...)</code> lee los destinatarios desde el archivo.</li>
+<li><code>smtplib.SMTP(...)</code> abre la conexión con el servidor de correo.</li>
+<li><code>starttls()</code> activa cifrado para la conexión.</li>
+<li><code>login(...)</code> autentica la cuenta antes del envío.</li>
+<li>El <code>if REMITENTE == "tu_correo@ejemplo.com":</code> funciona como barrera pedagógica para evitar un envío accidental sin configuración real.</li>
+</ul>
+</section>
+<section id="qué-verás-en-la-terminal-11" class="level4">
+<h4 class="anchored" data-anchor-id="qué-verás-en-la-terminal-11">Qué verás en la terminal</h4>
+<p>Si todavía no cambias la configuración, verás esto:</p>
+<div class="terminal-output">
+<pre class="text"><code>Debes editar la configuracion del remitente antes de enviar correos.</code></pre>
+</div>
+<p>Ese mensaje es útil porque evita que el script intente enviar correos con datos de ejemplo. Si más adelante lo adaptas en un entorno de prueba, conviene hacerlo con mucho cuidado, usando credenciales seguras y destinatarios controlados. Para experimentar sin riesgo, modifica solo el texto del mensaje o imprime el correo antes de enviarlo en lugar de conectarte realmente al servidor.</p>
+</section>
+</section>
+<section id="ejercicio-13.-automatizar-acciones-básicas-con-mouse-y-teclado" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-13.-automatizar-acciones-básicas-con-mouse-y-teclado">Ejercicio 13. Automatizar acciones básicas con mouse y teclado</h3>
+<p>El último ejercicio del capítulo muestra una forma distinta de automatización: controlar acciones visibles del sistema. Es un ejemplo llamativo, pero también delicado, porque el script interactúa con el mouse, el teclado y la pantalla reales.</p>
+<p>Crea un archivo nuevo y copia este código:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> subprocess</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> time</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pyautogui</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>pyautogui.FAILSAFE <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>pyautogui.PAUSE <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Tamano de pantalla:"</span>, pyautogui.size())</span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Posicion actual del mouse:"</span>, pyautogui.position())</span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"El script empezara en 3 segundos..."</span>)</span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>time.sleep(<span class="dv">3</span>)</span>
+<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-15"><a href="#cb26-15" aria-hidden="true" tabindex="-1"></a>subprocess.Popen([<span class="st">"notepad.exe"</span>])</span>
+<span id="cb26-16"><a href="#cb26-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-17"><a href="#cb26-17" aria-hidden="true" tabindex="-1"></a>time.sleep(<span class="dv">2</span>)</span>
+<span id="cb26-18"><a href="#cb26-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-19"><a href="#cb26-19" aria-hidden="true" tabindex="-1"></a>pyautogui.write(<span class="st">"Hola, este texto fue escrito con pyautogui."</span>, interval<span class="op">=</span><span class="fl">0.05</span>)</span>
+<span id="cb26-20"><a href="#cb26-20" aria-hidden="true" tabindex="-1"></a>pyautogui.press(<span class="st">"enter"</span>)</span>
+<span id="cb26-21"><a href="#cb26-21" aria-hidden="true" tabindex="-1"></a>pyautogui.write(<span class="st">"Este ejemplo abrio un editor automaticamente."</span>, interval<span class="op">=</span><span class="fl">0.05</span>)</span>
+<span id="cb26-22"><a href="#cb26-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-23"><a href="#cb26-23" aria-hidden="true" tabindex="-1"></a>ruta_captura <span class="op">=</span> Path(<span class="st">"captura_pyautogui.png"</span>)</span>
+<span id="cb26-24"><a href="#cb26-24" aria-hidden="true" tabindex="-1"></a>pyautogui.screenshot(<span class="bu">str</span>(ruta_captura))</span>
+<span id="cb26-25"><a href="#cb26-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-26"><a href="#cb26-26" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Captura guardada en:"</span>, ruta_captura)</span>
+<span id="cb26-27"><a href="#cb26-27" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Ejemplo terminado."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="qué-hace-este-código-12" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-este-código-12">Qué hace este código</h4>
+<p>El programa muestra información básica sobre pantalla y mouse, abre una aplicación, escribe texto automáticamente, toma una captura y la guarda como archivo.</p>
+</section>
+<section id="qué-hace-cada-parte-12" class="level4">
+<h4 class="anchored" data-anchor-id="qué-hace-cada-parte-12">Qué hace cada parte</h4>
+<ul>
+<li><code>pyautogui.FAILSAFE = True</code> permite detener la ejecución moviendo el mouse a una esquina.</li>
+<li><code>pyautogui.PAUSE = 1</code> agrega una pausa entre acciones para que sean visibles y más seguras.</li>
+<li><code>subprocess.Popen(...)</code> abre una aplicación externa.</li>
+<li><code>pyautogui.write(...)</code> simula escritura desde el teclado.</li>
+<li><code>pyautogui.press(...)</code> simula pulsaciones concretas.</li>
+<li><code>pyautogui.screenshot(...)</code> toma una captura de pantalla.</li>
+<li>Este tipo de script importa porque muestra que la automatización no solo transforma datos: también puede interactuar con interfaces.</li>
+</ul>
+</section>
+<section id="qué-verás-en-la-terminal-12" class="level4">
+<h4 class="anchored" data-anchor-id="qué-verás-en-la-terminal-12">Qué verás en la terminal</h4>
+<p>La salida será parecida a esta:</p>
+<div class="terminal-output">
+<pre class="text"><code>Tamano de pantalla: Size(width=..., height=...)
+Posicion actual del mouse: Point(x=..., y=...)
+El script empezara en 3 segundos...
+Captura guardada en: captura_pyautogui.png
+Ejemplo terminado.</code></pre>
+</div>
+<p>Además de lo que aparece en la terminal, verás que el programa abre una aplicación, escribe dentro de ella y guarda una captura. Para experimentar, conviene hacerlo con mucha cautela: cambia primero solo el texto que se escribe o la ruta de la captura. Si estás en otro sistema operativo, también tendrás que adaptar el programa que se abre. Aquí el aprendizaje principal no es “hacer clics por hacer clics”, sino entender que ciertas tareas repetitivas de interfaz también pueden automatizarse, aunque exigen mucha más prudencia.</p>
+</section>
+</section>
+</section>
+<section id="conclusiones-del-capítulo" class="level2">
+<h2 class="anchored" data-anchor-id="conclusiones-del-capítulo">Conclusiones del capítulo</h2>
+<p>Este capítulo mostró un momento importante del recorrido: Python empezó a comportarse como una herramienta que no solo calcula o clasifica, sino que también genera productos visibles. A partir de reglas simples, listas, texto y archivos, el programa pudo transformarse en una pequeña máquina de trabajo: producir cartas, consolidar PDF, construir gráficos o preparar comunicaciones.</p>
+<p>Las ideas que siguen resumen el valor de esta transición. Conviene leerlas como una síntesis de lo que ya puedes empezar a hacer cuando conectas datos, reglas y salidas concretas.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Regla útil
+<span class="screen-reader-only">Tip</span>Ideas clave
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>El objetivo no es reemplazar la revisión jurídica. Es reducir trabajo mecánico y hacer más visible la información relevante.</p>
+<ul>
+<li>una buena parte de la automatización jurídica básica empieza con reglas simples y tareas repetibles;</li>
+<li>listas, diccionarios y texto siguen siendo la base de muchos problemas más avanzados;</li>
+<li>generar documentos desde código permite pasar del análisis a la producción de artefactos concretos;</li>
+<li>los PDF pueden construirse, personalizarse y unirse automáticamente cuando el flujo está bien organizado;</li>
+<li>un CSV puede servir como fuente de datos para cartas, correos, reportes o gráficos;</li>
+<li>la visualización de datos también forma parte del ecosistema Legal Tech cuando ayuda a resumir información;</li>
+<li>algunas automatizaciones, como el envío de correos o el control de interfaces, requieren mucha más cautela que otras;</li>
+<li>automatizar no equivale a reemplazar criterio profesional, sino a estructurar mejor la parte repetible del trabajo;</li>
+<li>cuanto más claro esté el flujo de entrada, transformación y salida, más útil y verificable será el script.</li>
+</ul>
 </div>
 </div>
-</section>
-<section id="archivos-de-texto-y-salidas-simples" class="level2">
-<h2 class="anchored" data-anchor-id="archivos-de-texto-y-salidas-simples">Archivos de texto y salidas simples</h2>
-<p>Otra posibilidad útil es guardar resultados en un archivo. Por ejemplo:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>lineas <span class="op">=</span> [</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"EXP-001: revisar urgencia"</span>,</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"EXP-002: sin observaciones"</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>]</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"reporte.txt"</span>, <span class="st">"w"</span>, encoding<span class="op">=</span><span class="st">"utf-8"</span>) <span class="im">as</span> archivo:</span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> linea <span class="kw">in</span> lineas:</span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>        archivo.write(linea <span class="op">+</span> <span class="st">"</span><span class="ch">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Con eso ya podemos producir una salida reutilizable, aunque sea básica.</p>
-</section>
-<section id="el-puente-hacia-automatización-documental" class="level2">
-<h2 class="anchored" data-anchor-id="el-puente-hacia-automatización-documental">El puente hacia automatización documental</h2>
-<p>Cuando un script:</p>
-<ul>
-<li>toma datos;</li>
-<li>aplica reglas;</li>
-<li>genera una salida;</li>
-</ul>
-<p>ya estamos bastante cerca de la lógica básica de automatización documental.</p>
-<p>No se trata todavía de construir una plataforma sofisticada. Se trata de entender la secuencia:</p>
+<p>Antes de pasar al siguiente módulo, también conviene hacer una pausa crítica. Este capítulo puede entusiasmar porque ya muestra resultados visibles, pero justamente por eso es importante pensar en límites, riesgos y decisiones de diseño. Las preguntas siguientes buscan ayudarte a no confundir automatización con solución automática de cualquier problema.</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Para pensar y reflexionar
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ol type="1">
-<li>recibir información;</li>
-<li>transformarla;</li>
-<li>producir un resultado legible.</li>
+<li>¿Qué diferencia notas entre un script que solo analiza información y otro que además produce un documento o un archivo reutilizable?</li>
+<li>¿Por qué crees que generar cartas o PDF desde datos puede ser útil en ciertos flujos jurídicos repetitivos?</li>
+<li>¿Qué riesgos aparecerían si enviaras correos o automatizaras interfaces sin revisar antes los datos y el contexto?</li>
+<li>¿Qué ejercicios de este capítulo te parecen más directamente conectados con Legal Tech y por qué?</li>
+<li>Si tuvieras que transformar uno de estos ejemplos en una herramienta más cercana a una oficina legal real, ¿cuál elegirías y qué tendrías que mejorar antes de usarlo?</li>
 </ol>
-<p>Ese puente es importante porque prepara el terreno para módulos posteriores del curso.</p>
-</section>
-<section id="práctica-en-editor" class="level2">
-<h2 class="anchored" data-anchor-id="práctica-en-editor">Práctica en editor</h2>
-<p>Crea un archivo como <code>sesion-4/reporte.py</code> y trabaja con una lista de registros jurídicos. El script debe:</p>
-<ol type="1">
-<li>leer una estructura simple de datos;</li>
-<li>identificar al menos una condición relevante;</li>
-<li>producir una salida clara en pantalla o en un archivo de texto.</li>
-</ol>
-<p>Si quieres profundizar, añade una pequeña función que reciba un registro y devuelva observaciones.</p>
-</section>
-<section id="git-y-github" class="level2">
-<h2 class="anchored" data-anchor-id="git-y-github">Git y GitHub</h2>
-<p>Versiona tanto el script como cualquier archivo de datos de prueba o README breve que acompañe tu solución.</p>
-</section>
-<section id="pset-de-la-sesión" class="level2">
-<h2 class="anchored" data-anchor-id="pset-de-la-sesión">PSET de la sesión</h2>
-<p>Resuelve una tarea básica de procesamiento jurídico con Python. Algunas opciones:</p>
-<ul>
-<li>generar observaciones sobre expedientes;</li>
-<li>crear un pequeño reporte de plazos;</li>
-<li>producir mensajes tipo para situaciones repetitivas;</li>
-<li>transformar una lista de registros en una salida legible.</li>
-</ul>
-<p>El PSET debe mostrar:</p>
-<ul>
-<li>estructura clara de datos;</li>
-<li>lógica comprensible;</li>
-<li>salida verificable;</li>
-<li>commits que permitan seguir el trabajo.</li>
-</ul>
-</section>
-<section id="preguntas-de-repaso" class="level2">
-<h2 class="anchored" data-anchor-id="preguntas-de-repaso">Preguntas de repaso</h2>
-<ol type="1">
-<li>¿Por qué una lista de diccionarios puede ser útil para modelar información jurídica?</li>
-<li>¿Qué valor tiene transformar texto en tareas legales?</li>
-<li>¿Qué diferencia hay entre revisar datos y producir una salida a partir de esos datos?</li>
-<li>¿Por qué este tipo de ejercicios prepara el paso hacia automatización documental?</li>
-</ol>
-</section>
-<section id="ideas-clave" class="level2">
-<h2 class="anchored" data-anchor-id="ideas-clave">Ideas clave</h2>
-<ul>
-<li>Python no sirve solo para cálculos: también sirve para ordenar información jurídica;</li>
-<li>las estructuras de datos son una forma de pensar mejor el trabajo legal;</li>
-<li>una salida simple puede ser ya una forma útil de automatización;</li>
-<li>automatizar documentos o reportes empieza con pequeñas transformaciones bien hechas.</li>
-</ul>
+</div>
+</div>
 
 
 </section>
@@ -1058,8 +1616,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../parte-1-modulo-1/03-capitulo.html" class="pagination-link" aria-label="3. Python para decisiones jurídicas y automatización básica">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">3. Python para decisiones jurídicas y automatización básica</span></span>
+      <a href="../parte-1-modulo-1/03-capitulo.html" class="pagination-link" aria-label="3. Python para fechas, archivos y datos">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">3. Python para fechas, archivos y datos</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
