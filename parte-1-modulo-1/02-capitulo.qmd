@@ -2,7 +2,7 @@
 title: "2. Primeros pasos con Python"
 ---
 
-::: {.callout-important}
+::: {.callout-note}
 ## Qué aprenderás en esta sesión
 
 En este capítulo empezarás a ver por qué Python se volvió un lenguaje tan importante, cómo fue evolucionando y, sobre todo, cómo se aprende a usar paso a paso sin necesidad de venir del mundo de la ingeniería. Verás ejercicios breves para comprender qué hacen `print()`, las variables, `input()`, las conversiones de tipo, los operadores, los condicionales, los bucles, las funciones, las listas y varias operaciones sobre texto. La invitación no es solo a leer: es a descubrir cómo, a partir de instrucciones pequeñas, se puede empezar a pensar con más claridad problemas que luego se conectan con el trabajo jurídico.
@@ -87,7 +87,7 @@ La mejor manera de empezar con Python es trabajar con ejercicios pequeños y pro
 
 Si quieres aprovechar bien esta parte del capítulo, conviene seguir un orden simple: empieza por los ejercicios más breves, ejecútalos en secuencia, modifica variables, mensajes o números para ver qué cambia, y luego avanza hacia listas y texto. Una práctica especialmente buena para este curso es reescribir los ejemplos con vocabulario jurídico. Por ejemplo, puedes cambiar `nombre_usuario` por `nombre_cliente`, listas genéricas por listas de expedientes, o nombres de archivo simples por algo como `demanda_2026.pdf`. Así, el aprendizaje de la sintaxis se conecta desde el inicio con situaciones que ya resultan familiares.
 
-::: {.callout-tip}
+::: {.callout-important}
 ## Antes de empezar
 
 Para trabajar bien estos ejercicios necesitas dos cosas muy concretas:
@@ -736,7 +736,9 @@ Correo limpio: estudiante@ejemplo.com
 
 Este ejercicio resume muy bien una idea transversal del capítulo: una tarea aparentemente pequeña puede requerir varios pasos bien ordenados para producir un resultado limpio y útil.
 
-::: {.callout-important}
+## Conclusiones del  capítulo
+
+::: {.callout-tip}
 ## Ideas clave
 
 - Python es útil no solo por su popularidad actual, sino porque permite traducir instrucciones y problemas en pasos legibles y ejecutables.
@@ -757,7 +759,7 @@ Este ejercicio resume muy bien una idea transversal del capítulo: una tarea apa
 - Las operaciones sobre texto permiten limpiar, normalizar, separar, reemplazar y verificar cadenas de caracteres con precisión.
 :::
 
-::: {.callout-note}
+::: {.callout-caution}
 ## Para pensar y reflexionar
 
 1. ¿Qué cambia en tu manera de entender la programación cuando ves que un programa puede leerse como una secuencia ordenada de instrucciones comprensibles?
