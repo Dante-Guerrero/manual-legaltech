@@ -2,7 +2,7 @@
 
 - ID: 202605240040
 - Fuente: Galvez y Revinova (2025)
-- Archivo fuente: [galvez-2025-assessing-digital-technology-development-in-latin-american-countries-challenges-drivers-and-futur.md](/Users/dante/github/manual-legaltech/+/y/papers_md/galvez-2025-assessing-digital-technology-development-in-latin-american-countries-challenges-drivers-and-futur.md)
+- Archivo fuente: [galvez-2025-assessing-digital-technology-development-in-latin-american-countries-challenges-drivers-and-futur.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/galvez-2025-assessing-digital-technology-development-in-latin-american-countries-challenges-drivers-and-futur.md)
 - Capitulos potenciales: 4
 - Temas: infraestructura,politica-publica,madurez-digital
 

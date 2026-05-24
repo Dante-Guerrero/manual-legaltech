@@ -2,7 +2,7 @@
 
 - ID: 202605240053
 - Fuente: Hyun et al. (2021)
-- Archivo fuente: [hyun-2021-improvement-of-business-productivity-by-applying-robotic-process-automation.md](/Users/dante/github/manual-legaltech/+/y/papers_md/hyun-2021-improvement-of-business-productivity-by-applying-robotic-process-automation.md)
+- Archivo fuente: [hyun-2021-improvement-of-business-productivity-by-applying-robotic-process-automation.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/hyun-2021-improvement-of-business-productivity-by-applying-robotic-process-automation.md)
 - Capitulos potenciales: 4
 - Temas: rpa,productividad,tareas-repetitivas
 

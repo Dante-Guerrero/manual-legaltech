@@ -2,7 +2,7 @@
 
 - ID: 202605240025
 - Fuente: Sweigart (2015)
-- Archivo fuente: [sweigart-2015-automate-the-boring-stuff-with-python-practical-programming-for-total-beginners.md](/Users/dante/github/manual-legaltech/+/y/papers_md/sweigart-2015-automate-the-boring-stuff-with-python-practical-programming-for-total-beginners.md)
+- Archivo fuente: [sweigart-2015-automate-the-boring-stuff-with-python-practical-programming-for-total-beginners.md](/Users/dante/github/manual-legaltech/+/y/libros-manuales/markdown/sweigart-2015-automate-the-boring-stuff-with-python-practical-programming-for-total-beginners.md)
 - Capítulos potenciales: 2, 3, 4
 - Temas: principiantes, automatizacion, pedagogia, tareas-concretas
 

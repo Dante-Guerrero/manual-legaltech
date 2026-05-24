@@ -2,7 +2,7 @@
 
 - ID: 202605240015
 - Fuente: Huapaya Tapia
-- Archivo fuente: [huapaya-tapia-sf-reflexiones-para-el-transito-de-una-administracion-electronica-hacia-una-administracion-digital-en-el-ordenamiento-publico-peruano.md](/Users/dante/github/manual-legaltech/+/y/papers_md/huapaya-tapia-sf-reflexiones-para-el-transito-de-una-administracion-electronica-hacia-una-administracion-digital-en-el-ordenamiento-publico-peruano.md)
+- Archivo fuente: [huapaya-tapia-sf-reflexiones-para-el-transito-de-una-administracion-electronica-hacia-una-administracion-digital-en-el-ordenamiento-publico-peruano.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/huapaya-tapia-sf-reflexiones-para-el-transito-de-una-administracion-electronica-hacia-una-administracion-digital-en-el-ordenamiento-publico-peruano.md)
 - Capítulos potenciales: 4
 - Temas: administracion-digital, servicios-digitales, acceso, documentos
 

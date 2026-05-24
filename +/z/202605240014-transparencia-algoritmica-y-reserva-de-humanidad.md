@@ -2,7 +2,7 @@
 
 - ID: 202605240014
 - Fuente: Muñoz (2022)
-- Archivo fuente: [munoz-2022-el-control-judicial-de-la-actividad-administrativa-automatizada.md](/Users/dante/github/manual-legaltech/+/y/papers_md/munoz-2022-el-control-judicial-de-la-actividad-administrativa-automatizada.md)
+- Archivo fuente: [munoz-2022-el-control-judicial-de-la-actividad-administrativa-automatizada.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/munoz-2022-el-control-judicial-de-la-actividad-administrativa-automatizada.md)
 - Capítulos potenciales: 4
 - Temas: transparencia-algoritmica, supervision-humana, reserva-de-humanidad
 

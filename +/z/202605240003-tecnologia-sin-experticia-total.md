@@ -2,7 +2,7 @@
 
 - ID: 202605240003
 - Fuente: Volini (2020)
-- Archivo fuente: [volini-2020-a-perspective-on-technology-education-for-law-students.md](/Users/dante/github/manual-legaltech/+/y/papers_md/volini-2020-a-perspective-on-technology-education-for-law-students.md)
+- Archivo fuente: [volini-2020-a-perspective-on-technology-education-for-law-students.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/volini-2020-a-perspective-on-technology-education-for-law-students.md)
 - Capítulos potenciales: 2
 - Temas: educacion-juridica, tecnologia, criterio
 

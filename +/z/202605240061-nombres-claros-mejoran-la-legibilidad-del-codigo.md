@@ -2,7 +2,7 @@
 
 - ID: 202605240061
 - Fuente: Martin (2012)
-- Archivo fuente: [martin-2012-clean-code-a-handbook-of-agile-software-craftsmanship.md](/Users/dante/github/manual-legaltech/+/y/papers_md/martin-2012-clean-code-a-handbook-of-agile-software-craftsmanship.md)
+- Archivo fuente: [martin-2012-clean-code-a-handbook-of-agile-software-craftsmanship.md](/Users/dante/github/manual-legaltech/+/y/libros-manuales/markdown/martin-2012-clean-code-a-handbook-of-agile-software-craftsmanship.md)
 - Capitulos potenciales: 2, 3
 - Temas: legibilidad,codigo,nombres
 

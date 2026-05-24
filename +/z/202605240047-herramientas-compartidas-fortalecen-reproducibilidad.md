@@ -2,7 +2,7 @@
 
 - ID: 202605240047
 - Fuente: Gramfort et al. (2013)
-- Archivo fuente: [gramfort-2013-meg-and-eeg-data-analysis-with-mne-python.md](/Users/dante/github/manual-legaltech/+/y/papers_md/gramfort-2013-meg-and-eeg-data-analysis-with-mne-python.md)
+- Archivo fuente: [gramfort-2013-meg-and-eeg-data-analysis-with-mne-python.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/gramfort-2013-meg-and-eeg-data-analysis-with-mne-python.md)
 - Capitulos potenciales: 3
 - Temas: reproducibilidad,herramientas-compartidas,python
 

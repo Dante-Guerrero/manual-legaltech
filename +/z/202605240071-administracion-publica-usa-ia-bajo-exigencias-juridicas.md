@@ -2,7 +2,7 @@
 
 - ID: 202605240071
 - Fuente: Prieto (2023)
-- Archivo fuente: [prieto-2023-el-uso-de-sistemas-basados-en-inteligencia-artificial-por-las-administraciones-publicas-estado-actu.md](/Users/dante/github/manual-legaltech/+/y/papers_md/prieto-2023-el-uso-de-sistemas-basados-en-inteligencia-artificial-por-las-administraciones-publicas-estado-actu.md)
+- Archivo fuente: [prieto-2023-el-uso-de-sistemas-basados-en-inteligencia-artificial-por-las-administraciones-publicas-estado-actu.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/prieto-2023-el-uso-de-sistemas-basados-en-inteligencia-artificial-por-las-administraciones-publicas-estado-actu.md)
 - Capitulos potenciales: 4
 - Temas: administracion-publica,ia,exigencias-juridicas
 

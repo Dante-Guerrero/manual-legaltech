@@ -2,7 +2,7 @@
 
 - ID: 202605240036
 - Fuente: Coimbra y Feres (2021)
-- Archivo fuente: [coimbra-2021-o-caso-embraer-como-uma-antecipacao-efetiva-da-lei-no-10-973-2004.md](/Users/dante/github/manual-legaltech/+/y/papers_md/coimbra-2021-o-caso-embraer-como-uma-antecipacao-efetiva-da-lei-no-10-973-2004.md)
+- Archivo fuente: [coimbra-2021-o-caso-embraer-como-uma-antecipacao-efetiva-da-lei-no-10-973-2004.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/coimbra-2021-o-caso-embraer-como-uma-antecipacao-efetiva-da-lei-no-10-973-2004.md)
 - Capitulos potenciales: 4
 - Temas: instituciones,innovacion,regulacion
 

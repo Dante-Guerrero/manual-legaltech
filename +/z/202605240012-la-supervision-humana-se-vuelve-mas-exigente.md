@@ -2,7 +2,7 @@
 
 - ID: 202605240012
 - Fuente: Bainbridge (1983)
-- Archivo fuente: [bainbridge-1983-ironies-of-automation.md](/Users/dante/github/manual-legaltech/+/y/papers_md/bainbridge-1983-ironies-of-automation.md)
+- Archivo fuente: [bainbridge-1983-ironies-of-automation.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/bainbridge-1983-ironies-of-automation.md)
 - Capítulos potenciales: 4
 - Temas: ironias-de-la-automatizacion, supervision-humana, riesgo
 

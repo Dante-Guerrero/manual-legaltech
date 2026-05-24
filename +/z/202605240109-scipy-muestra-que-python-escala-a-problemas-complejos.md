@@ -2,7 +2,7 @@
 
 - ID: 202605240109
 - Fuente: Virtanen et al. (2020)
-- Archivo fuente: [virtanen-2020-scipy-1-0.md](/Users/dante/github/manual-legaltech/+/y/papers_md/virtanen-2020-scipy-1-0.md)
+- Archivo fuente: [virtanen-2020-scipy-1-0.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/virtanen-2020-scipy-1-0.md)
 - Capitulos potenciales: 3
 - Temas: scipy,escala,python
 

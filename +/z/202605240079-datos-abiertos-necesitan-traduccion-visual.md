@@ -2,7 +2,7 @@
 
 - ID: 202605240079
 - Fuente: Schrarstzhaupt et al. (2024)
-- Archivo fuente: [schrarstzhaupt-2024-paineis-de-monitoramento-interativos-da-pandemia-de-covid-19-no-mundo-com-o-uso-de-dados-abertos-ant.md](/Users/dante/github/manual-legaltech/+/y/papers_md/schrarstzhaupt-2024-paineis-de-monitoramento-interativos-da-pandemia-de-covid-19-no-mundo-com-o-uso-de-dados-abertos-ant.md)
+- Archivo fuente: [schrarstzhaupt-2024-paineis-de-monitoramento-interativos-da-pandemia-de-covid-19-no-mundo-com-o-uso-de-dados-abertos-ant.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/schrarstzhaupt-2024-paineis-de-monitoramento-interativos-da-pandemia-de-covid-19-no-mundo-com-o-uso-de-dados-abertos-ant.md)
 - Capitulos potenciales: 3, 4
 - Temas: datos-abiertos,visualizacion,paneles
 

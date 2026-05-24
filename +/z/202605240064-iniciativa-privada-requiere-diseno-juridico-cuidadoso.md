@@ -2,7 +2,7 @@
 
 - ID: 202605240064
 - Fuente: Martin Tirado (s.f.)
-- Archivo fuente: [martin-tirado-sf-balance-y-perspectivas-del-regimen-de-las-iniciativas-privadas-en-el-peru.md](/Users/dante/github/manual-legaltech/+/y/papers_md/martin-tirado-sf-balance-y-perspectivas-del-regimen-de-las-iniciativas-privadas-en-el-peru.md)
+- Archivo fuente: [martin-tirado-sf-balance-y-perspectivas-del-regimen-de-las-iniciativas-privadas-en-el-peru.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/martin-tirado-sf-balance-y-perspectivas-del-regimen-de-las-iniciativas-privadas-en-el-peru.md)
 - Capitulos potenciales: 4
 - Temas: diseno-juridico,participacion-privada,regulacion
 

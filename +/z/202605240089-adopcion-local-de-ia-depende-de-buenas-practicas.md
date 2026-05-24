@@ -2,7 +2,7 @@
 
 - ID: 202605240089
 - Fuente: Yigitcanlar et al. (2024)
-- Archivo fuente: [yigitcanlar-2024-unlocking-artificial-intelligence-adoption-in-local-governments-best-practice-lessons-from-real-wor.md](/Users/dante/github/manual-legaltech/+/y/papers_md/yigitcanlar-2024-unlocking-artificial-intelligence-adoption-in-local-governments-best-practice-lessons-from-real-wor.md)
+- Archivo fuente: [yigitcanlar-2024-unlocking-artificial-intelligence-adoption-in-local-governments-best-practice-lessons-from-real-wor.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/yigitcanlar-2024-unlocking-artificial-intelligence-adoption-in-local-governments-best-practice-lessons-from-real-wor.md)
 - Capitulos potenciales: 4
 - Temas: gobiernos-locales,buenas-practicas,ia
 

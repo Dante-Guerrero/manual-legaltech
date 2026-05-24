@@ -27,8 +27,8 @@ Construir un manual universitario práctico para estudiantes de Derecho, orienta
 
 La carpeta [+](/Users/dante/github/manual-legaltech/+) concentra el sistema auxiliar del proyecto:
 
-- [+/x](/Users/dante/github/manual-legaltech/+/x): instrucciones operativas y scripts.
-- [+/y](/Users/dante/github/manual-legaltech/+/y): papers en PDF y sus conversiones a Markdown.
+- [+/x](/Users/dante/github/manual-legaltech/+/x): editorial, instrucciones operativas y scripts.
+- [+/y](/Users/dante/github/manual-legaltech/+/y): repositorio documental clasificado por tipo, con PDF y conversiones a Markdown.
 - [+/z](/Users/dante/github/manual-legaltech/+/z): notas atómicas en lógica zettelkasten.
 
 Punto de entrada recomendado:
@@ -52,11 +52,13 @@ Vista previa local:
 quarto preview
 ```
 
-Convertir nuevos papers agregados a `+/y/papers`:
+Convertir nuevos documentos agregados a una categoría de `+/y`:
 
 ```bash
-./+/x/scripts/convert_papers.sh --new
+./+/x/scripts/convert_documents.sh papers --new
 ```
+
+La misma lógica funciona para `normas`, `libros-manuales` y `jurisprudencia`.
 
 ## Criterio editorial
 

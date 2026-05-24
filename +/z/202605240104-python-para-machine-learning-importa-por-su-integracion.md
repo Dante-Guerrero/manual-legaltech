@@ -2,7 +2,7 @@
 
 - ID: 202605240104
 - Fuente: Raschka et al. (2020)
-- Archivo fuente: [raschka-2020-machine-learning-in-python.md](/Users/dante/github/manual-legaltech/+/y/papers_md/raschka-2020-machine-learning-in-python.md)
+- Archivo fuente: [raschka-2020-machine-learning-in-python.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/raschka-2020-machine-learning-in-python.md)
 - Capitulos potenciales: 3, 4
 - Temas: machine-learning,integracion,python
 

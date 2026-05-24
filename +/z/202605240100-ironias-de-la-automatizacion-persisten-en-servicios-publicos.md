@@ -2,7 +2,7 @@
 
 - ID: 202605240100
 - Fuente: Lindgren (2024)
-- Archivo fuente: [lindgren-2024-ironies-of-automation-and-their-implications-for-public-service-automation.md](/Users/dante/github/manual-legaltech/+/y/papers_md/lindgren-2024-ironies-of-automation-and-their-implications-for-public-service-automation.md)
+- Archivo fuente: [lindgren-2024-ironies-of-automation-and-their-implications-for-public-service-automation.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/lindgren-2024-ironies-of-automation-and-their-implications-for-public-service-automation.md)
 - Capitulos potenciales: 4
 - Temas: servicios-publicos,ironias,automatizacion
 

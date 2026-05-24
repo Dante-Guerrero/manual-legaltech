@@ -2,7 +2,7 @@
 
 - ID: 202605240110
 - Fuente: Volini (2020)
-- Archivo fuente: [volini-2020-a-perspective-on-technology-education-for-law-students.md](/Users/dante/github/manual-legaltech/+/y/papers_md/volini-2020-a-perspective-on-technology-education-for-law-students.md)
+- Archivo fuente: [volini-2020-a-perspective-on-technology-education-for-law-students.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/volini-2020-a-perspective-on-technology-education-for-law-students.md)
 - Capitulos potenciales: 2
 - Temas: formacion-profesional,educacion-tecnologica,juristas
 

@@ -2,7 +2,7 @@
 
 - ID: 202605240022
 - Fuente: Pedregosa et al. (2011)
-- Archivo fuente: [pedregosa-2011-scikit-learn.md](/Users/dante/github/manual-legaltech/+/y/papers_md/pedregosa-2011-scikit-learn.md)
+- Archivo fuente: [pedregosa-2011-scikit-learn.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/pedregosa-2011-scikit-learn.md)
 - Capítulos potenciales: 3, 4
 - Temas: python, no-especialistas, aprendizaje, accesibilidad
 

@@ -2,7 +2,7 @@
 
 - ID: 202605240033
 - Fuente: Canongia et al. (2004)
-- Archivo fuente: [canongia-2004-foresight-inteligencia-competitiva-e-gestao-do-conhecimento-instrumentos-para-a-gestao-da-inovacao.md](/Users/dante/github/manual-legaltech/+/y/papers_md/canongia-2004-foresight-inteligencia-competitiva-e-gestao-do-conhecimento-instrumentos-para-a-gestao-da-inovacao.md)
+- Archivo fuente: [canongia-2004-foresight-inteligencia-competitiva-e-gestao-do-conhecimento-instrumentos-para-a-gestao-da-inovacao.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/canongia-2004-foresight-inteligencia-competitiva-e-gestao-do-conhecimento-instrumentos-para-a-gestao-da-inovacao.md)
 - Capitulos potenciales: 3, 4
 - Temas: innovacion,decision,informacion
 

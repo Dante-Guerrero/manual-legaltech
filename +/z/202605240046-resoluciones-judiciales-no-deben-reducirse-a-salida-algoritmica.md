@@ -2,7 +2,7 @@
 
 - ID: 202605240046
 - Fuente: Gomez (2025)
-- Archivo fuente: [gomez-2025-la-operatividad-de-la-inteligencia-artificial-aplicada-a-las-resoluciones-judiciales.md](/Users/dante/github/manual-legaltech/+/y/papers_md/gomez-2025-la-operatividad-de-la-inteligencia-artificial-aplicada-a-las-resoluciones-judiciales.md)
+- Archivo fuente: [gomez-2025-la-operatividad-de-la-inteligencia-artificial-aplicada-a-las-resoluciones-judiciales.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/gomez-2025-la-operatividad-de-la-inteligencia-artificial-aplicada-a-las-resoluciones-judiciales.md)
 - Capitulos potenciales: 4
 - Temas: resoluciones-judiciales,algoritmos,motivacion
 

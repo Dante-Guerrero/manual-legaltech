@@ -2,7 +2,7 @@
 
 - ID: 202605240093
 - Fuente: Almeyda et al. (2025)
-- Archivo fuente: [almeyda-2025-automatizacion-robotica-de-procesos-aplicado-a-los-procesos-de-compra-un-caso-de-la-industria.md](/Users/dante/github/manual-legaltech/+/y/papers_md/almeyda-2025-automatizacion-robotica-de-procesos-aplicado-a-los-procesos-de-compra-un-caso-de-la-industria.md)
+- Archivo fuente: [almeyda-2025-automatizacion-robotica-de-procesos-aplicado-a-los-procesos-de-compra-un-caso-de-la-industria.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/almeyda-2025-automatizacion-robotica-de-procesos-aplicado-a-los-procesos-de-compra-un-caso-de-la-industria.md)
 - Capitulos potenciales: 4
 - Temas: estandarizacion,compras,rpa
 

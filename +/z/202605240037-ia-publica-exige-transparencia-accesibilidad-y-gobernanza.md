@@ -2,7 +2,7 @@
 
 - ID: 202605240037
 - Fuente: Ferraz (2025)
-- Archivo fuente: [ferraz-2025-inteligencia-artificial-na-administracao-publica-caminhos-para-a-transparencia-acessibilidade-e-go.md](/Users/dante/github/manual-legaltech/+/y/papers_md/ferraz-2025-inteligencia-artificial-na-administracao-publica-caminhos-para-a-transparencia-acessibilidade-e-go.md)
+- Archivo fuente: [ferraz-2025-inteligencia-artificial-na-administracao-publica-caminhos-para-a-transparencia-acessibilidade-e-go.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/ferraz-2025-inteligencia-artificial-na-administracao-publica-caminhos-para-a-transparencia-acessibilidade-e-go.md)
 - Capitulos potenciales: 4
 - Temas: ia-publica,transparencia,accesibilidad,gobernanza
 

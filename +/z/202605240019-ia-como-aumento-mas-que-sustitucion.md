@@ -2,7 +2,7 @@
 
 - ID: 202605240019
 - Fuente: Maita-Cruz et al. (2022)
-- Archivo fuente: [maita-cruz-2022-inteligencia-artificial-en-la-gestion-publica-en-tiempos-de-covid-19.md](/Users/dante/github/manual-legaltech/+/y/papers_md/maita-cruz-2022-inteligencia-artificial-en-la-gestion-publica-en-tiempos-de-covid-19.md)
+- Archivo fuente: [maita-cruz-2022-inteligencia-artificial-en-la-gestion-publica-en-tiempos-de-covid-19.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/maita-cruz-2022-inteligencia-artificial-en-la-gestion-publica-en-tiempos-de-covid-19.md)
 - Capítulos potenciales: 4
 - Temas: aumento, sustitucion, trabajo-profesional, inteligencia-artificial
 

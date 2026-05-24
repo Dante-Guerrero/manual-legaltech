@@ -2,7 +2,7 @@
 
 - ID: 202605240066
 - Fuente: Paez et al. (2025)
-- Archivo fuente: [paez-2025-hacia-una-inteligencia-artificial-centrada-en-los-seres-humanos-contribuciones-de-las-ciencias-soci.md](/Users/dante/github/manual-legaltech/+/y/papers_md/paez-2025-hacia-una-inteligencia-artificial-centrada-en-los-seres-humanos-contribuciones-de-las-ciencias-soci.md)
+- Archivo fuente: [paez-2025-hacia-una-inteligencia-artificial-centrada-en-los-seres-humanos-contribuciones-de-las-ciencias-soci.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/paez-2025-hacia-una-inteligencia-artificial-centrada-en-los-seres-humanos-contribuciones-de-las-ciencias-soci.md)
 - Capitulos potenciales: 4
 - Temas: evaluacion,ia,dimensiones-sociales
 

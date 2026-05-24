@@ -2,7 +2,7 @@
 
 - ID: 202605240105
 - Fuente: Reina (2024)
-- Archivo fuente: [reina-2024-la-transparencia-de-los-algoritmos-desde-la-normativa-sobre-transparencia-y-acceso-a-la-informacion.md](/Users/dante/github/manual-legaltech/+/y/papers_md/reina-2024-la-transparencia-de-los-algoritmos-desde-la-normativa-sobre-transparencia-y-acceso-a-la-informacion.md)
+- Archivo fuente: [reina-2024-la-transparencia-de-los-algoritmos-desde-la-normativa-sobre-transparencia-y-acceso-a-la-informacion.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/reina-2024-la-transparencia-de-los-algoritmos-desde-la-normativa-sobre-transparencia-y-acceso-a-la-informacion.md)
 - Capitulos potenciales: 4
 - Temas: transparencia,informacion-accionable,algoritmos
 

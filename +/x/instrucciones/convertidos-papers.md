@@ -1,8 +1,8 @@
-# Papers convertidos
+# Documentos convertidos: papers
 
-Lista de PDF en `+/y/papers` que ya tienen su equivalente en Markdown dentro de `+/y/papers_md`.
+Lista de PDF en `+/y/papers/pdf` que ya tienen su equivalente en Markdown dentro de `+/y/papers/markdown`.
 
-Total: 55
+Total: 53
 
 - `almeyda-2025-automatizacion-robotica-de-procesos-aplicado-a-los-procesos-de-compra-un-caso-de-la-industria.pdf`
 - `alvarez-vega-2024-inteligencia-artificial-en-la-fiscalizacion-tributaria-desafios-al-debido-proceso-administrativo.pdf`
@@ -29,7 +29,6 @@ Total: 55
 - `lindgren-2024-ironies-of-automation-and-their-implications-for-public-service-automation.pdf`
 - `lopez-2023-la-regulacion-europea-de-los-mercados-digitales-justificacion-tecnicas-y-limites.pdf`
 - `maita-cruz-2022-inteligencia-artificial-en-la-gestion-publica-en-tiempos-de-covid-19.pdf`
-- `martin-2012-clean-code-a-handbook-of-agile-software-craftsmanship.pdf`
 - `martin-delgado-2009-naturaleza-concepto-y-regimen-juridico-de-la-actuacion-administrativa-automatizada.pdf`
 - `martin-tirado-sf-balance-y-perspectivas-del-regimen-de-las-iniciativas-privadas-en-el-peru.pdf`
 - `meurer-2017-sympy.pdf`
@@ -51,7 +50,6 @@ Total: 55
 - `savelka-2021-a-law-school-course-in-applied-legal-analytics-and-ai.pdf`
 - `schrarstzhaupt-2024-paineis-de-monitoramento-interativos-da-pandemia-de-covid-19-no-mundo-com-o-uso-de-dados-abertos-ant.pdf`
 - `sobczak-2021-the-use-of-robotic-process-automation-rpa-as-an-element-of-smart-city-implementation-a-case-study.pdf`
-- `sweigart-2015-automate-the-boring-stuff-with-python-practical-programming-for-total-beginners.pdf`
 - `valdivia-2016-la-participacion-de-los-privados-en-la-actividad-de-supervision-en-el-sector-electrico-peruano-brev.pdf`
 - `valdivia-2019-los-servicios-publicos-locales-en-el-peru-una-aproximacion-a-su-caracterizacion-juridica.pdf`
 - `van-der-walt-2014-scikit-image.pdf`

@@ -2,7 +2,7 @@
 
 - ID: 202605240032
 - Fuente: Arsene y Mabi (2021)
-- Archivo fuente: [arsene-2021-laction-publique-au-prisme-de-la-gouvernementalite-numerique.md](/Users/dante/github/manual-legaltech/+/y/papers_md/arsene-2021-laction-publique-au-prisme-de-la-gouvernementalite-numerique.md)
+- Archivo fuente: [arsene-2021-laction-publique-au-prisme-de-la-gouvernementalite-numerique.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/arsene-2021-laction-publique-au-prisme-de-la-gouvernementalite-numerique.md)
 - Capitulos potenciales: 4
 - Temas: accion-publica,analisis-situado,implementacion
 

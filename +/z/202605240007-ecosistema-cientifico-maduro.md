@@ -2,7 +2,7 @@
 
 - ID: 202605240007
 - Fuente: Virtanen et al. (2020)
-- Archivo fuente: [virtanen-2020-scipy-1-0.md](/Users/dante/github/manual-legaltech/+/y/papers_md/virtanen-2020-scipy-1-0.md)
+- Archivo fuente: [virtanen-2020-scipy-1-0.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/virtanen-2020-scipy-1-0.md)
 - Capítulos potenciales: 3
 - Temas: scipy, madurez-tecnica, ecosistema
 

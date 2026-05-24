@@ -2,7 +2,7 @@
 
 - ID: 202605240006
 - Fuente: Raschka et al. (2020)
-- Archivo fuente: [raschka-2020-machine-learning-in-python.md](/Users/dante/github/manual-legaltech/+/y/papers_md/raschka-2020-machine-learning-in-python.md)
+- Archivo fuente: [raschka-2020-machine-learning-in-python.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/raschka-2020-machine-learning-in-python.md)
 - Capítulos potenciales: 2, 3
 - Temas: python, ecosistema, datos, ia
 

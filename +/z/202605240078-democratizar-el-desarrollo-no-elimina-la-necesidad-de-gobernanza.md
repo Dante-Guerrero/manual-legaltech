@@ -2,7 +2,7 @@
 
 - ID: 202605240078
 - Fuente: Sanchez Borja y Recalde Araujo (2025)
-- Archivo fuente: [sanchez-borja-2025-adopcion-de-plataformas-de-desarrollo-low-code-no-code-democratizacion-del-desarrollo-de-software.md](/Users/dante/github/manual-legaltech/+/y/papers_md/sanchez-borja-2025-adopcion-de-plataformas-de-desarrollo-low-code-no-code-democratizacion-del-desarrollo-de-software.md)
+- Archivo fuente: [sanchez-borja-2025-adopcion-de-plataformas-de-desarrollo-low-code-no-code-democratizacion-del-desarrollo-de-software.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/sanchez-borja-2025-adopcion-de-plataformas-de-desarrollo-low-code-no-code-democratizacion-del-desarrollo-de-software.md)
 - Capitulos potenciales: 4
 - Temas: gobernanza,low-code,no-code
 

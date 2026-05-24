@@ -2,7 +2,7 @@
 
 - ID: 202605240024
 - Fuente: Meurer et al. (2017)
-- Archivo fuente: [meurer-2017-sympy.md](/Users/dante/github/manual-legaltech/+/y/papers_md/meurer-2017-sympy.md)
+- Archivo fuente: [meurer-2017-sympy.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/meurer-2017-sympy.md)
 - Capítulos potenciales: 3, 4
 - Temas: python, software-libre, extensibilidad, ecosistema
 

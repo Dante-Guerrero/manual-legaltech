@@ -2,7 +2,7 @@
 
 - ID: 202605240103
 - Fuente: Munoz (2022)
-- Archivo fuente: [munoz-2022-el-control-judicial-de-la-actividad-administrativa-automatizada.md](/Users/dante/github/manual-legaltech/+/y/papers_md/munoz-2022-el-control-judicial-de-la-actividad-administrativa-automatizada.md)
+- Archivo fuente: [munoz-2022-el-control-judicial-de-la-actividad-administrativa-automatizada.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/munoz-2022-el-control-judicial-de-la-actividad-administrativa-automatizada.md)
 - Capitulos potenciales: 4
 - Temas: control-judicial,explicacion,acceso
 

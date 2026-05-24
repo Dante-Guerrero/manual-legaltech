@@ -2,7 +2,7 @@
 
 - ID: 202605240016
 - Fuente: Ocaña-Fernández et al. (2021)
-- Archivo fuente: [ocana-fernandez-2021-inteligencia-artificial-ia-aplicada-a-la-gestion-publica.md](/Users/dante/github/manual-legaltech/+/y/papers_md/ocana-fernandez-2021-inteligencia-artificial-ia-aplicada-a-la-gestion-publica.md)
+- Archivo fuente: [ocana-fernandez-2021-inteligencia-artificial-ia-aplicada-a-la-gestion-publica.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/ocana-fernandez-2021-inteligencia-artificial-ia-aplicada-a-la-gestion-publica.md)
 - Capítulos potenciales: 4
 - Temas: gestion-publica, inteligencia-artificial, riesgos, gobernanza
 

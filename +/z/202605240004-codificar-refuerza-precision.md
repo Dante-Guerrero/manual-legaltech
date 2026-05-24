@@ -2,7 +2,7 @@
 
 - ID: 202605240004
 - Fuente: Ryan (2021)
-- Archivo fuente: [ryan-2021-coding-for-critical-thinking.md](/Users/dante/github/manual-legaltech/+/y/papers_md/ryan-2021-coding-for-critical-thinking.md)
+- Archivo fuente: [ryan-2021-coding-for-critical-thinking.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/ryan-2021-coding-for-critical-thinking.md)
 - Capítulos potenciales: 2, 3
 - Temas: pensamiento-critico, precision, revision
 

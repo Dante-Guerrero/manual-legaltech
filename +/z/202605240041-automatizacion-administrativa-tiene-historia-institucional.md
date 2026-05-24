@@ -2,7 +2,7 @@
 
 - ID: 202605240041
 - Fuente: Garcia y Cuello (2007)
-- Archivo fuente: [garcia-2007-lactuacio-administrativa-automatitzada-algunes-experiencies-en-lambit-tributari.md](/Users/dante/github/manual-legaltech/+/y/papers_md/garcia-2007-lactuacio-administrativa-automatitzada-algunes-experiencies-en-lambit-tributari.md)
+- Archivo fuente: [garcia-2007-lactuacio-administrativa-automatitzada-algunes-experiencies-en-lambit-tributari.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/garcia-2007-lactuacio-administrativa-automatitzada-algunes-experiencies-en-lambit-tributari.md)
 - Capitulos potenciales: 4
 - Temas: automatizacion-administrativa,historia-institucional,tributario
 

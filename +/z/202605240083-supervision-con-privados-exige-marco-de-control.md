@@ -2,7 +2,7 @@
 
 - ID: 202605240083
 - Fuente: Valdivia (2016)
-- Archivo fuente: [valdivia-2016-la-participacion-de-los-privados-en-la-actividad-de-supervision-en-el-sector-electrico-peruano-brev.md](/Users/dante/github/manual-legaltech/+/y/papers_md/valdivia-2016-la-participacion-de-los-privados-en-la-actividad-de-supervision-en-el-sector-electrico-peruano-brev.md)
+- Archivo fuente: [valdivia-2016-la-participacion-de-los-privados-en-la-actividad-de-supervision-en-el-sector-electrico-peruano-brev.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/valdivia-2016-la-participacion-de-los-privados-en-la-actividad-de-supervision-en-el-sector-electrico-peruano-brev.md)
 - Capitulos potenciales: 4
 - Temas: supervision,privados,control-publico
 

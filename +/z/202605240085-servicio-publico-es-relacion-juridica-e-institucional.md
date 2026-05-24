@@ -2,7 +2,7 @@
 
 - ID: 202605240085
 - Fuente: Valdivia (2019)
-- Archivo fuente: [valdivia-2019-los-servicios-publicos-locales-en-el-peru-una-aproximacion-a-su-caracterizacion-juridica.md](/Users/dante/github/manual-legaltech/+/y/papers_md/valdivia-2019-los-servicios-publicos-locales-en-el-peru-una-aproximacion-a-su-caracterizacion-juridica.md)
+- Archivo fuente: [valdivia-2019-los-servicios-publicos-locales-en-el-peru-una-aproximacion-a-su-caracterizacion-juridica.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/valdivia-2019-los-servicios-publicos-locales-en-el-peru-una-aproximacion-a-su-caracterizacion-juridica.md)
 - Capitulos potenciales: 4
 - Temas: servicio-publico,caracterizacion,juridica
 

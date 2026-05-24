@@ -2,7 +2,7 @@
 
 - ID: 202605240087
 - Fuente: Van der Walt et al. (2014)
-- Archivo fuente: [van-der-walt-2014-scikit-image.md](/Users/dante/github/manual-legaltech/+/y/papers_md/van-der-walt-2014-scikit-image.md)
+- Archivo fuente: [van-der-walt-2014-scikit-image.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/van-der-walt-2014-scikit-image.md)
 - Capitulos potenciales: 3
 - Temas: procesamiento-de-imagenes,python,ecosistema
 

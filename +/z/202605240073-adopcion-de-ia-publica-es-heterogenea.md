@@ -2,7 +2,7 @@
 
 - ID: 202605240073
 - Fuente: Ribeiro y Segatto (2025)
-- Archivo fuente: [ribeiro-2025-inteligencia-artificial-nas-organizacoes-publicas-brasileiras-heterogeneidades-e-capacidades-em-tec.md](/Users/dante/github/manual-legaltech/+/y/papers_md/ribeiro-2025-inteligencia-artificial-nas-organizacoes-publicas-brasileiras-heterogeneidades-e-capacidades-em-tec.md)
+- Archivo fuente: [ribeiro-2025-inteligencia-artificial-nas-organizacoes-publicas-brasileiras-heterogeneidades-e-capacidades-em-tec.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/ribeiro-2025-inteligencia-artificial-nas-organizacoes-publicas-brasileiras-heterogeneidades-e-capacidades-em-tec.md)
 - Capitulos potenciales: 4
 - Temas: heterogeneidad,ia-publica,adopcion
 

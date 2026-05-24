@@ -2,7 +2,7 @@
 
 - ID: 202605240051
 - Fuente: Huapaya Tapia (s.f.)
-- Archivo fuente: [huapaya-tapia-sf-propuesta-de-una-nueva-interpretacion-del-concepto-de-acto-administrativo-contenido-en-la-ley-de-procedimiento-administrativo-general.md](/Users/dante/github/manual-legaltech/+/y/papers_md/huapaya-tapia-sf-propuesta-de-una-nueva-interpretacion-del-concepto-de-acto-administrativo-contenido-en-la-ley-de-procedimiento-administrativo-general.md)
+- Archivo fuente: [huapaya-tapia-sf-propuesta-de-una-nueva-interpretacion-del-concepto-de-acto-administrativo-contenido-en-la-ley-de-procedimiento-administrativo-general.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/huapaya-tapia-sf-propuesta-de-una-nueva-interpretacion-del-concepto-de-acto-administrativo-contenido-en-la-ley-de-procedimiento-administrativo-general.md)
 - Capitulos potenciales: 4
 - Temas: acto-administrativo,relectura,digitalizacion
 

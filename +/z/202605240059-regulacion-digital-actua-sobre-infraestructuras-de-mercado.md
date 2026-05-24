@@ -2,7 +2,7 @@
 
 - ID: 202605240059
 - Fuente: Lopez (2023)
-- Archivo fuente: [lopez-2023-la-regulacion-europea-de-los-mercados-digitales-justificacion-tecnicas-y-limites.md](/Users/dante/github/manual-legaltech/+/y/papers_md/lopez-2023-la-regulacion-europea-de-los-mercados-digitales-justificacion-tecnicas-y-limites.md)
+- Archivo fuente: [lopez-2023-la-regulacion-europea-de-los-mercados-digitales-justificacion-tecnicas-y-limites.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/lopez-2023-la-regulacion-europea-de-los-mercados-digitales-justificacion-tecnicas-y-limites.md)
 - Capitulos potenciales: 4
 - Temas: mercados-digitales,regulacion,infraestructura
 

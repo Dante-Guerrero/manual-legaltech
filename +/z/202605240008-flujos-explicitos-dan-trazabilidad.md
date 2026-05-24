@@ -2,7 +2,7 @@
 
 - ID: 202605240008
 - Fuente: Gorgolewski et al. (2011)
-- Archivo fuente: [gorgolewski-2011-nipype.md](/Users/dante/github/manual-legaltech/+/y/papers_md/gorgolewski-2011-nipype.md)
+- Archivo fuente: [gorgolewski-2011-nipype.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/gorgolewski-2011-nipype.md)
 - Capítulos potenciales: 3, 4
 - Temas: workflow, trazabilidad, reproducibilidad
 

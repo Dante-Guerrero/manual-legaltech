@@ -2,7 +2,7 @@
 
 - ID: 202605240001
 - Fuente: Contreras y McGrath (2020)
-- Archivo fuente: [contreras-2020-law-technology-and-pedagogy.md](/Users/dante/github/manual-legaltech/+/y/papers_md/contreras-2020-law-technology-and-pedagogy.md)
+- Archivo fuente: [contreras-2020-law-technology-and-pedagogy.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/contreras-2020-law-technology-and-pedagogy.md)
 - Capítulos potenciales: 2, 3
 - Temas: educacion-juridica, codigo, alfabetizacion-tecnologica
 

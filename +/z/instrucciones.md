@@ -7,21 +7,21 @@ La carpeta `+/z` sigue una lógica inspirada en **zettelkasten** para apoyar la 
 Cada archivo Markdown de `+/z` debe contener:
 
 - **una sola idea principal**;
-- una referencia clara al paper del que fue extraída;
+- una referencia clara al documento del que fue extraída;
 - indicación de en qué capítulos del manual podría servir;
 - una formulación breve de por qué esa idea importa;
 - si es posible, una frase o paráfrasis utilizable después en el libro.
 
-La unidad no es “un paper”, sino **una idea reutilizable**.
+La unidad no es “un documento”, sino **una idea reutilizable**.
 
 ## Para qué sirve
 
 Estas notas permiten:
 
-- no volver a leer todos los papers cada vez que se quiera insertar citas;
-- detectar más de una posible cita por documento;
+- no volver a leer todos los documentos cada vez que se quiera insertar citas;
+- detectar más de una posible cita por fuente;
 - construir argumentos del manual a partir de ideas pequeñas y combinables;
-- mantener trazabilidad entre el libro y los materiales de `+/y/papers_md`.
+- mantener trazabilidad entre el libro y los materiales de `+/y/<tipo>/markdown`.
 
 ## Formato sugerido de cada nota
 
@@ -29,8 +29,8 @@ Estas notas permiten:
 # Título de la idea
 
 - ID: 202605240001
-- Fuente: autor-año-titulo-del-paper
-- Archivo fuente: ruta al `.md` en `+/y/papers_md`
+- Fuente: autor-año-titulo-del-documento
+- Archivo fuente: ruta al `.md` en `+/y/<tipo>/markdown`
 - Capítulos potenciales: 2, 3, 4
 - Temas: palabra-clave-1, palabra-clave-2
 
@@ -54,16 +54,16 @@ Una o dos frases que luego puedan adaptarse al capítulo.
 
 ## Regla práctica
 
-Si de un mismo paper salen tres ideas distintas, deben crearse **tres notas distintas**.
+Si de un mismo documento salen tres ideas distintas, deben crearse **tres notas distintas**.
 
 ## Flujo recomendado
 
-1. Leer o revisar el paper convertido en `+/y/papers_md`.
+1. Leer o revisar el documento convertido en `+/y/<tipo>/markdown`.
 2. Identificar una idea realmente utilizable para el manual.
 3. Crear una nota nueva en `+/z` con esa sola idea.
-4. Vincularla al paper de origen.
+4. Vincularla al documento de origen.
 5. Indicar en qué capítulos podría servir.
-6. Si después se actualiza `+/x/instrucciones/propuestas-citas-capitulos-2-3-4.md`, usar primero las notas de `+/z` en lugar de reempezar desde cero.
+6. Si después se actualiza un documento de propuestas de citas, usar primero las notas de `+/z` en lugar de reempezar desde cero.
 
 ## Convención de nombres
 
@@ -77,9 +77,9 @@ Ejemplo:
 
 ## Regla de mantenimiento
 
-Cuando se agreguen nuevos papers y se conviertan a Markdown:
+Cuando se agreguen nuevos documentos y se conviertan a Markdown:
 
 - revisar primero si ya existe una nota atómica equivalente;
 - si no existe, crear una nueva;
-- si el mismo paper permite varias ideas, crear varias notas;
+- si el mismo documento permite varias ideas, crear varias notas;
 - evitar notas demasiado grandes o que mezclen argumentos heterogéneos.

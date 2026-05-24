@@ -1,6 +1,6 @@
 # Propuestas de citas para capítulos 2, 3 y 4
 
-Este documento vuelve a contrastar los capítulos 2, 3 y 4 con `+/y/papers_md`, pero ahora con un criterio más exigente: **procurar que cada paper relevante ofrezca más de una cita potencial**. Por eso, en lugar de sugerir un solo lugar de inserción por documento, aquí se indican **dos o más ubicaciones posibles** cuando el contenido del paper realmente lo permite.
+Este documento vuelve a contrastar los capítulos 2, 3 y 4 con `+/y/papers/markdown`, pero ahora con un criterio más exigente: **procurar que cada paper relevante ofrezca más de una cita potencial**. Por eso, en lugar de sugerir un solo lugar de inserción por documento, aquí se indican **dos o más ubicaciones posibles** cuando el contenido del paper realmente lo permite.
 
 La lógica general es simple:
 
@@ -52,7 +52,7 @@ El capítulo 2 ya articula bien la justificación general de Python para estudia
 ### Romo-Santana y Mora-Poveda (2023)
 
 Archivo base:
-[romo-santana-2023-el-negocio-del-legal-tech-una-revision-bibliografica.md](/Users/dante/github/manual-legaltech/+/y/papers_md/romo-santana-2023-el-negocio-del-legal-tech-una-revision-bibliografica.md)
+[romo-santana-2023-el-negocio-del-legal-tech-una-revision-bibliografica.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/romo-santana-2023-el-negocio-del-legal-tech-una-revision-bibliografica.md)
 
 Clave sugerida:
 `romo2023legaltech`
@@ -78,7 +78,7 @@ Clave sugerida:
 ### Volini (2020)
 
 Archivo base:
-[volini-2020-a-perspective-on-technology-education-for-law-students.md](/Users/dante/github/manual-legaltech/+/y/papers_md/volini-2020-a-perspective-on-technology-education-for-law-students.md)
+[volini-2020-a-perspective-on-technology-education-for-law-students.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/volini-2020-a-perspective-on-technology-education-for-law-students.md)
 
 Clave:
 `volini2020technology`
@@ -121,7 +121,7 @@ Este capítulo necesita apoyo bibliográfico en dos niveles:
 ### Contreras y McGrath (2020)
 
 Archivo base:
-[contreras-2020-law-technology-and-pedagogy.md](/Users/dante/github/manual-legaltech/+/y/papers_md/contreras-2020-law-technology-and-pedagogy.md)
+[contreras-2020-law-technology-and-pedagogy.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/contreras-2020-law-technology-and-pedagogy.md)
 
 Clave:
 `contreras2020pedagogy`
@@ -147,7 +147,7 @@ Clave:
 ### Ryan (2021)
 
 Archivo base:
-[ryan-2021-coding-for-critical-thinking.md](/Users/dante/github/manual-legaltech/+/y/papers_md/ryan-2021-coding-for-critical-thinking.md)
+[ryan-2021-coding-for-critical-thinking.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/ryan-2021-coding-for-critical-thinking.md)
 
 Clave:
 `ryan2021coding`
@@ -173,7 +173,7 @@ Clave:
 ### Savelka et al. (2021)
 
 Archivo base:
-[savelka-2021-a-law-school-course-in-applied-legal-analytics-and-ai.md](/Users/dante/github/manual-legaltech/+/y/papers_md/savelka-2021-a-law-school-course-in-applied-legal-analytics-and-ai.md)
+[savelka-2021-a-law-school-course-in-applied-legal-analytics-and-ai.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/savelka-2021-a-law-school-course-in-applied-legal-analytics-and-ai.md)
 
 Clave:
 `savelka2021applied`
@@ -199,7 +199,7 @@ Clave:
 ### Raschka et al. (2020)
 
 Archivo base:
-[raschka-2020-machine-learning-in-python.md](/Users/dante/github/manual-legaltech/+/y/papers_md/raschka-2020-machine-learning-in-python.md)
+[raschka-2020-machine-learning-in-python.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/raschka-2020-machine-learning-in-python.md)
 
 Clave:
 `raschka2020machine`
@@ -224,7 +224,7 @@ Clave:
 ### Virtanen et al. (2020)
 
 Archivo base:
-[virtanen-2020-scipy-1-0.md](/Users/dante/github/manual-legaltech/+/y/papers_md/virtanen-2020-scipy-1-0.md)
+[virtanen-2020-scipy-1-0.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/virtanen-2020-scipy-1-0.md)
 
 Clave:
 `virtanen2020scipy`
@@ -248,7 +248,7 @@ Clave:
 ### Gorgolewski et al. (2011)
 
 Archivo base:
-[gorgolewski-2011-nipype.md](/Users/dante/github/manual-legaltech/+/y/papers_md/gorgolewski-2011-nipype.md)
+[gorgolewski-2011-nipype.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/gorgolewski-2011-nipype.md)
 
 Clave sugerida:
 `gorgolewski2011nipype`
@@ -304,7 +304,7 @@ Es el capítulo donde más importa que un mismo paper pueda sostener varias afir
 ### Romo-Santana y Mora-Poveda (2023)
 
 Archivo base:
-[romo-santana-2023-el-negocio-del-legal-tech-una-revision-bibliografica.md](/Users/dante/github/manual-legaltech/+/y/papers_md/romo-santana-2023-el-negocio-del-legal-tech-una-revision-bibliografica.md)
+[romo-santana-2023-el-negocio-del-legal-tech-una-revision-bibliografica.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/romo-santana-2023-el-negocio-del-legal-tech-una-revision-bibliografica.md)
 
 Clave sugerida:
 `romo2023legaltech`
@@ -332,7 +332,7 @@ Clave sugerida:
 ### Johansson, Thomsen y Akesson (2023)
 
 Archivo base:
-[johansson-2023-public-value-creation-and-robotic-process-automation-normative-descriptive-and-prescriptive-issue.md](/Users/dante/github/manual-legaltech/+/y/papers_md/johansson-2023-public-value-creation-and-robotic-process-automation-normative-descriptive-and-prescriptive-issue.md)
+[johansson-2023-public-value-creation-and-robotic-process-automation-normative-descriptive-and-prescriptive-issue.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/johansson-2023-public-value-creation-and-robotic-process-automation-normative-descriptive-and-prescriptive-issue.md)
 
 Clave sugerida:
 `johansson2023rpa`
@@ -359,7 +359,7 @@ Clave sugerida:
 ### Lindgren (2024)
 
 Archivo base:
-[lindgren-2024-ironies-of-automation-and-their-implications-for-public-service-automation.md](/Users/dante/github/manual-legaltech/+/y/papers_md/lindgren-2024-ironies-of-automation-and-their-implications-for-public-service-automation.md)
+[lindgren-2024-ironies-of-automation-and-their-implications-for-public-service-automation.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/lindgren-2024-ironies-of-automation-and-their-implications-for-public-service-automation.md)
 
 Clave sugerida:
 `lindgren2024automation`
@@ -385,7 +385,7 @@ Clave sugerida:
 ### Bainbridge (1983)
 
 Archivo base:
-[bainbridge-1983-ironies-of-automation.md](/Users/dante/github/manual-legaltech/+/y/papers_md/bainbridge-1983-ironies-of-automation.md)
+[bainbridge-1983-ironies-of-automation.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/bainbridge-1983-ironies-of-automation.md)
 
 Clave sugerida:
 `bainbridge1983automation`
@@ -411,7 +411,7 @@ Clave sugerida:
 ### Martín Delgado (2009)
 
 Archivo base:
-[martin-delgado-2009-naturaleza-concepto-y-regimen-juridico-de-la-actuacion-administrativa-automatizada.md](/Users/dante/github/manual-legaltech/+/y/papers_md/martin-delgado-2009-naturaleza-concepto-y-regimen-juridico-de-la-actuacion-administrativa-automatizada.md)
+[martin-delgado-2009-naturaleza-concepto-y-regimen-juridico-de-la-actuacion-administrativa-automatizada.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/martin-delgado-2009-naturaleza-concepto-y-regimen-juridico-de-la-actuacion-administrativa-automatizada.md)
 
 Clave sugerida:
 `martindelgado2009automatizada`
@@ -436,7 +436,7 @@ Clave sugerida:
 ### Muñoz (2022)
 
 Archivo base:
-[munoz-2022-el-control-judicial-de-la-actividad-administrativa-automatizada.md](/Users/dante/github/manual-legaltech/+/y/papers_md/munoz-2022-el-control-judicial-de-la-actividad-administrativa-automatizada.md)
+[munoz-2022-el-control-judicial-de-la-actividad-administrativa-automatizada.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/munoz-2022-el-control-judicial-de-la-actividad-administrativa-automatizada.md)
 
 Clave sugerida:
 `munoz2022automatizada`
@@ -465,7 +465,7 @@ Clave sugerida:
 ### Huapaya Tapia
 
 Archivo base:
-[huapaya-tapia-sf-reflexiones-para-el-transito-de-una-administracion-electronica-hacia-una-administracion-digital-en-el-ordenamiento-publico-peruano.md](/Users/dante/github/manual-legaltech/+/y/papers_md/huapaya-tapia-sf-reflexiones-para-el-transito-de-una-administracion-electronica-hacia-una-administracion-digital-en-el-ordenamiento-publico-peruano.md)
+[huapaya-tapia-sf-reflexiones-para-el-transito-de-una-administracion-electronica-hacia-una-administracion-digital-en-el-ordenamiento-publico-peruano.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/huapaya-tapia-sf-reflexiones-para-el-transito-de-una-administracion-electronica-hacia-una-administracion-digital-en-el-ordenamiento-publico-peruano.md)
 
 Clave sugerida:
 `huapayatapia-digitaladmin`
@@ -491,7 +491,7 @@ Clave sugerida:
 ### Almeyda et al. (2025)
 
 Archivo base:
-[almeyda-2025-automatizacion-robotica-de-procesos-aplicado-a-los-procesos-de-compra-un-caso-de-la-industria.md](/Users/dante/github/manual-legaltech/+/y/papers_md/almeyda-2025-automatizacion-robotica-de-procesos-aplicado-a-los-procesos-de-compra-un-caso-de-la-industria.md)
+[almeyda-2025-automatizacion-robotica-de-procesos-aplicado-a-los-procesos-de-compra-un-caso-de-la-industria.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/almeyda-2025-automatizacion-robotica-de-procesos-aplicado-a-los-procesos-de-compra-un-caso-de-la-industria.md)
 
 Clave sugerida:
 `almeyda2025rpa`
@@ -515,7 +515,7 @@ Clave sugerida:
 ### Gao y Kuang (2023)
 
 Archivo base:
-[gao-2023-can-robotic-process-automation-technology-enable-risk-data-analysis-for-customs-post-clearance-audit.md](/Users/dante/github/manual-legaltech/+/y/papers_md/gao-2023-can-robotic-process-automation-technology-enable-risk-data-analysis-for-customs-post-clearance-audit.md)
+[gao-2023-can-robotic-process-automation-technology-enable-risk-data-analysis-for-customs-post-clearance-audit.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/gao-2023-can-robotic-process-automation-technology-enable-risk-data-analysis-for-customs-post-clearance-audit.md)
 
 Clave sugerida:
 `gao2023rpa`
@@ -558,7 +558,7 @@ Prioridad complementaria:
 
 ## Conclusión operativa
 
-La revisión de `+/y/papers_md` confirma tres cosas:
+La revisión de `+/y/papers/markdown` confirma tres cosas:
 
 - en el **capítulo 2**, las nuevas citas deben ser pocas y de alto rendimiento;
 - en el **capítulo 3**, un mismo paper puede servir más de una vez si se quiere reforzar tanto la pedagogía como la justificación técnica;

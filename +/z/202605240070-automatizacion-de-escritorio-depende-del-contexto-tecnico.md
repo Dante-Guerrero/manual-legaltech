@@ -2,7 +2,7 @@
 
 - ID: 202605240070
 - Fuente: Piridi (2024)
-- Archivo fuente: [piridi-2024-legacy-system-integration-with-power-automate-desktop-challenges-and-best-practices-a-deep-dive-i.md](/Users/dante/github/manual-legaltech/+/y/papers_md/piridi-2024-legacy-system-integration-with-power-automate-desktop-challenges-and-best-practices-a-deep-dive-i.md)
+- Archivo fuente: [piridi-2024-legacy-system-integration-with-power-automate-desktop-challenges-and-best-practices-a-deep-dive-i.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/piridi-2024-legacy-system-integration-with-power-automate-desktop-challenges-and-best-practices-a-deep-dive-i.md)
 - Capitulos potenciales: 4
 - Temas: automatizacion-de-escritorio,contexto-tecnico,buenas-practicas
 

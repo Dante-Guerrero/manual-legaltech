@@ -2,7 +2,7 @@
 
 - ID: 202605240096
 - Fuente: Gao y Kuang (2023)
-- Archivo fuente: [gao-2023-can-robotic-process-automation-technology-enable-risk-data-analysis-for-customs-post-clearance-audit.md](/Users/dante/github/manual-legaltech/+/y/papers_md/gao-2023-can-robotic-process-automation-technology-enable-risk-data-analysis-for-customs-post-clearance-audit.md)
+- Archivo fuente: [gao-2023-can-robotic-process-automation-technology-enable-risk-data-analysis-for-customs-post-clearance-audit.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/gao-2023-can-robotic-process-automation-technology-enable-risk-data-analysis-for-customs-post-clearance-audit.md)
 - Capitulos potenciales: 4
 - Temas: auditoria,riesgo,rpa
 

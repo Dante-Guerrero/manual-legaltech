@@ -2,7 +2,7 @@
 
 - ID: 202605240030
 - Fuente: Moreno (2025)
-- Archivo fuente: [moreno-2025-la-actuacion-administrativa-algoritmica-una-propuesta-doctrinal-desde-la-dogmatica-de-la-accion-adm.md](/Users/dante/github/manual-legaltech/+/y/papers_md/moreno-2025-la-actuacion-administrativa-algoritmica-una-propuesta-doctrinal-desde-la-dogmatica-de-la-accion-adm.md)
+- Archivo fuente: [moreno-2025-la-actuacion-administrativa-algoritmica-una-propuesta-doctrinal-desde-la-dogmatica-de-la-accion-adm.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/moreno-2025-la-actuacion-administrativa-algoritmica-una-propuesta-doctrinal-desde-la-dogmatica-de-la-accion-adm.md)
 - Capítulos potenciales: 4
 - Temas: expediente, caja-blanca, control, trazabilidad
 

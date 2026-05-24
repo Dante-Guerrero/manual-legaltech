@@ -2,7 +2,7 @@
 
 - ID: 202605240081
 - Fuente: Sobczak y Ziora (2021)
-- Archivo fuente: [sobczak-2021-the-use-of-robotic-process-automation-rpa-as-an-element-of-smart-city-implementation-a-case-study.md](/Users/dante/github/manual-legaltech/+/y/papers_md/sobczak-2021-the-use-of-robotic-process-automation-rpa-as-an-element-of-smart-city-implementation-a-case-study.md)
+- Archivo fuente: [sobczak-2021-the-use-of-robotic-process-automation-rpa-as-an-element-of-smart-city-implementation-a-case-study.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/sobczak-2021-the-use-of-robotic-process-automation-rpa-as-an-element-of-smart-city-implementation-a-case-study.md)
 - Capitulos potenciales: 4
 - Temas: rpa,municipal,documentos,datos
 

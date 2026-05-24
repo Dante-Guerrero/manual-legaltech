@@ -2,7 +2,7 @@
 
 - ID: 202605240107
 - Fuente: Ryan (2021)
-- Archivo fuente: [ryan-2021-coding-for-critical-thinking.md](/Users/dante/github/manual-legaltech/+/y/papers_md/ryan-2021-coding-for-critical-thinking.md)
+- Archivo fuente: [ryan-2021-coding-for-critical-thinking.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/ryan-2021-coding-for-critical-thinking.md)
 - Capitulos potenciales: 2, 3
 - Temas: supuestos,pensamiento-critico,codigo
 

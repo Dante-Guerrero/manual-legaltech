@@ -2,7 +2,7 @@
 
 - ID: 202605240067
 - Fuente: Patil et al. (2010)
-- Archivo fuente: [patil-2010-pymc.md](/Users/dante/github/manual-legaltech/+/y/papers_md/patil-2010-pymc.md)
+- Archivo fuente: [patil-2010-pymc.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/patil-2010-pymc.md)
 - Capitulos potenciales: 3, 4
 - Temas: probabilidad,incertidumbre,python
 

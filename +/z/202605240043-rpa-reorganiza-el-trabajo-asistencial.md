@@ -2,7 +2,7 @@
 
 - ID: 202605240043
 - Fuente: Germundsson y Stranz (2024)
-- Archivo fuente: [germundsson-2024-automating-social-assistance-exploring-the-use-of-robotic-process-automation-in-the-swedish-persona.md](/Users/dante/github/manual-legaltech/+/y/papers_md/germundsson-2024-automating-social-assistance-exploring-the-use-of-robotic-process-automation-in-the-swedish-persona.md)
+- Archivo fuente: [germundsson-2024-automating-social-assistance-exploring-the-use-of-robotic-process-automation-in-the-swedish-persona.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/germundsson-2024-automating-social-assistance-exploring-the-use-of-robotic-process-automation-in-the-swedish-persona.md)
 - Capitulos potenciales: 4
 - Temas: rpa,asistencia-social,organizacion
 

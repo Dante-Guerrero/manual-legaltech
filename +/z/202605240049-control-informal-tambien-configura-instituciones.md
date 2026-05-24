@@ -2,7 +2,7 @@
 
 - ID: 202605240049
 - Fuente: Guerrero-Barreto (2022)
-- Archivo fuente: [guerrero-barreto-2022-un-sistema-de-control-casero-en-el-poder-judicial-peruano.md](/Users/dante/github/manual-legaltech/+/y/papers_md/guerrero-barreto-2022-un-sistema-de-control-casero-en-el-poder-judicial-peruano.md)
+- Archivo fuente: [guerrero-barreto-2022-un-sistema-de-control-casero-en-el-poder-judicial-peruano.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/guerrero-barreto-2022-un-sistema-de-control-casero-en-el-poder-judicial-peruano.md)
 - Capitulos potenciales: 4
 - Temas: control-informal,poder-judicial,organizacion
 

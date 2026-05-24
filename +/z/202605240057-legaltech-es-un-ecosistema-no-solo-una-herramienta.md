@@ -2,7 +2,7 @@
 
 - ID: 202605240057
 - Fuente: Latorre (2025)
-- Archivo fuente: [latorre-2025-reporte-de-tecnologia-legaltech.md](/Users/dante/github/manual-legaltech/+/y/papers_md/latorre-2025-reporte-de-tecnologia-legaltech.md)
+- Archivo fuente: [latorre-2025-reporte-de-tecnologia-legaltech.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/latorre-2025-reporte-de-tecnologia-legaltech.md)
 - Capitulos potenciales: 2, 4
 - Temas: legaltech,ecosistema,mercado
 

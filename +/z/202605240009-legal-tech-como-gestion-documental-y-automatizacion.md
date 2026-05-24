@@ -2,7 +2,7 @@
 
 - ID: 202605240009
 - Fuente: Romo-Santana y Mora-Poveda (2023)
-- Archivo fuente: [romo-santana-2023-el-negocio-del-legal-tech-una-revision-bibliografica.md](/Users/dante/github/manual-legaltech/+/y/papers_md/romo-santana-2023-el-negocio-del-legal-tech-una-revision-bibliografica.md)
+- Archivo fuente: [romo-santana-2023-el-negocio-del-legal-tech-una-revision-bibliografica.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/romo-santana-2023-el-negocio-del-legal-tech-una-revision-bibliografica.md)
 - Capítulos potenciales: 2, 4
 - Temas: legal-tech, automatizacion, documentos, datos
 

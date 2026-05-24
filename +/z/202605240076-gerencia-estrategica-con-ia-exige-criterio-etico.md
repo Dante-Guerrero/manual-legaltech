@@ -2,7 +2,7 @@
 
 - ID: 202605240076
 - Fuente: Roys et al. (2025)
-- Archivo fuente: [roys-2025-inteligencia-artificial-y-su-impacto-sobre-la-gerencia-estrategica-y-la-cultura-investigativa.md](/Users/dante/github/manual-legaltech/+/y/papers_md/roys-2025-inteligencia-artificial-y-su-impacto-sobre-la-gerencia-estrategica-y-la-cultura-investigativa.md)
+- Archivo fuente: [roys-2025-inteligencia-artificial-y-su-impacto-sobre-la-gerencia-estrategica-y-la-cultura-investigativa.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/roys-2025-inteligencia-artificial-y-su-impacto-sobre-la-gerencia-estrategica-y-la-cultura-investigativa.md)
 - Capitulos potenciales: 4
 - Temas: gerencia-estrategica,etica,ia
 

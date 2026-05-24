@@ -2,7 +2,7 @@
 
 - ID: 202605240101
 - Fuente: Martin Delgado (2009)
-- Archivo fuente: [martin-delgado-2009-naturaleza-concepto-y-regimen-juridico-de-la-actuacion-administrativa-automatizada.md](/Users/dante/github/manual-legaltech/+/y/papers_md/martin-delgado-2009-naturaleza-concepto-y-regimen-juridico-de-la-actuacion-administrativa-automatizada.md)
+- Archivo fuente: [martin-delgado-2009-naturaleza-concepto-y-regimen-juridico-de-la-actuacion-administrativa-automatizada.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/martin-delgado-2009-naturaleza-concepto-y-regimen-juridico-de-la-actuacion-administrativa-automatizada.md)
 - Capitulos potenciales: 4
 - Temas: base-juridica,delimitacion,actuacion-automatizada
 

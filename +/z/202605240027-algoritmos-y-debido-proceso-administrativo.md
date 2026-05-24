@@ -2,7 +2,7 @@
 
 - ID: 202605240027
 - Fuente: Alvarez Vega (2024)
-- Archivo fuente: [alvarez-vega-2024-inteligencia-artificial-en-la-fiscalizacion-tributaria-desafios-al-debido-proceso-administrativo.md](/Users/dante/github/manual-legaltech/+/y/papers_md/alvarez-vega-2024-inteligencia-artificial-en-la-fiscalizacion-tributaria-desafios-al-debido-proceso-administrativo.md)
+- Archivo fuente: [alvarez-vega-2024-inteligencia-artificial-en-la-fiscalizacion-tributaria-desafios-al-debido-proceso-administrativo.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/alvarez-vega-2024-inteligencia-artificial-en-la-fiscalizacion-tributaria-desafios-al-debido-proceso-administrativo.md)
 - Capítulos potenciales: 4
 - Temas: debido-proceso, fiscalizacion, inteligencia-artificial, administracion
 

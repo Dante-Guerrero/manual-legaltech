@@ -2,7 +2,7 @@
 
 - ID: 202605240095
 - Fuente: Bainbridge (1983)
-- Archivo fuente: [bainbridge-1983-ironies-of-automation.md](/Users/dante/github/manual-legaltech/+/y/papers_md/bainbridge-1983-ironies-of-automation.md)
+- Archivo fuente: [bainbridge-1983-ironies-of-automation.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/bainbridge-1983-ironies-of-automation.md)
 - Capitulos potenciales: 4
 - Temas: carga-cognitiva,automatizacion,supervision
 

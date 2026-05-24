@@ -2,7 +2,7 @@
 
 - ID: 202605240056
 - Fuente: Jay Vanegas et al. (2024)
-- Archivo fuente: [jay-vanegas-2024-politicas-publicas-ante-la-revolucion-de-la-inteligencia-artificial-en-colombia.md](/Users/dante/github/manual-legaltech/+/y/papers_md/jay-vanegas-2024-politicas-publicas-ante-la-revolucion-de-la-inteligencia-artificial-en-colombia.md)
+- Archivo fuente: [jay-vanegas-2024-politicas-publicas-ante-la-revolucion-de-la-inteligencia-artificial-en-colombia.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/jay-vanegas-2024-politicas-publicas-ante-la-revolucion-de-la-inteligencia-artificial-en-colombia.md)
 - Capitulos potenciales: 4
 - Temas: estrategia-estatal,transformacion-digital,ia
 

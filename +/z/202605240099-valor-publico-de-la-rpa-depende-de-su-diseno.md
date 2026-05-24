@@ -2,7 +2,7 @@
 
 - ID: 202605240099
 - Fuente: Johansson et al. (2023)
-- Archivo fuente: [johansson-2023-public-value-creation-and-robotic-process-automation-normative-descriptive-and-prescriptive-issue.md](/Users/dante/github/manual-legaltech/+/y/papers_md/johansson-2023-public-value-creation-and-robotic-process-automation-normative-descriptive-and-prescriptive-issue.md)
+- Archivo fuente: [johansson-2023-public-value-creation-and-robotic-process-automation-normative-descriptive-and-prescriptive-issue.md](/Users/dante/github/manual-legaltech/+/y/papers/markdown/johansson-2023-public-value-creation-and-robotic-process-automation-normative-descriptive-and-prescriptive-issue.md)
 - Capitulos potenciales: 4
 - Temas: valor-publico,diseño,rpa
 
