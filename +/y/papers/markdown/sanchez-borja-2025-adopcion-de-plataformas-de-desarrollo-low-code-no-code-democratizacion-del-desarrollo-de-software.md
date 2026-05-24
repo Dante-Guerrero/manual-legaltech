@@ -1,5 +1,7 @@
 # sanchez-borja-2025-adopcion-de-plataformas-de-desarrollo-low-code-no-code-democratizacion-del-desarrollo-de-software
 
+Fuente PDF: `../pdf/sanchez-borja-2025-adopcion-de-plataformas-de-desarrollo-low-code-no-code-democratizacion-del-desarrollo-de-software.pdf`
+
 ## Page 1
 
 Período enero-junio 2025 Vol. 4 No. 1 pp 85 - 100 riif@editorialscientificfuture.com ISSN-L: 3028-869X DOI: https://doi.org/10.62465/riif.v4n1.2025.117 Adopción de plataformas de desarrollo low-code/no-code: democratización del desarrollo de software Adoption of low-code/no-code development platforms: democratizing software development Fecha de recepción: 2025-02-08 • Fecha de aceptación: 2025-03-13 • Fecha de publicación: 2025-03-17 Reinerio Israel Sánchez Borja Universidad Tecnológica Israel, Quito, Ecuador e0705546174@uisrael.edu.ec https://orcid.org/0009-0007-1397-353X Henry Recalde Henry Marcelo Recalde Araujo Universidad Tecnológica Israel, Quito, Ecuador hrecalde@uisrael.edu.ec, https://orcid.org/0000-0003-0768-4452 Resumen A través de esta investigación se estudió el uso de las plataformas de desarrollo de bajo código/sin código como una opción prometedora para la construcción de aplicaciones. Esto es especialmente relevante debido a la complejidad que presentan las metodologías tradicionales. Las plataformas de bajo código están dirigidas a usuarios con algún nivel de conocimiento técnico, ya que permiten REVISTA INGENIERÍA E INNOVACIÓN DEL FUTURO 85

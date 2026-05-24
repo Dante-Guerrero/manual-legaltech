@@ -1,5 +1,7 @@
 # sweigart-2015-automate-the-boring-stuff-with-python-practical-programming-for-total-beginners
 
+Fuente PDF: `../pdf/sweigart-2015-automate-the-boring-stuff-with-python-practical-programming-for-total-beginners.pdf`
+
 ## Page 1
 
 A U T O M A T E A U T O M A T E T H E T H E B O R I N G B O R I N G S T U F F S T U F F W I T H W I T H P Y T H O N P Y T H O N P R A C T I C A L P R O G R A M M I N G F O R T O T A L B E G I N N E R S A L S W E I G A R T www.allitebooks.com
@@ -84,17 +86,9 @@ Summary  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
 
 A Installing Third-Party Modules 441 The pip Tool  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 441 Installing Third-Party Modules  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 442 B Running ProgrAMs 443 Shebang Line .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 443 Running Python Programs on Windows .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 444 Running Python Programs on OS X and Linux  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 445 Running Python Programs with Assertions Disabled  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 445 C Answers to the PrACtICe Questions 447 Chapter 1  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 448 Chapter 2  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 448 Chapter 3  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 450 Chapter 4  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 450 Chapter 5  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 451 Chapter 6  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 451 Chapter 7  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 452 Chapter 8  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 453 Chapter 9  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 453 Chapter 10  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 454 Chapter 11  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 455 Chapter 12  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 456 Chapter 13  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 456 Chapter 14  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 457 Chapter 15  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 457 Chapter 16  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 458 Chapter 17  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 458 Chapter 18  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 458 Index 461 Contents in Detail xxi
 
-## Page 22
-
-
-
 ## Page 23
 
 Ac k n o w l ed g m e n ts I couldn’t have written a book like this without the help of a lot of people. I’d like to thank Bill Pollock; my editors, Laurel Chun, Leslie Shen, Greg Poulos, and Jennifer Griffith-Delgado; and the rest of the staff at No Starch Press for their invaluable help. Thanks to my tech reviewer, Ari Lacenski, for great suggestions, edits, and support. Many thanks to our Benevolent Dictator For Life, Guido van Rossum, and everyone at the Python Software Foundation for their great work. The Python community is the best one I’ve found in the tech industry. Finally, I would like to thank my family, friends, and the gang at Shotwell’s for not minding the busy life I’ve had while writing this book. Cheers!
-
-## Page 24
-
-
 
 ## Page 25
 
@@ -139,10 +133,6 @@ When asking programming questions, remember to do the following: • Explain wha
 ## Page 35
 
 Part I p y t h o n P r o g ra m m i n g B A S i C S
-
-## Page 36
-
-
 
 ## Page 37
 
@@ -211,10 +201,6 @@ print('You will be ' + str(int(myAge) + 1) + ' in a year.') print('You will be '
 ## Page 53
 
 2. Which of the following is a variable, and which is a string? spam 'spam' 3. Name three data types. 4. What is an expression made up of? What do all expressions do? 5. This chapter introduced assignment statements, like spam = 10. What is the difference between an expression and a statement? 6. What does the variable bacon contain after the following code runs? bacon = 20 bacon + 1 7. What should the following two expressions evaluate to? 'spam' + 'spamspam' 'spam' * 3 8. 9. 10. Why is eggs a valid variable name while 100 is invalid? What three functions can be used to get the integer, floating-point number, or string version of a value? Why does this expression cause an error? How can you fix it? 'I have eaten ' + 99 + ' burritos.' Extra credit: Search online for the Python documentation for the len() function. It will be on a web page titled “Built-in Functions.” Skim the list of other functions Python has, look up what the round() function does, and experiment with it in the interactive shell. Python Basics 29
-
-## Page 54
-
-
 
 ## Page 55
 
@@ -332,10 +318,6 @@ Now we can use any of the functions in these four modules. We’ll learn more ab
 
 Practice Questions 1. 2. 3. 4. What are the two values of the Boolean data type? How do you write them? What are the three Boolean operators? Write out the truth tables of each Boolean operator (that is, every possible combination of Boolean values for the operator and what they evaluate to). What do the following expressions evaluate to? (5 > 4) and (3 == 5) not (5 > 4) (5 > 4) or (3 == 5) not ((5 > 4) or (3 == 5)) (True and True) and (True == False) (not False) or (not True) 5. 6. 7. 8. What are the six comparison operators? What is the difference between the equal to operator and the assign- ment operator? Explain what a condition is and where you would use one. Identify the three blocks in this code: spam = 0 if spam == 10: print('eggs') if spam > 5: print('bacon') else: print('ham') print('spam') print('spam') 9. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints Greetings! if anything else is stored in spam. 10. 11. What can you press if your program is stuck in an infinite loop? What is the difference between break and continue? 12. What is the difference between range(10), range(0, 10), and range(0, 10, 1) in a for loop? 13. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent program that prints the numbers 1 to 10 using a while loop. 14. If you had a function named bacon() inside a module named spam, how would you call it after importing spam? Extra credit: Look up the round() and abs() functions on the Internet, and find out what they do. Experiment with them in the interactive shell. Flow Control 59
 
-## Page 84
-
-
-
 ## Page 85
 
 3 F u nc t i o ns You’re already familiar with the print(), input(), and len() functions from the previ- ous chapters. Python provides several built- in functions like these, but you can also write your own functions. A function is like a mini-­ program within a program. To better understand how functions work, let’s create one. Type this program into the file editor and save it as helloFunc.py: u def hello(): v print('Howdy!') print('Howdy!!!') print('Hello there.') w hello() hello() hello()
@@ -403,10 +385,6 @@ an integer value (guessesTaken and secretNumber). Since it must concatenate thes
 ## Page 101
 
 Practice Projects For practice, write programs to do the following tasks. The Collatz Sequence Write a function named collatz() that has one parameter named number. If number is even, then collatz() should print number // 2 and return this value. If number is odd, then collatz() should print and return 3 * number + 1. Then write a program that lets the user type in an integer and that keeps calling collatz() on that number until the function returns the value 1. (Amazingly enough, this sequence actually works for any integer—sooner or later, using this sequence, you’ll arrive at 1! Even mathematicians aren’t sure why. Your program is exploring what’s called the Collatz sequence, some- times called “the simplest impossible math problem.”) Remember to convert the return value from input() to an integer with the int() function; otherwise, it will be a string value. Hint: An integer number is even if number % 2 == 0, and it’s odd if number % 2 == 1. The output of this program could look something like this: Enter number: 3 10 5 16 8 4 2 1 Input Validation Add try and except statements to the previous project to detect whether the user types in a noninteger string. Normally, the int() function will raise a ValueError error if it is passed a noninteger string, as in int('puppy'). In the except clause, print a message to the user saying they must enter an integer. Functions 77
-
-## Page 102
-
-
 
 ## Page 103
 
@@ -508,10 +486,6 @@ Practice Questions 1. What is []? 2. How would you assign the value 'hello' as t
 
 Character Picture Grid Say you have a list of lists where each value in the inner lists is a one-character string, like this: grid = [['.', '.', '.', '.', '.', '.'], ['.', 'O', 'O', '.', '.', '.'], ['O', 'O', 'O', 'O', '.', '.'], ['O', 'O', 'O', 'O', 'O', '.'], ['.', 'O', 'O', 'O', 'O', 'O'], ['O', 'O', 'O', 'O', 'O', '.'], ['O', 'O', 'O', 'O', '.', '.'], ['.', 'O', 'O', '.', '.', '.'], ['.', '.', '.', '.', '.', '.']] You can think of grid[x][y] as being the character at the x- and y-­ coordinates of a “picture” drawn with text characters. The (0, 0) origin will be in the upper-left corner, the x-coordinates increase going right, and w the y-coordinates increase going down. Copy the previous grid value, and write code that uses it to print the image. ..OO.OO.. .OOOOOOO. .OOOOOOO. ..OOOOO.. ...OOO... ....O.... Hint: You will need to use a loop in a loop in order to print grid[0][0], then grid[1][0], then grid[2][0], and so on, up to grid[8][0]. This will fin- ish the first row, so then print a newline. Then your program should print grid[0][1], then grid[1][1], then grid[2][1], and so on. The last thing your program will print is grid[8][5]. Also, remember to pass the end keyword argument to print() if you don’t want a newline printed automatically after each print() call. Lists 103
 
-## Page 128
-
-
-
 ## Page 129
 
 5 D ic t i o na r i es S t r uc t u r i n g a nd Da ta In this chapter, I will cover the dictionary data type, which provides a flexible way to access and organize data. Then, combining dictionaries with your knowledge of lists from the previous chapter, you’ll learn how to create a data structure to model a tic-tac-toe board. The Dictionary Data Type Like a list, a dictionary is a collection of many values. But unlike indexes for lists, indexes for dictionaries can use many different data types, not just integers. Indexes for dictionaries are called keys, and a key with its associ- ated value is called a key-value pair. In code, a dictionary is typed with braces, {}. Enter the following into the interactive shell: >>> myCat = {'size': 'fat', 'color': 'gray', 'disposition': 'loud'}
@@ -579,10 +553,6 @@ Practice Projects For practice, write programs to do the following tasks. Fantas
 ## Page 145
 
 The addToInventory() function should return a dictionary that represents the updated inventory. Note that the addedItems list can contain multiples of the same item. Your code could look something like this: def addToInventory(inventory, addedItems): # your code goes here inv = {'gold coin': 42, 'rope': 1} dragonLoot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby'] inv = addToInventory(inv, dragonLoot) displayInventory(inv) The previous program (with your displayInventory() function from the previous project) would output the following: Inventory: 45 gold coin 1 rope 1 ruby 1 dagger Total number of items: 48 Dictionaries and Structuring Data 121
-
-## Page 146
-
-
 
 ## Page 147
 
@@ -668,17 +638,9 @@ Practice Questions 1. What are escape characters? 2. 3. 4. What do the \n and \t
 
 Your printTable() function would print the following: apples Alice dogs oranges Bob cats cherries Carol moose banana David goose Hint: Your code will first have to find the longest string in each of the inner lists so that the whole column can be wide enough to fit all the strings. You can store the maximum width of each column as a list of integers. The printTable() function can begin with colWidths = [0] * len(tableData), which will create a list containing the same number of 0 values as the number of inner lists in tableData. That way, colWidths[0] can store the width of the longest string in tableData[0], colWidths[1] can store the width of the lon- gest string in tableData[1], and so on. You can then find the largest value in the colWidths list to find out what integer width to pass to the rjust() string method. Manipulating Strings 143
 
-## Page 168
-
-
-
 ## Page 169
 
 Part II A u t o ma t i n g t A S ks
-
-## Page 170
-
-
 
 ## Page 171
 
@@ -780,10 +742,6 @@ Practice Questions 1. 2. 3. 4. What is the function that creates Regex objects? 
 
 21. How would you write a regex that matches the full name of someone whose last name is Nakamoto? You can assume that the first name that comes before it will always be one word that begins with a capital letter. The regex must match the following: • 'Satoshi Nakamoto' • 'Alice Nakamoto' • 'RoboCop Nakamoto' but not the following: • 'satoshi Nakamoto' (where the first name is not capitalized) • 'Mr. Nakamoto' (where the preceding word has a nonletter character) • 'Nakamoto' (which has no first name) • 'Satoshi nakamoto' (where Nakamoto is not capitalized) 22. How would you write a regex that matches a sentence where the first word is either Alice, Bob, or Carol; the second word is either eats, pets, or throws; the third word is apples, cats, or baseballs; and the sentence ends with a period? This regex should be case-insensitive. It must match the following: • 'Alice eats apples.' • 'Bob pets cats.' • 'Carol throws baseballs.' • 'Alice throws Apples.' • 'BOB EATS CATS.' but not the following: • 'RoboCop eats apples.' • 'ALICE THROWS FOOTBALLS.' • 'Carol eats 7 cats.' Practice Projects For practice, write programs to do the following tasks. Strong Password Detection Write a function that uses regular expressions to make sure the password string it is passed is strong. A strong password is defined as one that is at least eight characters long, contains both uppercase and lowercase charac- ters, and has at least one digit. You may need to test the string against mul- tiple regex patterns to validate its strength. Regex Version of strip() Write a function that takes a string and does the same thing as the strip() string method. If no other arguments are passed other than the string to strip, then whitespace characters will be removed from the beginning and end of the string. Otherwise, the characters specified in the second argu- ment to the function will be removed from the string. Pattern Matching with Regular Expressions 171
 
-## Page 196
-
-
-
 ## Page 197
 
 8 R e A D i n g a nd W r i t i n g F i l es Variables are a fine way to store data while your program is running, but if you want your data to persist even after your program has finished, you need to save it to a file. You can think of a file’s contents as a single string value, potentially gigabytes in size. In this chapter, you will learn how to use Python to create, read, and save files on the hard drive. Files and File Paths A file has two key properties: a filename (usually written as one word) and a path. The path specifies the location of a file on the computer. For example, there is a file on my Windows 7 laptop with the filename projects.docx in the path C:\Users\asweigart\Documents. The part of the filename after the last period is called the file’s extension and tells you a file’s type. project.docx is a Word document, and Users, asweigart, and Documents all refer to folders (also
@@ -875,10 +833,6 @@ Summary Files are organized into folders (also called directories), and a path d
 ## Page 219
 
 Mad Libs Create a Mad Libs program that reads in text files and lets the user add their own text anywhere the word ADJECTIVE, NOUN, ADVERB, or VERB appears in the text file. For example, a text file may look like this: The ADJECTIVE panda walked to the NOUN and then VERB. A nearby NOUN was unaffected by these events. The program would find these occurrences and prompt the user to replace them. Enter an adjective: silly Enter a noun: chandelier Enter a verb: screamed Enter a noun: pickup truck The following text file would then be created: The silly panda walked to the chandelier and then screamed. A nearby pickup truck was unaffected by these events. The results should be printed to the screen and saved to a new text file. Regex Search Write a program that opens all .txt files in a folder and searches for any line that matches a user-supplied regular expression. The results should be printed to the screen. Reading and Writing Files 195
-
-## Page 220
-
-
 
 ## Page 221
 
@@ -1148,10 +1102,6 @@ The <html> tag is the base tag in HTML files: The full content of the HTML file 
 
 Image Site Downloader Write a program that goes to a photo-sharing site like Flickr or Imgur, searches for a category of photos, and then downloads all the resulting images. You could write a program that works with any photo site that has a search feature. 2048 2048 is a simple game where you combine tiles by sliding them up, down, left, or right with the arrow keys. You can actually get a fairly high score by repeatedly sliding in an up, right, down, and left pattern over and over again. Write a program that will open the game at https://gabrielecirulli .github.io/2048/ and keep sending up, right, down, and left keystrokes to automatically play the game. Link Verification Write a program that, given the URL of a web page, will attempt to down- load every linked page on the page. The program should flag any pages that have a 404 “Not Found” status code and print them out as broken links. Web Scraping 263
 
-## Page 288
-
-
-
 ## Page 289
 
 12 W o r k i n g w i t h Sp r e A D S h e e ts E xc e l Excel is a popular and powerful spread- sheet application for Windows. The openpyxl module allows your Python programs to read and modify Excel spreadsheet files. For example, you might have the boring task of copying certain data from one spreadsheet and pasting it into another one. Or you might have to go through thousands of rows and pick out just a handful of them to make small edits based on some criteria. Or you might have to look through hundreds of spreadsheets of department budgets, searching for any that are in the red. These are exactly the sort of boring, mindless spreadsheet tasks that Python can do for you. Although Excel is proprietary software from Microsoft, there are free alternatives that run on Windows, OS X, and Linux. Both LibreOffice Calc and OpenOffice Calc work with Excel’s .xlsx file format for spreadsheets, which means the openpyxl module can work on spreadsheets from these appli- cations as well. You can download the software from https://www.­ libreoffice .org/ and http://www.openoffice.org/, respectively. Even if you already have
@@ -1267,10 +1217,6 @@ Practice Questions For the following questions, imagine you have a Workbook obje
 ## Page 317
 
 Figure 12-13: The spreadsheet before (top) and after (bottom) inversion You can write this program by using nested for loops to read in the spreadsheet’s data into a list of lists data structure. This data structure could have sheetData[x][y] for the cell at column x and row y. Then, when writing out the new spreadsheet, use sheetData[y][x] for the cell at column x and row y. Text Files to Spreadsheet Write a program to read in the contents of several text files (you can make the text files yourself) and insert those contents into a spreadsheet, with one line of text per row. The lines of the first text file will be in the cells of column A, the lines of the second text file will be in the cells of column B, and so on. Use the readlines() File object method to return a list of strings, one string per line in the file. For the first file, output the first line to column 1, row 1. The second line should be written to column 1, row 2, and so on. The next file that is read with readlines() will be written to column 2, the next file to column 3, and so on. Spreadsheet to Text Files Write a program that performs the tasks of the previous program in reverse order: The program should open a spreadsheet and write the cells of col- umn A into one text file, the cells of column B into another text file, and so on. Working with Excel Spreadsheets 293
-
-## Page 318
-
-
 
 ## Page 319
 
@@ -1852,10 +1798,6 @@ Practice Questions 1. 2. 3. 4. 5. 6. 7. 8. 9. How can you trigger PyAutoGUI’s 
 
 N o t e boxes that interrupt your messaging. Your program will have to take screen- shots to guide its GUI interaction and adopt ways of detecting when its vir- tual keystrokes aren’t being sent. You may want to set up some fake test accounts so that you don’t accidentally spam your real friends while writing this program. Game-Playing Bot Tutorial There is a great tutorial titled “How to Build a Python Bot That Can Play Web Games” that you can find at http://nostarch.com/automatestuff/. This tutorial explains how to create a GUI automation program in Python that plays a Flash game called Sushi Go Round. The game involves clicking the correct ingredient buttons to fill customers’ sushi orders. The faster you fill orders without mistakes, the more points you get. This is a perfectly suited task for a GUI automation program—and a way to cheat to a high score! The tutorial covers many of the same topics that this chapter covers but also includes descriptions of PyAutoGUI’s basic image recognition features. Controlling the Keyboard and Mouse with GUI Automation 439
 
-## Page 464
-
-
-
 ## Page 465
 
 A I ns ta l l i n g T h i rd - Pa r t y M od u l es Beyond the standard library of modules packaged with Python, other developers have written their own modules to extend Python’s capabilities even further. The primary way to install third-party modules is to use Python’s pip tool. This tool securely downloads and installs Python modules onto your computer from https://pypi.python.org/, the web- site of the Python Software Foundation. PyPI, or the Python Package Index, is a sort of free app store for Python modules. The pip Tool The executable file for the pip tool is called pip on Windows and pip3 on OS X and Linux. On Windows, you can find pip at C:\Python34\Scripts\pip.exe. On OS X, it is in /Library/Frameworks/Python.framework/Versions/3.4/bin/pip3. On Linux, it is in /usr/bin/pip3.
@@ -1875,10 +1817,6 @@ You will be able to run Python scripts from IDLE without the shebang line, but t
 ## Page 469
 
 Running Python Programs on OS X and Linux On OS X, selecting Applications4 Utilities4 Terminal will bring up a Terminal window. A Terminal window is a way to enter commands on your computer using only text, rather than clicking through a graphic interface. To bring up the Terminal window on Ubuntu Linux, press the win (or super) key to bring up Dash and type in Terminal. The Terminal window will begin in the home folder of your user account. If my username is asweigart, the home folder will be /Users/asweigart on OS X and /home/asweigart on Linux. The tilde (~) character is a shortcut for your home folder, so you can enter cd ~ to change to your home folder. You can also use the cd command to change the current working directory to any other directory. On both OS X and Linux, the pwd command will print the current working directory. To run your Python programs, save your .py file to your home folder. Then, change the .py file’s permissions to make it executable by running chmod +x pythonScript.py. File permissions are beyond the scope of this book, but you will need to run this command on your Python file if you want to run the program from the Terminal window. Once you do so, you will be able to run your script whenever you want by opening a Terminal window and entering ./pythonScript.py. The shebang line at the top of the script will tell the operating system where to locate the Python interpreter. Running Python Programs with Assertions Disabled You can disable the assert statements in your Python programs for a slight performance improvement. When running Python from the terminal, include the -O switch after python or python3 and before the name of the .py file. This will run an optimized version of your program that skips the assertion checks. Running Programs 445
-
-## Page 470
-
-
 
 ## Page 471
 
@@ -1931,10 +1869,6 @@ Chapter 12 1. The openpyxl.load_workbook() function returns a Workbook object. 2
 ## Page 483
 
 3. pyautogui.position() returns a tuple with two integers for the x- and y-coordinates of the mouse cursor. 4. The moveTo() function moves the mouse to absolute coordinates on the screen, while the moveRel() function moves the mouse relative to the mouse’s current position. 5. pyautogui.dragTo() and pyautogui.dragRel() 6. pyautogui.typewrite('Hello world!') 7. Either pass a list of keyboard key strings to pyautogui.typewrite() (such as 'left') or pass a single keyboard key string to pyautogui.press(). 8. pyautogui.screenshot('screenshot.png') 9. pyautogui.PAUSE = 2 Answers to the Practice Questions 459
-
-## Page 484
-
-
 
 ## Page 485
 

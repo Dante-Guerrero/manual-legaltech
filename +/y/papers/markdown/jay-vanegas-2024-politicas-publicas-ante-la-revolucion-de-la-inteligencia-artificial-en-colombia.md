@@ -1,5 +1,7 @@
 # jay-vanegas-2024-politicas-publicas-ante-la-revolucion-de-la-inteligencia-artificial-en-colombia
 
+Fuente PDF: `../pdf/jay-vanegas-2024-politicas-publicas-ante-la-revolucion-de-la-inteligencia-artificial-en-colombia.pdf`
+
 ## Page 1
 
 Año 29 No. 106, 2024 abril-junio Año 29 No. 106, 2024 abril-junio

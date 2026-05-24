@@ -83,13 +83,20 @@ func convert(_ inputPath: String, _ outputPath: String) throws {
     let baseName = URL(fileURLWithPath: inputPath).deletingPathExtension().lastPathComponent
 
     var body = "# \(baseName)\n\n"
+    body += "Fuente PDF: `../pdf/\(baseName).pdf`\n\n"
+    var extractedAnyText = false
     for index in 0..<pdf.pageCount {
         guard let page = pdf.page(at: index) else { continue }
         let text = normalize(page.string ?? "")
-        if text.isEmpty { continue }
+        if text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty { continue }
+        extractedAnyText = true
         body += "## Page \(index + 1)\n\n"
         body += text
         body += "\n"
+    }
+
+    if !extractedAnyText {
+        body += "> Nota: no se pudo extraer texto de este PDF con el conversor actual. Es posible que el documento sea una imagen escaneada o requiera OCR.\n"
     }
 
     do {

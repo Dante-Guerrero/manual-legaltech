@@ -50,6 +50,26 @@ Notas:
 - conserva solo caracteres ASCII;
 - si el año no puede determinarse con seguridad, usa `sf`.
 
+### Regla específica para normas
+
+En `+/y/normas/pdf`, conviene usar una versión más trazable del mismo criterio:
+
+`emisor-año-tipo-numero-tema-breve.pdf`
+
+Ejemplos:
+
+- `peru-2020-decreto-de-urgencia-006-2020-sistema-nacional-transformacion-digital.pdf`
+- `pcm-2023-resolucion-ministerial-224-2023-texto-integrado-rof.pdf`
+- `pcm-2024-resolucion-sgtd-004-2024-red-nacional-laboratorios-innovacion-digital.pdf`
+
+Reglas prácticas:
+
+- conservar el tipo normativo y su número oficial;
+- usar solo minúsculas ASCII;
+- reemplazar espacios por guiones;
+- resumir el tema con pocas palabras, sin perder identificabilidad;
+- si el archivo es un anexo, exposición de motivos o texto integrado, indicarlo explícitamente en el nombre.
+
 ## Conversión de solo archivos nuevos
 
 La forma general es esta:

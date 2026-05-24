@@ -1,5 +1,7 @@
 # maita-cruz-2022-inteligencia-artificial-en-la-gestion-publica-en-tiempos-de-covid-19
 
+Fuente PDF: `../pdf/maita-cruz-2022-inteligencia-artificial-en-la-gestion-publica-en-tiempos-de-covid-19.pdf`
+
 ## Page 1
 
 Depósito legal ppi 201502ZU4662 Esta publicación científica en formato digital es continuidad de la revista impresa Depósito Legal: pp 197402ZU789 ● ISSN: 1315-9518 ● ISSN-E: 2477-9431 Universidad del Zulia. Revista de la Facultad de Ciencias Económicas y Sociales XXVIII, Número Especial 5 2022 Esta publicación científica en formato digital es continuidad de la revista impresa Depósito Legal: pp 197402ZU789 ISSN: 1315-9518

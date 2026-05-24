@@ -1,5 +1,7 @@
 # volini-2020-a-perspective-on-technology-education-for-law-students
 
+Fuente PDF: `../pdf/volini-2020-a-perspective-on-technology-education-for-law-students.pdf`
+
 ## Page 1
 
 Santa Clara High Technology Law Journal Santa Clara High Technology Law Journal Volume 36 Issue 2 Article 2 2-5-2020 A PERSPECTIVE ON TECHNOLOGY EDUCATION FOR LAW A PERSPECTIVE ON TECHNOLOGY EDUCATION FOR LAW STUDENTS STUDENTS Volini, Anthony Follow this and additional works at: https://digitalcommons.law.scu.edu/chtlj Part of the Intellectual Property Law Commons, and the Science and Technology Law Commons Recommended Citation Recommended Citation Volini, Anthony, A PERSPEC TIVE ON TECHNOL OGY EDUCA TION FOR L A W STUDEN T S , 36 SANTA CLARA HIGH TECH. L.J. 165 (2020). Available at: https://digitalcommons.law.scu.edu/chtlj/vol36/iss2/2 This Article is brought to you for free and open access by the Journals at Santa Clara Law Digital Commons. It has been accepted for inclusion in Santa Clara High Technology Law Journal by an authorized editor of Santa Clara Law Digital Commons. For more information, please contact sculawlibrarian@gmail.com, pamjadi@scu.edu.

@@ -1,5 +1,7 @@
 # guerrero-barreto-2022-un-sistema-de-control-casero-en-el-poder-judicial-peruano
 
+Fuente PDF: `../pdf/guerrero-barreto-2022-un-sistema-de-control-casero-en-el-poder-judicial-peruano.pdf`
+
 ## Page 1
 
 Este artículo se encuentra disponible en acceso abierto bajo la licencia Creative Commons Attribution 4.0 International License Revista Oficial del Poder Judicial ÓRGANO DE INVESTIGACIÓN DE LA CORTE SUPREMA DE JUSTICIA DE LA REPÚBLICA DEL PERÚ Vol. 14, n.o 17, enero-junio, 2022, 119-139 ISSN: 1997-6682 (Impreso) ISSN: 2663-9130 (En línea) DOI: 10.35292/ropj.v14i17.572 Un sistema de control casero en el Poder Judicial peruano A homemade control system for the Peruvian courts Dante Ramón GueRRero BaRReto Organismo de Evaluación y Fiscalización Ambiental (OEFA) (Lima, Perú) Contacto: dguerrero@oefa.gob.pe https://orcid.org/0000-0003-1941-2446 RESUMEN Este trabajo plantea una alternativa para complementar los esfuer- zos realizados por el Poder Judicial peruano para mejorar la efi- ciencia de los procesos judiciales a través del uso de tecnologías de la información. Para ello se describen los problemas de este poder del Estado que han sido identificados por distintos estudios en los últimos años, se explica en qué consiste un sistema de control y se narra una historia real ocurrida en Perú que demuestra que lo propuesto es viable. Palabras clave: informática; sistema de control; innovación judi- cial. Términos de indización: informática, poder político (Fuente: Tesauro Unesco). Revista Oficial del Poder Judicial, 14(17), 2022, 119-139 119

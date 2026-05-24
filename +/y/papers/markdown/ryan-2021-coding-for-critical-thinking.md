@@ -1,5 +1,7 @@
 # ryan-2021-coding-for-critical-thinking
 
+Fuente PDF: `../pdf/ryan-2021-coding-for-critical-thinking.pdf`
+
 ## Page 1
 
 Bond University Legal Education Review Volume 31 Issue 1 2021 Coding for Critical Thinking: A Case Study in Embedding Complementary Skills in Legal Education Trevor Ryan University of Canberra _____________________________________________________________________________________ Follow this and additional works at: https://ler.scholasticahq.com/ This work is licensed under a Creative Commons Attribution-Noncommercial-No Derivative Works 4.0 Licence.

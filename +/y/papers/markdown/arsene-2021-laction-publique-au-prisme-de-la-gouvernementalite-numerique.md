@@ -1,5 +1,7 @@
 # arsene-2021-laction-publique-au-prisme-de-la-gouvernementalite-numerique
 
+Fuente PDF: `../pdf/arsene-2021-laction-publique-au-prisme-de-la-gouvernementalite-numerique.pdf`
+
 ## Page 1
 
 L’action publique au prisme de la gouvernementalité numérique Séverine Arsène, Clément Mabi DANS L'action publique au prisme de la gouvernementalité numérique 2021/1, PAGES 9 À 22 ÉDITIONS Réseaux ISSN 0751-7971 ISBN 9782348069420 DOI 10.3917/res.225.0009 Article disponible en ligne à l’adresse https://shs.cairn.info/revue-reseaux-2021-1-page-9?lang=fr Découvrir le sommaire de ce numéro, suivre la revue par email, s’abonner... Flashez ce QR Code pour accéder à la page de ce numéro sur Cairn.info. Distribution électronique Cairn.info pour La Découverte. Vous avez l’autorisation de reproduire cet article dans les limites des conditions d’utilisation de Cairn.info ou, le cas échéant, des conditions générales de la licence souscrite par votre établissement. Détails et conditions sur cairn.info/copyright. Sauf dispositions légales contraires, les usages numériques à des fins pédagogiques des présentes ressources sont soumises à l’autorisation de l’Éditeur ou, le cas échéant, de l’organisme de gestion collective habilité à cet effet. Il en est ainsi notamment en France avec le CFC qui est l’organisme agréé en la matière.

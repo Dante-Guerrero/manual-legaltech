@@ -1,5 +1,7 @@
 # latorre-2025-reporte-de-tecnologia-legaltech
 
+Fuente PDF: `../pdf/latorre-2025-reporte-de-tecnologia-legaltech.pdf`
+
 ## Page 1
 
 REPORTE DE TECNOLOGÍA: LEGALTECH REPORTE DE TECNOLOGÍA: LEGALTECH 1

@@ -1,5 +1,7 @@
 # garcia-2007-lactuacio-administrativa-automatitzada-algunes-experiencies-en-lambit-tributari
 
+Fuente PDF: `../pdf/garcia-2007-lactuacio-administrativa-automatitzada-algunes-experiencies-en-lambit-tributari.pdf`
+
 ## Page 1
 
 LA ACTUACIÓN ADMINISTRATIVA AUTOMATIZADA. ALGUNAS EXPERIENCIAS EN EL ÁMBITO TRIBUTARIO Ana María Delgado García* Rafael Oliver Cuello** Sumario 1. La Administración electrónica tributaria 2. La Ley de acceso electrónico de los ciudadanos a los servicios públicos 3. La actuación administrativa automatizada 4. La informática decisional en el ámbito tributario * Ana María Delgado García, profesora de derecho financiero y tributario de la Universitat Oberta de Catalunya. ** Rafael Oliver Cuello, profesor de derecho financiero y tributario de la Universitat Pompeu Fabra. Revista catalana de dret públic, núm. 35, 2007

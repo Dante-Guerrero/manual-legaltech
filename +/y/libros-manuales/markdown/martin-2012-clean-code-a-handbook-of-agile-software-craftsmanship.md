@@ -1,8 +1,6 @@
 # martin-2012-clean-code-a-handbook-of-agile-software-craftsmanship
 
-## Page 1
-
-
+Fuente PDF: `../pdf/martin-2012-clean-code-a-handbook-of-agile-software-craftsmanship.pdf`
 
 ## Page 2
 

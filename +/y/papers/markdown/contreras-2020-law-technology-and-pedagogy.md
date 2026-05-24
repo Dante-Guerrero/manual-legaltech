@@ -1,5 +1,7 @@
 # contreras-2020-law-technology-and-pedagogy
 
+Fuente PDF: `../pdf/contreras-2020-law-technology-and-pedagogy.pdf`
+
 ## Page 1
 
 Minnesota Journal of Law, Science & Technology Minnesota Journal of Law, Science & Technology Volume 21 Issue 2 Symposia & Notes Article 2 2020 Law, Technology, and Pedagogy: Teaching Coding to Build a Law, Technology, and Pedagogy: Teaching Coding to Build a “Future-Proof” Lawyer “Future-Proof” Lawyer Alfredo Contreras Joe McGrath Follow this and additional works at: https://scholarship.law.umn.edu/mjlst Part of the Artificial Intelligence and Robotics Commons, Legal Education Commons, and the Programming Languages and Compilers Commons Recommended Citation Recommended Citation Alfredo Contreras & Joe McGrath, Law, Technology, and Pedagogy: Teaching Coding to Build a “Future- Proof” Lawyer, 21 MINN. J.L. SCI. & TECH. 297 (2020). Available at: https://doi.org/10.24926/15529541.3828 The Minnesota Journal of Law, Science & Technology is published by the University of Minnesota Libraries Publishing.

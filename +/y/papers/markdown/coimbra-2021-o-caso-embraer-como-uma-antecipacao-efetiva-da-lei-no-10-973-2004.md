@@ -1,5 +1,7 @@
 # coimbra-2021-o-caso-embraer-como-uma-antecipacao-efetiva-da-lei-no-10-973-2004
 
+Fuente PDF: `../pdf/coimbra-2021-o-caso-embraer-como-uma-antecipacao-efetiva-da-lei-no-10-973-2004.pdf`
+
 ## Page 1
 
 Revista de Direito Econômico e Socioambiental ISSN 2179-8214 Licenciado sob uma Licença Creative Commons REVISTA DE DIREITO ECONÔMICO E SOCIOAMBIENTAL vol. 12 | n. 3 | setembro/dezembro 2021 | ISSN 2179-8214 Periodicidade quadrimestral | www.pucpr.br/direitoeconomico Curitiba | Programa de Pós-Graduação em Direito da PUCPR

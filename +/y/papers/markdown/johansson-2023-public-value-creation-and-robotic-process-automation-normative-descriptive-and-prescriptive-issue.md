@@ -1,5 +1,7 @@
 # johansson-2023-public-value-creation-and-robotic-process-automation-normative-descriptive-and-prescriptive-issue
 
+Fuente PDF: `../pdf/johansson-2023-public-value-creation-and-robotic-process-automation-normative-descriptive-and-prescriptive-issue.pdf`
+
 ## Page 1
 
 http://www.diva-portal.org Postprint This is the accepted version of a paper published in Transforming Government: People, Process and Policy. This paper has been peer-reviewed but does not include the final publisher proof-corrections or journal pagination. Citation for the original published paper (version of record): Johansson, J., Thomsen, M., Åkesson, M. (2023) Public value creation and robotic process automation: normative, descriptive and prescriptive issues in municipal administration Transforming Government: People, Process and Policy, 17(2): 177-191 https://doi.org/10.1108/tg-11-2021-0193 Access to the published version may require subscription. N.B. When citing this work, cite the original published paper. Permanent link to this version: http://urn.kb.se/resolve?urn=urn:nbn:se:hh:diva-48095

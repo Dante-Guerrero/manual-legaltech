@@ -1,5 +1,7 @@
 # ocana-fernandez-2021-inteligencia-artificial-ia-aplicada-a-la-gestion-publica
 
+Fuente PDF: `../pdf/ocana-fernandez-2021-inteligencia-artificial-ia-aplicada-a-la-gestion-publica.pdf`
+
 ## Page 1
 
 Año 26 No. 94 Abril-Junio, 2021 Año 26 No. 94 Abril-Junio, 2021
