@@ -1,186 +1,130 @@
 ---
-title: "11. Ejemplos de proyectos Legal Tech"
+title: "11. Proyectos Legal Tech peruanos"
 ---
 
 ::: {.callout-note}
 ## Qué aprenderás en esta sesión
 
-Esta sesión funciona como puente entre herramientas aisladas y propuestas con sentido. El objetivo es reconocer tipos de proyectos legaltech, distinguir entre una idea vistosa y una solución útil, bosquejar propuestas con lógica de problema-solución y preparar un avance verificable del proyecto final.
+Esta sesión reúne casos peruanos concretos para mostrar que el legaltech local ya no es una promesa abstracta. El objetivo es reconocer qué problemas están resolviendo hoy distintos proyectos, qué tecnologías emplean, qué patrones se repiten entre sector privado y sector público, y por qué esos casos ayudan a pensar mejor el proyecto final del curso [@mapeolegaltechperu2025].
 :::
 
-## Una buena idea legaltech empieza con una molestia real
+## El ecosistema ya dejó de ser hipotético
 
-Uno de los errores más frecuentes en proyectos legaltech es empezar por la herramienta: hagamos algo con IA, usemos blockchain, construyamos un chatbot. Ese orden suele ser un mal punto de partida. Un proyecto valioso empieza, más bien, con una fricción concreta: un trámite lento, una revisión repetitiva, una consulta difícil de atender, una mala trazabilidad o una experiencia institucional confusa.
+Durante mucho tiempo, hablar de legaltech en el Perú podía sonar a conversación de futuro. El `Mapeo LegalTech Perú 2025` cambia ese punto de partida porque permite ver algo más concreto: ya existe un conjunto reconocible de proyectos, instituciones y equipos que están usando automatización, analítica, interoperabilidad e inteligencia artificial para resolver problemas jurídicos y administrativos reales [@mapeolegaltechperu2025].
 
-## Del problema a la propuesta
+Lo importante de esa cartografía no es solo que enumera nombres. Lo importante es que muestra una transición. El debate deja de girar alrededor de si conviene o no incorporar tecnología al derecho y empieza a girar alrededor de cómo se hace, con qué alcance, para quién y con qué controles. Ese cambio de pregunta es una señal de madurez.
 
-Cuando el problema está bien formulado, la conversación cambia. Ya no se trata de exhibir jerga tecnológica, sino de responder preguntas más serias:
+## Lo peruano no aparece en un solo formato
 
-- ¿qué tarea es lenta, costosa o poco trazable?;
-- ¿a quién afecta?;
-- ¿qué parte podría mejorar con apoyo tecnológico?;
-- ¿qué solución es proporcional al problema?;
-- ¿qué límites y riesgos debería reconocer el proyecto?
+Una de las enseñanzas más útiles del ecosistema peruano es que no existe un único tipo de proyecto legaltech. Algunos casos nacen como plataformas privadas orientadas a acceso a información o monitoreo regulatorio. Otros aparecen dentro de áreas legales corporativas que automatizan flujos internos. Y otros se desarrollan en entidades públicas que intentan acelerar fiscalización, mejorar trámites o volver más accesible la información estatal [@mapeolegaltechperu2025].
 
-Primero el problema, luego la solución. Ese orden protege al proyecto de promesas vacías.
+Visto así, el legaltech peruano no debe reducirse a chatbots ni a inteligencia artificial generativa. También incluye plataformas de cumplimiento, sistemas de expediente digital, tableros de control, herramientas de transcripción, interoperabilidad de identidad y servicios públicos jurídicos diseñados para operar con menos fricción.
 
-## Por qué esto importa en una facultad de Derecho
+## Por qué este mapa importa en una facultad de Derecho
 
-Esta sesión importa porque el curso no busca solo familiaridad con herramientas, sino criterio para conectarlas con necesidades plausibles del mundo jurídico. Una buena propuesta legaltech combina comprensión del problema, conciencia del usuario, viabilidad mínima y una promesa tecnológica razonable. Aprender a formular eso ya es una competencia profesional valiosa, incluso cuando el proyecto todavía es un prototipo.
+Para estudiantes de Derecho, mirar estos proyectos cumple una función pedagógica muy concreta. Permite ver que la innovación jurídica no empieza por la herramienta, sino por un cuello de botella identificable: horas perdidas buscando normas, expedientes dispersos, fiscalización incapaz de procesar evidencia masiva, trámites lentos, observaciones mal comunicadas o cumplimiento normativo difícil de sostener a escala.
+
+Por eso, este capítulo no presenta una galería de casos para admirarlos desde lejos. Los presenta como evidencia de que un problema jurídico bien formulado puede traducirse en arquitectura de datos, automatización, interfaz, flujo de revisión y criterio institucional.
 
 ::: {.callout-important}
 ## Antes de empezar
 
-Conviene pensar la propuesta con una ambición controlada. Un proyecto académico serio no necesita prometer una empresa completa ni una solución total. Necesita mostrar que el equipo entendió un problema real, identificó a quién afecta, propuso una intervención defendible y reconoció riesgos, límites y próximos pasos.
+Conviene leer estos casos con una pregunta estable: ¿qué problema específico resolvía cada proyecto antes de adoptar tecnología? Si esa pregunta desaparece, el proyecto se vuelve una vitrina de herramientas. Si se mantiene, entonces aparecen con mucha más claridad el usuario, la lógica del sistema, la promesa real de valor y también sus límites [@mapeolegaltechperu2025].
 :::
 
-## Tipos frecuentes de proyectos legaltech
+## Acceso a información jurídica y vigilancia regulatoria
 
-Algunos tipos frecuentes de proyecto son:
+Un primer grupo de proyectos peruanos intenta resolver un problema básico pero decisivo: encontrar, filtrar y explicar información jurídica útil sin obligar al usuario a perder horas entre portales fragmentados. Allí destacan Juztina, ReguAlert y YachAIbot [@mapeolegaltechperu2025].
 
-- automatización documental;
-- acceso a información jurídica;
-- visualización de datos regulatorios;
-- cumplimiento normativo;
-- asistentes de trabajo interno;
-- trazabilidad de trámites o expedientes;
-- revisión preliminar o clasificación de documentos.
+Juztina se presenta como la primera IA peruana para el sector legal. Su apuesta es clara: volver conversable el acceso a normativa y jurisprudencia mediante un esquema de RAG apoyado en fuentes oficiales. El dato relevante no es solo técnico. En menos de dos años reporta más de 24 mil usuarios activos y más de 862 mil créditos vendidos, con ahorros de hasta cuatro horas por consulta. Eso sugiere que el valor principal del producto no está en “responder bonito”, sino en reducir el costo de búsqueda y verificación jurídica.
 
-La tipología no agota todas las posibilidades, pero ayuda a ordenar ideas.
+ReguAlert atiende otro frente del mismo problema: el monitoreo regulatorio para organizaciones que necesitan detectar cambios con rapidez. Aquí la innovación no adopta la forma de una gran interfaz conversacional, sino de un sistema que captura fuentes oficiales, estructura datos, clasifica documentos y genera alertas en menos de quince segundos. Lo pedagógicamente interesante es que convierte la vigilancia normativa en flujo operativo, no en tarea artesanal del abogado.
 
-## ¿Qué vuelve útil a una propuesta?
-
-Una propuesta útil suele cumplir al menos con estas condiciones:
-
-- responde a un problema real;
-- tiene un usuario o público identificable;
-- explica con claridad qué hace la solución;
-- no promete más de lo que puede sostener;
-- reconoce riesgos, límites y condiciones de uso.
-
-Lo contrario también es fácil de identificar:
-
-- solución vaga;
-- problema inflado o mal definido;
-- jerga tecnológica sin necesidad;
-- ausencia de usuario claro;
-- falta de criterio jurídico.
+YachAIbot traslada una lógica parecida al Estado. Impulsado desde la PCM, busca facilitar a funcionarios y ciudadanía la consulta del marco normativo peruano. Su promesa no es reemplazar la norma, sino bajar el costo de encontrarla y entenderla: el proyecto reporta una reducción de alrededor del 70 por ciento en el tiempo promedio de consulta. Leído junto con Juztina, el contraste es útil: problemas similares pueden originar productos distintos según cambie el usuario final y el contexto institucional.
 
 ::: {.callout-note}
 ## Regla útil
 
-Una solución sobria, específica y bien justificada vale más que una idea espectacular pero difusa.
+Cuando un proyecto legaltech mejora acceso a información, su valor no depende solo de la calidad de la respuesta. Depende también de la calidad de la fuente, del criterio de actualización y de la facilidad con que el usuario puede convertir la respuesta en acción.
 :::
 
-## Ejemplo 1. Seguimiento de plazos
+## Cumplimiento corporativo y trabajo legal interno
 
-Imagina un proyecto orientado a seguimiento de plazos en expedientes o contratos.
+Otro conjunto de casos peruanos muestra que el legaltech no siempre se dirige al ciudadano ni al litigio. A veces reorganiza el trabajo interno de empresas y áreas legales. GEORGE y ROBERT_IA son buenos ejemplos de esa línea [@mapeolegaltechperu2025].
 
-Problema:
+GEORGE, desarrollado desde CMS Grau, parte de un dolor muy reconocible para sectores regulados: matrices extensas, actualizaciones difíciles y poca visibilidad de obligaciones concretas. La plataforma articula normas, permisos, obligaciones y alertas en un sistema de cumplimiento trazable. Su relevancia para este curso es directa porque deja ver una lección importante: innovar jurídicamente no siempre exige IA generativa. A veces basta con hacer mucho mejor la tarea de estructurar, filtrar y mantener visible el universo regulatorio.
 
-- plazos dispersos en correos y hojas de cálculo;
-- alertas tardías;
-- baja trazabilidad.
+ROBERT_IA, en cambio, pertenece a la lógica de transformación interna del área legal corporativa. Desarrollado en Entel Perú, combina IA generativa, OCR, búsqueda y comparación documental con una arquitectura multiagente y supervisión humana constante. El dato más expresivo es la reducción reportada de hasta un 40 por ciento en tiempos de revisión documental. Pero más allá del porcentaje, el caso importa porque muestra un cambio de rol: el abogado deja de ser mero usuario final de una herramienta y participa en la priorización de funcionalidades, en el diseño del backlog y en la gobernanza del sistema.
 
-Posible solución:
+En ambos casos, el aprendizaje es parecido. La tecnología agrega valor cuando desplaza trabajo repetitivo y devuelve tiempo al análisis, a la coordinación y a la gestión de riesgo. Eso es mucho más interesante que la idea superficial de que la innovación consiste solo en “usar IA”.
 
-- un flujo simple que registre casos, fechas y alertas;
-- un tablero básico de seguimiento;
-- un sistema de priorización mínima.
+## Justicia, registros y administración pública
 
-Valor esperado:
+Una tercera familia de casos peruanos se mueve dentro del aparato estatal y muestra que la modernización jurídica también depende de rediseñar procedimientos, no solo de sumar herramientas sueltas. Aquí resultan especialmente ilustrativos SJT y CURIA en el Poder Judicial, la experiencia de SUNARP, la infraestructura de identidad digital ID Perú y el proyecto RESUELVE EN UNA de Ositrán [@mapeolegaltechperu2025].
 
-- menos omisiones;
-- mejor visibilidad;
-- mayor orden del trabajo.
+SJT y CURIA parten de un problema institucional claro: votaciones internas manuales, documentación dispersa y dificultad para sistematizar antecedentes. La respuesta combina una capa de organización procesal digital con un asistente de IA entrenado en antecedentes judiciales y fuentes normativas. Lo importante es el principio que organiza el proyecto: modernizar sin deshumanizar. CURIA no se presenta como sustituto del juez, sino como apoyo a búsqueda, organización y redacción.
 
-## Ejemplo 2. Automatización documental
+La experiencia de SUNARP introduce otra variante de gobernanza. Allí la IA funciona como un coadyuvante registral que acelera constitución de empresas, búsqueda de jurisprudencia y lectura de partidas manuscritas, pero sin desplazar la calificación humana. El ejemplo más expresivo es la constitución de empresas con IA en dieciséis segundos, junto con más de siete mil asientos automatizados. La institución incluso formula con claridad una regla que vale para todo el curso: la IA puede trasladar y estructurar información, pero la responsabilidad decisoria sigue siendo humana.
 
-Problema:
+ID Perú, desarrollado por RENIEC, obliga a ampliar la definición misma de proyecto legaltech. No es un asistente jurídico visible para el gran público, pero sí una infraestructura de identidad digital e interoperabilidad que vuelve posible que múltiples entidades autentiquen personas y simplifiquen servicios. En otras palabras, parte del legaltech público más importante no siempre se ve como aplicación final; a veces se ve como capa común que sostiene muchas aplicaciones.
 
-- formatos repetitivos;
-- errores de copia y pega;
-- documentos inconsistentes.
+RESUELVE EN UNA, en Ositrán, es quizá uno de los casos más pedagógicos del conjunto. Empieza por modelar el proceso con BPMN, ordena la base de datos, integra Microsoft 365, Power BI y R, y termina automatizando resoluciones y cédulas en apenas siete segundos. Aquí se ve con mucha claridad la lógica del curso: proceso, dato, regla, automatización y salida verificable. El proyecto no nació de una fascinación por la herramienta, sino de una pregunta mucho más sobria: por qué la fiscalización del APR seguía atrapada en expedientes físicos, alertas informales y documentos lentos de producir.
 
-Posible solución:
+## Fiscalización ambiental y protección del consumidor
 
-- plantilla con campos variables;
-- generación automática de salidas según ciertos datos;
-- revisión humana final.
+El cuarto grupo de proyectos peruanos es especialmente valioso porque saca al legaltech del imaginario centrado solo en estudios de abogados. OSINFOR, OEFA e Indecopi muestran que la tecnología jurídica también puede usarse para fiscalizar mejor, procesar evidencia masiva y coordinar respuesta pública [@mapeolegaltechperu2025].
 
-Valor esperado:
+OSINFOR ofrece dos casos complementarios. El primero es el seguimiento y monitoreo con IA para supervisión forestal, que combina imágenes satelitales, radar y SIG para ampliar cobertura, mejorar detección de extracción no autorizada y reducir tiempos y costos de supervisión. El segundo es SIADO Administrado, que digitaliza y abre expedientes sancionadores a administrados, fiscalías y procuraduría. Juntos enseñan una idea importante: la innovación pública gana mucha fuerza cuando combina analítica territorial con expedientes accesibles e interoperables.
 
-- ahorro de tiempo;
-- reducción de errores mecánicos;
-- mayor consistencia documental.
+En OEFA aparecen dos subcasos especialmente didácticos. `Reporta Residuos` convierte a la ciudadanía en fuente activa de alertas geolocalizadas sobre acumulación de basura, mientras que la `Plataforma Única de Servicios Digitales` integra trámites y notificaciones en un portal interoperable. El punto fuerte aquí es que la tecnología no solo acelera a la institución; también redistribuye participación y reduce fricción de interacción con el Estado.
 
-## Ejemplo 3. Acceso a información jurídica
+Indecopi, por su parte, muestra una aplicación muy concreta de IA a la fiscalización del spam telefónico. Con Whisper ejecutado localmente y scripts en Python, pudo procesar millones de grabaciones y convertir un volumen de audio casi imposible de revisar manualmente en evidencia priorizable para supervisión. La lección es potente: una herramienta legaltech puede ser jurídicamente decisiva aunque no redacte una sola línea; basta con que vuelva fiscalizable un universo de datos antes inmanejable.
 
-Problema:
+## Patrones que sí se repiten en el caso peruano
 
-- información dispersa o difícil de consultar;
-- poca claridad para usuarios no especializados;
-- sobrecarga en respuestas repetitivas.
+Si miramos el conjunto, emergen varios patrones estables [@mapeolegaltechperu2025]:
 
-Posible solución:
+- casi todos los proyectos nacen de un cuello de botella institucional muy concreto;
+- muchos combinan automatización con supervisión humana, en lugar de sustituirla;
+- la IA aparece, pero no monopoliza el ecosistema;
+- datos, interoperabilidad y trazabilidad pesan tanto como la interfaz visible;
+- los mejores casos muestran resultados operativos claros y no solo lenguaje aspiracional.
 
-- un repositorio estructurado;
-- un buscador temático simple;
-- una interfaz de consulta inicial con criterios bien definidos.
-
-Este tipo de proyecto puede ser especialmente valioso en contextos de acceso a justicia o atención ciudadana, siempre que se maneje con cuidado el alcance de la herramienta.
-
-## Viabilidad básica y riesgos
-
-No hace falta que el proyecto esté totalmente construido para ser una buena propuesta académica. Pero sí conviene mostrar alguna idea de viabilidad:
-
-- ¿qué recursos requiere?;
-- ¿qué parte ya puede prototiparse?;
-- ¿qué tan sensible es la información involucrada?;
-- ¿qué controles serían necesarios?;
-- ¿qué limitaciones reconoce el equipo?
-
-Toda propuesta razonable debería incluir también una sección mínima de riesgos:
-
-- riesgos jurídicos;
-- riesgos operativos;
-- riesgos éticos;
-- riesgos de seguridad o privacidad;
-- riesgos de depender demasiado de una herramienta.
+Ese último punto importa mucho. El ecosistema peruano se vuelve más convincente precisamente cuando ofrece métricas verificables: segundos ahorrados, hectáreas monitoreadas, expedientes organizados, grabaciones procesadas, consultas resueltas o trámites digitalizados. Es decir, cuando el proyecto deja de ser promesa y se vuelve desempeño observable.
 
 ::: {.callout-warning}
 ## Advertencia útil
 
-Una idea tecnológicamente llamativa puede ser inútil si no mejora nada relevante del trabajo jurídico.
+No conviene leer estos casos como si todos fueran modelos listos para copiarse. Cada proyecto responde a una mezcla específica de problema, datos, institución y capacidad técnica. Lo útil no es imitar la superficie del producto, sino entender la lógica que lo hizo necesario y viable.
 :::
 
 ## Práctica en editor
 
-Crea en tu repositorio un documento inicial del proyecto con estas secciones:
+Elige uno de los proyectos peruanos revisados en este capítulo y descríbelo con estas cinco piezas:
 
-1. problema;
-2. usuario;
-3. solución propuesta;
-4. valor esperado;
-5. riesgos o límites.
+1. problema original;
+2. usuario o institución principal;
+3. tecnología o arquitectura empleada;
+4. resultado verificable;
+5. riesgo o límite que todavía exigiría supervisión humana o rediseño.
 
-Si quieres profundizar, agrega un diagrama de flujo, una maqueta simple o una tabla de funcionalidades mínimas.
+Si quieres profundizar, compáralo con otro proyecto del capítulo y explica qué cambia cuando el usuario final es una empresa, un juez, una entidad pública o la ciudadanía.
 
 ## Conclusiones del capítulo
 
-Pensar proyectos legaltech con seriedad obliga a cambiar la secuencia mental habitual: no partir de la herramienta, sino del problema, del usuario y de la mejora plausible. Esa disciplina vuelve más sobrias las propuestas, pero también las hace más defendibles. En un entorno académico, ese ya es un aprendizaje central.
+El legaltech peruano ya ofrece suficientes casos como para dejar atrás la conversación abstracta. Lo interesante del mapa no es que todos los proyectos usen la misma tecnología, sino que todos obligan a formular mejor una pregunta previa: qué fricción jurídica o administrativa era tan costosa que justificaba rediseñar el proceso. Cuando esa pregunta está bien hecha, la tecnología deja de ser ornamento y empieza a parecerse a una solución defendible.
 
 ::: {.callout-tip}
 ## Ideas clave
 
-- una solución útil vale más que una idea grandilocuente;
-- la claridad del problema suele determinar la calidad del proyecto;
-- una buena propuesta legaltech combina criterio jurídico, diseño de proceso y uso razonable de tecnología;
-- documentar el proyecto desde temprano mejora su solidez.
+- el ecosistema legaltech peruano ya combina iniciativas privadas, corporativas y publicas;
+- acceso a informacion, cumplimiento, fiscalizacion e interoperabilidad son frentes tan importantes como la IA generativa;
+- los proyectos mas solidos parten de un problema operativo concreto y muestran resultados verificables;
+- una buena lectura del legaltech no copia herramientas: entiende arquitectura, usuario, datos y gobernanza.
 :::
 
 ::: {.callout-caution}
 ## Para pensar y reflexionar
 
-El valor de un proyecto no depende solo de lo novedoso que suene, sino de cuánto entiende el trabajo jurídico que busca mejorar. La tecnología aporta más cuando llega después de una buena pregunta que cuando intenta reemplazarla.
+Si tuvieras que diseñar hoy un proyecto legaltech peruano realista, la mejor pregunta inicial no seria que tecnologia usar, sino que cuello de botella juridico merece de verdad ser convertido en flujo, dato, interfaz y criterio de supervision.
 :::

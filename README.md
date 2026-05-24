@@ -17,7 +17,6 @@ Construir un manual universitario práctico para estudiantes de Derecho, orienta
 - [index.qmd](/Users/dante/github/manual-legaltech/index.qmd): portada del manual.
 - [parte-0](/Users/dante/github/manual-legaltech/parte-0): páginas iniciales.
 - [parte-1-modulo-1](/Users/dante/github/manual-legaltech/parte-1-modulo-1) a [parte-4-modulo-4](/Users/dante/github/manual-legaltech/parte-4-modulo-4): módulos del curso.
-- [evaluaciones](/Users/dante/github/manual-legaltech/evaluaciones): evaluaciones y exámenes.
 - [referencias.qmd](/Users/dante/github/manual-legaltech/referencias.qmd): bibliografía final.
 - [styles.css](/Users/dante/github/manual-legaltech/styles.css): estilos personalizados.
 - [images](/Users/dante/github/manual-legaltech/images): imágenes del libro.

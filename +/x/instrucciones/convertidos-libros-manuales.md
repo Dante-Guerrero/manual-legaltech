@@ -2,8 +2,9 @@
 
 Lista de PDF en `+/y/libros-manuales/pdf` que ya tienen su equivalente en Markdown dentro de `+/y/libros-manuales/markdown`.
 
-Total: 9
+Total: 10
 
+- `Mapeo-LegalTech-Perú-2025-VF-1.pdf`
 - `alfonso-sf-introduccion-a-la-visualizacion-de-datos.pdf`
 - `chacon-straub-2014-pro-git.pdf`
 - `fischer-silver-2011-bpmn-2-0-handbook-methods-concepts-case-studies-and-standards-in-business-process-management.pdf`

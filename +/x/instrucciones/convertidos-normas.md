@@ -2,8 +2,9 @@
 
 Lista de PDF en `+/y/normas/pdf` que ya tienen su equivalente en Markdown dentro de `+/y/normas/markdown`.
 
-Total: 23
+Total: 25
 
+- `ENIA-anexo-rm-n-152-2026-pcm-enia(2).pdf`
 - `jus-2019-decreto-supremo-004-2019-tuo-ley-27444-procedimiento-administrativo-general.pdf`
 - `pcm-2002-decreto-supremo-030-2002-reglamento-ley-27658-modernizacion-gestion-estado.pdf`
 - `pcm-2015-decreto-supremo-086-2015-vinculacion-peru-ocde-programa-pais.pdf`
@@ -27,3 +28,4 @@ Total: 23
 - `peru-2020-decreto-de-urgencia-006-2020-sistema-nacional-transformacion-digital.pdf`
 - `peru-2022-ley-31449-fortalece-laboratorio-gobierno-transformacion-digital.pdf`
 - `peru-2023-ley-31814-uso-inteligencia-artificial-desarrollo-pais.pdf`
+- `rm-n-152-2026-pcm.pdf`

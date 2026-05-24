@@ -1475,122 +1475,111 @@
   {
     "objectID": "parte-4-modulo-4/11-capitulo.html",
     "href": "parte-4-modulo-4/11-capitulo.html",
-    "title": "11. Ejemplos de proyectos Legal Tech",
+    "title": "11. Proyectos Legal Tech peruanos",
     "section": "",
-    "text": "Una buena idea legaltech empieza con una molestia real\nUno de los errores más frecuentes en proyectos legaltech es empezar por la herramienta: hagamos algo con IA, usemos blockchain, construyamos un chatbot. Ese orden suele ser un mal punto de partida. Un proyecto valioso empieza, más bien, con una fricción concreta: un trámite lento, una revisión repetitiva, una consulta difícil de atender, una mala trazabilidad o una experiencia institucional confusa.",
+    "text": "El ecosistema ya dejó de ser hipotético\nDurante mucho tiempo, hablar de legaltech en el Perú podía sonar a conversación de futuro. El Mapeo LegalTech Perú 2025 cambia ese punto de partida porque permite ver algo más concreto: ya existe un conjunto reconocible de proyectos, instituciones y equipos que están usando automatización, analítica, interoperabilidad e inteligencia artificial para resolver problemas jurídicos y administrativos reales (Iniciativa Tech & Law 2025).\nLo importante de esa cartografía no es solo que enumera nombres. Lo importante es que muestra una transición. El debate deja de girar alrededor de si conviene o no incorporar tecnología al derecho y empieza a girar alrededor de cómo se hace, con qué alcance, para quién y con qué controles. Ese cambio de pregunta es una señal de madurez.",
     "crumbs": [
       "IV. Inteligencia Artificial aplicada al Derecho",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>11. Ejemplos de proyectos Legal Tech</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>11. Proyectos Legal Tech peruanos</span>"
     ]
   },
   {
-    "objectID": "parte-4-modulo-4/11-capitulo.html#del-problema-a-la-propuesta",
-    "href": "parte-4-modulo-4/11-capitulo.html#del-problema-a-la-propuesta",
-    "title": "11. Ejemplos de proyectos Legal Tech",
-    "section": "Del problema a la propuesta",
-    "text": "Del problema a la propuesta\nCuando el problema está bien formulado, la conversación cambia. Ya no se trata de exhibir jerga tecnológica, sino de responder preguntas más serias:\n\n¿qué tarea es lenta, costosa o poco trazable?;\n¿a quién afecta?;\n¿qué parte podría mejorar con apoyo tecnológico?;\n¿qué solución es proporcional al problema?;\n¿qué límites y riesgos debería reconocer el proyecto?\n\nPrimero el problema, luego la solución. Ese orden protege al proyecto de promesas vacías.",
+    "objectID": "parte-4-modulo-4/11-capitulo.html#lo-peruano-no-aparece-en-un-solo-formato",
+    "href": "parte-4-modulo-4/11-capitulo.html#lo-peruano-no-aparece-en-un-solo-formato",
+    "title": "11. Proyectos Legal Tech peruanos",
+    "section": "Lo peruano no aparece en un solo formato",
+    "text": "Lo peruano no aparece en un solo formato\nUna de las enseñanzas más útiles del ecosistema peruano es que no existe un único tipo de proyecto legaltech. Algunos casos nacen como plataformas privadas orientadas a acceso a información o monitoreo regulatorio. Otros aparecen dentro de áreas legales corporativas que automatizan flujos internos. Y otros se desarrollan en entidades públicas que intentan acelerar fiscalización, mejorar trámites o volver más accesible la información estatal (Iniciativa Tech & Law 2025).\nVisto así, el legaltech peruano no debe reducirse a chatbots ni a inteligencia artificial generativa. También incluye plataformas de cumplimiento, sistemas de expediente digital, tableros de control, herramientas de transcripción, interoperabilidad de identidad y servicios públicos jurídicos diseñados para operar con menos fricción.",
     "crumbs": [
       "IV. Inteligencia Artificial aplicada al Derecho",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>11. Ejemplos de proyectos Legal Tech</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>11. Proyectos Legal Tech peruanos</span>"
     ]
   },
   {
-    "objectID": "parte-4-modulo-4/11-capitulo.html#por-qué-esto-importa-en-una-facultad-de-derecho",
-    "href": "parte-4-modulo-4/11-capitulo.html#por-qué-esto-importa-en-una-facultad-de-derecho",
-    "title": "11. Ejemplos de proyectos Legal Tech",
-    "section": "Por qué esto importa en una facultad de Derecho",
-    "text": "Por qué esto importa en una facultad de Derecho\nEsta sesión importa porque el curso no busca solo familiaridad con herramientas, sino criterio para conectarlas con necesidades plausibles del mundo jurídico. Una buena propuesta legaltech combina comprensión del problema, conciencia del usuario, viabilidad mínima y una promesa tecnológica razonable. Aprender a formular eso ya es una competencia profesional valiosa, incluso cuando el proyecto todavía es un prototipo.\n\n\n\n\n\n\nImportantAntes de empezar\n\n\n\nConviene pensar la propuesta con una ambición controlada. Un proyecto académico serio no necesita prometer una empresa completa ni una solución total. Necesita mostrar que el equipo entendió un problema real, identificó a quién afecta, propuso una intervención defendible y reconoció riesgos, límites y próximos pasos.",
+    "objectID": "parte-4-modulo-4/11-capitulo.html#por-qué-este-mapa-importa-en-una-facultad-de-derecho",
+    "href": "parte-4-modulo-4/11-capitulo.html#por-qué-este-mapa-importa-en-una-facultad-de-derecho",
+    "title": "11. Proyectos Legal Tech peruanos",
+    "section": "Por qué este mapa importa en una facultad de Derecho",
+    "text": "Por qué este mapa importa en una facultad de Derecho\nPara estudiantes de Derecho, mirar estos proyectos cumple una función pedagógica muy concreta. Permite ver que la innovación jurídica no empieza por la herramienta, sino por un cuello de botella identificable: horas perdidas buscando normas, expedientes dispersos, fiscalización incapaz de procesar evidencia masiva, trámites lentos, observaciones mal comunicadas o cumplimiento normativo difícil de sostener a escala.\nPor eso, este capítulo no presenta una galería de casos para admirarlos desde lejos. Los presenta como evidencia de que un problema jurídico bien formulado puede traducirse en arquitectura de datos, automatización, interfaz, flujo de revisión y criterio institucional.\n\n\n\n\n\n\nImportantAntes de empezar\n\n\n\nConviene leer estos casos con una pregunta estable: ¿qué problema específico resolvía cada proyecto antes de adoptar tecnología? Si esa pregunta desaparece, el proyecto se vuelve una vitrina de herramientas. Si se mantiene, entonces aparecen con mucha más claridad el usuario, la lógica del sistema, la promesa real de valor y también sus límites (Iniciativa Tech & Law 2025).",
     "crumbs": [
       "IV. Inteligencia Artificial aplicada al Derecho",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>11. Ejemplos de proyectos Legal Tech</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>11. Proyectos Legal Tech peruanos</span>"
     ]
   },
   {
-    "objectID": "parte-4-modulo-4/11-capitulo.html#tipos-frecuentes-de-proyectos-legaltech",
-    "href": "parte-4-modulo-4/11-capitulo.html#tipos-frecuentes-de-proyectos-legaltech",
-    "title": "11. Ejemplos de proyectos Legal Tech",
-    "section": "Tipos frecuentes de proyectos legaltech",
-    "text": "Tipos frecuentes de proyectos legaltech\nAlgunos tipos frecuentes de proyecto son:\n\nautomatización documental;\nacceso a información jurídica;\nvisualización de datos regulatorios;\ncumplimiento normativo;\nasistentes de trabajo interno;\ntrazabilidad de trámites o expedientes;\nrevisión preliminar o clasificación de documentos.\n\nLa tipología no agota todas las posibilidades, pero ayuda a ordenar ideas.",
+    "objectID": "parte-4-modulo-4/11-capitulo.html#acceso-a-información-jurídica-y-vigilancia-regulatoria",
+    "href": "parte-4-modulo-4/11-capitulo.html#acceso-a-información-jurídica-y-vigilancia-regulatoria",
+    "title": "11. Proyectos Legal Tech peruanos",
+    "section": "Acceso a información jurídica y vigilancia regulatoria",
+    "text": "Acceso a información jurídica y vigilancia regulatoria\nUn primer grupo de proyectos peruanos intenta resolver un problema básico pero decisivo: encontrar, filtrar y explicar información jurídica útil sin obligar al usuario a perder horas entre portales fragmentados. Allí destacan Juztina, ReguAlert y YachAIbot (Iniciativa Tech & Law 2025).\nJuztina se presenta como la primera IA peruana para el sector legal. Su apuesta es clara: volver conversable el acceso a normativa y jurisprudencia mediante un esquema de RAG apoyado en fuentes oficiales. El dato relevante no es solo técnico. En menos de dos años reporta más de 24 mil usuarios activos y más de 862 mil créditos vendidos, con ahorros de hasta cuatro horas por consulta. Eso sugiere que el valor principal del producto no está en “responder bonito”, sino en reducir el costo de búsqueda y verificación jurídica.\nReguAlert atiende otro frente del mismo problema: el monitoreo regulatorio para organizaciones que necesitan detectar cambios con rapidez. Aquí la innovación no adopta la forma de una gran interfaz conversacional, sino de un sistema que captura fuentes oficiales, estructura datos, clasifica documentos y genera alertas en menos de quince segundos. Lo pedagógicamente interesante es que convierte la vigilancia normativa en flujo operativo, no en tarea artesanal del abogado.\nYachAIbot traslada una lógica parecida al Estado. Impulsado desde la PCM, busca facilitar a funcionarios y ciudadanía la consulta del marco normativo peruano. Su promesa no es reemplazar la norma, sino bajar el costo de encontrarla y entenderla: el proyecto reporta una reducción de alrededor del 70 por ciento en el tiempo promedio de consulta. Leído junto con Juztina, el contraste es útil: problemas similares pueden originar productos distintos según cambie el usuario final y el contexto institucional.\n\n\n\n\n\n\nNoteRegla útil\n\n\n\nCuando un proyecto legaltech mejora acceso a información, su valor no depende solo de la calidad de la respuesta. Depende también de la calidad de la fuente, del criterio de actualización y de la facilidad con que el usuario puede convertir la respuesta en acción.",
     "crumbs": [
       "IV. Inteligencia Artificial aplicada al Derecho",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>11. Ejemplos de proyectos Legal Tech</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>11. Proyectos Legal Tech peruanos</span>"
     ]
   },
   {
-    "objectID": "parte-4-modulo-4/11-capitulo.html#qué-vuelve-útil-a-una-propuesta",
-    "href": "parte-4-modulo-4/11-capitulo.html#qué-vuelve-útil-a-una-propuesta",
-    "title": "11. Ejemplos de proyectos Legal Tech",
-    "section": "¿Qué vuelve útil a una propuesta?",
-    "text": "¿Qué vuelve útil a una propuesta?\nUna propuesta útil suele cumplir al menos con estas condiciones:\n\nresponde a un problema real;\ntiene un usuario o público identificable;\nexplica con claridad qué hace la solución;\nno promete más de lo que puede sostener;\nreconoce riesgos, límites y condiciones de uso.\n\nLo contrario también es fácil de identificar:\n\nsolución vaga;\nproblema inflado o mal definido;\njerga tecnológica sin necesidad;\nausencia de usuario claro;\nfalta de criterio jurídico.\n\n\n\n\n\n\n\nNoteRegla útil\n\n\n\nUna solución sobria, específica y bien justificada vale más que una idea espectacular pero difusa.",
+    "objectID": "parte-4-modulo-4/11-capitulo.html#cumplimiento-corporativo-y-trabajo-legal-interno",
+    "href": "parte-4-modulo-4/11-capitulo.html#cumplimiento-corporativo-y-trabajo-legal-interno",
+    "title": "11. Proyectos Legal Tech peruanos",
+    "section": "Cumplimiento corporativo y trabajo legal interno",
+    "text": "Cumplimiento corporativo y trabajo legal interno\nOtro conjunto de casos peruanos muestra que el legaltech no siempre se dirige al ciudadano ni al litigio. A veces reorganiza el trabajo interno de empresas y áreas legales. GEORGE y ROBERT_IA son buenos ejemplos de esa línea (Iniciativa Tech & Law 2025).\nGEORGE, desarrollado desde CMS Grau, parte de un dolor muy reconocible para sectores regulados: matrices extensas, actualizaciones difíciles y poca visibilidad de obligaciones concretas. La plataforma articula normas, permisos, obligaciones y alertas en un sistema de cumplimiento trazable. Su relevancia para este curso es directa porque deja ver una lección importante: innovar jurídicamente no siempre exige IA generativa. A veces basta con hacer mucho mejor la tarea de estructurar, filtrar y mantener visible el universo regulatorio.\nROBERT_IA, en cambio, pertenece a la lógica de transformación interna del área legal corporativa. Desarrollado en Entel Perú, combina IA generativa, OCR, búsqueda y comparación documental con una arquitectura multiagente y supervisión humana constante. El dato más expresivo es la reducción reportada de hasta un 40 por ciento en tiempos de revisión documental. Pero más allá del porcentaje, el caso importa porque muestra un cambio de rol: el abogado deja de ser mero usuario final de una herramienta y participa en la priorización de funcionalidades, en el diseño del backlog y en la gobernanza del sistema.\nEn ambos casos, el aprendizaje es parecido. La tecnología agrega valor cuando desplaza trabajo repetitivo y devuelve tiempo al análisis, a la coordinación y a la gestión de riesgo. Eso es mucho más interesante que la idea superficial de que la innovación consiste solo en “usar IA”.",
     "crumbs": [
       "IV. Inteligencia Artificial aplicada al Derecho",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>11. Ejemplos de proyectos Legal Tech</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>11. Proyectos Legal Tech peruanos</span>"
     ]
   },
   {
-    "objectID": "parte-4-modulo-4/11-capitulo.html#ejemplo-1.-seguimiento-de-plazos",
-    "href": "parte-4-modulo-4/11-capitulo.html#ejemplo-1.-seguimiento-de-plazos",
-    "title": "11. Ejemplos de proyectos Legal Tech",
-    "section": "Ejemplo 1. Seguimiento de plazos",
-    "text": "Ejemplo 1. Seguimiento de plazos\nImagina un proyecto orientado a seguimiento de plazos en expedientes o contratos.\nProblema:\n\nplazos dispersos en correos y hojas de cálculo;\nalertas tardías;\nbaja trazabilidad.\n\nPosible solución:\n\nun flujo simple que registre casos, fechas y alertas;\nun tablero básico de seguimiento;\nun sistema de priorización mínima.\n\nValor esperado:\n\nmenos omisiones;\nmejor visibilidad;\nmayor orden del trabajo.",
+    "objectID": "parte-4-modulo-4/11-capitulo.html#justicia-registros-y-administración-pública",
+    "href": "parte-4-modulo-4/11-capitulo.html#justicia-registros-y-administración-pública",
+    "title": "11. Proyectos Legal Tech peruanos",
+    "section": "Justicia, registros y administración pública",
+    "text": "Justicia, registros y administración pública\nUna tercera familia de casos peruanos se mueve dentro del aparato estatal y muestra que la modernización jurídica también depende de rediseñar procedimientos, no solo de sumar herramientas sueltas. Aquí resultan especialmente ilustrativos SJT y CURIA en el Poder Judicial, la experiencia de SUNARP, la infraestructura de identidad digital ID Perú y el proyecto RESUELVE EN UNA de Ositrán (Iniciativa Tech & Law 2025).\nSJT y CURIA parten de un problema institucional claro: votaciones internas manuales, documentación dispersa y dificultad para sistematizar antecedentes. La respuesta combina una capa de organización procesal digital con un asistente de IA entrenado en antecedentes judiciales y fuentes normativas. Lo importante es el principio que organiza el proyecto: modernizar sin deshumanizar. CURIA no se presenta como sustituto del juez, sino como apoyo a búsqueda, organización y redacción.\nLa experiencia de SUNARP introduce otra variante de gobernanza. Allí la IA funciona como un coadyuvante registral que acelera constitución de empresas, búsqueda de jurisprudencia y lectura de partidas manuscritas, pero sin desplazar la calificación humana. El ejemplo más expresivo es la constitución de empresas con IA en dieciséis segundos, junto con más de siete mil asientos automatizados. La institución incluso formula con claridad una regla que vale para todo el curso: la IA puede trasladar y estructurar información, pero la responsabilidad decisoria sigue siendo humana.\nID Perú, desarrollado por RENIEC, obliga a ampliar la definición misma de proyecto legaltech. No es un asistente jurídico visible para el gran público, pero sí una infraestructura de identidad digital e interoperabilidad que vuelve posible que múltiples entidades autentiquen personas y simplifiquen servicios. En otras palabras, parte del legaltech público más importante no siempre se ve como aplicación final; a veces se ve como capa común que sostiene muchas aplicaciones.\nRESUELVE EN UNA, en Ositrán, es quizá uno de los casos más pedagógicos del conjunto. Empieza por modelar el proceso con BPMN, ordena la base de datos, integra Microsoft 365, Power BI y R, y termina automatizando resoluciones y cédulas en apenas siete segundos. Aquí se ve con mucha claridad la lógica del curso: proceso, dato, regla, automatización y salida verificable. El proyecto no nació de una fascinación por la herramienta, sino de una pregunta mucho más sobria: por qué la fiscalización del APR seguía atrapada en expedientes físicos, alertas informales y documentos lentos de producir.",
     "crumbs": [
       "IV. Inteligencia Artificial aplicada al Derecho",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>11. Ejemplos de proyectos Legal Tech</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>11. Proyectos Legal Tech peruanos</span>"
     ]
   },
   {
-    "objectID": "parte-4-modulo-4/11-capitulo.html#ejemplo-2.-automatización-documental",
-    "href": "parte-4-modulo-4/11-capitulo.html#ejemplo-2.-automatización-documental",
-    "title": "11. Ejemplos de proyectos Legal Tech",
-    "section": "Ejemplo 2. Automatización documental",
-    "text": "Ejemplo 2. Automatización documental\nProblema:\n\nformatos repetitivos;\nerrores de copia y pega;\ndocumentos inconsistentes.\n\nPosible solución:\n\nplantilla con campos variables;\ngeneración automática de salidas según ciertos datos;\nrevisión humana final.\n\nValor esperado:\n\nahorro de tiempo;\nreducción de errores mecánicos;\nmayor consistencia documental.",
+    "objectID": "parte-4-modulo-4/11-capitulo.html#fiscalización-ambiental-y-protección-del-consumidor",
+    "href": "parte-4-modulo-4/11-capitulo.html#fiscalización-ambiental-y-protección-del-consumidor",
+    "title": "11. Proyectos Legal Tech peruanos",
+    "section": "Fiscalización ambiental y protección del consumidor",
+    "text": "Fiscalización ambiental y protección del consumidor\nEl cuarto grupo de proyectos peruanos es especialmente valioso porque saca al legaltech del imaginario centrado solo en estudios de abogados. OSINFOR, OEFA e Indecopi muestran que la tecnología jurídica también puede usarse para fiscalizar mejor, procesar evidencia masiva y coordinar respuesta pública (Iniciativa Tech & Law 2025).\nOSINFOR ofrece dos casos complementarios. El primero es el seguimiento y monitoreo con IA para supervisión forestal, que combina imágenes satelitales, radar y SIG para ampliar cobertura, mejorar detección de extracción no autorizada y reducir tiempos y costos de supervisión. El segundo es SIADO Administrado, que digitaliza y abre expedientes sancionadores a administrados, fiscalías y procuraduría. Juntos enseñan una idea importante: la innovación pública gana mucha fuerza cuando combina analítica territorial con expedientes accesibles e interoperables.\nEn OEFA aparecen dos subcasos especialmente didácticos. Reporta Residuos convierte a la ciudadanía en fuente activa de alertas geolocalizadas sobre acumulación de basura, mientras que la Plataforma Única de Servicios Digitales integra trámites y notificaciones en un portal interoperable. El punto fuerte aquí es que la tecnología no solo acelera a la institución; también redistribuye participación y reduce fricción de interacción con el Estado.\nIndecopi, por su parte, muestra una aplicación muy concreta de IA a la fiscalización del spam telefónico. Con Whisper ejecutado localmente y scripts en Python, pudo procesar millones de grabaciones y convertir un volumen de audio casi imposible de revisar manualmente en evidencia priorizable para supervisión. La lección es potente: una herramienta legaltech puede ser jurídicamente decisiva aunque no redacte una sola línea; basta con que vuelva fiscalizable un universo de datos antes inmanejable.",
     "crumbs": [
       "IV. Inteligencia Artificial aplicada al Derecho",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>11. Ejemplos de proyectos Legal Tech</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>11. Proyectos Legal Tech peruanos</span>"
     ]
   },
   {
-    "objectID": "parte-4-modulo-4/11-capitulo.html#ejemplo-3.-acceso-a-información-jurídica",
-    "href": "parte-4-modulo-4/11-capitulo.html#ejemplo-3.-acceso-a-información-jurídica",
-    "title": "11. Ejemplos de proyectos Legal Tech",
-    "section": "Ejemplo 3. Acceso a información jurídica",
-    "text": "Ejemplo 3. Acceso a información jurídica\nProblema:\n\ninformación dispersa o difícil de consultar;\npoca claridad para usuarios no especializados;\nsobrecarga en respuestas repetitivas.\n\nPosible solución:\n\nun repositorio estructurado;\nun buscador temático simple;\nuna interfaz de consulta inicial con criterios bien definidos.\n\nEste tipo de proyecto puede ser especialmente valioso en contextos de acceso a justicia o atención ciudadana, siempre que se maneje con cuidado el alcance de la herramienta.",
+    "objectID": "parte-4-modulo-4/11-capitulo.html#patrones-que-sí-se-repiten-en-el-caso-peruano",
+    "href": "parte-4-modulo-4/11-capitulo.html#patrones-que-sí-se-repiten-en-el-caso-peruano",
+    "title": "11. Proyectos Legal Tech peruanos",
+    "section": "Patrones que sí se repiten en el caso peruano",
+    "text": "Patrones que sí se repiten en el caso peruano\nSi miramos el conjunto, emergen varios patrones estables (Iniciativa Tech & Law 2025):\n\ncasi todos los proyectos nacen de un cuello de botella institucional muy concreto;\nmuchos combinan automatización con supervisión humana, en lugar de sustituirla;\nla IA aparece, pero no monopoliza el ecosistema;\ndatos, interoperabilidad y trazabilidad pesan tanto como la interfaz visible;\nlos mejores casos muestran resultados operativos claros y no solo lenguaje aspiracional.\n\nEse último punto importa mucho. El ecosistema peruano se vuelve más convincente precisamente cuando ofrece métricas verificables: segundos ahorrados, hectáreas monitoreadas, expedientes organizados, grabaciones procesadas, consultas resueltas o trámites digitalizados. Es decir, cuando el proyecto deja de ser promesa y se vuelve desempeño observable.\n\n\n\n\n\n\nWarningAdvertencia útil\n\n\n\nNo conviene leer estos casos como si todos fueran modelos listos para copiarse. Cada proyecto responde a una mezcla específica de problema, datos, institución y capacidad técnica. Lo útil no es imitar la superficie del producto, sino entender la lógica que lo hizo necesario y viable.",
     "crumbs": [
       "IV. Inteligencia Artificial aplicada al Derecho",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>11. Ejemplos de proyectos Legal Tech</span>"
-    ]
-  },
-  {
-    "objectID": "parte-4-modulo-4/11-capitulo.html#viabilidad-básica-y-riesgos",
-    "href": "parte-4-modulo-4/11-capitulo.html#viabilidad-básica-y-riesgos",
-    "title": "11. Ejemplos de proyectos Legal Tech",
-    "section": "Viabilidad básica y riesgos",
-    "text": "Viabilidad básica y riesgos\nNo hace falta que el proyecto esté totalmente construido para ser una buena propuesta académica. Pero sí conviene mostrar alguna idea de viabilidad:\n\n¿qué recursos requiere?;\n¿qué parte ya puede prototiparse?;\n¿qué tan sensible es la información involucrada?;\n¿qué controles serían necesarios?;\n¿qué limitaciones reconoce el equipo?\n\nToda propuesta razonable debería incluir también una sección mínima de riesgos:\n\nriesgos jurídicos;\nriesgos operativos;\nriesgos éticos;\nriesgos de seguridad o privacidad;\nriesgos de depender demasiado de una herramienta.\n\n\n\n\n\n\n\nWarningAdvertencia útil\n\n\n\nUna idea tecnológicamente llamativa puede ser inútil si no mejora nada relevante del trabajo jurídico.",
-    "crumbs": [
-      "IV. Inteligencia Artificial aplicada al Derecho",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>11. Ejemplos de proyectos Legal Tech</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>11. Proyectos Legal Tech peruanos</span>"
     ]
   },
   {
     "objectID": "parte-4-modulo-4/11-capitulo.html#práctica-en-editor",
     "href": "parte-4-modulo-4/11-capitulo.html#práctica-en-editor",
-    "title": "11. Ejemplos de proyectos Legal Tech",
+    "title": "11. Proyectos Legal Tech peruanos",
     "section": "Práctica en editor",
-    "text": "Práctica en editor\nCrea en tu repositorio un documento inicial del proyecto con estas secciones:\n\nproblema;\nusuario;\nsolución propuesta;\nvalor esperado;\nriesgos o límites.\n\nSi quieres profundizar, agrega un diagrama de flujo, una maqueta simple o una tabla de funcionalidades mínimas.",
+    "text": "Práctica en editor\nElige uno de los proyectos peruanos revisados en este capítulo y descríbelo con estas cinco piezas:\n\nproblema original;\nusuario o institución principal;\ntecnología o arquitectura empleada;\nresultado verificable;\nriesgo o límite que todavía exigiría supervisión humana o rediseño.\n\nSi quieres profundizar, compáralo con otro proyecto del capítulo y explica qué cambia cuando el usuario final es una empresa, un juez, una entidad pública o la ciudadanía.",
     "crumbs": [
       "IV. Inteligencia Artificial aplicada al Derecho",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>11. Ejemplos de proyectos Legal Tech</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>11. Proyectos Legal Tech peruanos</span>"
     ]
   },
   {
     "objectID": "parte-4-modulo-4/11-capitulo.html#conclusiones-del-capítulo",
     "href": "parte-4-modulo-4/11-capitulo.html#conclusiones-del-capítulo",
-    "title": "11. Ejemplos de proyectos Legal Tech",
+    "title": "11. Proyectos Legal Tech peruanos",
     "section": "Conclusiones del capítulo",
-    "text": "Conclusiones del capítulo\nPensar proyectos legaltech con seriedad obliga a cambiar la secuencia mental habitual: no partir de la herramienta, sino del problema, del usuario y de la mejora plausible. Esa disciplina vuelve más sobrias las propuestas, pero también las hace más defendibles. En un entorno académico, ese ya es un aprendizaje central.\n\n\n\n\n\n\nTipIdeas clave\n\n\n\n\nuna solución útil vale más que una idea grandilocuente;\nla claridad del problema suele determinar la calidad del proyecto;\nuna buena propuesta legaltech combina criterio jurídico, diseño de proceso y uso razonable de tecnología;\ndocumentar el proyecto desde temprano mejora su solidez.\n\n\n\n\n\n\n\n\n\nCautionPara pensar y reflexionar\n\n\n\nEl valor de un proyecto no depende solo de lo novedoso que suene, sino de cuánto entiende el trabajo jurídico que busca mejorar. La tecnología aporta más cuando llega después de una buena pregunta que cuando intenta reemplazarla.",
+    "text": "Conclusiones del capítulo\nEl legaltech peruano ya ofrece suficientes casos como para dejar atrás la conversación abstracta. Lo interesante del mapa no es que todos los proyectos usen la misma tecnología, sino que todos obligan a formular mejor una pregunta previa: qué fricción jurídica o administrativa era tan costosa que justificaba rediseñar el proceso. Cuando esa pregunta está bien hecha, la tecnología deja de ser ornamento y empieza a parecerse a una solución defendible.\n\n\n\n\n\n\nTipIdeas clave\n\n\n\n\nel ecosistema legaltech peruano ya combina iniciativas privadas, corporativas y publicas;\nacceso a informacion, cumplimiento, fiscalizacion e interoperabilidad son frentes tan importantes como la IA generativa;\nlos proyectos mas solidos parten de un problema operativo concreto y muestran resultados verificables;\nuna buena lectura del legaltech no copia herramientas: entiende arquitectura, usuario, datos y gobernanza.\n\n\n\n\n\n\n\n\n\nCautionPara pensar y reflexionar\n\n\n\nSi tuvieras que diseñar hoy un proyecto legaltech peruano realista, la mejor pregunta inicial no seria que tecnologia usar, sino que cuello de botella juridico merece de verdad ser convertido en flujo, dato, interfaz y criterio de supervision.",
     "crumbs": [
       "IV. Inteligencia Artificial aplicada al Derecho",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>11. Ejemplos de proyectos Legal Tech</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>11. Proyectos Legal Tech peruanos</span>"
     ]
   },
   {
@@ -1965,332 +1954,13 @@
     ]
   },
   {
-    "objectID": "evaluaciones/evaluacion-1.html",
-    "href": "evaluaciones/evaluacion-1.html",
-    "title": "🔹 Evaluación Continua 1",
-    "section": "",
-    "text": "Problem Set de lógica y Python para juristas\nLa Evaluación Continua 1 (EC1) consiste en la entrega de un PSET individual desarrollado en repositorio de GitHub. Esta evaluación recoge lo trabajado en el Módulo I: pensamiento computacional, pseudocódigo y primeros ejercicios de Python aplicados a problemas jurídicos.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>🔹 Evaluación Continua 1</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/evaluacion-1.html#problem-set-de-lógica-y-python-para-juristas",
-    "href": "evaluaciones/evaluacion-1.html#problem-set-de-lógica-y-python-para-juristas",
-    "title": "🔹 Evaluación Continua 1",
-    "section": "",
-    "text": "ImportantProducto esperado\n\n\n\nEl estudiante debe entregar un repositorio o carpeta de trabajo versionada que contenga soluciones funcionales, legibles y explicadas brevemente.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>🔹 Evaluación Continua 1</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/evaluacion-1.html#objetivo-de-la-evaluación",
-    "href": "evaluaciones/evaluacion-1.html#objetivo-de-la-evaluación",
-    "title": "🔹 Evaluación Continua 1",
-    "section": "Objetivo de la evaluación",
-    "text": "Objetivo de la evaluación\nEsta actividad busca comprobar que el estudiante puede:\n\ntraducir un problema jurídico a pasos verificables;\nimplementar lógica básica en Python;\nregistrar trabajo con Git y GitHub;\nexplicar brevemente la solución construida.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>🔹 Evaluación Continua 1</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/evaluacion-1.html#entregable",
-    "href": "evaluaciones/evaluacion-1.html#entregable",
-    "title": "🔹 Evaluación Continua 1",
-    "section": "Entregable",
-    "text": "Entregable\nLa EC1 debe incluir, como mínimo:\n\narchivos de código o pseudocódigo solicitados;\nun README breve con explicación del problema y la solución;\ncommits verificables;\nenlace al repositorio o mecanismo de entrega indicado por el docente.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>🔹 Evaluación Continua 1</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/evaluacion-1.html#criterios-de-evaluación",
-    "href": "evaluaciones/evaluacion-1.html#criterios-de-evaluación",
-    "title": "🔹 Evaluación Continua 1",
-    "section": "Criterios de evaluación",
-    "text": "Criterios de evaluación\nSe valorará especialmente:\n\nclaridad de la lógica;\nfuncionamiento básico del código;\nrelación entre el problema jurídico y la solución propuesta;\norden del repositorio;\ntrazabilidad mínima del trabajo.\n\n\n\n\n\n\n\nWarningErrores frecuentes\n\n\n\n\nentregar archivos sin explicación;\nsubir trabajo sin commits claros;\ncopiar soluciones sin adaptarlas ni comprenderlas;\nresolver solo la parte técnica y olvidar el sentido jurídico del ejercicio.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>🔹 Evaluación Continua 1</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/evaluacion-1.html#qué-demuestra-esta-evaluación",
-    "href": "evaluaciones/evaluacion-1.html#qué-demuestra-esta-evaluación",
-    "title": "🔹 Evaluación Continua 1",
-    "section": "¿Qué demuestra esta evaluación?",
-    "text": "¿Qué demuestra esta evaluación?\nDemuestra que el estudiante ya puede pasar de la explicación teórica a una práctica concreta y versionada, que es una de las bases metodológicas del curso.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>🔹 Evaluación Continua 1</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/examen-parcial.html",
-    "href": "evaluaciones/examen-parcial.html",
-    "title": "🔸 Examen Parcial",
-    "section": "",
-    "text": "Examen Parcial aplicado\nEl Examen Parcial (EP) evalúa la capacidad del estudiante para integrar lo aprendido durante la primera mitad del curso. No se trata solo de recordar conceptos, sino de aplicarlos a un problema estructurado con criterios claros.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>🔸 Examen Parcial</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/examen-parcial.html#modalidad",
-    "href": "evaluaciones/examen-parcial.html#modalidad",
-    "title": "🔸 Examen Parcial",
-    "section": "Modalidad",
-    "text": "Modalidad\nLa modalidad específica será indicada en clase, pero el examen debe mantener un componente práctico. Puede incluir:\n\nanálisis de un caso;\nmodelado de un proceso;\nresolución de un ejercicio con Python;\norganización y explicación de información jurídica;\nentrega de evidencia en repositorio.\n\n\n\n\n\n\n\nNoteSentido del examen\n\n\n\nEl parcial busca medir si el estudiante ya puede pasar de conceptos básicos a una solución razonada, reproducible y mínimamente documentada.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>🔸 Examen Parcial</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/examen-parcial.html#qué-se-espera-del-estudiante",
-    "href": "evaluaciones/examen-parcial.html#qué-se-espera-del-estudiante",
-    "title": "🔸 Examen Parcial",
-    "section": "Qué se espera del estudiante",
-    "text": "Qué se espera del estudiante\nSe espera que el estudiante pueda:\n\nleer un problema con atención;\nidentificar sus componentes jurídicos y técnicos;\nproponer una solución estructurada;\njustificar decisiones de forma breve y clara.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>🔸 Examen Parcial</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/examen-parcial.html#criterios-de-calidad",
-    "href": "evaluaciones/examen-parcial.html#criterios-de-calidad",
-    "title": "🔸 Examen Parcial",
-    "section": "Criterios de calidad",
-    "text": "Criterios de calidad\nSe valorará:\n\nclaridad del razonamiento;\ncoherencia entre problema y solución;\nuso correcto de herramientas vistas en clase;\norden del entregable;\ncapacidad de explicar límites o supuestos.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>🔸 Examen Parcial</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/examen-parcial.html#errores-frecuentes",
-    "href": "evaluaciones/examen-parcial.html#errores-frecuentes",
-    "title": "🔸 Examen Parcial",
-    "section": "Errores frecuentes",
-    "text": "Errores frecuentes\n\nresponder de forma demasiado abstracta;\nno dejar evidencia suficiente del proceso;\nolvidar el componente práctico;\nentregar una solución desordenada o difícil de seguir.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>🔸 Examen Parcial</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/evaluacion-2.html",
-    "href": "evaluaciones/evaluacion-2.html",
-    "title": "🔹 Evaluación Continua 2",
-    "section": "",
-    "text": "Página web personal publicada en GitHub Pages\nLa Evaluación Continua 2 consiste en la elaboración de una página web personal que deberá ser publicada a través de GitHub Pages. Se trata de un trabajo individual en el que cada estudiante desarrollará un sitio sencillo, claro y funcional, orientado a construir una primera presencia profesional en la web.\nEsta evaluación se conecta directamente con los contenidos del módulo sobre web, nube y seguridad para el sector legal, en el que estudiamos la estructura básica de las páginas web, el uso de HTML, CSS y JavaScript, así como la publicación de sitios estáticos mediante GitHub Pages. La idea no es formar diseñadores web en una sola sesión, porque tampoco vamos a fingir milagros técnicos, sino lograr que cada estudiante comprenda cómo funciona una publicación básica en internet y pueda usarla con propósito profesional.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>22</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/evaluacion-2.html#página-web-personal-publicada-en-github-pages",
-    "href": "evaluaciones/evaluacion-2.html#página-web-personal-publicada-en-github-pages",
-    "title": "🔹 Evaluación Continua 2",
-    "section": "",
-    "text": "Important¿Cuál es el producto a entregar?\n\n\n\nCada estudiante deberá publicar una página web funcional en GitHub Pages que contenga, como mínimo:\n\nun CV o perfil académico-profesional;\nun post o entrada breve escrita por el propio estudiante;\nun enlace público y operativo al sitio web.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>22</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/evaluacion-2.html#objetivo-de-la-evaluación",
-    "href": "evaluaciones/evaluacion-2.html#objetivo-de-la-evaluación",
-    "title": "🔹 Evaluación Continua 2",
-    "section": "Objetivo de la evaluación",
-    "text": "Objetivo de la evaluación\nEsta actividad busca que el estudiante aplique de manera práctica los conocimientos introductorios sobre publicación web y desarrolle una identidad digital básica, ordenada y profesional. No se evalúa únicamente el resultado visual, sino también la capacidad de estructurar información, redactar con claridad, publicar correctamente y presentar contenido pertinente para un entorno académico y jurídico.\n\n\n\n\n\n\nNoteSentido de la actividad\n\n\n\nUn abogado o abogada que comprende cómo funciona una página web no solo adquiere una destreza técnica elemental. También fortalece su capacidad para comunicar, organizar información, construir reputación profesional y entender mejor el entorno digital en el que hoy operan instituciones, estudios y servicios legales.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>22</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/evaluacion-2.html#contenido-mínimo-del-sitio",
-    "href": "evaluaciones/evaluacion-2.html#contenido-mínimo-del-sitio",
-    "title": "🔹 Evaluación Continua 2",
-    "section": "Contenido mínimo del sitio",
-    "text": "Contenido mínimo del sitio\nLa página web debe incluir al menos los siguientes componentes:\n\n1. CV o perfil profesional\nDebe presentar información básica del estudiante de forma clara y ordenada. Puede incluir, por ejemplo:\n\nnombre completo;\nbreve presentación;\nformación académica;\nexperiencia relevante;\nhabilidades o intereses;\ndatos de contacto o enlaces profesionales.\n\n\n\n2. Post individual\nEl sitio debe incluir una entrada breve escrita por el estudiante. Este texto debe tener un título y desarrollar una idea concreta con coherencia y buena redacción.\nEl post puede abordar temas como:\n\nuna reflexión sobre el curso;\nuna opinión fundamentada sobre tecnología y derecho;\nel comentario de una herramienta digital útil para juristas;\nuna breve experiencia de aprendizaje vinculada con GitHub, páginas web o transformación digital;\nun problema jurídico actual relacionado con internet, datos, plataformas o inteligencia artificial.\n\n\n\n\n\n\n\nTipRecomendación para el post\n\n\n\nUn buen post no necesita ser largo. Necesita ser claro, propio y bien pensado. Entre 400 y 800 palabras suele ser una extensión razonable para esta actividad.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>22</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/evaluacion-2.html#criterios-esperados-de-calidad",
-    "href": "evaluaciones/evaluacion-2.html#criterios-esperados-de-calidad",
-    "title": "🔹 Evaluación Continua 2",
-    "section": "Criterios esperados de calidad",
-    "text": "Criterios esperados de calidad\nSe espera que la página web:\n\nsea accesible mediante un enlace público;\ntenga una estructura comprensible;\npresente un diseño limpio y legible;\nmuestre información pertinente y bien organizada;\nevidencie autoría propia en la redacción del post;\nmantenga un tono profesional y académico.\n\nNo es necesario construir un sitio complejo. Una página sencilla, sobria y bien resuelta vale más que una página recargada, desordenada o copiada de forma mecánica.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>22</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/evaluacion-2.html#ideas-para-enriquecer-la-página",
-    "href": "evaluaciones/evaluacion-2.html#ideas-para-enriquecer-la-página",
-    "title": "🔹 Evaluación Continua 2",
-    "section": "Ideas para enriquecer la página",
-    "text": "Ideas para enriquecer la página\nAdemás del contenido mínimo, el estudiante puede incorporar elementos adicionales que mejoren su presentación, tales como:\n\nfotografía o avatar profesional;\nsección “Sobre mí”;\nenlaces a LinkedIn o GitHub;\nmenú de navegación simple;\ndiseño responsivo;\nuna segunda entrada opcional;\nuso cuidadoso de colores, tipografía e identidad visual.\n\n\n\n\n\n\n\nWarningQué debe evitarse\n\n\n\nEvita estos errores frecuentes:\n\npublicar una página incompleta;\nincluir texto copiado de internet o generado sin revisión;\nusar un diseño que dificulte la lectura;\nentregar un enlace roto o privado;\nconvertir el CV en una lista caótica sin jerarquía visual.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>22</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/evaluacion-2.html#entrega",
-    "href": "evaluaciones/evaluacion-2.html#entrega",
-    "title": "🔹 Evaluación Continua 2",
-    "section": "Entrega",
-    "text": "Entrega\nLa evidencia de esta evaluación consiste en:\n\nel enlace público de GitHub Pages;\nel enlace al repositorio de GitHub donde vive el sitio;\ny, si se solicita, una breve explicación de la estructura del proyecto.\n\nLa entrega deberá realizarse conforme a las indicaciones dadas por el docente en el Aula Virtual o en sesión.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>22</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/evaluacion-2.html#qué-demuestra-esta-evaluación",
-    "href": "evaluaciones/evaluacion-2.html#qué-demuestra-esta-evaluación",
-    "title": "🔹 Evaluación Continua 2",
-    "section": "¿Qué demuestra esta evaluación?",
-    "text": "¿Qué demuestra esta evaluación?\nAl completar esta actividad, el estudiante demuestra que puede:\n\ntransformar información profesional en contenido web estructurado;\nutilizar herramientas básicas de publicación digital;\ncomunicar una identidad académica o profesional en línea;\nproducir una pieza escrita breve con propósito y claridad;\ncomprender, en términos prácticos, cómo se publica contenido en la web.\n\n\nEsta evaluación no busca que el estudiante sea desarrollador web, sino que sea capaz de construir y publicar una presencia digital básica, funcional y profesional.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>22</span>  <span class='chapter-title'>🔹 Evaluación Continua 2</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/evaluacion-3.html",
-    "href": "evaluaciones/evaluacion-3.html",
-    "title": "🔹 Evaluación Continua 3",
-    "section": "",
-    "text": "Proyecto Legaltech\nLa Evaluación Continua 3 (EC3) consiste en un trabajo grupal orientado al diseño y presentación de un proyecto Legaltech. Cada equipo deberá identificar un problema, necesidad u oportunidad de mejora en el ámbito jurídico y proponer una solución tecnológica pertinente, útil y jurídicamente fundamentada.\nLa propuesta deberá explicar con precisión:\nEl proyecto podrá vincularse, entre otros temas, con automatización documental, acceso a información jurídica, visualización de datos, cumplimiento normativo, servicios legales digitales, firma digital, ciberseguridad, o uso responsable de inteligencia artificial en contextos legales.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>🔹 Evaluación Continua 3</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/evaluacion-3.html#proyecto-legaltech",
-    "href": "evaluaciones/evaluacion-3.html#proyecto-legaltech",
-    "title": "🔹 Evaluación Continua 3",
-    "section": "",
-    "text": "Note¿Qué se espera del proyecto?\n\n\n\nEl proyecto debe mostrar la capacidad del equipo para conectar el razonamiento jurídico con una propuesta de innovación tecnológica. No se exige necesariamente un producto plenamente terminado, pero sí una propuesta sólida, clara y bien sustentada.\n\n\n\n\nel problema jurídico que se busca abordar;\nel usuario o público objetivo al que se dirige;\nla solución tecnológica planteada;\nla forma en que dicha solución generaría valor práctico;\ny sus principales implicancias éticas, regulatorias y operativas.\n\n\n\n\n\n\n\nTipEnfoque recomendado\n\n\n\nUn buen proyecto no parte de la tecnología por sí sola, sino de un problema real del mundo jurídico. Primero se define el problema; después se justifica por qué cierta herramienta o enfoque tecnológico puede ayudar a resolverlo.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>🔹 Evaluación Continua 3</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/evaluacion-3.html#propósito-de-la-evaluación",
-    "href": "evaluaciones/evaluacion-3.html#propósito-de-la-evaluación",
-    "title": "🔹 Evaluación Continua 3",
-    "section": "Propósito de la evaluación",
-    "text": "Propósito de la evaluación\nEsta evaluación busca que los estudiantes integren los aprendizajes desarrollados a lo largo del curso y demuestren que son capaces de:\n\nanalizar críticamente un problema jurídico;\nproponer una solución legaltech coherente y viable;\nsustentarla con claridad desde una perspectiva jurídica y práctica;\ne identificar riesgos y consideraciones éticas o regulatorias asociadas a su implementación.\n\n\n\n\n\n\n\nImportantCriterio central\n\n\n\nNo basta con presentar una idea llamativa. El proyecto debe ser pertinente, comprensible, viable en términos básicos y alineado con el marco jurídico aplicable.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>🔹 Evaluación Continua 3</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/evaluacion-3.html#desarrollo-y-presentación",
-    "href": "evaluaciones/evaluacion-3.html#desarrollo-y-presentación",
-    "title": "🔹 Evaluación Continua 3",
-    "section": "Desarrollo y presentación",
-    "text": "Desarrollo y presentación\nLa EC3 será explicada en clase y los grupos se organizarán previamente para investigar ideas, discutir alternativas y desarrollar su propuesta. El trabajo se culminará en equipo y será presentado en la sesión correspondiente al Demo Day.\nDurante la exposición, cada grupo deberá presentar de manera ordenada:\n\nel problema identificado;\nla solución propuesta;\nsu lógica general de funcionamiento;\nlos beneficios esperados;\ny los principales desafíos de implementación.\n\n\n\n\n\n\n\nWarningEntrega de evidencia\n\n\n\nLa evidencia del proyecto deberá incluir, cuando corresponda:\n\nenlace al repositorio del proyecto;\nmateriales de apoyo o prototipo;\ny la entrega solicitada en la Plataforma Aula Virtual, de acuerdo con las indicaciones brindadas en clase.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>🔹 Evaluación Continua 3</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/examen-final.html",
-    "href": "evaluaciones/examen-final.html",
-    "title": "🔸 Examen Final",
-    "section": "",
-    "text": "Examen Final integrador\nEl Examen Final (EF) cierra el recorrido del curso y evalúa la capacidad del estudiante para integrar pensamiento computacional, datos, web, seguridad e inteligencia artificial aplicada al derecho.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>🔸 Examen Final</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/examen-final.html#examen-final-integrador",
-    "href": "evaluaciones/examen-final.html#examen-final-integrador",
-    "title": "🔸 Examen Final",
-    "section": "",
-    "text": "ImportantCriterio central\n\n\n\nEl examen final no premia solo conocimiento aislado. Premia la capacidad de usarlo con criterio, trazabilidad y sentido jurídico.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>🔸 Examen Final</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/examen-final.html#propósito",
-    "href": "evaluaciones/examen-final.html#propósito",
-    "title": "🔸 Examen Final",
-    "section": "Propósito",
-    "text": "Propósito\nEl examen busca comprobar si el estudiante puede:\n\nanalizar un problema jurídico-tecnológico con mayor amplitud;\nelegir herramientas o enfoques razonables;\nexplicar riesgos, límites y condiciones de uso;\npresentar un entregable claro y verificable.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>🔸 Examen Final</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/examen-final.html#modalidad-y-evidencia",
-    "href": "evaluaciones/examen-final.html#modalidad-y-evidencia",
-    "title": "🔸 Examen Final",
-    "section": "Modalidad y evidencia",
-    "text": "Modalidad y evidencia\nLa modalidad concreta será comunicada por el docente, pero el examen final debe conservar una lógica aplicada. Según el formato elegido, puede exigir:\n\nrepositorio con archivos de trabajo;\ndocumento de análisis;\nscript, página, bitácora o diagrama;\nsustentación breve o comentario crítico.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>🔸 Examen Final</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/examen-final.html#criterios-de-evaluación",
-    "href": "evaluaciones/examen-final.html#criterios-de-evaluación",
-    "title": "🔸 Examen Final",
-    "section": "Criterios de evaluación",
-    "text": "Criterios de evaluación\nSe valorará:\n\nintegración de aprendizajes del curso;\nclaridad del análisis;\npertinencia de la solución o propuesta;\natención a riesgos éticos, regulatorios u operativos;\ncalidad del entregable y de su trazabilidad.\n\n\n\n\n\n\n\nWarningQué no debería ocurrir\n\n\n\nUna respuesta tecnológicamente vistosa pero jurídicamente débil no basta. Tampoco basta una reflexión jurídica correcta si no aterriza en un producto o análisis aplicado.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>🔸 Examen Final</span>"
-    ]
-  },
-  {
-    "objectID": "evaluaciones/examen-final.html#cierre",
-    "href": "evaluaciones/examen-final.html#cierre",
-    "title": "🔸 Examen Final",
-    "section": "Cierre",
-    "text": "Cierre\nEl examen final debe mostrar que el estudiante no solo reconoció herramientas nuevas, sino que desarrolló un criterio más sólido para pensar problemas legales en contextos tecnológicos.",
-    "crumbs": [
-      "Evaluaciones",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>🔸 Examen Final</span>"
-    ]
-  },
-  {
     "objectID": "referencias.html",
     "href": "referencias.html",
     "title": "Referencias",
     "section": "",
-    "text": "Ashley, Kevin D., Jaromír Savelka, and Matthias Grabmair. 2021. “A\nLaw School Course in Applied Legal Analytics and AI.” Law in\nContext 37 (1): 134–74. https://doi.org/10.26826/law-in-context.v37i1.125.\n\n\nCairo, Alberto. 2017. “Visualización de Datos: Una\nImagen Puede Valer más Que Mil números, Pero\nNo Siempre más Que Mil Palabras.” El Profesional\nde La Información 26 (6): 1025–28. https://doi.org/10.3145/epi.2017.nov.02.\n\n\nContreras, Alfredo, and Joe McGrath. 2020. “Law, Technology, and\nPedagogy: Teaching Coding to Build a ‘Future-Proof’\nLawyer.” Minnesota Journal of Law, Science &\nTechnology 21 (2): 297–347. https://doi.org/10.24926/15529541.3828.\n\n\nGarcía-García, Jesús, and María Luisa Alonso-Magdaleno. 2021.\n“Herramientas de Visualización Gráfica\nOnline Para Datos Abiertos Presupuestarios de Administraciones\npúblicas.” Revista Española de La\nTransparencia.\n\n\nGorgolewski, Krzysztof et al. 2011.\n“Nipype: A Flexible, Lightweight and Extensible Neuroimaging Data\nProcessing Framework in Python.” Frontiers in\nNeuroinformatics 5: 13. https://doi.org/10.3389/fninf.2011.00013.\n\n\nGross, Sam. 2023. “PEP 703: Making the Global Interpreter Lock\nOptional in CPython.” https://peps.python.org/pep-0703/.\n\n\nMDN Web Docs. 2026. “Unicode.” https://developer.mozilla.org/en-US/docs/Glossary/Unicode.\n\n\nMendo, Carmen et al. 2013. “Del Acceso\na La Reutilización, Del Dato Al Documento: Una\nVisión Conceptual de La Información\npública.” Revista Española de\nDocumentación Científica.\n\n\nMermaid Documentation. 2026. “Flowcharts: Basic Syntax.” https://mermaid.js.org/syntax/flowchart.html.\n\n\nMonge-Fallas, Luis et al. 2024.\n“Fundamentos y Perspectivas Del Pensamiento Computacional: Un\nanálisis Integral Para La\nInvestigación.” Revista Innovaciones\nEducativas.\n\n\nPadrón, Carlos et al. 2021.\n“Aproximación a Una Definición de\nPensamiento Computacional.” RIED. Revista Iberoamericana de\nEducación a Distancia 24 (1): 55–76.\n\n\nPedregosa, Fabian, Gaël Varoquaux, Alexandre Gramfort, et al. 2011.\n“Scikit-Learn: Machine Learning in Python.” Journal of\nMachine Learning Research 12: 2825–30. https://jmlr.org/papers/v12/pedregosa11a.html.\n\n\nPerú. 2002. Ley Marco de Modernización de La\nGestión Del Estado, Ley nó 27658.\n\n\nPerú. 2022. Ley nó 31449, Ley Que Fortalece El\nLaboratorio de Gobierno y Transformación Digital Del\nEstado.\n\n\nPresidencia del Consejo de Ministros. 2002. Decreto Supremo\nnó 030-2002-PCM, Reglamento de La Ley Marco de\nModernización de La Gestión Del Estado.\n\n\nPython Documentation. 2024. “What’s New in Python 3.13.” https://docs.python.org/3/whatsnew/3.13.html.\n\n\nPython Documentation. 2025. “What’s New in Python 3.14.” https://docs.python.org/3/whatsnew/3.14.html.\n\n\nPython Documentation. 2026a. “Built-in Types.” https://docs.python.org/3/library/stdtypes.html.\n\n\nPython Documentation. 2026b. “General Python FAQ.” https://docs.python.org/3/faq/general.html.\n\n\nPython Documentation. 2026c. “History and License.” https://docs.python.org/3/license.html.\n\n\nPython Software Foundation. 2026. “About the Python Software\nFoundation.” https://www.python.org/psf/about/.\n\n\nPython.org. 2026. “Python Documentation by Version.” https://www.python.org/doc/versions/.\n\n\nRaschka, Sebastian, Joshua Patterson, and Corey Nolet. 2020.\n“Machine Learning in Python: Main Developments and Technology\nTrends in Data Science, Machine Learning, and Artificial\nIntelligence.” Information 11 (4): 193. https://doi.org/10.3390/info11040193.\n\n\nRyan, Trevor. 2021. “Coding for Critical Thinking: A Case Study in\nEmbedding Complementary Skills in Legal Education.” Legal\nEducation Review 31 (1): 81–104. https://doi.org/10.53300/001c.36060.\n\n\nSQLite Documentation. 2026. “SELECT.” https://www.sqlite.org/lang_select.html.\n\n\nVirtanen, Pauli, Ralf Gommers, Travis E. Oliphant, et al. 2020.\n“SciPy 1.0: Fundamental Algorithms for Scientific Computing in\nPython.” Nature Methods 17 (3): 261–72. https://doi.org/10.1038/s41592-019-0686-2.\n\n\nVolini, Anthony. 2020. “A Perspective on Technology Education for\nLaw Students.” Santa Clara High Technology Law Journal\n36 (2): 165–98. https://digitalcommons.law.scu.edu/chtlj/vol36/iss2/2/.\n\n\nWhite, Stephen A., and Derek Miers. 2011. BPMN 2.0 Handbook:\nMethods, Concepts, Case Studies and Standards in Business Process\nManagement. Future Strategies.",
+    "text": "Ashley, Kevin D., Jaromír Savelka, and Matthias Grabmair. 2021. “A\nLaw School Course in Applied Legal Analytics and AI.” Law in\nContext 37 (1): 134–74. https://doi.org/10.26826/law-in-context.v37i1.125.\n\n\nCairo, Alberto. 2017. “Visualización de Datos: Una\nImagen Puede Valer más Que Mil números, Pero\nNo Siempre más Que Mil Palabras.” El Profesional\nde La Información 26 (6): 1025–28. https://doi.org/10.3145/epi.2017.nov.02.\n\n\nContreras, Alfredo, and Joe McGrath. 2020. “Law, Technology, and\nPedagogy: Teaching Coding to Build a ‘Future-Proof’\nLawyer.” Minnesota Journal of Law, Science &\nTechnology 21 (2): 297–347. https://doi.org/10.24926/15529541.3828.\n\n\nGarcía-García, Jesús, and María Luisa Alonso-Magdaleno. 2021.\n“Herramientas de Visualización Gráfica\nOnline Para Datos Abiertos Presupuestarios de Administraciones\npúblicas.” Revista Española de La\nTransparencia.\n\n\nGorgolewski, Krzysztof et al. 2011.\n“Nipype: A Flexible, Lightweight and Extensible Neuroimaging Data\nProcessing Framework in Python.” Frontiers in\nNeuroinformatics 5: 13. https://doi.org/10.3389/fninf.2011.00013.\n\n\nGross, Sam. 2023. “PEP 703: Making the Global Interpreter Lock\nOptional in CPython.” https://peps.python.org/pep-0703/.\n\n\nIniciativa Tech & Law. 2025. Mapeo LegalTech Perú\n2025.\n\n\nMDN Web Docs. 2026. “Unicode.” https://developer.mozilla.org/en-US/docs/Glossary/Unicode.\n\n\nMendo, Carmen et al. 2013. “Del Acceso\na La Reutilización, Del Dato Al Documento: Una\nVisión Conceptual de La Información\npública.” Revista Española de\nDocumentación Científica.\n\n\nMermaid Documentation. 2026. “Flowcharts: Basic Syntax.” https://mermaid.js.org/syntax/flowchart.html.\n\n\nMonge-Fallas, Luis et al. 2024.\n“Fundamentos y Perspectivas Del Pensamiento Computacional: Un\nanálisis Integral Para La\nInvestigación.” Revista Innovaciones\nEducativas.\n\n\nPadrón, Carlos et al. 2021.\n“Aproximación a Una Definición de\nPensamiento Computacional.” RIED. Revista Iberoamericana de\nEducación a Distancia 24 (1): 55–76.\n\n\nPedregosa, Fabian, Gaël Varoquaux, Alexandre Gramfort, et al. 2011.\n“Scikit-Learn: Machine Learning in Python.” Journal of\nMachine Learning Research 12: 2825–30. https://jmlr.org/papers/v12/pedregosa11a.html.\n\n\nPerú. 2002. Ley Marco de Modernización de La\nGestión Del Estado, Ley nó 27658.\n\n\nPerú. 2022. Ley nó 31449, Ley Que Fortalece El\nLaboratorio de Gobierno y Transformación Digital Del\nEstado.\n\n\nPresidencia del Consejo de Ministros. 2002. Decreto Supremo\nnó 030-2002-PCM, Reglamento de La Ley Marco de\nModernización de La Gestión Del Estado.\n\n\nPython Documentation. 2024. “What’s New in Python 3.13.” https://docs.python.org/3/whatsnew/3.13.html.\n\n\nPython Documentation. 2025. “What’s New in Python 3.14.” https://docs.python.org/3/whatsnew/3.14.html.\n\n\nPython Documentation. 2026a. “Built-in Types.” https://docs.python.org/3/library/stdtypes.html.\n\n\nPython Documentation. 2026b. “General Python FAQ.” https://docs.python.org/3/faq/general.html.\n\n\nPython Documentation. 2026c. “History and License.” https://docs.python.org/3/license.html.\n\n\nPython Software Foundation. 2026. “About the Python Software\nFoundation.” https://www.python.org/psf/about/.\n\n\nPython.org. 2026. “Python Documentation by Version.” https://www.python.org/doc/versions/.\n\n\nRaschka, Sebastian, Joshua Patterson, and Corey Nolet. 2020.\n“Machine Learning in Python: Main Developments and Technology\nTrends in Data Science, Machine Learning, and Artificial\nIntelligence.” Information 11 (4): 193. https://doi.org/10.3390/info11040193.\n\n\nRyan, Trevor. 2021. “Coding for Critical Thinking: A Case Study in\nEmbedding Complementary Skills in Legal Education.” Legal\nEducation Review 31 (1): 81–104. https://doi.org/10.53300/001c.36060.\n\n\nSQLite Documentation. 2026. “SELECT.” https://www.sqlite.org/lang_select.html.\n\n\nVirtanen, Pauli, Ralf Gommers, Travis E. Oliphant, et al. 2020.\n“SciPy 1.0: Fundamental Algorithms for Scientific Computing in\nPython.” Nature Methods 17 (3): 261–72. https://doi.org/10.1038/s41592-019-0686-2.\n\n\nVolini, Anthony. 2020. “A Perspective on Technology Education for\nLaw Students.” Santa Clara High Technology Law Journal\n36 (2): 165–98. https://digitalcommons.law.scu.edu/chtlj/vol36/iss2/2/.\n\n\nWhite, Stephen A., and Derek Miers. 2011. BPMN 2.0 Handbook:\nMethods, Concepts, Case Studies and Standards in Business Process\nManagement. Future Strategies.",
     "crumbs": [
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Referencias</span>"
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Referencias</span>"
     ]
   }
 ]

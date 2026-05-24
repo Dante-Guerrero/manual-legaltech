@@ -41,14 +41,6 @@ book:
         - tutoriales/licencias-y-reutilizacion.qmd
         - tutoriales/github-pages.qmd
 
-    - part: "Evaluaciones"
-      chapters:
-        - evaluaciones/evaluacion-1.qmd
-        - evaluaciones/examen-parcial.qmd
-        - evaluaciones/evaluacion-2.qmd
-        - evaluaciones/evaluacion-3.qmd
-        - evaluaciones/examen-final.qmd
-
     - referencias.qmd
 
 bibliography: bibliografia.bib
