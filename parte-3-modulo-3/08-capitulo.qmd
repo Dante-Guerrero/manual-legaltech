@@ -1,36 +1,30 @@
-# 8. Ciberseguridad
+---
+title: "8. Ciberseguridad"
+---
 
-## ¿Por qué importa este tema?
-
-El trabajo jurídico maneja información sensible, documentos, credenciales y comunicaciones que pueden ser objeto de error, fuga o ataque. Por eso, la ciberseguridad no es solo un tema de especialistas. También es una responsabilidad cotidiana de quienes trabajan con datos, expedientes, contratos o repositorios.
-
-::: {.callout-important}
-## Idea central
-La seguridad empieza mucho antes de un incidente: empieza con hábitos, configuración mínima y criterio para detectar riesgos.
-:::
-
+::: {.callout-note}
 ## Qué aprenderás en esta sesión
 
-Al finalizar esta sesión, deberías poder:
+Esta sesión introduce la ciberseguridad como una práctica cotidiana y no como un problema reservado a especialistas. El objetivo es reconocer riesgos frecuentes, distinguir confidencialidad, integridad y disponibilidad, identificar controles mínimos y aprender a describir medidas de mitigación en escenarios jurídicos concretos.
+:::
 
-- reconocer riesgos frecuentes en trabajo digital;
-- distinguir confidencialidad, integridad y disponibilidad;
-- identificar buenas prácticas mínimas;
-- documentar medidas básicas de mitigación;
-- analizar un escenario jurídico con criterios elementales de seguridad.
+## La seguridad empieza mucho antes del incidente
 
-## Ciberseguridad en lenguaje simple
+Cuando se habla de ciberseguridad, a veces parece que el tema se reduce a ataques sofisticados o a escenas extraordinarias. En el trabajo real, sin embargo, muchas fallas nacen en rutinas comunes: contraseñas débiles, archivos enviados al destinatario equivocado, repositorios mal configurados, enlaces engañosos o documentos sensibles compartidos sin cuidado. La seguridad empieza mucho antes del daño visible.
 
-Cuando se habla de ciberseguridad, a veces parece que el tema se reduce a hackers, ataques masivos o películas mediocres. En realidad, buena parte del problema está en cosas mucho más cercanas:
+## Una facultad de Derecho también trabaja con riesgo digital
 
-- contraseñas débiles;
-- archivos enviados al destinatario equivocado;
-- repositorios mal configurados;
-- dispositivos perdidos;
-- enlaces falsos;
-- documentos sensibles compartidos por canales inseguros.
+El trabajo jurídico maneja información sensible, credenciales, comunicaciones, expedientes y documentos que pueden perderse, alterarse o exponerse. Por eso, la ciberseguridad no es solo un asunto técnico. También es una competencia profesional básica para quienes estudian y trabajan con datos, contratos, repositorios o plataformas. Aprender a detectar riesgo forma parte de aprender a ejercer con responsabilidad.
 
-En otras palabras: una parte importante de la seguridad es cultura de trabajo.
+## Proteger información también es una forma de criterio jurídico
+
+En este campo, el problema no es solo evitar ataques. También importa proteger acceso, confiabilidad y continuidad. Esa mirada conecta directamente con la práctica legal: deber de confidencialidad, trazabilidad documental, protección de datos, cumplimiento interno y confianza institucional. Por eso esta sesión importa en una facultad de Derecho: obliga a pensar cómo se sostienen hábitos digitales razonables en contextos de información delicada.
+
+::: {.callout-important}
+## Antes de empezar
+
+Conviene trabajar esta sesión con un escenario concreto en mente: un estudio pequeño, una oficina pública, un proyecto académico con documentos sensibles o un repositorio que combina material público y material reservado. Eso ayuda a que los riesgos y las medidas de mitigación no queden en abstracciones, sino en decisiones prácticas que realmente podrían adoptarse.
+:::
 
 ## La tríada básica: confidencialidad, integridad y disponibilidad
 
@@ -48,7 +42,8 @@ Pensemos en un caso jurídico:
 
 ::: {.callout-note}
 ## Por qué esta distinción importa
-La seguridad no consiste solo en “evitar hackeos”. Consiste en proteger acceso, confiabilidad y continuidad.
+
+La seguridad no consiste solo en evitar hackeos. Consiste en proteger acceso, confiabilidad y continuidad.
 :::
 
 ## Riesgos frecuentes en contextos legales
@@ -65,23 +60,9 @@ Entre los riesgos más frecuentes en trabajo digital jurídico están:
 
 La mayoría de estos riesgos no requiere infraestructura sofisticada para aparecer. Requiere un descuido suficientemente común.
 
-## Ejemplo jurídico
-
-Una mala práctica simple, como compartir un archivo sensible por un canal inseguro o reutilizar la misma contraseña en múltiples servicios, puede tener consecuencias institucionales relevantes:
-
-- fuga de información;
-- afectación de datos personales;
-- pérdida de trazabilidad;
-- incumplimientos internos;
-- daño reputacional.
-
-Por eso, incluso un equipo pequeño necesita hábitos mínimos de seguridad.
-
 ## Contraseñas y autenticación
 
-Uno de los puntos más básicos sigue siendo uno de los más importantes.
-
-Buenas prácticas mínimas:
+Uno de los puntos más básicos sigue siendo uno de los más importantes. Buenas prácticas mínimas:
 
 - usar contraseñas robustas y distintas;
 - no reutilizar la misma clave para todo;
@@ -99,42 +80,27 @@ Señales que conviene revisar:
 
 - remitentes sospechosos;
 - enlaces extraños;
-- presión artificial por actuar “de inmediato”;
+- presión artificial por actuar de inmediato;
 - solicitudes de credenciales;
 - archivos adjuntos inesperados.
 
-Un profesional del derecho que trabaja con información delicada no puede darse el lujo de tratar todo correo como si fuera inocente por defecto.
-
 ::: {.callout-warning}
 ## Error frecuente
+
 Pensar que seguridad equivale a software sofisticado. En muchos casos, el problema real es una rutina descuidada.
 :::
 
 ## Repositorios y exposición de información
 
-En un curso que usa Git y GitHub, también conviene pensar la seguridad desde los repositorios.
-
-Algunas preguntas básicas:
+En un curso que usa Git y GitHub, también conviene pensar la seguridad desde los repositorios. Algunas preguntas básicas ayudan a ordenar el criterio:
 
 - ¿el repositorio es público o privado?;
 - ¿contiene información que no debería exponerse?;
 - ¿se subieron credenciales por error?;
 - ¿hay archivos sensibles que no deberían estar versionados?;
-- ¿la estructura del proyecto permite distinguir bien qué se comparte y qué no?
+- ¿la estructura del proyecto distingue bien qué se comparte y qué no?
 
 No todo lo que puede subirse a un repositorio debería subirse.
-
-## Seguridad y práctica profesional
-
-En entornos legales, la seguridad también tiene relación con:
-
-- deber de confidencialidad;
-- protección de datos;
-- trazabilidad documental;
-- cumplimiento interno;
-- confianza institucional.
-
-Por eso, incluso una checklist básica puede ser útil si obliga a mirar prácticas que normalmente se dan por supuestas.
 
 ## Cómo pensar medidas de mitigación
 
@@ -151,6 +117,7 @@ El criterio importante aquí es el siguiente: una medida sirve si reduce un ries
 
 ::: {.callout-tip}
 ## Regla útil
+
 La mejor política de seguridad escrita sirve poco si el equipo no puede convertirla en hábito.
 :::
 
@@ -169,30 +136,21 @@ La checklist debe distinguir al menos:
 - impacto posible;
 - medida básica de mitigación.
 
-## Git y GitHub
+## Conclusiones del capítulo
 
-Sube tu checklist o informe breve al repositorio, con una explicación corta del escenario analizado. Si corresponde, deja una sección final sobre qué prácticas del propio repositorio deberías revisar.
+La ciberseguridad deja de parecer un tema lejano cuando se mira desde las rutinas del trabajo real. En contextos jurídicos, un descuido pequeño puede producir exposición de datos, pérdida de trazabilidad o daño institucional. Por eso, más que una materia separada, la seguridad funciona como una disciplina transversal de cuidado y criterio.
 
-## PSET de la sesión
-
-Analiza un caso práctico de riesgo y propone medidas mínimas de mitigación. El entregable debe incluir:
-
-- descripción del escenario;
-- riesgos identificados;
-- medidas recomendadas;
-- justificación breve;
-- evidencia de trabajo en repositorio.
-
-## Preguntas de repaso
-
-1. ¿Qué diferencia hay entre confidencialidad, integridad y disponibilidad?
-2. ¿Por qué muchos riesgos de seguridad no dependen de ataques sofisticados?
-3. ¿Qué tipo de errores son comunes en trabajo jurídico digital?
-4. ¿Qué vuelve útil a una medida de mitigación?
-
+::: {.callout-tip}
 ## Ideas clave
 
 - seguridad es también cultura de trabajo;
-- prevenir vale más que reaccionar tarde;
-- el jurista debe saber identificar y comunicar riesgos básicos;
-- una buena práctica mínima puede evitar problemas mayores.
+- la tríada de confidencialidad, integridad y disponibilidad ayuda a leer riesgos con más precisión;
+- muchos incidentes nacen en hábitos descuidados, no en ataques extraordinarios;
+- una medida mínima pero sostenible vale más que una política impecable que nadie cumple.
+:::
+
+::: {.callout-caution}
+## Para pensar y reflexionar
+
+En una profesión que trabaja con confianza, secreto, documentos y responsabilidad, la seguridad digital no puede verse como un anexo técnico. También es una forma de cuidado profesional frente a la información ajena y frente a los propios procesos de trabajo.
+:::

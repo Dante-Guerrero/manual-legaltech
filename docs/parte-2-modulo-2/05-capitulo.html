@@ -319,7 +319,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#por-qué-importa-este-tema" id="toc-por-qué-importa-este-tema" class="nav-link active" data-scroll-target="#por-qué-importa-este-tema">¿Por qué importa este tema?</a></li>
+  <li><a href="#antes-de-mejorar-hay-que-mirar-el-flujo" id="toc-antes-de-mejorar-hay-que-mirar-el-flujo" class="nav-link active" data-scroll-target="#antes-de-mejorar-hay-que-mirar-el-flujo">Antes de mejorar, hay que mirar el flujo</a></li>
+  <li><a href="#cuando-el-proceso-no-se-ve-el-problema-se-deforma" id="toc-cuando-el-proceso-no-se-ve-el-problema-se-deforma" class="nav-link" data-scroll-target="#cuando-el-proceso-no-se-ve-el-problema-se-deforma">Cuando el proceso no se ve, el problema se deforma</a></li>
   <li><a href="#el-proceso-como-objeto-de-análisis" id="toc-el-proceso-como-objeto-de-análisis" class="nav-link" data-scroll-target="#el-proceso-como-objeto-de-análisis">El proceso como objeto de análisis</a></li>
   <li><a href="#un-flujo-visible-se-vuelve-discutible" id="toc-un-flujo-visible-se-vuelve-discutible" class="nav-link" data-scroll-target="#un-flujo-visible-se-vuelve-discutible">Un flujo visible se vuelve discutible</a></li>
   <li><a href="#qué-elementos-conviene-reconocer-primero" id="toc-qué-elementos-conviene-reconocer-primero" class="nav-link" data-scroll-target="#qué-elementos-conviene-reconocer-primero">Qué elementos conviene reconocer primero</a></li>
@@ -330,10 +331,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <li><a href="#qué-vuelve-útil-a-un-diagrama" id="toc-qué-vuelve-útil-a-un-diagrama" class="nav-link" data-scroll-target="#qué-vuelve-útil-a-un-diagrama">Qué vuelve útil a un diagrama</a></li>
   <li><a href="#del-modelado-a-la-mejora" id="toc-del-modelado-a-la-mejora" class="nav-link" data-scroll-target="#del-modelado-a-la-mejora">Del modelado a la mejora</a></li>
   <li><a href="#práctica-en-editor" id="toc-práctica-en-editor" class="nav-link" data-scroll-target="#práctica-en-editor">Práctica en editor</a></li>
-  <li><a href="#git-y-github" id="toc-git-y-github" class="nav-link" data-scroll-target="#git-y-github">Git y GitHub</a></li>
-  <li><a href="#pset-de-la-sesión" id="toc-pset-de-la-sesión" class="nav-link" data-scroll-target="#pset-de-la-sesión">PSET de la sesión</a></li>
-  <li><a href="#ideas-clave" id="toc-ideas-clave" class="nav-link" data-scroll-target="#ideas-clave">Ideas clave</a></li>
-  <li><a href="#para-pensar-y-reflexionar" id="toc-para-pensar-y-reflexionar" class="nav-link" data-scroll-target="#para-pensar-y-reflexionar">Para pensar y reflexionar</a></li>
+  <li><a href="#conclusiones-del-capítulo" id="toc-conclusiones-del-capítulo" class="nav-link" data-scroll-target="#conclusiones-del-capítulo">Conclusiones del capítulo</a></li>
   </ul>
 </nav>
     </div>
@@ -375,22 +373,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>Esta sesión introduce una idea decisiva para cualquier proyecto de automatización o mejora: antes de intervenir un proceso, hay que entenderlo. A través de conceptos básicos de modelado, cuellos de botella, puntos de decisión y diagramación con Mermaid, el objetivo es aprender a describir flujos jurídicos de manera visible, discutible y trazable. Lo importante no es producir diagramas por gusto, sino usar el modelado para pensar mejor cómo funciona realmente un trámite, un servicio o una revisión documental.</p>
 </div>
 </div>
-<section id="por-qué-importa-este-tema" class="level2">
-<h2 class="anchored" data-anchor-id="por-qué-importa-este-tema">¿Por qué importa este tema?</h2>
+<section id="antes-de-mejorar-hay-que-mirar-el-flujo" class="level2">
+<h2 class="anchored" data-anchor-id="antes-de-mejorar-hay-que-mirar-el-flujo">Antes de mejorar, hay que mirar el flujo</h2>
 <p>Muchos proyectos de innovación fracasan no porque la herramienta sea mala, sino porque el problema estaba mal descrito desde el inicio. Se automatiza una parte irrelevante, se digitaliza un trámite confuso o se produce un tablero vistoso para un flujo que nadie entiende bien. En contextos jurídicos y administrativos, ese error es especialmente costoso, porque los procesos suelen mezclar normas, documentos, responsables, tiempos, validaciones y criterios que no siempre están visibles en un mismo lugar.</p>
 <p>Por eso, antes de hablar de automatización documental o analítica, conviene detenerse en el proceso mismo. Representar un flujo con una notación compartida permite discutirlo, corregirlo y coordinarlo mejor que cuando existe solo como costumbre verbal o conocimiento disperso entre oficinas <span class="citation" data-cites="fischer2011bpmn">(White and Miers 2011)</span>. Modernizar la gestión pública tampoco equivale simplemente a incorporar tecnología: exige revisar procesos, funciones y servicios con una lógica de mejora <span class="citation" data-cites="peru2002modernizacion pcm2002modernizacion">(Perú 2002; Presidencia del Consejo de Ministros 2002)</span>.</p>
 <p>En términos simples, entender el negocio significa entender el proceso. Significa saber quién hace qué, con qué insumos, en qué orden, con qué decisiones críticas y con qué salidas.</p>
+</section>
+<section id="cuando-el-proceso-no-se-ve-el-problema-se-deforma" class="level2">
+<h2 class="anchored" data-anchor-id="cuando-el-proceso-no-se-ve-el-problema-se-deforma">Cuando el proceso no se ve, el problema se deforma</h2>
+<p>Muchos equipos describen sus trámites como si fueran lineales, cuando en realidad están llenos de retornos, validaciones dispersas y esperas no reconocidas. Esa opacidad impide discutir dónde se pierde tiempo, qué control se duplicó o qué decisión depende solo de costumbre. En una facultad de Derecho, aprender a modelar procesos sirve precisamente para volver visible esa capa operativa que suele quedar escondida detrás del lenguaje normativo.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>Idea central
+<span class="screen-reader-only">Important</span>Antes de empezar
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>No se puede automatizar ni mejorar con seriedad un proceso que todavía no ha sido descrito con claridad.</p>
+<p>Antes de dibujar, conviene elegir un proceso acotado y reconocible: admisión de un escrito, revisión contractual, derivación de un expediente o validación de requisitos. Lo importante no es producir un diagrama elegante, sino separar con claridad entradas, actividades, decisiones, responsables y salidas para que el flujo pueda discutirse y mejorarse.</p>
 </div>
 </div>
 </section>
@@ -505,22 +507,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li>un posible cuello de botella o punto de control.</li>
 </ul>
 </section>
-<section id="git-y-github" class="level2">
-<h2 class="anchored" data-anchor-id="git-y-github">Git y GitHub</h2>
-<p>Versiona el archivo desde el inicio. Si haces una segunda versión del diagrama, deja rastro de qué mejoraste y por qué. En un flujo de trabajo serio, revisar procesos también debería ser una actividad trazable.</p>
-</section>
-<section id="pset-de-la-sesión" class="level2">
-<h2 class="anchored" data-anchor-id="pset-de-la-sesión">PSET de la sesión</h2>
-<p>El entregable puede consistir en un diagrama de proceso acompañado de una breve justificación escrita. Lo importante es que el archivo muestre:</p>
-<ul>
-<li>qué problema o trámite fue modelado;</li>
-<li>quiénes intervienen;</li>
-<li>qué decisiones alteran el flujo;</li>
-<li>qué punto débil o mejora posible identificaste.</li>
-</ul>
-</section>
-<section id="ideas-clave" class="level2">
-<h2 class="anchored" data-anchor-id="ideas-clave">Ideas clave</h2>
+<section id="conclusiones-del-capítulo" class="level2">
+<h2 class="anchored" data-anchor-id="conclusiones-del-capítulo">Conclusiones del capítulo</h2>
+<p>Entender el negocio no significa aprender jerga empresarial, sino volver legible el trabajo real. Cuando un flujo se representa con claridad, deja de depender solo de memoria institucional o intuición profesional. Recién entonces puede hablarse con seriedad de mejora, trazabilidad o automatización.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Ideas clave
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
 <li>Entender el negocio significa entender el proceso, no solo la herramienta.</li>
 <li>Un flujo visible se vuelve discutible, corregible y mejorable.</li>
@@ -528,10 +527,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li>Mermaid resulta útil porque integra diagramación y versionado dentro del mismo entorno de trabajo.</li>
 <li>Sin comprensión del flujo, la automatización corre el riesgo de ser superficial o equivocada.</li>
 </ul>
-</section>
-<section id="para-pensar-y-reflexionar" class="level2">
-<h2 class="anchored" data-anchor-id="para-pensar-y-reflexionar">Para pensar y reflexionar</h2>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Para pensar y reflexionar
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>En proyectos legales y públicos, muchas veces se habla de innovación demasiado pronto y de procesos demasiado tarde. Este capítulo invierte deliberadamente ese orden. Antes de pensar en dashboards, automatización documental o analítica, conviene hacer algo menos vistoso pero más importante: describir bien el trabajo real. Allí empieza una mejora con sentido.</p>
+</div>
+</div>
 
 
 </section>

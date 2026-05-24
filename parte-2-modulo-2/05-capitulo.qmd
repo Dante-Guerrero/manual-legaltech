@@ -8,7 +8,7 @@ title: "5. Entender el negocio"
 Esta sesión introduce una idea decisiva para cualquier proyecto de automatización o mejora: antes de intervenir un proceso, hay que entenderlo. A través de conceptos básicos de modelado, cuellos de botella, puntos de decisión y diagramación con Mermaid, el objetivo es aprender a describir flujos jurídicos de manera visible, discutible y trazable. Lo importante no es producir diagramas por gusto, sino usar el modelado para pensar mejor cómo funciona realmente un trámite, un servicio o una revisión documental.
 :::
 
-## ¿Por qué importa este tema?
+## Antes de mejorar, hay que mirar el flujo
 
 Muchos proyectos de innovación fracasan no porque la herramienta sea mala, sino porque el problema estaba mal descrito desde el inicio. Se automatiza una parte irrelevante, se digitaliza un trámite confuso o se produce un tablero vistoso para un flujo que nadie entiende bien. En contextos jurídicos y administrativos, ese error es especialmente costoso, porque los procesos suelen mezclar normas, documentos, responsables, tiempos, validaciones y criterios que no siempre están visibles en un mismo lugar.
 
@@ -16,10 +16,14 @@ Por eso, antes de hablar de automatización documental o analítica, conviene de
 
 En términos simples, entender el negocio significa entender el proceso. Significa saber quién hace qué, con qué insumos, en qué orden, con qué decisiones críticas y con qué salidas.
 
-::: {.callout-important}
-## Idea central
+## Cuando el proceso no se ve, el problema se deforma
 
-No se puede automatizar ni mejorar con seriedad un proceso que todavía no ha sido descrito con claridad.
+Muchos equipos describen sus trámites como si fueran lineales, cuando en realidad están llenos de retornos, validaciones dispersas y esperas no reconocidas. Esa opacidad impide discutir dónde se pierde tiempo, qué control se duplicó o qué decisión depende solo de costumbre. En una facultad de Derecho, aprender a modelar procesos sirve precisamente para volver visible esa capa operativa que suele quedar escondida detrás del lenguaje normativo.
+
+::: {.callout-important}
+## Antes de empezar
+
+Antes de dibujar, conviene elegir un proceso acotado y reconocible: admisión de un escrito, revisión contractual, derivación de un expediente o validación de requisitos. Lo importante no es producir un diagrama elegante, sino separar con claridad entradas, actividades, decisiones, responsables y salidas para que el flujo pueda discutirse y mejorarse.
 :::
 
 ## El proceso como objeto de análisis
@@ -145,19 +149,11 @@ Procura que el diagrama incluya:
 - una salida final;
 - un posible cuello de botella o punto de control.
 
-## Git y GitHub
+## Conclusiones del capítulo
 
-Versiona el archivo desde el inicio. Si haces una segunda versión del diagrama, deja rastro de qué mejoraste y por qué. En un flujo de trabajo serio, revisar procesos también debería ser una actividad trazable.
+Entender el negocio no significa aprender jerga empresarial, sino volver legible el trabajo real. Cuando un flujo se representa con claridad, deja de depender solo de memoria institucional o intuición profesional. Recién entonces puede hablarse con seriedad de mejora, trazabilidad o automatización.
 
-## PSET de la sesión
-
-El entregable puede consistir en un diagrama de proceso acompañado de una breve justificación escrita. Lo importante es que el archivo muestre:
-
-- qué problema o trámite fue modelado;
-- quiénes intervienen;
-- qué decisiones alteran el flujo;
-- qué punto débil o mejora posible identificaste.
-
+::: {.callout-tip}
 ## Ideas clave
 
 - Entender el negocio significa entender el proceso, no solo la herramienta.
@@ -165,7 +161,10 @@ El entregable puede consistir en un diagrama de proceso acompañado de una breve
 - Modelar procesos permite detectar cuellos de botella, reprocesos y trabajo invisible.
 - Mermaid resulta útil porque integra diagramación y versionado dentro del mismo entorno de trabajo.
 - Sin comprensión del flujo, la automatización corre el riesgo de ser superficial o equivocada.
+:::
 
+::: {.callout-caution}
 ## Para pensar y reflexionar
 
 En proyectos legales y públicos, muchas veces se habla de innovación demasiado pronto y de procesos demasiado tarde. Este capítulo invierte deliberadamente ese orden. Antes de pensar en dashboards, automatización documental o analítica, conviene hacer algo menos vistoso pero más importante: describir bien el trabajo real. Allí empieza una mejora con sentido.
+:::

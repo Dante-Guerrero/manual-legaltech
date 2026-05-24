@@ -8,7 +8,7 @@ title: "6. Explicar y controlar los resultados"
 Esta sesión se concentra en el paso que sigue al modelado de procesos: organizar información para volverla legible, comparable y útil para decidir. A través de nociones como dato, campo, registro, indicador, visualización y consulta, el objetivo es mostrar que explicar resultados no consiste solo en acumular tablas, sino en transformar información dispersa en evidencia comprensible y accionable.
 :::
 
-## ¿Por qué importa este tema?
+## Los datos no hablan solos
 
 En derecho y en gestión legal no basta con tener información. Hace falta ordenarla, formular preguntas sobre ella y producir salidas que ayuden a comprender una situación o a tomar decisiones mejores. Una tabla desordenada puede conservar muchos datos y, al mismo tiempo, no decir casi nada. Un reporte breve, en cambio, puede volver visible un patrón importante, una carga desigual, un plazo riesgoso o un conjunto de casos que merecen priorización.
 
@@ -16,10 +16,14 @@ Ese paso, que parece técnico, también es intelectual. Entre el dato bruto y el
 
 La visualización entra después, no antes. Un gráfico puede revelar patrones con enorme potencia, pero sin contexto y lectura crítica también puede inducir interpretaciones equivocadas [@cairo2017visualizacion]. Por eso, el objetivo de esta sesión no es enseñar a decorar información. Es enseñar a explicarla y controlarla con mayor rigor.
 
-::: {.callout-important}
-## Idea central
+## Del registro disperso a la evidencia útil
 
-Los datos solo se vuelven útiles cuando están organizados en función de una pregunta, un criterio de lectura y una salida comprensible.
+En entornos jurídicos, muchas veces abundan documentos, tablas y reportes, pero escasea la capacidad de convertirlos en una lectura accionable. Aprender a organizar campos, registros e indicadores importa en una facultad de Derecho porque enseña a distinguir entre acumular información y producir evidencia comprensible para decidir, priorizar o explicar un problema.
+
+::: {.callout-important}
+## Antes de empezar
+
+Antes de calcular, conviene formular una pregunta concreta: qué quieres contar, comparar o detectar. Esa pregunta ordena la tabla, define qué campos importan y evita que la visualización se vuelva un adorno sin argumento. Si el conjunto es pequeño pero está bien estructurado, el aprendizaje del capítulo funciona mejor.
 :::
 
 ## Del documento al dato
@@ -187,19 +191,11 @@ Trabaja con una tabla pequeña de registros jurídicos y produce tres cosas:
 
 La herramienta puede ser una tabla estructurada, un script sencillo de Python o una consulta elemental. Lo importante es que el ejercicio muestre una pregunta clara y una salida legible.
 
-## Git y GitHub
+## Conclusiones del capítulo
 
-Sube tanto el archivo de datos de prueba como el script, consulta o documento de resultados. Si cambiaste nombres de campos, normalizaste estados o eliminaste duplicados, deja rastro de eso. La trazabilidad no importa solo para el código: también importa para la información que organizas.
+Organizar datos no es una tarea periférica ni puramente técnica. Es una forma de pensar mejor qué se está observando, qué puede compararse y qué merece explicación. Cuando una tabla responde una pregunta clara y produce una salida legible, el trabajo con información deja de ser ruido y empieza a convertirse en control.
 
-## PSET de la sesión
-
-El entregable puede consistir en una tabla organizada, un pequeño script o una consulta simple, acompañados por un reporte breve. Debe mostrar:
-
-- qué pregunta se quiso responder;
-- qué estructura de datos se usó;
-- qué resultado se obtuvo;
-- por qué ese resultado ayuda a explicar o controlar una situación.
-
+::: {.callout-tip}
 ## Ideas clave
 
 - Un dato aislado rara vez explica algo por sí solo.
@@ -207,7 +203,10 @@ El entregable puede consistir en una tabla organizada, un pequeño script o una 
 - Los indicadores sirven cuando hacen visible algo accionable, no cuando solo acumulan números.
 - Visualizar ayuda, pero no reemplaza el contexto ni la interpretación.
 - Consultar datos también es una forma de control, porque permite leer con estructura sin alterar la base original.
+:::
 
+::: {.callout-caution}
 ## Para pensar y reflexionar
 
 Una parte importante de la innovación jurídica no depende de herramientas espectaculares, sino de algo más sobrio: saber organizar información para que deje de ser ruido. En el mundo profesional, explicar bien un resultado puede ser tan valioso como producirlo. Esa es una de las competencias que este módulo intenta entrenar.
+:::

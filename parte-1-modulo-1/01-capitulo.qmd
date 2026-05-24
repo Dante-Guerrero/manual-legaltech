@@ -21,9 +21,9 @@ En otras palabras, este capítulo no presenta el binario como una curiosidad té
 En un nivel muy simplificado, una computadora distingue estados físicos estables y trabaja sobre ellos. De allí nace la lógica binaria: dos valores posibles, `0` y `1`, a partir de los cuales puede representarse información mucho más compleja. Esa reducción no significa que todo problema sea simple. Significa, más bien, que para hacerlo tratable la máquina necesita que la información se exprese en una forma rigurosa.
 
 ::: {.callout-important}
-## Idea central
+## Antes de empezar
 
-La tecnología digital funciona porque traduce información y reglas a representaciones formales. Comprender eso ayuda a ver que programar, modelar procesos o trabajar con datos no son actividades mágicas, sino formas distintas de estructurar problemas.
+En este capítulo conviene trabajar con papel, editor de texto o Markdown y calma para descomponer cada paso. La meta no es memorizar conversiones, sino acostumbrarse a distinguir entrada, regla, secuencia y resultado. Si esa lógica queda clara aquí, después será mucho más fácil entender variables, condiciones, scripts y automatizaciones.
 :::
 
 ## Bit, byte y sistema binario
@@ -218,19 +218,11 @@ Traduce a pseudocódigo esta regla:
 
 Abre tu editor y crea un archivo Markdown o de texto plano donde resuelvas al menos un ejercicio de conversión y un ejercicio de pseudocódigo. El objetivo no es producir algo sofisticado, sino empezar a dejar rastro verificable de cómo ordenas una regla en pasos claros.
 
-## Git y GitHub
+## Conclusiones del capítulo
 
-Versiona tu trabajo aunque sea pequeño. En esta etapa, un commit ya cumple una función formativa importante: convierte una intuición o una corrección en una huella visible del proceso. En un curso como este, trabajar con repositorio también significa aprender a pensar el conocimiento como algo revisable y no como un resultado súbito.
+Empezar por el binario y el pseudocódigo puede parecer un rodeo, pero en realidad fija la gramática mínima del resto del libro. Antes de programar con soltura, conviene entender que toda herramienta digital exige representar información, distinguir tipos y ordenar pasos con precisión. Esa disciplina no le quita humanidad al trabajo jurídico; le añade claridad cuando una parte del problema necesita formalizarse.
 
-## PSET de la sesión
-
-El entregable de esta sesión puede consistir en una regla jurídica sencilla traducida a pseudocódigo, acompañada por una breve explicación de por qué elegiste esa estructura. Lo importante es que el archivo muestre:
-
-- el problema planteado;
-- la secuencia de pasos o condiciones;
-- una distinción clara entre datos de entrada y resultado;
-- una justificación breve de la lógica usada.
-
+::: {.callout-tip}
 ## Ideas clave
 
 - La tecnología digital funciona sobre representaciones formales, no sobre intuiciones difusas.
@@ -238,7 +230,10 @@ El entregable de esta sesión puede consistir en una regla jurídica sencilla tr
 - El texto también requiere estándares de codificación para poder almacenarse y circular sin corrupción.
 - Pensar computacionalmente no equivale solo a programar: equivale a ordenar problemas en partes, reglas y secuencias verificables.
 - El pseudocódigo permite empezar a modelar la lógica de tareas jurídicas antes de pasar a un lenguaje formal.
+:::
 
+::: {.callout-caution}
 ## Para pensar y reflexionar
 
 Una parte del trabajo jurídico contemporáneo ya se desarrolla en entornos donde los documentos, los datos y los procedimientos necesitan ser estructurados con más precisión que antes. Entender el binario no convierte a nadie en programador, pero sí deja una lección de fondo: la tecnología no opera por “magia”, sino por representación, tipos, reglas y secuencias. Aprender eso desde el comienzo cambia también la manera de mirar los problemas del Derecho.
+:::

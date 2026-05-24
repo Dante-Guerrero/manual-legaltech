@@ -1,53 +1,29 @@
-# 7. El internet y la nube
-
-## ¿Por qué importa este tema?
-
-Muchos servicios jurídicos actuales se prestan, difunden o documentan a través de la web. Entender qué es una página, cómo se publica y qué significa alojarla en infraestructura externa ayuda a leer mejor el entorno digital donde opera el derecho.
-
-::: {.callout-important}
-## Idea central
-La web no es solo un espacio de diseño. Es una estructura técnica donde se publica información, se construye reputación, se prestan servicios y se exponen riesgos.
-:::
-
-## Qué aprenderás en esta sesión
-
-Al finalizar esta sesión, deberías poder:
-
-- distinguir entre internet, web, servidor, dominio y hosting;
-- entender la estructura mínima de una página;
-- diferenciar páginas estáticas y dinámicas;
-- crear una página simple con HTML y CSS;
-- preparar o publicar un sitio usando GitHub Pages.
-
-## Internet no es lo mismo que la web
-
-En conversación cotidiana solemos usar ambas palabras como si fueran sinónimos, pero no lo son.
-
-- **internet**: la red de redes, la infraestructura general de comunicación;
-- **web**: uno de los servicios que funciona sobre internet;
-- **navegador**: el programa que usamos para acceder a páginas;
-- **servidor**: la máquina o servicio donde vive el contenido;
-- **dominio**: la dirección legible que usamos para encontrarlo;
-- **hosting**: el lugar donde el sitio está alojado.
-
-Esta distinción importa porque ayuda a entender que publicar contenido no es un acto abstracto. Implica infraestructura, acceso, exposición y mantenimiento.
-
-## ¿Qué tiene que ver esto con el derecho?
-
-Muchísimo más de lo que parece. Hoy buena parte de la actividad jurídica circula por sitios web, plataformas o servicios en línea:
-
-- páginas institucionales;
-- formularios de atención;
-- publicaciones regulatorias;
-- portales de transparencia;
-- sistemas de consulta de expedientes;
-- páginas profesionales de estudios o abogados.
-
-Por eso, aunque una persona no se dedique a desarrollar software, sí le conviene entender qué significa que algo esté “en la web”.
+---
+title: "7. El internet y la nube"
+---
 
 ::: {.callout-note}
-## Idea útil
-Comprender la web no convierte a un jurista en ingeniero. Pero sí evita que dependa completamente de explicaciones ajenas para entender cómo se publica, circula o expone información.
+## Qué aprenderás en esta sesión
+
+Esta sesión introduce una capa de infraestructura que suele permanecer invisible cuando solo usamos plataformas y páginas ya hechas. El objetivo es distinguir internet, web, dominio, servidor, hosting y nube; entender la estructura mínima de una página; y advertir por qué publicar información digital también implica exposición, mantenimiento y criterio profesional.
+:::
+
+## La web también es infraestructura jurídica
+
+Muchos servicios jurídicos actuales se prestan, difunden o documentan a través de la web. Portales institucionales, formularios de atención, publicaciones regulatorias, sitios profesionales y sistemas de consulta conviven hoy con el trabajo legal cotidiano. Entender esa infraestructura no convierte a un jurista en ingeniero, pero sí le permite leer con más precisión el entorno donde circulan documentos, reputación y servicios.
+
+## Internet, web y nube no son lo mismo
+
+En conversación cotidiana solemos mezclar estos términos como si fueran equivalentes, pero no lo son. Internet es la red general de comunicación; la web es uno de los servicios que funciona sobre esa red; el navegador es la herramienta de acceso; el servidor aloja el contenido; el dominio lo vuelve localizable; y el hosting o la nube hacen posible que ese contenido permanezca disponible desde infraestructura remota. Separar estas ideas importa porque publicar no es un acto abstracto: implica soporte técnico, acceso, exposición y dependencia de servicios concretos.
+
+## Publicar también es asumir exposición
+
+Para una facultad de Derecho, este tema importa por dos razones. La primera es profesional: una parte creciente de la actividad jurídica se presenta, organiza o consulta desde entornos web. La segunda es formativa: entender cómo se publica algo ayuda a pensar mejor disponibilidad, reputación, control y seguridad de la información. Una página sencilla puede ser una pieza menor en términos técnicos y, al mismo tiempo, una pieza muy relevante en términos públicos.
+
+::: {.callout-important}
+## Antes de empezar
+
+Para esta sesión basta con una carpeta de trabajo simple, un archivo `index.html` y, si quieres separar estilos, un archivo `style.css`. La meta no es construir un sitio complejo, sino entender la relación entre estructura, apariencia y publicación. Si más adelante decides usar GitHub Pages, ese paso tendrá más sentido si primero comprendes qué estás publicando y cómo está organizado.
 :::
 
 ## Estructura mínima de una página web
@@ -58,22 +34,7 @@ Una página simple suele combinar tres capas:
 - **CSS**: apariencia y estilo;
 - **JavaScript**: comportamiento o interacción cuando hace falta.
 
-HTML dice qué cosa es cada parte:
-
-- un título;
-- un párrafo;
-- una lista;
-- un enlace;
-- una imagen.
-
-CSS define cómo se ve:
-
-- colores;
-- márgenes;
-- tipografía;
-- disposición.
-
-JavaScript permite comportamiento dinámico, aunque en una sesión introductoria puede mantenerse al mínimo.
+HTML dice qué cosa es cada parte: un título, un párrafo, una lista o un enlace. CSS define cómo se ve: colores, márgenes, tipografía y disposición. JavaScript permite comportamiento dinámico, aunque en una sesión introductoria puede mantenerse al mínimo.
 
 ## Un ejemplo muy básico con HTML
 
@@ -120,52 +81,32 @@ También conviene distinguir dos ideas:
 - **página estática**: su contenido se sirve tal como fue escrito en archivos;
 - **página dinámica**: su contenido puede construirse o cambiar en tiempo real según base de datos, usuario u otras condiciones.
 
-Para este curso, una página estática es ideal como punto de partida porque:
-
-- obliga a entender estructura;
-- es fácil de publicar;
-- se integra muy bien con GitHub;
-- permite concentrarse en conceptos fundamentales sin complejidad innecesaria.
+Para este curso, una página estática es ideal como punto de partida porque obliga a entender estructura, es fácil de publicar y permite concentrarse en fundamentos sin complejidad innecesaria.
 
 ## La nube, en términos simples
 
-Cuando hablamos de “nube”, muchas veces nos referimos a servicios que corren en infraestructura remota accesible por internet. No es magia: son servidores, almacenamiento, servicios y aplicaciones que no viven necesariamente en tu computadora personal.
-
-En términos pedagógicos, basta con entender que:
+Cuando hablamos de nube, muchas veces nos referimos a servicios que corren en infraestructura remota accesible por internet. No es magia: son servidores, almacenamiento y aplicaciones que no viven necesariamente en tu computadora personal. Desde una mirada pedagógica, basta con advertir tres cosas:
 
 - publicar un sitio suele implicar usar infraestructura ajena;
 - guardar archivos en plataformas también implica confiar en servicios remotos;
-- trabajar en la nube supone considerar acceso, disponibilidad y seguridad.
-
-## Ejemplo jurídico
-
-Para un estudiante o profesional del derecho, una página simple puede servir para:
-
-- presentar perfil académico o profesional;
-- publicar un comentario breve;
-- organizar un portafolio de trabajos;
-- difundir contenido jurídico con estructura clara;
-- construir una primera presencia digital seria.
-
-Eso no es trivial. La web también es parte del entorno reputacional y profesional.
+- trabajar en la nube supone pensar en acceso, disponibilidad y seguridad.
 
 ::: {.callout-tip}
 ## Criterio útil
-Una buena página para este curso no necesita ser compleja. Necesita ser clara, legible, propia y públicamente accesible.
+
+Una buena página para este curso no necesita ser compleja. Necesita ser clara, legible, propia y públicamente accesible cuando decidas publicarla.
 :::
 
 ## GitHub Pages como herramienta pedagógica
 
-GitHub Pages resulta especialmente útil porque conecta varias cosas a la vez:
+GitHub Pages resulta especialmente útil porque conecta varias dimensiones a la vez:
 
 - repositorio;
 - control de versiones;
 - publicación;
 - evidencia de trabajo.
 
-Eso lo vuelve ideal para el curso, ya que permite que el producto final no quede separado del proceso que lo produjo.
-
-En otras palabras: el mismo ecosistema donde editas y versionas puede servir también para publicar.
+Eso lo vuelve adecuado para el curso, ya que el producto final no queda separado del proceso que lo produjo. El mismo entorno donde editas y versionas puede servir también para publicar.
 
 ## Qué se gana al publicar algo propio
 
@@ -174,7 +115,6 @@ Publicar una página simple deja ver varias competencias al mismo tiempo:
 - organización de contenido;
 - escritura con propósito;
 - estructura básica de HTML;
-- uso de repositorio;
 - comprensión elemental de infraestructura web.
 
 No se trata de formar diseñadores web en una sesión. Se trata de que el estudiante entienda cómo funciona una publicación digital básica y la use con sentido profesional.
@@ -189,31 +129,21 @@ Crea una página mínima con:
 - un enlace;
 - un archivo HTML y, si es posible, un archivo CSS separado.
 
-## Git y GitHub
+## Conclusiones del capítulo
 
-Sube los archivos al repositorio y deja preparado el sitio para publicación con GitHub Pages. Si aún no lo publicas, al menos deja clara la estructura del proyecto y la ruta de trabajo.
+Entender la web desde dentro cambia la relación con las plataformas que usamos todos los días. Lo que antes parecía un espacio abstracto empieza a verse como una combinación concreta de estructura, infraestructura y decisiones de publicación. Para una formación jurídica, esa mirada importa porque aclara dónde circula la información y bajo qué condiciones se vuelve visible.
 
-## PSET de la sesión
-
-Construye una página funcional mínima vinculada con tu identidad académica o profesional. Debe incluir:
-
-- estructura clara;
-- texto propio;
-- archivos versionados en el repositorio;
-- una breve explicación de qué contiene y para qué sirve.
-
-Si ya tienes el tutorial revisado, intenta publicarla.
-
-## Preguntas de repaso
-
-1. ¿Qué diferencia hay entre internet y web?
-2. ¿Qué función cumple HTML y qué función cumple CSS?
-3. ¿Qué distingue una página estática de una dinámica?
-4. ¿Por qué GitHub Pages es útil en este curso?
-
+::: {.callout-tip}
 ## Ideas clave
 
-- publicar en la web es una competencia básica, no una extravagancia;
-- una página sencilla y clara vale más que una compleja y desordenada;
-- entender la infraestructura ayuda a comprender mejor la exposición de la información;
-- GitHub Pages vincula publicación y trazabilidad.
+- internet, web y nube no son sinónimos;
+- una página web combina estructura, estilo y, cuando hace falta, comportamiento;
+- publicar información digital también implica exposición e infraestructura;
+- una página estática es un buen punto de entrada para aprender a publicar con criterio.
+:::
+
+::: {.callout-caution}
+## Para pensar y reflexionar
+
+Buena parte del trabajo jurídico contemporáneo ocurre en entornos que alguien diseñó, alojó y puso en línea. Entender esa materialidad técnica ayuda no solo a publicar mejor, sino también a evaluar con más criterio qué significa confiar información, identidad profesional o servicios a una plataforma.
+:::

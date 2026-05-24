@@ -578,7 +578,7 @@
     "href": "parte-2-modulo-2/05-capitulo.html",
     "title": "5. Entender el negocio",
     "section": "",
-    "text": "¿Por qué importa este tema?\nMuchos proyectos de innovación fracasan no porque la herramienta sea mala, sino porque el problema estaba mal descrito desde el inicio. Se automatiza una parte irrelevante, se digitaliza un trámite confuso o se produce un tablero vistoso para un flujo que nadie entiende bien. En contextos jurídicos y administrativos, ese error es especialmente costoso, porque los procesos suelen mezclar normas, documentos, responsables, tiempos, validaciones y criterios que no siempre están visibles en un mismo lugar.\nPor eso, antes de hablar de automatización documental o analítica, conviene detenerse en el proceso mismo. Representar un flujo con una notación compartida permite discutirlo, corregirlo y coordinarlo mejor que cuando existe solo como costumbre verbal o conocimiento disperso entre oficinas (White and Miers 2011). Modernizar la gestión pública tampoco equivale simplemente a incorporar tecnología: exige revisar procesos, funciones y servicios con una lógica de mejora (Perú 2002; Presidencia del Consejo de Ministros 2002).\nEn términos simples, entender el negocio significa entender el proceso. Significa saber quién hace qué, con qué insumos, en qué orden, con qué decisiones críticas y con qué salidas.",
+    "text": "Antes de mejorar, hay que mirar el flujo\nMuchos proyectos de innovación fracasan no porque la herramienta sea mala, sino porque el problema estaba mal descrito desde el inicio. Se automatiza una parte irrelevante, se digitaliza un trámite confuso o se produce un tablero vistoso para un flujo que nadie entiende bien. En contextos jurídicos y administrativos, ese error es especialmente costoso, porque los procesos suelen mezclar normas, documentos, responsables, tiempos, validaciones y criterios que no siempre están visibles en un mismo lugar.\nPor eso, antes de hablar de automatización documental o analítica, conviene detenerse en el proceso mismo. Representar un flujo con una notación compartida permite discutirlo, corregirlo y coordinarlo mejor que cuando existe solo como costumbre verbal o conocimiento disperso entre oficinas (White and Miers 2011). Modernizar la gestión pública tampoco equivale simplemente a incorporar tecnología: exige revisar procesos, funciones y servicios con una lógica de mejora (Perú 2002; Presidencia del Consejo de Ministros 2002).\nEn términos simples, entender el negocio significa entender el proceso. Significa saber quién hace qué, con qué insumos, en qué orden, con qué decisiones críticas y con qué salidas.",
     "crumbs": [
       "II. Automatización y datos jurídicos",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>5. Entender el negocio</span>"
@@ -754,7 +754,7 @@
     "href": "parte-2-modulo-2/06-capitulo.html",
     "title": "6. Explicar y controlar los resultados",
     "section": "",
-    "text": "¿Por qué importa este tema?\nEn derecho y en gestión legal no basta con tener información. Hace falta ordenarla, formular preguntas sobre ella y producir salidas que ayuden a comprender una situación o a tomar decisiones mejores. Una tabla desordenada puede conservar muchos datos y, al mismo tiempo, no decir casi nada. Un reporte breve, en cambio, puede volver visible un patrón importante, una carga desigual, un plazo riesgoso o un conjunto de casos que merecen priorización.\nEse paso, que parece técnico, también es intelectual. Entre el dato bruto y el documento útil existe una cadena de organización, descripción y reutilización que condiciona el valor final de la información (Mendo et al. 2013). Trabajar con datos jurídicos no significa solo “pasar documentos a Excel”, sino aprender a distinguir campos, limpiar registros, construir indicadores y producir representaciones que tengan sentido para un problema concreto.\nLa visualización entra después, no antes. Un gráfico puede revelar patrones con enorme potencia, pero sin contexto y lectura crítica también puede inducir interpretaciones equivocadas (Cairo 2017). Por eso, el objetivo de esta sesión no es enseñar a decorar información. Es enseñar a explicarla y controlarla con mayor rigor.",
+    "text": "Los datos no hablan solos\nEn derecho y en gestión legal no basta con tener información. Hace falta ordenarla, formular preguntas sobre ella y producir salidas que ayuden a comprender una situación o a tomar decisiones mejores. Una tabla desordenada puede conservar muchos datos y, al mismo tiempo, no decir casi nada. Un reporte breve, en cambio, puede volver visible un patrón importante, una carga desigual, un plazo riesgoso o un conjunto de casos que merecen priorización.\nEse paso, que parece técnico, también es intelectual. Entre el dato bruto y el documento útil existe una cadena de organización, descripción y reutilización que condiciona el valor final de la información (Mendo et al. 2013). Trabajar con datos jurídicos no significa solo “pasar documentos a Excel”, sino aprender a distinguir campos, limpiar registros, construir indicadores y producir representaciones que tengan sentido para un problema concreto.\nLa visualización entra después, no antes. Un gráfico puede revelar patrones con enorme potencia, pero sin contexto y lectura crítica también puede inducir interpretaciones equivocadas (Cairo 2017). Por eso, el objetivo de esta sesión no es enseñar a decorar información. Es enseñar a explicarla y controlarla con mayor rigor.",
     "crumbs": [
       "II. Automatización y datos jurídicos",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>6. Explicar y controlar los resultados</span>"
@@ -1209,7 +1209,7 @@
     "href": "parte-3-modulo-3/08-capitulo.html",
     "title": "8. Ciberseguridad",
     "section": "",
-    "text": "¿Por qué importa este tema?\nEl trabajo jurídico maneja información sensible, documentos, credenciales y comunicaciones que pueden ser objeto de error, fuga o ataque. Por eso, la ciberseguridad no es solo un tema de especialistas. También es una responsabilidad cotidiana de quienes trabajan con datos, expedientes, contratos o repositorios.",
+    "text": "La seguridad empieza mucho antes del incidente\nCuando se habla de ciberseguridad, a veces parece que el tema se reduce a ataques sofisticados o a escenas extraordinarias. En el trabajo real, sin embargo, muchas fallas nacen en rutinas comunes: contraseñas débiles, archivos enviados al destinatario equivocado, repositorios mal configurados, enlaces engañosos o documentos sensibles compartidos sin cuidado. La seguridad empieza mucho antes del daño visible.",
     "crumbs": [
       "III. Web, nube y seguridad para el sector legal",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>8. Ciberseguridad</span>"
@@ -1253,7 +1253,7 @@
     "href": "parte-3-modulo-3/08-capitulo.html#la-tríada-básica-confidencialidad-integridad-y-disponibilidad",
     "title": "8. Ciberseguridad",
     "section": "La tríada básica: confidencialidad, integridad y disponibilidad",
-    "text": "La tríada básica: confidencialidad, integridad y disponibilidad\nUna forma clásica y útil de introducir seguridad es trabajar tres ideas:\n\nconfidencialidad: que la información solo sea accesible para quien corresponde;\nintegridad: que la información no sea alterada indebidamente;\ndisponibilidad: que la información o el sistema estén accesibles cuando deben estarlo.\n\nPensemos en un caso jurídico:\n\nsi un expediente reservado se comparte indebidamente, se afecta la confidencialidad;\nsi una versión de contrato cambia sin control, se afecta la integridad;\nsi un sistema cae justo antes de un vencimiento, se afecta la disponibilidad.\n\n\n\n\n\n\n\nNotePor qué esta distinción importa\n\n\n\nLa seguridad no consiste solo en “evitar hackeos”. Consiste en proteger acceso, confiabilidad y continuidad.",
+    "text": "La tríada básica: confidencialidad, integridad y disponibilidad\nUna forma clásica y útil de introducir seguridad es trabajar tres ideas:\n\nconfidencialidad: que la información solo sea accesible para quien corresponde;\nintegridad: que la información no sea alterada indebidamente;\ndisponibilidad: que la información o el sistema estén accesibles cuando deben estarlo.\n\nPensemos en un caso jurídico:\n\nsi un expediente reservado se comparte indebidamente, se afecta la confidencialidad;\nsi una versión de contrato cambia sin control, se afecta la integridad;\nsi un sistema cae justo antes de un vencimiento, se afecta la disponibilidad.\n\n\n\n\n\n\n\nNotePor qué esta distinción importa\n\n\n\nLa seguridad no consiste solo en evitar hackeos. Consiste en proteger acceso, confiabilidad y continuidad.",
     "crumbs": [
       "III. Web, nube y seguridad para el sector legal",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>8. Ciberseguridad</span>"
@@ -1286,7 +1286,7 @@
     "href": "parte-3-modulo-3/08-capitulo.html#contraseñas-y-autenticación",
     "title": "8. Ciberseguridad",
     "section": "Contraseñas y autenticación",
-    "text": "Contraseñas y autenticación\nUno de los puntos más básicos sigue siendo uno de los más importantes.\nBuenas prácticas mínimas:\n\nusar contraseñas robustas y distintas;\nno reutilizar la misma clave para todo;\nactivar autenticación de dos factores cuando sea posible;\nno compartir credenciales por mensajería informal;\nusar un gestor de contraseñas si el contexto lo permite.\n\nParece básico, y justamente por eso suele descuidarse.",
+    "text": "Contraseñas y autenticación\nUno de los puntos más básicos sigue siendo uno de los más importantes. Buenas prácticas mínimas:\n\nusar contraseñas robustas y distintas;\nno reutilizar la misma clave para todo;\nactivar autenticación de dos factores cuando sea posible;\nno compartir credenciales por mensajería informal;\nusar un gestor de contraseñas si el contexto lo permite.\n\nParece básico, y justamente por eso suele descuidarse.",
     "crumbs": [
       "III. Web, nube y seguridad para el sector legal",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>8. Ciberseguridad</span>"
@@ -1297,7 +1297,7 @@
     "href": "parte-3-modulo-3/08-capitulo.html#phishing-y-errores-de-confianza",
     "title": "8. Ciberseguridad",
     "section": "Phishing y errores de confianza",
-    "text": "Phishing y errores de confianza\nEl phishing no funciona porque el ataque sea siempre brillante. Funciona muchas veces porque el mensaje parece suficientemente verosímil en un entorno de prisa o distracción.\nSeñales que conviene revisar:\n\nremitentes sospechosos;\nenlaces extraños;\npresión artificial por actuar “de inmediato”;\nsolicitudes de credenciales;\narchivos adjuntos inesperados.\n\nUn profesional del derecho que trabaja con información delicada no puede darse el lujo de tratar todo correo como si fuera inocente por defecto.\n\n\n\n\n\n\nWarningError frecuente\n\n\n\nPensar que seguridad equivale a software sofisticado. En muchos casos, el problema real es una rutina descuidada.",
+    "text": "Phishing y errores de confianza\nEl phishing no funciona porque el ataque sea siempre brillante. Funciona muchas veces porque el mensaje parece suficientemente verosímil en un entorno de prisa o distracción.\nSeñales que conviene revisar:\n\nremitentes sospechosos;\nenlaces extraños;\npresión artificial por actuar de inmediato;\nsolicitudes de credenciales;\narchivos adjuntos inesperados.\n\n\n\n\n\n\n\nWarningError frecuente\n\n\n\nPensar que seguridad equivale a software sofisticado. En muchos casos, el problema real es una rutina descuidada.",
     "crumbs": [
       "III. Web, nube y seguridad para el sector legal",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>8. Ciberseguridad</span>"
@@ -1308,7 +1308,7 @@
     "href": "parte-3-modulo-3/08-capitulo.html#repositorios-y-exposición-de-información",
     "title": "8. Ciberseguridad",
     "section": "Repositorios y exposición de información",
-    "text": "Repositorios y exposición de información\nEn un curso que usa Git y GitHub, también conviene pensar la seguridad desde los repositorios.\nAlgunas preguntas básicas:\n\n¿el repositorio es público o privado?;\n¿contiene información que no debería exponerse?;\n¿se subieron credenciales por error?;\n¿hay archivos sensibles que no deberían estar versionados?;\n¿la estructura del proyecto permite distinguir bien qué se comparte y qué no?\n\nNo todo lo que puede subirse a un repositorio debería subirse.",
+    "text": "Repositorios y exposición de información\nEn un curso que usa Git y GitHub, también conviene pensar la seguridad desde los repositorios. Algunas preguntas básicas ayudan a ordenar el criterio:\n\n¿el repositorio es público o privado?;\n¿contiene información que no debería exponerse?;\n¿se subieron credenciales por error?;\n¿hay archivos sensibles que no deberían estar versionados?;\n¿la estructura del proyecto distingue bien qué se comparte y qué no?\n\nNo todo lo que puede subirse a un repositorio debería subirse.",
     "crumbs": [
       "III. Web, nube y seguridad para el sector legal",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>8. Ciberseguridad</span>"
@@ -1466,7 +1466,7 @@
     "href": "parte-4-modulo-4/09-capitulo.html",
     "title": "9. Fundamentos de inteligencia artificial",
     "section": "",
-    "text": "¿Por qué importa este tema?\nLa IA ya aparece en tareas de búsqueda, clasificación, resumen y redacción asistida. Para usarla con criterio, primero hay que entender qué es, qué no es y dónde empiezan sus límites.",
+    "text": "La IA llegó antes que el vocabulario para discutirla\nLa inteligencia artificial ya aparece en tareas de búsqueda, clasificación, resumen y redacción asistida. El problema es que muchas veces empezó a usarse antes de que existiera un lenguaje mínimamente preciso para evaluarla. Por eso abundan dos errores opuestos: exagerar sus capacidades o descartarla sin distinguir qué tipo de herramienta se está usando realmente.",
     "crumbs": [
       "IV. Inteligencia Artificial aplicada al Derecho",
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>9. Fundamentos de inteligencia artificial</span>"
@@ -1510,7 +1510,7 @@
     "href": "parte-4-modulo-4/09-capitulo.html#automatización-no-es-lo-mismo-que-ia",
     "title": "9. Fundamentos de inteligencia artificial",
     "section": "Automatización no es lo mismo que IA",
-    "text": "Automatización no es lo mismo que IA\nSi un sistema aplica reglas claras como:\n\nsi falta firma, observar;\nsi el plazo venció, marcar alerta;\nsi el monto supera un umbral, escalar revisión;\n\nentonces probablemente estamos ante automatización basada en reglas y no necesariamente ante IA.\nEso no le quita valor. Muchas soluciones legaltech útiles son, en el fondo, buenas automatizaciones.",
+    "text": "Automatización no es lo mismo que IA\nSi un sistema aplica reglas claras como estas:\n\nsi falta firma, observar;\nsi el plazo venció, marcar alerta;\nsi el monto supera un umbral, escalar revisión;\n\nentonces probablemente estamos ante automatización basada en reglas y no necesariamente ante IA. Eso no le quita valor. Muchas soluciones legaltech útiles son, en el fondo, buenas automatizaciones.",
     "crumbs": [
       "IV. Inteligencia Artificial aplicada al Derecho",
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>9. Fundamentos de inteligencia artificial</span>"
@@ -1521,7 +1521,7 @@
     "href": "parte-4-modulo-4/09-capitulo.html#qué-hace-un-modelo-de-lenguaje",
     "title": "9. Fundamentos de inteligencia artificial",
     "section": "¿Qué hace un modelo de lenguaje?",
-    "text": "¿Qué hace un modelo de lenguaje?\nUn modelo de lenguaje como un LLM trabaja prediciendo texto plausible a partir de patrones aprendidos en grandes volúmenes de datos. Eso le permite:\n\nresumir;\ncompletar;\nreformular;\nclasificar;\ncontestar con lenguaje natural;\ngenerar borradores.\n\nPero esa capacidad no equivale a comprensión jurídica en sentido humano. El modelo no “entiende” normas, contexto o responsabilidad como lo hace un profesional. Produce salidas plausibles según patrones estadísticos.\n\n\n\n\n\n\nNotePunto clave\n\n\n\nQue una respuesta suene convincente no significa que sea correcta, completa o jurídicamente fiable.",
+    "text": "¿Qué hace un modelo de lenguaje?\nUn modelo de lenguaje como un LLM trabaja prediciendo texto plausible a partir de patrones aprendidos en grandes volúmenes de datos. Eso le permite:\n\nresumir;\ncompletar;\nreformular;\nclasificar;\ncontestar con lenguaje natural;\ngenerar borradores.\n\nPero esa capacidad no equivale a comprensión jurídica en sentido humano. El modelo no entiende normas, contexto o responsabilidad como lo hace un profesional. Produce salidas plausibles según patrones estadísticos.\n\n\n\n\n\n\nNotePunto clave\n\n\n\nQue una respuesta suene convincente no significa que sea correcta, completa o jurídicamente fiable.",
     "crumbs": [
       "IV. Inteligencia Artificial aplicada al Derecho",
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>9. Fundamentos de inteligencia artificial</span>"
@@ -1565,7 +1565,7 @@
     "href": "parte-4-modulo-4/09-capitulo.html#qué-es-rag-dicho-sin-humo",
     "title": "9. Fundamentos de inteligencia artificial",
     "section": "¿Qué es RAG, dicho sin humo?",
-    "text": "¿Qué es RAG, dicho sin humo?\nRAG suele referirse a sistemas que combinan recuperación de información con generación de respuesta. En términos sencillos:\n\nprimero se busca información relevante en una base o conjunto de documentos;\nluego se usa esa información como apoyo para generar una respuesta.\n\nLa ventaja esperada es que la respuesta se apoye mejor en fuentes concretas y reduzca algunas invenciones. Aun así, no desaparece la necesidad de verificación.",
+    "text": "¿Qué es RAG, dicho sin humo?\nRAG suele referirse a sistemas que combinan recuperación de información con generación de respuesta. En términos sencillos:\n\nprimero se busca información relevante en una base o conjunto de documentos;\nluego se usa esa información como apoyo para generar una respuesta.\n\nLa ventaja esperada es que la respuesta se apoye mejor en fuentes concretas y reduzca algunas invenciones. Aun así, no desaparece la necesidad de verificación.\n\n\n\n\n\n\nWarningAdvertencia importante\n\n\n\nEn derecho, una salida incorrecta no es solo un error técnico. Puede convertirse en una mala decisión profesional.",
     "crumbs": [
       "IV. Inteligencia Artificial aplicada al Derecho",
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>9. Fundamentos de inteligencia artificial</span>"
@@ -1587,7 +1587,7 @@
     "href": "parte-4-modulo-4/09-capitulo.html#cómo-probar-una-herramienta-sin-autoengañarse",
     "title": "9. Fundamentos de inteligencia artificial",
     "section": "Cómo probar una herramienta sin autoengañarse",
-    "text": "Cómo probar una herramienta sin autoengañarse\nUna buena práctica inicial consiste en no usar la herramienta de forma improvisada, sino hacer pruebas controladas.\nPor ejemplo:\n\nusar el mismo texto con distintos prompts;\ncomparar resultados;\nrevisar si cita correctamente;\nanotar qué acierta y qué falla;\nobservar si cambia demasiado de tono o de criterio.\n\nEse registro es importante porque transforma una impresión subjetiva en una observación más seria.",
+    "text": "Cómo probar una herramienta sin autoengañarse\nUna buena práctica inicial consiste en no usar la herramienta de forma improvisada, sino hacer pruebas controladas. Por ejemplo:\n\nusar el mismo texto con distintos prompts;\ncomparar resultados;\nrevisar si cita correctamente;\nanotar qué acierta y qué falla;\nobservar si cambia demasiado de tono o de criterio.\n\nEse registro importa porque transforma una impresión subjetiva en una observación más seria.",
     "crumbs": [
       "IV. Inteligencia Artificial aplicada al Derecho",
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>9. Fundamentos de inteligencia artificial</span>"
@@ -1653,7 +1653,7 @@
     "href": "parte-4-modulo-4/10-capitulo.html",
     "title": "10. Evaluar, gobernar e integrar IA en contextos jurídicos",
     "section": "",
-    "text": "¿Por qué importa este tema?\nUsar IA en derecho sin criterios de evaluación ni control es una mala idea. La pregunta seria no es solo si una herramienta funciona, sino si conviene usarla, con qué límites y bajo qué responsabilidad.",
+    "text": "La pregunta no es solo si funciona\nUna herramienta puede parecer impresionante en una demostración y resultar poco confiable en un contexto jurídico serio. Por eso, la pregunta relevante no es solo si produce algo útil, sino si conviene usarla, con qué límites, sobre qué tareas y bajo qué responsabilidad. Evaluar bien es una forma de frenar soluciones vistosas pero mal gobernadas.",
     "crumbs": [
       "IV. Inteligencia Artificial aplicada al Derecho",
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>10. Evaluar, gobernar e integrar IA en contextos jurídicos</span>"
@@ -1708,7 +1708,7 @@
     "href": "parte-4-modulo-4/10-capitulo.html#control-humano-y-responsabilidad",
     "title": "10. Evaluar, gobernar e integrar IA en contextos jurídicos",
     "section": "Control humano y responsabilidad",
-    "text": "Control humano y responsabilidad\nEn derecho, uno de los puntos más delicados es el control humano. No basta con que una persona “mire por encima” una salida. Hay que poder responder:\n\nquién revisa;\nqué revisa exactamente;\ncon qué criterio valida;\ncuándo se corrige o descarta la respuesta;\nquién asume responsabilidad final.\n\nSin esa capa, la herramienta puede terminar funcionando como una autoridad informal, lo cual es especialmente riesgoso.\n\n\n\n\n\n\nNotePunto clave\n\n\n\nLa gobernanza no empieza cuando aparece un problema. Empieza cuando decides cómo probar, usar y controlar una herramienta antes de incorporarla al trabajo.",
+    "text": "Control humano y responsabilidad\nEn derecho, uno de los puntos más delicados es el control humano. No basta con que una persona mire por encima una salida. Hay que poder responder:\n\nquién revisa;\nqué revisa exactamente;\ncon qué criterio valida;\ncuándo se corrige o descarta la respuesta;\nquién asume responsabilidad final.\n\nSin esa capa, la herramienta puede terminar funcionando como una autoridad informal, lo cual es especialmente riesgoso.\n\n\n\n\n\n\nNotePunto clave\n\n\n\nLa gobernanza no empieza cuando aparece un problema. Empieza cuando decides cómo probar, usar y controlar una herramienta antes de incorporarla al trabajo.",
     "crumbs": [
       "IV. Inteligencia Artificial aplicada al Derecho",
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>10. Evaluar, gobernar e integrar IA en contextos jurídicos</span>"
@@ -1829,7 +1829,7 @@
     "href": "parte-4-modulo-4/11-capitulo.html",
     "title": "11. Ejemplos de proyectos Legal Tech",
     "section": "",
-    "text": "¿Por qué importa este tema?\nEl curso no busca solo que entiendas herramientas aisladas. Busca que puedas conectar problemas reales del mundo jurídico con soluciones tecnológicas plausibles.",
+    "text": "Una buena idea legaltech empieza con una molestia real\nUno de los errores más frecuentes en proyectos legaltech es empezar por la herramienta: hagamos algo con IA, usemos blockchain, construyamos un chatbot. Ese orden suele ser un mal punto de partida. Un proyecto valioso empieza, más bien, con una fricción concreta: un trámite lento, una revisión repetitiva, una consulta difícil de atender, una mala trazabilidad o una experiencia institucional confusa.",
     "crumbs": [
       "IV. Inteligencia Artificial aplicada al Derecho",
       "<span class='chapter-number'>14</span>  <span class='chapter-title'>11. Ejemplos de proyectos Legal Tech</span>"
@@ -1873,7 +1873,7 @@
     "href": "parte-4-modulo-4/11-capitulo.html#tipos-frecuentes-de-proyectos-legaltech",
     "title": "11. Ejemplos de proyectos Legal Tech",
     "section": "Tipos frecuentes de proyectos legaltech",
-    "text": "Tipos frecuentes de proyectos legaltech\nAlgunos tipos frecuentes de proyecto son:\n\nautomatización documental;\nacceso a información jurídica;\nvisualización de datos regulatorios;\ncumplimiento normativo;\nasistentes de trabajo interno;\ntrazabilidad de trámites o expedientes;\nrevisión preliminar o clasificación de documentos.\n\nEsto no significa que todo proyecto deba encajar perfectamente en una sola categoría. Pero la tipología ayuda a ordenar ideas.",
+    "text": "Tipos frecuentes de proyectos legaltech\nAlgunos tipos frecuentes de proyecto son:\n\nautomatización documental;\nacceso a información jurídica;\nvisualización de datos regulatorios;\ncumplimiento normativo;\nasistentes de trabajo interno;\ntrazabilidad de trámites o expedientes;\nrevisión preliminar o clasificación de documentos.\n\nLa tipología no agota todas las posibilidades, pero ayuda a ordenar ideas.",
     "crumbs": [
       "IV. Inteligencia Artificial aplicada al Derecho",
       "<span class='chapter-number'>14</span>  <span class='chapter-title'>11. Ejemplos de proyectos Legal Tech</span>"
@@ -2709,6 +2709,237 @@
     "text": "Ashley, Kevin D., Jaromír Savelka, and Matthias Grabmair. 2021. “A\nLaw School Course in Applied Legal Analytics and AI.” Law in\nContext 37 (1): 134–74. https://doi.org/10.26826/law-in-context.v37i1.125.\n\n\nCairo, Alberto. 2017. “Visualización de Datos: Una\nImagen Puede Valer más Que Mil números, Pero\nNo Siempre más Que Mil Palabras.” El Profesional\nde La Información 26 (6): 1025–28. https://doi.org/10.3145/epi.2017.nov.02.\n\n\nContreras, Alfredo, and Joe McGrath. 2020. “Law, Technology, and\nPedagogy: Teaching Coding to Build a ‘Future-Proof’\nLawyer.” Minnesota Journal of Law, Science &\nTechnology 21 (2): 297–347. https://doi.org/10.24926/15529541.3828.\n\n\nGarcía-García, Jesús, and María Luisa Alonso-Magdaleno. 2021.\n“Herramientas de Visualización Gráfica\nOnline Para Datos Abiertos Presupuestarios de Administraciones\npúblicas.” Revista Española de La\nTransparencia.\n\n\nGorgolewski, Krzysztof et al. 2011.\n“Nipype: A Flexible, Lightweight and Extensible Neuroimaging Data\nProcessing Framework in Python.” Frontiers in\nNeuroinformatics 5: 13. https://doi.org/10.3389/fninf.2011.00013.\n\n\nGross, Sam. 2023. “PEP 703: Making the Global Interpreter Lock\nOptional in CPython.” https://peps.python.org/pep-0703/.\n\n\nMDN Web Docs. 2026. “Unicode.” https://developer.mozilla.org/en-US/docs/Glossary/Unicode.\n\n\nMendo, Carmen et al. 2013. “Del Acceso\na La Reutilización, Del Dato Al Documento: Una\nVisión Conceptual de La Información\npública.” Revista Española de\nDocumentación Científica.\n\n\nMermaid Documentation. 2026. “Flowcharts: Basic Syntax.” https://mermaid.js.org/syntax/flowchart.html.\n\n\nMonge-Fallas, Luis et al. 2024.\n“Fundamentos y Perspectivas Del Pensamiento Computacional: Un\nanálisis Integral Para La\nInvestigación.” Revista Innovaciones\nEducativas.\n\n\nPadrón, Carlos et al. 2021.\n“Aproximación a Una Definición de\nPensamiento Computacional.” RIED. Revista Iberoamericana de\nEducación a Distancia 24 (1): 55–76.\n\n\nPedregosa, Fabian, Gaël Varoquaux, Alexandre Gramfort, et al. 2011.\n“Scikit-Learn: Machine Learning in Python.” Journal of\nMachine Learning Research 12: 2825–30. https://jmlr.org/papers/v12/pedregosa11a.html.\n\n\nPerú. 2002. Ley Marco de Modernización de La\nGestión Del Estado, Ley nó 27658.\n\n\nPerú. 2022. Ley nó 31449, Ley Que Fortalece El\nLaboratorio de Gobierno y Transformación Digital Del\nEstado.\n\n\nPresidencia del Consejo de Ministros. 2002. Decreto Supremo\nnó 030-2002-PCM, Reglamento de La Ley Marco de\nModernización de La Gestión Del Estado.\n\n\nPython Documentation. 2024. “What’s New in Python 3.13.” https://docs.python.org/3/whatsnew/3.13.html.\n\n\nPython Documentation. 2025. “What’s New in Python 3.14.” https://docs.python.org/3/whatsnew/3.14.html.\n\n\nPython Documentation. 2026a. “Built-in Types.” https://docs.python.org/3/library/stdtypes.html.\n\n\nPython Documentation. 2026b. “General Python FAQ.” https://docs.python.org/3/faq/general.html.\n\n\nPython Documentation. 2026c. “History and License.” https://docs.python.org/3/license.html.\n\n\nPython Software Foundation. 2026. “About the Python Software\nFoundation.” https://www.python.org/psf/about/.\n\n\nPython.org. 2026. “Python Documentation by Version.” https://www.python.org/doc/versions/.\n\n\nRaschka, Sebastian, Joshua Patterson, and Corey Nolet. 2020.\n“Machine Learning in Python: Main Developments and Technology\nTrends in Data Science, Machine Learning, and Artificial\nIntelligence.” Information 11 (4): 193. https://doi.org/10.3390/info11040193.\n\n\nRyan, Trevor. 2021. “Coding for Critical Thinking: A Case Study in\nEmbedding Complementary Skills in Legal Education.” Legal\nEducation Review 31 (1): 81–104. https://doi.org/10.53300/001c.36060.\n\n\nSQLite Documentation. 2026. “SELECT.” https://www.sqlite.org/lang_select.html.\n\n\nVirtanen, Pauli, Ralf Gommers, Travis E. Oliphant, et al. 2020.\n“SciPy 1.0: Fundamental Algorithms for Scientific Computing in\nPython.” Nature Methods 17 (3): 261–72. https://doi.org/10.1038/s41592-019-0686-2.\n\n\nVolini, Anthony. 2020. “A Perspective on Technology Education for\nLaw Students.” Santa Clara High Technology Law Journal\n36 (2): 165–98. https://digitalcommons.law.scu.edu/chtlj/vol36/iss2/2/.\n\n\nWhite, Stephen A., and Derek Miers. 2011. BPMN 2.0 Handbook:\nMethods, Concepts, Case Studies and Standards in Business Process\nManagement. Future Strategies.",
     "crumbs": [
       "<span class='chapter-number'>25</span>  <span class='chapter-title'>Referencias</span>"
+    ]
+  },
+  {
+    "objectID": "parte-2-modulo-2/06-capitulo.html#del-registro-disperso-a-la-evidencia-útil",
+    "href": "parte-2-modulo-2/06-capitulo.html#del-registro-disperso-a-la-evidencia-útil",
+    "title": "6. Explicar y controlar los resultados",
+    "section": "Del registro disperso a la evidencia útil",
+    "text": "Del registro disperso a la evidencia útil\nEn entornos jurídicos, muchas veces abundan documentos, tablas y reportes, pero escasea la capacidad de convertirlos en una lectura accionable. Aprender a organizar campos, registros e indicadores importa en una facultad de Derecho porque enseña a distinguir entre acumular información y producir evidencia comprensible para decidir, priorizar o explicar un problema.\n\n\n\n\n\n\nImportantAntes de empezar\n\n\n\nAntes de calcular, conviene formular una pregunta concreta: qué quieres contar, comparar o detectar. Esa pregunta ordena la tabla, define qué campos importan y evita que la visualización se vuelva un adorno sin argumento. Si el conjunto es pequeño pero está bien estructurado, el aprendizaje del capítulo funciona mejor.",
+    "crumbs": [
+      "II. Automatización y datos jurídicos",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>6. Explicar y controlar los resultados</span>"
+    ]
+  },
+  {
+    "objectID": "parte-2-modulo-2/06-capitulo.html#conclusiones-del-capítulo",
+    "href": "parte-2-modulo-2/06-capitulo.html#conclusiones-del-capítulo",
+    "title": "6. Explicar y controlar los resultados",
+    "section": "Conclusiones del capítulo",
+    "text": "Conclusiones del capítulo\nOrganizar datos no es una tarea periférica ni puramente técnica. Es una forma de pensar mejor qué se está observando, qué puede compararse y qué merece explicación. Cuando una tabla responde una pregunta clara y produce una salida legible, el trabajo con información deja de ser ruido y empieza a convertirse en control.\n\n\n\n\n\n\nTipIdeas clave\n\n\n\n\nUn dato aislado rara vez explica algo por sí solo.\nOrdenar información es una forma de pensar el problema con mayor precisión.\nLos indicadores sirven cuando hacen visible algo accionable, no cuando solo acumulan números.\nVisualizar ayuda, pero no reemplaza el contexto ni la interpretación.\nConsultar datos también es una forma de control, porque permite leer con estructura sin alterar la base original.\n\n\n\n\n\n\n\n\n\nCautionPara pensar y reflexionar\n\n\n\nUna parte importante de la innovación jurídica no depende de herramientas espectaculares, sino de algo más sobrio: saber organizar información para que deje de ser ruido. En el mundo profesional, explicar bien un resultado puede ser tan valioso como producirlo. Esa es una de las competencias que este módulo intenta entrenar.",
+    "crumbs": [
+      "II. Automatización y datos jurídicos",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>6. Explicar y controlar los resultados</span>"
+    ]
+  },
+  {
+    "objectID": "parte-2-modulo-2/05-capitulo.html#cuando-el-proceso-no-se-ve-el-problema-se-deforma",
+    "href": "parte-2-modulo-2/05-capitulo.html#cuando-el-proceso-no-se-ve-el-problema-se-deforma",
+    "title": "5. Entender el negocio",
+    "section": "Cuando el proceso no se ve, el problema se deforma",
+    "text": "Cuando el proceso no se ve, el problema se deforma\nMuchos equipos describen sus trámites como si fueran lineales, cuando en realidad están llenos de retornos, validaciones dispersas y esperas no reconocidas. Esa opacidad impide discutir dónde se pierde tiempo, qué control se duplicó o qué decisión depende solo de costumbre. En una facultad de Derecho, aprender a modelar procesos sirve precisamente para volver visible esa capa operativa que suele quedar escondida detrás del lenguaje normativo.\n\n\n\n\n\n\nImportantAntes de empezar\n\n\n\nAntes de dibujar, conviene elegir un proceso acotado y reconocible: admisión de un escrito, revisión contractual, derivación de un expediente o validación de requisitos. Lo importante no es producir un diagrama elegante, sino separar con claridad entradas, actividades, decisiones, responsables y salidas para que el flujo pueda discutirse y mejorarse.",
+    "crumbs": [
+      "II. Automatización y datos jurídicos",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>5. Entender el negocio</span>"
+    ]
+  },
+  {
+    "objectID": "parte-2-modulo-2/05-capitulo.html#conclusiones-del-capítulo",
+    "href": "parte-2-modulo-2/05-capitulo.html#conclusiones-del-capítulo",
+    "title": "5. Entender el negocio",
+    "section": "Conclusiones del capítulo",
+    "text": "Conclusiones del capítulo\nEntender el negocio no significa aprender jerga empresarial, sino volver legible el trabajo real. Cuando un flujo se representa con claridad, deja de depender solo de memoria institucional o intuición profesional. Recién entonces puede hablarse con seriedad de mejora, trazabilidad o automatización.\n\n\n\n\n\n\nTipIdeas clave\n\n\n\n\nEntender el negocio significa entender el proceso, no solo la herramienta.\nUn flujo visible se vuelve discutible, corregible y mejorable.\nModelar procesos permite detectar cuellos de botella, reprocesos y trabajo invisible.\nMermaid resulta útil porque integra diagramación y versionado dentro del mismo entorno de trabajo.\nSin comprensión del flujo, la automatización corre el riesgo de ser superficial o equivocada.\n\n\n\n\n\n\n\n\n\nCautionPara pensar y reflexionar\n\n\n\nEn proyectos legales y públicos, muchas veces se habla de innovación demasiado pronto y de procesos demasiado tarde. Este capítulo invierte deliberadamente ese orden. Antes de pensar en dashboards, automatización documental o analítica, conviene hacer algo menos vistoso pero más importante: describir bien el trabajo real. Allí empieza una mejora con sentido.",
+    "crumbs": [
+      "II. Automatización y datos jurídicos",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>5. Entender el negocio</span>"
+    ]
+  },
+  {
+    "objectID": "parte-4-modulo-4/09-capitulo.html#separar-conceptos-evita-entusiasmos-confusos",
+    "href": "parte-4-modulo-4/09-capitulo.html#separar-conceptos-evita-entusiasmos-confusos",
+    "title": "9. Fundamentos de inteligencia artificial",
+    "section": "Separar conceptos evita entusiasmos confusos",
+    "text": "Separar conceptos evita entusiasmos confusos\nUno de los problemas más comunes cuando se habla de IA es que todo termina mezclado en una sola bolsa. Para trabajar con rigor conviene separar al menos estas ideas:\n\nautomatización: ejecución de reglas explícitas;\nmachine learning: modelos que aprenden patrones a partir de datos;\nIA generativa: sistemas capaces de producir texto, imagen, audio u otros contenidos;\nLLM: modelos de lenguaje entrenados para generar texto plausible a gran escala.\n\nEsta distinción importa porque no todo problema requiere IA, y no toda herramienta que parece inteligente funciona del mismo modo.",
+    "crumbs": [
+      "IV. Inteligencia Artificial aplicada al Derecho",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>9. Fundamentos de inteligencia artificial</span>"
+    ]
+  },
+  {
+    "objectID": "parte-4-modulo-4/09-capitulo.html#por-qué-esta-conversación-importa-en-derecho",
+    "href": "parte-4-modulo-4/09-capitulo.html#por-qué-esta-conversación-importa-en-derecho",
+    "title": "9. Fundamentos de inteligencia artificial",
+    "section": "Por qué esta conversación importa en Derecho",
+    "text": "Por qué esta conversación importa en Derecho\nEn una facultad de Derecho, hablar de IA no debería reducirse a fascinación tecnológica ni a temor abstracto. Importa porque estas herramientas ya influyen en tareas que tocan lectura, clasificación, redacción y análisis preliminar. Entender sus fundamentos permite usarlas con mayor criterio y, sobre todo, detectar cuándo una salida convincente sigue siendo insuficiente, riesgosa o directamente falsa.\n\n\n\n\n\n\nImportantAntes de empezar\n\n\n\nConviene leer esta sesión con una regla simple: toda herramienta debe probarse sobre tareas verificables y con fuentes que puedas contrastar. En derecho, una respuesta plausible no basta. La revisión humana y la trazabilidad de la prueba son parte del uso responsable, no un añadido opcional.",
+    "crumbs": [
+      "IV. Inteligencia Artificial aplicada al Derecho",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>9. Fundamentos de inteligencia artificial</span>"
+    ]
+  },
+  {
+    "objectID": "parte-4-modulo-4/09-capitulo.html#alucinaciones-sesgos-y-límites",
+    "href": "parte-4-modulo-4/09-capitulo.html#alucinaciones-sesgos-y-límites",
+    "title": "9. Fundamentos de inteligencia artificial",
+    "section": "Alucinaciones, sesgos y límites",
+    "text": "Alucinaciones, sesgos y límites\nUno de los conceptos más importantes al trabajar con IA generativa es el de alucinación. En términos simples, se refiere a salidas que parecen coherentes pero contienen información falsa, inventada o no verificable.\nEn derecho, ese riesgo es especialmente delicado porque:\n\nuna fuente inventada puede comprometer toda una argumentación;\nuna omisión relevante puede distorsionar el análisis;\nuna respuesta demasiado segura puede inducir confianza indebida.\n\nTambién conviene considerar que los modelos pueden reproducir sesgos presentes en datos, lenguaje o patrones de entrenamiento. No siempre veremos ese problema de manera evidente. Justamente por eso conviene trabajar con pruebas comparadas y con criterios de revisión.",
+    "crumbs": [
+      "IV. Inteligencia Artificial aplicada al Derecho",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>9. Fundamentos de inteligencia artificial</span>"
+    ]
+  },
+  {
+    "objectID": "parte-4-modulo-4/09-capitulo.html#conclusiones-del-capítulo",
+    "href": "parte-4-modulo-4/09-capitulo.html#conclusiones-del-capítulo",
+    "title": "9. Fundamentos de inteligencia artificial",
+    "section": "Conclusiones del capítulo",
+    "text": "Conclusiones del capítulo\nHablar de IA con seriedad empieza por separar conceptos y bajar expectativas confusas. Cuando entiendes qué hace una automatización, qué hace un modelo generativo y dónde aparecen alucinaciones o sesgos, la discusión deja de ser retórica y se vuelve práctica. Para el trabajo jurídico, esa claridad es una condición mínima de uso responsable.\n\n\n\n\n\n\nTipIdeas clave\n\n\n\n\ndistinguir conceptos evita exageraciones y malos usos;\nla IA puede asistir, pero no reemplaza el juicio jurídico;\nuna salida plausible no equivale a una salida confiable;\ndocumentar pruebas mejora la calidad del análisis.\n\n\n\n\n\n\n\n\n\nCautionPara pensar y reflexionar\n\n\n\nLa pregunta importante no es si la IA impresiona, sino si puede integrarse con criterio en tareas donde importan fuente, contexto, responsabilidad y revisión. En Derecho, esa exigencia no frena la innovación: la vuelve intelectualmente seria.",
+    "crumbs": [
+      "IV. Inteligencia Artificial aplicada al Derecho",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>9. Fundamentos de inteligencia artificial</span>"
+    ]
+  },
+  {
+    "objectID": "parte-3-modulo-3/08-capitulo.html#una-facultad-de-derecho-también-trabaja-con-riesgo-digital",
+    "href": "parte-3-modulo-3/08-capitulo.html#una-facultad-de-derecho-también-trabaja-con-riesgo-digital",
+    "title": "8. Ciberseguridad",
+    "section": "Una facultad de Derecho también trabaja con riesgo digital",
+    "text": "Una facultad de Derecho también trabaja con riesgo digital\nEl trabajo jurídico maneja información sensible, credenciales, comunicaciones, expedientes y documentos que pueden perderse, alterarse o exponerse. Por eso, la ciberseguridad no es solo un asunto técnico. También es una competencia profesional básica para quienes estudian y trabajan con datos, contratos, repositorios o plataformas. Aprender a detectar riesgo forma parte de aprender a ejercer con responsabilidad.",
+    "crumbs": [
+      "III. Web, nube y seguridad para el sector legal",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>8. Ciberseguridad</span>"
+    ]
+  },
+  {
+    "objectID": "parte-3-modulo-3/08-capitulo.html#proteger-información-también-es-una-forma-de-criterio-jurídico",
+    "href": "parte-3-modulo-3/08-capitulo.html#proteger-información-también-es-una-forma-de-criterio-jurídico",
+    "title": "8. Ciberseguridad",
+    "section": "Proteger información también es una forma de criterio jurídico",
+    "text": "Proteger información también es una forma de criterio jurídico\nEn este campo, el problema no es solo evitar ataques. También importa proteger acceso, confiabilidad y continuidad. Esa mirada conecta directamente con la práctica legal: deber de confidencialidad, trazabilidad documental, protección de datos, cumplimiento interno y confianza institucional. Por eso esta sesión importa en una facultad de Derecho: obliga a pensar cómo se sostienen hábitos digitales razonables en contextos de información delicada.\n\n\n\n\n\n\nImportantAntes de empezar\n\n\n\nConviene trabajar esta sesión con un escenario concreto en mente: un estudio pequeño, una oficina pública, un proyecto académico con documentos sensibles o un repositorio que combina material público y material reservado. Eso ayuda a que los riesgos y las medidas de mitigación no queden en abstracciones, sino en decisiones prácticas que realmente podrían adoptarse.",
+    "crumbs": [
+      "III. Web, nube y seguridad para el sector legal",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>8. Ciberseguridad</span>"
+    ]
+  },
+  {
+    "objectID": "parte-3-modulo-3/08-capitulo.html#conclusiones-del-capítulo",
+    "href": "parte-3-modulo-3/08-capitulo.html#conclusiones-del-capítulo",
+    "title": "8. Ciberseguridad",
+    "section": "Conclusiones del capítulo",
+    "text": "Conclusiones del capítulo\nLa ciberseguridad deja de parecer un tema lejano cuando se mira desde las rutinas del trabajo real. En contextos jurídicos, un descuido pequeño puede producir exposición de datos, pérdida de trazabilidad o daño institucional. Por eso, más que una materia separada, la seguridad funciona como una disciplina transversal de cuidado y criterio.\n\n\n\n\n\n\nTipIdeas clave\n\n\n\n\nseguridad es también cultura de trabajo;\nla tríada de confidencialidad, integridad y disponibilidad ayuda a leer riesgos con más precisión;\nmuchos incidentes nacen en hábitos descuidados, no en ataques extraordinarios;\nuna medida mínima pero sostenible vale más que una política impecable que nadie cumple.\n\n\n\n\n\n\n\n\n\nCautionPara pensar y reflexionar\n\n\n\nEn una profesión que trabaja con confianza, secreto, documentos y responsabilidad, la seguridad digital no puede verse como un anexo técnico. También es una forma de cuidado profesional frente a la información ajena y frente a los propios procesos de trabajo.",
+    "crumbs": [
+      "III. Web, nube y seguridad para el sector legal",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>8. Ciberseguridad</span>"
+    ]
+  },
+  {
+    "objectID": "parte-4-modulo-4/10-capitulo.html#probar-también-es-gobernar",
+    "href": "parte-4-modulo-4/10-capitulo.html#probar-también-es-gobernar",
+    "title": "10. Evaluar, gobernar e integrar IA en contextos jurídicos",
+    "section": "Probar también es gobernar",
+    "text": "Probar también es gobernar\nGobernar una herramienta de IA significa decidir cómo se prueba, qué riesgos se aceptan, qué controles se exigen y quién responde por el resultado. Esa gobernanza no empieza cuando aparece un problema. Empieza mucho antes, cuando se diseña la prueba, se documentan errores y se decide si una tarea admite o no asistencia automatizada.",
+    "crumbs": [
+      "IV. Inteligencia Artificial aplicada al Derecho",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>10. Evaluar, gobernar e integrar IA en contextos jurídicos</span>"
+    ]
+  },
+  {
+    "objectID": "parte-4-modulo-4/10-capitulo.html#control-humano-riesgo-y-responsabilidad",
+    "href": "parte-4-modulo-4/10-capitulo.html#control-humano-riesgo-y-responsabilidad",
+    "title": "10. Evaluar, gobernar e integrar IA en contextos jurídicos",
+    "section": "Control humano, riesgo y responsabilidad",
+    "text": "Control humano, riesgo y responsabilidad\nEn una facultad de Derecho, este tema importa porque el uso de IA no puede discutirse como si fuera neutral. Toda integración toca preguntas sobre calidad, trazabilidad, confidencialidad, sesgos y responsabilidad profesional. Aprender a evaluar una herramienta no solo prepara para usarla mejor; también prepara para rechazarla cuando sus límites son incompatibles con la tarea.\n\n\n\n\n\n\nImportantAntes de empezar\n\n\n\nConviene elegir una tarea concreta y de riesgo controlado antes de evaluar cualquier herramienta. Una prueba pequeña, bien documentada y repetible enseña mucho más que una impresión general. También ayuda definir desde el inicio qué se considerará error, qué nivel de revisión humana será necesario y qué daño produciría una salida equivocada.",
+    "crumbs": [
+      "IV. Inteligencia Artificial aplicada al Derecho",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>10. Evaluar, gobernar e integrar IA en contextos jurídicos</span>"
+    ]
+  },
+  {
+    "objectID": "parte-4-modulo-4/10-capitulo.html#conclusiones-del-capítulo",
+    "href": "parte-4-modulo-4/10-capitulo.html#conclusiones-del-capítulo",
+    "title": "10. Evaluar, gobernar e integrar IA en contextos jurídicos",
+    "section": "Conclusiones del capítulo",
+    "text": "Conclusiones del capítulo\nEvaluar e integrar IA con criterio significa resistir la tentación de confundir novedad con conveniencia. Una buena gobernanza empieza en la prueba, continúa en la documentación y se vuelve seria cuando define límites de uso, responsabilidades y condiciones de revisión. En Derecho, ese trabajo no es burocracia: es parte del estándar profesional.\n\n\n\n\n\n\nTipIdeas clave\n\n\n\n\nla gobernanza empieza en la prueba, no después del problema;\nla trazabilidad importa tanto como el resultado;\nuna evaluación útil combina criterio técnico y criterio jurídico;\nintegrar IA sin controles suele ser peor que no integrarla.\n\n\n\n\n\n\n\n\n\nCautionPara pensar y reflexionar\n\n\n\nNo toda herramienta útil en una demo merece entrar en un flujo jurídico real. Saber decir no, o saber limitar mucho el alcance de una integración, también es una forma de madurez tecnológica.",
+    "crumbs": [
+      "IV. Inteligencia Artificial aplicada al Derecho",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>10. Evaluar, gobernar e integrar IA en contextos jurídicos</span>"
+    ]
+  },
+  {
+    "objectID": "parte-4-modulo-4/11-capitulo.html#del-problema-a-la-propuesta",
+    "href": "parte-4-modulo-4/11-capitulo.html#del-problema-a-la-propuesta",
+    "title": "11. Ejemplos de proyectos Legal Tech",
+    "section": "Del problema a la propuesta",
+    "text": "Del problema a la propuesta\nCuando el problema está bien formulado, la conversación cambia. Ya no se trata de exhibir jerga tecnológica, sino de responder preguntas más serias:\n\n¿qué tarea es lenta, costosa o poco trazable?;\n¿a quién afecta?;\n¿qué parte podría mejorar con apoyo tecnológico?;\n¿qué solución es proporcional al problema?;\n¿qué límites y riesgos debería reconocer el proyecto?\n\nPrimero el problema, luego la solución. Ese orden protege al proyecto de promesas vacías.",
+    "crumbs": [
+      "IV. Inteligencia Artificial aplicada al Derecho",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>11. Ejemplos de proyectos Legal Tech</span>"
+    ]
+  },
+  {
+    "objectID": "parte-4-modulo-4/11-capitulo.html#por-qué-esto-importa-en-una-facultad-de-derecho",
+    "href": "parte-4-modulo-4/11-capitulo.html#por-qué-esto-importa-en-una-facultad-de-derecho",
+    "title": "11. Ejemplos de proyectos Legal Tech",
+    "section": "Por qué esto importa en una facultad de Derecho",
+    "text": "Por qué esto importa en una facultad de Derecho\nEsta sesión importa porque el curso no busca solo familiaridad con herramientas, sino criterio para conectarlas con necesidades plausibles del mundo jurídico. Una buena propuesta legaltech combina comprensión del problema, conciencia del usuario, viabilidad mínima y una promesa tecnológica razonable. Aprender a formular eso ya es una competencia profesional valiosa, incluso cuando el proyecto todavía es un prototipo.\n\n\n\n\n\n\nImportantAntes de empezar\n\n\n\nConviene pensar la propuesta con una ambición controlada. Un proyecto académico serio no necesita prometer una empresa completa ni una solución total. Necesita mostrar que el equipo entendió un problema real, identificó a quién afecta, propuso una intervención defendible y reconoció riesgos, límites y próximos pasos.",
+    "crumbs": [
+      "IV. Inteligencia Artificial aplicada al Derecho",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>11. Ejemplos de proyectos Legal Tech</span>"
+    ]
+  },
+  {
+    "objectID": "parte-4-modulo-4/11-capitulo.html#ejemplo-1.-seguimiento-de-plazos",
+    "href": "parte-4-modulo-4/11-capitulo.html#ejemplo-1.-seguimiento-de-plazos",
+    "title": "11. Ejemplos de proyectos Legal Tech",
+    "section": "Ejemplo 1. Seguimiento de plazos",
+    "text": "Ejemplo 1. Seguimiento de plazos\nImagina un proyecto orientado a seguimiento de plazos en expedientes o contratos.\nProblema:\n\nplazos dispersos en correos y hojas de cálculo;\nalertas tardías;\nbaja trazabilidad.\n\nPosible solución:\n\nun flujo simple que registre casos, fechas y alertas;\nun tablero básico de seguimiento;\nun sistema de priorización mínima.\n\nValor esperado:\n\nmenos omisiones;\nmejor visibilidad;\nmayor orden del trabajo.",
+    "crumbs": [
+      "IV. Inteligencia Artificial aplicada al Derecho",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>11. Ejemplos de proyectos Legal Tech</span>"
+    ]
+  },
+  {
+    "objectID": "parte-4-modulo-4/11-capitulo.html#ejemplo-2.-automatización-documental",
+    "href": "parte-4-modulo-4/11-capitulo.html#ejemplo-2.-automatización-documental",
+    "title": "11. Ejemplos de proyectos Legal Tech",
+    "section": "Ejemplo 2. Automatización documental",
+    "text": "Ejemplo 2. Automatización documental\nProblema:\n\nformatos repetitivos;\nerrores de copia y pega;\ndocumentos inconsistentes.\n\nPosible solución:\n\nplantilla con campos variables;\ngeneración automática de salidas según ciertos datos;\nrevisión humana final.\n\nValor esperado:\n\nahorro de tiempo;\nreducción de errores mecánicos;\nmayor consistencia documental.",
+    "crumbs": [
+      "IV. Inteligencia Artificial aplicada al Derecho",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>11. Ejemplos de proyectos Legal Tech</span>"
+    ]
+  },
+  {
+    "objectID": "parte-4-modulo-4/11-capitulo.html#ejemplo-3.-acceso-a-información-jurídica",
+    "href": "parte-4-modulo-4/11-capitulo.html#ejemplo-3.-acceso-a-información-jurídica",
+    "title": "11. Ejemplos de proyectos Legal Tech",
+    "section": "Ejemplo 3. Acceso a información jurídica",
+    "text": "Ejemplo 3. Acceso a información jurídica\nProblema:\n\ninformación dispersa o difícil de consultar;\npoca claridad para usuarios no especializados;\nsobrecarga en respuestas repetitivas.\n\nPosible solución:\n\nun repositorio estructurado;\nun buscador temático simple;\nuna interfaz de consulta inicial con criterios bien definidos.\n\nEste tipo de proyecto puede ser especialmente valioso en contextos de acceso a justicia o atención ciudadana, siempre que se maneje con cuidado el alcance de la herramienta.",
+    "crumbs": [
+      "IV. Inteligencia Artificial aplicada al Derecho",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>11. Ejemplos de proyectos Legal Tech</span>"
+    ]
+  },
+  {
+    "objectID": "parte-4-modulo-4/11-capitulo.html#viabilidad-básica-y-riesgos",
+    "href": "parte-4-modulo-4/11-capitulo.html#viabilidad-básica-y-riesgos",
+    "title": "11. Ejemplos de proyectos Legal Tech",
+    "section": "Viabilidad básica y riesgos",
+    "text": "Viabilidad básica y riesgos\nNo hace falta que el proyecto esté totalmente construido para ser una buena propuesta académica. Pero sí conviene mostrar alguna idea de viabilidad:\n\n¿qué recursos requiere?;\n¿qué parte ya puede prototiparse?;\n¿qué tan sensible es la información involucrada?;\n¿qué controles serían necesarios?;\n¿qué limitaciones reconoce el equipo?\n\nToda propuesta razonable debería incluir también una sección mínima de riesgos:\n\nriesgos jurídicos;\nriesgos operativos;\nriesgos éticos;\nriesgos de seguridad o privacidad;\nriesgos de depender demasiado de una herramienta.\n\n\n\n\n\n\n\nWarningAdvertencia útil\n\n\n\nUna idea tecnológicamente llamativa puede ser inútil si no mejora nada relevante del trabajo jurídico.",
+    "crumbs": [
+      "IV. Inteligencia Artificial aplicada al Derecho",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>11. Ejemplos de proyectos Legal Tech</span>"
+    ]
+  },
+  {
+    "objectID": "parte-4-modulo-4/11-capitulo.html#conclusiones-del-capítulo",
+    "href": "parte-4-modulo-4/11-capitulo.html#conclusiones-del-capítulo",
+    "title": "11. Ejemplos de proyectos Legal Tech",
+    "section": "Conclusiones del capítulo",
+    "text": "Conclusiones del capítulo\nPensar proyectos legaltech con seriedad obliga a cambiar la secuencia mental habitual: no partir de la herramienta, sino del problema, del usuario y de la mejora plausible. Esa disciplina vuelve más sobrias las propuestas, pero también las hace más defendibles. En un entorno académico, ese ya es un aprendizaje central.\n\n\n\n\n\n\nTipIdeas clave\n\n\n\n\nuna solución útil vale más que una idea grandilocuente;\nla claridad del problema suele determinar la calidad del proyecto;\nuna buena propuesta legaltech combina criterio jurídico, diseño de proceso y uso razonable de tecnología;\ndocumentar el proyecto desde temprano mejora su solidez.\n\n\n\n\n\n\n\n\n\nCautionPara pensar y reflexionar\n\n\n\nEl valor de un proyecto no depende solo de lo novedoso que suene, sino de cuánto entiende el trabajo jurídico que busca mejorar. La tecnología aporta más cuando llega después de una buena pregunta que cuando intenta reemplazarla.",
+    "crumbs": [
+      "IV. Inteligencia Artificial aplicada al Derecho",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>11. Ejemplos de proyectos Legal Tech</span>"
     ]
   }
 ]
