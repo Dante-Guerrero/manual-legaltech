@@ -25,11 +25,12 @@ El funcionamiento completo de `+` puede entenderse como una secuencia de trabajo
 
 1. **Entran documentos sin clasificar** en `+/y/+ entrada`.
 2. **Se clasifican** en una categoría documental dentro de `+/y`.
-3. **Se almacenan** como PDF en la subcarpeta `pdf` de esa categoría.
-4. **Se convierten** a Markdown en la subcarpeta `markdown` correspondiente.
-5. **Se leen y descomponen** en ideas pequeñas que pasan a `+/z`.
-6. **Se organizan criterios, instrucciones y propuestas** en `+/x`.
-7. **Se usan esos materiales** para mejorar capítulos, insertar citas o mantener consistencia editorial en el manual.
+3. **Si son PDF**, se almacenan en la subcarpeta `pdf` de esa categoría.
+4. **Si son PDF**, se convierten a Markdown en la subcarpeta `markdown` correspondiente.
+5. **Si son fuentes web**, se registran como extractos en `+/y/webs`.
+6. **Se leen y descomponen** en ideas pequeñas que pasan a `+/z`.
+7. **Se organizan criterios, instrucciones y propuestas** en `+/x`.
+8. **Se usan esos materiales** para mejorar capítulos, insertar citas o mantener consistencia editorial en el manual.
 
 La lógica es deliberadamente acumulativa: `+/y` conserva las fuentes, `+/z` conserva ideas reutilizables, y `+/x` conserva la memoria operativa y editorial del sistema.
 
@@ -56,11 +57,14 @@ Contiene una bandeja de entrada y varias categorías:
 - [+/y/normas](/Users/dante/github/manual-legaltech/+/y/normas): normas y textos regulatorios.
 - [+/y/libros-manuales](/Users/dante/github/manual-legaltech/+/y/libros-manuales): libros, manuales y materiales extensos equivalentes.
 - [+/y/jurisprudencia](/Users/dante/github/manual-legaltech/+/y/jurisprudencia): decisiones o materiales jurisprudenciales.
+- [+/y/webs](/Users/dante/github/manual-legaltech/+/y/webs): extractos manuales en Markdown de documentacion web citable.
 
 Cada categoría documental usa la misma estructura:
 
 - `pdf`
 - `markdown`
+
+La excepcion es `+/y/webs`, porque ahi no se almacenan PDF para convertir, sino archivos `.md` preparados manualmente.
 
 ### `+/z`
 
@@ -86,6 +90,8 @@ Antes de convertirlo, cada archivo debe moverse a una categoría:
 - `jurisprudencia`
 
 Después debe quedar en la subcarpeta `pdf` de esa categoría.
+
+Si la fuente es una web ya citada o potencialmente citable, no pasa por esta bandeja de entrada: se resume directamente en `+/y/webs`.
 
 ### 3. Convertir documentos
 
@@ -115,11 +121,19 @@ El wrapper histórico para papers sigue existiendo:
 ./+/x/scripts/convert_papers.sh --new
 ```
 
-### 4. Extraer notas atómicas
+### 4. Registrar fuentes web
 
-Después de leer los archivos convertidos en `+/y/<tipo>/markdown`, las ideas útiles deben pasar a `+/z` como notas independientes. La regla es simple: **una idea principal por archivo**.
+Cuando una cita del manual provenga de una pagina web:
 
-### 5. Reutilizar el material
+- crear un extracto en `+/y/webs`;
+- registrar URL, fecha de consulta, clave bibliografica y puntos utiles;
+- derivar una o mas notas atomicas en `+/z` si la fuente contiene ideas reutilizables.
+
+### 5. Extraer notas atómicas
+
+Despues de leer los archivos convertidos en `+/y/<tipo>/markdown` o los extractos de `+/y/webs`, las ideas utiles deben pasar a `+/z` como notas independientes. La regla es simple: **una idea principal por archivo**.
+
+### 6. Reutilizar el material
 
 Las notas de `+/z` y los documentos de `+/x` sirven para:
 
@@ -136,6 +150,7 @@ Este subsistema está pensado para apoyar el libro, no para invadirlo. Por eso:
 - `+/z` no debe llenarse de notas demasiado amplias o mezcladas;
 - `+/y/+ entrada` no debe volverse un archivo permanente de documentos sin clasificar;
 - una categoría documental no debería mezclar PDFs y Markdown fuera de sus subcarpetas `pdf` y `markdown`;
+- `+/y/webs` no deberia llenarse de enlaces sueltos sin extracto util;
 - `+/x/instrucciones` no debe duplicar información innecesariamente si ya existe un instructivo claro.
 
 ## Punto de entrada recomendado

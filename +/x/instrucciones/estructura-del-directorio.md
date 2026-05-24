@@ -48,11 +48,14 @@ Contiene:
 - [+/y/normas](/Users/dante/github/manual-legaltech/+/y/normas)
 - [+/y/libros-manuales](/Users/dante/github/manual-legaltech/+/y/libros-manuales)
 - [+/y/jurisprudencia](/Users/dante/github/manual-legaltech/+/y/jurisprudencia)
+- [+/y/webs](/Users/dante/github/manual-legaltech/+/y/webs)
 
 Cada tipo documental usa la misma convención:
 
 - `pdf`
 - `markdown`
+
+La excepcion es `+/y/webs`, que contiene extractos manuales en Markdown de paginas web ya citadas o potencialmente citables.
 
 ## Qué contiene `+/z`
 
@@ -69,5 +72,7 @@ Si un archivo ejecuta una tarea, conviene que vaya en `+/x/scripts`.
 Si un archivo fuente aún no ha sido clasificado, debe ir temporalmente en `+/y/+ entrada`.
 
 Si un archivo fuente ya fue clasificado, debe vivir en `+/y/<tipo>/pdf` o `+/y/<tipo>/markdown`.
+
+Si la fuente es una pagina web, debe vivir como extracto en `+/y/webs`.
 
 Si un archivo es una idea breve extraída de una fuente, debe ir en `+/z`.

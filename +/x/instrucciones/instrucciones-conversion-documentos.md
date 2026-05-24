@@ -11,6 +11,7 @@ La carpeta `+/y` distingue:
 - `+/y/normas/pdf` y `+/y/normas/markdown`
 - `+/y/libros-manuales/pdf` y `+/y/libros-manuales/markdown`
 - `+/y/jurisprudencia/pdf` y `+/y/jurisprudencia/markdown`
+- `+/y/webs`: extractos manuales en Markdown de paginas web
 
 ## Regla previa: clasificar antes de convertir
 
@@ -22,6 +23,8 @@ Antes de ejecutar un script:
 2. moverlo a la categoría correcta;
 3. dejarlo en la subcarpeta `pdf` correspondiente.
 
+Las fuentes web no pasan por este flujo: se resumen manualmente y se guardan directamente en `+/y/webs`.
+
 ## Categorías válidas
 
 El script genérico acepta estas categorías:
@@ -30,6 +33,8 @@ El script genérico acepta estas categorías:
 - `normas`
 - `libros-manuales`
 - `jurisprudencia`
+
+`webs` no es una categoria de conversion automatica porque no trabaja sobre PDF.
 
 ## Regla de nombres
 
@@ -123,3 +128,12 @@ como la ruta comienza con `+`, conviene invocar los scripts desde la raíz del r
 ## Observación práctica
 
 Algunos documentos traen nombres originales truncados o no muestran con claridad autor y año en el nombre del archivo. En esos casos conviene revisar el propio documento antes de renombrarlo para evitar que el formato quede incompleto o incorrecto.
+
+## Nota sobre fuentes web
+
+Cuando una cita proceda de una pagina web:
+
+1. crear un archivo `.md` en `+/y/webs`;
+2. registrar URL, sitio, fecha de consulta y clave bibliografica;
+3. resumir solo los puntos realmente utiles para el manual;
+4. crear despues una o mas notas atomicas en `+/z` si el contenido merece reutilizacion.

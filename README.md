@@ -28,7 +28,7 @@ Construir un manual universitario práctico para estudiantes de Derecho, orienta
 La carpeta [+](/Users/dante/github/manual-legaltech/+) concentra el sistema auxiliar del proyecto:
 
 - [+/x](/Users/dante/github/manual-legaltech/+/x): editorial, instrucciones operativas y scripts.
-- [+/y](/Users/dante/github/manual-legaltech/+/y): repositorio documental clasificado por tipo, con PDF y conversiones a Markdown.
+- [+/y](/Users/dante/github/manual-legaltech/+/y): repositorio documental clasificado por tipo, con PDF, conversiones a Markdown y extractos de fuentes web.
 - [+/z](/Users/dante/github/manual-legaltech/+/z): notas atómicas en lógica zettelkasten.
 
 Punto de entrada recomendado:

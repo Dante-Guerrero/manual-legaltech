@@ -21,7 +21,7 @@ Estas notas permiten:
 - no volver a leer todos los documentos cada vez que se quiera insertar citas;
 - detectar más de una posible cita por fuente;
 - construir argumentos del manual a partir de ideas pequeñas y combinables;
-- mantener trazabilidad entre el libro y los materiales de `+/y/<tipo>/markdown`.
+- mantener trazabilidad entre el libro y los materiales de `+/y/<tipo>/markdown` o `+/y/webs`.
 
 ## Formato sugerido de cada nota
 
@@ -31,6 +31,7 @@ Estas notas permiten:
 - ID: 202605240001
 - Fuente: autor-año-titulo-del-documento
 - Archivo fuente: ruta al `.md` en `+/y/<tipo>/markdown`
+- Archivo fuente: ruta al `.md` en `+/y/<tipo>/markdown` o en `+/y/webs`
 - Capítulos potenciales: 2, 3, 4
 - Temas: palabra-clave-1, palabra-clave-2
 
@@ -58,7 +59,7 @@ Si de un mismo documento salen tres ideas distintas, deben crearse **tres notas 
 
 ## Flujo recomendado
 
-1. Leer o revisar el documento convertido en `+/y/<tipo>/markdown`.
+1. Leer o revisar el documento convertido en `+/y/<tipo>/markdown` o el extracto de `+/y/webs`.
 2. Identificar una idea realmente utilizable para el manual.
 3. Crear una nota nueva en `+/z` con esa sola idea.
 4. Vincularla al documento de origen.
