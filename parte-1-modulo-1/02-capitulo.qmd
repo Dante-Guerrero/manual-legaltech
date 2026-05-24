@@ -2,9 +2,11 @@
 title: "2. Primeros pasos con Python"
 ---
 
+::: {.callout-important}
 ## Qué aprenderás en esta sesión
 
 En este capítulo empezarás a ver por qué Python se volvió un lenguaje tan importante, cómo fue evolucionando y, sobre todo, cómo se aprende a usar paso a paso sin necesidad de venir del mundo de la ingeniería. Verás ejercicios breves para comprender qué hacen `print()`, las variables, `input()`, las conversiones de tipo, los operadores, los condicionales, los bucles, las funciones, las listas y varias operaciones sobre texto. La invitación no es solo a leer: es a descubrir cómo, a partir de instrucciones pequeñas, se puede empezar a pensar con más claridad problemas que luego se conectan con el trabajo jurídico.
+:::
 
 ## ¿Qué es Python y por qué es útil?
 
@@ -18,11 +20,6 @@ Además, cuando el trabajo jurídico empieza a cruzarse con analítica, automati
 
 Por eso, en este manual aprender Python significa algo muy concreto: empezar a traducir una lógica jurídica o administrativa en pasos que puedan revisarse, probarse y mejorarse. No se trata de reemplazar el juicio jurídico, sino de volver más visible la parte estructurable del problema.
 
-::: {.callout-important}
-## Idea central
-Programar no significa dejar de pensar como jurista. Significa aprender a expresar una lógica de trabajo con más precisión.
-:::
-
 ## Breve historia de Python
 
 Python nació a inicios de la década de 1990, creado por Guido van Rossum en el Centrum Wiskunde & Informatica (CWI), en los Países Bajos. Fue concebido como un sucesor del lenguaje ABC, pero con una orientación más práctica: debía ser legible, expresivo, extensible y útil para resolver problemas reales [@pythonlicense2026].
@@ -35,32 +32,41 @@ En 2001 se creó la Python Software Foundation (PSF), organización encargada de
 
 Desde entonces, Python 3 se ha mantenido como la línea principal del lenguaje. Las versiones más recientes han reforzado el rendimiento, la claridad del lenguaje y el trabajo sobre paralelismo y ejecución. Python 3.13, por ejemplo, introdujo avances como un nuevo intérprete interactivo y soporte experimental relacionado con el trabajo de PEP 703, mientras que Python 3.14 continuó refinando esa evolución [@whatsnew3132024; @pep7032023; @whatsnew3142025].
 
-::: {.callout-note}
-## Contexto útil
-Conocer un poco la historia de Python ayuda a entender por qué tantas personas lo usan para enseñar, automatizar tareas y construir herramientas en campos muy distintos, incluido el derecho.
-:::
-
 La siguiente línea de tiempo resume algunos de los hitos principales en la evolución del lenguaje, a partir de la documentación oficial de Python y de la PSF [@pythonlicense2026; @pythonversions2026; @psfabout2026; @whatsnew3132024; @whatsnew3142025; @pep7032023].
 
 ```{mermaid}
-%%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#f8f9fa', 'primaryTextColor': '#222222', 'primaryBorderColor': '#6c757d', 'lineColor': '#6c757d', 'secondaryColor': '#ffffff', 'tertiaryColor': '#ffffff', 'fontFamily': 'Georgia, serif'}}}%%
+%%{init: {'theme':'base','themeVariables':{
+  'background':'#fcfbf7',
+  'primaryColor':'#fff8dc',
+  'primaryTextColor':'#1f2a37',
+  'primaryBorderColor':'#c58b1b',
+  'lineColor':'#355c7d',
+  'secondaryColor':'#eef4fb',
+  'tertiaryColor':'#ffffff',
+  'fontFamily':'Georgia, serif',
+  'fontSize':'18px'
+}}}%%
 flowchart TB
-    A["1989<br/>Guido van Rossum empieza a trabajar en Python en CWI<br/>como sucesor práctico de ABC"]
-    B["1991<br/>Primera publicación pública de Python"]
-    C["1994<br/>Python 1.0 consolida sintaxis clara, excepciones y módulos"]
-    D["2000<br/>Python 2.0 introduce list comprehensions y mejoras importantes"]
-    E["2001<br/>Se crea la Python Software Foundation"]
-    F["2008<br/>Python 3.0 rediseña el lenguaje y rompe compatibilidad con Python 2"]
-    G["2010<br/>Python 2.7 queda como versión de transición de larga duración"]
-    H["2020<br/>Fin de vida oficial de Python 2"]
-    I["2024<br/>Python 3.13 incorpora nuevo intérprete interactivo y avances experimentales"]
-    J["2025<br/>Python 3.14 continúa mejoras de rendimiento y free-threading"]
-    K["2026<br/>Python sigue siendo central en automatización, datos, web e IA"]
+    A["<b>1989</b><br/>Guido van Rossum empieza a trabajar en Python<br/>en CWI como sucesor práctico de ABC"]
+    B["<b>1991</b><br/>Primera publicación pública de Python"]
+    C["<b>1994</b><br/>Python 1.0 consolida una sintaxis clara,<br/>excepciones y módulos reutilizables"]
+    D["<b>2000</b><br/>Python 2.0 introduce list comprehensions<br/>y otras mejoras importantes"]
+    E["<b>2001</b><br/>Se crea la Python Software Foundation"]
+    F["<b>2008</b><br/>Python 3.0 rediseña el lenguaje y rompe<br/>compatibilidad con Python 2"]
+    G["<b>2010</b><br/>Python 2.7 queda como versión de transición<br/>de larga duración"]
+    H["<b>2020</b><br/>Fin de vida oficial de Python 2"]
+    I["<b>2024</b><br/>Python 3.13 incorpora un nuevo intérprete<br/>interactivo y avances experimentales"]
+    J["<b>2025</b><br/>Python 3.14 continúa mejoras de rendimiento<br/>y free-threading"]
+    K["<b>2026</b><br/>Python sigue siendo central en automatización,<br/>datos, web e IA"]
 
     A --> B --> C --> D --> E --> F --> G --> H --> I --> J --> K
 
-    classDef hito fill:#ffffff,stroke:#6c757d,color:#222222,stroke-width:1.5px;
-    class A,B,C,D,E,F,G,H,I,J,K hito;
+    classDef inicio fill:#fff3c4,stroke:#c58b1b,color:#332200,stroke-width:2px;
+    classDef desarrollo fill:#eef4fb,stroke:#355c7d,color:#1f2a37,stroke-width:1.8px;
+    classDef actual fill:#e8f6ee,stroke:#2f855a,color:#153824,stroke-width:2px;
+    class A,B,C,D,E,F,G,H desarrollo;
+    class I,J inicio;
+    class K actual;
 ```
 
 ## ¿Por qué un estudiante de Derecho debería aprender Python?
@@ -81,7 +87,8 @@ La mejor manera de empezar con Python es trabajar con ejercicios pequeños y pro
 
 Si quieres aprovechar bien esta parte del capítulo, conviene seguir un orden simple: empieza por los ejercicios más breves, ejecútalos en secuencia, modifica variables, mensajes o números para ver qué cambia, y luego avanza hacia listas y texto. Una práctica especialmente buena para este curso es reescribir los ejemplos con vocabulario jurídico. Por ejemplo, puedes cambiar `nombre_usuario` por `nombre_cliente`, listas genéricas por listas de expedientes, o nombres de archivo simples por algo como `demanda_2026.pdf`. Así, el aprendizaje de la sintaxis se conecta desde el inicio con situaciones que ya resultan familiares.
 
-### Antes de empezar
+::: {.callout-tip}
+## Antes de empezar
 
 Para trabajar bien estos ejercicios necesitas dos cosas muy concretas:
 
@@ -90,9 +97,7 @@ Para trabajar bien estos ejercicios necesitas dos cosas muy concretas:
 
 Si todavía no tienes ese entorno listo, revisa la sección de **Tutoriales** del manual, especialmente las guías de instalación de Python y de uso de Visual Studio Code. La idea es que llegues a los ejercicios con un espacio de trabajo sencillo, estable y listo para probar código sin fricción innecesaria.
 
-::: {.callout-tip}
-## Sugerencia de trabajo
-Abre un ejercicio, léelo línea por línea, ejecútalo, cambia algo pequeño y vuelve a ejecutarlo. Si no entiendes una línea, no avances todavía: prueba esa línea hasta que te resulte clara.
+Sugerencia práctica: abre un ejercicio, léelo línea por línea, ejecútalo, cambia algo pequeño y vuelve a ejecutarlo. Si no entiendes una línea, no avances todavía: prueba esa línea hasta que te resulte clara.
 :::
 
 ### Ejercicio 1. La iniciación: el primer código que casi todo programador escribe
@@ -105,21 +110,26 @@ Abre tu editor, crea un archivo nuevo y copia este código completo:
 print("Hola, mundo")
 ```
 
-Guarda el archivo y ejecútalo con Python.
+#### Qué hace este código
 
-- `print()` es una función incorporada de Python.
-- Lo que está entre comillas, `"Hola, mundo"`, es un texto.
-- Cuando Python encuentra `print("Hola, mundo")`, toma ese texto y lo muestra en pantalla.
+Este programa le da a Python una sola instrucción: mostrar un mensaje en pantalla. Aunque parezca elemental, aquí ya aparece una idea central de toda la programación: escribir una orden precisa y obtener un resultado observable.
 
-Lo importante aquí es identificar que una instrucción muy breve ya puede producir un resultado visible.
+#### Qué hace cada parte
 
-Cuando lo ejecutas, la terminal muestra:
+- `print()` es una función incorporada de Python. Una función es una pieza de código ya preparada para cumplir una tarea específica.
+- En este caso, la tarea de `print()` es enviar información a la salida del programa para que puedas verla.
+- `"Hola, mundo"` es una cadena de texto. Las comillas le indican a Python que no debe interpretar ese contenido como una variable o una instrucción, sino como texto literal.
+- Se usa `print()` porque, al empezar, conviene verificar de inmediato que el programa realmente está corriendo y que la terminal está mostrando resultados.
 
+#### Qué verás en la terminal
+
+::: {.terminal-output}
 ```text
 Hola, mundo
 ```
+:::
 
-Eso ocurre porque `print()` envía el texto a la salida estándar del programa, que en este caso es la terminal.
+Eso ocurre porque `print()` toma el texto recibido y lo envía a la salida estándar, que en estos ejercicios será la terminal.
 
 ### Ejercicio 2. Dar nombre a la información: variables y tipos de datos
 
@@ -139,27 +149,31 @@ print("Tipo de promedio:", type(promedio))
 print("Tipo de esta_matriculado:", type(esta_matriculado))
 ```
 
-Guarda el archivo y ejecútalo.
+#### Qué hace este código
 
-- `nombre_estudiante = "Manu"` crea una variable que guarda texto.
-- `edad = 36` crea una variable con un número entero.
-- `promedio = 1.75` guarda un número decimal.
-- `esta_matriculado = True` guarda un valor lógico.
-- `type(...)` le pide a Python que muestre el tipo de dato de cada variable.
-- `print(...)` hace visible ese resultado en la terminal.
+El programa crea cuatro variables y luego le pide a Python que revele de qué tipo es cada dato. Con eso empiezas a ver que programar no es solo guardar valores, sino también reconocer cómo debe tratarse cada uno.
 
-Al ejecutar, el estudiante debería identificar que una variable funciona como un nombre que apunta a un dato específico.
+#### Qué hace cada parte
 
-La terminal mostrará tipos como:
+- `nombre_estudiante = "Manu"` crea una variable que guarda texto. Las variables son nombres que apuntan a un valor.
+- `edad = 36` guarda un entero. Los enteros sirven para cantidades sin decimales.
+- `promedio = 1.75` guarda un decimal o `float`. Estos valores se usan cuando hace falta precisión numérica con parte fraccionaria.
+- `esta_matriculado = True` guarda un booleano. Los booleanos representan solo dos estados: verdadero o falso.
+- `type(...)` es una función incorporada que devuelve la clase o tipo de un valor.
+- `print(...)` se usa aquí para hacer visible esa información. Sin `print()`, Python conocería el tipo, pero no te lo mostraría automáticamente al ejecutar el archivo.
 
+#### Qué verás en la terminal
+
+::: {.terminal-output}
 ```text
 Tipo de nombre_estudiante: <class 'str'>
 Tipo de edad: <class 'int'>
 Tipo de promedio: <class 'float'>
 Tipo de esta_matriculado: <class 'bool'>
 ```
+:::
 
-Eso ocurre porque Python clasifica cada valor según su naturaleza: texto, entero, decimal o booleano.
+Ese resultado ayuda a ver que Python distingue entre texto, enteros, decimales y valores lógicos porque cada uno se usa de manera distinta en las operaciones del programa.
 
 ### Ejercicio 3. Hacer que el programa te escuche: entradas y salidas
 
@@ -172,22 +186,30 @@ nombre_usuario = input("Como te llamas? ")
 print("Hola,", nombre_usuario)
 ```
 
-Guarda el archivo, ejecútalo y escribe tu nombre cuando el programa lo pida.
+#### Qué hace este código
 
-- `input("Como te llamas? ")` muestra una pregunta y detiene el programa hasta que la persona escriba algo.
-- El valor escrito se guarda en `nombre_usuario`.
-- `print("Hola,", nombre_usuario)` muestra un saludo usando el dato ingresado.
+El programa abre un pequeño diálogo. Primero pregunta algo, luego espera una respuesta y finalmente usa esa respuesta para construir un saludo. Es una primera muestra de que el programa puede reaccionar a información que no estaba escrita desde el inicio.
 
-El estudiante debería identificar que el programa ya no trabaja solo con datos fijos; ahora puede leer información ingresada en tiempo real.
+#### Qué hace cada parte
 
-La terminal primero muestra una pregunta. Después de escribir un nombre y presionar Enter, aparece el saludo. Si escribes `Ana`, por ejemplo, verás:
+- `input("Como te llamas? ")` muestra un mensaje y pausa el programa hasta que la persona escriba algo y presione Enter.
+- `input()` siempre devuelve texto. Aunque la respuesta parezca un número, Python la recibe inicialmente como cadena.
+- El valor escrito se guarda en `nombre_usuario`, para que el programa pueda reutilizarlo después.
+- `print("Hola,", nombre_usuario)` combina un texto fijo con el dato ingresado por el usuario.
+- Se usa `input()` porque el objetivo aquí no es trabajar con información predeterminada, sino empezar a capturar datos en tiempo real.
 
+#### Qué verás en la terminal
+
+Si escribes `Ana`, verás algo como esto:
+
+::: {.terminal-output}
 ```text
 Como te llamas? Ana
 Hola, Ana
 ```
+:::
 
-Eso ocurre porque `input()` captura lo que escribes y `print()` lo reutiliza.
+Eso ocurre porque `input()` recoge lo que escribes y `print()` lo incorpora inmediatamente a la respuesta del programa.
 
 ### Ejercicio 4. Cambiar la forma del dato: convertir tipos
 
@@ -206,16 +228,33 @@ numero_como_texto = str(numero_entero)
 print("Tipo despues de str():", type(numero_como_texto))
 ```
 
-Guarda el archivo, ejecútalo y escribe un número.
+#### Qué hace este código
 
-- `input(...)` recibe lo que escribes, pero lo guarda como texto.
-- `type(texto_numero)` permite comprobar eso.
-- `int(texto_numero)` convierte ese texto en un entero.
-- `str(numero_entero)` vuelve a convertir el entero en texto.
+El programa recibe un dato, inspecciona su tipo, lo convierte a entero y luego lo vuelve a convertir en texto. La meta no es solo cambiar el valor, sino entender que un mismo contenido puede adoptar formas distintas según la operación que necesites realizar.
 
-El estudiante debería notar que un mismo contenido puede cambiar de tipo según la operación aplicada.
+#### Qué hace cada parte
 
-Si escribes `5`, la terminal mostrará primero que el dato es `str`, luego que pasó a `int` y finalmente que volvió a `str`. Eso ocurre porque `input()` siempre parte de texto y las funciones `int()` y `str()` cambian el tipo del valor.
+- `texto_numero = input(...)` recibe lo que escribes y lo guarda como texto.
+- `type(texto_numero)` comprueba ese punto de partida.
+- `int(texto_numero)` intenta convertir una cadena que representa un número entero en un valor numérico real.
+- Se usa `int()` porque los cálculos matemáticos requieren números, no texto.
+- `str(numero_entero)` hace el camino inverso: convierte el número nuevamente en texto.
+- Se usa `str()` cuando luego necesitas mostrar, concatenar o almacenar un valor como texto.
+
+#### Qué verás en la terminal
+
+Si escribes `5`, aparecerá algo como esto:
+
+::: {.terminal-output}
+```text
+Escribe un numero: 5
+Tipo inicial: <class 'str'>
+Tipo despues de int(): <class 'int'>
+Tipo despues de str(): <class 'str'>
+```
+:::
+
+La lección principal es que `input()` siempre parte de texto, y por eso muchas veces hay que convertir el dato antes de operar con él.
 
 ### Ejercicio 5. Empezar a calcular y comparar
 
@@ -246,19 +285,44 @@ print("Potencia:", primer_numero ** segundo_numero)
 print("El primer numero es mayor?:", primer_numero > segundo_numero)
 ```
 
-Guarda el archivo y ejecútalo con distintos números.
+#### Qué hace este código
 
-- Las dos primeras líneas piden números y los convierten a enteros.
+Este programa recibe dos números y los usa para realizar operaciones aritméticas y comparaciones. Además, incluye una verificación previa para evitar un error frecuente: intentar dividir entre cero.
+
+#### Qué hace cada parte
+
+- `int(input(...))` combina dos acciones: pedir un dato y convertirlo inmediatamente a entero.
 - `+`, `-` y `*` realizan suma, resta y multiplicación.
-- `if segundo_numero != 0:` verifica si se puede dividir sin error.
-- `/`, `//` y `%` permiten ver división normal, división entera y residuo.
-- `==` compara si un resultado es igual a otro valor.
-- `**` calcula potencia.
-- `>` compara si un número es mayor que otro.
+- `if segundo_numero != 0:` verifica si la división es válida antes de ejecutarla.
+- `/` produce una división decimal.
+- `//` produce una división entera, es decir, el cociente sin decimales.
+- `%` calcula el residuo de una división.
+- `primer_numero % segundo_numero == 0` permite comprobar si un número es múltiplo de otro, porque un residuo cero indica divisibilidad exacta.
+- `**` calcula potencias.
+- `>` compara dos valores y devuelve `True` o `False`.
+- Se escribe la condición antes de dividir porque un programa bien construido no solo calcula: también prevé cuándo una operación puede romperse.
 
-El estudiante debería identificar que Python no solo calcula; también compara y decide qué hacer según una condición.
+#### Qué verás en la terminal
 
-La terminal muestra una serie de resultados numéricos. Si el segundo número es cero, aparece un mensaje de advertencia en lugar de la división. Eso ocurre porque el `if` evita una operación inválida antes de que Python intente hacerla.
+Si escribes `12` y luego `3`, verás algo así:
+
+::: {.terminal-output}
+```text
+Escribe el primer numero: 12
+Escribe el segundo numero: 3
+Suma: 15
+Resta: 9
+Multiplicacion: 36
+Division: 4.0
+Division entera: 4
+Residuo: 0
+Es multiplo?: True
+Potencia: 1728
+El primer numero es mayor?: True
+```
+:::
+
+Si el segundo número fuera `0`, aparecerían mensajes de advertencia en lugar de los resultados de división. Eso pasa porque el `if` actúa como una barrera de seguridad antes de ejecutar una operación inválida.
 
 ### Ejercicio 6. La primera decisión del programa
 
@@ -275,16 +339,40 @@ else:
     print("Desaprobado")
 ```
 
-Guarda el archivo y ejecútalo con notas distintas.
+#### Qué hace este código
 
-- `nota = int(input(...))` pide una nota y la convierte a entero.
-- `if nota >= 11:` pregunta si la nota es mayor o igual a 11.
-- Si la condición es verdadera, se imprime `Aprobado`.
-- Si no lo es, entra al bloque `else` y se imprime `Desaprobado`.
+El programa evalúa una regla sencilla: si la nota es 11 o más, la respuesta será una; si no lo es, será otra. Aquí aparece con claridad la idea de decisión condicional.
 
-El estudiante debería identificar que Python ejecuta solo uno de los dos bloques según el resultado de la condición.
+#### Qué hace cada parte
 
-Si escribes `15`, la terminal mostrará `Aprobado`. Si escribes `8`, mostrará `Desaprobado`. Eso ocurre porque la comparación `nota >= 11` cambia de verdadero a falso según el valor ingresado.
+- `nota = int(input(...))` recoge la nota y la transforma en entero porque luego se la comparará numéricamente.
+- `if nota >= 11:` formula la condición principal.
+- `>=` significa "mayor o igual que".
+- El bloque que está indentado debajo de `if` solo se ejecuta si la condición es verdadera.
+- `else:` introduce el camino alternativo, es decir, lo que ocurre cuando la condición no se cumple.
+- Se usa `if` y `else` porque el problema solo tiene dos resultados posibles.
+
+#### Qué verás en la terminal
+
+Si escribes `15`, verás:
+
+::: {.terminal-output}
+```text
+Escribe la nota final: 15
+Aprobado
+```
+:::
+
+Si escribes `8`, verás:
+
+::: {.terminal-output}
+```text
+Escribe la nota final: 8
+Desaprobado
+```
+:::
+
+La diferencia entre una salida y otra muestra que Python no ejecuta ambos bloques: elige solo el que corresponde según la condición.
 
 ### Ejercicio 7. Cuando no basta con dos caminos
 
@@ -303,15 +391,48 @@ else:
     print("Desaprobado")
 ```
 
-Guarda el archivo y ejecútalo con varios valores.
+#### Qué hace este código
 
-- `if nota >= 18:` revisa primero si la nota está en el tramo más alto.
-- `elif nota >= 11:` solo se revisa si la condición anterior no se cumplió.
-- `else:` captura todos los demás casos.
+El programa clasifica la nota en tres niveles. A diferencia del ejercicio anterior, ahora no basta con separar entre "sí" y "no": hace falta introducir un caso intermedio.
 
-El estudiante debería identificar que el orden de las condiciones importa: Python evalúa de arriba hacia abajo y se detiene cuando encuentra una condición verdadera.
+#### Qué hace cada parte
 
-Si escribes `19`, aparece `Excelente`. Si escribes `14`, aparece `Aprobado`. Si escribes `7`, aparece `Desaprobado`. Eso ocurre porque cada rango activa una rama distinta del programa.
+- `if nota >= 18:` revisa primero el tramo más alto.
+- `elif nota >= 11:` significa "si la condición anterior no se cumplió, prueba esta otra".
+- `else:` recoge todos los casos restantes.
+- `elif` existe para evitar escribir varios `if` independientes que podrían volver confuso el flujo del programa.
+- El orden importa: Python evalúa de arriba hacia abajo y se detiene apenas encuentra una condición verdadera.
+
+#### Qué verás en la terminal
+
+Si escribes `19`, verás:
+
+::: {.terminal-output}
+```text
+Escribe la nota final: 19
+Excelente
+```
+:::
+
+Si escribes `14`, verás:
+
+::: {.terminal-output}
+```text
+Escribe la nota final: 14
+Aprobado
+```
+:::
+
+Si escribes `7`, verás:
+
+::: {.terminal-output}
+```text
+Escribe la nota final: 7
+Desaprobado
+```
+:::
+
+La utilidad de `elif` es justamente esa: ordenar varios caminos posibles sin perder legibilidad.
 
 ### Ejercicio 8. Repetir sin copiar y pegar
 
@@ -324,15 +445,31 @@ for numero in range(5):
     print("Numero actual:", numero)
 ```
 
-Guarda el archivo y ejecútalo.
+#### Qué hace este código
 
-- `range(5)` genera una secuencia de cinco valores: `0`, `1`, `2`, `3` y `4`.
-- `for numero in range(5):` recorre esos valores uno por uno.
-- En cada vuelta del ciclo, `print(...)` muestra el valor actual.
+El programa repite la misma instrucción cinco veces, pero cambiando el valor de `numero` en cada vuelta. Así se evita duplicar manualmente varias líneas parecidas.
 
-El estudiante debería identificar que una misma instrucción puede ejecutarse varias veces sin duplicar código manualmente.
+#### Qué hace cada parte
 
-La terminal muestra cinco líneas, una por cada valor de `range(5)`. Eso ocurre porque el bucle repite el `print()` una vez por cada número generado.
+- `range(5)` genera una secuencia de valores desde `0` hasta `4`.
+- `for numero in range(5):` le dice a Python que recorra esa secuencia elemento por elemento.
+- `numero` es una variable que va tomando cada valor de la secuencia.
+- La línea indentada debajo de `for` es el bloque que se repetirá.
+- Se usa `for` porque aquí sí sabemos cuántas repeticiones habrá desde el inicio.
+
+#### Qué verás en la terminal
+
+::: {.terminal-output}
+```text
+Numero actual: 0
+Numero actual: 1
+Numero actual: 2
+Numero actual: 3
+Numero actual: 4
+```
+:::
+
+El patrón se entiende mejor si piensas que `for` toma un valor, ejecuta el bloque, pasa al siguiente y repite hasta terminar la secuencia.
 
 ### Ejercicio 9. Insistir hasta que algo cambie
 
@@ -349,17 +486,32 @@ while clave_ingresada != "1234":
 print("Acceso permitido")
 ```
 
-Guarda el archivo y ejecútalo. Prueba escribiendo una clave incorrecta primero.
+#### Qué hace este código
 
-- `clave_ingresada = ""` prepara una variable vacía.
-- `while clave_ingresada != "1234":` dice: sigue repitiendo mientras la clave no sea correcta.
-- Dentro del ciclo, `input(...)` vuelve a pedir la clave.
-- Cuando finalmente se escribe `1234`, la condición deja de cumplirse y el ciclo termina.
-- Entonces recién se ejecuta `print("Acceso permitido")`.
+El programa sigue pidiendo una clave hasta que la respuesta coincida con el valor esperado. Aquí la repetición no depende de una cantidad fija de vueltas, sino de que una condición cambie.
 
-El estudiante debería identificar que `while` sirve cuando no sabemos de antemano cuántas repeticiones harán falta.
+#### Qué hace cada parte
 
-La terminal seguirá pidiendo la clave una y otra vez hasta que escribas `1234`. Solo entonces aparecerá `Acceso permitido`. Eso ocurre porque el programa revisa la condición antes de cada nueva vuelta del ciclo.
+- `clave_ingresada = ""` prepara una variable inicial vacía.
+- `while clave_ingresada != "1234":` significa "repite mientras la clave aún no sea correcta".
+- `!=` significa "distinto de".
+- Dentro del ciclo, `input(...)` vuelve a solicitar el dato y reemplaza el valor anterior.
+- Cuando finalmente la variable contiene `"1234"`, la condición deja de cumplirse y el bucle termina.
+- Se usa `while` porque no sabemos cuántos intentos harán falta.
+
+#### Qué verás en la terminal
+
+Si primero escribes `1111` y luego `1234`, verás algo parecido a esto:
+
+::: {.terminal-output}
+```text
+Escribe la clave de acceso: 1111
+Escribe la clave de acceso: 1234
+Acceso permitido
+```
+:::
+
+La idea clave es que `while` revisa la condición antes de cada nueva vuelta. Mientras siga siendo verdadera, el ciclo continúa.
 
 ### Ejercicio 10. Escribir una vez, usar muchas veces
 
@@ -378,22 +530,31 @@ print(sumar(13, 5))
 print(sumar(12321, 2342342))
 ```
 
-Guarda el archivo y ejecútalo.
+#### Qué hace este código
 
-- `def sumar(...):` crea una función llamada `sumar`.
-- `primer_numero` y `segundo_numero` son datos de entrada.
-- `resultado = primer_numero + segundo_numero` realiza el cálculo.
-- `return resultado` devuelve ese valor para que pueda usarse fuera de la función.
-- Las líneas `print(sumar(...))` llaman varias veces a la función con distintos datos.
+El programa define una función llamada `sumar` y luego la reutiliza varias veces con datos distintos. Esto permite separar la lógica del cálculo de los valores concretos con los que trabajas en cada ocasión.
 
-El estudiante debería identificar que la misma lógica puede reutilizarse sin reescribirla completa cada vez.
+#### Qué hace cada parte
 
-La terminal mostrará cuatro resultados distintos. Eso ocurre porque la función `sumar` se ejecuta cuatro veces con parejas de números diferentes.
+- `def sumar(primer_numero, segundo_numero):` define una función.
+- `primer_numero` y `segundo_numero` son parámetros: nombres temporales para los datos que la función recibirá.
+- `resultado = primer_numero + segundo_numero` realiza el trabajo central.
+- `return resultado` devuelve el valor calculado al lugar desde donde se llamó la función.
+- `sumar(3, 4)` es una llamada a la función; los números concretos que envías en cada llamada se conocen como argumentos.
+- Se usa `return` porque una función útil no solo ejecuta algo internamente, sino que también puede entregar un resultado para seguir trabajándolo.
 
-::: {.callout-note}
-## Regla práctica
-Si una lógica empieza a repetirse, probablemente ya conviene convertirla en función.
+#### Qué verás en la terminal
+
+::: {.terminal-output}
+```text
+7
+9
+18
+2354663
+```
 :::
+
+La ventaja pedagógica de este ejercicio es clara: si mañana cambias la lógica de la suma por otra operación, bastará con modificar la función una sola vez.
 
 ### Ejercicio 11. Guardar varios elementos en un mismo lugar
 
@@ -407,22 +568,26 @@ expedientes = ["EXP-001", "EXP-002", "EXP-003", "EXP-004", "EXP-005"]
 print("Cantidad de expedientes:", len(expedientes))
 ```
 
-Guarda el archivo y ejecútalo.
+#### Qué hace este código
 
-- `expedientes = [...]` crea una lista con varios textos.
-- Cada elemento está entre comillas y separado por comas.
-- `len(expedientes)` cuenta cuántos elementos hay en la lista.
-- `print(...)` muestra ese número.
+El programa agrupa varios códigos de expediente dentro de una sola estructura y luego cuenta cuántos hay. Así se introduce la idea de trabajar con colecciones de datos, no solo con valores aislados.
 
-El estudiante debería identificar que una lista permite guardar varios valores en un mismo objeto, manteniendo el orden.
+#### Qué hace cada parte
 
-La terminal mostrará:
+- `expedientes = [...]` crea una lista.
+- Una lista mantiene el orden de los elementos y permite tratarlos como un conjunto organizado.
+- `len(expedientes)` es una función incorporada que devuelve la cantidad de elementos de la colección.
+- Se usa `len()` porque muchas tareas reales empiezan por una pregunta simple: cuántos registros, cuántos archivos, cuántos expedientes o cuántos nombres hay.
 
+#### Qué verás en la terminal
+
+::: {.terminal-output}
 ```text
 Cantidad de expedientes: 5
 ```
+:::
 
-Eso ocurre porque `len()` cuenta los cinco elementos de la lista.
+Este resultado es pequeño, pero la idea que introduce es grande: una lista permite manejar varias piezas de información bajo un mismo nombre.
 
 ### Ejercicio 12. Hacer que varias listas caminen juntas
 
@@ -439,16 +604,29 @@ for codigo, estado, prioridad in zip(codigos, estados, prioridades):
     print(codigo, "-", estado, "- prioridad", prioridad)
 ```
 
-Guarda el archivo y ejecútalo.
+#### Qué hace este código
 
-- `codigos`, `estados` y `prioridades` son tres listas distintas.
-- `zip(codigos, estados, prioridades)` las une por posición.
-- `for codigo, estado, prioridad in ...` toma un elemento de cada lista en cada vuelta.
-- `print(...)` muestra ese grupo de datos ya emparejado.
+El programa toma tres listas relacionadas y las recorre como si cada fila estuviera formada por un código, un estado y una prioridad. Así aparece una idea muy útil para trabajo administrativo y jurídico: vincular datos que pertenecen al mismo caso.
 
-El estudiante debería identificar que `zip()` sirve para trabajar con información que va unida registro por registro.
+#### Qué hace cada parte
 
-La terminal mostrará tres líneas, cada una con un código, un estado y una prioridad. Eso ocurre porque `zip()` forma tres grupos usando los elementos de la misma posición en cada lista.
+- `codigos`, `estados` y `prioridades` son listas distintas, pero sus posiciones corresponden entre sí.
+- `zip(codigos, estados, prioridades)` construye grupos con los elementos que comparten la misma posición.
+- En la primera vuelta, por ejemplo, `zip()` reúne `EXP-001`, `En revision` y `1`.
+- `for codigo, estado, prioridad in ...` desempaqueta cada grupo en tres variables nuevas.
+- Se usa `zip()` porque permite recorrer varias fuentes de información relacionadas sin tener que hacer búsquedas manuales por índice.
+
+#### Qué verás en la terminal
+
+::: {.terminal-output}
+```text
+EXP-001 - En revision - prioridad 1
+EXP-002 - Archivado - prioridad 2
+EXP-003 - Resuelto - prioridad 1
+```
+:::
+
+La enseñanza importante aquí es que muchas tablas o registros del mundo real pueden pensarse como listas que avanzan coordinadamente.
 
 ### Ejercicio 13. Poner orden en la información
 
@@ -464,17 +642,28 @@ palabras_ordenadas = sorted(palabras)
 print("Lista ordenada:", palabras_ordenadas)
 ```
 
-Guarda el archivo y ejecútalo.
+#### Qué hace este código
 
-- `palabras = [...]` crea una lista con varios términos.
-- `print("Lista original:", palabras)` muestra la lista tal como fue escrita.
-- `sorted(palabras)` produce una nueva lista ordenada.
-- `palabras_ordenadas = ...` guarda ese nuevo resultado.
-- El segundo `print(...)` muestra la versión ordenada.
+El programa muestra una lista tal como fue creada y luego produce otra versión en orden alfabético. Con eso puedes comparar el estado original de la información y una versión más organizada.
 
-El estudiante debería identificar que `sorted()` no reordena mentalmente el contenido: genera un nuevo resultado que luego puede guardarse y mostrarse.
+#### Qué hace cada parte
 
-La terminal mostrará primero la lista original y luego la lista ordenada alfabéticamente. Eso ocurre porque `sorted()` reorganiza los elementos según el orden propio de las cadenas de texto.
+- `palabras = [...]` crea una lista con términos jurídicos.
+- `sorted(palabras)` devuelve una nueva lista ordenada.
+- Se usa `sorted()` y no un reordenamiento manual porque automatiza una tarea muy frecuente al trabajar con documentos, nombres o categorías.
+- `palabras_ordenadas = ...` guarda el nuevo resultado sin destruir el valor original de `palabras`.
+- Esa diferencia importa: en programación, muchas veces conviene conservar una versión original y otra transformada.
+
+#### Qué verás en la terminal
+
+::: {.terminal-output}
+```text
+Lista original: ['demanda', 'audiencia', 'prueba', 'apelacion', 'contrato']
+Lista ordenada: ['apelacion', 'audiencia', 'contrato', 'demanda', 'prueba']
+```
+:::
+
+La utilidad de `sorted()` va más allá del ejemplo: ordenar hace más legible la información y ayuda a detectar patrones o valores repetidos.
 
 ### Ejercicio 14. Domar el texto: limpiar, separar y transformar
 
@@ -512,21 +701,42 @@ correo_limpio = correo.strip().lower()
 print("Correo limpio:", correo_limpio)
 ```
 
-Guarda el archivo y ejecútalo.
+#### Qué hace este código
 
-- `repr(texto)` muestra el texto de forma que los espacios sobrantes sean visibles.
-- `strip()` quita espacios al inicio y al final.
-- `lower()` y `upper()` transforman el texto a minúsculas o mayúsculas.
+El programa aplica varias funciones de texto para limpiar espacios, cambiar mayúsculas y minúsculas, separar fragmentos, reemplazar palabras y verificar cómo empieza o termina una cadena. Es un ejercicio importante porque muchas tareas reales con documentos y datos jurídicos consisten precisamente en limpiar texto antes de usarlo.
+
+#### Qué hace cada parte
+
+- `repr(texto)` muestra el contenido de forma más explícita, incluyendo los espacios sobrantes en los extremos.
+- `strip()` elimina espacios al inicio y al final. Se usa para limpiar entradas del usuario o datos copiados desde otras fuentes.
+- `lower()` convierte todo a minúsculas y `upper()` a mayúsculas. Esto ayuda a normalizar texto y comparar valores sin depender de cómo fueron escritos.
 - `split()` divide una cadena en partes y produce una lista.
-- `split(",")` usa la coma como separador.
+- `split(",")` hace esa división usando la coma como separador, algo muy común en formatos tipo CSV.
 - `replace("Java", "Python")` sustituye una parte del texto por otra.
-- `startswith(...)` y `endswith(...)` verifican cómo empieza o termina una cadena.
-- `correo.strip().lower()` combina dos operaciones en una sola línea: limpiar y normalizar.
+- `startswith(...)` y `endswith(...)` verifican el comienzo y el final de una cadena. Son útiles, por ejemplo, para validar nombres de archivo o extensiones.
+- `correo.strip().lower()` encadena dos operaciones: primero limpia espacios; luego normaliza el correo en minúsculas.
+- La razón de combinar funciones pequeñas es que, en programación, muchas soluciones no surgen de una instrucción gigante, sino de una secuencia ordenada de transformaciones simples.
 
-El estudiante debería identificar que muchas tareas reales con texto consisten en combinar operaciones pequeñas y simples en el orden correcto.
+#### Qué verás en la terminal
 
-La terminal mostrará varios resultados sucesivos: el texto original con espacios, la versión limpiada, cambios a mayúsculas y minúsculas, listas obtenidas con `split()`, un reemplazo de palabras, verificaciones sobre el nombre del archivo y finalmente un correo limpio. Eso ocurre porque cada línea del programa aplica una operación distinta sobre texto y muestra inmediatamente el resultado.
+::: {.terminal-output}
+```text
+Texto original: '   Hola, Mundo Python   '
+Despues de strip(): 'Hola, Mundo Python'
+En minusculas: hola, mundo python
+En mayusculas: HOLA, MUNDO PYTHON
+Palabras separadas: ['python', 'es', 'simple']
+Nombres desde CSV: ['Ana', 'Bruno', 'Carla']
+Texto reemplazado: Me gusta Python
+Empieza con 'reporte_'?: True
+Termina en '.pdf'?: True
+Correo limpio: estudiante@ejemplo.com
+```
+:::
 
+Este ejercicio resume muy bien una idea transversal del capítulo: una tarea aparentemente pequeña puede requerir varios pasos bien ordenados para producir un resultado limpio y útil.
+
+::: {.callout-important}
 ## Ideas clave
 
 - Python es útil no solo por su popularidad actual, sino porque permite traducir instrucciones y problemas en pasos legibles y ejecutables.
@@ -545,7 +755,9 @@ La terminal mostrará varios resultados sucesivos: el texto original con espacio
 - `zip()` ayuda a recorrer información relacionada en paralelo cuando varios datos pertenecen al mismo registro.
 - `sorted()` permite generar una versión ordenada de la información para volverla más legible y manejable.
 - Las operaciones sobre texto permiten limpiar, normalizar, separar, reemplazar y verificar cadenas de caracteres con precisión.
+:::
 
+::: {.callout-note}
 ## Para pensar y reflexionar
 
 1. ¿Qué cambia en tu manera de entender la programación cuando ves que un programa puede leerse como una secuencia ordenada de instrucciones comprensibles?
@@ -553,3 +765,4 @@ La terminal mostrará varios resultados sucesivos: el texto original con espacio
 3. ¿Qué ejercicio te mostró con mayor claridad que una tarea aparentemente simple puede requerir varios pasos distintos para funcionar bien?
 4. ¿De qué manera la historia de Python ayuda a entender por qué este lenguaje se usa tanto para enseñar, automatizar y construir herramientas reales?
 5. Si tuvieras que adaptar uno de los ejercicios del capítulo a una situación jurídica concreta, ¿cuál elegirías y qué cambiarías para volverlo más cercano a esa práctica?
+:::
