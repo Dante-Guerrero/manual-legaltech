@@ -1,235 +1,171 @@
-# 5. Entender el negocio
+---
+title: "5. Entender el negocio"
+---
+
+::: {.callout-note}
+## Qué aprenderás en esta sesión
+
+Esta sesión introduce una idea decisiva para cualquier proyecto de automatización o mejora: antes de intervenir un proceso, hay que entenderlo. A través de conceptos básicos de modelado, cuellos de botella, puntos de decisión y diagramación con Mermaid, el objetivo es aprender a describir flujos jurídicos de manera visible, discutible y trazable. Lo importante no es producir diagramas por gusto, sino usar el modelado para pensar mejor cómo funciona realmente un trámite, un servicio o una revisión documental.
+:::
 
 ## ¿Por qué importa este tema?
 
-No se puede mejorar ni automatizar un proceso legal si no se entiende primero cómo funciona. Muchos errores en proyectos de innovación aparecen porque se digitaliza un trámite mal descrito, se automatiza una parte irrelevante o se ignora dónde está realmente el cuello de botella.
+Muchos proyectos de innovación fracasan no porque la herramienta sea mala, sino porque el problema estaba mal descrito desde el inicio. Se automatiza una parte irrelevante, se digitaliza un trámite confuso o se produce un tablero vistoso para un flujo que nadie entiende bien. En contextos jurídicos y administrativos, ese error es especialmente costoso, porque los procesos suelen mezclar normas, documentos, responsables, tiempos, validaciones y criterios que no siempre están visibles en un mismo lugar.
+
+Por eso, antes de hablar de automatización documental o analítica, conviene detenerse en el proceso mismo. Representar un flujo con una notación compartida permite discutirlo, corregirlo y coordinarlo mejor que cuando existe solo como costumbre verbal o conocimiento disperso entre oficinas [@fischer2011bpmn]. Modernizar la gestión pública tampoco equivale simplemente a incorporar tecnología: exige revisar procesos, funciones y servicios con una lógica de mejora [@peru2002modernizacion; @pcm2002modernizacion].
+
+En términos simples, entender el negocio significa entender el proceso. Significa saber quién hace qué, con qué insumos, en qué orden, con qué decisiones críticas y con qué salidas.
 
 ::: {.callout-important}
 ## Idea central
-Entender el negocio significa entender el proceso: quién hace qué, con qué insumos, en qué orden y dónde aparecen decisiones críticas, demoras, reprocesos o errores repetitivos.
+
+No se puede automatizar ni mejorar con seriedad un proceso que todavía no ha sido descrito con claridad.
 :::
 
-## Qué aprenderás en esta sesión
+## El proceso como objeto de análisis
 
-Al finalizar esta sesión, deberías poder:
+Un proceso jurídico no es solo una norma, ni solo una lista de tareas. Es una secuencia de actividades, decisiones, documentos y responsables orientada a producir un resultado. A veces ese resultado será la admisión de un escrito; otras veces, la elaboración de un contrato revisado, la atención de una denuncia, la tramitación de un expediente o la emisión de una respuesta administrativa.
 
-- identificar actores, entradas, salidas y puntos de decisión;
-- distinguir entre actividad, documento, responsable y resultado;
-- representar un flujo legal de manera visual;
-- usar Mermaid como herramienta simple de diagramación;
-- justificar por qué un proceso fue modelado de cierta forma.
+Pensar en términos de proceso obliga a cambiar la mirada. En lugar de preguntar solo “qué dice la regla”, conviene preguntar también:
 
-## ¿Qué significa “entender el negocio” en contexto legal?
+- quién inicia el flujo;
+- qué información entra;
+- qué actividades agregan valor;
+- qué decisiones desvían o detienen el trámite;
+- qué documentos se generan;
+- dónde se pierde tiempo, claridad o consistencia.
 
-En entornos de innovación y mejora de procesos, “entender el negocio” no significa vender más ni hablar como consultor por deporte. Significa comprender cómo funciona realmente una organización o una unidad de trabajo.
+Esa forma de mirar es particularmente relevante en Legal Tech porque buena parte de las soluciones tecnológicas solo tienen sentido cuando existe alguna comprensión previa de la estructura del trabajo que se quiere mejorar.
 
-En derecho, eso obliga a mirar preguntas como estas:
+## Un flujo visible se vuelve discutible
 
-- ¿qué trámite o servicio estamos analizando?;
-- ¿qué actor inicia el proceso?;
-- ¿qué documentos o datos entran?;
-- ¿qué decisiones se toman?;
-- ¿qué resultados salen?;
-- ¿dónde se pierde tiempo o calidad?;
-- ¿qué parte del trabajo es repetitiva y podría estandarizarse?
+Cuando el trabajo se organiza en pasos explícitos, gana trazabilidad, reproducibilidad y posibilidad de revisión posterior [@gorgolewski2011nipype]. Ese principio no vale solo para pipelines científicos o scripts de análisis; también vale para procesos jurídicos. Si un trámite puede verse en etapas, si una revisión contractual puede separarse en momentos reconocibles y si una mesa de partes puede distinguir entre entradas, controles y salidas, entonces el flujo deja de depender exclusivamente de hábitos tácitos.
 
-Si esas preguntas no están claras, cualquier intento de automatización corre el riesgo de ser superficial.
+Eso tiene dos consecuencias muy útiles. La primera es pedagógica: el proceso se vuelve enseñable. La segunda es organizacional: el proceso se vuelve mejorable. A partir de allí ya es posible identificar demoras, dobles revisiones, controles redundantes o decisiones sin criterio explícito.
 
-## Un proceso no es solo una lista de tareas
+## Qué elementos conviene reconocer primero
 
-Cuando pensamos en un proceso jurídico, conviene evitar dos simplificaciones:
+Un modelado inicial no necesita capturar toda la complejidad del mundo. Pero sí conviene identificar, al menos, estos componentes:
 
-1. creer que el proceso es solo una secuencia lineal sin decisiones;
-2. creer que el proceso se agota en la norma que lo regula.
-
-En la práctica, un proceso suele incluir:
-
-- actividades;
-- responsables;
-- decisiones;
-- documentos;
-- tiempos;
-- puntos de control;
-- posibles desvíos o reprocesos.
-
-Por ejemplo, un procedimiento puede estar muy bien diseñado en papel, pero volverse lento en la práctica porque:
-
-- faltan documentos desde el inicio;
-- no se distinguen bien los responsables;
-- se revisa varias veces lo mismo;
-- no se sabe qué casos deben priorizarse.
-
-::: {.callout-note}
-## Regla metodológica
-Antes de automatizar un documento o crear un dashboard, conviene entender si el problema real está en el flujo, en los datos o en la distribución del trabajo.
-:::
-
-## Elementos básicos de un proceso legal
-
-Un proceso legal o administrativo puede describirse con al menos estos componentes:
-
-- **actor**: quién hace algo;
+- **actor o responsable**: quién realiza una actividad;
 - **entrada**: qué documento, dato o solicitud ingresa;
 - **actividad**: qué se hace con esa entrada;
-- **decisión**: qué criterio define si el flujo continúa o cambia;
+- **decisión**: qué criterio permite seguir, observar, devolver o rechazar;
 - **salida**: qué resultado se produce;
 - **punto de control**: dónde se valida calidad, integridad o cumplimiento.
 
-Pensemos en un caso sencillo: admisión preliminar de una solicitud.
+Pensemos en un ejemplo sencillo: revisión preliminar de una solicitud administrativa. Allí puede haber una entrada documental, una verificación de requisitos mínimos, una decisión sobre completitud y una salida final que distinga entre admisión y observación. Lo importante no es la sofisticación del caso. Lo importante es empezar a separar capas del flujo que, en la práctica, suelen aparecer mezcladas.
 
-- actor de entrada: ciudadano o administrado;
-- entrada: solicitud y anexos;
-- actividad: revisión de requisitos;
-- decisión: ¿cumple requisitos mínimos?;
-- salida: admisión o formulación de observaciones.
+## Cuellos de botella, reprocesos y trabajo invisible
 
-Eso ya permite pensar mejor dónde podría haber:
+Modelar procesos tiene valor porque permite detectar no solo el recorrido ideal, sino también sus fricciones reales. Un cuello de botella aparece cuando una etapa concentra demasiada carga, depende de una sola persona o se vuelve un punto de espera recurrente. Un reproceso aparece cuando el expediente vuelve hacia atrás porque faltó algo, se observó mal o se registró de manera defectuosa.
 
-- errores frecuentes;
-- demoras;
-- tareas repetitivas;
-- oportunidades de mejora.
-
-## Cuellos de botella y reprocesos
-
-Un cuello de botella aparece cuando una parte del flujo concentra demasiada carga, demasiadas validaciones o demasiada dependencia de una sola persona o unidad.
-
-Un reproceso aparece cuando hay que volver atrás porque algo estaba incompleto, mal hecho o mal registrado.
-
-En contextos legales, eso puede verse en situaciones como estas:
+En entornos jurídicos, eso puede verse en escenas muy comunes:
 
 - expedientes que regresan varias veces por la misma observación;
-- contratos que pasan por demasiadas revisiones sin un criterio claro;
-- trámites con entradas incompletas que consumen tiempo antes de ser observados;
-- solicitudes que se pierden entre correo, Excel y archivos adjuntos.
+- contratos que se revisan de nuevo porque los anexos nunca llegaron completos;
+- solicitudes que se registran en varios lugares distintos sin un criterio uniforme;
+- tareas manuales que absorben tiempo, pero no agregan valor real.
 
-Entender el negocio es también detectar ese tipo de patrones.
+Detectar ese trabajo invisible es una de las ganancias más útiles del modelado. Muchas veces el problema no está donde el discurso institucional dice que está, sino en una pequeña secuencia informal que nadie había hecho visible.
 
-## Mermaid como herramienta pedagógica
+## Mermaid como herramienta de trabajo, no como adorno
 
-No hace falta empezar con una suite compleja de modelado para aprender a pensar procesos. Mermaid resulta útil porque permite escribir diagramas dentro de un archivo de texto o Markdown, lo cual encaja bien con el trabajo en editor y repositorio.
+No hace falta empezar con una suite compleja para modelar procesos. Mermaid resulta especialmente útil en este curso porque permite escribir diagramas dentro de archivos de texto o Markdown, lo que hace que el proceso mismo pueda versionarse, revisarse y corregirse como cualquier otro archivo de trabajo [@mermaid2026flowcharts]. Cuando el diagrama vive en texto, no queda fuera del repositorio: entra en la misma lógica de trazabilidad que el resto del proyecto [@mermaid2026flowcharts].
 
-Una ventaja pedagógica clara es esta:
+Ese rasgo dialoga bien con otra idea importante: dividir un flujo en módulos legibles facilita reutilización, control y comprensión de procesos complejos [@gorgolewski2011nipype]. Por eso, Mermaid no es solo una forma “bonita” de dibujar cajas y flechas. Es una herramienta compatible con una forma disciplinada de pensar y revisar procesos.
 
-- obliga a ordenar el flujo;
-- permite versionar cambios;
-- facilita discutir alternativas;
-- deja trazabilidad de la mejora del modelo.
+## Ejemplo 1. Admisión preliminar de una solicitud
 
-## Ejemplo jurídico: revisión contractual
-
-Un flujo simple de revisión contractual podría verse así:
-
-1. recepción del borrador;
-2. revisión preliminar;
-3. verificación de anexos;
-4. análisis de cláusulas críticas;
-5. formulación de observaciones;
-6. devolución para ajustes;
-7. aprobación o rechazo.
-
-En Mermaid, una primera versión podría comenzar así:
+Un flujo jurídico sencillo puede expresarse así:
 
 ```mermaid
 flowchart TD
-  A[Recibir borrador] --> B{Tiene anexos completos?}
+  A[Recibir solicitud] --> B{Tiene firma y documento?}
+  B -- Si --> C[Registrar ingreso]
+  B -- No --> D[Formular observacion]
+  C --> E{Corresponde a la unidad?}
+  E -- Si --> F[Admitir a tramite]
+  E -- No --> G[Derivar a unidad competente]
+  D --> H[Esperar subsanacion]
+```
+
+Este diagrama no agota toda la realidad del trámite. Pero ya permite ver algo decisivo: el flujo no es meramente lineal, porque contiene controles y decisiones que alteran la trayectoria del expediente. Precisamente allí empiezan a aparecer las preguntas útiles: ¿la observación se formula demasiado tarde?, ¿la derivación podría resolverse antes?, ¿la unidad revisa datos que otra ya había revisado?
+
+## Ejemplo 2. Revisión contractual
+
+Un segundo caso, más cercano a una práctica profesional de estudio o asesoría, podría verse así:
+
+```mermaid
+flowchart TD
+  A[Recibir borrador de contrato] --> B{Anexos completos?}
   B -- Si --> C[Revisar clausulas criticas]
-  B -- No --> D[Solicitar correccion]
+  B -- No --> D[Solicitar anexos faltantes]
   C --> E{Hay observaciones?}
   E -- Si --> F[Devolver para ajustes]
-  E -- No --> G[Aprobar]
+  E -- No --> G[Aprobar version]
   D --> H[Esperar nueva version]
   F --> H
 ```
 
-Este diagrama no agota toda la realidad, pero ya vuelve visible algo importante: el flujo no es lineal, tiene decisiones y puede regresar a etapas previas.
+Aquí ya se vuelve visible un rasgo frecuente del trabajo legal: una parte relevante del tiempo no se consume en “analizar el derecho”, sino en esperar insumos, corregir versiones y manejar retornos del flujo. Ver eso con claridad cambia la conversación. El proceso deja de verse como una sola actividad abstracta de “revisión” y empieza a descomponerse en momentos distintos, algunos sustantivos y otros puramente logísticos.
 
-## Otro ejemplo: admisión de expediente
+## Qué vuelve útil a un diagrama
 
-También podemos pensar un flujo más cercano al trabajo administrativo:
+No todo diagrama ayuda a pensar mejor. Un buen modelado no consiste en dibujar todo lo que existe, sino en mostrar lo necesario para entender cómo funciona el flujo y dónde podrían aparecer mejoras. En ese sentido, conviene evaluar el diagrama con preguntas como estas:
 
-- recepción del escrito;
-- verificación documental;
-- revisión de tasa;
-- validación de plazo;
-- admisión o formulación de observaciones.
+- ¿distingue bien actividades y decisiones?;
+- ¿permite ubicar responsables?;
+- ¿muestra entradas y salidas relevantes?;
+- ¿hace visibles cuellos de botella o reprocesos?;
+- ¿ayuda a imaginar una mejora plausible?
 
-Preguntas útiles para modelar este proceso:
+Si la respuesta es negativa, probablemente el problema no esté en Mermaid ni en BPMN, sino en que el flujo aún no ha sido pensado con suficiente precisión.
 
-- ¿quién revisa qué?;
-- ¿qué pasa si falta un documento?;
-- ¿se puede detectar antes una observación frecuente?;
-- ¿hay casos que deberían priorizarse?;
+## Del modelado a la mejora
 
-Esas preguntas ya no son solo técnicas. Son preguntas de diseño de trabajo jurídico.
+Una vez representado el proceso, empiezan a aparecer posibilidades reales de intervención. A veces la mejora consistirá en adelantar un control. Otras veces, en estandarizar observaciones frecuentes, eliminar dobles validaciones o separar casos simples de casos complejos. En el sector público, además, parte de la innovación puede institucionalizarse mediante laboratorios orientados a cocrear y prototipar soluciones centradas en la ciudadanía [@peru2022laboratorio]. Esa idea también recuerda que la mejora de procesos no es una tarea puramente individual ni meramente tecnológica: requiere espacios de experimentación y aprendizaje organizacional.
 
-## Cómo leer un diagrama con criterio
-
-Un diagrama no sirve solo para “bonito”. Debe ayudar a responder cuestiones como estas:
-
-- ¿qué parte del proceso agrega valor?;
-- ¿qué parte solo traslada documentos?;
-- ¿qué decisión carece de criterio explícito?;
-- ¿qué paso podría simplificarse?;
-- ¿qué dato falta para medir mejor el flujo?
-
-::: {.callout-tip}
-## Criterio útil
-Un buen diagrama no muestra todo. Muestra lo necesario para entender el proceso y mejorarlo.
-:::
-
-## Del proceso a la mejora
-
-Una vez modelado el flujo, aparecen oportunidades de mejora. Por ejemplo:
-
-- pedir desde el inicio una lista clara de requisitos;
-- separar casos simples de casos complejos;
-- reducir dobles revisiones innecesarias;
-- estandarizar observaciones frecuentes;
-- preparar luego automatización documental o visualización de carga.
-
-Ese punto es importante porque conecta directamente este capítulo con el resto del módulo.
+En ese punto aparece el verdadero puente con el resto del módulo. Solo después de entender un flujo tiene sentido preguntarse qué datos conviene capturar, qué indicadores sirven para seguirlo y qué parte podría automatizarse con prudencia.
 
 ## Práctica en editor
 
-Abre tu editor y crea un archivo Markdown con un diagrama Mermaid de un proceso jurídico sencillo. Debe incluir:
+Crea un archivo Markdown con un diagrama Mermaid de un proceso jurídico sencillo. Puede ser, por ejemplo:
+
+- admisión de un escrito;
+- atención de una denuncia;
+- revisión de un contrato;
+- derivación interna de un expediente;
+- validación de requisitos de una solicitud.
+
+Procura que el diagrama incluya:
 
 - al menos un punto de decisión;
-- un responsable o actor identificable;
+- una entrada identificable;
 - una salida final;
-- una breve nota sobre un cuello de botella o un punto de control.
+- un posible cuello de botella o punto de control.
 
 ## Git y GitHub
 
-Versiona el archivo del diagrama y agrega un comentario breve sobre por qué modelaste el proceso de esa manera. Si haces una segunda versión, deja rastro de qué mejoraste.
+Versiona el archivo desde el inicio. Si haces una segunda versión del diagrama, deja rastro de qué mejoraste y por qué. En un flujo de trabajo serio, revisar procesos también debería ser una actividad trazable.
 
 ## PSET de la sesión
 
-Modela un flujo legal con Mermaid. Puede ser, por ejemplo:
+El entregable puede consistir en un diagrama de proceso acompañado de una breve justificación escrita. Lo importante es que el archivo muestre:
 
-- atención de denuncias;
-- revisión de documentos;
-- admisión de expediente;
-- trámite interno de aprobación;
-- revisión de contrato.
-
-El entregable debe incluir:
-
-- el diagrama;
-- una breve justificación de actores, decisiones y puntos de control;
-- al menos una observación sobre una mejora posible;
-- evidencia de trabajo en repositorio.
-
-## Preguntas de repaso
-
-1. ¿Por qué no conviene automatizar un proceso antes de entenderlo?
-2. ¿Qué diferencia hay entre una actividad y una decisión?
-3. ¿Cómo identificar un cuello de botella?
-4. ¿Qué ventaja ofrece Mermaid en un curso como este?
+- qué problema o trámite fue modelado;
+- quiénes intervienen;
+- qué decisiones alteran el flujo;
+- qué punto débil o mejora posible identificaste.
 
 ## Ideas clave
 
-- un proceso mal entendido difícilmente se mejora;
-- diagramar no es adornar: es pensar con mayor precisión;
-- los procesos jurídicos combinan actividades, decisiones, documentos y tiempos;
-- modelar bien un flujo prepara el camino para trabajar mejor con datos y automatización.
+- Entender el negocio significa entender el proceso, no solo la herramienta.
+- Un flujo visible se vuelve discutible, corregible y mejorable.
+- Modelar procesos permite detectar cuellos de botella, reprocesos y trabajo invisible.
+- Mermaid resulta útil porque integra diagramación y versionado dentro del mismo entorno de trabajo.
+- Sin comprensión del flujo, la automatización corre el riesgo de ser superficial o equivocada.
+
+## Para pensar y reflexionar
+
+En proyectos legales y públicos, muchas veces se habla de innovación demasiado pronto y de procesos demasiado tarde. Este capítulo invierte deliberadamente ese orden. Antes de pensar en dashboards, automatización documental o analítica, conviene hacer algo menos vistoso pero más importante: describir bien el trabajo real. Allí empieza una mejora con sentido.

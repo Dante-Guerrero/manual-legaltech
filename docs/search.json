@@ -134,40 +134,18 @@
     "href": "parte-1-modulo-1/01-capitulo.html",
     "title": "1. Del bit al pseudocódigo",
     "section": "",
-    "text": "¿Por qué empezar por aquí?\nEn un curso de Legal Tech puede parecer extraño comenzar hablando de ceros y unos. Después de todo, el Derecho trabaja con normas, hechos, argumentos, pruebas, procedimientos y decisiones, no con cables ni placas madre. Pero hay una razón muy buena para empezar aquí: si queremos comprender cómo funciona la tecnología que hoy transforma la profesión jurídica, primero debemos entender cómo una computadora representa la información y ejecuta instrucciones.\nUna computadora no entiende el mundo como lo entendemos nosotros. No “ve” una demanda, no “lee” una sentencia y no “comprende” una norma en sentido humano. Lo que hace es representar información y procesarla siguiendo reglas. En su nivel más básico, esa representación se construye con bits, es decir, con secuencias de 0 y 1.\nEsta sesión toma esa idea como punto de partida para mostrar tres cosas. Primero, que números y texto pueden representarse en binario. Segundo, que una computadora funciona porque puede almacenar y transformar esa información. Tercero, que programar consiste, en el fondo, en dar instrucciones a una máquina que opera sobre datos representados formalmente. No vamos a quedarnos en el binario para siempre, porque eso sería una forma particularmente cruel de enseñar, pero sí vamos a usarlo para entender el origen de todo lo demás.",
+    "text": "¿Por qué empezar por aquí?\nCuando una computadora procesa un documento, una fecha o una instrucción, no “entiende” el contenido como lo hace una persona. Lo que hace es representar información de forma estable y operar sobre ella siguiendo reglas precisas. Por eso, antes de hablar de Python, automatización o inteligencia artificial, conviene detenerse en una idea más básica: toda operación digital depende de una forma de representar problemas, datos y secuencias con claridad (Padrón et al. 2021; Monge-Fallas et al. 2024).\nEse punto importa en un curso de Legal Tech porque una parte del trabajo jurídico contemporáneo ya convive con datos, formularios, expedientes digitales, plataformas y procedimientos que solo funcionan bien cuando las reglas están suficientemente explicitadas. El pensamiento computacional no se reduce a programar; supone aprender a descomponer problemas, abstraer estructuras y ordenar pasos verificables (Padrón et al. 2021; Monge-Fallas et al. 2024). Para un jurista, esa capacidad tiene un valor inmediato: obliga a distinguir mejor entre condiciones, excepciones, entradas, salidas y criterios de decisión.\nEn otras palabras, este capítulo no presenta el binario como una curiosidad técnica. Lo presenta como una puerta de entrada a una manera de pensar que después reaparecerá en pseudocódigo, en scripts, en diagramas de procesos y en sistemas más complejos.",
     "crumbs": [
       "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
   {
-    "objectID": "parte-1-modulo-1/01-capitulo.html#por-qué-empezar-por-aquí",
-    "href": "parte-1-modulo-1/01-capitulo.html#por-qué-empezar-por-aquí",
+    "objectID": "parte-1-modulo-1/01-capitulo.html#la-computadora-trabaja-con-diferencias-elementales",
+    "href": "parte-1-modulo-1/01-capitulo.html#la-computadora-trabaja-con-diferencias-elementales",
     "title": "1. Del bit al pseudocódigo",
-    "section": "",
-    "text": "ImportantIdea central de la sesión\n\n\n\nLa computadora puede procesar números, texto, imágenes y sonido porque todo puede representarse mediante bits. Comprender eso permite entender por qué existen los lenguajes de programación y por qué el pensamiento computacional también importa para juristas.",
-    "crumbs": [
-      "I. Pensamiento computacional para juristas",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
-    ]
-  },
-  {
-    "objectID": "parte-1-modulo-1/01-capitulo.html#objetivos-de-aprendizaje",
-    "href": "parte-1-modulo-1/01-capitulo.html#objetivos-de-aprendizaje",
-    "title": "1. Del bit al pseudocódigo",
-    "section": "Objetivos de aprendizaje",
-    "text": "Objetivos de aprendizaje\nAl finalizar esta sesión, deberías ser capaz de:\n\ncomprender qué es el sistema binario y por qué una computadora trabaja con él;\nconvertir números sencillos del sistema decimal al binario y viceversa;\nentender de manera básica cómo se representa el texto dentro de una computadora;\nexplicar por qué el binario puede verse como el lenguaje más elemental de una computadora;\ndistinguir entre binario, lenguaje máquina, lenguajes de programación y pseudocódigo;\nrelacionar estas ideas con el razonamiento jurídico estructurado.",
-    "crumbs": [
-      "I. Pensamiento computacional para juristas",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
-    ]
-  },
-  {
-    "objectID": "parte-1-modulo-1/01-capitulo.html#qué-hace-una-computadora",
-    "href": "parte-1-modulo-1/01-capitulo.html#qué-hace-una-computadora",
-    "title": "1. Del bit al pseudocódigo",
-    "section": "¿Qué hace una computadora?",
-    "text": "¿Qué hace una computadora?\nDe manera muy general, una computadora realiza cuatro tareas:\n\nrecibe información;\nla representa internamente;\nejecuta instrucciones sobre esa información;\nproduce un resultado.\n\nCuando escribes un correo, editas un documento, buscas una sentencia o rellenas un formulario digital, la computadora recibe entradas, las almacena, ejecuta operaciones y muestra una salida. Todo eso parece intuitivo desde la experiencia del usuario. Pero internamente ocurre algo menos glamoroso y más importante: la información se reduce a estados físicos que pueden distinguirse de manera confiable.\nEn una explicación simplificada, los circuitos electrónicos trabajan distinguiendo entre dos estados posibles, por ejemplo:\n\nencendido / apagado;\npasa corriente / no pasa corriente;\nalto voltaje / bajo voltaje.\n\nA partir de esa diferencia básica se construye el sistema binario.",
+    "section": "La computadora trabaja con diferencias elementales",
+    "text": "La computadora trabaja con diferencias elementales\nEn un nivel muy simplificado, una computadora distingue estados físicos estables y trabaja sobre ellos. De allí nace la lógica binaria: dos valores posibles, 0 y 1, a partir de los cuales puede representarse información mucho más compleja. Esa reducción no significa que todo problema sea simple. Significa, más bien, que para hacerlo tratable la máquina necesita que la información se exprese en una forma rigurosa.\n\n\n\n\n\n\nImportantIdea central\n\n\n\nLa tecnología digital funciona porque traduce información y reglas a representaciones formales. Comprender eso ayuda a ver que programar, modelar procesos o trabajar con datos no son actividades mágicas, sino formas distintas de estructurar problemas.",
     "crumbs": [
       "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
@@ -178,227 +156,73 @@
     "href": "parte-1-modulo-1/01-capitulo.html#bit-byte-y-sistema-binario",
     "title": "1. Del bit al pseudocódigo",
     "section": "Bit, byte y sistema binario",
-    "text": "Bit, byte y sistema binario\nEl sistema binario usa solo dos símbolos:\n\n0\n1\n\nCada uno de esos dígitos binarios se llama bit. El término viene de binary digit.\nUn grupo de 8 bits forma un byte, unidad muy utilizada para representar caracteres y otros tipos de información.\n\n\n\n\n\n\nNoteVocabulario básico\n\n\n\n\nbit: unidad mínima de información; solo puede valer 0 o 1.\nbyte: conjunto de 8 bits.\nbinario: sistema numérico en base 2.\ndecimal: sistema numérico en base 10, que es el que usamos habitualmente.",
+    "text": "Bit, byte y sistema binario\nEl sistema binario usa solo dos símbolos: 0 y 1. Cada uno de esos dígitos recibe el nombre de bit, abreviatura de binary digit. Ocho bits forman un byte, una unidad muy utilizada para almacenar caracteres y otras piezas pequeñas de información.\nLa lógica posicional del sistema binario se parece a la del sistema decimal, pero cambia la base. En lugar de potencias de 10, aquí trabajamos con potencias de 2:\n2⁰ = 1\n2¹ = 2\n2² = 4\n2³ = 8\n2⁴ = 16\n2⁵ = 32\nEso significa que el número binario 1011 puede leerse así:\n1×2³ + 0×2² + 1×2¹ + 1×2⁰\n= 8 + 0 + 2 + 1\n= 11\nLa utilidad pedagógica de este ejercicio no está solo en convertir números. Está en advertir que una representación formal depende de posiciones, valores y reglas de lectura. En ese sentido, la conversión binaria ya es un pequeño ejercicio de pensamiento estructurado.",
     "crumbs": [
       "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
   {
-    "objectID": "parte-1-modulo-1/01-capitulo.html#del-sistema-decimal-al-sistema-binario",
-    "href": "parte-1-modulo-1/01-capitulo.html#del-sistema-decimal-al-sistema-binario",
+    "objectID": "parte-1-modulo-1/01-capitulo.html#convertir-también-es-aprender-a-descomponer",
+    "href": "parte-1-modulo-1/01-capitulo.html#convertir-también-es-aprender-a-descomponer",
     "title": "1. Del bit al pseudocódigo",
-    "section": "Del sistema decimal al sistema binario",
-    "text": "Del sistema decimal al sistema binario\nNosotros solemos usar el sistema decimal. Tiene diez símbolos: 0, 1, 2, 3, 4, 5, 6, 7, 8 y 9. Su lógica depende del valor posicional. Por ejemplo, el número 347 significa:\n\n3 centenas,\n4 decenas,\n7 unidades.\n\nEs decir:\n347 = 3×10² + 4×10¹ + 7×10⁰\nEl sistema binario funciona igual en la lógica de posiciones, pero cada posición representa una potencia de 2:\n2⁰ = 1\n2¹ = 2\n2² = 4\n2³ = 8\n2⁴ = 16\n2⁵ = 32\n2⁶ = 64\n2⁷ = 128\nPor eso, el número binario 1011 significa:\n1×2³ = 8\n0×2² = 0\n1×2¹ = 2\n1×2⁰ = 1\nEntonces:\n1011₂ = 11₁₀",
+    "section": "Convertir también es aprender a descomponer",
+    "text": "Convertir también es aprender a descomponer\nPasar de binario a decimal exige sumar las potencias de 2 correspondientes a los lugares donde aparece un 1. Pasar de decimal a binario exige hacer el camino inverso: descomponer un número como suma de potencias de 2. En ambos casos, la operación obliga a dividir el problema en partes y a comprobar si la secuencia elegida realmente produce el resultado esperado.\nEse detalle importa más de lo que parece. Programar refuerza precisión y revisión porque obliga a descomponer problemas, hacer explícitos los pasos y verificar si la solución obtenida corresponde de verdad a la regla formulada (Ryan 2021). Incluso en una operación aritmética elemental, aparece ya esa disciplina intelectual: no basta con “tener una idea” del resultado; hace falta justificarlo paso a paso.\n\nEjemplo 1. De binario a decimal\nConvierte 1101 a decimal:\n1×2³ = 8\n1×2² = 4\n0×2¹ = 0\n1×2⁰ = 1\nResultado:\n1101₂ = 13₁₀\n\n\nEjemplo 2. De decimal a binario\nConvierte 18 a binario:\n18 = 16 + 2\n18 = 2⁴ + 2¹\nResultado:\n18₁₀ = 10010₂",
     "crumbs": [
       "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
   {
-    "objectID": "parte-1-modulo-1/01-capitulo.html#cómo-convertir-de-binario-a-decimal",
-    "href": "parte-1-modulo-1/01-capitulo.html#cómo-convertir-de-binario-a-decimal",
+    "objectID": "parte-1-modulo-1/01-capitulo.html#el-texto-también-necesita-codificación",
+    "href": "parte-1-modulo-1/01-capitulo.html#el-texto-también-necesita-codificación",
     "title": "1. Del bit al pseudocódigo",
-    "section": "Cómo convertir de binario a decimal",
-    "text": "Cómo convertir de binario a decimal\nPara convertir un número binario a decimal, basta con multiplicar cada bit por la potencia de 2 que le corresponde y luego sumar.\n\nEjemplo 1\nConvierte 1101 a decimal.\n1×2³ = 8\n1×2² = 4\n0×2¹ = 0\n1×2⁰ = 1\nResultado:\n1101₂ = 13₁₀\n\n\nEjemplo 2\nConvierte 10010 a decimal.\n1×2⁴ = 16\n0×2³ = 0\n0×2² = 0\n1×2¹ = 2\n0×2⁰ = 0\nResultado:\n10010₂ = 18₁₀\n\n\n\n\n\n\nTipRegla práctica\n\n\n\nPara pasar de binario a decimal, suma las potencias de 2 correspondientes a las posiciones donde aparezca un 1.",
+    "section": "El texto también necesita codificación",
+    "text": "El texto también necesita codificación\nHasta aquí hemos trabajado con números. Pero una computadora también almacena letras, espacios, signos y símbolos jurídicos. Eso solo es posible porque el texto depende de estándares de codificación que asignan valores numéricos a los caracteres (MDN Web Docs 2026). La máquina no “lee” directamente una palabra como demanda o sentencia; opera sobre codificaciones que vuelven esos caracteres almacenables y transmisibles de forma consistente (MDN Web Docs 2026).\nDesde esa perspectiva, el texto digital tampoco entra intacto en la computadora. Primero necesita un sistema común de representación. En versiones históricas más limitadas, ese papel lo cumplieron esquemas como ASCII. En contextos más amplios y actuales, la referencia decisiva es Unicode, precisamente porque permite trabajar con alfabetos, signos y acentos que un entorno jurídico hispanohablante no puede tratar como detalles ornamentales (MDN Web Docs 2026).\n\nEjemplo 3. Del carácter al número\nSi tomamos una tabla simplificada en la que:\nA = 65\nB = 66\nC = 67\nentonces la palabra CAB puede representarse primero como secuencia numérica:\nC = 67\nA = 65\nB = 66\ny luego como secuencia binaria:\nC = 01000011\nA = 01000001\nB = 01000010\nLa enseñanza de este ejemplo no es memorizar códigos. Es comprender que los documentos digitales también descansan sobre convenciones de representación.",
     "crumbs": [
       "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
   {
-    "objectID": "parte-1-modulo-1/01-capitulo.html#cómo-convertir-de-decimal-a-binario",
-    "href": "parte-1-modulo-1/01-capitulo.html#cómo-convertir-de-decimal-a-binario",
+    "objectID": "parte-1-modulo-1/01-capitulo.html#no-toda-información-se-manipula-igual",
+    "href": "parte-1-modulo-1/01-capitulo.html#no-toda-información-se-manipula-igual",
     "title": "1. Del bit al pseudocódigo",
-    "section": "Cómo convertir de decimal a binario",
-    "text": "Cómo convertir de decimal a binario\nPara pasar de decimal a binario, hay que descomponer el número como suma de potencias de 2.\n\nEjemplo 1\nConvierte 13 a binario.\nBuscamos las potencias de 2 que suman 13:\n13 = 8 + 4 + 1\n13 = 2³ + 2² + 2⁰\nEntonces:\n13₁₀ = 1101₂\n\n\nEjemplo 2\nConvierte 19 a binario.\n19 = 16 + 2 + 1\n19 = 2⁴ + 2¹ + 2⁰\nEntonces:\n19₁₀ = 10011₂",
+    "section": "No toda información se manipula igual",
+    "text": "No toda información se manipula igual\nUna de las lecciones centrales del pensamiento computacional consiste en no mezclar categorías sin cuidado. Texto, números, binario y valores lógicos no admiten las mismas operaciones ni producen los mismos efectos. La programación obliga a distinguir esas clases con precisión, porque buena parte de su rigor empieza exactamente ahí (Python Documentation 2026).\nEsa distinción reaparecerá con fuerza en Python, pero conviene verla desde ahora. Una condición jurídica como “presentado dentro del plazo” no funciona igual que un nombre propio, una fecha o una secuencia de bytes. Saber qué tipo de información tienes cambia lo que puedes hacer con ella y también la forma en que debes validarla (Python Documentation 2026).\n\n\n\n\n\n\nNoteVocabulario mínimo\n\n\n\n\nbit: unidad mínima de información binaria.\nbyte: grupo de 8 bits.\ncodificación: convención que asigna números a caracteres.\ntipo de dato: categoría que define cómo puede manipularse cierta información.\nvalor booleano: expresión lógica de verdadero o falso.",
     "crumbs": [
       "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
   {
-    "objectID": "parte-1-modulo-1/01-capitulo.html#ejercicios-guiados-de-conversión-numérica",
-    "href": "parte-1-modulo-1/01-capitulo.html#ejercicios-guiados-de-conversión-numérica",
+    "objectID": "parte-1-modulo-1/01-capitulo.html#del-binario-al-pseudocódigo",
+    "href": "parte-1-modulo-1/01-capitulo.html#del-binario-al-pseudocódigo",
     "title": "1. Del bit al pseudocódigo",
-    "section": "Ejercicios guiados de conversión numérica",
-    "text": "Ejercicios guiados de conversión numérica\n\nEjercicio 1\nConvierte 1010 a decimal.\n\n\nSolución\n1×2³ = 8\n0×2² = 0\n1×2¹ = 2\n0×2⁰ = 0\nResultado:\n1010₂ = 10₁₀\n\n\nEjercicio 2\nConvierte 111 a decimal.\n\n\nSolución\n1×2² = 4\n1×2¹ = 2\n1×2⁰ = 1\nResultado:\n111₂ = 7₁₀\n\n\nEjercicio 3\nConvierte 12 a binario.\n\n\nSolución\n12 = 8 + 4\n12 = 2³ + 2²\nResultado:\n12₁₀ = 1100₂\n\n\nEjercicio 4\nConvierte 9 a binario.\n\n\nSolución\n9 = 8 + 1\n9 = 2³ + 2⁰\nResultado:\n9₁₀ = 1001₂",
+    "section": "Del binario al pseudocódigo",
+    "text": "Del binario al pseudocódigo\nSería absurdo pedirle a una persona que trabaje siempre al nivel del binario para resolver problemas complejos. Los lenguajes de programación existen precisamente porque necesitamos una capa de abstracción más legible. El pseudocódigo cumple una función parecida en el plano pedagógico: no es todavía un lenguaje ejecutable, pero sí una forma clara de representar secuencias, condiciones y decisiones.\nEse paso es especialmente relevante para estudiantes de Derecho. Muchas tareas jurídicas no son reducibles a reglas fijas, pero sí contienen segmentos estructurables: verificar requisitos, ordenar un trámite, revisar si un plazo venció, clasificar expedientes o decidir si una solicitud queda admitida u observada. Aprender a expresar esa lógica con precisión no reemplaza la interpretación jurídica, pero sí vuelve más visible la parte del problema que puede formalizarse (Monge-Fallas et al. 2024; Padrón et al. 2021).",
     "crumbs": [
       "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
   {
-    "objectID": "parte-1-modulo-1/01-capitulo.html#propuesta-de-práctica-en-clase",
-    "href": "parte-1-modulo-1/01-capitulo.html#propuesta-de-práctica-en-clase",
+    "objectID": "parte-1-modulo-1/01-capitulo.html#pseudocódigo-pensar-antes-de-programar",
+    "href": "parte-1-modulo-1/01-capitulo.html#pseudocódigo-pensar-antes-de-programar",
     "title": "1. Del bit al pseudocódigo",
-    "section": "Propuesta de práctica en clase",
-    "text": "Propuesta de práctica en clase\nResuelve en parejas los siguientes ejercicios:\n\nconvierte 1011 a decimal;\nconvierte 10001 a decimal;\nconvierte 6 a binario;\nconvierte 14 a binario;\nexplica con tus palabras qué representa cada posición en un número binario.\n\n\n\n\n\n\n\nNoteSugerencia metodológica\n\n\n\nNo memorices cadenas de números sin sentido. Lo importante es entender la lógica de las potencias de 2. Una vez que entiendes eso, la conversión deja de parecer brujería técnica y pasa a ser solo aritmética ordenada.",
+    "section": "Pseudocódigo: pensar antes de programar",
+    "text": "Pseudocódigo: pensar antes de programar\nEl pseudocódigo sirve para escribir una solución en lenguaje humano estructurado antes de traducirla a un lenguaje formal. Su valor no está en la sintaxis cerrada, sino en la claridad de la secuencia.\n\nEjemplo 4. Regla jurídica simple\nSupón esta regla:\n\nSi una solicitud contiene firma y documento de identidad, se admite.\nSi falta alguno de esos elementos, queda observada.\n\nUna posible representación en pseudocódigo sería esta:\nINICIO\n\nleer firma\nleer documento_identidad\n\nSI firma = \"sí\" Y documento_identidad = \"sí\" ENTONCES\n    mostrar \"Solicitud admitida\"\nSI NO\n    mostrar \"Solicitud observada\"\nFIN SI\n\nFIN\nEl valor de este ejercicio no reside en su complejidad. Reside en que obliga a explicitar supuestos que, en otros contextos, podrían quedar tácitos (Ryan 2021). ¿Qué cuenta como “tener firma”? ¿Qué ocurre si el documento es ilegible? ¿Qué pasa si el requisito depende del tipo de trámite? A medida que esas preguntas aparecen, el razonamiento se vuelve más fino.",
     "crumbs": [
       "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
     ]
   },
   {
-    "objectID": "parte-1-modulo-1/01-capitulo.html#cómo-puede-una-computadora-representar-texto",
-    "href": "parte-1-modulo-1/01-capitulo.html#cómo-puede-una-computadora-representar-texto",
+    "objectID": "parte-1-modulo-1/01-capitulo.html#ejercicios-prácticos-para-trabajar-con-representación-y-lógica",
+    "href": "parte-1-modulo-1/01-capitulo.html#ejercicios-prácticos-para-trabajar-con-representación-y-lógica",
     "title": "1. Del bit al pseudocódigo",
-    "section": "¿Cómo puede una computadora representar texto?",
-    "text": "¿Cómo puede una computadora representar texto?\nHasta aquí hemos trabajado con números. Pero una computadora también procesa letras, espacios, signos de puntuación y otros caracteres. La clave está en esto: cada carácter puede asociarse con un número.\nPor ejemplo, en sistemas de codificación clásicos, se asignan valores como estos:\nA = 65\nB = 66\nC = 67\nUna vez que una letra se representa como número, ese número también puede representarse en binario.\n\nEjemplo: la letra A\nSi A = 65, entonces:\n65 = 64 + 1\n65 = 2⁶ + 2⁰\nEn 8 bits, puede escribirse así:\n01000001\n\n\nEjemplo: la letra B\nSi B = 66, entonces:\n66 = 64 + 2\n66 = 2⁶ + 2¹\nEn binario:\n01000010",
-    "crumbs": [
-      "I. Pensamiento computacional para juristas",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
-    ]
-  },
-  {
-    "objectID": "parte-1-modulo-1/01-capitulo.html#del-texto-al-binario",
-    "href": "parte-1-modulo-1/01-capitulo.html#del-texto-al-binario",
-    "title": "1. Del bit al pseudocódigo",
-    "section": "Del texto al binario",
-    "text": "Del texto al binario\nSi cada carácter tiene un valor numérico, una palabra entera puede representarse como una secuencia de bytes.\n\nEjemplo\nLa palabra AB puede representarse así:\nA = 65 = 01000001\nB = 66 = 01000010\nEntonces:\nAB = 01000001 01000010\n\n\n\n\n\n\nImportantPunto clave\n\n\n\nLa computadora no almacena “letras” como las vemos nosotros. Almacena números que representan caracteres, y esos números se almacenan como secuencias binarias.",
-    "crumbs": [
-      "I. Pensamiento computacional para juristas",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
-    ]
-  },
-  {
-    "objectID": "parte-1-modulo-1/01-capitulo.html#ejercicio-guiado-con-texto",
-    "href": "parte-1-modulo-1/01-capitulo.html#ejercicio-guiado-con-texto",
-    "title": "1. Del bit al pseudocódigo",
-    "section": "Ejercicio guiado con texto",
-    "text": "Ejercicio guiado con texto\nSupón, para fines didácticos, la siguiente tabla simplificada:\nA = 65\nB = 66\nC = 67\n\nEjercicio\nRepresenta la palabra CAB primero en números decimales y luego en binario.\n\n\nSolución\nC = 67 = 01000011\nA = 65 = 01000001\nB = 66 = 01000010\nEntonces:\nCAB = 01000011 01000001 01000010",
-    "crumbs": [
-      "I. Pensamiento computacional para juristas",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
-    ]
-  },
-  {
-    "objectID": "parte-1-modulo-1/01-capitulo.html#cómo-funciona-una-pc-en-términos-simples",
-    "href": "parte-1-modulo-1/01-capitulo.html#cómo-funciona-una-pc-en-términos-simples",
-    "title": "1. Del bit al pseudocódigo",
-    "section": "¿Cómo funciona una PC, en términos simples?",
-    "text": "¿Cómo funciona una PC, en términos simples?\nNo necesitamos una clase completa de arquitectura de computadores para esta sesión, pero sí conviene entender algunas piezas básicas:\n\nProcesador (CPU)\nEs el componente que ejecuta instrucciones. Puede compararse, con todas las simplificaciones del caso, con la unidad que realiza operaciones y toma decisiones lógicas sobre la base de instrucciones previamente definidas.\n\n\nMemoria RAM\nEs el espacio de trabajo temporal. Allí se cargan los datos y programas que la computadora está usando en ese momento.\n\n\nAlmacenamiento\nEs donde se guardan archivos y programas de manera más permanente, por ejemplo en un disco SSD.\n\n\nDispositivos de entrada y salida\n\nentrada: teclado, mouse, cámara, micrófono;\nsalida: pantalla, parlantes, impresora.\n\n\n\nSistema operativo\nEs el software que coordina el uso del hardware y permite que otros programas funcionen.",
-    "crumbs": [
-      "I. Pensamiento computacional para juristas",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
-    ]
-  },
-  {
-    "objectID": "parte-1-modulo-1/01-capitulo.html#una-analogía-útil",
-    "href": "parte-1-modulo-1/01-capitulo.html#una-analogía-útil",
-    "title": "1. Del bit al pseudocódigo",
-    "section": "Una analogía útil",
-    "text": "Una analogía útil\nPodemos pensar el funcionamiento básico de una computadora así:\n\nel usuario entrega datos;\nel sistema operativo organiza la interacción;\nla memoria mantiene lo necesario a mano;\nel procesador ejecuta operaciones;\nla salida muestra el resultado.\n\nTodo ello ocurre sobre información codificada de forma binaria. No es magia. Es una máquina obediente que trabaja a una velocidad absurda sobre representaciones formales.",
-    "crumbs": [
-      "I. Pensamiento computacional para juristas",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
-    ]
-  },
-  {
-    "objectID": "parte-1-modulo-1/01-capitulo.html#es-el-binario-el-primer-lenguaje-de-programación",
-    "href": "parte-1-modulo-1/01-capitulo.html#es-el-binario-el-primer-lenguaje-de-programación",
-    "title": "1. Del bit al pseudocódigo",
-    "section": "¿Es el binario el primer lenguaje de programación?",
-    "text": "¿Es el binario el primer lenguaje de programación?\nPedagógicamente, sí puede explicarse que el binario es el lenguaje más elemental con el que opera una computadora. Pero conviene afinar la idea para no decir barbaridades con mucha seguridad.\n\nLo que sí podemos afirmar\n\ntoda la información termina representándose de forma compatible con bits;\nlas instrucciones más básicas que ejecuta la máquina dependen de esa representación elemental;\nel binario está en la base del funcionamiento computacional.\n\n\n\nLo que conviene matizar\n\nnormalmente los seres humanos no programan escribiendo largas cadenas de 0 y 1;\nlo que existe a bajo nivel es el lenguaje máquina, estrechamente ligado a la arquitectura del procesador;\npor razones prácticas, los humanos programan usando lenguajes mucho más expresivos.\n\n\n\n\n\n\n\nWarningPrecisión útil para clase\n\n\n\nPuedes explicar que el binario es el nivel más básico en que la computadora representa y procesa información. Pero no conviene presentarlo como si fuera el lenguaje práctico con el que desarrollamos software hoy, porque eso sería como pedirle a alguien que redacte una tesis golpeando piedras.",
-    "crumbs": [
-      "I. Pensamiento computacional para juristas",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
-    ]
-  },
-  {
-    "objectID": "parte-1-modulo-1/01-capitulo.html#de-la-máquina-a-los-lenguajes-de-programación",
-    "href": "parte-1-modulo-1/01-capitulo.html#de-la-máquina-a-los-lenguajes-de-programación",
-    "title": "1. Del bit al pseudocódigo",
-    "section": "De la máquina a los lenguajes de programación",
-    "text": "De la máquina a los lenguajes de programación\nPodemos imaginar varias capas:\n\n1. Hardware\nCircuitos físicos capaces de distinguir estados.\n\n\n2. Binario\nRepresentación de información mediante 0 y 1.\n\n\n3. Lenguaje máquina\nInstrucciones directamente ejecutables por el procesador.\n\n\n4. Lenguajes de bajo nivel\nFormas algo más legibles, pero todavía cercanas al funcionamiento de la máquina.\n\n\n5. Lenguajes de alto nivel\nPython, JavaScript, R y otros lenguajes diseñados para que los humanos puedan escribir programas de manera más razonable.\n\n\n6. Pseudocódigo\nNo es un lenguaje ejecutable, pero sirve para expresar la lógica de un problema de forma clara y ordenada.",
-    "crumbs": [
-      "I. Pensamiento computacional para juristas",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
-    ]
-  },
-  {
-    "objectID": "parte-1-modulo-1/01-capitulo.html#por-qué-no-programamos-directamente-en-binario",
-    "href": "parte-1-modulo-1/01-capitulo.html#por-qué-no-programamos-directamente-en-binario",
-    "title": "1. Del bit al pseudocódigo",
-    "section": "¿Por qué no programamos directamente en binario?",
-    "text": "¿Por qué no programamos directamente en binario?\nPorque sería insostenible. Y por una vez el drama no es exagerado.\nEscribir programas complejos en binario volvería casi imposible:\n\nleer lo que se hizo;\ndetectar errores;\nmantener el código;\ncolaborar con otras personas;\nescalar proyectos reales.\n\nLos lenguajes de programación surgieron precisamente para ofrecer abstracción, es decir, una manera de alejarnos del nivel eléctrico o mecánico y concentrarnos en la lógica del problema.",
-    "crumbs": [
-      "I. Pensamiento computacional para juristas",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
-    ]
-  },
-  {
-    "objectID": "parte-1-modulo-1/01-capitulo.html#el-puente-hacia-el-pensamiento-computacional",
-    "href": "parte-1-modulo-1/01-capitulo.html#el-puente-hacia-el-pensamiento-computacional",
-    "title": "1. Del bit al pseudocódigo",
-    "section": "El puente hacia el pensamiento computacional",
-    "text": "El puente hacia el pensamiento computacional\nAquí aparece la conexión con el curso. El pensamiento computacional no consiste en memorizar bits ni en admirar cables como si fueran reliquias sagradas. Consiste en estructurar problemas de forma lógica, secuencial y clara.\nEso tiene enorme relevancia para juristas porque muchas tareas del Derecho pueden describirse como secuencias con condiciones:\n\nsi se cumplen requisitos, el trámite continúa;\nsi falta documentación, se formula observación;\nsi el plazo venció, se rechaza el recurso;\nsi existe competencia, la autoridad puede actuar.\n\nEn otras palabras, parte del razonamiento jurídico puede modelarse como reglas, decisiones y pasos. No todo el Derecho se reduce a eso, por supuesto. También hay interpretación, ponderación, contexto y conflicto. Pero muchas operaciones jurídicas sí admiten representación estructurada.",
-    "crumbs": [
-      "I. Pensamiento computacional para juristas",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
-    ]
-  },
-  {
-    "objectID": "parte-1-modulo-1/01-capitulo.html#del-lenguaje-humano-al-pseudocódigo",
-    "href": "parte-1-modulo-1/01-capitulo.html#del-lenguaje-humano-al-pseudocódigo",
-    "title": "1. Del bit al pseudocódigo",
-    "section": "Del lenguaje humano al pseudocódigo",
-    "text": "Del lenguaje humano al pseudocódigo\nEl pseudocódigo es una forma de escribir instrucciones de manera comprensible para humanos, sin usar todavía un lenguaje formal como Python.\n\nEjemplo general\nINICIO\n\nleer datos\nverificar condición\n\nSI condición verdadera ENTONCES\n    mostrar resultado A\nSI NO\n    mostrar resultado B\nFIN SI\n\nFIN",
-    "crumbs": [
-      "I. Pensamiento computacional para juristas",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
-    ]
-  },
-  {
-    "objectID": "parte-1-modulo-1/01-capitulo.html#ejemplo-jurídico-sencillo",
-    "href": "parte-1-modulo-1/01-capitulo.html#ejemplo-jurídico-sencillo",
-    "title": "1. Del bit al pseudocódigo",
-    "section": "Ejemplo jurídico sencillo",
-    "text": "Ejemplo jurídico sencillo\nSupongamos esta regla:\n\nSi un recurso fue presentado dentro del plazo, puede admitirse a trámite.\nSi fue presentado fuera del plazo, debe rechazarse por extemporáneo.\n\nPodemos representarla así:\nINICIO\n\nleer dias_transcurridos\n\nSI dias_transcurridos &lt;= 15 ENTONCES\n    mostrar \"Admitir a trámite\"\nSI NO\n    mostrar \"Rechazar por extemporáneo\"\nFIN SI\n\nFIN\nAquí se ve el recorrido completo de la sesión:\n\nprimero entendimos que la máquina representa información en bits;\nluego vimos que números y texto pueden expresarse en binario;\ndespués entendimos por qué no tiene sentido humano trabajar siempre a ese nivel;\nfinalmente llegamos al pseudocódigo como una capa intermedia entre el lenguaje humano y la lógica programable.",
-    "crumbs": [
-      "I. Pensamiento computacional para juristas",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
-    ]
-  },
-  {
-    "objectID": "parte-1-modulo-1/01-capitulo.html#actividad-de-aplicación-jurídica",
-    "href": "parte-1-modulo-1/01-capitulo.html#actividad-de-aplicación-jurídica",
-    "title": "1. Del bit al pseudocódigo",
-    "section": "Actividad de aplicación jurídica",
-    "text": "Actividad de aplicación jurídica\nConvierte la siguiente regla en pseudocódigo:\n\nPara admitir una solicitud se requiere firma y documento de identidad.\nSi falta alguno de esos elementos, la solicitud queda observada.\n\n\nPosible solución\nINICIO\n\nleer firma\nleer documento_identidad\n\nSI firma = \"sí\" Y documento_identidad = \"sí\" ENTONCES\n    mostrar \"Solicitud admitida\"\nSI NO\n    mostrar \"Solicitud observada\"\nFIN SI\n\nFIN",
-    "crumbs": [
-      "I. Pensamiento computacional para juristas",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
-    ]
-  },
-  {
-    "objectID": "parte-1-modulo-1/01-capitulo.html#lo-que-esto-tiene-que-ver-con-el-derecho",
-    "href": "parte-1-modulo-1/01-capitulo.html#lo-que-esto-tiene-que-ver-con-el-derecho",
-    "title": "1. Del bit al pseudocódigo",
-    "section": "Lo que esto tiene que ver con el Derecho",
-    "text": "Lo que esto tiene que ver con el Derecho\nEsta sesión no busca convertir a estudiantes de Derecho en ingenieros en una hora y media, porque la vida ya tiene suficientes planes absurdos. Lo que busca es mostrar que la tecnología jurídica funciona sobre tres ideas fundamentales:\n\nRepresentación\nLos problemas jurídicos pueden traducirse a datos relevantes.\n\n\nReglas\nMuchos procedimientos jurídicos operan con condiciones y secuencias.\n\n\nAbstracción\nNo trabajamos directamente con voltajes o bits, sino con modelos que simplifican y organizan la realidad para hacerla tratable.\nEsto se aplica, por ejemplo, a:\n\nformularios inteligentes;\nvalidación de requisitos documentales;\nseguimiento de plazos;\nclasificación de expedientes;\nautomatización básica de decisiones regladas.",
-    "crumbs": [
-      "I. Pensamiento computacional para juristas",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
-    ]
-  },
-  {
-    "objectID": "parte-1-modulo-1/01-capitulo.html#ideas-clave-para-cerrar-la-sesión",
-    "href": "parte-1-modulo-1/01-capitulo.html#ideas-clave-para-cerrar-la-sesión",
-    "title": "1. Del bit al pseudocódigo",
-    "section": "Ideas clave para cerrar la sesión",
-    "text": "Ideas clave para cerrar la sesión\n\nuna computadora representa información en binario;\nlos números binarios se interpretan mediante potencias de 2;\nel texto también puede representarse numéricamente y luego en binario;\nel binario está en la base del funcionamiento de la computadora, aunque los humanos no programan normalmente a ese nivel;\nlos lenguajes de programación existen para trabajar con mayor abstracción;\nel pseudocódigo permite representar procesos de forma clara;\nen el Derecho, esa capacidad sirve para modelar reglas, procedimientos y decisiones.\n\n\n\n\n\n\n\nImportantCierre\n\n\n\nEntender el sistema binario no te convierte en programador, pero sí te permite comprender una idea decisiva: la tecnología no es magia; es representación, estructura e instrucciones.",
-    "crumbs": [
-      "I. Pensamiento computacional para juristas",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
-    ]
-  },
-  {
-    "objectID": "parte-1-modulo-1/01-capitulo.html#ejercicios-finales",
-    "href": "parte-1-modulo-1/01-capitulo.html#ejercicios-finales",
-    "title": "1. Del bit al pseudocódigo",
-    "section": "Ejercicios finales",
-    "text": "Ejercicios finales\n\nEjercicios de conversión numérica\n\nConvierte 1110 a decimal.\nConvierte 10011 a decimal.\nConvierte 5 a binario.\nConvierte 18 a binario.\n\n\n\nEjercicios de texto\nUsando esta tabla simplificada:\nD = 68\nA = 65\nO = 79\n\nRepresenta la palabra DADO en decimal.\nRepresenta la palabra DADO en binario.\n\n\n\nEjercicio de reflexión\nExplica brevemente por qué no sería razonable programar directamente en binario para desarrollar aplicaciones complejas.\n\n\nEjercicio de aplicación jurídica\nConvierte en pseudocódigo la siguiente regla:\n\nSi una solicitud contiene firma, documento de identidad y pago de tasa, se admite.\nSi falta alguno de esos elementos, se formula observación.",
+    "section": "Ejercicios prácticos para trabajar con representación y lógica",
+    "text": "Ejercicios prácticos para trabajar con representación y lógica\nLa secuencia de esta sesión conviene trabajarse como una progresión:\n\nconvertir números entre binario y decimal;\nreconocer que el texto también necesita una codificación estable;\ndistinguir tipos de información;\ntraducir una regla jurídica a pseudocódigo.\n\nEse orden importa porque el capítulo no busca solo transmitir conceptos. Busca mostrar un cambio de escala: del nivel más elemental de representación hacia una forma de describir decisiones que ya empieza a parecerse al trabajo jurídico estructurado.\n\nPráctica 1. Conversión numérica\n\nConvierte 1110 a decimal.\nConvierte 10011 a decimal.\nConvierte 6 a binario.\nConvierte 14 a binario.\n\n\n\nPráctica 2. Texto y representación\nUsa esta tabla simplificada:\nD = 68\nA = 65\nO = 79\n\nRepresenta DADO en decimal.\nRepresenta DADO en binario.\nExplica brevemente por qué el texto digital necesita una convención compartida de codificación.\n\n\n\nPráctica 3. Pseudocódigo jurídico\nTraduce a pseudocódigo esta regla:\n\nSi un recurso fue presentado dentro del plazo y contiene firma, puede admitirse a trámite.\nSi falta la firma o el plazo venció, debe observarse o rechazarse según corresponda.",
     "crumbs": [
       "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
@@ -409,7 +233,7 @@
     "href": "parte-1-modulo-1/01-capitulo.html#práctica-en-editor",
     "title": "1. Del bit al pseudocódigo",
     "section": "Práctica en editor",
-    "text": "Práctica en editor\nAbre tu editor y crea un archivo de notas o pseudocódigo donde traduzcas una regla jurídica sencilla a pasos verificables. Puede ser, por ejemplo, la revisión preliminar de un escrito, el cálculo de un plazo o la validación de requisitos de una solicitud.",
+    "text": "Práctica en editor\nAbre tu editor y crea un archivo Markdown o de texto plano donde resuelvas al menos un ejercicio de conversión y un ejercicio de pseudocódigo. El objetivo no es producir algo sofisticado, sino empezar a dejar rastro verificable de cómo ordenas una regla en pasos claros.",
     "crumbs": [
       "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
@@ -420,7 +244,7 @@
     "href": "parte-1-modulo-1/01-capitulo.html#git-y-github",
     "title": "1. Del bit al pseudocódigo",
     "section": "Git y GitHub",
-    "text": "Git y GitHub\nSube tu ejercicio al repositorio del curso o a tu repositorio de práctica y registra al menos un commit que deje claro qué cambiaste.",
+    "text": "Git y GitHub\nVersiona tu trabajo aunque sea pequeño. En esta etapa, un commit ya cumple una función formativa importante: convierte una intuición o una corrección en una huella visible del proceso. En un curso como este, trabajar con repositorio también significa aprender a pensar el conocimiento como algo revisable y no como un resultado súbito.",
     "crumbs": [
       "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
@@ -431,7 +255,29 @@
     "href": "parte-1-modulo-1/01-capitulo.html#pset-de-la-sesión",
     "title": "1. Del bit al pseudocódigo",
     "section": "PSET de la sesión",
-    "text": "PSET de la sesión\nEl PSET de esta sesión consiste en traducir reglas o decisiones jurídicas a pseudocódigo o instrucciones estructuradas. El entregable debe mostrar:\n\nel problema planteado;\nla secuencia de pasos o condiciones;\nuna breve explicación de por qué esa lógica representa adecuadamente el caso.",
+    "text": "PSET de la sesión\nEl entregable de esta sesión puede consistir en una regla jurídica sencilla traducida a pseudocódigo, acompañada por una breve explicación de por qué elegiste esa estructura. Lo importante es que el archivo muestre:\n\nel problema planteado;\nla secuencia de pasos o condiciones;\nuna distinción clara entre datos de entrada y resultado;\nuna justificación breve de la lógica usada.",
+    "crumbs": [
+      "I. Pensamiento computacional para juristas",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
+    ]
+  },
+  {
+    "objectID": "parte-1-modulo-1/01-capitulo.html#ideas-clave",
+    "href": "parte-1-modulo-1/01-capitulo.html#ideas-clave",
+    "title": "1. Del bit al pseudocódigo",
+    "section": "Ideas clave",
+    "text": "Ideas clave\n\nLa tecnología digital funciona sobre representaciones formales, no sobre intuiciones difusas.\nEl sistema binario importa menos como destreza memorística que como ejercicio de descomposición y estructura.\nEl texto también requiere estándares de codificación para poder almacenarse y circular sin corrupción.\nPensar computacionalmente no equivale solo a programar: equivale a ordenar problemas en partes, reglas y secuencias verificables.\nEl pseudocódigo permite empezar a modelar la lógica de tareas jurídicas antes de pasar a un lenguaje formal.",
+    "crumbs": [
+      "I. Pensamiento computacional para juristas",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
+    ]
+  },
+  {
+    "objectID": "parte-1-modulo-1/01-capitulo.html#para-pensar-y-reflexionar",
+    "href": "parte-1-modulo-1/01-capitulo.html#para-pensar-y-reflexionar",
+    "title": "1. Del bit al pseudocódigo",
+    "section": "Para pensar y reflexionar",
+    "text": "Para pensar y reflexionar\nUna parte del trabajo jurídico contemporáneo ya se desarrolla en entornos donde los documentos, los datos y los procedimientos necesitan ser estructurados con más precisión que antes. Entender el binario no convierte a nadie en programador, pero sí deja una lección de fondo: la tecnología no opera por “magia”, sino por representación, tipos, reglas y secuencias. Aprender eso desde el comienzo cambia también la manera de mirar los problemas del Derecho.",
     "crumbs": [
       "I. Pensamiento computacional para juristas",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>1. Del bit al pseudocódigo</span>"
@@ -732,7 +578,7 @@
     "href": "parte-2-modulo-2/05-capitulo.html",
     "title": "5. Entender el negocio",
     "section": "",
-    "text": "¿Por qué importa este tema?\nNo se puede mejorar ni automatizar un proceso legal si no se entiende primero cómo funciona. Muchos errores en proyectos de innovación aparecen porque se digitaliza un trámite mal descrito, se automatiza una parte irrelevante o se ignora dónde está realmente el cuello de botella.",
+    "text": "¿Por qué importa este tema?\nMuchos proyectos de innovación fracasan no porque la herramienta sea mala, sino porque el problema estaba mal descrito desde el inicio. Se automatiza una parte irrelevante, se digitaliza un trámite confuso o se produce un tablero vistoso para un flujo que nadie entiende bien. En contextos jurídicos y administrativos, ese error es especialmente costoso, porque los procesos suelen mezclar normas, documentos, responsables, tiempos, validaciones y criterios que no siempre están visibles en un mismo lugar.\nPor eso, antes de hablar de automatización documental o analítica, conviene detenerse en el proceso mismo. Representar un flujo con una notación compartida permite discutirlo, corregirlo y coordinarlo mejor que cuando existe solo como costumbre verbal o conocimiento disperso entre oficinas (White and Miers 2011). Modernizar la gestión pública tampoco equivale simplemente a incorporar tecnología: exige revisar procesos, funciones y servicios con una lógica de mejora (Perú 2002; Presidencia del Consejo de Ministros 2002).\nEn términos simples, entender el negocio significa entender el proceso. Significa saber quién hace qué, con qué insumos, en qué orden, con qué decisiones críticas y con qué salidas.",
     "crumbs": [
       "II. Automatización y datos jurídicos",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>5. Entender el negocio</span>"
@@ -743,117 +589,106 @@
     "href": "parte-2-modulo-2/05-capitulo.html#por-qué-importa-este-tema",
     "title": "5. Entender el negocio",
     "section": "",
-    "text": "ImportantIdea central\n\n\n\nEntender el negocio significa entender el proceso: quién hace qué, con qué insumos, en qué orden y dónde aparecen decisiones críticas, demoras, reprocesos o errores repetitivos.",
+    "text": "ImportantIdea central\n\n\n\nNo se puede automatizar ni mejorar con seriedad un proceso que todavía no ha sido descrito con claridad.",
     "crumbs": [
       "II. Automatización y datos jurídicos",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>5. Entender el negocio</span>"
     ]
   },
   {
-    "objectID": "parte-2-modulo-2/05-capitulo.html#qué-aprenderás-en-esta-sesión",
-    "href": "parte-2-modulo-2/05-capitulo.html#qué-aprenderás-en-esta-sesión",
+    "objectID": "parte-2-modulo-2/05-capitulo.html#el-proceso-como-objeto-de-análisis",
+    "href": "parte-2-modulo-2/05-capitulo.html#el-proceso-como-objeto-de-análisis",
     "title": "5. Entender el negocio",
-    "section": "Qué aprenderás en esta sesión",
-    "text": "Qué aprenderás en esta sesión\nAl finalizar esta sesión, deberías poder:\n\nidentificar actores, entradas, salidas y puntos de decisión;\ndistinguir entre actividad, documento, responsable y resultado;\nrepresentar un flujo legal de manera visual;\nusar Mermaid como herramienta simple de diagramación;\njustificar por qué un proceso fue modelado de cierta forma.",
+    "section": "El proceso como objeto de análisis",
+    "text": "El proceso como objeto de análisis\nUn proceso jurídico no es solo una norma, ni solo una lista de tareas. Es una secuencia de actividades, decisiones, documentos y responsables orientada a producir un resultado. A veces ese resultado será la admisión de un escrito; otras veces, la elaboración de un contrato revisado, la atención de una denuncia, la tramitación de un expediente o la emisión de una respuesta administrativa.\nPensar en términos de proceso obliga a cambiar la mirada. En lugar de preguntar solo “qué dice la regla”, conviene preguntar también:\n\nquién inicia el flujo;\nqué información entra;\nqué actividades agregan valor;\nqué decisiones desvían o detienen el trámite;\nqué documentos se generan;\ndónde se pierde tiempo, claridad o consistencia.\n\nEsa forma de mirar es particularmente relevante en Legal Tech porque buena parte de las soluciones tecnológicas solo tienen sentido cuando existe alguna comprensión previa de la estructura del trabajo que se quiere mejorar.",
     "crumbs": [
       "II. Automatización y datos jurídicos",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>5. Entender el negocio</span>"
     ]
   },
   {
-    "objectID": "parte-2-modulo-2/05-capitulo.html#qué-significa-entender-el-negocio-en-contexto-legal",
-    "href": "parte-2-modulo-2/05-capitulo.html#qué-significa-entender-el-negocio-en-contexto-legal",
+    "objectID": "parte-2-modulo-2/05-capitulo.html#un-flujo-visible-se-vuelve-discutible",
+    "href": "parte-2-modulo-2/05-capitulo.html#un-flujo-visible-se-vuelve-discutible",
     "title": "5. Entender el negocio",
-    "section": "¿Qué significa “entender el negocio” en contexto legal?",
-    "text": "¿Qué significa “entender el negocio” en contexto legal?\nEn entornos de innovación y mejora de procesos, “entender el negocio” no significa vender más ni hablar como consultor por deporte. Significa comprender cómo funciona realmente una organización o una unidad de trabajo.\nEn derecho, eso obliga a mirar preguntas como estas:\n\n¿qué trámite o servicio estamos analizando?;\n¿qué actor inicia el proceso?;\n¿qué documentos o datos entran?;\n¿qué decisiones se toman?;\n¿qué resultados salen?;\n¿dónde se pierde tiempo o calidad?;\n¿qué parte del trabajo es repetitiva y podría estandarizarse?\n\nSi esas preguntas no están claras, cualquier intento de automatización corre el riesgo de ser superficial.",
+    "section": "Un flujo visible se vuelve discutible",
+    "text": "Un flujo visible se vuelve discutible\nCuando el trabajo se organiza en pasos explícitos, gana trazabilidad, reproducibilidad y posibilidad de revisión posterior (Gorgolewski et al. 2011). Ese principio no vale solo para pipelines científicos o scripts de análisis; también vale para procesos jurídicos. Si un trámite puede verse en etapas, si una revisión contractual puede separarse en momentos reconocibles y si una mesa de partes puede distinguir entre entradas, controles y salidas, entonces el flujo deja de depender exclusivamente de hábitos tácitos.\nEso tiene dos consecuencias muy útiles. La primera es pedagógica: el proceso se vuelve enseñable. La segunda es organizacional: el proceso se vuelve mejorable. A partir de allí ya es posible identificar demoras, dobles revisiones, controles redundantes o decisiones sin criterio explícito.",
     "crumbs": [
       "II. Automatización y datos jurídicos",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>5. Entender el negocio</span>"
     ]
   },
   {
-    "objectID": "parte-2-modulo-2/05-capitulo.html#un-proceso-no-es-solo-una-lista-de-tareas",
-    "href": "parte-2-modulo-2/05-capitulo.html#un-proceso-no-es-solo-una-lista-de-tareas",
+    "objectID": "parte-2-modulo-2/05-capitulo.html#qué-elementos-conviene-reconocer-primero",
+    "href": "parte-2-modulo-2/05-capitulo.html#qué-elementos-conviene-reconocer-primero",
     "title": "5. Entender el negocio",
-    "section": "Un proceso no es solo una lista de tareas",
-    "text": "Un proceso no es solo una lista de tareas\nCuando pensamos en un proceso jurídico, conviene evitar dos simplificaciones:\n\ncreer que el proceso es solo una secuencia lineal sin decisiones;\ncreer que el proceso se agota en la norma que lo regula.\n\nEn la práctica, un proceso suele incluir:\n\nactividades;\nresponsables;\ndecisiones;\ndocumentos;\ntiempos;\npuntos de control;\nposibles desvíos o reprocesos.\n\nPor ejemplo, un procedimiento puede estar muy bien diseñado en papel, pero volverse lento en la práctica porque:\n\nfaltan documentos desde el inicio;\nno se distinguen bien los responsables;\nse revisa varias veces lo mismo;\nno se sabe qué casos deben priorizarse.\n\n\n\n\n\n\n\nNoteRegla metodológica\n\n\n\nAntes de automatizar un documento o crear un dashboard, conviene entender si el problema real está en el flujo, en los datos o en la distribución del trabajo.",
+    "section": "Qué elementos conviene reconocer primero",
+    "text": "Qué elementos conviene reconocer primero\nUn modelado inicial no necesita capturar toda la complejidad del mundo. Pero sí conviene identificar, al menos, estos componentes:\n\nactor o responsable: quién realiza una actividad;\nentrada: qué documento, dato o solicitud ingresa;\nactividad: qué se hace con esa entrada;\ndecisión: qué criterio permite seguir, observar, devolver o rechazar;\nsalida: qué resultado se produce;\npunto de control: dónde se valida calidad, integridad o cumplimiento.\n\nPensemos en un ejemplo sencillo: revisión preliminar de una solicitud administrativa. Allí puede haber una entrada documental, una verificación de requisitos mínimos, una decisión sobre completitud y una salida final que distinga entre admisión y observación. Lo importante no es la sofisticación del caso. Lo importante es empezar a separar capas del flujo que, en la práctica, suelen aparecer mezcladas.",
     "crumbs": [
       "II. Automatización y datos jurídicos",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>5. Entender el negocio</span>"
     ]
   },
   {
-    "objectID": "parte-2-modulo-2/05-capitulo.html#elementos-básicos-de-un-proceso-legal",
-    "href": "parte-2-modulo-2/05-capitulo.html#elementos-básicos-de-un-proceso-legal",
+    "objectID": "parte-2-modulo-2/05-capitulo.html#cuellos-de-botella-reprocesos-y-trabajo-invisible",
+    "href": "parte-2-modulo-2/05-capitulo.html#cuellos-de-botella-reprocesos-y-trabajo-invisible",
     "title": "5. Entender el negocio",
-    "section": "Elementos básicos de un proceso legal",
-    "text": "Elementos básicos de un proceso legal\nUn proceso legal o administrativo puede describirse con al menos estos componentes:\n\nactor: quién hace algo;\nentrada: qué documento, dato o solicitud ingresa;\nactividad: qué se hace con esa entrada;\ndecisión: qué criterio define si el flujo continúa o cambia;\nsalida: qué resultado se produce;\npunto de control: dónde se valida calidad, integridad o cumplimiento.\n\nPensemos en un caso sencillo: admisión preliminar de una solicitud.\n\nactor de entrada: ciudadano o administrado;\nentrada: solicitud y anexos;\nactividad: revisión de requisitos;\ndecisión: ¿cumple requisitos mínimos?;\nsalida: admisión o formulación de observaciones.\n\nEso ya permite pensar mejor dónde podría haber:\n\nerrores frecuentes;\ndemoras;\ntareas repetitivas;\noportunidades de mejora.",
+    "section": "Cuellos de botella, reprocesos y trabajo invisible",
+    "text": "Cuellos de botella, reprocesos y trabajo invisible\nModelar procesos tiene valor porque permite detectar no solo el recorrido ideal, sino también sus fricciones reales. Un cuello de botella aparece cuando una etapa concentra demasiada carga, depende de una sola persona o se vuelve un punto de espera recurrente. Un reproceso aparece cuando el expediente vuelve hacia atrás porque faltó algo, se observó mal o se registró de manera defectuosa.\nEn entornos jurídicos, eso puede verse en escenas muy comunes:\n\nexpedientes que regresan varias veces por la misma observación;\ncontratos que se revisan de nuevo porque los anexos nunca llegaron completos;\nsolicitudes que se registran en varios lugares distintos sin un criterio uniforme;\ntareas manuales que absorben tiempo, pero no agregan valor real.\n\nDetectar ese trabajo invisible es una de las ganancias más útiles del modelado. Muchas veces el problema no está donde el discurso institucional dice que está, sino en una pequeña secuencia informal que nadie había hecho visible.",
     "crumbs": [
       "II. Automatización y datos jurídicos",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>5. Entender el negocio</span>"
     ]
   },
   {
-    "objectID": "parte-2-modulo-2/05-capitulo.html#cuellos-de-botella-y-reprocesos",
-    "href": "parte-2-modulo-2/05-capitulo.html#cuellos-de-botella-y-reprocesos",
+    "objectID": "parte-2-modulo-2/05-capitulo.html#mermaid-como-herramienta-de-trabajo-no-como-adorno",
+    "href": "parte-2-modulo-2/05-capitulo.html#mermaid-como-herramienta-de-trabajo-no-como-adorno",
     "title": "5. Entender el negocio",
-    "section": "Cuellos de botella y reprocesos",
-    "text": "Cuellos de botella y reprocesos\nUn cuello de botella aparece cuando una parte del flujo concentra demasiada carga, demasiadas validaciones o demasiada dependencia de una sola persona o unidad.\nUn reproceso aparece cuando hay que volver atrás porque algo estaba incompleto, mal hecho o mal registrado.\nEn contextos legales, eso puede verse en situaciones como estas:\n\nexpedientes que regresan varias veces por la misma observación;\ncontratos que pasan por demasiadas revisiones sin un criterio claro;\ntrámites con entradas incompletas que consumen tiempo antes de ser observados;\nsolicitudes que se pierden entre correo, Excel y archivos adjuntos.\n\nEntender el negocio es también detectar ese tipo de patrones.",
+    "section": "Mermaid como herramienta de trabajo, no como adorno",
+    "text": "Mermaid como herramienta de trabajo, no como adorno\nNo hace falta empezar con una suite compleja para modelar procesos. Mermaid resulta especialmente útil en este curso porque permite escribir diagramas dentro de archivos de texto o Markdown, lo que hace que el proceso mismo pueda versionarse, revisarse y corregirse como cualquier otro archivo de trabajo (Mermaid Documentation 2026). Cuando el diagrama vive en texto, no queda fuera del repositorio: entra en la misma lógica de trazabilidad que el resto del proyecto (Mermaid Documentation 2026).\nEse rasgo dialoga bien con otra idea importante: dividir un flujo en módulos legibles facilita reutilización, control y comprensión de procesos complejos (Gorgolewski et al. 2011). Por eso, Mermaid no es solo una forma “bonita” de dibujar cajas y flechas. Es una herramienta compatible con una forma disciplinada de pensar y revisar procesos.",
     "crumbs": [
       "II. Automatización y datos jurídicos",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>5. Entender el negocio</span>"
     ]
   },
   {
-    "objectID": "parte-2-modulo-2/05-capitulo.html#mermaid-como-herramienta-pedagógica",
-    "href": "parte-2-modulo-2/05-capitulo.html#mermaid-como-herramienta-pedagógica",
+    "objectID": "parte-2-modulo-2/05-capitulo.html#ejemplo-1.-admisión-preliminar-de-una-solicitud",
+    "href": "parte-2-modulo-2/05-capitulo.html#ejemplo-1.-admisión-preliminar-de-una-solicitud",
     "title": "5. Entender el negocio",
-    "section": "Mermaid como herramienta pedagógica",
-    "text": "Mermaid como herramienta pedagógica\nNo hace falta empezar con una suite compleja de modelado para aprender a pensar procesos. Mermaid resulta útil porque permite escribir diagramas dentro de un archivo de texto o Markdown, lo cual encaja bien con el trabajo en editor y repositorio.\nUna ventaja pedagógica clara es esta:\n\nobliga a ordenar el flujo;\npermite versionar cambios;\nfacilita discutir alternativas;\ndeja trazabilidad de la mejora del modelo.",
+    "section": "Ejemplo 1. Admisión preliminar de una solicitud",
+    "text": "Ejemplo 1. Admisión preliminar de una solicitud\nUn flujo jurídico sencillo puede expresarse así:\nflowchart TD\n  A[Recibir solicitud] --&gt; B{Tiene firma y documento?}\n  B -- Si --&gt; C[Registrar ingreso]\n  B -- No --&gt; D[Formular observacion]\n  C --&gt; E{Corresponde a la unidad?}\n  E -- Si --&gt; F[Admitir a tramite]\n  E -- No --&gt; G[Derivar a unidad competente]\n  D --&gt; H[Esperar subsanacion]\nEste diagrama no agota toda la realidad del trámite. Pero ya permite ver algo decisivo: el flujo no es meramente lineal, porque contiene controles y decisiones que alteran la trayectoria del expediente. Precisamente allí empiezan a aparecer las preguntas útiles: ¿la observación se formula demasiado tarde?, ¿la derivación podría resolverse antes?, ¿la unidad revisa datos que otra ya había revisado?",
     "crumbs": [
       "II. Automatización y datos jurídicos",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>5. Entender el negocio</span>"
     ]
   },
   {
-    "objectID": "parte-2-modulo-2/05-capitulo.html#ejemplo-jurídico-revisión-contractual",
-    "href": "parte-2-modulo-2/05-capitulo.html#ejemplo-jurídico-revisión-contractual",
+    "objectID": "parte-2-modulo-2/05-capitulo.html#ejemplo-2.-revisión-contractual",
+    "href": "parte-2-modulo-2/05-capitulo.html#ejemplo-2.-revisión-contractual",
     "title": "5. Entender el negocio",
-    "section": "Ejemplo jurídico: revisión contractual",
-    "text": "Ejemplo jurídico: revisión contractual\nUn flujo simple de revisión contractual podría verse así:\n\nrecepción del borrador;\nrevisión preliminar;\nverificación de anexos;\nanálisis de cláusulas críticas;\nformulación de observaciones;\ndevolución para ajustes;\naprobación o rechazo.\n\nEn Mermaid, una primera versión podría comenzar así:\nflowchart TD\n  A[Recibir borrador] --&gt; B{Tiene anexos completos?}\n  B -- Si --&gt; C[Revisar clausulas criticas]\n  B -- No --&gt; D[Solicitar correccion]\n  C --&gt; E{Hay observaciones?}\n  E -- Si --&gt; F[Devolver para ajustes]\n  E -- No --&gt; G[Aprobar]\n  D --&gt; H[Esperar nueva version]\n  F --&gt; H\nEste diagrama no agota toda la realidad, pero ya vuelve visible algo importante: el flujo no es lineal, tiene decisiones y puede regresar a etapas previas.",
+    "section": "Ejemplo 2. Revisión contractual",
+    "text": "Ejemplo 2. Revisión contractual\nUn segundo caso, más cercano a una práctica profesional de estudio o asesoría, podría verse así:\nflowchart TD\n  A[Recibir borrador de contrato] --&gt; B{Anexos completos?}\n  B -- Si --&gt; C[Revisar clausulas criticas]\n  B -- No --&gt; D[Solicitar anexos faltantes]\n  C --&gt; E{Hay observaciones?}\n  E -- Si --&gt; F[Devolver para ajustes]\n  E -- No --&gt; G[Aprobar version]\n  D --&gt; H[Esperar nueva version]\n  F --&gt; H\nAquí ya se vuelve visible un rasgo frecuente del trabajo legal: una parte relevante del tiempo no se consume en “analizar el derecho”, sino en esperar insumos, corregir versiones y manejar retornos del flujo. Ver eso con claridad cambia la conversación. El proceso deja de verse como una sola actividad abstracta de “revisión” y empieza a descomponerse en momentos distintos, algunos sustantivos y otros puramente logísticos.",
     "crumbs": [
       "II. Automatización y datos jurídicos",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>5. Entender el negocio</span>"
     ]
   },
   {
-    "objectID": "parte-2-modulo-2/05-capitulo.html#otro-ejemplo-admisión-de-expediente",
-    "href": "parte-2-modulo-2/05-capitulo.html#otro-ejemplo-admisión-de-expediente",
+    "objectID": "parte-2-modulo-2/05-capitulo.html#qué-vuelve-útil-a-un-diagrama",
+    "href": "parte-2-modulo-2/05-capitulo.html#qué-vuelve-útil-a-un-diagrama",
     "title": "5. Entender el negocio",
-    "section": "Otro ejemplo: admisión de expediente",
-    "text": "Otro ejemplo: admisión de expediente\nTambién podemos pensar un flujo más cercano al trabajo administrativo:\n\nrecepción del escrito;\nverificación documental;\nrevisión de tasa;\nvalidación de plazo;\nadmisión o formulación de observaciones.\n\nPreguntas útiles para modelar este proceso:\n\n¿quién revisa qué?;\n¿qué pasa si falta un documento?;\n¿se puede detectar antes una observación frecuente?;\n¿hay casos que deberían priorizarse?;\n\nEsas preguntas ya no son solo técnicas. Son preguntas de diseño de trabajo jurídico.",
+    "section": "Qué vuelve útil a un diagrama",
+    "text": "Qué vuelve útil a un diagrama\nNo todo diagrama ayuda a pensar mejor. Un buen modelado no consiste en dibujar todo lo que existe, sino en mostrar lo necesario para entender cómo funciona el flujo y dónde podrían aparecer mejoras. En ese sentido, conviene evaluar el diagrama con preguntas como estas:\n\n¿distingue bien actividades y decisiones?;\n¿permite ubicar responsables?;\n¿muestra entradas y salidas relevantes?;\n¿hace visibles cuellos de botella o reprocesos?;\n¿ayuda a imaginar una mejora plausible?\n\nSi la respuesta es negativa, probablemente el problema no esté en Mermaid ni en BPMN, sino en que el flujo aún no ha sido pensado con suficiente precisión.",
     "crumbs": [
       "II. Automatización y datos jurídicos",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>5. Entender el negocio</span>"
     ]
   },
   {
-    "objectID": "parte-2-modulo-2/05-capitulo.html#cómo-leer-un-diagrama-con-criterio",
-    "href": "parte-2-modulo-2/05-capitulo.html#cómo-leer-un-diagrama-con-criterio",
+    "objectID": "parte-2-modulo-2/05-capitulo.html#del-modelado-a-la-mejora",
+    "href": "parte-2-modulo-2/05-capitulo.html#del-modelado-a-la-mejora",
     "title": "5. Entender el negocio",
-    "section": "Cómo leer un diagrama con criterio",
-    "text": "Cómo leer un diagrama con criterio\nUn diagrama no sirve solo para “bonito”. Debe ayudar a responder cuestiones como estas:\n\n¿qué parte del proceso agrega valor?;\n¿qué parte solo traslada documentos?;\n¿qué decisión carece de criterio explícito?;\n¿qué paso podría simplificarse?;\n¿qué dato falta para medir mejor el flujo?\n\n\n\n\n\n\n\nTipCriterio útil\n\n\n\nUn buen diagrama no muestra todo. Muestra lo necesario para entender el proceso y mejorarlo.",
-    "crumbs": [
-      "II. Automatización y datos jurídicos",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>5. Entender el negocio</span>"
-    ]
-  },
-  {
-    "objectID": "parte-2-modulo-2/05-capitulo.html#del-proceso-a-la-mejora",
-    "href": "parte-2-modulo-2/05-capitulo.html#del-proceso-a-la-mejora",
-    "title": "5. Entender el negocio",
-    "section": "Del proceso a la mejora",
-    "text": "Del proceso a la mejora\nUna vez modelado el flujo, aparecen oportunidades de mejora. Por ejemplo:\n\npedir desde el inicio una lista clara de requisitos;\nseparar casos simples de casos complejos;\nreducir dobles revisiones innecesarias;\nestandarizar observaciones frecuentes;\npreparar luego automatización documental o visualización de carga.\n\nEse punto es importante porque conecta directamente este capítulo con el resto del módulo.",
+    "section": "Del modelado a la mejora",
+    "text": "Del modelado a la mejora\nUna vez representado el proceso, empiezan a aparecer posibilidades reales de intervención. A veces la mejora consistirá en adelantar un control. Otras veces, en estandarizar observaciones frecuentes, eliminar dobles validaciones o separar casos simples de casos complejos. En el sector público, además, parte de la innovación puede institucionalizarse mediante laboratorios orientados a cocrear y prototipar soluciones centradas en la ciudadanía (Perú 2022). Esa idea también recuerda que la mejora de procesos no es una tarea puramente individual ni meramente tecnológica: requiere espacios de experimentación y aprendizaje organizacional.\nEn ese punto aparece el verdadero puente con el resto del módulo. Solo después de entender un flujo tiene sentido preguntarse qué datos conviene capturar, qué indicadores sirven para seguirlo y qué parte podría automatizarse con prudencia.",
     "crumbs": [
       "II. Automatización y datos jurídicos",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>5. Entender el negocio</span>"
@@ -864,7 +699,7 @@
     "href": "parte-2-modulo-2/05-capitulo.html#práctica-en-editor",
     "title": "5. Entender el negocio",
     "section": "Práctica en editor",
-    "text": "Práctica en editor\nAbre tu editor y crea un archivo Markdown con un diagrama Mermaid de un proceso jurídico sencillo. Debe incluir:\n\nal menos un punto de decisión;\nun responsable o actor identificable;\nuna salida final;\nuna breve nota sobre un cuello de botella o un punto de control.",
+    "text": "Práctica en editor\nCrea un archivo Markdown con un diagrama Mermaid de un proceso jurídico sencillo. Puede ser, por ejemplo:\n\nadmisión de un escrito;\natención de una denuncia;\nrevisión de un contrato;\nderivación interna de un expediente;\nvalidación de requisitos de una solicitud.\n\nProcura que el diagrama incluya:\n\nal menos un punto de decisión;\nuna entrada identificable;\nuna salida final;\nun posible cuello de botella o punto de control.",
     "crumbs": [
       "II. Automatización y datos jurídicos",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>5. Entender el negocio</span>"
@@ -875,7 +710,7 @@
     "href": "parte-2-modulo-2/05-capitulo.html#git-y-github",
     "title": "5. Entender el negocio",
     "section": "Git y GitHub",
-    "text": "Git y GitHub\nVersiona el archivo del diagrama y agrega un comentario breve sobre por qué modelaste el proceso de esa manera. Si haces una segunda versión, deja rastro de qué mejoraste.",
+    "text": "Git y GitHub\nVersiona el archivo desde el inicio. Si haces una segunda versión del diagrama, deja rastro de qué mejoraste y por qué. En un flujo de trabajo serio, revisar procesos también debería ser una actividad trazable.",
     "crumbs": [
       "II. Automatización y datos jurídicos",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>5. Entender el negocio</span>"
@@ -886,18 +721,7 @@
     "href": "parte-2-modulo-2/05-capitulo.html#pset-de-la-sesión",
     "title": "5. Entender el negocio",
     "section": "PSET de la sesión",
-    "text": "PSET de la sesión\nModela un flujo legal con Mermaid. Puede ser, por ejemplo:\n\natención de denuncias;\nrevisión de documentos;\nadmisión de expediente;\ntrámite interno de aprobación;\nrevisión de contrato.\n\nEl entregable debe incluir:\n\nel diagrama;\nuna breve justificación de actores, decisiones y puntos de control;\nal menos una observación sobre una mejora posible;\nevidencia de trabajo en repositorio.",
-    "crumbs": [
-      "II. Automatización y datos jurídicos",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>5. Entender el negocio</span>"
-    ]
-  },
-  {
-    "objectID": "parte-2-modulo-2/05-capitulo.html#preguntas-de-repaso",
-    "href": "parte-2-modulo-2/05-capitulo.html#preguntas-de-repaso",
-    "title": "5. Entender el negocio",
-    "section": "Preguntas de repaso",
-    "text": "Preguntas de repaso\n\n¿Por qué no conviene automatizar un proceso antes de entenderlo?\n¿Qué diferencia hay entre una actividad y una decisión?\n¿Cómo identificar un cuello de botella?\n¿Qué ventaja ofrece Mermaid en un curso como este?",
+    "text": "PSET de la sesión\nEl entregable puede consistir en un diagrama de proceso acompañado de una breve justificación escrita. Lo importante es que el archivo muestre:\n\nqué problema o trámite fue modelado;\nquiénes intervienen;\nqué decisiones alteran el flujo;\nqué punto débil o mejora posible identificaste.",
     "crumbs": [
       "II. Automatización y datos jurídicos",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>5. Entender el negocio</span>"
@@ -908,7 +732,18 @@
     "href": "parte-2-modulo-2/05-capitulo.html#ideas-clave",
     "title": "5. Entender el negocio",
     "section": "Ideas clave",
-    "text": "Ideas clave\n\nun proceso mal entendido difícilmente se mejora;\ndiagramar no es adornar: es pensar con mayor precisión;\nlos procesos jurídicos combinan actividades, decisiones, documentos y tiempos;\nmodelar bien un flujo prepara el camino para trabajar mejor con datos y automatización.",
+    "text": "Ideas clave\n\nEntender el negocio significa entender el proceso, no solo la herramienta.\nUn flujo visible se vuelve discutible, corregible y mejorable.\nModelar procesos permite detectar cuellos de botella, reprocesos y trabajo invisible.\nMermaid resulta útil porque integra diagramación y versionado dentro del mismo entorno de trabajo.\nSin comprensión del flujo, la automatización corre el riesgo de ser superficial o equivocada.",
+    "crumbs": [
+      "II. Automatización y datos jurídicos",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>5. Entender el negocio</span>"
+    ]
+  },
+  {
+    "objectID": "parte-2-modulo-2/05-capitulo.html#para-pensar-y-reflexionar",
+    "href": "parte-2-modulo-2/05-capitulo.html#para-pensar-y-reflexionar",
+    "title": "5. Entender el negocio",
+    "section": "Para pensar y reflexionar",
+    "text": "Para pensar y reflexionar\nEn proyectos legales y públicos, muchas veces se habla de innovación demasiado pronto y de procesos demasiado tarde. Este capítulo invierte deliberadamente ese orden. Antes de pensar en dashboards, automatización documental o analítica, conviene hacer algo menos vistoso pero más importante: describir bien el trabajo real. Allí empieza una mejora con sentido.",
     "crumbs": [
       "II. Automatización y datos jurídicos",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>5. Entender el negocio</span>"
@@ -919,7 +754,7 @@
     "href": "parte-2-modulo-2/06-capitulo.html",
     "title": "6. Explicar y controlar los resultados",
     "section": "",
-    "text": "¿Por qué importa este tema?\nEn derecho no basta con tener información: hay que ordenarla, explicarla y usarla para tomar mejores decisiones. Una tabla caótica sirve poco; un reporte claro puede cambiar mucho. Lo mismo ocurre con la gestión legal: si no se mide, no se entiende bien; y si no se entiende bien, se controla mal.",
+    "text": "¿Por qué importa este tema?\nEn derecho y en gestión legal no basta con tener información. Hace falta ordenarla, formular preguntas sobre ella y producir salidas que ayuden a comprender una situación o a tomar decisiones mejores. Una tabla desordenada puede conservar muchos datos y, al mismo tiempo, no decir casi nada. Un reporte breve, en cambio, puede volver visible un patrón importante, una carga desigual, un plazo riesgoso o un conjunto de casos que merecen priorización.\nEse paso, que parece técnico, también es intelectual. Entre el dato bruto y el documento útil existe una cadena de organización, descripción y reutilización que condiciona el valor final de la información (Mendo et al. 2013). Trabajar con datos jurídicos no significa solo “pasar documentos a Excel”, sino aprender a distinguir campos, limpiar registros, construir indicadores y producir representaciones que tengan sentido para un problema concreto.\nLa visualización entra después, no antes. Un gráfico puede revelar patrones con enorme potencia, pero sin contexto y lectura crítica también puede inducir interpretaciones equivocadas (Cairo 2017). Por eso, el objetivo de esta sesión no es enseñar a decorar información. Es enseñar a explicarla y controlarla con mayor rigor.",
     "crumbs": [
       "II. Automatización y datos jurídicos",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>6. Explicar y controlar los resultados</span>"
@@ -930,18 +765,7 @@
     "href": "parte-2-modulo-2/06-capitulo.html#por-qué-importa-este-tema",
     "title": "6. Explicar y controlar los resultados",
     "section": "",
-    "text": "ImportantIdea central\n\n\n\nDatos útiles son datos organizados, legibles y conectados con una pregunta concreta.",
-    "crumbs": [
-      "II. Automatización y datos jurídicos",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>6. Explicar y controlar los resultados</span>"
-    ]
-  },
-  {
-    "objectID": "parte-2-modulo-2/06-capitulo.html#qué-aprenderás-en-esta-sesión",
-    "href": "parte-2-modulo-2/06-capitulo.html#qué-aprenderás-en-esta-sesión",
-    "title": "6. Explicar y controlar los resultados",
-    "section": "Qué aprenderás en esta sesión",
-    "text": "Qué aprenderás en esta sesión\nAl finalizar esta sesión, deberías poder:\n\ndistinguir entre dato, registro, campo e indicador;\norganizar información jurídica básica;\nlimpiar y estructurar una tabla sencilla;\nproducir un reporte o visualización simple;\npreparar evidencia reproducible para un PSET.",
+    "text": "ImportantIdea central\n\n\n\nLos datos solo se vuelven útiles cuando están organizados en función de una pregunta, un criterio de lectura y una salida comprensible.",
     "crumbs": [
       "II. Automatización y datos jurídicos",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>6. Explicar y controlar los resultados</span>"
@@ -952,95 +776,51 @@
     "href": "parte-2-modulo-2/06-capitulo.html#del-documento-al-dato",
     "title": "6. Explicar y controlar los resultados",
     "section": "Del documento al dato",
-    "text": "Del documento al dato\nUno de los cambios más importantes en entornos legaltech consiste en dejar de tratar toda la información como si fuera solo un conjunto de documentos aislados.\nMuchas veces conviene separar:\n\nel documento como pieza completa;\nlos datos que ese documento contiene;\nlos campos que pueden convertirse en variables analizables.\n\nPor ejemplo, una resolución puede ser un documento. Pero dentro de ella hay datos como:\n\nfecha;\nórgano emisor;\nmateria;\ntipo de decisión;\nmonto;\nestado de cumplimiento.\n\nCuando distinguimos esas capas, la información empieza a ser más útil para seguimiento, análisis y control.",
+    "text": "Del documento al dato\nUna parte relevante del trabajo jurídico sigue organizada en torno a documentos: escritos, resoluciones, contratos, expedientes, oficios, actas. Pero muchas veces esos documentos contienen datos que pueden aislarse para permitir seguimiento, control y análisis. Allí aparece una distinción básica que conviene volver explícita:\n\nel documento es la pieza completa;\nel dato es una unidad puntual de información;\nel campo es la categoría bajo la cual ese dato se registra;\nel registro es el conjunto de campos que describe un caso o una fila.\n\nPensemos en una tabla de expedientes. Puede contener campos como codigo, estado, fecha_ingreso, responsable y prioridad. Cada fila será un registro. Y varios registros, organizados bajo las mismas columnas, ya permiten formular preguntas comparables: cuántos expedientes siguen pendientes, qué responsable concentra mayor carga o qué casos urgentes aún no han sido revisados.\nEl punto importante es este: el valor de un dato no aparece solo. Depende de cómo se organiza, se relaciona y se transforma en información utilizable (Mendo et al. 2013).",
     "crumbs": [
       "II. Automatización y datos jurídicos",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>6. Explicar y controlar los resultados</span>"
     ]
   },
   {
-    "objectID": "parte-2-modulo-2/06-capitulo.html#vocabulario-mínimo-para-trabajar-con-información",
-    "href": "parte-2-modulo-2/06-capitulo.html#vocabulario-mínimo-para-trabajar-con-información",
+    "objectID": "parte-2-modulo-2/06-capitulo.html#ordenar-información-también-es-pensar-mejor",
+    "href": "parte-2-modulo-2/06-capitulo.html#ordenar-información-también-es-pensar-mejor",
     "title": "6. Explicar y controlar los resultados",
-    "section": "Vocabulario mínimo para trabajar con información",
-    "text": "Vocabulario mínimo para trabajar con información\nConviene manejar al menos estas cuatro nociones:\n\ndato: unidad básica de información;\ncampo: categoría o atributo del dato;\nregistro: conjunto de campos relacionados entre sí;\nindicador: medida que ayuda a monitorear una situación.\n\nPensemos en una tabla de expedientes:\n\n\n\ncodigo\nestado\nresponsable\nprioridad\n\n\n\n\nEXP-001\npendiente\nAna\nalta\n\n\nEXP-002\nrevisado\nLuis\nmedia\n\n\n\nAquí:\n\ncodigo, estado, responsable y prioridad son campos;\ncada fila es un registro;\nel total de expedientes pendientes podría convertirse luego en un indicador.\n\n\n\n\n\n\n\nNoteIdea útil\n\n\n\nUn buen dato no es solo un dato existente. Es un dato que puede leerse, compararse y reutilizarse con un propósito.",
+    "section": "Ordenar información también es pensar mejor",
+    "text": "Ordenar información también es pensar mejor\nAntes de construir un indicador o una visualización, conviene revisar la calidad de la tabla. Una estructura pobre suele arruinar cualquier intento posterior de análisis. Eso ocurre, por ejemplo, cuando:\n\nuna misma columna mezcla fecha, observación y responsable;\nel mismo estado aparece escrito de tres maneras distintas;\nfaltan criterios para los vacíos;\nse repiten registros sin saber cuál es la versión válida;\nla tabla no responde a ninguna pregunta concreta.\n\nEn este punto conviene recordar una regla sobria pero muy útil: limpiar información no es una tarea mecánica separada del pensamiento. Es una forma de decidir qué cuenta como dato comparable y qué no.",
     "crumbs": [
       "II. Automatización y datos jurídicos",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>6. Explicar y controlar los resultados</span>"
     ]
   },
   {
-    "objectID": "parte-2-modulo-2/06-capitulo.html#qué-vuelve-mala-a-una-tabla",
-    "href": "parte-2-modulo-2/06-capitulo.html#qué-vuelve-mala-a-una-tabla",
+    "objectID": "parte-2-modulo-2/06-capitulo.html#preguntar-antes-de-medir",
+    "href": "parte-2-modulo-2/06-capitulo.html#preguntar-antes-de-medir",
     "title": "6. Explicar y controlar los resultados",
-    "section": "Qué vuelve mala a una tabla",
-    "text": "Qué vuelve mala a una tabla\nUna tabla suele volverse poco útil cuando:\n\nmezcla demasiadas cosas en una misma columna;\nusa nombres ambiguos;\nrepite formatos distintos para lo mismo;\ndeja vacíos sin criterio;\nno permite responder ninguna pregunta concreta.\n\nPor ejemplo, una columna llamada observaciones varias que mezcla texto libre, fechas, responsables y estados puede ser cómoda al inicio, pero difícil de analizar después.",
+    "section": "Preguntar antes de medir",
+    "text": "Preguntar antes de medir\nUna tabla sirve mejor cuando está subordinada a una pregunta y no al revés. Algunas preguntas jurídicas o de gestión pueden ser muy simples:\n\n¿cuántos expedientes siguen pendientes?;\n¿qué observación se repite más?;\n¿qué contratos vencen este mes?;\n¿qué unidad concentra la mayor demora?;\n¿qué casos merecen atención prioritaria?\n\nLo decisivo no es la sofisticación matemática de la pregunta, sino su claridad. Una pregunta bien planteada ya organiza qué columnas importan, qué registros son relevantes y qué tipo de salida conviene construir.",
     "crumbs": [
       "II. Automatización y datos jurídicos",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>6. Explicar y controlar los resultados</span>"
     ]
   },
   {
-    "objectID": "parte-2-modulo-2/06-capitulo.html#primer-paso-ordenar-la-información",
-    "href": "parte-2-modulo-2/06-capitulo.html#primer-paso-ordenar-la-información",
+    "objectID": "parte-2-modulo-2/06-capitulo.html#un-ejemplo-mínimo-con-registros",
+    "href": "parte-2-modulo-2/06-capitulo.html#un-ejemplo-mínimo-con-registros",
     "title": "6. Explicar y controlar los resultados",
-    "section": "Primer paso: ordenar la información",
-    "text": "Primer paso: ordenar la información\nAntes de pensar en gráficos o dashboards, conviene hacer algo mucho menos glamoroso y mucho más importante: ordenar la tabla.\nEso implica revisar:\n\nnombres de columnas;\nconsistencia de formatos;\nduplicados;\nvalores faltantes;\ncategorías comparables.\n\nUn ejemplo didáctico con Python:\nexpedientes = [\n    {\"codigo\": \"EXP-001\", \"estado\": \"pendiente\", \"prioridad\": \"alta\"},\n    {\"codigo\": \"EXP-002\", \"estado\": \"Pendiente\", \"prioridad\": \"media\"},\n    {\"codigo\": \"EXP-003\", \"estado\": \"revisado\", \"prioridad\": \"alta\"},\n]\n\nfor expediente in expedientes:\n    expediente[\"estado\"] = expediente[\"estado\"].lower()\n\nprint(expedientes)\nEse ajuste es simple, pero ya mejora la posibilidad de contar o clasificar registros sin errores evitables.",
+    "section": "Un ejemplo mínimo con registros",
+    "text": "Un ejemplo mínimo con registros\nUn conjunto pequeño de datos puede verse así:\nexpedientes = [\n    {\"codigo\": \"EXP-001\", \"estado\": \"pendiente\", \"responsable\": \"Ana\", \"prioridad\": \"alta\"},\n    {\"codigo\": \"EXP-002\", \"estado\": \"revisado\", \"responsable\": \"Luis\", \"prioridad\": \"media\"},\n    {\"codigo\": \"EXP-003\", \"estado\": \"pendiente\", \"responsable\": \"Ana\", \"prioridad\": \"alta\"},\n]\nCon una estructura tan simple ya es posible responder una pregunta específica:\npendientes = 0\n\nfor expediente in expedientes:\n    if expediente[\"estado\"] == \"pendiente\":\n        pendientes += 1\n\nprint(\"Expedientes pendientes:\", pendientes)\nLa utilidad pedagógica del ejemplo no está en su dificultad. Está en mostrar que una tabla comienza a volverse informativa cuando puede responder algo con claridad.",
     "crumbs": [
       "II. Automatización y datos jurídicos",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>6. Explicar y controlar los resultados</span>"
     ]
   },
   {
-    "objectID": "parte-2-modulo-2/06-capitulo.html#qué-preguntas-vale-la-pena-hacer-a-los-datos",
-    "href": "parte-2-modulo-2/06-capitulo.html#qué-preguntas-vale-la-pena-hacer-a-los-datos",
+    "objectID": "parte-2-modulo-2/06-capitulo.html#qué-es-un-indicador-y-qué-no",
+    "href": "parte-2-modulo-2/06-capitulo.html#qué-es-un-indicador-y-qué-no",
     "title": "6. Explicar y controlar los resultados",
-    "section": "Qué preguntas vale la pena hacer a los datos",
-    "text": "Qué preguntas vale la pena hacer a los datos\nUna buena práctica consiste en formular una pregunta antes de abrir la tabla. Por ejemplo:\n\n¿cuántos casos están pendientes?;\n¿qué tipo de observación se repite más?;\n¿qué responsable concentra mayor carga?;\n¿qué plazos están por vencer?;\n¿qué casos deberían priorizarse?\n\nLa tabla sirve mejor cuando está subordinada a una pregunta y no al revés.",
-    "crumbs": [
-      "II. Automatización y datos jurídicos",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>6. Explicar y controlar los resultados</span>"
-    ]
-  },
-  {
-    "objectID": "parte-2-modulo-2/06-capitulo.html#ejemplo-jurídico-carga-de-expedientes",
-    "href": "parte-2-modulo-2/06-capitulo.html#ejemplo-jurídico-carga-de-expedientes",
-    "title": "6. Explicar y controlar los resultados",
-    "section": "Ejemplo jurídico: carga de expedientes",
-    "text": "Ejemplo jurídico: carga de expedientes\nImagina una tabla con estas columnas:\n\ncódigo;\nestado;\nfecha de ingreso;\nresponsable;\nprioridad.\n\nCon eso ya puedes producir algo útil, por ejemplo:\n\nnúmero de expedientes pendientes;\ncasos de prioridad alta;\ndistribución por responsable.\n\nUn script mínimo:\nexpedientes = [\n    {\"codigo\": \"EXP-001\", \"estado\": \"pendiente\", \"responsable\": \"Ana\", \"prioridad\": \"alta\"},\n    {\"codigo\": \"EXP-002\", \"estado\": \"revisado\", \"responsable\": \"Luis\", \"prioridad\": \"media\"},\n    {\"codigo\": \"EXP-003\", \"estado\": \"pendiente\", \"responsable\": \"Ana\", \"prioridad\": \"alta\"},\n]\n\npendientes = 0\n\nfor expediente in expedientes:\n    if expediente[\"estado\"] == \"pendiente\":\n        pendientes += 1\n\nprint(\"Expedientes pendientes:\", pendientes)\nEso ya convierte una tabla en una respuesta.",
-    "crumbs": [
-      "II. Automatización y datos jurídicos",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>6. Explicar y controlar los resultados</span>"
-    ]
-  },
-  {
-    "objectID": "parte-2-modulo-2/06-capitulo.html#indicadores-y-control",
-    "href": "parte-2-modulo-2/06-capitulo.html#indicadores-y-control",
-    "title": "6. Explicar y controlar los resultados",
-    "section": "Indicadores y control",
-    "text": "Indicadores y control\nUn indicador no es cualquier número. Es un número que ayuda a monitorear una situación relevante.\nEn contextos legales, algunos ejemplos de indicadores podrían ser:\n\nexpedientes pendientes por unidad;\ntiempo promedio de atención;\nporcentaje de casos observados;\nnúmero de contratos próximos a vencer;\ncantidad de casos prioritarios sin revisión.\n\nLo importante es no confundir acumulación de datos con control real. El control aparece cuando esos datos permiten ver algo accionable.\n\n\n\n\n\n\nTipRegla práctica\n\n\n\nSi un indicador no ayuda a tomar una decisión o a detectar un problema, probablemente todavía no es un buen indicador.",
-    "crumbs": [
-      "II. Automatización y datos jurídicos",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>6. Explicar y controlar los resultados</span>"
-    ]
-  },
-  {
-    "objectID": "parte-2-modulo-2/06-capitulo.html#visualizar-no-es-decorar",
-    "href": "parte-2-modulo-2/06-capitulo.html#visualizar-no-es-decorar",
-    "title": "6. Explicar y controlar los resultados",
-    "section": "Visualizar no es decorar",
-    "text": "Visualizar no es decorar\nLa visualización puede ayudar a que ciertos patrones se vean mejor. Pero no toda visualización es útil. A veces una tabla bien ordenada explica más que un gráfico innecesario.\nVisualizar bien implica preguntarse:\n\n¿qué quiero mostrar?;\n¿a quién quiero explicárselo?;\n¿qué forma hace más visible el patrón?;\n¿qué nivel de detalle conviene?\n\nEn algunos casos, bastará con un resumen textual:\n\n12 expedientes pendientes;\n7 de prioridad alta;\n5 asignados a la misma persona.\n\nEn otros casos, una barra o una tabla comparativa puede ser suficiente.",
-    "crumbs": [
-      "II. Automatización y datos jurídicos",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>6. Explicar y controlar los resultados</span>"
-    ]
-  },
-  {
-    "objectID": "parte-2-modulo-2/06-capitulo.html#sql-y-bases-de-datos-una-intuición-inicial",
-    "href": "parte-2-modulo-2/06-capitulo.html#sql-y-bases-de-datos-una-intuición-inicial",
-    "title": "6. Explicar y controlar los resultados",
-    "section": "SQL y bases de datos: una intuición inicial",
-    "text": "SQL y bases de datos: una intuición inicial\nAunque esta sesión no busca convertirte en especialista en bases de datos, sí conviene introducir una idea básica: cuando la información crece, ya no basta con mirar todo a mano.\nAllí aparece la lógica de consulta:\n\nseleccionar ciertos campos;\nfiltrar registros;\nordenar resultados;\ncontar casos.\n\nEsa intuición está muy cerca de lo que luego hace una consulta SQL, aunque aquí todavía podamos trabajar con ejemplos más simples.",
+    "section": "Qué es un indicador y qué no",
+    "text": "Qué es un indicador y qué no\nUn indicador no es cualquier número producido por una tabla. Es una medida que ayuda a monitorear un fenómeno relevante. Por ejemplo:\n\nexpedientes pendientes por unidad;\ntiempo promedio de revisión;\nporcentaje de casos observados;\ncantidad de trámites urgentes sin respuesta;\ndistribución de carga por responsable.\n\nLa diferencia es importante porque muchas organizaciones acumulan cifras sin construir realmente control. Si un número no ayuda a detectar un problema, comparar situaciones o decidir una acción, entonces probablemente todavía no es un buen indicador.\n\n\n\n\n\n\nNoteCriterio útil\n\n\n\nUn indicador vale menos por su complejidad que por su capacidad de volver visible algo que importa.",
     "crumbs": [
       "II. Automatización y datos jurídicos",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>6. Explicar y controlar los resultados</span>"
@@ -1051,18 +831,51 @@
     "href": "parte-2-modulo-2/06-capitulo.html#del-dato-al-reporte",
     "title": "6. Explicar y controlar los resultados",
     "section": "Del dato al reporte",
-    "text": "Del dato al reporte\nExplicar resultados no significa solo contar cosas. También significa producir un reporte comprensible.\nUn reporte útil suele responder:\n\nqué se observó;\npor qué importa;\nqué acción sugiere.\n\nPor ejemplo:\n\nSe identificaron 12 expedientes pendientes, de los cuales 7 tienen prioridad alta. La mayor carga recae en una sola responsable. Conviene redistribuir revisión o establecer un criterio de priorización más claro.\n\nEse tipo de salida ya conecta datos con gestión.",
+    "text": "Del dato al reporte\nExplicar resultados no consiste solo en contar. También consiste en producir una salida que diga qué se observó, por qué importa y qué acción podría seguirse. Una tabla puede ser la base del análisis, pero rara vez agota la tarea de comunicación.\nPor ejemplo, un reporte breve puede decir:\n\nSe identificaron 14 expedientes pendientes. De ellos, 8 tienen prioridad alta y 6 se concentran en una misma responsable. Conviene redistribuir carga o revisar el criterio de asignación.\n\nAllí aparece ya el tránsito completo:\n\ninformación organizada;\npregunta clara;\nresultado legible;\ninterpretación de su relevancia.",
     "crumbs": [
       "II. Automatización y datos jurídicos",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>6. Explicar y controlar los resultados</span>"
     ]
   },
   {
-    "objectID": "parte-2-modulo-2/06-capitulo.html#puente-hacia-automatización-documental",
-    "href": "parte-2-modulo-2/06-capitulo.html#puente-hacia-automatización-documental",
+    "objectID": "parte-2-modulo-2/06-capitulo.html#visualizar-no-es-decorar",
+    "href": "parte-2-modulo-2/06-capitulo.html#visualizar-no-es-decorar",
     "title": "6. Explicar y controlar los resultados",
-    "section": "Puente hacia automatización documental",
-    "text": "Puente hacia automatización documental\nCuando una tabla bien organizada alimenta un reporte, un resumen o una salida estandarizada, estamos muy cerca de la lógica de automatización documental.\nLa secuencia es esta:\n\nrecibir datos;\nordenarlos;\nanalizarlos;\nproducir una salida.\n\nEso puede terminar en:\n\nun reporte;\nuna alerta;\nuna lista priorizada;\nuna plantilla con datos insertados.",
+    "section": "Visualizar no es decorar",
+    "text": "Visualizar no es decorar\nLa visualización puede volver más comprensible una tabla, pero no sustituye el análisis. Los datos abiertos, por ejemplo, adquieren mayor utilidad pública cuando se traducen en representaciones comprensibles (García-García and Alonso-Magdaleno 2021). Sin embargo, esa traducción no debe producir la ilusión de que el gráfico “habla por sí solo”. Una visualización vale mucho cuando hace visibles los datos, pero sigue necesitando contexto e interpretación para no convertirse en una falsa evidencia autosuficiente (Cairo 2017).\nEsto vale especialmente en el ámbito jurídico y público, donde un gráfico puede resumir tendencias útiles, pero también simplificar demasiado decisiones complejas. Por eso conviene formular tres preguntas antes de visualizar:\n\n¿qué quiero mostrar?;\n¿a quién necesito explicárselo?;\n¿qué patrón sería realmente más claro en esta forma que en una tabla?\n\nEn ocasiones la mejor salida será un gráfico de barras. En otras, una tabla limpia con tres líneas de interpretación será mucho más honesta y más útil.",
+    "crumbs": [
+      "II. Automatización y datos jurídicos",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>6. Explicar y controlar los resultados</span>"
+    ]
+  },
+  {
+    "objectID": "parte-2-modulo-2/06-capitulo.html#ejemplo-1.-un-resumen-simple-con-python",
+    "href": "parte-2-modulo-2/06-capitulo.html#ejemplo-1.-un-resumen-simple-con-python",
+    "title": "6. Explicar y controlar los resultados",
+    "section": "Ejemplo 1. Un resumen simple con Python",
+    "text": "Ejemplo 1. Un resumen simple con Python\nPodemos tomar un pequeño conjunto de casos y convertirlo en una salida legible:\ncasos = [\n    {\"codigo\": \"EXP-001\", \"estado\": \"pendiente\"},\n    {\"codigo\": \"EXP-002\", \"estado\": \"revisado\"},\n    {\"codigo\": \"EXP-003\", \"estado\": \"pendiente\"},\n    {\"codigo\": \"EXP-004\", \"estado\": \"observado\"},\n]\n\nconteo = {}\n\nfor caso in casos:\n    estado = caso[\"estado\"]\n    if estado in conteo:\n        conteo[estado] = conteo[estado] + 1\n    else:\n        conteo[estado] = 1\n\nprint(conteo)\nEl valor de este ejercicio está en que muestra cómo una lista de registros puede condensarse en una lectura más inmediata del conjunto. Si después esa salida se acompaña de una observación interpretativa, el trabajo ya empieza a parecerse a un pequeño reporte.",
+    "crumbs": [
+      "II. Automatización y datos jurídicos",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>6. Explicar y controlar los resultados</span>"
+    ]
+  },
+  {
+    "objectID": "parte-2-modulo-2/06-capitulo.html#consultar-también-es-una-forma-de-explicar",
+    "href": "parte-2-modulo-2/06-capitulo.html#consultar-también-es-una-forma-de-explicar",
+    "title": "6. Explicar y controlar los resultados",
+    "section": "Consultar también es una forma de explicar",
+    "text": "Consultar también es una forma de explicar\nCuando la información crece, mirar fila por fila deja de ser suficiente. Allí aparece la lógica de consulta. Incluso antes de aprender SQL formalmente, conviene comprender su intuición básica: seleccionar campos, filtrar registros, ordenar resultados y limitar la vista sobre un conjunto de datos.\nLa lógica de SELECT ayuda justamente a enseñar que consultar no es lo mismo que modificar. Una consulta bien planteada vuelve los datos legibles desde una pregunta concreta sin alterar la base original (SQLite Documentation 2026). Ese detalle importa porque el trabajo con información jurídica y administrativa requiere a menudo distinguir entre lectura, edición y transformación.\n\nEjemplo 2. Intuición de consulta\nSELECT codigo, estado, responsable\nFROM expedientes\nWHERE estado = 'pendiente'\nORDER BY codigo;\nAunque esta sesión no te pide dominar SQL, sí conviene advertir qué está ocurriendo aquí: la consulta formula una pregunta específica sobre el conjunto y devuelve solo lo necesario para responderla. Esa forma de interrogar datos es ya una competencia de control y explicación.",
+    "crumbs": [
+      "II. Automatización y datos jurídicos",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>6. Explicar y controlar los resultados</span>"
+    ]
+  },
+  {
+    "objectID": "parte-2-modulo-2/06-capitulo.html#abrir-reutilizar-interpretar",
+    "href": "parte-2-modulo-2/06-capitulo.html#abrir-reutilizar-interpretar",
+    "title": "6. Explicar y controlar los resultados",
+    "section": "Abrir, reutilizar, interpretar",
+    "text": "Abrir, reutilizar, interpretar\nEn el sector público, trabajar con datos también supone pensar en acceso y reutilización. Abrir información no basta si los archivos siguen siendo opacos o difíciles de leer. Su valor público aumenta cuando pueden explorarse, combinarse y representarse de forma comprensible (García-García and Alonso-Magdaleno 2021). Por eso, la cadena entre dato, documento, visualización e interpretación no es un asunto menor ni puramente técnico. Es parte de la manera en que una organización se vuelve más inteligible para sí misma y para quienes dependen de sus servicios.",
     "crumbs": [
       "II. Automatización y datos jurídicos",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>6. Explicar y controlar los resultados</span>"
@@ -1073,7 +886,7 @@
     "href": "parte-2-modulo-2/06-capitulo.html#práctica-en-editor",
     "title": "6. Explicar y controlar los resultados",
     "section": "Práctica en editor",
-    "text": "Práctica en editor\nTrabaja con una tabla pequeña o con una lista de registros jurídicos y produce:\n\nuna limpieza mínima de los datos;\nuna salida resumida;\nuna observación breve sobre lo que muestran esos datos.\n\nLa herramienta puede ser Python, una tabla estructurada o una consulta simple, según lo que se esté usando en clase.",
+    "text": "Práctica en editor\nTrabaja con una tabla pequeña de registros jurídicos y produce tres cosas:\n\nuna limpieza mínima de campos o categorías;\nun resultado resumido;\nuna breve interpretación de por qué ese resultado importa.\n\nLa herramienta puede ser una tabla estructurada, un script sencillo de Python o una consulta elemental. Lo importante es que el ejercicio muestre una pregunta clara y una salida legible.",
     "crumbs": [
       "II. Automatización y datos jurídicos",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>6. Explicar y controlar los resultados</span>"
@@ -1084,7 +897,7 @@
     "href": "parte-2-modulo-2/06-capitulo.html#git-y-github",
     "title": "6. Explicar y controlar los resultados",
     "section": "Git y GitHub",
-    "text": "Git y GitHub\nSube al repositorio tanto el archivo de datos de prueba como el script, consulta o documento de resultados. Si limpiaste o transformaste la información, deja rastro de qué cambiaste.",
+    "text": "Git y GitHub\nSube tanto el archivo de datos de prueba como el script, consulta o documento de resultados. Si cambiaste nombres de campos, normalizaste estados o eliminaste duplicados, deja rastro de eso. La trazabilidad no importa solo para el código: también importa para la información que organizas.",
     "crumbs": [
       "II. Automatización y datos jurídicos",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>6. Explicar y controlar los resultados</span>"
@@ -1095,18 +908,7 @@
     "href": "parte-2-modulo-2/06-capitulo.html#pset-de-la-sesión",
     "title": "6. Explicar y controlar los resultados",
     "section": "PSET de la sesión",
-    "text": "PSET de la sesión\nOrganiza y explica información jurídica con un objetivo claro. El entregable puede consistir en:\n\nuna tabla limpia;\nun reporte breve;\nuna visualización simple;\nuna consulta o script que permita reproducir el resultado.\n\nEl PSET debe mostrar:\n\nuna pregunta clara;\ndatos mínimamente organizados;\nun resultado legible;\nuna breve interpretación de por qué importa.",
-    "crumbs": [
-      "II. Automatización y datos jurídicos",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>6. Explicar y controlar los resultados</span>"
-    ]
-  },
-  {
-    "objectID": "parte-2-modulo-2/06-capitulo.html#preguntas-de-repaso",
-    "href": "parte-2-modulo-2/06-capitulo.html#preguntas-de-repaso",
-    "title": "6. Explicar y controlar los resultados",
-    "section": "Preguntas de repaso",
-    "text": "Preguntas de repaso\n\n¿Qué diferencia hay entre documento, dato, campo y registro?\n¿Por qué no conviene abrir una tabla sin una pregunta previa?\n¿Qué vuelve inútil a un indicador?\n¿Por qué la limpieza de datos importa antes que la visualización?",
+    "text": "PSET de la sesión\nEl entregable puede consistir en una tabla organizada, un pequeño script o una consulta simple, acompañados por un reporte breve. Debe mostrar:\n\nqué pregunta se quiso responder;\nqué estructura de datos se usó;\nqué resultado se obtuvo;\npor qué ese resultado ayuda a explicar o controlar una situación.",
     "crumbs": [
       "II. Automatización y datos jurídicos",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>6. Explicar y controlar los resultados</span>"
@@ -1117,7 +919,18 @@
     "href": "parte-2-modulo-2/06-capitulo.html#ideas-clave",
     "title": "6. Explicar y controlar los resultados",
     "section": "Ideas clave",
-    "text": "Ideas clave\n\nlos datos sin pregunta suelen generar ruido;\nordenar información es una forma de pensar mejor el problema;\nreportar bien es una competencia jurídica y técnica a la vez;\ncontrolar resultados exige trazabilidad, no solo intuición.",
+    "text": "Ideas clave\n\nUn dato aislado rara vez explica algo por sí solo.\nOrdenar información es una forma de pensar el problema con mayor precisión.\nLos indicadores sirven cuando hacen visible algo accionable, no cuando solo acumulan números.\nVisualizar ayuda, pero no reemplaza el contexto ni la interpretación.\nConsultar datos también es una forma de control, porque permite leer con estructura sin alterar la base original.",
+    "crumbs": [
+      "II. Automatización y datos jurídicos",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>6. Explicar y controlar los resultados</span>"
+    ]
+  },
+  {
+    "objectID": "parte-2-modulo-2/06-capitulo.html#para-pensar-y-reflexionar",
+    "href": "parte-2-modulo-2/06-capitulo.html#para-pensar-y-reflexionar",
+    "title": "6. Explicar y controlar los resultados",
+    "section": "Para pensar y reflexionar",
+    "text": "Para pensar y reflexionar\nUna parte importante de la innovación jurídica no depende de herramientas espectaculares, sino de algo más sobrio: saber organizar información para que deje de ser ruido. En el mundo profesional, explicar bien un resultado puede ser tan valioso como producirlo. Esa es una de las competencias que este módulo intenta entrenar.",
     "crumbs": [
       "II. Automatización y datos jurídicos",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>6. Explicar y controlar los resultados</span>"
@@ -2893,7 +2706,7 @@
     "href": "referencias.html",
     "title": "Referencias",
     "section": "",
-    "text": "Ashley, Kevin D., Jaromír Savelka, and Matthias Grabmair. 2021. “A\nLaw School Course in Applied Legal Analytics and AI.” Law in\nContext 37 (1): 134–74. https://doi.org/10.26826/law-in-context.v37i1.125.\n\n\nContreras, Alfredo, and Joe McGrath. 2020. “Law, Technology, and\nPedagogy: Teaching Coding to Build a ‘Future-Proof’\nLawyer.” Minnesota Journal of Law, Science &\nTechnology 21 (2): 297–347. https://doi.org/10.24926/15529541.3828.\n\n\nGross, Sam. 2023. “PEP 703: Making the Global Interpreter Lock\nOptional in CPython.” https://peps.python.org/pep-0703/.\n\n\nPedregosa, Fabian, Gaël Varoquaux, Alexandre Gramfort, et al. 2011.\n“Scikit-Learn: Machine Learning in Python.” Journal of\nMachine Learning Research 12: 2825–30. https://jmlr.org/papers/v12/pedregosa11a.html.\n\n\nPython Documentation. 2024. “What’s New in Python 3.13.” https://docs.python.org/3/whatsnew/3.13.html.\n\n\nPython Documentation. 2025. “What’s New in Python 3.14.” https://docs.python.org/3/whatsnew/3.14.html.\n\n\nPython Documentation. 2026a. “General Python FAQ.” https://docs.python.org/3/faq/general.html.\n\n\nPython Documentation. 2026b. “History and License.” https://docs.python.org/3/license.html.\n\n\nPython Software Foundation. 2026. “About the Python Software\nFoundation.” https://www.python.org/psf/about/.\n\n\nPython.org. 2026. “Python Documentation by Version.” https://www.python.org/doc/versions/.\n\n\nRaschka, Sebastian, Joshua Patterson, and Corey Nolet. 2020.\n“Machine Learning in Python: Main Developments and Technology\nTrends in Data Science, Machine Learning, and Artificial\nIntelligence.” Information 11 (4): 193. https://doi.org/10.3390/info11040193.\n\n\nRyan, Trevor. 2021. “Coding for Critical Thinking: A Case Study in\nEmbedding Complementary Skills in Legal Education.” Legal\nEducation Review 31 (1): 81–104. https://doi.org/10.53300/001c.36060.\n\n\nVirtanen, Pauli, Ralf Gommers, Travis E. Oliphant, et al. 2020.\n“SciPy 1.0: Fundamental Algorithms for Scientific Computing in\nPython.” Nature Methods 17 (3): 261–72. https://doi.org/10.1038/s41592-019-0686-2.\n\n\nVolini, Anthony. 2020. “A Perspective on Technology Education for\nLaw Students.” Santa Clara High Technology Law Journal\n36 (2): 165–98. https://digitalcommons.law.scu.edu/chtlj/vol36/iss2/2/.",
+    "text": "Ashley, Kevin D., Jaromír Savelka, and Matthias Grabmair. 2021. “A\nLaw School Course in Applied Legal Analytics and AI.” Law in\nContext 37 (1): 134–74. https://doi.org/10.26826/law-in-context.v37i1.125.\n\n\nCairo, Alberto. 2017. “Visualización de Datos: Una\nImagen Puede Valer más Que Mil números, Pero\nNo Siempre más Que Mil Palabras.” El Profesional\nde La Información 26 (6): 1025–28. https://doi.org/10.3145/epi.2017.nov.02.\n\n\nContreras, Alfredo, and Joe McGrath. 2020. “Law, Technology, and\nPedagogy: Teaching Coding to Build a ‘Future-Proof’\nLawyer.” Minnesota Journal of Law, Science &\nTechnology 21 (2): 297–347. https://doi.org/10.24926/15529541.3828.\n\n\nGarcía-García, Jesús, and María Luisa Alonso-Magdaleno. 2021.\n“Herramientas de Visualización Gráfica\nOnline Para Datos Abiertos Presupuestarios de Administraciones\npúblicas.” Revista Española de La\nTransparencia.\n\n\nGorgolewski, Krzysztof et al. 2011.\n“Nipype: A Flexible, Lightweight and Extensible Neuroimaging Data\nProcessing Framework in Python.” Frontiers in\nNeuroinformatics 5: 13. https://doi.org/10.3389/fninf.2011.00013.\n\n\nGross, Sam. 2023. “PEP 703: Making the Global Interpreter Lock\nOptional in CPython.” https://peps.python.org/pep-0703/.\n\n\nMDN Web Docs. 2026. “Unicode.” https://developer.mozilla.org/en-US/docs/Glossary/Unicode.\n\n\nMendo, Carmen et al. 2013. “Del Acceso\na La Reutilización, Del Dato Al Documento: Una\nVisión Conceptual de La Información\npública.” Revista Española de\nDocumentación Científica.\n\n\nMermaid Documentation. 2026. “Flowcharts: Basic Syntax.” https://mermaid.js.org/syntax/flowchart.html.\n\n\nMonge-Fallas, Luis et al. 2024.\n“Fundamentos y Perspectivas Del Pensamiento Computacional: Un\nanálisis Integral Para La\nInvestigación.” Revista Innovaciones\nEducativas.\n\n\nPadrón, Carlos et al. 2021.\n“Aproximación a Una Definición de\nPensamiento Computacional.” RIED. Revista Iberoamericana de\nEducación a Distancia 24 (1): 55–76.\n\n\nPedregosa, Fabian, Gaël Varoquaux, Alexandre Gramfort, et al. 2011.\n“Scikit-Learn: Machine Learning in Python.” Journal of\nMachine Learning Research 12: 2825–30. https://jmlr.org/papers/v12/pedregosa11a.html.\n\n\nPerú. 2002. Ley Marco de Modernización de La\nGestión Del Estado, Ley nó 27658.\n\n\nPerú. 2022. Ley nó 31449, Ley Que Fortalece El\nLaboratorio de Gobierno y Transformación Digital Del\nEstado.\n\n\nPresidencia del Consejo de Ministros. 2002. Decreto Supremo\nnó 030-2002-PCM, Reglamento de La Ley Marco de\nModernización de La Gestión Del Estado.\n\n\nPython Documentation. 2024. “What’s New in Python 3.13.” https://docs.python.org/3/whatsnew/3.13.html.\n\n\nPython Documentation. 2025. “What’s New in Python 3.14.” https://docs.python.org/3/whatsnew/3.14.html.\n\n\nPython Documentation. 2026a. “Built-in Types.” https://docs.python.org/3/library/stdtypes.html.\n\n\nPython Documentation. 2026b. “General Python FAQ.” https://docs.python.org/3/faq/general.html.\n\n\nPython Documentation. 2026c. “History and License.” https://docs.python.org/3/license.html.\n\n\nPython Software Foundation. 2026. “About the Python Software\nFoundation.” https://www.python.org/psf/about/.\n\n\nPython.org. 2026. “Python Documentation by Version.” https://www.python.org/doc/versions/.\n\n\nRaschka, Sebastian, Joshua Patterson, and Corey Nolet. 2020.\n“Machine Learning in Python: Main Developments and Technology\nTrends in Data Science, Machine Learning, and Artificial\nIntelligence.” Information 11 (4): 193. https://doi.org/10.3390/info11040193.\n\n\nRyan, Trevor. 2021. “Coding for Critical Thinking: A Case Study in\nEmbedding Complementary Skills in Legal Education.” Legal\nEducation Review 31 (1): 81–104. https://doi.org/10.53300/001c.36060.\n\n\nSQLite Documentation. 2026. “SELECT.” https://www.sqlite.org/lang_select.html.\n\n\nVirtanen, Pauli, Ralf Gommers, Travis E. Oliphant, et al. 2020.\n“SciPy 1.0: Fundamental Algorithms for Scientific Computing in\nPython.” Nature Methods 17 (3): 261–72. https://doi.org/10.1038/s41592-019-0686-2.\n\n\nVolini, Anthony. 2020. “A Perspective on Technology Education for\nLaw Students.” Santa Clara High Technology Law Journal\n36 (2): 165–98. https://digitalcommons.law.scu.edu/chtlj/vol36/iss2/2/.\n\n\nWhite, Stephen A., and Derek Miers. 2011. BPMN 2.0 Handbook:\nMethods, Concepts, Case Studies and Standards in Business Process\nManagement. Future Strategies.",
     "crumbs": [
       "<span class='chapter-number'>25</span>  <span class='chapter-title'>Referencias</span>"
     ]

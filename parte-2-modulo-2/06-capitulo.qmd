@@ -1,142 +1,67 @@
-# 6. Explicar y controlar los resultados
+---
+title: "6. Explicar y controlar los resultados"
+---
+
+::: {.callout-note}
+## Qué aprenderás en esta sesión
+
+Esta sesión se concentra en el paso que sigue al modelado de procesos: organizar información para volverla legible, comparable y útil para decidir. A través de nociones como dato, campo, registro, indicador, visualización y consulta, el objetivo es mostrar que explicar resultados no consiste solo en acumular tablas, sino en transformar información dispersa en evidencia comprensible y accionable.
+:::
 
 ## ¿Por qué importa este tema?
 
-En derecho no basta con tener información: hay que ordenarla, explicarla y usarla para tomar mejores decisiones. Una tabla caótica sirve poco; un reporte claro puede cambiar mucho. Lo mismo ocurre con la gestión legal: si no se mide, no se entiende bien; y si no se entiende bien, se controla mal.
+En derecho y en gestión legal no basta con tener información. Hace falta ordenarla, formular preguntas sobre ella y producir salidas que ayuden a comprender una situación o a tomar decisiones mejores. Una tabla desordenada puede conservar muchos datos y, al mismo tiempo, no decir casi nada. Un reporte breve, en cambio, puede volver visible un patrón importante, una carga desigual, un plazo riesgoso o un conjunto de casos que merecen priorización.
+
+Ese paso, que parece técnico, también es intelectual. Entre el dato bruto y el documento útil existe una cadena de organización, descripción y reutilización que condiciona el valor final de la información [@mendo2013reutilizacion]. Trabajar con datos jurídicos no significa solo “pasar documentos a Excel”, sino aprender a distinguir campos, limpiar registros, construir indicadores y producir representaciones que tengan sentido para un problema concreto.
+
+La visualización entra después, no antes. Un gráfico puede revelar patrones con enorme potencia, pero sin contexto y lectura crítica también puede inducir interpretaciones equivocadas [@cairo2017visualizacion]. Por eso, el objetivo de esta sesión no es enseñar a decorar información. Es enseñar a explicarla y controlarla con mayor rigor.
 
 ::: {.callout-important}
 ## Idea central
-Datos útiles son datos organizados, legibles y conectados con una pregunta concreta.
+
+Los datos solo se vuelven útiles cuando están organizados en función de una pregunta, un criterio de lectura y una salida comprensible.
 :::
-
-## Qué aprenderás en esta sesión
-
-Al finalizar esta sesión, deberías poder:
-
-- distinguir entre dato, registro, campo e indicador;
-- organizar información jurídica básica;
-- limpiar y estructurar una tabla sencilla;
-- producir un reporte o visualización simple;
-- preparar evidencia reproducible para un PSET.
 
 ## Del documento al dato
 
-Uno de los cambios más importantes en entornos legaltech consiste en dejar de tratar toda la información como si fuera solo un conjunto de documentos aislados.
+Una parte relevante del trabajo jurídico sigue organizada en torno a documentos: escritos, resoluciones, contratos, expedientes, oficios, actas. Pero muchas veces esos documentos contienen datos que pueden aislarse para permitir seguimiento, control y análisis. Allí aparece una distinción básica que conviene volver explícita:
 
-Muchas veces conviene separar:
+- el **documento** es la pieza completa;
+- el **dato** es una unidad puntual de información;
+- el **campo** es la categoría bajo la cual ese dato se registra;
+- el **registro** es el conjunto de campos que describe un caso o una fila.
 
-- el documento como pieza completa;
-- los datos que ese documento contiene;
-- los campos que pueden convertirse en variables analizables.
+Pensemos en una tabla de expedientes. Puede contener campos como `codigo`, `estado`, `fecha_ingreso`, `responsable` y `prioridad`. Cada fila será un registro. Y varios registros, organizados bajo las mismas columnas, ya permiten formular preguntas comparables: cuántos expedientes siguen pendientes, qué responsable concentra mayor carga o qué casos urgentes aún no han sido revisados.
 
-Por ejemplo, una resolución puede ser un documento. Pero dentro de ella hay datos como:
+El punto importante es este: el valor de un dato no aparece solo. Depende de cómo se organiza, se relaciona y se transforma en información utilizable [@mendo2013reutilizacion].
 
-- fecha;
-- órgano emisor;
-- materia;
-- tipo de decisión;
-- monto;
-- estado de cumplimiento.
+## Ordenar información también es pensar mejor
 
-Cuando distinguimos esas capas, la información empieza a ser más útil para seguimiento, análisis y control.
+Antes de construir un indicador o una visualización, conviene revisar la calidad de la tabla. Una estructura pobre suele arruinar cualquier intento posterior de análisis. Eso ocurre, por ejemplo, cuando:
 
-## Vocabulario mínimo para trabajar con información
+- una misma columna mezcla fecha, observación y responsable;
+- el mismo estado aparece escrito de tres maneras distintas;
+- faltan criterios para los vacíos;
+- se repiten registros sin saber cuál es la versión válida;
+- la tabla no responde a ninguna pregunta concreta.
 
-Conviene manejar al menos estas cuatro nociones:
+En este punto conviene recordar una regla sobria pero muy útil: limpiar información no es una tarea mecánica separada del pensamiento. Es una forma de decidir qué cuenta como dato comparable y qué no.
 
-- **dato**: unidad básica de información;
-- **campo**: categoría o atributo del dato;
-- **registro**: conjunto de campos relacionados entre sí;
-- **indicador**: medida que ayuda a monitorear una situación.
+## Preguntar antes de medir
 
-Pensemos en una tabla de expedientes:
+Una tabla sirve mejor cuando está subordinada a una pregunta y no al revés. Algunas preguntas jurídicas o de gestión pueden ser muy simples:
 
-| codigo | estado | responsable | prioridad |
-|---|---|---|---|
-| EXP-001 | pendiente | Ana | alta |
-| EXP-002 | revisado | Luis | media |
+- ¿cuántos expedientes siguen pendientes?;
+- ¿qué observación se repite más?;
+- ¿qué contratos vencen este mes?;
+- ¿qué unidad concentra la mayor demora?;
+- ¿qué casos merecen atención prioritaria?
 
-Aquí:
+Lo decisivo no es la sofisticación matemática de la pregunta, sino su claridad. Una pregunta bien planteada ya organiza qué columnas importan, qué registros son relevantes y qué tipo de salida conviene construir.
 
-- `codigo`, `estado`, `responsable` y `prioridad` son campos;
-- cada fila es un registro;
-- el total de expedientes pendientes podría convertirse luego en un indicador.
+## Un ejemplo mínimo con registros
 
-::: {.callout-note}
-## Idea útil
-Un buen dato no es solo un dato existente. Es un dato que puede leerse, compararse y reutilizarse con un propósito.
-:::
-
-## Qué vuelve mala a una tabla
-
-Una tabla suele volverse poco útil cuando:
-
-- mezcla demasiadas cosas en una misma columna;
-- usa nombres ambiguos;
-- repite formatos distintos para lo mismo;
-- deja vacíos sin criterio;
-- no permite responder ninguna pregunta concreta.
-
-Por ejemplo, una columna llamada `observaciones varias` que mezcla texto libre, fechas, responsables y estados puede ser cómoda al inicio, pero difícil de analizar después.
-
-## Primer paso: ordenar la información
-
-Antes de pensar en gráficos o dashboards, conviene hacer algo mucho menos glamoroso y mucho más importante: ordenar la tabla.
-
-Eso implica revisar:
-
-- nombres de columnas;
-- consistencia de formatos;
-- duplicados;
-- valores faltantes;
-- categorías comparables.
-
-Un ejemplo didáctico con Python:
-
-```python
-expedientes = [
-    {"codigo": "EXP-001", "estado": "pendiente", "prioridad": "alta"},
-    {"codigo": "EXP-002", "estado": "Pendiente", "prioridad": "media"},
-    {"codigo": "EXP-003", "estado": "revisado", "prioridad": "alta"},
-]
-
-for expediente in expedientes:
-    expediente["estado"] = expediente["estado"].lower()
-
-print(expedientes)
-```
-
-Ese ajuste es simple, pero ya mejora la posibilidad de contar o clasificar registros sin errores evitables.
-
-## Qué preguntas vale la pena hacer a los datos
-
-Una buena práctica consiste en formular una pregunta antes de abrir la tabla. Por ejemplo:
-
-- ¿cuántos casos están pendientes?;
-- ¿qué tipo de observación se repite más?;
-- ¿qué responsable concentra mayor carga?;
-- ¿qué plazos están por vencer?;
-- ¿qué casos deberían priorizarse?
-
-La tabla sirve mejor cuando está subordinada a una pregunta y no al revés.
-
-## Ejemplo jurídico: carga de expedientes
-
-Imagina una tabla con estas columnas:
-
-- código;
-- estado;
-- fecha de ingreso;
-- responsable;
-- prioridad.
-
-Con eso ya puedes producir algo útil, por ejemplo:
-
-- número de expedientes pendientes;
-- casos de prioridad alta;
-- distribución por responsable.
-
-Un script mínimo:
+Un conjunto pequeño de datos puede verse así:
 
 ```python
 expedientes = [
@@ -144,7 +69,11 @@ expedientes = [
     {"codigo": "EXP-002", "estado": "revisado", "responsable": "Luis", "prioridad": "media"},
     {"codigo": "EXP-003", "estado": "pendiente", "responsable": "Ana", "prioridad": "alta"},
 ]
+```
 
+Con una estructura tan simple ya es posible responder una pregunta específica:
+
+```python
 pendientes = 0
 
 for expediente in expedientes:
@@ -154,133 +83,131 @@ for expediente in expedientes:
 print("Expedientes pendientes:", pendientes)
 ```
 
-Eso ya convierte una tabla en una respuesta.
+La utilidad pedagógica del ejemplo no está en su dificultad. Está en mostrar que una tabla comienza a volverse informativa cuando puede responder algo con claridad.
 
-## Indicadores y control
+## Qué es un indicador y qué no
 
-Un indicador no es cualquier número. Es un número que ayuda a monitorear una situación relevante.
-
-En contextos legales, algunos ejemplos de indicadores podrían ser:
+Un indicador no es cualquier número producido por una tabla. Es una medida que ayuda a monitorear un fenómeno relevante. Por ejemplo:
 
 - expedientes pendientes por unidad;
-- tiempo promedio de atención;
+- tiempo promedio de revisión;
 - porcentaje de casos observados;
-- número de contratos próximos a vencer;
-- cantidad de casos prioritarios sin revisión.
+- cantidad de trámites urgentes sin respuesta;
+- distribución de carga por responsable.
 
-Lo importante es no confundir acumulación de datos con control real. El control aparece cuando esos datos permiten ver algo accionable.
+La diferencia es importante porque muchas organizaciones acumulan cifras sin construir realmente control. Si un número no ayuda a detectar un problema, comparar situaciones o decidir una acción, entonces probablemente todavía no es un buen indicador.
 
-::: {.callout-tip}
-## Regla práctica
-Si un indicador no ayuda a tomar una decisión o a detectar un problema, probablemente todavía no es un buen indicador.
+::: {.callout-note}
+## Criterio útil
+
+Un indicador vale menos por su complejidad que por su capacidad de volver visible algo que importa.
 :::
-
-## Visualizar no es decorar
-
-La visualización puede ayudar a que ciertos patrones se vean mejor. Pero no toda visualización es útil. A veces una tabla bien ordenada explica más que un gráfico innecesario.
-
-Visualizar bien implica preguntarse:
-
-- ¿qué quiero mostrar?;
-- ¿a quién quiero explicárselo?;
-- ¿qué forma hace más visible el patrón?;
-- ¿qué nivel de detalle conviene?
-
-En algunos casos, bastará con un resumen textual:
-
-- 12 expedientes pendientes;
-- 7 de prioridad alta;
-- 5 asignados a la misma persona.
-
-En otros casos, una barra o una tabla comparativa puede ser suficiente.
-
-## SQL y bases de datos: una intuición inicial
-
-Aunque esta sesión no busca convertirte en especialista en bases de datos, sí conviene introducir una idea básica: cuando la información crece, ya no basta con mirar todo a mano.
-
-Allí aparece la lógica de consulta:
-
-- seleccionar ciertos campos;
-- filtrar registros;
-- ordenar resultados;
-- contar casos.
-
-Esa intuición está muy cerca de lo que luego hace una consulta SQL, aunque aquí todavía podamos trabajar con ejemplos más simples.
 
 ## Del dato al reporte
 
-Explicar resultados no significa solo contar cosas. También significa producir un reporte comprensible.
+Explicar resultados no consiste solo en contar. También consiste en producir una salida que diga qué se observó, por qué importa y qué acción podría seguirse. Una tabla puede ser la base del análisis, pero rara vez agota la tarea de comunicación.
 
-Un reporte útil suele responder:
+Por ejemplo, un reporte breve puede decir:
 
-- qué se observó;
-- por qué importa;
-- qué acción sugiere.
+> Se identificaron 14 expedientes pendientes. De ellos, 8 tienen prioridad alta y 6 se concentran en una misma responsable. Conviene redistribuir carga o revisar el criterio de asignación.
 
-Por ejemplo:
+Allí aparece ya el tránsito completo:
 
-> Se identificaron 12 expedientes pendientes, de los cuales 7 tienen prioridad alta. La mayor carga recae en una sola responsable. Conviene redistribuir revisión o establecer un criterio de priorización más claro.
+1. información organizada;
+2. pregunta clara;
+3. resultado legible;
+4. interpretación de su relevancia.
 
-Ese tipo de salida ya conecta datos con gestión.
+## Visualizar no es decorar
 
-## Puente hacia automatización documental
+La visualización puede volver más comprensible una tabla, pero no sustituye el análisis. Los datos abiertos, por ejemplo, adquieren mayor utilidad pública cuando se traducen en representaciones comprensibles [@garciagarcia2021visualizacion]. Sin embargo, esa traducción no debe producir la ilusión de que el gráfico “habla por sí solo”. Una visualización vale mucho cuando hace visibles los datos, pero sigue necesitando contexto e interpretación para no convertirse en una falsa evidencia autosuficiente [@cairo2017visualizacion].
 
-Cuando una tabla bien organizada alimenta un reporte, un resumen o una salida estandarizada, estamos muy cerca de la lógica de automatización documental.
+Esto vale especialmente en el ámbito jurídico y público, donde un gráfico puede resumir tendencias útiles, pero también simplificar demasiado decisiones complejas. Por eso conviene formular tres preguntas antes de visualizar:
 
-La secuencia es esta:
+- ¿qué quiero mostrar?;
+- ¿a quién necesito explicárselo?;
+- ¿qué patrón sería realmente más claro en esta forma que en una tabla?
 
-1. recibir datos;
-2. ordenarlos;
-3. analizarlos;
-4. producir una salida.
+En ocasiones la mejor salida será un gráfico de barras. En otras, una tabla limpia con tres líneas de interpretación será mucho más honesta y más útil.
 
-Eso puede terminar en:
+## Ejemplo 1. Un resumen simple con Python
 
-- un reporte;
-- una alerta;
-- una lista priorizada;
-- una plantilla con datos insertados.
+Podemos tomar un pequeño conjunto de casos y convertirlo en una salida legible:
+
+```python
+casos = [
+    {"codigo": "EXP-001", "estado": "pendiente"},
+    {"codigo": "EXP-002", "estado": "revisado"},
+    {"codigo": "EXP-003", "estado": "pendiente"},
+    {"codigo": "EXP-004", "estado": "observado"},
+]
+
+conteo = {}
+
+for caso in casos:
+    estado = caso["estado"]
+    if estado in conteo:
+        conteo[estado] = conteo[estado] + 1
+    else:
+        conteo[estado] = 1
+
+print(conteo)
+```
+
+El valor de este ejercicio está en que muestra cómo una lista de registros puede condensarse en una lectura más inmediata del conjunto. Si después esa salida se acompaña de una observación interpretativa, el trabajo ya empieza a parecerse a un pequeño reporte.
+
+## Consultar también es una forma de explicar
+
+Cuando la información crece, mirar fila por fila deja de ser suficiente. Allí aparece la lógica de consulta. Incluso antes de aprender SQL formalmente, conviene comprender su intuición básica: seleccionar campos, filtrar registros, ordenar resultados y limitar la vista sobre un conjunto de datos.
+
+La lógica de `SELECT` ayuda justamente a enseñar que consultar no es lo mismo que modificar. Una consulta bien planteada vuelve los datos legibles desde una pregunta concreta sin alterar la base original [@sqlite2026select]. Ese detalle importa porque el trabajo con información jurídica y administrativa requiere a menudo distinguir entre lectura, edición y transformación.
+
+### Ejemplo 2. Intuición de consulta
+
+```sql
+SELECT codigo, estado, responsable
+FROM expedientes
+WHERE estado = 'pendiente'
+ORDER BY codigo;
+```
+
+Aunque esta sesión no te pide dominar SQL, sí conviene advertir qué está ocurriendo aquí: la consulta formula una pregunta específica sobre el conjunto y devuelve solo lo necesario para responderla. Esa forma de interrogar datos es ya una competencia de control y explicación.
+
+## Abrir, reutilizar, interpretar
+
+En el sector público, trabajar con datos también supone pensar en acceso y reutilización. Abrir información no basta si los archivos siguen siendo opacos o difíciles de leer. Su valor público aumenta cuando pueden explorarse, combinarse y representarse de forma comprensible [@garciagarcia2021visualizacion]. Por eso, la cadena entre dato, documento, visualización e interpretación no es un asunto menor ni puramente técnico. Es parte de la manera en que una organización se vuelve más inteligible para sí misma y para quienes dependen de sus servicios.
 
 ## Práctica en editor
 
-Trabaja con una tabla pequeña o con una lista de registros jurídicos y produce:
+Trabaja con una tabla pequeña de registros jurídicos y produce tres cosas:
 
-- una limpieza mínima de los datos;
-- una salida resumida;
-- una observación breve sobre lo que muestran esos datos.
+- una limpieza mínima de campos o categorías;
+- un resultado resumido;
+- una breve interpretación de por qué ese resultado importa.
 
-La herramienta puede ser Python, una tabla estructurada o una consulta simple, según lo que se esté usando en clase.
+La herramienta puede ser una tabla estructurada, un script sencillo de Python o una consulta elemental. Lo importante es que el ejercicio muestre una pregunta clara y una salida legible.
 
 ## Git y GitHub
 
-Sube al repositorio tanto el archivo de datos de prueba como el script, consulta o documento de resultados. Si limpiaste o transformaste la información, deja rastro de qué cambiaste.
+Sube tanto el archivo de datos de prueba como el script, consulta o documento de resultados. Si cambiaste nombres de campos, normalizaste estados o eliminaste duplicados, deja rastro de eso. La trazabilidad no importa solo para el código: también importa para la información que organizas.
 
 ## PSET de la sesión
 
-Organiza y explica información jurídica con un objetivo claro. El entregable puede consistir en:
+El entregable puede consistir en una tabla organizada, un pequeño script o una consulta simple, acompañados por un reporte breve. Debe mostrar:
 
-- una tabla limpia;
-- un reporte breve;
-- una visualización simple;
-- una consulta o script que permita reproducir el resultado.
-
-El PSET debe mostrar:
-
-- una pregunta clara;
-- datos mínimamente organizados;
-- un resultado legible;
-- una breve interpretación de por qué importa.
-
-## Preguntas de repaso
-
-1. ¿Qué diferencia hay entre documento, dato, campo y registro?
-2. ¿Por qué no conviene abrir una tabla sin una pregunta previa?
-3. ¿Qué vuelve inútil a un indicador?
-4. ¿Por qué la limpieza de datos importa antes que la visualización?
+- qué pregunta se quiso responder;
+- qué estructura de datos se usó;
+- qué resultado se obtuvo;
+- por qué ese resultado ayuda a explicar o controlar una situación.
 
 ## Ideas clave
 
-- los datos sin pregunta suelen generar ruido;
-- ordenar información es una forma de pensar mejor el problema;
-- reportar bien es una competencia jurídica y técnica a la vez;
-- controlar resultados exige trazabilidad, no solo intuición.
+- Un dato aislado rara vez explica algo por sí solo.
+- Ordenar información es una forma de pensar el problema con mayor precisión.
+- Los indicadores sirven cuando hacen visible algo accionable, no cuando solo acumulan números.
+- Visualizar ayuda, pero no reemplaza el contexto ni la interpretación.
+- Consultar datos también es una forma de control, porque permite leer con estructura sin alterar la base original.
+
+## Para pensar y reflexionar
+
+Una parte importante de la innovación jurídica no depende de herramientas espectaculares, sino de algo más sobrio: saber organizar información para que deje de ser ruido. En el mundo profesional, explicar bien un resultado puede ser tan valioso como producirlo. Esa es una de las competencias que este módulo intenta entrenar.
