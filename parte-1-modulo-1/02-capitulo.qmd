@@ -97,7 +97,6 @@ Para trabajar bien estos ejercicios necesitas dos cosas muy concretas:
 
 Si todavía no tienes ese entorno listo, revisa la sección de **Tutoriales** del manual, especialmente las guías de instalación de Python y de uso de Visual Studio Code. La idea es que llegues a los ejercicios con un espacio de trabajo sencillo, estable y listo para probar código sin fricción innecesaria.
 
-Sugerencia práctica: abre un ejercicio, léelo línea por línea, ejecútalo, cambia algo pequeño y vuelve a ejecutarlo. Si no entiendes una línea, no avances todavía: prueba esa línea hasta que te resulte clara.
 :::
 
 ### Ejercicio 1. La iniciación: el primer código que casi todo programador escribe
@@ -129,7 +128,7 @@ Hola, mundo
 ```
 :::
 
-Eso ocurre porque `print()` toma el texto recibido y lo envía a la salida estándar, que en estos ejercicios será la terminal.
+Ese resultado aparece porque `print()` toma exactamente el texto que recibió entre comillas y lo envía a la salida estándar, que aquí ves en la terminal. Si cambias `"Hola, mundo"` por `"Hola, Derecho"` o por tu propio nombre, la salida cambiará de inmediato. También puedes probar a escribir dos líneas con `print()` para comprobar que Python ejecuta las instrucciones en el orden en que aparecen.
 
 ### Ejercicio 2. Dar nombre a la información: variables y tipos de datos
 
@@ -173,7 +172,7 @@ Tipo de esta_matriculado: <class 'bool'>
 ```
 :::
 
-Ese resultado ayuda a ver que Python distingue entre texto, enteros, decimales y valores lógicos porque cada uno se usa de manera distinta en las operaciones del programa.
+Ese resultado ayuda a ver que Python no trata todos los datos por igual: distingue entre texto, enteros, decimales y valores lógicos porque cada tipo sirve para operaciones distintas. Para experimentar, cambia `"Manu"` por otro nombre, reemplaza `36` por `36.5` o sustituye `True` por `False`, y observa cómo cambia lo que muestra `type(...)`. Así podrás comprobar que no solo importa el valor, sino también la forma en que Python lo clasifica.
 
 ### Ejercicio 3. Hacer que el programa te escuche: entradas y salidas
 
@@ -209,7 +208,7 @@ Hola, Ana
 ```
 :::
 
-Eso ocurre porque `input()` recoge lo que escribes y `print()` lo incorpora inmediatamente a la respuesta del programa.
+Eso ocurre porque `input()` captura como texto exactamente lo que escribes después de la pregunta y lo guarda en `nombre_usuario`; luego `print()` reutiliza ese contenido para construir el saludo. Puedes probar varios cambios: modifica la pregunta, cambia el mensaje de salida por algo como `print("Bienvenida,", nombre_usuario)` o añade una segunda línea con `print("Tu nombre tiene", len(nombre_usuario), "caracteres")` para empezar a ver que un mismo dato puede reutilizarse de varias maneras.
 
 ### Ejercicio 4. Cambiar la forma del dato: convertir tipos
 
@@ -254,7 +253,7 @@ Tipo despues de str(): <class 'str'>
 ```
 :::
 
-La lección principal es que `input()` siempre parte de texto, y por eso muchas veces hay que convertir el dato antes de operar con él.
+La lección principal es que `input()` siempre parte de texto, aunque tú creas haber escrito un número. Por eso la conversión con `int()` es necesaria cuando luego quieres calcular, comparar o contar. Para comprobarlo por tu cuenta, prueba a escribir otro número, cambia `int()` por `float()` para ver qué pasa con valores decimales, o comenta temporalmente la línea de conversión y añade una operación matemática: notarás de inmediato por qué el tipo del dato importa.
 
 ### Ejercicio 5. Empezar a calcular y comparar
 
@@ -322,7 +321,7 @@ El primer numero es mayor?: True
 ```
 :::
 
-Si el segundo número fuera `0`, aparecerían mensajes de advertencia en lugar de los resultados de división. Eso pasa porque el `if` actúa como una barrera de seguridad antes de ejecutar una operación inválida.
+Si el segundo número fuera `0`, aparecerían mensajes de advertencia en lugar de los resultados de división. Eso pasa porque el `if` revisa primero si la operación es segura y solo permite dividir cuando el divisor no es cero. Vale la pena experimentar aquí: prueba con `12` y `5` para ver cómo cambian la división, el residuo y la división entera; usa `12` y `4` para comprobar por qué `Es multiplo?` da `True`; y luego prueba con `12` y `0` para observar cómo el bloque `else` evita que el programa falle.
 
 ### Ejercicio 6. La primera decisión del programa
 
@@ -372,7 +371,7 @@ Desaprobado
 ```
 :::
 
-La diferencia entre una salida y otra muestra que Python no ejecuta ambos bloques: elige solo el que corresponde según la condición.
+La diferencia entre una salida y otra muestra que Python no ejecuta ambos bloques: evalúa la condición y elige solo el camino que corresponde. Si quieres experimentar, prueba con `11`, `10` y `20` para ver con claridad dónde está el límite, o cambia la regla a `nota >= 13` para observar cómo una pequeña modificación en la condición altera el comportamiento completo del programa.
 
 ### Ejercicio 7. Cuando no basta con dos caminos
 
@@ -432,7 +431,7 @@ Desaprobado
 ```
 :::
 
-La utilidad de `elif` es justamente esa: ordenar varios caminos posibles sin perder legibilidad.
+La utilidad de `elif` es justamente esa: ordenar varios caminos posibles sin perder legibilidad y sin necesidad de escribir condiciones desconectadas entre sí. Para explorarlo mejor, prueba con `18`, `17`, `11` y `10` para ver cómo cada valor cae en una rama distinta. También puedes añadir otra categoría, por ejemplo `elif nota >= 15: print("Muy bien")`, y comprobar cómo el orden de las condiciones cambia el resultado.
 
 ### Ejercicio 8. Repetir sin copiar y pegar
 
@@ -469,7 +468,7 @@ Numero actual: 4
 ```
 :::
 
-El patrón se entiende mejor si piensas que `for` toma un valor, ejecuta el bloque, pasa al siguiente y repite hasta terminar la secuencia.
+El patrón se entiende mejor si piensas que `for` toma un valor, ejecuta el bloque, pasa al siguiente y repite hasta terminar la secuencia. Para ver el mecanismo con más claridad, cambia `range(5)` por `range(3)` o `range(10)` y observa cómo se acorta o se alarga la salida. También puedes modificar el `print()` para mostrar otro texto, o usar `range(1, 6)` para comprobar que la secuencia puede empezar en otro número.
 
 ### Ejercicio 9. Insistir hasta que algo cambie
 
@@ -511,7 +510,7 @@ Acceso permitido
 ```
 :::
 
-La idea clave es que `while` revisa la condición antes de cada nueva vuelta. Mientras siga siendo verdadera, el ciclo continúa.
+La idea clave es que `while` revisa la condición antes de cada nueva vuelta. Mientras la comparación siga siendo verdadera, el ciclo continúa; cuando deja de serlo, el programa sale del bucle y pasa a la siguiente línea. Para experimentar, cambia la clave esperada por otro valor, añade un mensaje como `print("Clave incorrecta")` dentro del ciclo o escribe varias claves erróneas seguidas para sentir mejor cómo funciona la repetición condicionada.
 
 ### Ejercicio 10. Escribir una vez, usar muchas veces
 
@@ -554,7 +553,7 @@ El programa define una función llamada `sumar` y luego la reutiliza varias vece
 ```
 :::
 
-La ventaja pedagógica de este ejercicio es clara: si mañana cambias la lógica de la suma por otra operación, bastará con modificar la función una sola vez.
+La ventaja pedagógica de este ejercicio es clara: la lógica queda concentrada en un solo lugar y luego puede reutilizarse cuantas veces quieras. Si mañana cambias la operación central, no tendrías que corregir cada llamada una por una. Para comprobarlo, sustituye `primer_numero + segundo_numero` por `primer_numero * segundo_numero`, cambia el nombre de la función o agrega una nueva llamada como `print(sumar(100, 250))`. Así verás cómo una sola definición controla muchos resultados.
 
 ### Ejercicio 11. Guardar varios elementos en un mismo lugar
 
@@ -587,7 +586,7 @@ Cantidad de expedientes: 5
 ```
 :::
 
-Este resultado es pequeño, pero la idea que introduce es grande: una lista permite manejar varias piezas de información bajo un mismo nombre.
+Este resultado es pequeño, pero la idea que introduce es grande: una lista permite manejar varias piezas de información bajo un mismo nombre y luego operar con el conjunto completo. Para experimentar, agrega o elimina elementos de `expedientes` y observa cómo cambia automáticamente el resultado de `len()`. También puedes reemplazar los códigos por nombres de clientes, artículos o documentos para ver que la estructura sigue funcionando igual aunque cambie el contenido.
 
 ### Ejercicio 12. Hacer que varias listas caminen juntas
 
@@ -626,7 +625,7 @@ EXP-003 - Resuelto - prioridad 1
 ```
 :::
 
-La enseñanza importante aquí es que muchas tablas o registros del mundo real pueden pensarse como listas que avanzan coordinadamente.
+La enseñanza importante aquí es que muchas tablas o registros del mundo real pueden pensarse como listas que avanzan coordinadamente. `zip()` funciona como un pequeño mecanismo de emparejamiento por posición: primer elemento con primer elemento, segundo con segundo, y así sucesivamente. Para probarlo, cambia un estado, agrega una nueva fila completa en las tres listas o modifica el `print()` para mostrar una frase más descriptiva. Eso te ayudará a ver cómo se forma cada línea de salida.
 
 ### Ejercicio 13. Poner orden en la información
 
@@ -663,7 +662,7 @@ Lista ordenada: ['apelacion', 'audiencia', 'contrato', 'demanda', 'prueba']
 ```
 :::
 
-La utilidad de `sorted()` va más allá del ejemplo: ordenar hace más legible la información y ayuda a detectar patrones o valores repetidos.
+La utilidad de `sorted()` va más allá del ejemplo: ordenar vuelve la información más legible y facilita comparar, revisar o detectar patrones. Aquí el cambio visible en la terminal ocurre porque Python toma la lista original y construye otra siguiendo el orden alfabético. Puedes experimentar agregando nuevas palabras, usando mayúsculas en alguna de ellas o cambiando el contenido por apellidos o nombres de juzgados. Así verás que el criterio de orden también depende de cómo están escritos los datos.
 
 ### Ejercicio 14. Domar el texto: limpiar, separar y transformar
 
@@ -734,9 +733,13 @@ Correo limpio: estudiante@ejemplo.com
 ```
 :::
 
-Este ejercicio resume muy bien una idea transversal del capítulo: una tarea aparentemente pequeña puede requerir varios pasos bien ordenados para producir un resultado limpio y útil.
+Este ejercicio resume muy bien una idea transversal del capítulo: una tarea aparentemente pequeña puede requerir varios pasos bien ordenados para producir un resultado limpio y útil. Cada línea transforma el texto de una manera específica, y la terminal te deja ver ese proceso casi como si fuera una bitácora paso a paso. Para experimentar, cambia el contenido de `texto`, usa otra frase en `mensaje`, modifica la extensión del archivo o reemplaza la coma del CSV por otro separador. También puedes probar qué ocurre si eliminas `strip()` del correo: notarás enseguida por qué limpiar antes de trabajar con texto suele ser tan importante.
 
-## Conclusiones del  capítulo
+## Conclusiones del capítulo
+
+Después de recorrer la historia breve de Python y de practicar con instrucciones fundamentales, conviene detenerse un momento para mirar el conjunto. El capítulo no solo presentó comandos aislados: mostró una forma de pensar. Poco a poco viste que programar consiste en dar instrucciones claras, observar resultados, corregir, probar de nuevo y entender por qué una decisión en el código cambia lo que ocurre en la terminal.
+
+Las ideas que siguen reúnen lo más importante de este recorrido. Léelas no como una lista para memorizar, sino como un mapa de lo que ya empezaste a comprender y de lo que después servirá como base para ejercicios más cercanos al trabajo jurídico.
 
 ::: {.callout-tip}
 ## Ideas clave
@@ -758,6 +761,8 @@ Este ejercicio resume muy bien una idea transversal del capítulo: una tarea apa
 - `sorted()` permite generar una versión ordenada de la información para volverla más legible y manejable.
 - Las operaciones sobre texto permiten limpiar, normalizar, separar, reemplazar y verificar cadenas de caracteres con precisión.
 :::
+
+Antes de pasar al siguiente capítulo, también vale la pena hacer una pausa más personal. Aprender a programar no consiste únicamente en saber qué hace una función o una estructura de control; también implica notar qué tipo de razonamiento se va formando mientras practicas. Las preguntas siguientes buscan precisamente eso: ayudarte a conectar la técnica con tu manera de pensar, con tus dudas y con posibles usos jurídicos de lo que acabas de aprender.
 
 ::: {.callout-caution}
 ## Para pensar y reflexionar

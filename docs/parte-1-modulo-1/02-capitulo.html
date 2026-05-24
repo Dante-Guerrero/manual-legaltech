@@ -507,7 +507,6 @@ flowchart TB
 <li>Visual Studio Code o un editor de texto equivalente.</li>
 </ul>
 <p>Si todavía no tienes ese entorno listo, revisa la sección de <strong>Tutoriales</strong> del manual, especialmente las guías de instalación de Python y de uso de Visual Studio Code. La idea es que llegues a los ejercicios con un espacio de trabajo sencillo, estable y listo para probar código sin fricción innecesaria.</p>
-<p>Sugerencia práctica: abre un ejercicio, léelo línea por línea, ejecútalo, cambia algo pequeño y vuelve a ejecutarlo. Si no entiendes una línea, no avances todavía: prueba esa línea hasta que te resulte clara.</p>
 </div>
 </div>
 <section id="ejercicio-1.-la-iniciación-el-primer-código-que-casi-todo-programador-escribe" class="level3">
@@ -533,7 +532,7 @@ flowchart TB
 <div class="terminal-output">
 <pre class="text"><code>Hola, mundo</code></pre>
 </div>
-<p>Eso ocurre porque <code>print()</code> toma el texto recibido y lo envía a la salida estándar, que en estos ejercicios será la terminal.</p>
+<p>Ese resultado aparece porque <code>print()</code> toma exactamente el texto que recibió entre comillas y lo envía a la salida estándar, que aquí ves en la terminal. Si cambias <code>"Hola, mundo"</code> por <code>"Hola, Derecho"</code> o por tu propio nombre, la salida cambiará de inmediato. También puedes probar a escribir dos líneas con <code>print()</code> para comprobar que Python ejecuta las instrucciones en el orden en que aparecen.</p>
 </section>
 </section>
 <section id="ejercicio-2.-dar-nombre-a-la-información-variables-y-tipos-de-datos" class="level3">
@@ -572,7 +571,7 @@ Tipo de edad: &lt;class 'int'&gt;
 Tipo de promedio: &lt;class 'float'&gt;
 Tipo de esta_matriculado: &lt;class 'bool'&gt;</code></pre>
 </div>
-<p>Ese resultado ayuda a ver que Python distingue entre texto, enteros, decimales y valores lógicos porque cada uno se usa de manera distinta en las operaciones del programa.</p>
+<p>Ese resultado ayuda a ver que Python no trata todos los datos por igual: distingue entre texto, enteros, decimales y valores lógicos porque cada tipo sirve para operaciones distintas. Para experimentar, cambia <code>"Manu"</code> por otro nombre, reemplaza <code>36</code> por <code>36.5</code> o sustituye <code>True</code> por <code>False</code>, y observa cómo cambia lo que muestra <code>type(...)</code>. Así podrás comprobar que no solo importa el valor, sino también la forma en que Python lo clasifica.</p>
 </section>
 </section>
 <section id="ejercicio-3.-hacer-que-el-programa-te-escuche-entradas-y-salidas" class="level3">
@@ -602,7 +601,7 @@ Tipo de esta_matriculado: &lt;class 'bool'&gt;</code></pre>
 <pre class="text"><code>Como te llamas? Ana
 Hola, Ana</code></pre>
 </div>
-<p>Eso ocurre porque <code>input()</code> recoge lo que escribes y <code>print()</code> lo incorpora inmediatamente a la respuesta del programa.</p>
+<p>Eso ocurre porque <code>input()</code> captura como texto exactamente lo que escribes después de la pregunta y lo guarda en <code>nombre_usuario</code>; luego <code>print()</code> reutiliza ese contenido para construir el saludo. Puedes probar varios cambios: modifica la pregunta, cambia el mensaje de salida por algo como <code>print("Bienvenida,", nombre_usuario)</code> o añade una segunda línea con <code>print("Tu nombre tiene", len(nombre_usuario), "caracteres")</code> para empezar a ver que un mismo dato puede reutilizarse de varias maneras.</p>
 </section>
 </section>
 <section id="ejercicio-4.-cambiar-la-forma-del-dato-convertir-tipos" class="level3">
@@ -641,7 +640,7 @@ Tipo inicial: &lt;class 'str'&gt;
 Tipo despues de int(): &lt;class 'int'&gt;
 Tipo despues de str(): &lt;class 'str'&gt;</code></pre>
 </div>
-<p>La lección principal es que <code>input()</code> siempre parte de texto, y por eso muchas veces hay que convertir el dato antes de operar con él.</p>
+<p>La lección principal es que <code>input()</code> siempre parte de texto, aunque tú creas haber escrito un número. Por eso la conversión con <code>int()</code> es necesaria cuando luego quieres calcular, comparar o contar. Para comprobarlo por tu cuenta, prueba a escribir otro número, cambia <code>int()</code> por <code>float()</code> para ver qué pasa con valores decimales, o comenta temporalmente la línea de conversión y añade una operación matemática: notarás de inmediato por qué el tipo del dato importa.</p>
 </section>
 </section>
 <section id="ejercicio-5.-empezar-a-calcular-y-comparar" class="level3">
@@ -703,7 +702,7 @@ Es multiplo?: True
 Potencia: 1728
 El primer numero es mayor?: True</code></pre>
 </div>
-<p>Si el segundo número fuera <code>0</code>, aparecerían mensajes de advertencia en lugar de los resultados de división. Eso pasa porque el <code>if</code> actúa como una barrera de seguridad antes de ejecutar una operación inválida.</p>
+<p>Si el segundo número fuera <code>0</code>, aparecerían mensajes de advertencia en lugar de los resultados de división. Eso pasa porque el <code>if</code> revisa primero si la operación es segura y solo permite dividir cuando el divisor no es cero. Vale la pena experimentar aquí: prueba con <code>12</code> y <code>5</code> para ver cómo cambian la división, el residuo y la división entera; usa <code>12</code> y <code>4</code> para comprobar por qué <code>Es multiplo?</code> da <code>True</code>; y luego prueba con <code>12</code> y <code>0</code> para observar cómo el bloque <code>else</code> evita que el programa falle.</p>
 </section>
 </section>
 <section id="ejercicio-6.-la-primera-decisión-del-programa" class="level3">
@@ -743,7 +742,7 @@ Aprobado</code></pre>
 <pre class="text"><code>Escribe la nota final: 8
 Desaprobado</code></pre>
 </div>
-<p>La diferencia entre una salida y otra muestra que Python no ejecuta ambos bloques: elige solo el que corresponde según la condición.</p>
+<p>La diferencia entre una salida y otra muestra que Python no ejecuta ambos bloques: evalúa la condición y elige solo el camino que corresponde. Si quieres experimentar, prueba con <code>11</code>, <code>10</code> y <code>20</code> para ver con claridad dónde está el límite, o cambia la regla a <code>nota &gt;= 13</code> para observar cómo una pequeña modificación en la condición altera el comportamiento completo del programa.</p>
 </section>
 </section>
 <section id="ejercicio-7.-cuando-no-basta-con-dos-caminos" class="level3">
@@ -789,7 +788,7 @@ Aprobado</code></pre>
 <pre class="text"><code>Escribe la nota final: 7
 Desaprobado</code></pre>
 </div>
-<p>La utilidad de <code>elif</code> es justamente esa: ordenar varios caminos posibles sin perder legibilidad.</p>
+<p>La utilidad de <code>elif</code> es justamente esa: ordenar varios caminos posibles sin perder legibilidad y sin necesidad de escribir condiciones desconectadas entre sí. Para explorarlo mejor, prueba con <code>18</code>, <code>17</code>, <code>11</code> y <code>10</code> para ver cómo cada valor cae en una rama distinta. También puedes añadir otra categoría, por ejemplo <code>elif nota &gt;= 15: print("Muy bien")</code>, y comprobar cómo el orden de las condiciones cambia el resultado.</p>
 </section>
 </section>
 <section id="ejercicio-8.-repetir-sin-copiar-y-pegar" class="level3">
@@ -821,7 +820,7 @@ Numero actual: 2
 Numero actual: 3
 Numero actual: 4</code></pre>
 </div>
-<p>El patrón se entiende mejor si piensas que <code>for</code> toma un valor, ejecuta el bloque, pasa al siguiente y repite hasta terminar la secuencia.</p>
+<p>El patrón se entiende mejor si piensas que <code>for</code> toma un valor, ejecuta el bloque, pasa al siguiente y repite hasta terminar la secuencia. Para ver el mecanismo con más claridad, cambia <code>range(5)</code> por <code>range(3)</code> o <code>range(10)</code> y observa cómo se acorta o se alarga la salida. También puedes modificar el <code>print()</code> para mostrar otro texto, o usar <code>range(1, 6)</code> para comprobar que la secuencia puede empezar en otro número.</p>
 </section>
 </section>
 <section id="ejercicio-9.-insistir-hasta-que-algo-cambie" class="level3">
@@ -857,7 +856,7 @@ Numero actual: 4</code></pre>
 Escribe la clave de acceso: 1234
 Acceso permitido</code></pre>
 </div>
-<p>La idea clave es que <code>while</code> revisa la condición antes de cada nueva vuelta. Mientras siga siendo verdadera, el ciclo continúa.</p>
+<p>La idea clave es que <code>while</code> revisa la condición antes de cada nueva vuelta. Mientras la comparación siga siendo verdadera, el ciclo continúa; cuando deja de serlo, el programa sale del bucle y pasa a la siguiente línea. Para experimentar, cambia la clave esperada por otro valor, añade un mensaje como <code>print("Clave incorrecta")</code> dentro del ciclo o escribe varias claves erróneas seguidas para sentir mejor cómo funciona la repetición condicionada.</p>
 </section>
 </section>
 <section id="ejercicio-10.-escribir-una-vez-usar-muchas-veces" class="level3">
@@ -895,7 +894,7 @@ Acceso permitido</code></pre>
 18
 2354663</code></pre>
 </div>
-<p>La ventaja pedagógica de este ejercicio es clara: si mañana cambias la lógica de la suma por otra operación, bastará con modificar la función una sola vez.</p>
+<p>La ventaja pedagógica de este ejercicio es clara: la lógica queda concentrada en un solo lugar y luego puede reutilizarse cuantas veces quieras. Si mañana cambias la operación central, no tendrías que corregir cada llamada una por una. Para comprobarlo, sustituye <code>primer_numero + segundo_numero</code> por <code>primer_numero * segundo_numero</code>, cambia el nombre de la función o agrega una nueva llamada como <code>print(sumar(100, 250))</code>. Así verás cómo una sola definición controla muchos resultados.</p>
 </section>
 </section>
 <section id="ejercicio-11.-guardar-varios-elementos-en-un-mismo-lugar" class="level3">
@@ -923,7 +922,7 @@ Acceso permitido</code></pre>
 <div class="terminal-output">
 <pre class="text"><code>Cantidad de expedientes: 5</code></pre>
 </div>
-<p>Este resultado es pequeño, pero la idea que introduce es grande: una lista permite manejar varias piezas de información bajo un mismo nombre.</p>
+<p>Este resultado es pequeño, pero la idea que introduce es grande: una lista permite manejar varias piezas de información bajo un mismo nombre y luego operar con el conjunto completo. Para experimentar, agrega o elimina elementos de <code>expedientes</code> y observa cómo cambia automáticamente el resultado de <code>len()</code>. También puedes reemplazar los códigos por nombres de clientes, artículos o documentos para ver que la estructura sigue funcionando igual aunque cambie el contenido.</p>
 </section>
 </section>
 <section id="ejercicio-12.-hacer-que-varias-listas-caminen-juntas" class="level3">
@@ -957,7 +956,7 @@ Acceso permitido</code></pre>
 EXP-002 - Archivado - prioridad 2
 EXP-003 - Resuelto - prioridad 1</code></pre>
 </div>
-<p>La enseñanza importante aquí es que muchas tablas o registros del mundo real pueden pensarse como listas que avanzan coordinadamente.</p>
+<p>La enseñanza importante aquí es que muchas tablas o registros del mundo real pueden pensarse como listas que avanzan coordinadamente. <code>zip()</code> funciona como un pequeño mecanismo de emparejamiento por posición: primer elemento con primer elemento, segundo con segundo, y así sucesivamente. Para probarlo, cambia un estado, agrega una nueva fila completa en las tres listas o modifica el <code>print()</code> para mostrar una frase más descriptiva. Eso te ayudará a ver cómo se forma cada línea de salida.</p>
 </section>
 </section>
 <section id="ejercicio-13.-poner-orden-en-la-información" class="level3">
@@ -989,7 +988,7 @@ EXP-003 - Resuelto - prioridad 1</code></pre>
 <pre class="text"><code>Lista original: ['demanda', 'audiencia', 'prueba', 'apelacion', 'contrato']
 Lista ordenada: ['apelacion', 'audiencia', 'contrato', 'demanda', 'prueba']</code></pre>
 </div>
-<p>La utilidad de <code>sorted()</code> va más allá del ejemplo: ordenar hace más legible la información y ayuda a detectar patrones o valores repetidos.</p>
+<p>La utilidad de <code>sorted()</code> va más allá del ejemplo: ordenar vuelve la información más legible y facilita comparar, revisar o detectar patrones. Aquí el cambio visible en la terminal ocurre porque Python toma la lista original y construye otra siguiendo el orden alfabético. Puedes experimentar agregando nuevas palabras, usando mayúsculas en alguna de ellas o cambiando el contenido por apellidos o nombres de juzgados. Así verás que el criterio de orden también depende de cómo están escritos los datos.</p>
 </section>
 </section>
 <section id="ejercicio-14.-domar-el-texto-limpiar-separar-y-transformar" class="level3">
@@ -1055,12 +1054,14 @@ Empieza con 'reporte_'?: True
 Termina en '.pdf'?: True
 Correo limpio: estudiante@ejemplo.com</code></pre>
 </div>
-<p>Este ejercicio resume muy bien una idea transversal del capítulo: una tarea aparentemente pequeña puede requerir varios pasos bien ordenados para producir un resultado limpio y útil.</p>
+<p>Este ejercicio resume muy bien una idea transversal del capítulo: una tarea aparentemente pequeña puede requerir varios pasos bien ordenados para producir un resultado limpio y útil. Cada línea transforma el texto de una manera específica, y la terminal te deja ver ese proceso casi como si fuera una bitácora paso a paso. Para experimentar, cambia el contenido de <code>texto</code>, usa otra frase en <code>mensaje</code>, modifica la extensión del archivo o reemplaza la coma del CSV por otro separador. También puedes probar qué ocurre si eliminas <code>strip()</code> del correo: notarás enseguida por qué limpiar antes de trabajar con texto suele ser tan importante.</p>
 </section>
 </section>
 </section>
 <section id="conclusiones-del-capítulo" class="level2">
 <h2 class="anchored" data-anchor-id="conclusiones-del-capítulo">Conclusiones del capítulo</h2>
+<p>Después de recorrer la historia breve de Python y de practicar con instrucciones fundamentales, conviene detenerse un momento para mirar el conjunto. El capítulo no solo presentó comandos aislados: mostró una forma de pensar. Poco a poco viste que programar consiste en dar instrucciones claras, observar resultados, corregir, probar de nuevo y entender por qué una decisión en el código cambia lo que ocurre en la terminal.</p>
+<p>Las ideas que siguen reúnen lo más importante de este recorrido. Léelas no como una lista para memorizar, sino como un mapa de lo que ya empezaste a comprender y de lo que después servirá como base para ejercicios más cercanos al trabajo jurídico.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1091,6 +1092,7 @@ Correo limpio: estudiante@ejemplo.com</code></pre>
 </ul>
 </div>
 </div>
+<p>Antes de pasar al siguiente capítulo, también vale la pena hacer una pausa más personal. Aprender a programar no consiste únicamente en saber qué hace una función o una estructura de control; también implica notar qué tipo de razonamiento se va formando mientras practicas. Las preguntas siguientes buscan precisamente eso: ayudarte a conectar la técnica con tu manera de pensar, con tus dudas y con posibles usos jurídicos de lo que acabas de aprender.</p>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
