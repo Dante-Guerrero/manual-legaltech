@@ -2,23 +2,37 @@
 
 Libro web desarrollado con Quarto para el curso **Legal Tech** de la Facultad de Derecho y Economía de la **Universidad Científica del Sur**.
 
-El repositorio organiza el contenido del curso como un manual digital navegable, con portada, presentación de docentes, introducción, módulos de aprendizaje, evaluaciones y referencias.
+El repositorio combina dos capas de trabajo:
 
-## Objetivo
+- el **libro** propiamente dicho, escrito en archivos `.qmd`;
+- un **subsistema auxiliar** en la carpeta [+](/Users/dante/github/manual-legaltech/+) para papers, notas atómicas, instrucciones y scripts de apoyo.
 
-Construir un manual web que sirva como soporte del curso, con una estructura clara, navegación por capítulos y una presentación visual consistente para estudiantes y docentes.
+## Propósito
 
-## Estructura del proyecto
+Construir un manual universitario práctico para estudiantes de Derecho, orientado a pensamiento computacional, automatización, datos, web, nube, ciberseguridad e inteligencia artificial aplicada al entorno jurídico.
 
-- `_quarto.yml`: configuración principal del libro y orden de los capítulos.
-- `index.qmd`: portada e ingreso al manual.
-- `parte-0/`: páginas iniciales, incluyendo profesores e introducción.
-- `parte-1-modulo-1/` a `parte-4-modulo-4/`: módulos de aprendizaje.
-- `evaluaciones/`: evaluaciones y exámenes.
-- `referencias.qmd`: bibliografía y materiales de referencia.
-- `styles.css`: estilos personalizados del libro.
-- `images/`: imágenes usadas en portada y perfiles.
-- `_book/`: salida renderizada generada por Quarto.
+## Estructura principal
+
+- [_quarto.yml](/Users/dante/github/manual-legaltech/_quarto.yml): configuración general del libro y orden de capítulos.
+- [index.qmd](/Users/dante/github/manual-legaltech/index.qmd): portada del manual.
+- [parte-0](/Users/dante/github/manual-legaltech/parte-0): páginas iniciales.
+- [parte-1-modulo-1](/Users/dante/github/manual-legaltech/parte-1-modulo-1) a [parte-4-modulo-4](/Users/dante/github/manual-legaltech/parte-4-modulo-4): módulos del curso.
+- [evaluaciones](/Users/dante/github/manual-legaltech/evaluaciones): evaluaciones y exámenes.
+- [referencias.qmd](/Users/dante/github/manual-legaltech/referencias.qmd): bibliografía final.
+- [styles.css](/Users/dante/github/manual-legaltech/styles.css): estilos personalizados.
+- [images](/Users/dante/github/manual-legaltech/images): imágenes del libro.
+- [docs](/Users/dante/github/manual-legaltech/docs): salida renderizada del sitio.
+
+## Carpeta `+`
+
+La carpeta [+](/Users/dante/github/manual-legaltech/+) concentra el sistema auxiliar del proyecto:
+
+- [+/x](/Users/dante/github/manual-legaltech/+/x): instrucciones operativas y scripts.
+- [+/y](/Users/dante/github/manual-legaltech/+/y): papers en PDF y sus conversiones a Markdown.
+- [+/z](/Users/dante/github/manual-legaltech/+/z): notas atómicas en lógica zettelkasten.
+
+Punto de entrada recomendado:
+[+/README.md](/Users/dante/github/manual-legaltech/+/README.md)
 
 ## Requisitos
 
@@ -32,26 +46,24 @@ Renderizar el libro:
 quarto render
 ```
 
-Levantar una vista previa local:
+Vista previa local:
 
 ```bash
 quarto preview
 ```
 
-La salida HTML se genera en la carpeta `_book/`.
+Convertir nuevos papers agregados a `+/y/papers`:
 
-## Diseño actual
+```bash
+./+/x/scripts/convert_papers.sh --new
+```
 
-El libro usa:
+## Criterio editorial
 
-- formato `book` de Quarto
-- tema HTML base `cosmo`
-- estilos personalizados en `styles.css`
+El libro debe mantenerse como un manual autocontenido, claro y pedagógico. Las instrucciones internas, notas metodológicas, propuestas de citas y materiales de apoyo no deben vivir dentro de los capítulos, sino en la carpeta `+`.
 
-## Convención de contenido
+El plan editorial vigente está en [+/x/instrucciones/PLAN.md](/Users/dante/github/manual-legaltech/+/x/instrucciones/PLAN.md).
 
-Cada capítulo se escribe en archivos `.qmd` y el orden de lectura se controla desde `_quarto.yml`. Esto permite mantener el contenido modular y reorganizar el manual sin alterar la navegación final del sitio.
+## Estado actual
 
-## Estado del repositorio
-
-El proyecto ya cuenta con una estructura funcional de libro web y una primera capa de diseño. La siguiente etapa natural es seguir refinando el contenido académico y fortalecer la identidad visual del manual.
+El repositorio ya tiene una estructura funcional de libro web y una infraestructura auxiliar más ordenada para investigación, citas, estilo y continuidad editorial. La línea natural de trabajo es seguir fortaleciendo capítulos, bibliografía y notas de apoyo sin mezclar esas capas entre sí.
