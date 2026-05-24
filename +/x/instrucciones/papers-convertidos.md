@@ -1,0 +1,61 @@
+# Papers convertidos
+
+Lista de PDF en `+/y/papers` que ya tienen su equivalente en Markdown dentro de `+/y/papers_md`.
+
+Total: 55
+
+- `almeyda-2025-automatizacion-robotica-de-procesos-aplicado-a-los-procesos-de-compra-un-caso-de-la-industria.pdf`
+- `alvarez-vega-2024-inteligencia-artificial-en-la-fiscalizacion-tributaria-desafios-al-debido-proceso-administrativo.pdf`
+- `arsene-2021-laction-publique-au-prisme-de-la-gouvernementalite-numerique.pdf`
+- `bainbridge-1983-ironies-of-automation.pdf`
+- `canongia-2004-foresight-inteligencia-competitiva-e-gestao-do-conhecimento-instrumentos-para-a-gestao-da-inovacao.pdf`
+- `coimbra-2021-o-caso-embraer-como-uma-antecipacao-efetiva-da-lei-no-10-973-2004.pdf`
+- `contreras-2020-law-technology-and-pedagogy.pdf`
+- `ferraz-2025-inteligencia-artificial-na-administracao-publica-caminhos-para-a-transparencia-acessibilidade-e-go.pdf`
+- `galvez-2025-assessing-digital-technology-development-in-latin-american-countries-challenges-drivers-and-futur.pdf`
+- `gao-2023-can-robotic-process-automation-technology-enable-risk-data-analysis-for-customs-post-clearance-audit.pdf`
+- `garcia-2007-lactuacio-administrativa-automatitzada-algunes-experiencies-en-lambit-tributari.pdf`
+- `germundsson-2024-automating-social-assistance-exploring-the-use-of-robotic-process-automation-in-the-swedish-persona.pdf`
+- `gomez-2025-la-operatividad-de-la-inteligencia-artificial-aplicada-a-las-resoluciones-judiciales.pdf`
+- `gorgolewski-2011-nipype.pdf`
+- `gramfort-2013-meg-and-eeg-data-analysis-with-mne-python.pdf`
+- `guerrero-barreto-2022-un-sistema-de-control-casero-en-el-poder-judicial-peruano.pdf`
+- `huapaya-tapia-sf-propuesta-de-una-nueva-interpretacion-del-concepto-de-acto-administrativo-contenido-en-la-ley-de-procedimiento-administrativo-general.pdf`
+- `huapaya-tapia-sf-reflexiones-para-el-transito-de-una-administracion-electronica-hacia-una-administracion-digital-en-el-ordenamiento-publico-peruano.pdf`
+- `hyun-2021-improvement-of-business-productivity-by-applying-robotic-process-automation.pdf`
+- `jay-vanegas-2024-politicas-publicas-ante-la-revolucion-de-la-inteligencia-artificial-en-colombia.pdf`
+- `johansson-2023-public-value-creation-and-robotic-process-automation-normative-descriptive-and-prescriptive-issue.pdf`
+- `latorre-2025-reporte-de-tecnologia-legaltech.pdf`
+- `lindgren-2024-ironies-of-automation-and-their-implications-for-public-service-automation.pdf`
+- `lopez-2023-la-regulacion-europea-de-los-mercados-digitales-justificacion-tecnicas-y-limites.pdf`
+- `maita-cruz-2022-inteligencia-artificial-en-la-gestion-publica-en-tiempos-de-covid-19.pdf`
+- `martin-2012-clean-code-a-handbook-of-agile-software-craftsmanship.pdf`
+- `martin-delgado-2009-naturaleza-concepto-y-regimen-juridico-de-la-actuacion-administrativa-automatizada.pdf`
+- `martin-tirado-sf-balance-y-perspectivas-del-regimen-de-las-iniciativas-privadas-en-el-peru.pdf`
+- `meurer-2017-sympy.pdf`
+- `moreno-2025-la-actuacion-administrativa-algoritmica-una-propuesta-doctrinal-desde-la-dogmatica-de-la-accion-adm.pdf`
+- `munoz-2022-el-control-judicial-de-la-actividad-administrativa-automatizada.pdf`
+- `ocana-fernandez-2021-inteligencia-artificial-ia-aplicada-a-la-gestion-publica.pdf`
+- `paez-2025-hacia-una-inteligencia-artificial-centrada-en-los-seres-humanos-contribuciones-de-las-ciencias-soci.pdf`
+- `patil-2010-pymc.pdf`
+- `pedregosa-2011-scikit-learn.pdf`
+- `piridi-2024-legacy-system-integration-with-power-automate-desktop-challenges-and-best-practices-a-deep-dive-i.pdf`
+- `prieto-2023-el-uso-de-sistemas-basados-en-inteligencia-artificial-por-las-administraciones-publicas-estado-actu.pdf`
+- `raschka-2020-machine-learning-in-python.pdf`
+- `reina-2024-la-transparencia-de-los-algoritmos-desde-la-normativa-sobre-transparencia-y-acceso-a-la-informacion.pdf`
+- `ribeiro-2025-inteligencia-artificial-nas-organizacoes-publicas-brasileiras-heterogeneidades-e-capacidades-em-tec.pdf`
+- `romo-santana-2023-el-negocio-del-legal-tech-una-revision-bibliografica.pdf`
+- `roys-2025-inteligencia-artificial-y-su-impacto-sobre-la-gerencia-estrategica-y-la-cultura-investigativa.pdf`
+- `ryan-2021-coding-for-critical-thinking.pdf`
+- `sanchez-borja-2025-adopcion-de-plataformas-de-desarrollo-low-code-no-code-democratizacion-del-desarrollo-de-software.pdf`
+- `savelka-2021-a-law-school-course-in-applied-legal-analytics-and-ai.pdf`
+- `schrarstzhaupt-2024-paineis-de-monitoramento-interativos-da-pandemia-de-covid-19-no-mundo-com-o-uso-de-dados-abertos-ant.pdf`
+- `sobczak-2021-the-use-of-robotic-process-automation-rpa-as-an-element-of-smart-city-implementation-a-case-study.pdf`
+- `sweigart-2015-automate-the-boring-stuff-with-python-practical-programming-for-total-beginners.pdf`
+- `valdivia-2016-la-participacion-de-los-privados-en-la-actividad-de-supervision-en-el-sector-electrico-peruano-brev.pdf`
+- `valdivia-2019-los-servicios-publicos-locales-en-el-peru-una-aproximacion-a-su-caracterizacion-juridica.pdf`
+- `van-der-walt-2014-scikit-image.pdf`
+- `virtanen-2020-scipy-1-0.pdf`
+- `volini-2020-a-perspective-on-technology-education-for-law-students.pdf`
+- `yigitcanlar-2024-unlocking-artificial-intelligence-adoption-in-local-governments-best-practice-lessons-from-real-wor.pdf`
+- `zegarra-valdivia-2021-el-uso-de-herramientas-tecnologicas-en-la-lucha-contra-el-covid-19-y-sus-implicancias-en-el-derecho-fundamental-a-la-proteccion-de-datos-personales.pdf`
