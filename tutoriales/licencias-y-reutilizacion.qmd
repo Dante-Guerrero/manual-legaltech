@@ -2,81 +2,68 @@
 
 ## ¿Para qué sirve este tutorial?
 
-Cuando trabajas con repositorios, código o recursos ajenos, no basta con que algo sea público o fácil de descargar. También importa bajo qué licencia se comparte, qué libertades concede y qué condiciones impone para copiar, modificar, redistribuir o mezclar materiales con otros proyectos [@bain2007softwarelibre1; @bain2007softwarelibre2].
+En un curso que trabaja con repositorios, código, plantillas y recursos digitales, la reutilización no puede tratarse como si fuera una simple operación técnica. También es una operación jurídica. Que un archivo sea visible, descargable o clonable no responde por sí mismo a la pregunta decisiva: bajo qué condiciones puede usarse, modificarse o redistribuirse [@bain2007softwarelibre1; @bain2007softwarelibre2; @githublicensing2026].
 
 ## Una historia breve antes de mirar un archivo `LICENSE`
 
-La historia de las licencias en software libre no gira alrededor de una pregunta burocrática, sino de una tensión bastante de fondo: cómo usar el derecho de autor para garantizar libertades de uso, copia, modificación y distribución en lugar de restringirlas del modo más cerrado posible [@bain2007softwarelibre1; @bain2007softwarelibre2]. Ese punto es importante porque evita un error conceptual muy común: creer que “libre” significa “sin derecho” o “sin reglas”.
+La discusión sobre licencias de software no empezó como un problema de formulario, sino como una disputa sobre la forma en que el derecho de autor podía usarse para restringir o, por el contrario, para garantizar ciertas libertades de uso, copia, modificación y distribución [@bain2007softwarelibre1; @bain2007softwarelibre2]. Ese punto es importante porque corrige una confusión muy extendida: el software libre no vive fuera del derecho, sino que se apoya precisamente en instrumentos jurídicos para producir un régimen de circulación distinto.
 
-Los materiales de Bain y coautores muestran precisamente eso: el software libre no funciona fuera de la propiedad intelectual, sino dentro de ella, apoyándose en licencias que reorganizan qué puede hacer el usuario con el programa [@bain2007softwarelibre1; @bain2007softwarelibre2]. Jacovkis, por su parte, agrega un matiz muy útil para este curso: hablar de software libre también es hablar de producción colectiva de conocimiento, de comunidades que comparten, corrigen y expanden herramientas de manera acumulativa [@jacovkis2009softwarelibre].
+Jacovkis añade una idea que conviene conservar en un manual como este: el software libre también expresa una forma de producción colectiva de conocimiento, donde la mejora de herramientas depende de comunidades que comparten, corrigen y expanden trabajo ajeno [@jacovkis2009softwarelibre]. Visto así, el archivo `LICENSE` no es un adorno burocrático del repositorio, sino una pieza central de su arquitectura normativa.
 
-Ese trasfondo ayuda a leer de otra manera algo que a veces parece trivial. Un archivo `LICENSE` no está allí para decorar el repositorio. Está allí para traducir, en términos jurídicos concretos, cómo puede circular, transformarse o redistribuirse el material que estás mirando.
+## Copyright, copyleft y copyleft reforzado
 
-## Ideas básicas
+En su forma más simple, el copyright funciona como un régimen de exclusividad. Si el autor no concede permiso, el tercero no puede copiar, modificar ni redistribuir legítimamente la obra más allá de los límites que reconozca el ordenamiento [@bain2007softwarelibre2]. GitHub lo explica con claridad: si publicas código sin licencia, el derecho de autor sigue operando por defecto y los demás no reciben automáticamente permiso para reproducir, distribuir o crear obras derivadas [@githublicensing2026].
 
-- **Software propietario**: suele distribuirse mediante licencias que restringen con más fuerza el uso, la copia, la modificación o la redistribución [@bain2007softwarelibre2].
-- **Software libre / open source**: no está fuera del derecho de autor, sino que usa licencias para garantizar ciertas libertades de uso, copia, modificación y distribución [@bain2007softwarelibre1; @bain2007softwarelibre2].
-- **Licencia**: es el instrumento jurídico que define qué se puede hacer con el material y bajo qué reglas [@bain2007softwarelibre2].
+El copyleft trabaja con la misma base jurídica, pero le da una orientación distinta. En lugar de usar el copyright solo para cerrar el acceso, lo usa para obligar a que determinadas libertades se mantengan también en las versiones derivadas [@bain2007softwarelibre1; @bain2007softwarelibre2]. Por eso se dice a veces que el copyleft no niega el derecho de autor: lo invierte estratégicamente. La variante reforzada de esa lógica aparece en licencias como la AGPL, que extienden la exigencia de compartir código incluso cuando la modificación se ofrece como servicio a través de una red [@choosealicenselicenses2026].
 
-También conviene distinguir entre dos planos que suelen mezclarse:
-
-- el plano técnico: si puedes acceder, copiar o ejecutar un archivo;
-- el plano jurídico: si tienes permiso para reutilizarlo, modificarlo o redistribuirlo de cierto modo.
-
-Muchos conflictos nacen justamente cuando alguien confunde acceso técnico con autorización jurídica.
+La diferencia conceptual puede formularse así. El copyright cerrado parte de la reserva. El copyleft parte de la apertura condicionada. Ambos usan derecho de autor; lo que cambia es la manera de distribuir permisos y obligaciones.
 
 ::: {.callout-note}
 ## Regla simple
-Que un repositorio sea visible no significa automáticamente que puedas reutilizarlo de cualquier manera. La visibilidad facilita el acceso; la licencia define el alcance jurídico de ese acceso [@bain2007softwarelibre2].
+
+Que un repositorio sea público en GitHub no significa que pueda reutilizarse libremente. La publicidad facilita acceso y lectura; la licencia define el alcance jurídico de ese acceso [@githublicensing2026].
 :::
 
-## Qué conviene revisar en un repositorio
+## Las licencias que GitHub pone normalmente al alcance
 
-Antes de reutilizar un repositorio o un recurso digital, conviene revisar al menos cinco cosas: si tiene archivo `LICENSE`, qué tipo de licencia usa, si exige atribución, si impone compartir cambios bajo la misma licencia y si establece restricciones o incompatibilidades relevantes. Esas diferencias no son decorativas; afectan directamente cómo puedes integrar ese material en tu propio trabajo [@bain2007softwarelibre2].
+Cuando creas un repositorio nuevo, GitHub ofrece un selector de licencias y remite al proyecto **Choose a License** como punto de partida para escoger entre licencias abiertas comunes [@githublicensing2026; @choosealicense2026]. Ese repertorio no agota todo el universo posible, pero sí reúne las familias con las que un estudiante se encontrará más a menudo. Conviene leerlas no como nombres sueltos, sino como respuestas distintas a una misma pregunta: cuánto permito, qué exijo conservar y hasta dónde obligo a compartir las mejoras.
 
-En la práctica, esa revisión puede hacerse como un pequeño checklist:
+La licencia **MIT** es el caso clásico de licencia permisiva. Permite usar, copiar, modificar y redistribuir con muy pocas condiciones, básicamente conservar el aviso de copyright y la licencia [@choosealicenselicenses2026]. Por eso suele verse en proyectos que priorizan circulación amplia y baja fricción.
 
-1. localiza el archivo `LICENSE` o una sección equivalente;
-2. identifica el tipo de licencia;
-3. revisa si exige conservar avisos de autoría o copyright;
-4. revisa si obliga a publicar modificaciones bajo la misma licencia;
-5. revisa si hay condiciones especiales para redistribución, compatibilidad o uso comercial.
+La **Apache License 2.0** también es permisiva, pero añade una estructura más explícita respecto de avisos, cambios y concesión de patentes [@choosealicenselicenses2026]. Suele elegirse cuando se quiere apertura con un marco algo más detallado que MIT.
 
-No necesitas convertirte en especialista para hacer esta primera lectura. Lo importante es no saltarte el paso.
+Las licencias **BSD de 2 y 3 cláusulas** pertenecen igualmente al campo permisivo. Conservan la lógica de permitir reutilización amplia, aunque la versión de 3 cláusulas agrega una protección adicional frente al uso del nombre de los autores o contribuyentes para promocionar derivados sin autorización [@choosealicenselicenses2026].
 
-## ¿Por qué esto importa a un jurista?
+La **GPLv3** representa el copyleft fuerte. Permite usar, modificar y redistribuir, pero exige que las obras derivadas distribuidas mantengan la misma licencia y hagan disponible el código fuente correspondiente [@choosealicenselicenses2026]. Su lógica no es “cerrar”, sino impedir que una mejora privativa se apropie de un trabajo que ingresó bajo términos de libertad recíproca.
 
-Porque la reutilización tecnológica también tiene dimensión jurídica. Supone permisos, cumplimiento, compatibilidad, trazabilidad y responsabilidad, y además obliga a distinguir entre acceso material al archivo y derecho efectivo a reutilizarlo en otro contexto [@bain2007softwarelibre1; @mendo2013reutilizacion].
+La **LGPLv3** mantiene una lógica de copyleft más acotada, usualmente pensada para bibliotecas. Permite que un programa más amplio interactúe con la biblioteca sin imponer necesariamente la misma licencia a todo el conjunto, aunque sí conserva obligaciones sobre la parte específicamente licenciada bajo LGPL [@choosealicenselicenses2026].
 
-También importa por una razón más amplia: hablar de software libre no es hablar solo de precio o conveniencia técnica, sino de formas de producción colectiva de conocimiento, auditoría y circulación de herramientas que pueden ser estudiadas y corregidas por una comunidad [@jacovkis2009softwarelibre; @bain2007softwarelibre1].
+La **AGPLv3** lleva el copyleft a un punto más intenso al considerar también el uso por red. Si una versión modificada se ofrece como servicio, debe ponerse a disposición el código fuente de esa versión [@choosealicenselicenses2026]. Para un curso de Legal Tech, esta diferencia importa porque muchas herramientas actuales ya no se distribuyen solo como software instalado, sino como servicios accesibles en línea.
 
-Para estudiantes de Derecho esto tiene un interés doble. Por un lado, porque muestra que la dimensión jurídica del entorno digital no aparece solo cuando hay litigio o regulación estatal. También aparece en decisiones cotidianas sobre uso, mezcla y redistribución de materiales. Por otro, porque enseña a leer la infraestructura digital con el mismo cuidado con que se leería una cláusula contractual relevante.
+La **MPL 2.0** suele describirse como copyleft débil o a nivel de archivo. Exige compartir bajo la misma licencia los archivos modificados que ya estaban cubiertos por MPL, pero no necesariamente arrastra toda la obra mayor a la misma licencia [@choosealicenselicenses2026]. En la práctica, funciona como una fórmula intermedia entre permisividad amplia y reciprocidad fuerte.
 
-## Aplicación práctica
+Finalmente, **The Unlicense** intenta aproximarse a una dedicación al dominio público y elimina al máximo las condiciones de reutilización, aunque conserva la habitual exclusión de garantías [@choosealicenselicenses2026]. Es una opción extrema en la dirección de la permisividad.
 
-Cuando uses recursos ajenos para una práctica o proyecto, sigue una secuencia simple: identifica la fuente, revisa la licencia, documenta qué reutilizaste y evita copiar sin criterio. Esa secuencia protege mejor tanto la trazabilidad académica como el cumplimiento básico de las reglas de reutilización [@bain2007softwarelibre2; @mendo2013reutilizacion].
+## Qué conviene mirar en un repositorio concreto
 
-1. identifica la fuente;
-2. revisa la licencia;
-3. documenta qué reutilizaste;
-4. evita copiar sin criterio.
+En la práctica, la lectura jurídica mínima de un repositorio puede apoyarse en unas pocas preguntas: si tiene archivo `LICENSE`, qué tipo de licencia usa, si exige conservar avisos de autoría, si obliga a compartir cambios bajo la misma licencia y si introduce exigencias especiales respecto de patentes, red, bibliotecas o promoción comercial [@bain2007softwarelibre2; @githublicensing2026].
 
-Un buen ejemplo de esta lógica es el propio ecosistema Python: su historia institucional está asociada a una política de distribución abierta y a una documentación oficial pública, pero eso no elimina la necesidad de entender bajo qué licencia circulan el software y los materiales [@pythonlicense2026].
+No hace falta convertir cada consulta en un seminario de propiedad intelectual. Pero sí hace falta resistir la tentación de asumir que “está en GitHub” equivale a “está disponible para cualquier uso”. GitHub mismo advierte que la ausencia de licencia no crea permisos de reutilización, aunque el código sea visible y el repositorio pueda incluso ser forkeado dentro de la plataforma [@githublicensing2026].
 
-Si tomas una porción de código, una plantilla, una imagen o una hoja de estilos, procura dejar rastro claro de dos cosas: de dónde salió y en qué condiciones se reutilizó. Esa trazabilidad es útil incluso cuando la licencia es permisiva, porque evita que el proyecto quede apoyado en materiales cuya procedencia luego nadie puede reconstruir.
+## Por qué esto importa especialmente a un jurista
 
-## Qué errores conviene evitar
+Para un estudiante de Derecho, este tutorial tiene un interés que va más allá del software. Obliga a distinguir entre acceso material y habilitación normativa, entre posibilidad técnica y permiso jurídico, entre disponibilidad de un recurso y condiciones de circulación [@mendo2013reutilizacion]. Esa distinción aparece también en muchos otros ámbitos del trabajo jurídico contemporáneo: datos públicos, documentos administrativos, contenidos digitales, bases de datos y materiales colaborativos.
 
-Hay al menos cuatro errores frecuentes en esta materia:
+Además, la cuestión de las licencias enseña a leer infraestructura. Un jurista no solo interpreta normas estatales o contratos privados en sentido tradicional. También necesita entender cómo un entorno técnico incorpora reglas de uso, redistribución, trazabilidad y responsabilidad en sus propios artefactos [@jacovkis2009softwarelibre; @bain2007softwarelibre1].
 
-- creer que “está en GitHub” equivale a “puedo usarlo como quiera”;
-- confundir software libre con ausencia total de condiciones;
-- reutilizar materiales sin guardar la fuente;
-- mezclar recursos con licencias incompatibles sin notarlo.
+## Aplicación práctica para el curso
 
-Ninguno de estos errores suele venir de mala fe. Casi siempre vienen de prisa, descuido o falta de hábito. Por eso conviene tratar la revisión de licencias como parte normal del flujo de trabajo, no como un trámite excepcional.
+Cuando reutilices código, una plantilla, una imagen, una hoja de estilos o una pequeña función encontrada en otro repositorio, conviene seguir una secuencia sobria: identificar la fuente, leer la licencia, anotar qué tomaste y registrar bajo qué condiciones lo incorporaste [@bain2007softwarelibre2; @mendo2013reutilizacion]. Esa disciplina protege tanto la integridad académica como el cumplimiento básico de reglas de reutilización.
 
-::: {.callout-tip}
-## Lo relevante en este curso
-No se espera una teoría exhaustiva de licencias. Se espera una cultura mínima de reutilización responsable: saber mirar un archivo `LICENSE`, reconocer que las libertades de uso están condicionadas jurídicamente y dejar rastro claro de las fuentes empleadas [@bain2007softwarelibre2; @jacovkis2009softwarelibre].
-:::
+Si la licencia es permisiva, la obligación quizá sea solo conservar avisos y atribución. Si es copyleft, el problema puede desplazarse hacia la obligación de mantener la misma licencia en determinadas redistribuciones. Si no hay licencia, lo prudente es no asumir permiso donde el titular no lo ha concedido expresamente [@githublicensing2026; @choosealicense2026].
+
+## Cierre
+
+La lección principal de este tutorial es sencilla, aunque no trivial. En GitHub no basta con saber clonar, copiar o pegar. También importa saber bajo qué régimen jurídico circula lo que estás usando. El copyright no desaparece porque el archivo sea público; el copyleft no elimina el derecho de autor, sino que lo usa para imponer reciprocidad; y las licencias permisivas no significan ausencia de reglas, sino reglas más livianas [@bain2007softwarelibre1; @bain2007softwarelibre2; @choosealicenselicenses2026].
+
+Si el curso busca formar una cultura mínima de trabajo responsable, entonces revisar un archivo `LICENSE` debería sentirse tan normal como revisar la fuente de una cita o la fecha de una norma. En ambos casos, lo que está en juego es la misma virtud: no trabajar sobre supuestos vagos cuando el propio material ofrece la información necesaria para decidir mejor.

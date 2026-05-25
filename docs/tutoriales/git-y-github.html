@@ -320,16 +320,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <ul>
   <li><a href="#para-qué-sirve-este-tutorial" id="toc-para-qué-sirve-este-tutorial" class="nav-link active" data-scroll-target="#para-qué-sirve-este-tutorial">¿Para qué sirve este tutorial?</a></li>
   <li><a href="#una-historia-breve-antes-del-primer-commit" id="toc-una-historia-breve-antes-del-primer-commit" class="nav-link" data-scroll-target="#una-historia-breve-antes-del-primer-commit">Una historia breve antes del primer commit</a></li>
-  <li><a href="#qué-es-cada-cosa" id="toc-qué-es-cada-cosa" class="nav-link" data-scroll-target="#qué-es-cada-cosa">Qué es cada cosa</a></li>
-  <li><a href="#paso-1.-clona-un-repositorio" id="toc-paso-1.-clona-un-repositorio" class="nav-link" data-scroll-target="#paso-1.-clona-un-repositorio">Paso 1. Clona un repositorio</a></li>
-  <li><a href="#paso-2.-revisa-el-estado" id="toc-paso-2.-revisa-el-estado" class="nav-link" data-scroll-target="#paso-2.-revisa-el-estado">Paso 2. Revisa el estado</a></li>
-  <li><a href="#paso-3.-haz-un-cambio-y-regístralo" id="toc-paso-3.-haz-un-cambio-y-regístralo" class="nav-link" data-scroll-target="#paso-3.-haz-un-cambio-y-regístralo">Paso 3. Haz un cambio y regístralo</a></li>
-  <li><a href="#paso-4.-sube-el-cambio" id="toc-paso-4.-sube-el-cambio" class="nav-link" data-scroll-target="#paso-4.-sube-el-cambio">Paso 4. Sube el cambio</a></li>
-  <li><a href="#paso-5.-vuelve-a-mirar-el-historial" id="toc-paso-5.-vuelve-a-mirar-el-historial" class="nav-link" data-scroll-target="#paso-5.-vuelve-a-mirar-el-historial">Paso 5. Vuelve a mirar el historial</a></li>
-  <li><a href="#buenas-prácticas-mínimas" id="toc-buenas-prácticas-mínimas" class="nav-link" data-scroll-target="#buenas-prácticas-mínimas">Buenas prácticas mínimas</a></li>
-  <li><a href="#github-en-contexto-de-curso" id="toc-github-en-contexto-de-curso" class="nav-link" data-scroll-target="#github-en-contexto-de-curso">GitHub en contexto de curso</a></li>
+  <li><a href="#qué-conviene-entender-desde-el-principio" id="toc-qué-conviene-entender-desde-el-principio" class="nav-link" data-scroll-target="#qué-conviene-entender-desde-el-principio">Qué conviene entender desde el principio</a></li>
+  <li><a href="#paso-1.-clonar-no-es-solo-descargar" id="toc-paso-1.-clonar-no-es-solo-descargar" class="nav-link" data-scroll-target="#paso-1.-clonar-no-es-solo-descargar">Paso 1. Clonar no es solo descargar</a></li>
+  <li><a href="#paso-2.-git-status-como-forma-de-orientación" id="toc-paso-2.-git-status-como-forma-de-orientación" class="nav-link" data-scroll-target="#paso-2.-git-status-como-forma-de-orientación">Paso 2. <code>git status</code> como forma de orientación</a></li>
+  <li><a href="#paso-3.-git-add-y-git-commit-no-hacen-lo-mismo" id="toc-paso-3.-git-add-y-git-commit-no-hacen-lo-mismo" class="nav-link" data-scroll-target="#paso-3.-git-add-y-git-commit-no-hacen-lo-mismo">Paso 3. <code>git add</code> y <code>git commit</code> no hacen lo mismo</a></li>
+  <li><a href="#paso-4.-git-push-convierte-trabajo-local-en-trabajo-compartido" id="toc-paso-4.-git-push-convierte-trabajo-local-en-trabajo-compartido" class="nav-link" data-scroll-target="#paso-4.-git-push-convierte-trabajo-local-en-trabajo-compartido">Paso 4. <code>git push</code> convierte trabajo local en trabajo compartido</a></li>
+  <li><a href="#paso-5.-mirar-el-historial-evita-trabajar-a-ciegas" id="toc-paso-5.-mirar-el-historial-evita-trabajar-a-ciegas" class="nav-link" data-scroll-target="#paso-5.-mirar-el-historial-evita-trabajar-a-ciegas">Paso 5. Mirar el historial evita trabajar a ciegas</a></li>
+  <li><a href="#lo-que-este-manual-no-cubre-de-git" id="toc-lo-que-este-manual-no-cubre-de-git" class="nav-link" data-scroll-target="#lo-que-este-manual-no-cubre-de-git">Lo que este manual no cubre de Git</a></li>
+  <li><a href="#github-como-entorno-de-curso" id="toc-github-como-entorno-de-curso" class="nav-link" data-scroll-target="#github-como-entorno-de-curso">GitHub como entorno de curso</a></li>
   <li><a href="#seguridad-mínima-de-la-cuenta" id="toc-seguridad-mínima-de-la-cuenta" class="nav-link" data-scroll-target="#seguridad-mínima-de-la-cuenta">Seguridad mínima de la cuenta</a></li>
-  <li><a href="#en-qué-conviene-fijarse-mientras-trabajas" id="toc-en-qué-conviene-fijarse-mientras-trabajas" class="nav-link" data-scroll-target="#en-qué-conviene-fijarse-mientras-trabajas">En qué conviene fijarse mientras trabajas</a></li>
+  <li><a href="#cierre" id="toc-cierre" class="nav-link" data-scroll-target="#cierre">Cierre</a></li>
   </ul>
 </nav>
     </div>
@@ -360,20 +360,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <section id="para-qué-sirve-este-tutorial" class="level2">
 <h2 class="anchored" data-anchor-id="para-qué-sirve-este-tutorial">¿Para qué sirve este tutorial?</h2>
-<p>Git y GitHub son la infraestructura mínima de trabajo del curso porque permiten que un archivo no sea solo un resultado final, sino parte de un proceso visible de cambios, correcciones y decisiones. Versionar no significa guardar copias sin orden: significa construir un historial verificable sobre el proyecto <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>.</p>
+<p>Git y GitHub son parte de la infraestructura del curso porque permiten que el trabajo no quede reducido a un archivo final, sino que se convierta en una secuencia visible de decisiones, correcciones y versiones. En un entorno académico y profesional, esa trazabilidad importa tanto como el resultado, porque vuelve verificable el proceso de producción <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>.</p>
 </section>
 <section id="una-historia-breve-antes-del-primer-commit" class="level2">
 <h2 class="anchored" data-anchor-id="una-historia-breve-antes-del-primer-commit">Una historia breve antes del primer commit</h2>
-<p>Git tiene una historia más dramática de lo que su apariencia de herramienta sobria podría sugerir. El propio libro <em>Pro Git</em> cuenta que nació en 2005 después de la ruptura entre la comunidad del kernel de Linux y la empresa que mantenía BitKeeper, un sistema propietario que hasta entonces se usaba en ese proyecto <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>. La comunidad necesitaba una alternativa rápida, distribuida y capaz de soportar desarrollo no lineal a gran escala. Git fue la respuesta <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>.</p>
-<p>La página oficial de Git resume muy bien la consecuencia de ese origen: velocidad y rendimiento no fueron mejoras agregadas después, sino objetivos de diseño desde el principio <span class="citation" data-cites="gitabout2025">(Git 2025)</span>. El mismo sitio ofrece un dato casi anecdótico, pero muy útil para imaginar la escala de la herramienta: en 2025, Git almacenaba la historia completa del proyecto Linux, con 1.4 millones de commits, en solo 5.5 GB <span class="citation" data-cites="gitabout2025">(Git 2025)</span>.</p>
-<p>GitHub llegó después. Su página de prensa recuerda que la plataforma fue fundada en febrero de 2008 <span class="citation" data-cites="githubpress2026">(GitHub 2026)</span>. Esa diferencia temporal importa: Git es el sistema de control de versiones; GitHub es una plataforma posterior que volvió más fácil alojar repositorios, compartirlos, colaborar y hacer visible el trabajo. Aprender a distinguir ambos niveles evita muchas confusiones desde el comienzo <span class="citation" data-cites="githubpress2026">(GitHub 2026)</span>.</p>
+<p>Git está ligado desde el origen a una de las historias más influyentes del software contemporáneo: la del kernel de Linux. La documentación de Git recuerda que la herramienta fue iniciada por Linus Torvalds, fundador de Linux, y que ese origen no fue anecdótico, porque el proyecto necesitaba una forma de versionar cambios a gran escala sin sacrificar velocidad ni control distribuido <span class="citation" data-cites="gitabout2025 gitusermanual2026">(Git 2025; Git Documentation 2026)</span>. <em>Pro Git</em> añade el episodio decisivo: en 2005, tras la ruptura entre la comunidad del kernel y BitKeeper, se volvió urgente disponer de una alternativa propia. Git nació, en buena medida, como respuesta a esa urgencia <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>.</p>
+<p>La huella de ese nacimiento sigue visible en la herramienta. La página oficial de Git insiste en que el rendimiento fue un objetivo de diseño desde el comienzo y ofrece un dato que vale casi como alegoría técnica: en 2025, Git podía almacenar la historia completa del proyecto Linux, con 1.4 millones de commits, en apenas 5.5 GB <span class="citation" data-cites="gitabout2025">(Git 2025)</span>. Dicho de otra manera, Git no fue pensado para ejercicios domésticos, aunque luego se haya vuelto extraordinariamente útil también para ellos.</p>
+<p>GitHub pertenece a una historia distinta, aunque complementaria. Su propia página de prensa recuerda que la plataforma fue fundada en febrero de 2008 <span class="citation" data-cites="githubpress2026">(GitHub 2026)</span>. Después, en junio de 2018, Microsoft anunció oficialmente su adquisición por 7.5 mil millones de dólares, subrayando que GitHub seguiría operando como plataforma abierta para desarrolladores <span class="citation" data-cites="microsoftgithub2018">(Microsoft 2018)</span>. Esa continuidad institucional importa porque aclara una confusión muy común entre principiantes: Git no es GitHub, y GitHub no es el creador de Git. Git es la herramienta de control de versiones. GitHub es una plataforma posterior, hoy integrada al ecosistema de Microsoft, que facilita alojar repositorios, colaborar y publicar trabajo.</p>
 </section>
-<section id="qué-es-cada-cosa" class="level2">
-<h2 class="anchored" data-anchor-id="qué-es-cada-cosa">Qué es cada cosa</h2>
-<ul>
-<li><strong>Git</strong> es un sistema de control de versiones que organiza modificaciones sucesivas dentro de un historial trazable y reversible <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>.</li>
-<li><strong>GitHub</strong> es la plataforma que permite alojar ese repositorio, compartirlo, sincronizarlo y convertirlo en evidencia de trabajo colaborativo o individual <span class="citation" data-cites="githubprojects2026">(GitHub Docs 2026a)</span>.</li>
-</ul>
+<section id="qué-conviene-entender-desde-el-principio" class="level2">
+<h2 class="anchored" data-anchor-id="qué-conviene-entender-desde-el-principio">Qué conviene entender desde el principio</h2>
+<p>Git organiza cambios en un historial distribuido, trazable y reversible <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>. GitHub agrega encima una capa de alojamiento, sincronización, visibilidad y colaboración <span class="citation" data-cites="githubprojects2026">(GitHub Docs 2026a)</span>. La relación es parecida a la que existe entre escribir un documento y guardarlo en una plataforma compartida: el acto intelectual y la infraestructura social no son idénticos, aunque en la práctica trabajen juntos.</p>
+<p>Para el curso, esa diferencia tiene un efecto muy concreto. Puedes hacer varios pasos con Git sin conectarte a internet, porque el historial vive también en tu equipo. Pero si no sincronizas con GitHub, el trabajo queda sin respaldo remoto y sin evidencia compartida. Ambas piezas importan.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -384,97 +382,64 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>El trabajo del semestre debe dejar rastro verificable: archivos, cambios, mensajes de commit y sincronización con el repositorio remoto. Si no existe ese rastro, resulta más difícil demostrar qué se hizo, cuándo se hizo y cómo evolucionó el proyecto <span class="citation" data-cites="chaconstraub2014progit githubprojects2026">(Chacon and Straub 2014; GitHub Docs 2026a)</span>.</p>
+<p>El trabajo del semestre debe dejar rastro verificable: archivos, historial local y sincronización remota. Si falta una de esas capas, la trazabilidad del proyecto queda incompleta <span class="citation" data-cites="chaconstraub2014progit githubprojects2026">(Chacon and Straub 2014; GitHub Docs 2026a)</span>.</p>
 </div>
 </div>
 </section>
-<section id="paso-1.-clona-un-repositorio" class="level2">
-<h2 class="anchored" data-anchor-id="paso-1.-clona-un-repositorio">Paso 1. Clona un repositorio</h2>
-<p>Clonar significa traer a tu computadora una copia completa del repositorio, con su estructura y su historial. Ese paso importa porque te permite trabajar localmente sin romper la continuidad entre el entorno del curso y tu propio equipo <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>.</p>
+<section id="paso-1.-clonar-no-es-solo-descargar" class="level2">
+<h2 class="anchored" data-anchor-id="paso-1.-clonar-no-es-solo-descargar">Paso 1. Clonar no es solo descargar</h2>
+<p>Cuando ejecutas:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone URL_DEL_REPOSITORIO</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> NOMBRE_DEL_REPOSITORIO</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Al hacer esto, fíjate en dos cosas. La primera es que <code>git clone</code> no baja solo los archivos visibles, sino también la historia del proyecto. La segunda es que el comando <code>cd</code> importa tanto como el <code>clone</code>, porque muchas confusiones posteriores aparecen cuando alguien ya descargó el repositorio, pero sigue ejecutando comandos desde otra carpeta.</p>
-<p>Si alguna vez dudas de dónde estás, ejecuta:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">pwd</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>o, en Windows PowerShell:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">Get-Location</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Saber dónde estás parado en el sistema de archivos es parte del trabajo con Git, no una habilidad separada.</p>
+<p>no estás trayendo únicamente una carpeta con archivos. Estás trayendo también la historia del proyecto. Esa diferencia es central. Un repositorio Git no se reduce al estado actual de los documentos; conserva la secuencia que llevó hasta ellos. Por eso el comando <code>cd</code> importa tanto como <code>git clone</code>: después de clonar, necesitas entrar realmente en el directorio del repositorio para que los siguientes comandos actúen sobre el proyecto correcto.</p>
+<p>Si alguna vez dudas de dónde estás parado, usa <code>pwd</code> en macOS o Linux, o <code>Get-Location</code> en PowerShell. Orientarse en el sistema de archivos no es una tarea lateral; es una condición para que Git registre cambios donde debe registrarlos.</p>
 </section>
-<section id="paso-2.-revisa-el-estado" class="level2">
-<h2 class="anchored" data-anchor-id="paso-2.-revisa-el-estado">Paso 2. Revisa el estado</h2>
-<p>El comando <code>git status</code> sirve para responder una pregunta simple pero decisiva: qué cambió, qué falta guardar y qué está listo para convertirse en parte del historial. Revisarlo con frecuencia evita que el trabajo quede desordenado o incompleto <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>La costumbre importante aquí no es ejecutar el comando una sola vez, sino usarlo como una forma de orientación. Antes de editar, después de editar y antes de hacer commit, <code>git status</code> te recuerda qué está pasando realmente en el repositorio.</p>
+<section id="paso-2.-git-status-como-forma-de-orientación" class="level2">
+<h2 class="anchored" data-anchor-id="paso-2.-git-status-como-forma-de-orientación">Paso 2. <code>git status</code> como forma de orientación</h2>
+<p>El comando:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>responde una pregunta más importante de lo que parece: cuál es el estado real del repositorio en este momento <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>. Indica qué archivos cambiaron, cuáles todavía no están preparados para commit y cuáles ya forman parte de la siguiente decisión que quedará en el historial.</p>
+<p>Conviene usar <code>git status</code> no como gesto excepcional, sino como instrumento de orientación. Antes de editar, después de editar y antes de cerrar una sesión, el comando ayuda a evitar una ilusión bastante común: creer que un cambio “ya quedó” cuando en realidad todavía no fue registrado.</p>
 </section>
-<section id="paso-3.-haz-un-cambio-y-regístralo" class="level2">
-<h2 class="anchored" data-anchor-id="paso-3.-haz-un-cambio-y-regístralo">Paso 3. Haz un cambio y regístralo</h2>
-<p>Cuando usas <code>git add</code> y <code>git commit</code>, conviertes una modificación suelta en una decisión documentada. En el contexto del curso, eso vale más que “haber avanzado” en abstracto, porque deja evidencia legible del proceso de trabajo <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Agrega primer ejercicio"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Hay una diferencia importante entre ambos comandos. <code>git add</code> prepara cambios para el próximo commit; <code>git commit</code> los convierte en parte del historial. Conviene no mezclar mentalmente esos dos pasos. Si preparas demasiado sin revisar, puedes meter en un mismo commit cambios que en realidad correspondían a decisiones distintas.</p>
-<p>Por eso, cuando el proyecto crezca, suele ser preferible evitar el uso automático de <code>git add .</code> en todo momento y revisar primero qué archivos quieres incluir. En fases iniciales del curso puede ser suficiente, pero más adelante conviene ganar precisión.</p>
+<section id="paso-3.-git-add-y-git-commit-no-hacen-lo-mismo" class="level2">
+<h2 class="anchored" data-anchor-id="paso-3.-git-add-y-git-commit-no-hacen-lo-mismo">Paso 3. <code>git add</code> y <code>git commit</code> no hacen lo mismo</h2>
+<p>Una de las distinciones que más conviene fijar desde temprano es la diferencia entre preparar un cambio y convertirlo en parte del historial. Cuando ejecutas:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Agrega primer ejercicio"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>el primer comando selecciona cambios para el próximo commit, mientras que el segundo crea efectivamente una nueva entrada en la historia del proyecto <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>. Parece un matiz técnico menor, pero no lo es. Si se confunden ambos pasos, el historial empieza a llenarse de commits poco pensados o demasiado grandes.</p>
+<p>En una fase inicial, <code>git add .</code> puede ser suficiente. Pero conviene saber desde ya que Git permite mucha más precisión y que, cuando el proyecto crece, no siempre es deseable incluir todo en un mismo registro. Esa es justamente una de las razones por las que Git tiene fama de herramienta poderosa: permite granularidad, no solo almacenamiento.</p>
 </section>
-<section id="paso-4.-sube-el-cambio" class="level2">
-<h2 class="anchored" data-anchor-id="paso-4.-sube-el-cambio">Paso 4. Sube el cambio</h2>
-<p>El <code>push</code> sincroniza tu historial local con el repositorio remoto. Ese paso es clave porque una entrega que existe solo en tu computadora sigue siendo frágil: puede perderse, quedar sin respaldo o no estar disponible para revisión <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Aquí vale la pena mirar con calma la respuesta de la terminal. Si el <code>push</code> funciona, Git suele indicar a qué rama envió el cambio. Si falla, normalmente explica por qué: credenciales, permisos, rama desactualizada o conflicto con cambios remotos. No cierres la terminal apenas veas mucho texto; a menudo el propio mensaje ya contiene la pista principal para corregir el problema.</p>
+<section id="paso-4.-git-push-convierte-trabajo-local-en-trabajo-compartido" class="level2">
+<h2 class="anchored" data-anchor-id="paso-4.-git-push-convierte-trabajo-local-en-trabajo-compartido">Paso 4. <code>git push</code> convierte trabajo local en trabajo compartido</h2>
+<p>El comando:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>envía al remoto lo que hasta entonces solo existía en tu equipo. En el curso, ese paso no es decorativo. Un trabajo que vive exclusivamente en local puede ser técnicamente real, pero sigue siendo frágil como entrega y opaco como evidencia <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>.</p>
+<p>Cuando el <code>push</code> falla, no conviene cerrar la terminal con prisa. Los mensajes suelen indicar con bastante claridad si el problema está en credenciales, permisos, desactualización de la rama o conflictos con cambios remotos. Aprender a leer esa salida también forma parte del trabajo con Git.</p>
 </section>
-<section id="paso-5.-vuelve-a-mirar-el-historial" class="level2">
-<h2 class="anchored" data-anchor-id="paso-5.-vuelve-a-mirar-el-historial">Paso 5. Vuelve a mirar el historial</h2>
-<p>Después del primer <code>push</code>, conviene revisar el historial con:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span> <span class="at">-n</span> 5</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Eso te permite ver si el commit quedó efectivamente registrado con el mensaje esperado. Otra vez, el punto no es aprender veinte comandos de memoria, sino desarrollar la costumbre de verificar.</p>
+<section id="paso-5.-mirar-el-historial-evita-trabajar-a-ciegas" class="level2">
+<h2 class="anchored" data-anchor-id="paso-5.-mirar-el-historial-evita-trabajar-a-ciegas">Paso 5. Mirar el historial evita trabajar a ciegas</h2>
+<p>Después de registrar y subir un cambio, vale la pena comprobar qué quedó escrito en la historia:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span> <span class="at">-n</span> 5</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Ese vistazo rápido sirve para confirmar que el commit existe, que el mensaje es el correcto y que la secuencia reciente tiene sentido. Un buen historial no solo almacena el pasado; permite reconstruir decisiones con relativa facilidad.</p>
 </section>
-<section id="buenas-prácticas-mínimas" class="level2">
-<h2 class="anchored" data-anchor-id="buenas-prácticas-mínimas">Buenas prácticas mínimas</h2>
-<ul>
-<li>Haz commits pequeños para que el historial muestre decisiones comprensibles y no bloques opacos de cambios <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>.</li>
-<li>Escribe mensajes claros para que otra persona, o tú mismo unos días después, pueda entender qué se modificó y con qué propósito <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>.</li>
-<li>Verifica <code>git status</code> antes de cerrar para no dejar archivos modificados sin registrar <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>.</li>
-<li>No trabajes solo en local si la entrega depende del repositorio remoto y de la trazabilidad compartida <span class="citation" data-cites="githubprojects2026">(GitHub Docs 2026a)</span>.</li>
-</ul>
-<p>Podrías resumir estas buenas prácticas en una regla general: cada cambio importante debería poder responder tres preguntas sin esfuerzo. Qué cambió. Por qué cambió. Dónde quedó registrado.</p>
+<section id="lo-que-este-manual-no-cubre-de-git" class="level2">
+<h2 class="anchored" data-anchor-id="lo-que-este-manual-no-cubre-de-git">Lo que este manual no cubre de Git</h2>
+<p>Conviene decirlo con claridad: Git tiene muchos trucos y muchas capas que este manual no aborda. Herramientas como <code>rebase</code>, <code>stash</code>, <code>cherry-pick</code>, <code>bisect</code>, <code>reflog</code>, <code>worktree</code>, los hooks o los flujos de ramas más complejos pertenecen a una etapa posterior de aprendizaje. El objetivo del curso no es convertir a cada estudiante en especialista en administración de repositorios, sino darle una base suficiente para trabajar con trazabilidad sin perderse en la herramienta.</p>
+<p>Cuando necesites ir más allá, lo razonable es consultar el manual oficial de Git y la documentación del proyecto, que están pensados justamente para escalar desde un uso elemental hacia uno más sofisticado <span class="citation" data-cites="gitusermanual2026 gitabout2025">(Git Documentation 2026; Git 2025)</span>. Ese manual merece ser mencionado aquí porque evita otro error frecuente: creer que Git se agota en <code>clone</code>, <code>status</code>, <code>add</code>, <code>commit</code> y <code>push</code>. No se agota allí; simplemente este curso empieza allí.</p>
 </section>
-<section id="github-en-contexto-de-curso" class="level2">
-<h2 class="anchored" data-anchor-id="github-en-contexto-de-curso">GitHub en contexto de curso</h2>
-<p>En este curso, GitHub no funciona solo como depósito de archivos. También es el lugar donde el proyecto se vuelve visible, compartible y evaluable, porque ahí convergen repositorio, ramas, entregas y, cuando hace falta, seguimiento de tareas <span class="citation" data-cites="githubprojects2026 githubpages2026">(GitHub Docs 2026a, 2026c)</span>.</p>
-<ul>
-<li>clonar materiales;</li>
-<li>resolver PSETs;</li>
-<li>entregar evidencia de trabajo;</li>
-<li>publicar páginas con GitHub Pages cuando corresponda.</li>
-</ul>
-<p>Si el proyecto crece, GitHub Projects también puede ayudarte a volver más visible la relación entre tareas, avances y repositorio. La propia documentación lo presenta como un espacio para integrar issues, metadatos y seguimiento dentro del mismo entorno <span class="citation" data-cites="githubprojects2026">(GitHub Docs 2026a)</span>. No siempre necesitarás eso en una práctica pequeña, pero sí vale la pena saber que existe.</p>
+<section id="github-como-entorno-de-curso" class="level2">
+<h2 class="anchored" data-anchor-id="github-como-entorno-de-curso">GitHub como entorno de curso</h2>
+<p>En este manual, GitHub no es solo un depósito de archivos. Es también el espacio donde el proyecto se vuelve visible, compartible y evaluable. Ahí se alojan los repositorios, ahí se observa si el <code>push</code> realmente llegó y, cuando hace falta, ahí pueden organizarse tareas, entregas y publicación web mediante GitHub Pages <span class="citation" data-cites="githubprojects2026 githubpages2026">(GitHub Docs 2026a, 2026c)</span>.</p>
+<p>Por eso conviene mirar GitHub no solo como “la nube de Git”, sino como un entorno institucional donde el trabajo adquiere presencia pública o semipública. Esa capa social y organizativa es parte de lo que explica su expansión y también parte de lo que justificó el interés estratégico de Microsoft por adquirir la plataforma en 2018 <span class="citation" data-cites="microsoftgithub2018">(Microsoft 2018)</span>.</p>
 </section>
 <section id="seguridad-mínima-de-la-cuenta" class="level2">
 <h2 class="anchored" data-anchor-id="seguridad-mínima-de-la-cuenta">Seguridad mínima de la cuenta</h2>
-<p>Si GitHub forma parte de tu infraestructura de trabajo, la seguridad de la cuenta también importa. GitHub define la autenticación de dos factores como una capa adicional para el inicio de sesión y recomienda preparar métodos de recuperación, porque proteger el acceso no consiste solo en tener una contraseña fuerte, sino también en evitar perder la cuenta en mitad del semestre <span class="citation" data-cites="github2fa2026">(GitHub Docs 2026b)</span>.</p>
-<p>Esto merece una traducción práctica muy simple: activa 2FA cuando tu cuenta ya tenga repositorios del curso y guarda también las opciones de recuperación. La seguridad mal configurada puede ser casi tan problemática como la falta total de seguridad si te deja fuera de tu propia cuenta cuando más la necesitas.</p>
+<p>Si GitHub guarda trabajo del curso, entonces la cuenta deja de ser un detalle administrativo y pasa a ser parte de la infraestructura personal de estudio. GitHub recomienda activar autenticación de dos factores y preparar métodos de recuperación para no perder acceso en momentos críticos <span class="citation" data-cites="github2fa2026">(GitHub Docs 2026b)</span>. Ese consejo merece tomarse en serio: una cuenta insegura o una cuenta mal configurada pueden volverse un problema tan práctico como un repositorio mal versionado.</p>
 </section>
-<section id="en-qué-conviene-fijarse-mientras-trabajas" class="level2">
-<h2 class="anchored" data-anchor-id="en-qué-conviene-fijarse-mientras-trabajas">En qué conviene fijarse mientras trabajas</h2>
-<p>Mientras usas Git y GitHub, presta atención a estos puntos:</p>
-<ul>
-<li>si estás en la rama correcta;</li>
-<li>si el commit realmente incluye lo que querías registrar;</li>
-<li>si el <code>push</code> llegó al remoto y no se quedó solo en local;</li>
-<li>si GitHub muestra el cambio que acabas de hacer.</li>
-</ul>
-<p>Mirar estos detalles es mejor que descubrir al final que la versión correcta estaba en tu computadora, pero no en el repositorio.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>Error frecuente
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Modificar archivos sin hacer <code>commit</code> ni <code>push</code>. Cuando eso ocurre, el trabajo puede existir materialmente, pero no como historial verificable ni como entrega sincronizada, y esa diferencia importa tanto para colaborar como para evaluar <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>.</p>
-</div>
-</div>
+<section id="cierre" class="level2">
+<h2 class="anchored" data-anchor-id="cierre">Cierre</h2>
+<p>La disciplina que exigen Git y GitHub se parece, en más de un sentido, a la disciplina del trabajo jurídico: registrar, distinguir etapas, conservar evidencia y reconstruir decisiones. Por eso ambas herramientas encajan bien en un curso de Legal Tech. No porque todo jurista deba convertirse en desarrollador experto, sino porque entender cómo se organiza un historial verificable de cambios mejora también la forma de pensar procesos, documentos y responsabilidades <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>.</p>
+<p>Si una idea merece quedar de este tutorial, es esta: Git nació en diálogo directo con el problema de coordinar el desarrollo de Linux bajo Linus Torvalds, y GitHub creció después hasta convertirse en la gran plataforma social del versionado, hoy dentro del ecosistema de Microsoft <span class="citation" data-cites="gitabout2025 gitusermanual2026 microsoftgithub2018">(Git 2025; Git Documentation 2026; Microsoft 2018)</span>. Aprender a distinguir esos planos ayuda a trabajar con más precisión desde el comienzo.</p>
 
 
 </section>
