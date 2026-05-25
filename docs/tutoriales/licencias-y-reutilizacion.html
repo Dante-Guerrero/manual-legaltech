@@ -284,10 +284,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
    
   <ul>
   <li><a href="#para-qué-sirve-este-tutorial" id="toc-para-qué-sirve-este-tutorial" class="nav-link active" data-scroll-target="#para-qué-sirve-este-tutorial">¿Para qué sirve este tutorial?</a></li>
+  <li><a href="#una-historia-breve-antes-de-mirar-un-archivo-license" id="toc-una-historia-breve-antes-de-mirar-un-archivo-license" class="nav-link" data-scroll-target="#una-historia-breve-antes-de-mirar-un-archivo-license">Una historia breve antes de mirar un archivo <code>LICENSE</code></a></li>
   <li><a href="#ideas-básicas" id="toc-ideas-básicas" class="nav-link" data-scroll-target="#ideas-básicas">Ideas básicas</a></li>
   <li><a href="#qué-conviene-revisar-en-un-repositorio" id="toc-qué-conviene-revisar-en-un-repositorio" class="nav-link" data-scroll-target="#qué-conviene-revisar-en-un-repositorio">Qué conviene revisar en un repositorio</a></li>
   <li><a href="#por-qué-esto-importa-a-un-jurista" id="toc-por-qué-esto-importa-a-un-jurista" class="nav-link" data-scroll-target="#por-qué-esto-importa-a-un-jurista">¿Por qué esto importa a un jurista?</a></li>
   <li><a href="#aplicación-práctica" id="toc-aplicación-práctica" class="nav-link" data-scroll-target="#aplicación-práctica">Aplicación práctica</a></li>
+  <li><a href="#qué-errores-conviene-evitar" id="toc-qué-errores-conviene-evitar" class="nav-link" data-scroll-target="#qué-errores-conviene-evitar">Qué errores conviene evitar</a></li>
   </ul>
 </nav>
     </div>
@@ -320,6 +322,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <h2 class="anchored" data-anchor-id="para-qué-sirve-este-tutorial">¿Para qué sirve este tutorial?</h2>
 <p>Cuando trabajas con repositorios, código o recursos ajenos, no basta con que algo sea público o fácil de descargar. También importa bajo qué licencia se comparte, qué libertades concede y qué condiciones impone para copiar, modificar, redistribuir o mezclar materiales con otros proyectos <span class="citation" data-cites="bain2007softwarelibre1 bain2007softwarelibre2">(Bain et al. 2007a, 2007b)</span>.</p>
 </section>
+<section id="una-historia-breve-antes-de-mirar-un-archivo-license" class="level2">
+<h2 class="anchored" data-anchor-id="una-historia-breve-antes-de-mirar-un-archivo-license">Una historia breve antes de mirar un archivo <code>LICENSE</code></h2>
+<p>La historia de las licencias en software libre no gira alrededor de una pregunta burocrática, sino de una tensión bastante de fondo: cómo usar el derecho de autor para garantizar libertades de uso, copia, modificación y distribución en lugar de restringirlas del modo más cerrado posible <span class="citation" data-cites="bain2007softwarelibre1 bain2007softwarelibre2">(Bain et al. 2007a, 2007b)</span>. Ese punto es importante porque evita un error conceptual muy común: creer que “libre” significa “sin derecho” o “sin reglas”.</p>
+<p>Los materiales de Bain y coautores muestran precisamente eso: el software libre no funciona fuera de la propiedad intelectual, sino dentro de ella, apoyándose en licencias que reorganizan qué puede hacer el usuario con el programa <span class="citation" data-cites="bain2007softwarelibre1 bain2007softwarelibre2">(Bain et al. 2007a, 2007b)</span>. Jacovkis, por su parte, agrega un matiz muy útil para este curso: hablar de software libre también es hablar de producción colectiva de conocimiento, de comunidades que comparten, corrigen y expanden herramientas de manera acumulativa <span class="citation" data-cites="jacovkis2009softwarelibre">(Jacovkis 2009)</span>.</p>
+<p>Ese trasfondo ayuda a leer de otra manera algo que a veces parece trivial. Un archivo <code>LICENSE</code> no está allí para decorar el repositorio. Está allí para traducir, en términos jurídicos concretos, cómo puede circular, transformarse o redistribuirse el material que estás mirando.</p>
+</section>
 <section id="ideas-básicas" class="level2">
 <h2 class="anchored" data-anchor-id="ideas-básicas">Ideas básicas</h2>
 <ul>
@@ -327,6 +335,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li><strong>Software libre / open source</strong>: no está fuera del derecho de autor, sino que usa licencias para garantizar ciertas libertades de uso, copia, modificación y distribución <span class="citation" data-cites="bain2007softwarelibre1 bain2007softwarelibre2">(Bain et al. 2007a, 2007b)</span>.</li>
 <li><strong>Licencia</strong>: es el instrumento jurídico que define qué se puede hacer con el material y bajo qué reglas <span class="citation" data-cites="bain2007softwarelibre2">(Bain et al. 2007b)</span>.</li>
 </ul>
+<p>También conviene distinguir entre dos planos que suelen mezclarse:</p>
+<ul>
+<li>el plano técnico: si puedes acceder, copiar o ejecutar un archivo;</li>
+<li>el plano jurídico: si tienes permiso para reutilizarlo, modificarlo o redistribuirlo de cierto modo.</li>
+</ul>
+<p>Muchos conflictos nacen justamente cuando alguien confunde acceso técnico con autorización jurídica.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -344,11 +358,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <section id="qué-conviene-revisar-en-un-repositorio" class="level2">
 <h2 class="anchored" data-anchor-id="qué-conviene-revisar-en-un-repositorio">Qué conviene revisar en un repositorio</h2>
 <p>Antes de reutilizar un repositorio o un recurso digital, conviene revisar al menos cinco cosas: si tiene archivo <code>LICENSE</code>, qué tipo de licencia usa, si exige atribución, si impone compartir cambios bajo la misma licencia y si establece restricciones o incompatibilidades relevantes. Esas diferencias no son decorativas; afectan directamente cómo puedes integrar ese material en tu propio trabajo <span class="citation" data-cites="bain2007softwarelibre2">(Bain et al. 2007b)</span>.</p>
+<p>En la práctica, esa revisión puede hacerse como un pequeño checklist:</p>
+<ol type="1">
+<li>localiza el archivo <code>LICENSE</code> o una sección equivalente;</li>
+<li>identifica el tipo de licencia;</li>
+<li>revisa si exige conservar avisos de autoría o copyright;</li>
+<li>revisa si obliga a publicar modificaciones bajo la misma licencia;</li>
+<li>revisa si hay condiciones especiales para redistribución, compatibilidad o uso comercial.</li>
+</ol>
+<p>No necesitas convertirte en especialista para hacer esta primera lectura. Lo importante es no saltarte el paso.</p>
 </section>
 <section id="por-qué-esto-importa-a-un-jurista" class="level2">
 <h2 class="anchored" data-anchor-id="por-qué-esto-importa-a-un-jurista">¿Por qué esto importa a un jurista?</h2>
 <p>Porque la reutilización tecnológica también tiene dimensión jurídica. Supone permisos, cumplimiento, compatibilidad, trazabilidad y responsabilidad, y además obliga a distinguir entre acceso material al archivo y derecho efectivo a reutilizarlo en otro contexto <span class="citation" data-cites="bain2007softwarelibre1 mendo2013reutilizacion">(Bain et al. 2007a; <span class="nocase">Mendo et al.</span> 2013)</span>.</p>
 <p>También importa por una razón más amplia: hablar de software libre no es hablar solo de precio o conveniencia técnica, sino de formas de producción colectiva de conocimiento, auditoría y circulación de herramientas que pueden ser estudiadas y corregidas por una comunidad <span class="citation" data-cites="jacovkis2009softwarelibre bain2007softwarelibre1">(Jacovkis 2009; Bain et al. 2007a)</span>.</p>
+<p>Para estudiantes de Derecho esto tiene un interés doble. Por un lado, porque muestra que la dimensión jurídica del entorno digital no aparece solo cuando hay litigio o regulación estatal. También aparece en decisiones cotidianas sobre uso, mezcla y redistribución de materiales. Por otro, porque enseña a leer la infraestructura digital con el mismo cuidado con que se leería una cláusula contractual relevante.</p>
 </section>
 <section id="aplicación-práctica" class="level2">
 <h2 class="anchored" data-anchor-id="aplicación-práctica">Aplicación práctica</h2>
@@ -360,6 +384,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li>evita copiar sin criterio.</li>
 </ol>
 <p>Un buen ejemplo de esta lógica es el propio ecosistema Python: su historia institucional está asociada a una política de distribución abierta y a una documentación oficial pública, pero eso no elimina la necesidad de entender bajo qué licencia circulan el software y los materiales <span class="citation" data-cites="pythonlicense2026">(Python Documentation 2026)</span>.</p>
+<p>Si tomas una porción de código, una plantilla, una imagen o una hoja de estilos, procura dejar rastro claro de dos cosas: de dónde salió y en qué condiciones se reutilizó. Esa trazabilidad es útil incluso cuando la licencia es permisiva, porque evita que el proyecto quede apoyado en materiales cuya procedencia luego nadie puede reconstruir.</p>
+</section>
+<section id="qué-errores-conviene-evitar" class="level2">
+<h2 class="anchored" data-anchor-id="qué-errores-conviene-evitar">Qué errores conviene evitar</h2>
+<p>Hay al menos cuatro errores frecuentes en esta materia:</p>
+<ul>
+<li>creer que “está en GitHub” equivale a “puedo usarlo como quiera”;</li>
+<li>confundir software libre con ausencia total de condiciones;</li>
+<li>reutilizar materiales sin guardar la fuente;</li>
+<li>mezclar recursos con licencias incompatibles sin notarlo.</li>
+</ul>
+<p>Ninguno de estos errores suele venir de mala fe. Casi siempre vienen de prisa, descuido o falta de hábito. Por eso conviene tratar la revisión de licencias como parte normal del flujo de trabajo, no como un trámite excepcional.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">

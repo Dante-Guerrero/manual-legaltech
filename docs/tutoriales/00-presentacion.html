@@ -285,6 +285,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <ul>
   <li><a href="#qué-encontrarás-aquí" id="toc-qué-encontrarás-aquí" class="nav-link active" data-scroll-target="#qué-encontrarás-aquí">¿Qué encontrarás aquí?</a></li>
   <li><a href="#criterio-de-lectura" id="toc-criterio-de-lectura" class="nav-link" data-scroll-target="#criterio-de-lectura">Criterio de lectura</a></li>
+  <li><a href="#orden-sugerido" id="toc-orden-sugerido" class="nav-link" data-scroll-target="#orden-sugerido">Orden sugerido</a></li>
   </ul>
 </nav>
     </div>
@@ -313,7 +314,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </header>
 
 
-<p>Los tutoriales cumplen una función instrumental dentro del manual: no reemplazan la sesión principal, pero sí reducen la fricción técnica que suele aparecer cuando una práctica depende de tener listo un entorno de trabajo, un historial verificable de cambios o una vía clara de publicación. En un curso como este, esa infraestructura no es un detalle logístico; forma parte del aprendizaje mismo <span class="citation" data-cites="pythonfaq2026 chaconstraub2014progit githubpages2026">(Python Documentation 2026a; Chacon and Straub 2014; GitHub Docs 2026)</span>.</p>
+<p>Los tutoriales cumplen una función instrumental dentro del manual: no reemplazan la sesión principal, pero sí reducen la fricción técnica que suele aparecer cuando una práctica depende de tener listo un entorno de trabajo, un historial verificable de cambios o una vía clara de publicación. En un curso como este, esa infraestructura no es un detalle logístico; forma parte del aprendizaje mismo, porque condiciona cuánto tiempo puede dedicarse al problema jurídico y cuánto termina gastándose en desbloqueos básicos del entorno <span class="citation" data-cites="pythonfaq2026 chaconstraub2014progit githubpages2026">(Python Documentation 2026a; Chacon and Straub 2014; GitHub Docs 2026)</span>.</p>
+<p>Conviene leer esta parte con una expectativa distinta a la de los capítulos de sesión. Aquí el objetivo no es desarrollar una gran discusión conceptual, sino dejar resueltos varios umbrales mínimos de trabajo: instalar una herramienta, reconocer qué hace, entender por qué el curso la usa y evitar los errores más comunes cuando llega el momento de practicar. Esa lógica más secuencial no la vuelve secundaria. Al contrario, permite que la práctica principal del curso sea más estable, más verificable y menos dependiente de improvisaciones <span class="citation" data-cites="volini2020technology contreras2020pedagogy">(Volini 2020; Contreras and McGrath 2020)</span>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -325,11 +327,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 <div class="callout-body-container callout-body">
 <p>Si en una sesión te atoras con una instalación, un comando, una carpeta del repositorio o un flujo de trabajo con Git y GitHub, vuelve a esta parte. Los tutoriales están pensados como material de consulta recurrente para que el tiempo de clase pueda concentrarse en análisis, práctica y toma de decisiones, no en desbloqueos técnicos de último minuto <span class="citation" data-cites="pythonversions2026 chaconstraub2014progit">(Python.org 2026; Chacon and Straub 2014)</span>.</p>
+<p>La mejor forma de usarlos es preventiva: revísalos antes de necesitar la herramienta, no solo cuando algo ya falló. Leerlos después también sirve, pero en ese punto la atención suele estar capturada por el problema inmediato y no por la lógica general del flujo de trabajo.</p>
 </div>
 </div>
 <section id="qué-encontrarás-aquí" class="level2">
 <h2 class="anchored" data-anchor-id="qué-encontrarás-aquí">¿Qué encontrarás aquí?</h2>
-<p>Esta parte reúne cinco apoyos concretos. Python aparece porque combina una sintaxis legible con un ecosistema abierto y estable; Git y GitHub porque convierten cambios dispersos en historial trazable; las licencias porque la reutilización digital no se agota en que algo sea visible en línea; y GitHub Pages porque permite publicar desde el mismo repositorio donde el trabajo fue escrito y versionado <span class="citation" data-cites="pythonfaq2026 pythonlicense2026 chaconstraub2014progit bain2007softwarelibre2 githubpages2026">(Python Documentation 2026a, 2026b; Chacon and Straub 2014; Bain et al. 2007; GitHub Docs 2026)</span>.</p>
+<p>Esta parte reúne cinco apoyos concretos. Python aparece porque combina una sintaxis legible con un ecosistema abierto y estable; Visual Studio Code porque concentra edición, terminal y control de cambios en un mismo entorno; Git y GitHub porque convierten cambios dispersos en historial trazable; las licencias porque la reutilización digital no se agota en que algo sea visible en línea; y GitHub Pages porque permite publicar desde el mismo repositorio donde el trabajo fue escrito y versionado <span class="citation" data-cites="pythonfaq2026 pythonlicense2026 chaconstraub2014progit bain2007softwarelibre2 githubpages2026 vscodegettingstarted2026">(Python Documentation 2026a, 2026b; Chacon and Straub 2014; Bain et al. 2007; GitHub Docs 2026; Visual Studio Code Documentation 2026)</span>.</p>
 <ul>
 <li>instalación de Python;</li>
 <li>instalación y configuración básica de Visual Studio Code;</li>
@@ -341,6 +344,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <section id="criterio-de-lectura" class="level2">
 <h2 class="anchored" data-anchor-id="criterio-de-lectura">Criterio de lectura</h2>
 <p>Estos tutoriales asumen menos conocimientos previos que los capítulos de sesión y avanzan con una lógica más secuencial. El objetivo no es formar especialistas en administración de sistemas ni en desarrollo web, sino asegurar una base técnica suficiente para que la práctica jurídica con tecnología sea verificable, mantenible y responsable <span class="citation" data-cites="volini2020technology contreras2020pedagogy">(Volini 2020; Contreras and McGrath 2020)</span>.</p>
+<p>Cada tutorial intenta hacer cuatro cosas al mismo tiempo. Primero, contar una historia breve de la herramienta para evitar que se sienta como una pieza aislada del ecosistema digital. Segundo, explicar por qué el curso la necesita. Tercero, ofrecer un paso a paso lo bastante concreto como para que puedas reproducirlo por tu cuenta. Y cuarto, señalar en qué conviene fijarse para detectar problemas antes de que se vuelvan bloqueos mayores.</p>
+<p>No hace falta memorizar cada detalle. Sí hace falta familiarizarse con ciertas preguntas básicas: dónde está el archivo correcto, qué comando ejecuta realmente lo que quiero hacer, cómo verifico si un cambio quedó guardado, y qué evidencia deja el proceso. Buena parte del trabajo en Legal Tech depende de desarrollar esa clase de atención técnica mínima <span class="citation" data-cites="contreras2020pedagogy ryan2021coding">(Contreras and McGrath 2020; Ryan 2021)</span>.</p>
+</section>
+<section id="orden-sugerido" class="level2">
+<h2 class="anchored" data-anchor-id="orden-sugerido">Orden sugerido</h2>
+<p>Aunque los tutoriales pueden consultarse por separado, conviene seguir un orden simple cuando recién empiezas:</p>
+<ol type="1">
+<li>instala Python para tener el entorno de ejecución listo;</li>
+<li>prepara Visual Studio Code para editar y ejecutar sin salir del mismo espacio;</li>
+<li>revisa Git y GitHub para no perder trazabilidad del trabajo;</li>
+<li>mira licencias y reutilización cuando empieces a usar materiales ajenos;</li>
+<li>usa GitHub Pages cuando llegue el momento de publicar un sitio.</li>
+</ol>
+<p>Ese orden no es arbitrario. Va desde la base mínima de ejecución local hasta la publicación y circulación pública de resultados.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">

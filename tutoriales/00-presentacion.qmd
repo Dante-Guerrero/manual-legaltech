@@ -1,15 +1,19 @@
 # Tutoriales
 
-Los tutoriales cumplen una función instrumental dentro del manual: no reemplazan la sesión principal, pero sí reducen la fricción técnica que suele aparecer cuando una práctica depende de tener listo un entorno de trabajo, un historial verificable de cambios o una vía clara de publicación. En un curso como este, esa infraestructura no es un detalle logístico; forma parte del aprendizaje mismo [@pythonfaq2026; @chaconstraub2014progit; @githubpages2026].
+Los tutoriales cumplen una función instrumental dentro del manual: no reemplazan la sesión principal, pero sí reducen la fricción técnica que suele aparecer cuando una práctica depende de tener listo un entorno de trabajo, un historial verificable de cambios o una vía clara de publicación. En un curso como este, esa infraestructura no es un detalle logístico; forma parte del aprendizaje mismo, porque condiciona cuánto tiempo puede dedicarse al problema jurídico y cuánto termina gastándose en desbloqueos básicos del entorno [@pythonfaq2026; @chaconstraub2014progit; @githubpages2026].
+
+Conviene leer esta parte con una expectativa distinta a la de los capítulos de sesión. Aquí el objetivo no es desarrollar una gran discusión conceptual, sino dejar resueltos varios umbrales mínimos de trabajo: instalar una herramienta, reconocer qué hace, entender por qué el curso la usa y evitar los errores más comunes cuando llega el momento de practicar. Esa lógica más secuencial no la vuelve secundaria. Al contrario, permite que la práctica principal del curso sea más estable, más verificable y menos dependiente de improvisaciones [@volini2020technology; @contreras2020pedagogy].
 
 ::: {.callout-note}
 ## Cómo usar esta sección
 Si en una sesión te atoras con una instalación, un comando, una carpeta del repositorio o un flujo de trabajo con Git y GitHub, vuelve a esta parte. Los tutoriales están pensados como material de consulta recurrente para que el tiempo de clase pueda concentrarse en análisis, práctica y toma de decisiones, no en desbloqueos técnicos de último minuto [@pythonversions2026; @chaconstraub2014progit].
+
+La mejor forma de usarlos es preventiva: revísalos antes de necesitar la herramienta, no solo cuando algo ya falló. Leerlos después también sirve, pero en ese punto la atención suele estar capturada por el problema inmediato y no por la lógica general del flujo de trabajo.
 :::
 
 ## ¿Qué encontrarás aquí?
 
-Esta parte reúne cinco apoyos concretos. Python aparece porque combina una sintaxis legible con un ecosistema abierto y estable; Git y GitHub porque convierten cambios dispersos en historial trazable; las licencias porque la reutilización digital no se agota en que algo sea visible en línea; y GitHub Pages porque permite publicar desde el mismo repositorio donde el trabajo fue escrito y versionado [@pythonfaq2026; @pythonlicense2026; @chaconstraub2014progit; @bain2007softwarelibre2; @githubpages2026].
+Esta parte reúne cinco apoyos concretos. Python aparece porque combina una sintaxis legible con un ecosistema abierto y estable; Visual Studio Code porque concentra edición, terminal y control de cambios en un mismo entorno; Git y GitHub porque convierten cambios dispersos en historial trazable; las licencias porque la reutilización digital no se agota en que algo sea visible en línea; y GitHub Pages porque permite publicar desde el mismo repositorio donde el trabajo fue escrito y versionado [@pythonfaq2026; @pythonlicense2026; @chaconstraub2014progit; @bain2007softwarelibre2; @githubpages2026; @vscodegettingstarted2026].
 
 - instalación de Python;
 - instalación y configuración básica de Visual Studio Code;
@@ -20,6 +24,22 @@ Esta parte reúne cinco apoyos concretos. Python aparece porque combina una sint
 ## Criterio de lectura
 
 Estos tutoriales asumen menos conocimientos previos que los capítulos de sesión y avanzan con una lógica más secuencial. El objetivo no es formar especialistas en administración de sistemas ni en desarrollo web, sino asegurar una base técnica suficiente para que la práctica jurídica con tecnología sea verificable, mantenible y responsable [@volini2020technology; @contreras2020pedagogy].
+
+Cada tutorial intenta hacer cuatro cosas al mismo tiempo. Primero, contar una historia breve de la herramienta para evitar que se sienta como una pieza aislada del ecosistema digital. Segundo, explicar por qué el curso la necesita. Tercero, ofrecer un paso a paso lo bastante concreto como para que puedas reproducirlo por tu cuenta. Y cuarto, señalar en qué conviene fijarse para detectar problemas antes de que se vuelvan bloqueos mayores.
+
+No hace falta memorizar cada detalle. Sí hace falta familiarizarse con ciertas preguntas básicas: dónde está el archivo correcto, qué comando ejecuta realmente lo que quiero hacer, cómo verifico si un cambio quedó guardado, y qué evidencia deja el proceso. Buena parte del trabajo en Legal Tech depende de desarrollar esa clase de atención técnica mínima [@contreras2020pedagogy; @ryan2021coding].
+
+## Orden sugerido
+
+Aunque los tutoriales pueden consultarse por separado, conviene seguir un orden simple cuando recién empiezas:
+
+1. instala Python para tener el entorno de ejecución listo;
+2. prepara Visual Studio Code para editar y ejecutar sin salir del mismo espacio;
+3. revisa Git y GitHub para no perder trazabilidad del trabajo;
+4. mira licencias y reutilización cuando empieces a usar materiales ajenos;
+5. usa GitHub Pages cuando llegue el momento de publicar un sitio.
+
+Ese orden no es arbitrario. Va desde la base mínima de ejecución local hasta la publicación y circulación pública de resultados.
 
 | Tutorial | Propósito | Cuándo conviene revisarlo |
 |---|---|---|

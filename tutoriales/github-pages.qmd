@@ -4,11 +4,21 @@
 
 GitHub Pages permite publicar sitios estáticos directamente desde un repositorio. En este curso resulta especialmente útil porque une dos cosas que conviene no separar: la página visible y el proceso técnico que la produjo. Cuando el sitio se publica desde el mismo repositorio donde fue escrito, también queda trazabilidad sobre sus cambios [@githubpages2026].
 
+## Una historia breve antes de publicar
+
+La historia temprana de GitHub Pages es casi una declaración pedagógica. En la entrada original del blog de GitHub, publicada en diciembre de 2008, el servicio se presentó con una idea extremadamente simple: publicar contenido web podía volverse tan fácil como hacer `git push` [@githubpageslaunch2008]. Esa formulación sigue siendo poderosa porque resume muy bien qué vuelve atractivo a Pages en un curso como este: producto y proceso quedan unidos.
+
+El mismo post original muestra además dos detalles anecdóticos útiles. Para páginas personales, bastaba un repositorio del tipo `username.github.com`; para muchos proyectos, GitHub permitió publicar desde una rama `gh-pages` separada del resto del código [@githubpageslaunch2008]. No era un capricho técnico. Era una manera de evitar que el sitio publicado ensuciara el directorio principal del proyecto y de mantener una separación razonable entre fuente y publicación [@githubpageslaunch2008].
+
+Con el tiempo, la plataforma evolucionó. GitHub explicó después que Pages se convirtió en hogar de millones de sitios y que el servicio terminó apoyándose en Actions para construir y desplegar con más flexibilidad [@githubpages2026]. Pero la intuición fundacional sigue siendo la misma: publicar desde el repositorio sin romper la trazabilidad del trabajo.
+
 ## Qué necesitas antes
 
 - una cuenta en GitHub y acceso estable al repositorio donde está el sitio [@githubpages2026];
 - un repositorio con archivos HTML, CSS y, si hace falta, JavaScript, porque GitHub Pages trabaja con sitios estáticos generados desde esos archivos [@githubpages2026; @mdnhtml2026; @mdncss2026];
 - cambios correctamente sincronizados, para que la versión publicada coincida con el estado real del proyecto [@chaconstraub2014progit].
+
+Antes de activar la publicación, vale la pena revisar que tu estructura mínima tenga sentido. Si el sitio es pequeño, un archivo `index.html`, un `styles.css` y una carpeta de imágenes pueden bastar. Lo importante no es tener muchos archivos, sino que las rutas estén claras y que sepas qué archivo funciona como punto de entrada.
 
 ## Flujo general
 
@@ -19,6 +29,50 @@ La lógica de trabajo es simple: primero dejas estructurados los archivos del si
 3. activa GitHub Pages desde la configuración del repositorio;
 4. verifica la URL pública;
 5. revisa que el sitio cargue bien.
+
+Esa secuencia puede parecer obvia cuando todo funciona bien. Sin embargo, en la práctica muchos bloqueos aparecen porque alguien activa Pages antes de comprobar si `index.html` existe, si las rutas son correctas o si el último cambio realmente llegó al remoto.
+
+## Paso 1. Prepara la estructura del sitio
+
+Antes de publicar, abre el repositorio y confirma que el sitio está armado como sitio estático: HTML para estructura, CSS para estilos y, solo si hace falta, JavaScript para comportamiento [@mdnhtml2026; @mdncss2026]. Conviene mirar con atención estos puntos:
+
+- que el archivo principal sea `index.html`;
+- que los archivos CSS estén enlazados con rutas correctas;
+- que las imágenes estén dentro del repositorio y no solo en tu máquina;
+- que no dependas de archivos locales fuera del proyecto.
+
+Un error muy frecuente es que la página “funcione” en local porque el navegador recuerda archivos o rutas del sistema, pero falle al publicarse porque GitHub Pages solo ve lo que realmente está dentro del repositorio.
+
+## Paso 2. Sincroniza el repositorio
+
+Publicar con Pages presupone que el estado remoto del repositorio refleja lo que quieres mostrar. Si acabas de hacer cambios, vuelve a revisar:
+
+```bash
+git status
+git add .
+git commit -m "Prepara sitio para publicación"
+git push
+```
+
+No siempre necesitarás estos cuatro comandos exactamente en ese momento, pero sí necesitas asegurarte de que la versión que GitHub va a publicar sea la correcta. Publicar desde una versión desactualizada es una de las formas más comunes de perder tiempo.
+
+## Paso 3. Activa GitHub Pages
+
+En la configuración del repositorio, busca la sección de Pages y selecciona la fuente de publicación. Dependiendo del flujo del repositorio, GitHub puede publicar desde una rama o desde un flujo basado en Actions [@githubpages2026]. Lee con calma qué opción estás eligiendo y qué directorio o rama estás exponiendo.
+
+Aquí conviene fijarse en algo muy concreto: no toda configuración “guarda” inmediatamente un sitio visible. A veces GitHub necesita unos minutos para procesar la publicación. Por eso, después de activar Pages, no saques conclusiones demasiado rápido si la URL todavía no responde.
+
+## Paso 4. Verifica la URL pública
+
+Cuando GitHub muestre la URL del sitio, ábrela y revisa no solo que cargue, sino cómo carga. Una verificación responsable incluye por lo menos:
+
+- abrir la página principal;
+- hacer clic en uno o dos enlaces internos;
+- confirmar que los estilos se aplicaron;
+- verificar que las imágenes aparecen;
+- revisar si el sitio se ve razonablemente bien en una ventana más estrecha.
+
+Esa última comprobación no convierte el tutorial en un curso de diseño responsivo. Solo recuerda algo importante: un sitio publicado no se evalúa únicamente por existir, sino también por ser legible y usable.
 
 ::: {.callout-important}
 ## Evidencia mínima
@@ -32,6 +86,18 @@ No basta con tener el repositorio. Debe existir un enlace público funcional al 
 - Revisa que los cambios estén realmente sincronizados, porque la publicación se hace desde el repositorio remoto y no desde los archivos que quedaron solo en tu equipo [@chaconstraub2014progit].
 - Revisa que la configuración de Pages apunte a la rama correcta, para que el servicio publique la versión prevista y no otra [@githubpages2026].
 
+Si algo falla, intenta aislar el problema en este orden:
+
+1. ¿existe `index.html`?
+2. ¿la URL está activa?
+3. ¿carga HTML pero no CSS?
+4. ¿faltan imágenes o enlaces?
+5. ¿el cambio correcto llegó al remoto?
+
+Resolver problemas en ese orden suele ser más eficaz que cambiar varias cosas al azar.
+
 ## Recomendación final
 
 Publica temprano y corrige después. En publicación web, muchos problemas no son conceptuales sino estructurales: nombres de archivo, rutas, sincronización o configuración del repositorio. Detectarlos con tiempo reduce bloqueos innecesarios y vuelve más claro el vínculo entre producto final y proceso de trabajo [@githubpages2026; @mdnhtml2026].
+
+Hay una buena razón para no dejar esto para el último día: Pages funciona mejor cuando se usa como parte del flujo de trabajo, no como ceremonia final. Si publicas temprano, cada mejora del sitio puede aparecer también como mejora visible de tu proceso.

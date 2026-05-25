@@ -4,16 +4,38 @@
 
 Este tutorial te ayuda a dejar listo el entorno mínimo para trabajar con scripts en Python durante el curso. Python fue elegido porque combina legibilidad, estructuras de alto nivel y una curva de entrada razonable para quienes no vienen de una formación técnica previa, sin dejar de pertenecer a un ecosistema ampliamente usado y activamente mantenido [@pythonfaq2026; @pythonversions2026; @pythonlicense2026].
 
+## Una historia breve antes de instalar
+
+Python no nació como un lenguaje ornamental ni como una moda reciente. La documentación oficial recuerda que Guido van Rossum lo desarrolló a inicios de la década de 1990 como sucesor de ABC y en un contexto ligado a problemas prácticos de extensibilidad y administración de sistemas [@pythonlicense2026; @pythonfaq2026]. Ese origen importa porque ayuda a entender una de sus marcas más persistentes: Python fue pensado para resolver tareas reales sin exigir que el programador escriba más complejidad de la necesaria.
+
+La historia del nombre también tiene algo de anécdota útil. Según la propia FAQ oficial, “Python” no viene de la serpiente, sino de *Monty Python*, porque van Rossum quería un nombre breve, distintivo y un poco misterioso [@pythonfaq2026]. Ese detalle suele recordarse porque rompe una intuición común, pero además muestra algo más interesante: incluso un lenguaje hoy central en datos, automatización e inteligencia artificial empezó con decisiones bastante humanas y nada grandilocuentes.
+
+La cronología oficial confirma, además, que Python no es un proyecto detenido. La página de versiones permite seguir hitos durante décadas, y las notas de versiones recientes muestran mejoras no solo de rendimiento, sino también de usabilidad cotidiana para quien interactúa con el lenguaje por primera vez [@pythonversions2026; @whatsnew3132024; @whatsnew3142025]. Eso vuelve razonable usarlo en un curso introductorio: es estable, ampliamente documentado y sigue vivo.
+
 ::: {.callout-important}
 ## Objetivo
 Al terminar, deberías poder abrir una terminal, verificar que Python está instalado y ejecutar un archivo simple. Ese umbral mínimo importa porque convierte la programación en una práctica verificable y no en una idea abstracta sobre “aprender código” [@pythonfaq2026; @contreras2020pedagogy].
 :::
+
+## Antes de empezar
+
+Antes de descargar nada, conviene tener claras tres verificaciones simples:
+
+1. qué sistema operativo estás usando;
+2. si ya existe una instalación previa de Python;
+3. en qué carpeta harás tus primeras pruebas.
+
+Estas comprobaciones ahorran errores muy frecuentes. A veces Python ya está instalado, pero bajo otro nombre de comando; otras veces la instalación existe, pero la terminal no sabe dónde encontrarla; y en ocasiones el problema no está en Python, sino en que el archivo de prueba quedó guardado en una carpeta distinta de la que creías.
 
 ## Paso 1. Descarga Python
 
 Descarga Python desde su sitio oficial y procura usar una versión estable reciente. La documentación oficial mantiene una cronología clara de versiones y muestra que el lenguaje sigue evolucionando de forma sostenida, por lo que conviene instalar una rama vigente y no una copia antigua encontrada al azar en otro sitio [@pythonversions2026; @whatsnew3142025].
 
 Durante la instalación, verifica que Python quede disponible desde la terminal. Esa disponibilidad importa porque buena parte de las prácticas del curso consiste en ejecutar scripts, revisar resultados y repetir el proceso con cambios pequeños [@pythonfaq2026; @contreras2020pedagogy].
+
+Si el instalador te ofrece opciones adicionales, vale la pena mirar con cuidado dos aspectos. El primero es si la instalación quedará accesible desde la línea de comandos. El segundo es la ubicación de la instalación, no porque debas memorizarla, sino porque puede ser útil si luego necesitas diagnosticar por qué la terminal no reconoce `python` o `python3`.
+
+No instales versiones beta, nightly o experimentales para el curso salvo que sepas exactamente por qué lo haces. Para aprender, lo más importante es estabilidad y compatibilidad con ejemplos sencillos.
 
 ## Paso 2. Verifica la instalación
 
@@ -28,6 +50,22 @@ Si tu sistema usa `python3`, prueba:
 ```bash
 python3 --version
 ```
+
+Lo que deberías observar aquí no es solo que “sale algo en pantalla”, sino que aparece un número de versión y no un mensaje de error. Si la terminal responde con algo como “command not found” o “no se reconoce como comando”, todavía no has llegado al punto mínimo de trabajo. Si sí aparece una versión, ya tienes confirmación de que el sistema sabe dónde está Python.
+
+Una buena práctica en este momento es ejecutar también:
+
+```bash
+which python
+```
+
+o, si usas `python3`:
+
+```bash
+which python3
+```
+
+En macOS o Linux, eso ayuda a ver qué ejecutable estás llamando realmente. No es indispensable para empezar, pero sí sirve cuando el sistema tiene más de una instalación y quieres evitar confusiones.
 
 ## Paso 3. Crea una carpeta de prueba
 
@@ -47,6 +85,36 @@ python hola.py
 
 Si tu sistema usa `python3`, adapta también este paso a `python3 hola.py`. Lo importante es confirmar que puedes escribir, guardar y ejecutar un archivo propio sin depender todavía de bibliotecas adicionales ni configuraciones complejas [@pythonfaq2026].
 
+En este punto conviene fijarse en tres cosas:
+
+- que el archivo realmente se llame `hola.py` y no `hola.py.txt`;
+- que estés ejecutando el comando dentro de la misma carpeta donde guardaste el archivo;
+- que la salida coincida con el texto esperado.
+
+Si el script corre y muestra `Hola, Legal Tech`, ya tienes resuelta la parte esencial: instalación, acceso por terminal y ejecución de un archivo propio. Parece poco, pero ese “poco” es justamente la base sobre la que luego se apilan variables, funciones, archivos, datos y automatización.
+
+## Paso 4. Haz una segunda prueba mínima
+
+Antes de cerrar el tutorial, conviene hacer una segunda prueba muy pequeña para comprobar que no fue casualidad. Cambia el archivo a algo como esto:
+
+```python
+nombre = "Legal Tech"
+print("Curso:", nombre)
+```
+
+Ejecuta de nuevo el archivo. La idea no es aprender todavía variables en serio, sino verificar que puedes editar, guardar y volver a correr el script sin perderte entre carpetas o comandos. Ese ciclo corto de modificar y probar es una parte central del aprendizaje técnico [@ryan2021coding].
+
+## Qué conviene revisar si algo no sale como esperabas
+
+Si el problema aparece aquí, suele estar en una de cuatro zonas:
+
+- la terminal no encuentra el ejecutable;
+- el archivo no está en la carpeta correcta;
+- el nombre del archivo no coincide exactamente;
+- el editor guardó el archivo con otra extensión.
+
+Cuando te bloquees, evita cambiar muchas cosas al mismo tiempo. Cambia una variable, vuelve a probar y mira qué cambió. Ese hábito de aislar el problema es más valioso que adivinar rápidamente una solución.
+
 ## Problemas frecuentes
 
 ::: {.callout-warning}
@@ -62,3 +130,5 @@ Estos problemas suelen ser menos conceptuales que operativos: la instalación ex
 ## Recomendación final
 
 No esperes a la sesión para descubrir que tu entorno no funciona. Verificar Python antes de cada práctica importante ahorra tiempo y vuelve más estable la progresión del curso, porque permite concentrarse en la lógica del problema y no en un bloqueo básico del entorno [@contreras2020pedagogy; @volini2020technology].
+
+Si quieres ir un paso más allá, deja creada una carpeta estable de trabajo para el curso y conserva allí este primer archivo. Tener un pequeño espacio de pruebas reduce fricción cuando necesites verificar rápidamente si el problema está en tu código o en tu entorno.

@@ -4,13 +4,25 @@
 
 Este tutorial te ayuda a instalar y usar lo mínimo de **Visual Studio Code** para trabajar durante el curso. VS Code resulta útil aquí no por la cantidad de funciones que ofrece, sino porque reúne en un mismo lugar carpeta de proyecto, edición de archivos, terminal integrada y acceso al control de cambios [@vscodegettingstarted2026; @vscodeterminal2026; @vscodesourcecontrol2026].
 
+## Una historia breve antes de abrirlo
+
+La historia oficial de VS Code es más interesante de lo que parece a primera vista. El equipo que lo creó cuenta que el proyecto comenzó con una pregunta bastante concreta: si era posible construir un editor basado en tecnologías web que no se sintiera como escribir dentro de un navegador [@vscodehistory2016]. Esa anécdota importa porque explica dos obsesiones que todavía se notan en el producto: rapidez y sensación de fluidez.
+
+La misma entrada histórica recuerda que el primer preview público apareció en `//build/ 2015`, que pocos meses después el proyecto ya tenía un modelo de extensiones y marketplace, y que su desarrollo se abrió públicamente en 2015 [@vscodehistory2016]. También subraya algo muy útil para este curso: desde temprano, VS Code fue pensado no solo para editar archivos, sino para navegar código, depurar y trabajar con Git en un mismo entorno [@vscodehistory2016].
+
+Esa combinación explica por qué el curso lo usa como editor recomendado. No es el único posible, pero sí uno particularmente adecuado para quien recién empieza y necesita ver en una sola interfaz la carpeta del proyecto, el archivo, la terminal y el historial de cambios.
+
 ## Paso 1. Instala el editor
 
 Descarga Visual Studio Code desde su sitio oficial e instálalo normalmente. La propia documentación de inicio lo presenta como un editor orientado a abrir carpetas de trabajo, editar archivos y combinar interfaz con terminal y control de versiones, que son justamente las operaciones que más vas a repetir en el curso [@vscodegettingstarted2026].
 
+Durante la instalación no hace falta activar veinte opciones ni personalizar cada detalle. Lo importante es que el editor quede accesible y que puedas abrirlo sin fricción. Si el instalador ofrece integración con el sistema para abrir carpetas o archivos desde el menú contextual, suele ser una comodidad útil, aunque no indispensable.
+
 ## Paso 2. Abre una carpeta de trabajo
 
 Usa `File > Open Folder` para abrir la carpeta del repositorio del curso o tu carpeta de práctica. VS Code trabaja mejor cuando el proyecto se abre como carpeta o workspace, porque así el editor puede mostrar el contexto completo de archivos, rutas y cambios [@vscodegettingstarted2026; @vscodeterminal2026].
+
+Aquí vale la pena detenerse un momento. Mucha gente principiante abre un archivo suelto, lo edita y luego se pierde cuando intenta ejecutar algo desde la terminal o versionarlo con Git. Abrir la carpeta completa evita ese problema porque convierte el proyecto en una unidad visible: archivos, subcarpetas, terminal y control de cambios parten del mismo lugar.
 
 ::: {.callout-note}
 ## Buena práctica
@@ -26,9 +38,26 @@ Conviene familiarizarte con estas áreas básicas, porque la interfaz de VS Code
 - terminal integrada;
 - panel de control de cambios.
 
+No necesitas memorizar todos los nombres técnicos de la interfaz. Lo que sí conviene reconocer pronto es la lógica de cada zona:
+
+- el explorador te dice qué archivos existen y dónde están;
+- el editor te deja escribir y leer;
+- la terminal te permite ejecutar comandos en el proyecto real;
+- el panel de control de cambios te muestra qué se modificó desde la última vez que versionaste.
+
+Si aprendes a moverte con soltura entre esas cuatro piezas, ya tienes resuelta gran parte del uso práctico que el curso te va a exigir.
+
 ## Paso 4. Abre la terminal integrada
 
 Desde la terminal integrada podrás ejecutar Python, Git y otros comandos del curso sin salir del editor. La documentación oficial subraya que esa terminal usa un shell del sistema y arranca desde la raíz del workspace, lo que vuelve más directo probar scripts, inspeccionar archivos y lanzar comandos del repositorio [@vscodeterminal2026].
+
+Esto es importante por una razón muy concreta: evita el salto mental entre “editar aquí” y “ejecutar en otro lado”. Si abres la terminal integrada y ejecutas un script, estás trabajando todavía dentro de la misma carpeta del proyecto. Eso reduce errores de ruta y vuelve más visible la conexión entre archivo y resultado.
+
+Conviene fijarte en tres cosas cuando abras la terminal:
+
+- qué carpeta aparece como directorio actual;
+- qué shell está usando el sistema;
+- si el comando que ejecutas produce el resultado esperado o un error que puedas leer con calma.
 
 ## Paso 5. Guarda, ejecuta y revisa cambios
 
@@ -40,6 +69,25 @@ Una rutina útil es esta, porque convierte la edición en una secuencia corta de
 4. ejecutar;
 5. revisar el resultado;
 6. registrar cambios con Git.
+
+Esta rutina puede parecer lenta al comienzo, pero en realidad ahorra tiempo. Lo que suele volver caótico el trabajo técnico no es detenerse demasiado, sino editar mucho sin verificar nada y descubrir tarde que no sabes qué cambió.
+
+## Paso 6. Mira el panel de control de cambios
+
+VS Code incorpora una vista de Source Control precisamente para que no tengas que salir del entorno cada vez que quieras revisar qué se modificó [@vscodesourcecontrol2026]. Aunque sigas usando comandos de Git en la terminal, vale la pena abrir ese panel y ver cómo marca archivos nuevos, modificados o pendientes.
+
+Lo importante aquí no es elegir “terminal o panel visual” como si hubiera que casarse con una sola forma de trabajo. Lo importante es entender que ambos muestran el mismo proyecto y la misma historia desde ángulos distintos. Si un archivo aparece modificado en el panel, eso debería coincidir con lo que Git reporta en la terminal.
+
+## En qué conviene fijarse mientras trabajas
+
+Mientras uses VS Code, procura observar estos detalles:
+
+- si estás editando el archivo correcto y no una copia en otra carpeta;
+- si el punto blanco en la pestaña indica que todavía no guardaste;
+- si la terminal está ubicada en la carpeta esperada;
+- si el panel de cambios muestra más archivos de los que querías modificar.
+
+Desarrollar esa atención evita varios errores típicos del trabajo con repositorios: editar el archivo equivocado, correr comandos en otra carpeta o hacer commits con cambios que ni siquiera habías notado.
 
 ::: {.callout-tip}
 ## Lo importante

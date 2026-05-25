@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -284,8 +319,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
    
   <ul>
   <li><a href="#para-qué-sirve-este-tutorial" id="toc-para-qué-sirve-este-tutorial" class="nav-link active" data-scroll-target="#para-qué-sirve-este-tutorial">¿Para qué sirve este tutorial?</a></li>
+  <li><a href="#una-historia-breve-antes-de-publicar" id="toc-una-historia-breve-antes-de-publicar" class="nav-link" data-scroll-target="#una-historia-breve-antes-de-publicar">Una historia breve antes de publicar</a></li>
   <li><a href="#qué-necesitas-antes" id="toc-qué-necesitas-antes" class="nav-link" data-scroll-target="#qué-necesitas-antes">Qué necesitas antes</a></li>
   <li><a href="#flujo-general" id="toc-flujo-general" class="nav-link" data-scroll-target="#flujo-general">Flujo general</a></li>
+  <li><a href="#paso-1.-prepara-la-estructura-del-sitio" id="toc-paso-1.-prepara-la-estructura-del-sitio" class="nav-link" data-scroll-target="#paso-1.-prepara-la-estructura-del-sitio">Paso 1. Prepara la estructura del sitio</a></li>
+  <li><a href="#paso-2.-sincroniza-el-repositorio" id="toc-paso-2.-sincroniza-el-repositorio" class="nav-link" data-scroll-target="#paso-2.-sincroniza-el-repositorio">Paso 2. Sincroniza el repositorio</a></li>
+  <li><a href="#paso-3.-activa-github-pages" id="toc-paso-3.-activa-github-pages" class="nav-link" data-scroll-target="#paso-3.-activa-github-pages">Paso 3. Activa GitHub Pages</a></li>
+  <li><a href="#paso-4.-verifica-la-url-pública" id="toc-paso-4.-verifica-la-url-pública" class="nav-link" data-scroll-target="#paso-4.-verifica-la-url-pública">Paso 4. Verifica la URL pública</a></li>
   <li><a href="#qué-revisar-si-no-publica-bien" id="toc-qué-revisar-si-no-publica-bien" class="nav-link" data-scroll-target="#qué-revisar-si-no-publica-bien">Qué revisar si no publica bien</a></li>
   <li><a href="#recomendación-final" id="toc-recomendación-final" class="nav-link" data-scroll-target="#recomendación-final">Recomendación final</a></li>
   </ul>
@@ -320,6 +360,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <h2 class="anchored" data-anchor-id="para-qué-sirve-este-tutorial">¿Para qué sirve este tutorial?</h2>
 <p>GitHub Pages permite publicar sitios estáticos directamente desde un repositorio. En este curso resulta especialmente útil porque une dos cosas que conviene no separar: la página visible y el proceso técnico que la produjo. Cuando el sitio se publica desde el mismo repositorio donde fue escrito, también queda trazabilidad sobre sus cambios <span class="citation" data-cites="githubpages2026">(GitHub Docs 2026)</span>.</p>
 </section>
+<section id="una-historia-breve-antes-de-publicar" class="level2">
+<h2 class="anchored" data-anchor-id="una-historia-breve-antes-de-publicar">Una historia breve antes de publicar</h2>
+<p>La historia temprana de GitHub Pages es casi una declaración pedagógica. En la entrada original del blog de GitHub, publicada en diciembre de 2008, el servicio se presentó con una idea extremadamente simple: publicar contenido web podía volverse tan fácil como hacer <code>git push</code> <span class="citation" data-cites="githubpageslaunch2008">(GitHub Blog 2008)</span>. Esa formulación sigue siendo poderosa porque resume muy bien qué vuelve atractivo a Pages en un curso como este: producto y proceso quedan unidos.</p>
+<p>El mismo post original muestra además dos detalles anecdóticos útiles. Para páginas personales, bastaba un repositorio del tipo <code>username.github.com</code>; para muchos proyectos, GitHub permitió publicar desde una rama <code>gh-pages</code> separada del resto del código <span class="citation" data-cites="githubpageslaunch2008">(GitHub Blog 2008)</span>. No era un capricho técnico. Era una manera de evitar que el sitio publicado ensuciara el directorio principal del proyecto y de mantener una separación razonable entre fuente y publicación <span class="citation" data-cites="githubpageslaunch2008">(GitHub Blog 2008)</span>.</p>
+<p>Con el tiempo, la plataforma evolucionó. GitHub explicó después que Pages se convirtió en hogar de millones de sitios y que el servicio terminó apoyándose en Actions para construir y desplegar con más flexibilidad <span class="citation" data-cites="githubpages2026">(GitHub Docs 2026)</span>. Pero la intuición fundacional sigue siendo la misma: publicar desde el repositorio sin romper la trazabilidad del trabajo.</p>
+</section>
 <section id="qué-necesitas-antes" class="level2">
 <h2 class="anchored" data-anchor-id="qué-necesitas-antes">Qué necesitas antes</h2>
 <ul>
@@ -327,6 +373,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li>un repositorio con archivos HTML, CSS y, si hace falta, JavaScript, porque GitHub Pages trabaja con sitios estáticos generados desde esos archivos <span class="citation" data-cites="githubpages2026 mdnhtml2026 mdncss2026">(GitHub Docs 2026; MDN Web Docs 2026a, 2026b)</span>;</li>
 <li>cambios correctamente sincronizados, para que la versión publicada coincida con el estado real del proyecto <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>.</li>
 </ul>
+<p>Antes de activar la publicación, vale la pena revisar que tu estructura mínima tenga sentido. Si el sitio es pequeño, un archivo <code>index.html</code>, un <code>styles.css</code> y una carpeta de imágenes pueden bastar. Lo importante no es tener muchos archivos, sino que las rutas estén claras y que sepas qué archivo funciona como punto de entrada.</p>
 </section>
 <section id="flujo-general" class="level2">
 <h2 class="anchored" data-anchor-id="flujo-general">Flujo general</h2>
@@ -338,6 +385,44 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li>verifica la URL pública;</li>
 <li>revisa que el sitio cargue bien.</li>
 </ol>
+<p>Esa secuencia puede parecer obvia cuando todo funciona bien. Sin embargo, en la práctica muchos bloqueos aparecen porque alguien activa Pages antes de comprobar si <code>index.html</code> existe, si las rutas son correctas o si el último cambio realmente llegó al remoto.</p>
+</section>
+<section id="paso-1.-prepara-la-estructura-del-sitio" class="level2">
+<h2 class="anchored" data-anchor-id="paso-1.-prepara-la-estructura-del-sitio">Paso 1. Prepara la estructura del sitio</h2>
+<p>Antes de publicar, abre el repositorio y confirma que el sitio está armado como sitio estático: HTML para estructura, CSS para estilos y, solo si hace falta, JavaScript para comportamiento <span class="citation" data-cites="mdnhtml2026 mdncss2026">(MDN Web Docs 2026a, 2026b)</span>. Conviene mirar con atención estos puntos:</p>
+<ul>
+<li>que el archivo principal sea <code>index.html</code>;</li>
+<li>que los archivos CSS estén enlazados con rutas correctas;</li>
+<li>que las imágenes estén dentro del repositorio y no solo en tu máquina;</li>
+<li>que no dependas de archivos locales fuera del proyecto.</li>
+</ul>
+<p>Un error muy frecuente es que la página “funcione” en local porque el navegador recuerda archivos o rutas del sistema, pero falle al publicarse porque GitHub Pages solo ve lo que realmente está dentro del repositorio.</p>
+</section>
+<section id="paso-2.-sincroniza-el-repositorio" class="level2">
+<h2 class="anchored" data-anchor-id="paso-2.-sincroniza-el-repositorio">Paso 2. Sincroniza el repositorio</h2>
+<p>Publicar con Pages presupone que el estado remoto del repositorio refleja lo que quieres mostrar. Si acabas de hacer cambios, vuelve a revisar:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Prepara sitio para publicación"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>No siempre necesitarás estos cuatro comandos exactamente en ese momento, pero sí necesitas asegurarte de que la versión que GitHub va a publicar sea la correcta. Publicar desde una versión desactualizada es una de las formas más comunes de perder tiempo.</p>
+</section>
+<section id="paso-3.-activa-github-pages" class="level2">
+<h2 class="anchored" data-anchor-id="paso-3.-activa-github-pages">Paso 3. Activa GitHub Pages</h2>
+<p>En la configuración del repositorio, busca la sección de Pages y selecciona la fuente de publicación. Dependiendo del flujo del repositorio, GitHub puede publicar desde una rama o desde un flujo basado en Actions <span class="citation" data-cites="githubpages2026">(GitHub Docs 2026)</span>. Lee con calma qué opción estás eligiendo y qué directorio o rama estás exponiendo.</p>
+<p>Aquí conviene fijarse en algo muy concreto: no toda configuración “guarda” inmediatamente un sitio visible. A veces GitHub necesita unos minutos para procesar la publicación. Por eso, después de activar Pages, no saques conclusiones demasiado rápido si la URL todavía no responde.</p>
+</section>
+<section id="paso-4.-verifica-la-url-pública" class="level2">
+<h2 class="anchored" data-anchor-id="paso-4.-verifica-la-url-pública">Paso 4. Verifica la URL pública</h2>
+<p>Cuando GitHub muestre la URL del sitio, ábrela y revisa no solo que cargue, sino cómo carga. Una verificación responsable incluye por lo menos:</p>
+<ul>
+<li>abrir la página principal;</li>
+<li>hacer clic en uno o dos enlaces internos;</li>
+<li>confirmar que los estilos se aplicaron;</li>
+<li>verificar que las imágenes aparecen;</li>
+<li>revisar si el sitio se ve razonablemente bien en una ventana más estrecha.</li>
+</ul>
+<p>Esa última comprobación no convierte el tutorial en un curso de diseño responsivo. Solo recuerda algo importante: un sitio publicado no se evalúa únicamente por existir, sino también por ser legible y usable.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -360,10 +445,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li>Revisa que los cambios estén realmente sincronizados, porque la publicación se hace desde el repositorio remoto y no desde los archivos que quedaron solo en tu equipo <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>.</li>
 <li>Revisa que la configuración de Pages apunte a la rama correcta, para que el servicio publique la versión prevista y no otra <span class="citation" data-cites="githubpages2026">(GitHub Docs 2026)</span>.</li>
 </ul>
+<p>Si algo falla, intenta aislar el problema en este orden:</p>
+<ol type="1">
+<li>¿existe <code>index.html</code>?</li>
+<li>¿la URL está activa?</li>
+<li>¿carga HTML pero no CSS?</li>
+<li>¿faltan imágenes o enlaces?</li>
+<li>¿el cambio correcto llegó al remoto?</li>
+</ol>
+<p>Resolver problemas en ese orden suele ser más eficaz que cambiar varias cosas al azar.</p>
 </section>
 <section id="recomendación-final" class="level2">
 <h2 class="anchored" data-anchor-id="recomendación-final">Recomendación final</h2>
 <p>Publica temprano y corrige después. En publicación web, muchos problemas no son conceptuales sino estructurales: nombres de archivo, rutas, sincronización o configuración del repositorio. Detectarlos con tiempo reduce bloqueos innecesarios y vuelve más claro el vínculo entre producto final y proceso de trabajo <span class="citation" data-cites="githubpages2026 mdnhtml2026">(GitHub Docs 2026; MDN Web Docs 2026a)</span>.</p>
+<p>Hay una buena razón para no dejar esto para el último día: Pages funciona mejor cuando se usa como parte del flujo de trabajo, no como ceremonia final. Si publicas temprano, cada mejora del sitio puede aparecer también como mejora visible de tu proceso.</p>
 
 
 </section>

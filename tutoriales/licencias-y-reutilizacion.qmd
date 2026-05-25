@@ -4,11 +4,26 @@
 
 Cuando trabajas con repositorios, código o recursos ajenos, no basta con que algo sea público o fácil de descargar. También importa bajo qué licencia se comparte, qué libertades concede y qué condiciones impone para copiar, modificar, redistribuir o mezclar materiales con otros proyectos [@bain2007softwarelibre1; @bain2007softwarelibre2].
 
+## Una historia breve antes de mirar un archivo `LICENSE`
+
+La historia de las licencias en software libre no gira alrededor de una pregunta burocrática, sino de una tensión bastante de fondo: cómo usar el derecho de autor para garantizar libertades de uso, copia, modificación y distribución en lugar de restringirlas del modo más cerrado posible [@bain2007softwarelibre1; @bain2007softwarelibre2]. Ese punto es importante porque evita un error conceptual muy común: creer que “libre” significa “sin derecho” o “sin reglas”.
+
+Los materiales de Bain y coautores muestran precisamente eso: el software libre no funciona fuera de la propiedad intelectual, sino dentro de ella, apoyándose en licencias que reorganizan qué puede hacer el usuario con el programa [@bain2007softwarelibre1; @bain2007softwarelibre2]. Jacovkis, por su parte, agrega un matiz muy útil para este curso: hablar de software libre también es hablar de producción colectiva de conocimiento, de comunidades que comparten, corrigen y expanden herramientas de manera acumulativa [@jacovkis2009softwarelibre].
+
+Ese trasfondo ayuda a leer de otra manera algo que a veces parece trivial. Un archivo `LICENSE` no está allí para decorar el repositorio. Está allí para traducir, en términos jurídicos concretos, cómo puede circular, transformarse o redistribuirse el material que estás mirando.
+
 ## Ideas básicas
 
 - **Software propietario**: suele distribuirse mediante licencias que restringen con más fuerza el uso, la copia, la modificación o la redistribución [@bain2007softwarelibre2].
 - **Software libre / open source**: no está fuera del derecho de autor, sino que usa licencias para garantizar ciertas libertades de uso, copia, modificación y distribución [@bain2007softwarelibre1; @bain2007softwarelibre2].
 - **Licencia**: es el instrumento jurídico que define qué se puede hacer con el material y bajo qué reglas [@bain2007softwarelibre2].
+
+También conviene distinguir entre dos planos que suelen mezclarse:
+
+- el plano técnico: si puedes acceder, copiar o ejecutar un archivo;
+- el plano jurídico: si tienes permiso para reutilizarlo, modificarlo o redistribuirlo de cierto modo.
+
+Muchos conflictos nacen justamente cuando alguien confunde acceso técnico con autorización jurídica.
 
 ::: {.callout-note}
 ## Regla simple
@@ -19,11 +34,23 @@ Que un repositorio sea visible no significa automáticamente que puedas reutiliz
 
 Antes de reutilizar un repositorio o un recurso digital, conviene revisar al menos cinco cosas: si tiene archivo `LICENSE`, qué tipo de licencia usa, si exige atribución, si impone compartir cambios bajo la misma licencia y si establece restricciones o incompatibilidades relevantes. Esas diferencias no son decorativas; afectan directamente cómo puedes integrar ese material en tu propio trabajo [@bain2007softwarelibre2].
 
+En la práctica, esa revisión puede hacerse como un pequeño checklist:
+
+1. localiza el archivo `LICENSE` o una sección equivalente;
+2. identifica el tipo de licencia;
+3. revisa si exige conservar avisos de autoría o copyright;
+4. revisa si obliga a publicar modificaciones bajo la misma licencia;
+5. revisa si hay condiciones especiales para redistribución, compatibilidad o uso comercial.
+
+No necesitas convertirte en especialista para hacer esta primera lectura. Lo importante es no saltarte el paso.
+
 ## ¿Por qué esto importa a un jurista?
 
 Porque la reutilización tecnológica también tiene dimensión jurídica. Supone permisos, cumplimiento, compatibilidad, trazabilidad y responsabilidad, y además obliga a distinguir entre acceso material al archivo y derecho efectivo a reutilizarlo en otro contexto [@bain2007softwarelibre1; @mendo2013reutilizacion].
 
 También importa por una razón más amplia: hablar de software libre no es hablar solo de precio o conveniencia técnica, sino de formas de producción colectiva de conocimiento, auditoría y circulación de herramientas que pueden ser estudiadas y corregidas por una comunidad [@jacovkis2009softwarelibre; @bain2007softwarelibre1].
+
+Para estudiantes de Derecho esto tiene un interés doble. Por un lado, porque muestra que la dimensión jurídica del entorno digital no aparece solo cuando hay litigio o regulación estatal. También aparece en decisiones cotidianas sobre uso, mezcla y redistribución de materiales. Por otro, porque enseña a leer la infraestructura digital con el mismo cuidado con que se leería una cláusula contractual relevante.
 
 ## Aplicación práctica
 
@@ -35,6 +62,19 @@ Cuando uses recursos ajenos para una práctica o proyecto, sigue una secuencia s
 4. evita copiar sin criterio.
 
 Un buen ejemplo de esta lógica es el propio ecosistema Python: su historia institucional está asociada a una política de distribución abierta y a una documentación oficial pública, pero eso no elimina la necesidad de entender bajo qué licencia circulan el software y los materiales [@pythonlicense2026].
+
+Si tomas una porción de código, una plantilla, una imagen o una hoja de estilos, procura dejar rastro claro de dos cosas: de dónde salió y en qué condiciones se reutilizó. Esa trazabilidad es útil incluso cuando la licencia es permisiva, porque evita que el proyecto quede apoyado en materiales cuya procedencia luego nadie puede reconstruir.
+
+## Qué errores conviene evitar
+
+Hay al menos cuatro errores frecuentes en esta materia:
+
+- creer que “está en GitHub” equivale a “puedo usarlo como quiera”;
+- confundir software libre con ausencia total de condiciones;
+- reutilizar materiales sin guardar la fuente;
+- mezclar recursos con licencias incompatibles sin notarlo.
+
+Ninguno de estos errores suele venir de mala fe. Casi siempre vienen de prisa, descuido o falta de hábito. Por eso conviene tratar la revisión de licencias como parte normal del flujo de trabajo, no como un trámite excepcional.
 
 ::: {.callout-tip}
 ## Lo relevante en este curso

@@ -4,6 +4,14 @@
 
 Git y GitHub son la infraestructura mínima de trabajo del curso porque permiten que un archivo no sea solo un resultado final, sino parte de un proceso visible de cambios, correcciones y decisiones. Versionar no significa guardar copias sin orden: significa construir un historial verificable sobre el proyecto [@chaconstraub2014progit].
 
+## Una historia breve antes del primer commit
+
+Git tiene una historia más dramática de lo que su apariencia de herramienta sobria podría sugerir. El propio libro *Pro Git* cuenta que nació en 2005 después de la ruptura entre la comunidad del kernel de Linux y la empresa que mantenía BitKeeper, un sistema propietario que hasta entonces se usaba en ese proyecto [@chaconstraub2014progit]. La comunidad necesitaba una alternativa rápida, distribuida y capaz de soportar desarrollo no lineal a gran escala. Git fue la respuesta [@chaconstraub2014progit].
+
+La página oficial de Git resume muy bien la consecuencia de ese origen: velocidad y rendimiento no fueron mejoras agregadas después, sino objetivos de diseño desde el principio [@gitabout2025]. El mismo sitio ofrece un dato casi anecdótico, pero muy útil para imaginar la escala de la herramienta: en 2025, Git almacenaba la historia completa del proyecto Linux, con 1.4 millones de commits, en solo 5.5 GB [@gitabout2025].
+
+GitHub llegó después. Su página de prensa recuerda que la plataforma fue fundada en febrero de 2008 [@githubpress2026]. Esa diferencia temporal importa: Git es el sistema de control de versiones; GitHub es una plataforma posterior que volvió más fácil alojar repositorios, compartirlos, colaborar y hacer visible el trabajo. Aprender a distinguir ambos niveles evita muchas confusiones desde el comienzo [@githubpress2026].
+
 ## Qué es cada cosa
 
 - **Git** es un sistema de control de versiones que organiza modificaciones sucesivas dentro de un historial trazable y reversible [@chaconstraub2014progit].
@@ -23,6 +31,22 @@ git clone URL_DEL_REPOSITORIO
 cd NOMBRE_DEL_REPOSITORIO
 ```
 
+Al hacer esto, fíjate en dos cosas. La primera es que `git clone` no baja solo los archivos visibles, sino también la historia del proyecto. La segunda es que el comando `cd` importa tanto como el `clone`, porque muchas confusiones posteriores aparecen cuando alguien ya descargó el repositorio, pero sigue ejecutando comandos desde otra carpeta.
+
+Si alguna vez dudas de dónde estás, ejecuta:
+
+```bash
+pwd
+```
+
+o, en Windows PowerShell:
+
+```powershell
+Get-Location
+```
+
+Saber dónde estás parado en el sistema de archivos es parte del trabajo con Git, no una habilidad separada.
+
 ## Paso 2. Revisa el estado
 
 El comando `git status` sirve para responder una pregunta simple pero decisiva: qué cambió, qué falta guardar y qué está listo para convertirse en parte del historial. Revisarlo con frecuencia evita que el trabajo quede desordenado o incompleto [@chaconstraub2014progit].
@@ -30,6 +54,8 @@ El comando `git status` sirve para responder una pregunta simple pero decisiva: 
 ```bash
 git status
 ```
+
+La costumbre importante aquí no es ejecutar el comando una sola vez, sino usarlo como una forma de orientación. Antes de editar, después de editar y antes de hacer commit, `git status` te recuerda qué está pasando realmente en el repositorio.
 
 ## Paso 3. Haz un cambio y regístralo
 
@@ -40,6 +66,10 @@ git add .
 git commit -m "Agrega primer ejercicio"
 ```
 
+Hay una diferencia importante entre ambos comandos. `git add` prepara cambios para el próximo commit; `git commit` los convierte en parte del historial. Conviene no mezclar mentalmente esos dos pasos. Si preparas demasiado sin revisar, puedes meter en un mismo commit cambios que en realidad correspondían a decisiones distintas.
+
+Por eso, cuando el proyecto crezca, suele ser preferible evitar el uso automático de `git add .` en todo momento y revisar primero qué archivos quieres incluir. En fases iniciales del curso puede ser suficiente, pero más adelante conviene ganar precisión.
+
 ## Paso 4. Sube el cambio
 
 El `push` sincroniza tu historial local con el repositorio remoto. Ese paso es clave porque una entrega que existe solo en tu computadora sigue siendo frágil: puede perderse, quedar sin respaldo o no estar disponible para revisión [@chaconstraub2014progit].
@@ -48,12 +78,26 @@ El `push` sincroniza tu historial local con el repositorio remoto. Ese paso es c
 git push
 ```
 
+Aquí vale la pena mirar con calma la respuesta de la terminal. Si el `push` funciona, Git suele indicar a qué rama envió el cambio. Si falla, normalmente explica por qué: credenciales, permisos, rama desactualizada o conflicto con cambios remotos. No cierres la terminal apenas veas mucho texto; a menudo el propio mensaje ya contiene la pista principal para corregir el problema.
+
+## Paso 5. Vuelve a mirar el historial
+
+Después del primer `push`, conviene revisar el historial con:
+
+```bash
+git log --oneline -n 5
+```
+
+Eso te permite ver si el commit quedó efectivamente registrado con el mensaje esperado. Otra vez, el punto no es aprender veinte comandos de memoria, sino desarrollar la costumbre de verificar.
+
 ## Buenas prácticas mínimas
 
 - Haz commits pequeños para que el historial muestre decisiones comprensibles y no bloques opacos de cambios [@chaconstraub2014progit].
 - Escribe mensajes claros para que otra persona, o tú mismo unos días después, pueda entender qué se modificó y con qué propósito [@chaconstraub2014progit].
 - Verifica `git status` antes de cerrar para no dejar archivos modificados sin registrar [@chaconstraub2014progit].
 - No trabajes solo en local si la entrega depende del repositorio remoto y de la trazabilidad compartida [@githubprojects2026].
+
+Podrías resumir estas buenas prácticas en una regla general: cada cambio importante debería poder responder tres preguntas sin esfuerzo. Qué cambió. Por qué cambió. Dónde quedó registrado.
 
 ## GitHub en contexto de curso
 
@@ -64,9 +108,24 @@ En este curso, GitHub no funciona solo como depósito de archivos. También es e
 - entregar evidencia de trabajo;
 - publicar páginas con GitHub Pages cuando corresponda.
 
+Si el proyecto crece, GitHub Projects también puede ayudarte a volver más visible la relación entre tareas, avances y repositorio. La propia documentación lo presenta como un espacio para integrar issues, metadatos y seguimiento dentro del mismo entorno [@githubprojects2026]. No siempre necesitarás eso en una práctica pequeña, pero sí vale la pena saber que existe.
+
 ## Seguridad mínima de la cuenta
 
 Si GitHub forma parte de tu infraestructura de trabajo, la seguridad de la cuenta también importa. GitHub define la autenticación de dos factores como una capa adicional para el inicio de sesión y recomienda preparar métodos de recuperación, porque proteger el acceso no consiste solo en tener una contraseña fuerte, sino también en evitar perder la cuenta en mitad del semestre [@github2fa2026].
+
+Esto merece una traducción práctica muy simple: activa 2FA cuando tu cuenta ya tenga repositorios del curso y guarda también las opciones de recuperación. La seguridad mal configurada puede ser casi tan problemática como la falta total de seguridad si te deja fuera de tu propia cuenta cuando más la necesitas.
+
+## En qué conviene fijarse mientras trabajas
+
+Mientras usas Git y GitHub, presta atención a estos puntos:
+
+- si estás en la rama correcta;
+- si el commit realmente incluye lo que querías registrar;
+- si el `push` llegó al remoto y no se quedó solo en local;
+- si GitHub muestra el cambio que acabas de hacer.
+
+Mirar estos detalles es mejor que descubrir al final que la versión correcta estaba en tu computadora, pero no en el repositorio.
 
 ::: {.callout-warning}
 ## Error frecuente
