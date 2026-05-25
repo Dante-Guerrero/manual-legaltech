@@ -2,24 +2,24 @@
 
 ## ¿Para qué sirve este tutorial?
 
-Este tutorial te ayuda a instalar y usar lo mínimo de **Visual Studio Code** para trabajar durante el curso.
+Este tutorial te ayuda a instalar y usar lo mínimo de **Visual Studio Code** para trabajar durante el curso. VS Code resulta útil aquí no por la cantidad de funciones que ofrece, sino porque reúne en un mismo lugar carpeta de proyecto, edición de archivos, terminal integrada y acceso al control de cambios [@vscodegettingstarted2026; @vscodeterminal2026; @vscodesourcecontrol2026].
 
 ## Paso 1. Instala el editor
 
-Descarga Visual Studio Code desde su sitio oficial e instálalo normalmente.
+Descarga Visual Studio Code desde su sitio oficial e instálalo normalmente. La propia documentación de inicio lo presenta como un editor orientado a abrir carpetas de trabajo, editar archivos y combinar interfaz con terminal y control de versiones, que son justamente las operaciones que más vas a repetir en el curso [@vscodegettingstarted2026].
 
 ## Paso 2. Abre una carpeta de trabajo
 
-Usa `File > Open Folder` para abrir la carpeta del repositorio del curso o tu carpeta de práctica.
+Usa `File > Open Folder` para abrir la carpeta del repositorio del curso o tu carpeta de práctica. VS Code trabaja mejor cuando el proyecto se abre como carpeta o workspace, porque así el editor puede mostrar el contexto completo de archivos, rutas y cambios [@vscodegettingstarted2026; @vscodeterminal2026].
 
 ::: {.callout-note}
 ## Buena práctica
-Trabaja siempre con carpetas completas y no con archivos sueltos. Eso hace más fácil navegar, editar y versionar.
+Trabaja siempre con carpetas completas y no con archivos sueltos. Eso hace más fácil navegar, ejecutar comandos desde la raíz del proyecto y relacionar edición con versionado [@vscodegettingstarted2026; @chaconstraub2014progit].
 :::
 
 ## Paso 3. Usa lo esencial del editor
 
-Conviene familiarizarte con estas áreas:
+Conviene familiarizarte con estas áreas básicas, porque la interfaz de VS Code está organizada precisamente para alternar entre exploración de archivos, edición, terminal y control de cambios sin abandonar el mismo entorno [@vscodegettingstarted2026; @vscodesourcecontrol2026].
 
 - explorador de archivos;
 - editor principal;
@@ -28,11 +28,11 @@ Conviene familiarizarte con estas áreas:
 
 ## Paso 4. Abre la terminal integrada
 
-Desde la terminal integrada podrás ejecutar Python, Git y otros comandos del curso sin salir del editor.
+Desde la terminal integrada podrás ejecutar Python, Git y otros comandos del curso sin salir del editor. La documentación oficial subraya que esa terminal usa un shell del sistema y arranca desde la raíz del workspace, lo que vuelve más directo probar scripts, inspeccionar archivos y lanzar comandos del repositorio [@vscodeterminal2026].
 
 ## Paso 5. Guarda, ejecuta y revisa cambios
 
-Una rutina útil es esta:
+Una rutina útil es esta, porque convierte la edición en una secuencia corta de prueba, verificación y registro en lugar de acumular cambios sin control [@vscodeterminal2026; @vscodesourcecontrol2026; @chaconstraub2014progit].
 
 1. abrir el archivo;
 2. editar una parte pequeña;
@@ -43,5 +43,5 @@ Una rutina útil es esta:
 
 ::: {.callout-tip}
 ## Lo importante
-No necesitas dominar todo VS Code. Necesitas usar bien un conjunto pequeño de funciones de forma consistente.
+No necesitas dominar todo VS Code. Necesitas usar bien un conjunto pequeño de funciones de forma consistente: abrir carpetas, editar archivos, usar la terminal integrada y revisar cambios del repositorio. Esa base basta para que el editor funcione como apoyo real y no como otra fuente de fricción técnica [@vscodegettingstarted2026; @vscodesourcecontrol2026].
 :::

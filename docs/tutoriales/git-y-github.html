@@ -326,6 +326,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <li><a href="#paso-4.-sube-el-cambio" id="toc-paso-4.-sube-el-cambio" class="nav-link" data-scroll-target="#paso-4.-sube-el-cambio">Paso 4. Sube el cambio</a></li>
   <li><a href="#buenas-prácticas-mínimas" id="toc-buenas-prácticas-mínimas" class="nav-link" data-scroll-target="#buenas-prácticas-mínimas">Buenas prácticas mínimas</a></li>
   <li><a href="#github-en-contexto-de-curso" id="toc-github-en-contexto-de-curso" class="nav-link" data-scroll-target="#github-en-contexto-de-curso">GitHub en contexto de curso</a></li>
+  <li><a href="#seguridad-mínima-de-la-cuenta" id="toc-seguridad-mínima-de-la-cuenta" class="nav-link" data-scroll-target="#seguridad-mínima-de-la-cuenta">Seguridad mínima de la cuenta</a></li>
   </ul>
 </nav>
     </div>
@@ -356,13 +357,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <section id="para-qué-sirve-este-tutorial" class="level2">
 <h2 class="anchored" data-anchor-id="para-qué-sirve-este-tutorial">¿Para qué sirve este tutorial?</h2>
-<p>Git y GitHub son la infraestructura mínima de trabajo del curso. Aquí aprenderás a clonar un repositorio, registrar cambios y sincronizar tu trabajo.</p>
+<p>Git y GitHub son la infraestructura mínima de trabajo del curso porque permiten que un archivo no sea solo un resultado final, sino parte de un proceso visible de cambios, correcciones y decisiones. Versionar no significa guardar copias sin orden: significa construir un historial verificable sobre el proyecto <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>.</p>
 </section>
 <section id="qué-es-cada-cosa" class="level2">
 <h2 class="anchored" data-anchor-id="qué-es-cada-cosa">Qué es cada cosa</h2>
 <ul>
-<li><strong>Git</strong>: sistema de control de versiones.</li>
-<li><strong>GitHub</strong>: plataforma para alojar repositorios, colaborar y entregar trabajo.</li>
+<li><strong>Git</strong> es un sistema de control de versiones que organiza modificaciones sucesivas dentro de un historial trazable y reversible <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>.</li>
+<li><strong>GitHub</strong> es la plataforma que permite alojar ese repositorio, compartirlo, sincronizarlo y convertirlo en evidencia de trabajo colaborativo o individual <span class="citation" data-cites="githubprojects2026">(GitHub Docs 2026a)</span>.</li>
 </ul>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -374,46 +375,54 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>El trabajo del semestre debe dejar rastro verificable: archivos, cambios y entregas en repositorios.</p>
+<p>El trabajo del semestre debe dejar rastro verificable: archivos, cambios, mensajes de commit y sincronización con el repositorio remoto. Si no existe ese rastro, resulta más difícil demostrar qué se hizo, cuándo se hizo y cómo evolucionó el proyecto <span class="citation" data-cites="chaconstraub2014progit githubprojects2026">(Chacon and Straub 2014; GitHub Docs 2026a)</span>.</p>
 </div>
 </div>
 </section>
 <section id="paso-1.-clona-un-repositorio" class="level2">
 <h2 class="anchored" data-anchor-id="paso-1.-clona-un-repositorio">Paso 1. Clona un repositorio</h2>
+<p>Clonar significa traer a tu computadora una copia completa del repositorio, con su estructura y su historial. Ese paso importa porque te permite trabajar localmente sin romper la continuidad entre el entorno del curso y tu propio equipo <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone URL_DEL_REPOSITORIO</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> NOMBRE_DEL_REPOSITORIO</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="paso-2.-revisa-el-estado" class="level2">
 <h2 class="anchored" data-anchor-id="paso-2.-revisa-el-estado">Paso 2. Revisa el estado</h2>
+<p>El comando <code>git status</code> sirve para responder una pregunta simple pero decisiva: qué cambió, qué falta guardar y qué está listo para convertirse en parte del historial. Revisarlo con frecuencia evita que el trabajo quede desordenado o incompleto <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="paso-3.-haz-un-cambio-y-regístralo" class="level2">
 <h2 class="anchored" data-anchor-id="paso-3.-haz-un-cambio-y-regístralo">Paso 3. Haz un cambio y regístralo</h2>
+<p>Cuando usas <code>git add</code> y <code>git commit</code>, conviertes una modificación suelta en una decisión documentada. En el contexto del curso, eso vale más que “haber avanzado” en abstracto, porque deja evidencia legible del proceso de trabajo <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Agrega primer ejercicio"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="paso-4.-sube-el-cambio" class="level2">
 <h2 class="anchored" data-anchor-id="paso-4.-sube-el-cambio">Paso 4. Sube el cambio</h2>
+<p>El <code>push</code> sincroniza tu historial local con el repositorio remoto. Ese paso es clave porque una entrega que existe solo en tu computadora sigue siendo frágil: puede perderse, quedar sin respaldo o no estar disponible para revisión <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="buenas-prácticas-mínimas" class="level2">
 <h2 class="anchored" data-anchor-id="buenas-prácticas-mínimas">Buenas prácticas mínimas</h2>
 <ul>
-<li>haz commits pequeños;</li>
-<li>escribe mensajes claros;</li>
-<li>verifica <code>git status</code> antes de cerrar;</li>
-<li>no trabajes solo en local si la entrega depende del repositorio.</li>
+<li>Haz commits pequeños para que el historial muestre decisiones comprensibles y no bloques opacos de cambios <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>.</li>
+<li>Escribe mensajes claros para que otra persona, o tú mismo unos días después, pueda entender qué se modificó y con qué propósito <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>.</li>
+<li>Verifica <code>git status</code> antes de cerrar para no dejar archivos modificados sin registrar <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>.</li>
+<li>No trabajes solo en local si la entrega depende del repositorio remoto y de la trazabilidad compartida <span class="citation" data-cites="githubprojects2026">(GitHub Docs 2026a)</span>.</li>
 </ul>
 </section>
 <section id="github-en-contexto-de-curso" class="level2">
 <h2 class="anchored" data-anchor-id="github-en-contexto-de-curso">GitHub en contexto de curso</h2>
-<p>GitHub sirve aquí para:</p>
+<p>En este curso, GitHub no funciona solo como depósito de archivos. También es el lugar donde el proyecto se vuelve visible, compartible y evaluable, porque ahí convergen repositorio, ramas, entregas y, cuando hace falta, seguimiento de tareas <span class="citation" data-cites="githubprojects2026 githubpages2026">(GitHub Docs 2026a, 2026c)</span>.</p>
 <ul>
 <li>clonar materiales;</li>
 <li>resolver PSETs;</li>
 <li>entregar evidencia de trabajo;</li>
 <li>publicar páginas con GitHub Pages cuando corresponda.</li>
 </ul>
+</section>
+<section id="seguridad-mínima-de-la-cuenta" class="level2">
+<h2 class="anchored" data-anchor-id="seguridad-mínima-de-la-cuenta">Seguridad mínima de la cuenta</h2>
+<p>Si GitHub forma parte de tu infraestructura de trabajo, la seguridad de la cuenta también importa. GitHub define la autenticación de dos factores como una capa adicional para el inicio de sesión y recomienda preparar métodos de recuperación, porque proteger el acceso no consiste solo en tener una contraseña fuerte, sino también en evitar perder la cuenta en mitad del semestre <span class="citation" data-cites="github2fa2026">(GitHub Docs 2026b)</span>.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -424,7 +433,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Modificar archivos sin hacer commit ni push. Si tu trabajo no está sincronizado, la entrega puede quedar incompleta o sin evidencia suficiente.</p>
+<p>Modificar archivos sin hacer <code>commit</code> ni <code>push</code>. Cuando eso ocurre, el trabajo puede existir materialmente, pero no como historial verificable ni como entrega sincronizada, y esa diferencia importa tanto para colaborar como para evaluar <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>.</p>
 </div>
 </div>
 

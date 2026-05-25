@@ -2,19 +2,21 @@
 
 ## ¿Para qué sirve este tutorial?
 
-Git y GitHub son la infraestructura mínima de trabajo del curso. Aquí aprenderás a clonar un repositorio, registrar cambios y sincronizar tu trabajo.
+Git y GitHub son la infraestructura mínima de trabajo del curso porque permiten que un archivo no sea solo un resultado final, sino parte de un proceso visible de cambios, correcciones y decisiones. Versionar no significa guardar copias sin orden: significa construir un historial verificable sobre el proyecto [@chaconstraub2014progit].
 
 ## Qué es cada cosa
 
-- **Git**: sistema de control de versiones.
-- **GitHub**: plataforma para alojar repositorios, colaborar y entregar trabajo.
+- **Git** es un sistema de control de versiones que organiza modificaciones sucesivas dentro de un historial trazable y reversible [@chaconstraub2014progit].
+- **GitHub** es la plataforma que permite alojar ese repositorio, compartirlo, sincronizarlo y convertirlo en evidencia de trabajo colaborativo o individual [@githubprojects2026].
 
 ::: {.callout-important}
 ## Regla del curso
-El trabajo del semestre debe dejar rastro verificable: archivos, cambios y entregas en repositorios.
+El trabajo del semestre debe dejar rastro verificable: archivos, cambios, mensajes de commit y sincronización con el repositorio remoto. Si no existe ese rastro, resulta más difícil demostrar qué se hizo, cuándo se hizo y cómo evolucionó el proyecto [@chaconstraub2014progit; @githubprojects2026].
 :::
 
 ## Paso 1. Clona un repositorio
+
+Clonar significa traer a tu computadora una copia completa del repositorio, con su estructura y su historial. Ese paso importa porque te permite trabajar localmente sin romper la continuidad entre el entorno del curso y tu propio equipo [@chaconstraub2014progit].
 
 ```bash
 git clone URL_DEL_REPOSITORIO
@@ -23,11 +25,15 @@ cd NOMBRE_DEL_REPOSITORIO
 
 ## Paso 2. Revisa el estado
 
+El comando `git status` sirve para responder una pregunta simple pero decisiva: qué cambió, qué falta guardar y qué está listo para convertirse en parte del historial. Revisarlo con frecuencia evita que el trabajo quede desordenado o incompleto [@chaconstraub2014progit].
+
 ```bash
 git status
 ```
 
 ## Paso 3. Haz un cambio y regístralo
+
+Cuando usas `git add` y `git commit`, conviertes una modificación suelta en una decisión documentada. En el contexto del curso, eso vale más que “haber avanzado” en abstracto, porque deja evidencia legible del proceso de trabajo [@chaconstraub2014progit].
 
 ```bash
 git add .
@@ -36,27 +42,33 @@ git commit -m "Agrega primer ejercicio"
 
 ## Paso 4. Sube el cambio
 
+El `push` sincroniza tu historial local con el repositorio remoto. Ese paso es clave porque una entrega que existe solo en tu computadora sigue siendo frágil: puede perderse, quedar sin respaldo o no estar disponible para revisión [@chaconstraub2014progit].
+
 ```bash
 git push
 ```
 
 ## Buenas prácticas mínimas
 
-- haz commits pequeños;
-- escribe mensajes claros;
-- verifica `git status` antes de cerrar;
-- no trabajes solo en local si la entrega depende del repositorio.
+- Haz commits pequeños para que el historial muestre decisiones comprensibles y no bloques opacos de cambios [@chaconstraub2014progit].
+- Escribe mensajes claros para que otra persona, o tú mismo unos días después, pueda entender qué se modificó y con qué propósito [@chaconstraub2014progit].
+- Verifica `git status` antes de cerrar para no dejar archivos modificados sin registrar [@chaconstraub2014progit].
+- No trabajes solo en local si la entrega depende del repositorio remoto y de la trazabilidad compartida [@githubprojects2026].
 
 ## GitHub en contexto de curso
 
-GitHub sirve aquí para:
+En este curso, GitHub no funciona solo como depósito de archivos. También es el lugar donde el proyecto se vuelve visible, compartible y evaluable, porque ahí convergen repositorio, ramas, entregas y, cuando hace falta, seguimiento de tareas [@githubprojects2026; @githubpages2026].
 
 - clonar materiales;
 - resolver PSETs;
 - entregar evidencia de trabajo;
 - publicar páginas con GitHub Pages cuando corresponda.
 
+## Seguridad mínima de la cuenta
+
+Si GitHub forma parte de tu infraestructura de trabajo, la seguridad de la cuenta también importa. GitHub define la autenticación de dos factores como una capa adicional para el inicio de sesión y recomienda preparar métodos de recuperación, porque proteger el acceso no consiste solo en tener una contraseña fuerte, sino también en evitar perder la cuenta en mitad del semestre [@github2fa2026].
+
 ::: {.callout-warning}
 ## Error frecuente
-Modificar archivos sin hacer commit ni push. Si tu trabajo no está sincronizado, la entrega puede quedar incompleta o sin evidencia suficiente.
+Modificar archivos sin hacer `commit` ni `push`. Cuando eso ocurre, el trabajo puede existir materialmente, pero no como historial verificable ni como entrega sincronizada, y esa diferencia importa tanto para colaborar como para evaluar [@chaconstraub2014progit].
 :::

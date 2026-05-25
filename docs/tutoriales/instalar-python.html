@@ -354,7 +354,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <section id="para-qué-sirve-este-tutorial" class="level2">
 <h2 class="anchored" data-anchor-id="para-qué-sirve-este-tutorial">¿Para qué sirve este tutorial?</h2>
-<p>Este tutorial te ayuda a dejar listo el entorno mínimo para trabajar con scripts en Python durante el curso.</p>
+<p>Este tutorial te ayuda a dejar listo el entorno mínimo para trabajar con scripts en Python durante el curso. Python fue elegido porque combina legibilidad, estructuras de alto nivel y una curva de entrada razonable para quienes no vienen de una formación técnica previa, sin dejar de pertenecer a un ecosistema ampliamente usado y activamente mantenido <span class="citation" data-cites="pythonfaq2026 pythonversions2026 pythonlicense2026">(Python Documentation 2026a, 2026b; Python.org 2026)</span>.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -365,27 +365,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Al terminar, deberías poder abrir una terminal, verificar que Python está instalado y ejecutar un archivo simple.</p>
+<p>Al terminar, deberías poder abrir una terminal, verificar que Python está instalado y ejecutar un archivo simple. Ese umbral mínimo importa porque convierte la programación en una práctica verificable y no en una idea abstracta sobre “aprender código” <span class="citation" data-cites="pythonfaq2026 contreras2020pedagogy">(Python Documentation 2026a; Contreras and McGrath 2020)</span>.</p>
 </div>
 </div>
 </section>
 <section id="paso-1.-descarga-python" class="level2">
 <h2 class="anchored" data-anchor-id="paso-1.-descarga-python">Paso 1. Descarga Python</h2>
-<p>Descarga Python desde su sitio oficial y usa una versión estable reciente. Durante la instalación, verifica que quede disponible desde la terminal.</p>
+<p>Descarga Python desde su sitio oficial y procura usar una versión estable reciente. La documentación oficial mantiene una cronología clara de versiones y muestra que el lenguaje sigue evolucionando de forma sostenida, por lo que conviene instalar una rama vigente y no una copia antigua encontrada al azar en otro sitio <span class="citation" data-cites="pythonversions2026 whatsnew3142025">(Python.org 2026; Python Documentation 2025)</span>.</p>
+<p>Durante la instalación, verifica que Python quede disponible desde la terminal. Esa disponibilidad importa porque buena parte de las prácticas del curso consiste en ejecutar scripts, revisar resultados y repetir el proceso con cambios pequeños <span class="citation" data-cites="pythonfaq2026 contreras2020pedagogy">(Python Documentation 2026a; Contreras and McGrath 2020)</span>.</p>
 </section>
 <section id="paso-2.-verifica-la-instalación" class="level2">
 <h2 class="anchored" data-anchor-id="paso-2.-verifica-la-instalación">Paso 2. Verifica la instalación</h2>
-<p>Abre la terminal y ejecuta:</p>
+<p>Abre la terminal y ejecuta uno de estos comandos para confirmar que el sistema reconoce la instalación. Python es portable entre Windows, macOS y Linux, pero el nombre del ejecutable puede variar entre <code>python</code> y <code>python3</code> según la configuración del sistema <span class="citation" data-cites="pythonfaq2026">(Python Documentation 2026a)</span>.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">--version</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Si tu sistema usa <code>python3</code>, prueba:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> <span class="at">--version</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="paso-3.-crea-una-carpeta-de-prueba" class="level2">
 <h2 class="anchored" data-anchor-id="paso-3.-crea-una-carpeta-de-prueba">Paso 3. Crea una carpeta de prueba</h2>
+<p>Una vez verificada la instalación, crea una carpeta de prueba y un archivo mínimo. Python funciona bien como lenguaje de entrada precisamente porque permite pasar rápido de una instalación correcta a un primer script legible y reutilizable <span class="citation" data-cites="pythonfaq2026 pythonversions2026">(Python Documentation 2026a; Python.org 2026)</span>.</p>
 <p>Abre VS Code o tu editor preferido y crea un archivo llamado <code>hola.py</code> con este contenido:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hola, Legal Tech"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Ejecuta luego:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> hola.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Si tu sistema usa <code>python3</code>, adapta también este paso a <code>python3 hola.py</code>. Lo importante es confirmar que puedes escribir, guardar y ejecutar un archivo propio sin depender todavía de bibliotecas adicionales ni configuraciones complejas <span class="citation" data-cites="pythonfaq2026">(Python Documentation 2026a)</span>.</p>
 </section>
 <section id="problemas-frecuentes" class="level2">
 <h2 class="anchored" data-anchor-id="problemas-frecuentes">Problemas frecuentes</h2>
@@ -405,12 +408,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li>cierra y vuelve a abrir la terminal;</li>
 <li>reinstala si fuera necesario.</li>
 </ul>
+<p>Estos problemas suelen ser menos conceptuales que operativos: la instalación existe, pero el sistema no sabe dónde encontrar el ejecutable o la terminal sigue usando una sesión anterior <span class="citation" data-cites="pythonfaq2026">(Python Documentation 2026a)</span>.</p>
 </div>
 </div>
 </section>
 <section id="recomendación-final" class="level2">
 <h2 class="anchored" data-anchor-id="recomendación-final">Recomendación final</h2>
-<p>No esperes a la sesión para descubrir que tu entorno no funciona. Verifica Python antes de cada práctica importante.</p>
+<p>No esperes a la sesión para descubrir que tu entorno no funciona. Verificar Python antes de cada práctica importante ahorra tiempo y vuelve más estable la progresión del curso, porque permite concentrarse en la lógica del problema y no en un bloqueo básico del entorno <span class="citation" data-cites="contreras2020pedagogy volini2020technology">(Contreras and McGrath 2020; Volini 2020)</span>.</p>
 
 
 </section>

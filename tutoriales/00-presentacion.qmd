@@ -1,15 +1,15 @@
 # Tutoriales
 
-Los tutoriales son una parte complementaria del manual. Su función no es reemplazar la sesión de clase, sino ofrecer explicaciones más detalladas y secuenciales sobre herramientas, instalaciones y procedimientos que conviene revisar fuera del aula.
+Los tutoriales cumplen una función instrumental dentro del manual: no reemplazan la sesión principal, pero sí reducen la fricción técnica que suele aparecer cuando una práctica depende de tener listo un entorno de trabajo, un historial verificable de cambios o una vía clara de publicación. En un curso como este, esa infraestructura no es un detalle logístico; forma parte del aprendizaje mismo [@pythonfaq2026; @chaconstraub2014progit; @githubpages2026].
 
 ::: {.callout-note}
 ## Cómo usar esta sección
-Si en una sesión te atoras con una instalación, un comando o un flujo de trabajo con Git/GitHub, vuelve a esta parte. Los tutoriales están pensados como material de consulta recurrente.
+Si en una sesión te atoras con una instalación, un comando, una carpeta del repositorio o un flujo de trabajo con Git y GitHub, vuelve a esta parte. Los tutoriales están pensados como material de consulta recurrente para que el tiempo de clase pueda concentrarse en análisis, práctica y toma de decisiones, no en desbloqueos técnicos de último minuto [@pythonversions2026; @chaconstraub2014progit].
 :::
 
 ## ¿Qué encontrarás aquí?
 
-Esta parte reúne tutoriales sobre:
+Esta parte reúne cinco apoyos concretos. Python aparece porque combina una sintaxis legible con un ecosistema abierto y estable; Git y GitHub porque convierten cambios dispersos en historial trazable; las licencias porque la reutilización digital no se agota en que algo sea visible en línea; y GitHub Pages porque permite publicar desde el mismo repositorio donde el trabajo fue escrito y versionado [@pythonfaq2026; @pythonlicense2026; @chaconstraub2014progit; @bain2007softwarelibre2; @githubpages2026].
 
 - instalación de Python;
 - instalación y configuración básica de Visual Studio Code;
@@ -19,7 +19,7 @@ Esta parte reúne tutoriales sobre:
 
 ## Criterio de lectura
 
-Los tutoriales asumen menos conocimientos previos que los capítulos de sesión y avanzan paso a paso. Están diseñados para reducir fricción técnica y permitir que las sesiones principales se concentren en el análisis y la práctica jurídica.
+Estos tutoriales asumen menos conocimientos previos que los capítulos de sesión y avanzan con una lógica más secuencial. El objetivo no es formar especialistas en administración de sistemas ni en desarrollo web, sino asegurar una base técnica suficiente para que la práctica jurídica con tecnología sea verificable, mantenible y responsable [@volini2020technology; @contreras2020pedagogy].
 
 | Tutorial | Propósito | Cuándo conviene revisarlo |
 |---|---|---|

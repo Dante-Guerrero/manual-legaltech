@@ -2,41 +2,41 @@
 
 ## ¿Para qué sirve este tutorial?
 
-Cuando trabajas con repositorios, código o recursos ajenos, no basta con que algo sea público. También importa bajo qué licencia se comparte y qué permite hacer esa licencia.
+Cuando trabajas con repositorios, código o recursos ajenos, no basta con que algo sea público o fácil de descargar. También importa bajo qué licencia se comparte, qué libertades concede y qué condiciones impone para copiar, modificar, redistribuir o mezclar materiales con otros proyectos [@bain2007softwarelibre1; @bain2007softwarelibre2].
 
 ## Ideas básicas
 
-- **software propietario**: su uso, copia o modificación suele estar más restringido;
-- **software libre / open source**: puede permitir uso, copia o modificación bajo ciertas condiciones;
-- **licencia**: define qué se puede hacer y bajo qué reglas.
+- **Software propietario**: suele distribuirse mediante licencias que restringen con más fuerza el uso, la copia, la modificación o la redistribución [@bain2007softwarelibre2].
+- **Software libre / open source**: no está fuera del derecho de autor, sino que usa licencias para garantizar ciertas libertades de uso, copia, modificación y distribución [@bain2007softwarelibre1; @bain2007softwarelibre2].
+- **Licencia**: es el instrumento jurídico que define qué se puede hacer con el material y bajo qué reglas [@bain2007softwarelibre2].
 
 ::: {.callout-note}
 ## Regla simple
-Que un repositorio sea visible no significa automáticamente que puedas reutilizarlo de cualquier manera.
+Que un repositorio sea visible no significa automáticamente que puedas reutilizarlo de cualquier manera. La visibilidad facilita el acceso; la licencia define el alcance jurídico de ese acceso [@bain2007softwarelibre2].
 :::
 
 ## Qué conviene revisar en un repositorio
 
-- si tiene archivo `LICENSE`;
-- qué tipo de licencia usa;
-- si exige atribución;
-- si impone compartir cambios bajo la misma licencia;
-- si limita usos específicos.
+Antes de reutilizar un repositorio o un recurso digital, conviene revisar al menos cinco cosas: si tiene archivo `LICENSE`, qué tipo de licencia usa, si exige atribución, si impone compartir cambios bajo la misma licencia y si establece restricciones o incompatibilidades relevantes. Esas diferencias no son decorativas; afectan directamente cómo puedes integrar ese material en tu propio trabajo [@bain2007softwarelibre2].
 
 ## ¿Por qué esto importa a un jurista?
 
-Porque la reutilización tecnológica también tiene dimensión jurídica: cumplimiento, permisos, trazabilidad y responsabilidad.
+Porque la reutilización tecnológica también tiene dimensión jurídica. Supone permisos, cumplimiento, compatibilidad, trazabilidad y responsabilidad, y además obliga a distinguir entre acceso material al archivo y derecho efectivo a reutilizarlo en otro contexto [@bain2007softwarelibre1; @mendo2013reutilizacion].
+
+También importa por una razón más amplia: hablar de software libre no es hablar solo de precio o conveniencia técnica, sino de formas de producción colectiva de conocimiento, auditoría y circulación de herramientas que pueden ser estudiadas y corregidas por una comunidad [@jacovkis2009softwarelibre; @bain2007softwarelibre1].
 
 ## Aplicación práctica
 
-Cuando uses recursos ajenos para una práctica o proyecto:
+Cuando uses recursos ajenos para una práctica o proyecto, sigue una secuencia simple: identifica la fuente, revisa la licencia, documenta qué reutilizaste y evita copiar sin criterio. Esa secuencia protege mejor tanto la trazabilidad académica como el cumplimiento básico de las reglas de reutilización [@bain2007softwarelibre2; @mendo2013reutilizacion].
 
 1. identifica la fuente;
 2. revisa la licencia;
 3. documenta qué reutilizaste;
 4. evita copiar sin criterio.
 
+Un buen ejemplo de esta lógica es el propio ecosistema Python: su historia institucional está asociada a una política de distribución abierta y a una documentación oficial pública, pero eso no elimina la necesidad de entender bajo qué licencia circulan el software y los materiales [@pythonlicense2026].
+
 ::: {.callout-tip}
 ## Lo relevante en este curso
-No se espera una teoría exhaustiva de licencias. Se espera una cultura mínima de reutilización responsable.
+No se espera una teoría exhaustiva de licencias. Se espera una cultura mínima de reutilización responsable: saber mirar un archivo `LICENSE`, reconocer que las libertades de uso están condicionadas jurídicamente y dejar rastro claro de las fuentes empleadas [@bain2007softwarelibre2; @jacovkis2009softwarelibre].
 :::

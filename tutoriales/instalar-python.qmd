@@ -2,20 +2,22 @@
 
 ## ¿Para qué sirve este tutorial?
 
-Este tutorial te ayuda a dejar listo el entorno mínimo para trabajar con scripts en Python durante el curso.
+Este tutorial te ayuda a dejar listo el entorno mínimo para trabajar con scripts en Python durante el curso. Python fue elegido porque combina legibilidad, estructuras de alto nivel y una curva de entrada razonable para quienes no vienen de una formación técnica previa, sin dejar de pertenecer a un ecosistema ampliamente usado y activamente mantenido [@pythonfaq2026; @pythonversions2026; @pythonlicense2026].
 
 ::: {.callout-important}
 ## Objetivo
-Al terminar, deberías poder abrir una terminal, verificar que Python está instalado y ejecutar un archivo simple.
+Al terminar, deberías poder abrir una terminal, verificar que Python está instalado y ejecutar un archivo simple. Ese umbral mínimo importa porque convierte la programación en una práctica verificable y no en una idea abstracta sobre “aprender código” [@pythonfaq2026; @contreras2020pedagogy].
 :::
 
 ## Paso 1. Descarga Python
 
-Descarga Python desde su sitio oficial y usa una versión estable reciente. Durante la instalación, verifica que quede disponible desde la terminal.
+Descarga Python desde su sitio oficial y procura usar una versión estable reciente. La documentación oficial mantiene una cronología clara de versiones y muestra que el lenguaje sigue evolucionando de forma sostenida, por lo que conviene instalar una rama vigente y no una copia antigua encontrada al azar en otro sitio [@pythonversions2026; @whatsnew3142025].
+
+Durante la instalación, verifica que Python quede disponible desde la terminal. Esa disponibilidad importa porque buena parte de las prácticas del curso consiste en ejecutar scripts, revisar resultados y repetir el proceso con cambios pequeños [@pythonfaq2026; @contreras2020pedagogy].
 
 ## Paso 2. Verifica la instalación
 
-Abre la terminal y ejecuta:
+Abre la terminal y ejecuta uno de estos comandos para confirmar que el sistema reconoce la instalación. Python es portable entre Windows, macOS y Linux, pero el nombre del ejecutable puede variar entre `python` y `python3` según la configuración del sistema [@pythonfaq2026].
 
 ```bash
 python --version
@@ -29,6 +31,8 @@ python3 --version
 
 ## Paso 3. Crea una carpeta de prueba
 
+Una vez verificada la instalación, crea una carpeta de prueba y un archivo mínimo. Python funciona bien como lenguaje de entrada precisamente porque permite pasar rápido de una instalación correcta a un primer script legible y reutilizable [@pythonfaq2026; @pythonversions2026].
+
 Abre VS Code o tu editor preferido y crea un archivo llamado `hola.py` con este contenido:
 
 ```python
@@ -41,6 +45,8 @@ Ejecuta luego:
 python hola.py
 ```
 
+Si tu sistema usa `python3`, adapta también este paso a `python3 hola.py`. Lo importante es confirmar que puedes escribir, guardar y ejecutar un archivo propio sin depender todavía de bibliotecas adicionales ni configuraciones complejas [@pythonfaq2026].
+
 ## Problemas frecuentes
 
 ::: {.callout-warning}
@@ -49,8 +55,10 @@ python hola.py
 - prueba con `python3`;
 - cierra y vuelve a abrir la terminal;
 - reinstala si fuera necesario.
+
+Estos problemas suelen ser menos conceptuales que operativos: la instalación existe, pero el sistema no sabe dónde encontrar el ejecutable o la terminal sigue usando una sesión anterior [@pythonfaq2026].
 :::
 
 ## Recomendación final
 
-No esperes a la sesión para descubrir que tu entorno no funciona. Verifica Python antes de cada práctica importante.
+No esperes a la sesión para descubrir que tu entorno no funciona. Verificar Python antes de cada práctica importante ahorra tiempo y vuelve más estable la progresión del curso, porque permite concentrarse en la lógica del problema y no en un bloqueo básico del entorno [@contreras2020pedagogy; @volini2020technology].

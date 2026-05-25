@@ -27,6 +27,10 @@
 
 ::: {.content-visible when-profile="docx"}
 
-![](images/portada.png){fig-alt="Portada del manual Legal Tech" width="100%"}
+::: {.custom-style="Normal"}
+
+![](images/portada.png){width=100%}
+
+:::
 
 :::

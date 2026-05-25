@@ -318,18 +318,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <section id="para-qué-sirve-este-tutorial" class="level2">
 <h2 class="anchored" data-anchor-id="para-qué-sirve-este-tutorial">¿Para qué sirve este tutorial?</h2>
-<p>GitHub Pages permite publicar sitios estáticos directamente desde un repositorio. En este curso resulta especialmente útil para la evaluación de página web personal.</p>
+<p>GitHub Pages permite publicar sitios estáticos directamente desde un repositorio. En este curso resulta especialmente útil porque une dos cosas que conviene no separar: la página visible y el proceso técnico que la produjo. Cuando el sitio se publica desde el mismo repositorio donde fue escrito, también queda trazabilidad sobre sus cambios <span class="citation" data-cites="githubpages2026">(GitHub Docs 2026)</span>.</p>
 </section>
 <section id="qué-necesitas-antes" class="level2">
 <h2 class="anchored" data-anchor-id="qué-necesitas-antes">Qué necesitas antes</h2>
 <ul>
-<li>una cuenta en GitHub;</li>
-<li>un repositorio con archivos HTML, CSS y, si hace falta, JavaScript;</li>
-<li>cambios correctamente sincronizados.</li>
+<li>una cuenta en GitHub y acceso estable al repositorio donde está el sitio <span class="citation" data-cites="githubpages2026">(GitHub Docs 2026)</span>;</li>
+<li>un repositorio con archivos HTML, CSS y, si hace falta, JavaScript, porque GitHub Pages trabaja con sitios estáticos generados desde esos archivos <span class="citation" data-cites="githubpages2026 mdnhtml2026 mdncss2026">(GitHub Docs 2026; MDN Web Docs 2026a, 2026b)</span>;</li>
+<li>cambios correctamente sincronizados, para que la versión publicada coincida con el estado real del proyecto <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>.</li>
 </ul>
 </section>
 <section id="flujo-general" class="level2">
 <h2 class="anchored" data-anchor-id="flujo-general">Flujo general</h2>
+<p>La lógica de trabajo es simple: primero dejas estructurados los archivos del sitio, luego los sincronizas con el repositorio y finalmente activas la publicación desde GitHub. Esa secuencia evita confundir “tener archivos web” con “tener una página efectivamente accesible en línea” <span class="citation" data-cites="githubpages2026 mdnhtml2026">(GitHub Docs 2026; MDN Web Docs 2026a)</span>.</p>
 <ol type="1">
 <li>crea o identifica tu repositorio;</li>
 <li>sube los archivos del sitio;</li>
@@ -347,22 +348,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>No basta con tener el repositorio. Debe existir un enlace público funcional al sitio publicado.</p>
+<p>No basta con tener el repositorio. Debe existir un enlace público funcional al sitio publicado, porque GitHub Pages se evalúa como publicación efectiva y no solo como intención de publicar <span class="citation" data-cites="githubpages2026">(GitHub Docs 2026)</span>.</p>
 </div>
 </div>
 </section>
 <section id="qué-revisar-si-no-publica-bien" class="level2">
 <h2 class="anchored" data-anchor-id="qué-revisar-si-no-publica-bien">Qué revisar si no publica bien</h2>
 <ul>
-<li>que el archivo principal sea <code>index.html</code>;</li>
-<li>que las rutas a CSS, imágenes o scripts estén bien escritas;</li>
-<li>que los cambios estén realmente sincronizados;</li>
-<li>que la configuración de Pages apunte a la rama correcta.</li>
+<li>Revisa que el archivo principal sea <code>index.html</code>, porque HTML organiza el contenido de la página y ese nombre suele funcionar como punto de entrada del sitio <span class="citation" data-cites="mdnhtml2026">(MDN Web Docs 2026a)</span>.</li>
+<li>Revisa que las rutas a CSS, imágenes o scripts estén bien escritas, ya que un sitio estático depende de archivos enlazados con precisión y GitHub Pages publica exactamente esa estructura <span class="citation" data-cites="githubpages2026 mdncss2026">(GitHub Docs 2026; MDN Web Docs 2026b)</span>.</li>
+<li>Revisa que los cambios estén realmente sincronizados, porque la publicación se hace desde el repositorio remoto y no desde los archivos que quedaron solo en tu equipo <span class="citation" data-cites="chaconstraub2014progit">(Chacon and Straub 2014)</span>.</li>
+<li>Revisa que la configuración de Pages apunte a la rama correcta, para que el servicio publique la versión prevista y no otra <span class="citation" data-cites="githubpages2026">(GitHub Docs 2026)</span>.</li>
 </ul>
 </section>
 <section id="recomendación-final" class="level2">
 <h2 class="anchored" data-anchor-id="recomendación-final">Recomendación final</h2>
-<p>Publica temprano y corrige después. Esperar al último momento suele convertir errores pequeños en bloqueos innecesarios.</p>
+<p>Publica temprano y corrige después. En publicación web, muchos problemas no son conceptuales sino estructurales: nombres de archivo, rutas, sincronización o configuración del repositorio. Detectarlos con tiempo reduce bloqueos innecesarios y vuelve más claro el vínculo entre producto final y proceso de trabajo <span class="citation" data-cites="githubpages2026 mdnhtml2026">(GitHub Docs 2026; MDN Web Docs 2026a)</span>.</p>
 
 
 </section>

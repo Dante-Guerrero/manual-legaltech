@@ -1587,7 +1587,7 @@
     "href": "tutoriales/00-presentacion.html",
     "title": "Tutoriales",
     "section": "",
-    "text": "¿Qué encontrarás aquí?\nLos tutoriales son una parte complementaria del manual. Su función no es reemplazar la sesión de clase, sino ofrecer explicaciones más detalladas y secuenciales sobre herramientas, instalaciones y procedimientos que conviene revisar fuera del aula.\nEsta parte reúne tutoriales sobre:",
+    "text": "¿Qué encontrarás aquí?\nLos tutoriales cumplen una función instrumental dentro del manual: no reemplazan la sesión principal, pero sí reducen la fricción técnica que suele aparecer cuando una práctica depende de tener listo un entorno de trabajo, un historial verificable de cambios o una vía clara de publicación. En un curso como este, esa infraestructura no es un detalle logístico; forma parte del aprendizaje mismo (Python Documentation 2026a; Chacon and Straub 2014; GitHub Docs 2026).\nEsta parte reúne cinco apoyos concretos. Python aparece porque combina una sintaxis legible con un ecosistema abierto y estable; Git y GitHub porque convierten cambios dispersos en historial trazable; las licencias porque la reutilización digital no se agota en que algo sea visible en línea; y GitHub Pages porque permite publicar desde el mismo repositorio donde el trabajo fue escrito y versionado (Python Documentation 2026a, 2026b; Chacon and Straub 2014; Bain et al. 2007; GitHub Docs 2026).",
     "crumbs": [
       "Tutoriales"
     ]
@@ -1607,7 +1607,7 @@
     "href": "tutoriales/00-presentacion.html#criterio-de-lectura",
     "title": "Tutoriales",
     "section": "Criterio de lectura",
-    "text": "Criterio de lectura\nLos tutoriales asumen menos conocimientos previos que los capítulos de sesión y avanzan paso a paso. Están diseñados para reducir fricción técnica y permitir que las sesiones principales se concentren en el análisis y la práctica jurídica.\n\n\n\n\n\n\n\n\nTutorial\nPropósito\nCuándo conviene revisarlo\n\n\n\n\nInstalar Python\ndejar listo el entorno de programación\nantes o durante el Módulo I\n\n\nVisual Studio Code\npreparar el editor de trabajo\nantes de la primera práctica\n\n\nGit y GitHub\nclonar, versionar y entregar trabajo\ndurante todo el curso\n\n\nLicencias y reutilización\nentender qué puede reutilizarse y cómo\ncuando se trabaja con repositorios ajenos\n\n\nGitHub Pages\npublicar un sitio estático\nantes de la EC2",
+    "text": "Criterio de lectura\nEstos tutoriales asumen menos conocimientos previos que los capítulos de sesión y avanzan con una lógica más secuencial. El objetivo no es formar especialistas en administración de sistemas ni en desarrollo web, sino asegurar una base técnica suficiente para que la práctica jurídica con tecnología sea verificable, mantenible y responsable (Volini 2020; Contreras and McGrath 2020).\n\n\n\n\n\n\n\n\nTutorial\nPropósito\nCuándo conviene revisarlo\n\n\n\n\nInstalar Python\ndejar listo el entorno de programación\nantes o durante el Módulo I\n\n\nVisual Studio Code\npreparar el editor de trabajo\nantes de la primera práctica\n\n\nGit y GitHub\nclonar, versionar y entregar trabajo\ndurante todo el curso\n\n\nLicencias y reutilización\nentender qué puede reutilizarse y cómo\ncuando se trabaja con repositorios ajenos\n\n\nGitHub Pages\npublicar un sitio estático\nantes de la EC2",
     "crumbs": [
       "Tutoriales"
     ]
@@ -1617,7 +1617,7 @@
     "href": "tutoriales/instalar-python.html",
     "title": "Tutorial: Instalar Python",
     "section": "",
-    "text": "¿Para qué sirve este tutorial?\nEste tutorial te ayuda a dejar listo el entorno mínimo para trabajar con scripts en Python durante el curso.",
+    "text": "¿Para qué sirve este tutorial?\nEste tutorial te ayuda a dejar listo el entorno mínimo para trabajar con scripts en Python durante el curso. Python fue elegido porque combina legibilidad, estructuras de alto nivel y una curva de entrada razonable para quienes no vienen de una formación técnica previa, sin dejar de pertenecer a un ecosistema ampliamente usado y activamente mantenido (Python Documentation 2026a, 2026b; Python.org 2026).",
     "crumbs": [
       "Tutoriales",
       "<span class='chapter-number'>15</span>  <span class='chapter-title'>Tutorial: Instalar Python</span>"
@@ -1628,7 +1628,7 @@
     "href": "tutoriales/instalar-python.html#para-qué-sirve-este-tutorial",
     "title": "Tutorial: Instalar Python",
     "section": "",
-    "text": "ImportantObjetivo\n\n\n\nAl terminar, deberías poder abrir una terminal, verificar que Python está instalado y ejecutar un archivo simple.",
+    "text": "ImportantObjetivo\n\n\n\nAl terminar, deberías poder abrir una terminal, verificar que Python está instalado y ejecutar un archivo simple. Ese umbral mínimo importa porque convierte la programación en una práctica verificable y no en una idea abstracta sobre “aprender código” (Python Documentation 2026a; Contreras and McGrath 2020).",
     "crumbs": [
       "Tutoriales",
       "<span class='chapter-number'>15</span>  <span class='chapter-title'>Tutorial: Instalar Python</span>"
@@ -1639,7 +1639,7 @@
     "href": "tutoriales/instalar-python.html#paso-1.-descarga-python",
     "title": "Tutorial: Instalar Python",
     "section": "Paso 1. Descarga Python",
-    "text": "Paso 1. Descarga Python\nDescarga Python desde su sitio oficial y usa una versión estable reciente. Durante la instalación, verifica que quede disponible desde la terminal.",
+    "text": "Paso 1. Descarga Python\nDescarga Python desde su sitio oficial y procura usar una versión estable reciente. La documentación oficial mantiene una cronología clara de versiones y muestra que el lenguaje sigue evolucionando de forma sostenida, por lo que conviene instalar una rama vigente y no una copia antigua encontrada al azar en otro sitio (Python.org 2026; Python Documentation 2025).\nDurante la instalación, verifica que Python quede disponible desde la terminal. Esa disponibilidad importa porque buena parte de las prácticas del curso consiste en ejecutar scripts, revisar resultados y repetir el proceso con cambios pequeños (Python Documentation 2026a; Contreras and McGrath 2020).",
     "crumbs": [
       "Tutoriales",
       "<span class='chapter-number'>15</span>  <span class='chapter-title'>Tutorial: Instalar Python</span>"
@@ -1650,7 +1650,7 @@
     "href": "tutoriales/instalar-python.html#paso-2.-verifica-la-instalación",
     "title": "Tutorial: Instalar Python",
     "section": "Paso 2. Verifica la instalación",
-    "text": "Paso 2. Verifica la instalación\nAbre la terminal y ejecuta:\npython --version\nSi tu sistema usa python3, prueba:\npython3 --version",
+    "text": "Paso 2. Verifica la instalación\nAbre la terminal y ejecuta uno de estos comandos para confirmar que el sistema reconoce la instalación. Python es portable entre Windows, macOS y Linux, pero el nombre del ejecutable puede variar entre python y python3 según la configuración del sistema (Python Documentation 2026a).\npython --version\nSi tu sistema usa python3, prueba:\npython3 --version",
     "crumbs": [
       "Tutoriales",
       "<span class='chapter-number'>15</span>  <span class='chapter-title'>Tutorial: Instalar Python</span>"
@@ -1661,7 +1661,7 @@
     "href": "tutoriales/instalar-python.html#paso-3.-crea-una-carpeta-de-prueba",
     "title": "Tutorial: Instalar Python",
     "section": "Paso 3. Crea una carpeta de prueba",
-    "text": "Paso 3. Crea una carpeta de prueba\nAbre VS Code o tu editor preferido y crea un archivo llamado hola.py con este contenido:\nprint(\"Hola, Legal Tech\")\nEjecuta luego:\npython hola.py",
+    "text": "Paso 3. Crea una carpeta de prueba\nUna vez verificada la instalación, crea una carpeta de prueba y un archivo mínimo. Python funciona bien como lenguaje de entrada precisamente porque permite pasar rápido de una instalación correcta a un primer script legible y reutilizable (Python Documentation 2026a; Python.org 2026).\nAbre VS Code o tu editor preferido y crea un archivo llamado hola.py con este contenido:\nprint(\"Hola, Legal Tech\")\nEjecuta luego:\npython hola.py\nSi tu sistema usa python3, adapta también este paso a python3 hola.py. Lo importante es confirmar que puedes escribir, guardar y ejecutar un archivo propio sin depender todavía de bibliotecas adicionales ni configuraciones complejas (Python Documentation 2026a).",
     "crumbs": [
       "Tutoriales",
       "<span class='chapter-number'>15</span>  <span class='chapter-title'>Tutorial: Instalar Python</span>"
@@ -1672,7 +1672,7 @@
     "href": "tutoriales/instalar-python.html#problemas-frecuentes",
     "title": "Tutorial: Instalar Python",
     "section": "Problemas frecuentes",
-    "text": "Problemas frecuentes\n\n\n\n\n\n\nWarningSi el comando no funciona\n\n\n\n\nrevisa si Python quedó agregado al PATH;\nprueba con python3;\ncierra y vuelve a abrir la terminal;\nreinstala si fuera necesario.",
+    "text": "Problemas frecuentes\n\n\n\n\n\n\nWarningSi el comando no funciona\n\n\n\n\nrevisa si Python quedó agregado al PATH;\nprueba con python3;\ncierra y vuelve a abrir la terminal;\nreinstala si fuera necesario.\n\nEstos problemas suelen ser menos conceptuales que operativos: la instalación existe, pero el sistema no sabe dónde encontrar el ejecutable o la terminal sigue usando una sesión anterior (Python Documentation 2026a).",
     "crumbs": [
       "Tutoriales",
       "<span class='chapter-number'>15</span>  <span class='chapter-title'>Tutorial: Instalar Python</span>"
@@ -1683,7 +1683,7 @@
     "href": "tutoriales/instalar-python.html#recomendación-final",
     "title": "Tutorial: Instalar Python",
     "section": "Recomendación final",
-    "text": "Recomendación final\nNo esperes a la sesión para descubrir que tu entorno no funciona. Verifica Python antes de cada práctica importante.",
+    "text": "Recomendación final\nNo esperes a la sesión para descubrir que tu entorno no funciona. Verificar Python antes de cada práctica importante ahorra tiempo y vuelve más estable la progresión del curso, porque permite concentrarse en la lógica del problema y no en un bloqueo básico del entorno (Contreras and McGrath 2020; Volini 2020).",
     "crumbs": [
       "Tutoriales",
       "<span class='chapter-number'>15</span>  <span class='chapter-title'>Tutorial: Instalar Python</span>"
@@ -1694,7 +1694,7 @@
     "href": "tutoriales/visual-studio-code.html",
     "title": "Tutorial: Visual Studio Code",
     "section": "",
-    "text": "¿Para qué sirve este tutorial?\nEste tutorial te ayuda a instalar y usar lo mínimo de Visual Studio Code para trabajar durante el curso.",
+    "text": "¿Para qué sirve este tutorial?\nEste tutorial te ayuda a instalar y usar lo mínimo de Visual Studio Code para trabajar durante el curso. VS Code resulta útil aquí no por la cantidad de funciones que ofrece, sino porque reúne en un mismo lugar carpeta de proyecto, edición de archivos, terminal integrada y acceso al control de cambios (Visual Studio Code Documentation 2026c, 2026a, 2026b).",
     "crumbs": [
       "Tutoriales",
       "<span class='chapter-number'>16</span>  <span class='chapter-title'>Tutorial: Visual Studio Code</span>"
@@ -1705,7 +1705,7 @@
     "href": "tutoriales/visual-studio-code.html#paso-1.-instala-el-editor",
     "title": "Tutorial: Visual Studio Code",
     "section": "Paso 1. Instala el editor",
-    "text": "Paso 1. Instala el editor\nDescarga Visual Studio Code desde su sitio oficial e instálalo normalmente.",
+    "text": "Paso 1. Instala el editor\nDescarga Visual Studio Code desde su sitio oficial e instálalo normalmente. La propia documentación de inicio lo presenta como un editor orientado a abrir carpetas de trabajo, editar archivos y combinar interfaz con terminal y control de versiones, que son justamente las operaciones que más vas a repetir en el curso (Visual Studio Code Documentation 2026c).",
     "crumbs": [
       "Tutoriales",
       "<span class='chapter-number'>16</span>  <span class='chapter-title'>Tutorial: Visual Studio Code</span>"
@@ -1716,7 +1716,7 @@
     "href": "tutoriales/visual-studio-code.html#paso-2.-abre-una-carpeta-de-trabajo",
     "title": "Tutorial: Visual Studio Code",
     "section": "Paso 2. Abre una carpeta de trabajo",
-    "text": "Paso 2. Abre una carpeta de trabajo\nUsa File &gt; Open Folder para abrir la carpeta del repositorio del curso o tu carpeta de práctica.\n\n\n\n\n\n\nNoteBuena práctica\n\n\n\nTrabaja siempre con carpetas completas y no con archivos sueltos. Eso hace más fácil navegar, editar y versionar.",
+    "text": "Paso 2. Abre una carpeta de trabajo\nUsa File &gt; Open Folder para abrir la carpeta del repositorio del curso o tu carpeta de práctica. VS Code trabaja mejor cuando el proyecto se abre como carpeta o workspace, porque así el editor puede mostrar el contexto completo de archivos, rutas y cambios (Visual Studio Code Documentation 2026c, 2026a).\n\n\n\n\n\n\nNoteBuena práctica\n\n\n\nTrabaja siempre con carpetas completas y no con archivos sueltos. Eso hace más fácil navegar, ejecutar comandos desde la raíz del proyecto y relacionar edición con versionado (Visual Studio Code Documentation 2026c; Chacon and Straub 2014).",
     "crumbs": [
       "Tutoriales",
       "<span class='chapter-number'>16</span>  <span class='chapter-title'>Tutorial: Visual Studio Code</span>"
@@ -1727,7 +1727,7 @@
     "href": "tutoriales/visual-studio-code.html#paso-3.-usa-lo-esencial-del-editor",
     "title": "Tutorial: Visual Studio Code",
     "section": "Paso 3. Usa lo esencial del editor",
-    "text": "Paso 3. Usa lo esencial del editor\nConviene familiarizarte con estas áreas:\n\nexplorador de archivos;\neditor principal;\nterminal integrada;\npanel de control de cambios.",
+    "text": "Paso 3. Usa lo esencial del editor\nConviene familiarizarte con estas áreas básicas, porque la interfaz de VS Code está organizada precisamente para alternar entre exploración de archivos, edición, terminal y control de cambios sin abandonar el mismo entorno (Visual Studio Code Documentation 2026c, 2026b).\n\nexplorador de archivos;\neditor principal;\nterminal integrada;\npanel de control de cambios.",
     "crumbs": [
       "Tutoriales",
       "<span class='chapter-number'>16</span>  <span class='chapter-title'>Tutorial: Visual Studio Code</span>"
@@ -1738,7 +1738,7 @@
     "href": "tutoriales/visual-studio-code.html#paso-4.-abre-la-terminal-integrada",
     "title": "Tutorial: Visual Studio Code",
     "section": "Paso 4. Abre la terminal integrada",
-    "text": "Paso 4. Abre la terminal integrada\nDesde la terminal integrada podrás ejecutar Python, Git y otros comandos del curso sin salir del editor.",
+    "text": "Paso 4. Abre la terminal integrada\nDesde la terminal integrada podrás ejecutar Python, Git y otros comandos del curso sin salir del editor. La documentación oficial subraya que esa terminal usa un shell del sistema y arranca desde la raíz del workspace, lo que vuelve más directo probar scripts, inspeccionar archivos y lanzar comandos del repositorio (Visual Studio Code Documentation 2026a).",
     "crumbs": [
       "Tutoriales",
       "<span class='chapter-number'>16</span>  <span class='chapter-title'>Tutorial: Visual Studio Code</span>"
@@ -1749,7 +1749,7 @@
     "href": "tutoriales/visual-studio-code.html#paso-5.-guarda-ejecuta-y-revisa-cambios",
     "title": "Tutorial: Visual Studio Code",
     "section": "Paso 5. Guarda, ejecuta y revisa cambios",
-    "text": "Paso 5. Guarda, ejecuta y revisa cambios\nUna rutina útil es esta:\n\nabrir el archivo;\neditar una parte pequeña;\nguardar;\nejecutar;\nrevisar el resultado;\nregistrar cambios con Git.\n\n\n\n\n\n\n\nTipLo importante\n\n\n\nNo necesitas dominar todo VS Code. Necesitas usar bien un conjunto pequeño de funciones de forma consistente.",
+    "text": "Paso 5. Guarda, ejecuta y revisa cambios\nUna rutina útil es esta, porque convierte la edición en una secuencia corta de prueba, verificación y registro en lugar de acumular cambios sin control (Visual Studio Code Documentation 2026a, 2026b; Chacon and Straub 2014).\n\nabrir el archivo;\neditar una parte pequeña;\nguardar;\nejecutar;\nrevisar el resultado;\nregistrar cambios con Git.\n\n\n\n\n\n\n\nTipLo importante\n\n\n\nNo necesitas dominar todo VS Code. Necesitas usar bien un conjunto pequeño de funciones de forma consistente: abrir carpetas, editar archivos, usar la terminal integrada y revisar cambios del repositorio. Esa base basta para que el editor funcione como apoyo real y no como otra fuente de fricción técnica (Visual Studio Code Documentation 2026c, 2026b).",
     "crumbs": [
       "Tutoriales",
       "<span class='chapter-number'>16</span>  <span class='chapter-title'>Tutorial: Visual Studio Code</span>"
@@ -1760,7 +1760,7 @@
     "href": "tutoriales/git-y-github.html",
     "title": "Tutorial: Git y GitHub",
     "section": "",
-    "text": "¿Para qué sirve este tutorial?\nGit y GitHub son la infraestructura mínima de trabajo del curso. Aquí aprenderás a clonar un repositorio, registrar cambios y sincronizar tu trabajo.",
+    "text": "¿Para qué sirve este tutorial?\nGit y GitHub son la infraestructura mínima de trabajo del curso porque permiten que un archivo no sea solo un resultado final, sino parte de un proceso visible de cambios, correcciones y decisiones. Versionar no significa guardar copias sin orden: significa construir un historial verificable sobre el proyecto (Chacon and Straub 2014).",
     "crumbs": [
       "Tutoriales",
       "<span class='chapter-number'>17</span>  <span class='chapter-title'>Tutorial: Git y GitHub</span>"
@@ -1771,7 +1771,7 @@
     "href": "tutoriales/git-y-github.html#qué-es-cada-cosa",
     "title": "Tutorial: Git y GitHub",
     "section": "Qué es cada cosa",
-    "text": "Qué es cada cosa\n\nGit: sistema de control de versiones.\nGitHub: plataforma para alojar repositorios, colaborar y entregar trabajo.\n\n\n\n\n\n\n\nImportantRegla del curso\n\n\n\nEl trabajo del semestre debe dejar rastro verificable: archivos, cambios y entregas en repositorios.",
+    "text": "Qué es cada cosa\n\nGit es un sistema de control de versiones que organiza modificaciones sucesivas dentro de un historial trazable y reversible (Chacon and Straub 2014).\nGitHub es la plataforma que permite alojar ese repositorio, compartirlo, sincronizarlo y convertirlo en evidencia de trabajo colaborativo o individual (GitHub Docs 2026a).\n\n\n\n\n\n\n\nImportantRegla del curso\n\n\n\nEl trabajo del semestre debe dejar rastro verificable: archivos, cambios, mensajes de commit y sincronización con el repositorio remoto. Si no existe ese rastro, resulta más difícil demostrar qué se hizo, cuándo se hizo y cómo evolucionó el proyecto (Chacon and Straub 2014; GitHub Docs 2026a).",
     "crumbs": [
       "Tutoriales",
       "<span class='chapter-number'>17</span>  <span class='chapter-title'>Tutorial: Git y GitHub</span>"
@@ -1782,7 +1782,7 @@
     "href": "tutoriales/git-y-github.html#paso-1.-clona-un-repositorio",
     "title": "Tutorial: Git y GitHub",
     "section": "Paso 1. Clona un repositorio",
-    "text": "Paso 1. Clona un repositorio\ngit clone URL_DEL_REPOSITORIO\ncd NOMBRE_DEL_REPOSITORIO",
+    "text": "Paso 1. Clona un repositorio\nClonar significa traer a tu computadora una copia completa del repositorio, con su estructura y su historial. Ese paso importa porque te permite trabajar localmente sin romper la continuidad entre el entorno del curso y tu propio equipo (Chacon and Straub 2014).\ngit clone URL_DEL_REPOSITORIO\ncd NOMBRE_DEL_REPOSITORIO",
     "crumbs": [
       "Tutoriales",
       "<span class='chapter-number'>17</span>  <span class='chapter-title'>Tutorial: Git y GitHub</span>"
@@ -1793,7 +1793,7 @@
     "href": "tutoriales/git-y-github.html#paso-2.-revisa-el-estado",
     "title": "Tutorial: Git y GitHub",
     "section": "Paso 2. Revisa el estado",
-    "text": "Paso 2. Revisa el estado\ngit status",
+    "text": "Paso 2. Revisa el estado\nEl comando git status sirve para responder una pregunta simple pero decisiva: qué cambió, qué falta guardar y qué está listo para convertirse en parte del historial. Revisarlo con frecuencia evita que el trabajo quede desordenado o incompleto (Chacon and Straub 2014).\ngit status",
     "crumbs": [
       "Tutoriales",
       "<span class='chapter-number'>17</span>  <span class='chapter-title'>Tutorial: Git y GitHub</span>"
@@ -1804,7 +1804,7 @@
     "href": "tutoriales/git-y-github.html#paso-3.-haz-un-cambio-y-regístralo",
     "title": "Tutorial: Git y GitHub",
     "section": "Paso 3. Haz un cambio y regístralo",
-    "text": "Paso 3. Haz un cambio y regístralo\ngit add .\ngit commit -m \"Agrega primer ejercicio\"",
+    "text": "Paso 3. Haz un cambio y regístralo\nCuando usas git add y git commit, conviertes una modificación suelta en una decisión documentada. En el contexto del curso, eso vale más que “haber avanzado” en abstracto, porque deja evidencia legible del proceso de trabajo (Chacon and Straub 2014).\ngit add .\ngit commit -m \"Agrega primer ejercicio\"",
     "crumbs": [
       "Tutoriales",
       "<span class='chapter-number'>17</span>  <span class='chapter-title'>Tutorial: Git y GitHub</span>"
@@ -1815,7 +1815,7 @@
     "href": "tutoriales/git-y-github.html#paso-4.-sube-el-cambio",
     "title": "Tutorial: Git y GitHub",
     "section": "Paso 4. Sube el cambio",
-    "text": "Paso 4. Sube el cambio\ngit push",
+    "text": "Paso 4. Sube el cambio\nEl push sincroniza tu historial local con el repositorio remoto. Ese paso es clave porque una entrega que existe solo en tu computadora sigue siendo frágil: puede perderse, quedar sin respaldo o no estar disponible para revisión (Chacon and Straub 2014).\ngit push",
     "crumbs": [
       "Tutoriales",
       "<span class='chapter-number'>17</span>  <span class='chapter-title'>Tutorial: Git y GitHub</span>"
@@ -1826,7 +1826,7 @@
     "href": "tutoriales/git-y-github.html#buenas-prácticas-mínimas",
     "title": "Tutorial: Git y GitHub",
     "section": "Buenas prácticas mínimas",
-    "text": "Buenas prácticas mínimas\n\nhaz commits pequeños;\nescribe mensajes claros;\nverifica git status antes de cerrar;\nno trabajes solo en local si la entrega depende del repositorio.",
+    "text": "Buenas prácticas mínimas\n\nHaz commits pequeños para que el historial muestre decisiones comprensibles y no bloques opacos de cambios (Chacon and Straub 2014).\nEscribe mensajes claros para que otra persona, o tú mismo unos días después, pueda entender qué se modificó y con qué propósito (Chacon and Straub 2014).\nVerifica git status antes de cerrar para no dejar archivos modificados sin registrar (Chacon and Straub 2014).\nNo trabajes solo en local si la entrega depende del repositorio remoto y de la trazabilidad compartida (GitHub Docs 2026a).",
     "crumbs": [
       "Tutoriales",
       "<span class='chapter-number'>17</span>  <span class='chapter-title'>Tutorial: Git y GitHub</span>"
@@ -1837,7 +1837,18 @@
     "href": "tutoriales/git-y-github.html#github-en-contexto-de-curso",
     "title": "Tutorial: Git y GitHub",
     "section": "GitHub en contexto de curso",
-    "text": "GitHub en contexto de curso\nGitHub sirve aquí para:\n\nclonar materiales;\nresolver PSETs;\nentregar evidencia de trabajo;\npublicar páginas con GitHub Pages cuando corresponda.\n\n\n\n\n\n\n\nWarningError frecuente\n\n\n\nModificar archivos sin hacer commit ni push. Si tu trabajo no está sincronizado, la entrega puede quedar incompleta o sin evidencia suficiente.",
+    "text": "GitHub en contexto de curso\nEn este curso, GitHub no funciona solo como depósito de archivos. También es el lugar donde el proyecto se vuelve visible, compartible y evaluable, porque ahí convergen repositorio, ramas, entregas y, cuando hace falta, seguimiento de tareas (GitHub Docs 2026a, 2026c).\n\nclonar materiales;\nresolver PSETs;\nentregar evidencia de trabajo;\npublicar páginas con GitHub Pages cuando corresponda.",
+    "crumbs": [
+      "Tutoriales",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Tutorial: Git y GitHub</span>"
+    ]
+  },
+  {
+    "objectID": "tutoriales/git-y-github.html#seguridad-mínima-de-la-cuenta",
+    "href": "tutoriales/git-y-github.html#seguridad-mínima-de-la-cuenta",
+    "title": "Tutorial: Git y GitHub",
+    "section": "Seguridad mínima de la cuenta",
+    "text": "Seguridad mínima de la cuenta\nSi GitHub forma parte de tu infraestructura de trabajo, la seguridad de la cuenta también importa. GitHub define la autenticación de dos factores como una capa adicional para el inicio de sesión y recomienda preparar métodos de recuperación, porque proteger el acceso no consiste solo en tener una contraseña fuerte, sino también en evitar perder la cuenta en mitad del semestre (GitHub Docs 2026b).\n\n\n\n\n\n\nWarningError frecuente\n\n\n\nModificar archivos sin hacer commit ni push. Cuando eso ocurre, el trabajo puede existir materialmente, pero no como historial verificable ni como entrega sincronizada, y esa diferencia importa tanto para colaborar como para evaluar (Chacon and Straub 2014).",
     "crumbs": [
       "Tutoriales",
       "<span class='chapter-number'>17</span>  <span class='chapter-title'>Tutorial: Git y GitHub</span>"
@@ -1848,7 +1859,7 @@
     "href": "tutoriales/licencias-y-reutilizacion.html",
     "title": "Tutorial: Licencias y reutilización responsable",
     "section": "",
-    "text": "¿Para qué sirve este tutorial?\nCuando trabajas con repositorios, código o recursos ajenos, no basta con que algo sea público. También importa bajo qué licencia se comparte y qué permite hacer esa licencia.",
+    "text": "¿Para qué sirve este tutorial?\nCuando trabajas con repositorios, código o recursos ajenos, no basta con que algo sea público o fácil de descargar. También importa bajo qué licencia se comparte, qué libertades concede y qué condiciones impone para copiar, modificar, redistribuir o mezclar materiales con otros proyectos (Bain et al. 2007a, 2007b).",
     "crumbs": [
       "Tutoriales",
       "<span class='chapter-number'>18</span>  <span class='chapter-title'>Tutorial: Licencias y reutilización responsable</span>"
@@ -1859,7 +1870,7 @@
     "href": "tutoriales/licencias-y-reutilizacion.html#ideas-básicas",
     "title": "Tutorial: Licencias y reutilización responsable",
     "section": "Ideas básicas",
-    "text": "Ideas básicas\n\nsoftware propietario: su uso, copia o modificación suele estar más restringido;\nsoftware libre / open source: puede permitir uso, copia o modificación bajo ciertas condiciones;\nlicencia: define qué se puede hacer y bajo qué reglas.\n\n\n\n\n\n\n\nNoteRegla simple\n\n\n\nQue un repositorio sea visible no significa automáticamente que puedas reutilizarlo de cualquier manera.",
+    "text": "Ideas básicas\n\nSoftware propietario: suele distribuirse mediante licencias que restringen con más fuerza el uso, la copia, la modificación o la redistribución (Bain et al. 2007b).\nSoftware libre / open source: no está fuera del derecho de autor, sino que usa licencias para garantizar ciertas libertades de uso, copia, modificación y distribución (Bain et al. 2007a, 2007b).\nLicencia: es el instrumento jurídico que define qué se puede hacer con el material y bajo qué reglas (Bain et al. 2007b).\n\n\n\n\n\n\n\nNoteRegla simple\n\n\n\nQue un repositorio sea visible no significa automáticamente que puedas reutilizarlo de cualquier manera. La visibilidad facilita el acceso; la licencia define el alcance jurídico de ese acceso (Bain et al. 2007b).",
     "crumbs": [
       "Tutoriales",
       "<span class='chapter-number'>18</span>  <span class='chapter-title'>Tutorial: Licencias y reutilización responsable</span>"
@@ -1870,7 +1881,7 @@
     "href": "tutoriales/licencias-y-reutilizacion.html#qué-conviene-revisar-en-un-repositorio",
     "title": "Tutorial: Licencias y reutilización responsable",
     "section": "Qué conviene revisar en un repositorio",
-    "text": "Qué conviene revisar en un repositorio\n\nsi tiene archivo LICENSE;\nqué tipo de licencia usa;\nsi exige atribución;\nsi impone compartir cambios bajo la misma licencia;\nsi limita usos específicos.",
+    "text": "Qué conviene revisar en un repositorio\nAntes de reutilizar un repositorio o un recurso digital, conviene revisar al menos cinco cosas: si tiene archivo LICENSE, qué tipo de licencia usa, si exige atribución, si impone compartir cambios bajo la misma licencia y si establece restricciones o incompatibilidades relevantes. Esas diferencias no son decorativas; afectan directamente cómo puedes integrar ese material en tu propio trabajo (Bain et al. 2007b).",
     "crumbs": [
       "Tutoriales",
       "<span class='chapter-number'>18</span>  <span class='chapter-title'>Tutorial: Licencias y reutilización responsable</span>"
@@ -1881,7 +1892,7 @@
     "href": "tutoriales/licencias-y-reutilizacion.html#por-qué-esto-importa-a-un-jurista",
     "title": "Tutorial: Licencias y reutilización responsable",
     "section": "¿Por qué esto importa a un jurista?",
-    "text": "¿Por qué esto importa a un jurista?\nPorque la reutilización tecnológica también tiene dimensión jurídica: cumplimiento, permisos, trazabilidad y responsabilidad.",
+    "text": "¿Por qué esto importa a un jurista?\nPorque la reutilización tecnológica también tiene dimensión jurídica. Supone permisos, cumplimiento, compatibilidad, trazabilidad y responsabilidad, y además obliga a distinguir entre acceso material al archivo y derecho efectivo a reutilizarlo en otro contexto (Bain et al. 2007a; Mendo et al. 2013).\nTambién importa por una razón más amplia: hablar de software libre no es hablar solo de precio o conveniencia técnica, sino de formas de producción colectiva de conocimiento, auditoría y circulación de herramientas que pueden ser estudiadas y corregidas por una comunidad (Jacovkis 2009; Bain et al. 2007a).",
     "crumbs": [
       "Tutoriales",
       "<span class='chapter-number'>18</span>  <span class='chapter-title'>Tutorial: Licencias y reutilización responsable</span>"
@@ -1892,7 +1903,7 @@
     "href": "tutoriales/licencias-y-reutilizacion.html#aplicación-práctica",
     "title": "Tutorial: Licencias y reutilización responsable",
     "section": "Aplicación práctica",
-    "text": "Aplicación práctica\nCuando uses recursos ajenos para una práctica o proyecto:\n\nidentifica la fuente;\nrevisa la licencia;\ndocumenta qué reutilizaste;\nevita copiar sin criterio.\n\n\n\n\n\n\n\nTipLo relevante en este curso\n\n\n\nNo se espera una teoría exhaustiva de licencias. Se espera una cultura mínima de reutilización responsable.",
+    "text": "Aplicación práctica\nCuando uses recursos ajenos para una práctica o proyecto, sigue una secuencia simple: identifica la fuente, revisa la licencia, documenta qué reutilizaste y evita copiar sin criterio. Esa secuencia protege mejor tanto la trazabilidad académica como el cumplimiento básico de las reglas de reutilización (Bain et al. 2007b; Mendo et al. 2013).\n\nidentifica la fuente;\nrevisa la licencia;\ndocumenta qué reutilizaste;\nevita copiar sin criterio.\n\nUn buen ejemplo de esta lógica es el propio ecosistema Python: su historia institucional está asociada a una política de distribución abierta y a una documentación oficial pública, pero eso no elimina la necesidad de entender bajo qué licencia circulan el software y los materiales (Python Documentation 2026).\n\n\n\n\n\n\nTipLo relevante en este curso\n\n\n\nNo se espera una teoría exhaustiva de licencias. Se espera una cultura mínima de reutilización responsable: saber mirar un archivo LICENSE, reconocer que las libertades de uso están condicionadas jurídicamente y dejar rastro claro de las fuentes empleadas (Bain et al. 2007b; Jacovkis 2009).",
     "crumbs": [
       "Tutoriales",
       "<span class='chapter-number'>18</span>  <span class='chapter-title'>Tutorial: Licencias y reutilización responsable</span>"
@@ -1903,7 +1914,7 @@
     "href": "tutoriales/github-pages.html",
     "title": "Tutorial: GitHub Pages",
     "section": "",
-    "text": "¿Para qué sirve este tutorial?\nGitHub Pages permite publicar sitios estáticos directamente desde un repositorio. En este curso resulta especialmente útil para la evaluación de página web personal.",
+    "text": "¿Para qué sirve este tutorial?\nGitHub Pages permite publicar sitios estáticos directamente desde un repositorio. En este curso resulta especialmente útil porque une dos cosas que conviene no separar: la página visible y el proceso técnico que la produjo. Cuando el sitio se publica desde el mismo repositorio donde fue escrito, también queda trazabilidad sobre sus cambios (GitHub Docs 2026).",
     "crumbs": [
       "Tutoriales",
       "<span class='chapter-number'>19</span>  <span class='chapter-title'>Tutorial: GitHub Pages</span>"
@@ -1914,7 +1925,7 @@
     "href": "tutoriales/github-pages.html#qué-necesitas-antes",
     "title": "Tutorial: GitHub Pages",
     "section": "Qué necesitas antes",
-    "text": "Qué necesitas antes\n\nuna cuenta en GitHub;\nun repositorio con archivos HTML, CSS y, si hace falta, JavaScript;\ncambios correctamente sincronizados.",
+    "text": "Qué necesitas antes\n\nuna cuenta en GitHub y acceso estable al repositorio donde está el sitio (GitHub Docs 2026);\nun repositorio con archivos HTML, CSS y, si hace falta, JavaScript, porque GitHub Pages trabaja con sitios estáticos generados desde esos archivos (GitHub Docs 2026; MDN Web Docs 2026a, 2026b);\ncambios correctamente sincronizados, para que la versión publicada coincida con el estado real del proyecto (Chacon and Straub 2014).",
     "crumbs": [
       "Tutoriales",
       "<span class='chapter-number'>19</span>  <span class='chapter-title'>Tutorial: GitHub Pages</span>"
@@ -1925,7 +1936,7 @@
     "href": "tutoriales/github-pages.html#flujo-general",
     "title": "Tutorial: GitHub Pages",
     "section": "Flujo general",
-    "text": "Flujo general\n\ncrea o identifica tu repositorio;\nsube los archivos del sitio;\nactiva GitHub Pages desde la configuración del repositorio;\nverifica la URL pública;\nrevisa que el sitio cargue bien.\n\n\n\n\n\n\n\nImportantEvidencia mínima\n\n\n\nNo basta con tener el repositorio. Debe existir un enlace público funcional al sitio publicado.",
+    "text": "Flujo general\nLa lógica de trabajo es simple: primero dejas estructurados los archivos del sitio, luego los sincronizas con el repositorio y finalmente activas la publicación desde GitHub. Esa secuencia evita confundir “tener archivos web” con “tener una página efectivamente accesible en línea” (GitHub Docs 2026; MDN Web Docs 2026a).\n\ncrea o identifica tu repositorio;\nsube los archivos del sitio;\nactiva GitHub Pages desde la configuración del repositorio;\nverifica la URL pública;\nrevisa que el sitio cargue bien.\n\n\n\n\n\n\n\nImportantEvidencia mínima\n\n\n\nNo basta con tener el repositorio. Debe existir un enlace público funcional al sitio publicado, porque GitHub Pages se evalúa como publicación efectiva y no solo como intención de publicar (GitHub Docs 2026).",
     "crumbs": [
       "Tutoriales",
       "<span class='chapter-number'>19</span>  <span class='chapter-title'>Tutorial: GitHub Pages</span>"
@@ -1936,7 +1947,7 @@
     "href": "tutoriales/github-pages.html#qué-revisar-si-no-publica-bien",
     "title": "Tutorial: GitHub Pages",
     "section": "Qué revisar si no publica bien",
-    "text": "Qué revisar si no publica bien\n\nque el archivo principal sea index.html;\nque las rutas a CSS, imágenes o scripts estén bien escritas;\nque los cambios estén realmente sincronizados;\nque la configuración de Pages apunte a la rama correcta.",
+    "text": "Qué revisar si no publica bien\n\nRevisa que el archivo principal sea index.html, porque HTML organiza el contenido de la página y ese nombre suele funcionar como punto de entrada del sitio (MDN Web Docs 2026a).\nRevisa que las rutas a CSS, imágenes o scripts estén bien escritas, ya que un sitio estático depende de archivos enlazados con precisión y GitHub Pages publica exactamente esa estructura (GitHub Docs 2026; MDN Web Docs 2026b).\nRevisa que los cambios estén realmente sincronizados, porque la publicación se hace desde el repositorio remoto y no desde los archivos que quedaron solo en tu equipo (Chacon and Straub 2014).\nRevisa que la configuración de Pages apunte a la rama correcta, para que el servicio publique la versión prevista y no otra (GitHub Docs 2026).",
     "crumbs": [
       "Tutoriales",
       "<span class='chapter-number'>19</span>  <span class='chapter-title'>Tutorial: GitHub Pages</span>"
@@ -1947,7 +1958,7 @@
     "href": "tutoriales/github-pages.html#recomendación-final",
     "title": "Tutorial: GitHub Pages",
     "section": "Recomendación final",
-    "text": "Recomendación final\nPublica temprano y corrige después. Esperar al último momento suele convertir errores pequeños en bloqueos innecesarios.",
+    "text": "Recomendación final\nPublica temprano y corrige después. En publicación web, muchos problemas no son conceptuales sino estructurales: nombres de archivo, rutas, sincronización o configuración del repositorio. Detectarlos con tiempo reduce bloqueos innecesarios y vuelve más claro el vínculo entre producto final y proceso de trabajo (GitHub Docs 2026; MDN Web Docs 2026a).",
     "crumbs": [
       "Tutoriales",
       "<span class='chapter-number'>19</span>  <span class='chapter-title'>Tutorial: GitHub Pages</span>"
@@ -1958,7 +1969,7 @@
     "href": "referencias.html",
     "title": "Referencias",
     "section": "",
-    "text": "Ashley, Kevin D., Jaromír Savelka, and Matthias Grabmair. 2021. “A\nLaw School Course in Applied Legal Analytics and AI.” Law in\nContext 37 (1): 134–74. https://doi.org/10.26826/law-in-context.v37i1.125.\n\n\nCairo, Alberto. 2017. “Visualización de Datos: Una\nImagen Puede Valer más Que Mil números, Pero\nNo Siempre más Que Mil Palabras.” El Profesional\nde La Información 26 (6): 1025–28. https://doi.org/10.3145/epi.2017.nov.02.\n\n\nContreras, Alfredo, and Joe McGrath. 2020. “Law, Technology, and\nPedagogy: Teaching Coding to Build a ‘Future-Proof’\nLawyer.” Minnesota Journal of Law, Science &\nTechnology 21 (2): 297–347. https://doi.org/10.24926/15529541.3828.\n\n\nGarcía-García, Jesús, and María Luisa Alonso-Magdaleno. 2021.\n“Herramientas de Visualización Gráfica\nOnline Para Datos Abiertos Presupuestarios de Administraciones\npúblicas.” Revista Española de La\nTransparencia.\n\n\nGorgolewski, Krzysztof et al. 2011.\n“Nipype: A Flexible, Lightweight and Extensible Neuroimaging Data\nProcessing Framework in Python.” Frontiers in\nNeuroinformatics 5: 13. https://doi.org/10.3389/fninf.2011.00013.\n\n\nGross, Sam. 2023. “PEP 703: Making the Global Interpreter Lock\nOptional in CPython.” https://peps.python.org/pep-0703/.\n\n\nIniciativa Tech & Law. 2025. Mapeo LegalTech Perú\n2025.\n\n\nMDN Web Docs. 2026. “Unicode.” https://developer.mozilla.org/en-US/docs/Glossary/Unicode.\n\n\nMendo, Carmen et al. 2013. “Del Acceso\na La Reutilización, Del Dato Al Documento: Una\nVisión Conceptual de La Información\npública.” Revista Española de\nDocumentación Científica.\n\n\nMermaid Documentation. 2026. “Flowcharts: Basic Syntax.” https://mermaid.js.org/syntax/flowchart.html.\n\n\nMonge-Fallas, Luis et al. 2024.\n“Fundamentos y Perspectivas Del Pensamiento Computacional: Un\nanálisis Integral Para La\nInvestigación.” Revista Innovaciones\nEducativas.\n\n\nPadrón, Carlos et al. 2021.\n“Aproximación a Una Definición de\nPensamiento Computacional.” RIED. Revista Iberoamericana de\nEducación a Distancia 24 (1): 55–76.\n\n\nPedregosa, Fabian, Gaël Varoquaux, Alexandre Gramfort, et al. 2011.\n“Scikit-Learn: Machine Learning in Python.” Journal of\nMachine Learning Research 12: 2825–30. https://jmlr.org/papers/v12/pedregosa11a.html.\n\n\nPerú. 2002. Ley Marco de Modernización de La\nGestión Del Estado, Ley nó 27658.\n\n\nPerú. 2022. Ley nó 31449, Ley Que Fortalece El\nLaboratorio de Gobierno y Transformación Digital Del\nEstado.\n\n\nPresidencia del Consejo de Ministros. 2002. Decreto Supremo\nnó 030-2002-PCM, Reglamento de La Ley Marco de\nModernización de La Gestión Del Estado.\n\n\nPython Documentation. 2024. “What’s New in Python 3.13.” https://docs.python.org/3/whatsnew/3.13.html.\n\n\nPython Documentation. 2025. “What’s New in Python 3.14.” https://docs.python.org/3/whatsnew/3.14.html.\n\n\nPython Documentation. 2026a. “Built-in Types.” https://docs.python.org/3/library/stdtypes.html.\n\n\nPython Documentation. 2026b. “General Python FAQ.” https://docs.python.org/3/faq/general.html.\n\n\nPython Documentation. 2026c. “History and License.” https://docs.python.org/3/license.html.\n\n\nPython Software Foundation. 2026. “About the Python Software\nFoundation.” https://www.python.org/psf/about/.\n\n\nPython.org. 2026. “Python Documentation by Version.” https://www.python.org/doc/versions/.\n\n\nRaschka, Sebastian, Joshua Patterson, and Corey Nolet. 2020.\n“Machine Learning in Python: Main Developments and Technology\nTrends in Data Science, Machine Learning, and Artificial\nIntelligence.” Information 11 (4): 193. https://doi.org/10.3390/info11040193.\n\n\nRyan, Trevor. 2021. “Coding for Critical Thinking: A Case Study in\nEmbedding Complementary Skills in Legal Education.” Legal\nEducation Review 31 (1): 81–104. https://doi.org/10.53300/001c.36060.\n\n\nSQLite Documentation. 2026. “SELECT.” https://www.sqlite.org/lang_select.html.\n\n\nVirtanen, Pauli, Ralf Gommers, Travis E. Oliphant, et al. 2020.\n“SciPy 1.0: Fundamental Algorithms for Scientific Computing in\nPython.” Nature Methods 17 (3): 261–72. https://doi.org/10.1038/s41592-019-0686-2.\n\n\nVolini, Anthony. 2020. “A Perspective on Technology Education for\nLaw Students.” Santa Clara High Technology Law Journal\n36 (2): 165–98. https://digitalcommons.law.scu.edu/chtlj/vol36/iss2/2/.\n\n\nWhite, Stephen A., and Derek Miers. 2011. BPMN 2.0 Handbook:\nMethods, Concepts, Case Studies and Standards in Business Process\nManagement. Future Strategies.",
+    "text": "Ashley, Kevin D., Jaromír Savelka, and Matthias Grabmair. 2021. “A\nLaw School Course in Applied Legal Analytics and AI.” Law in\nContext 37 (1): 134–74. https://doi.org/10.26826/law-in-context.v37i1.125.\n\n\nBain, Malcolm, Manuel Gallego Rodríguez, Manuel Martínez Ribas, and\nJudit Rius Sanjuán. 2007a. Aspectos Legales y de\nExplotación Del Software Libre. Parte i.\nFundació per a la Universitat Oberta de Catalunya.\n\n\nBain, Malcolm, Manuel Gallego Rodríguez, Manuel Martínez Ribas, and\nJudit Rius Sanjuán. 2007b. Aspectos Legales y de\nExplotación Del Software Libre. Parte II.\nFundació per a la Universitat Oberta de Catalunya.\n\n\nCairo, Alberto. 2017. “Visualización de Datos: Una\nImagen Puede Valer más Que Mil números, Pero\nNo Siempre más Que Mil Palabras.” El Profesional\nde La Información 26 (6): 1025–28. https://doi.org/10.3145/epi.2017.nov.02.\n\n\nChacon, Scott, and Ben Straub. 2014. Pro Git. 2nd ed. Apress.\nhttps://git-scm.com/book/en/v2.\n\n\nContreras, Alfredo, and Joe McGrath. 2020. “Law, Technology, and\nPedagogy: Teaching Coding to Build a ‘Future-Proof’\nLawyer.” Minnesota Journal of Law, Science &\nTechnology 21 (2): 297–347. https://doi.org/10.24926/15529541.3828.\n\n\nGarcía-García, Jesús, and María Luisa Alonso-Magdaleno. 2021.\n“Herramientas de Visualización Gráfica\nOnline Para Datos Abiertos Presupuestarios de Administraciones\npúblicas.” Revista Española de La\nTransparencia.\n\n\nGitHub Docs. 2026a. “About Projects.” https://docs.github.com/en/enterprise-cloud@latest/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects.\n\n\nGitHub Docs. 2026b. “About Two-Factor Authentication.” https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication.\n\n\nGitHub Docs. 2026c. “What Is GitHub Pages?” https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages.\n\n\nGorgolewski, Krzysztof et al. 2011.\n“Nipype: A Flexible, Lightweight and Extensible Neuroimaging Data\nProcessing Framework in Python.” Frontiers in\nNeuroinformatics 5: 13. https://doi.org/10.3389/fninf.2011.00013.\n\n\nGross, Sam. 2023. “PEP 703: Making the Global Interpreter Lock\nOptional in CPython.” https://peps.python.org/pep-0703/.\n\n\nIniciativa Tech & Law. 2025. Mapeo LegalTech Perú\n2025.\n\n\nJacovkis, David. 2009. “El Software Libre: Producción\nColectiva de Conocimiento.” IDP. Revista de Internet, Derecho\ny Política, no. 8. https://idp.uoc.edu/articles/10.7238/idp.v0i8.5398/.\n\n\nMDN Web Docs. 2026a. “Basic HTML Syntax.” https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax.\n\n\nMDN Web Docs. 2026b. “Getting Started with CSS.” https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Getting_started.\n\n\nMDN Web Docs. 2026c. “Unicode.” https://developer.mozilla.org/en-US/docs/Glossary/Unicode.\n\n\nMendo, Carmen et al. 2013. “Del Acceso\na La Reutilización, Del Dato Al Documento: Una\nVisión Conceptual de La Información\npública.” Revista Española de\nDocumentación Científica.\n\n\nMermaid Documentation. 2026. “Flowcharts: Basic Syntax.” https://mermaid.js.org/syntax/flowchart.html.\n\n\nMonge-Fallas, Luis et al. 2024.\n“Fundamentos y Perspectivas Del Pensamiento Computacional: Un\nanálisis Integral Para La\nInvestigación.” Revista Innovaciones\nEducativas.\n\n\nPadrón, Carlos et al. 2021.\n“Aproximación a Una Definición de\nPensamiento Computacional.” RIED. Revista Iberoamericana de\nEducación a Distancia 24 (1): 55–76.\n\n\nPedregosa, Fabian, Gaël Varoquaux, Alexandre Gramfort, et al. 2011.\n“Scikit-Learn: Machine Learning in Python.” Journal of\nMachine Learning Research 12: 2825–30. https://jmlr.org/papers/v12/pedregosa11a.html.\n\n\nPerú. 2002. Ley Marco de Modernización de La\nGestión Del Estado, Ley nó 27658.\n\n\nPerú. 2022. Ley nó 31449, Ley Que Fortalece El\nLaboratorio de Gobierno y Transformación Digital Del\nEstado.\n\n\nPresidencia del Consejo de Ministros. 2002. Decreto Supremo\nnó 030-2002-PCM, Reglamento de La Ley Marco de\nModernización de La Gestión Del Estado.\n\n\nPython Documentation. 2024. “What’s New in Python 3.13.” https://docs.python.org/3/whatsnew/3.13.html.\n\n\nPython Documentation. 2025. “What’s New in Python 3.14.” https://docs.python.org/3/whatsnew/3.14.html.\n\n\nPython Documentation. 2026a. “Built-in Types.” https://docs.python.org/3/library/stdtypes.html.\n\n\nPython Documentation. 2026b. “General Python FAQ.” https://docs.python.org/3/faq/general.html.\n\n\nPython Documentation. 2026c. “History and License.” https://docs.python.org/3/license.html.\n\n\nPython Software Foundation. 2026. “About the Python Software\nFoundation.” https://www.python.org/psf/about/.\n\n\nPython.org. 2026. “Python Documentation by Version.” https://www.python.org/doc/versions/.\n\n\nRaschka, Sebastian, Joshua Patterson, and Corey Nolet. 2020.\n“Machine Learning in Python: Main Developments and Technology\nTrends in Data Science, Machine Learning, and Artificial\nIntelligence.” Information 11 (4): 193. https://doi.org/10.3390/info11040193.\n\n\nRyan, Trevor. 2021. “Coding for Critical Thinking: A Case Study in\nEmbedding Complementary Skills in Legal Education.” Legal\nEducation Review 31 (1): 81–104. https://doi.org/10.53300/001c.36060.\n\n\nSQLite Documentation. 2026. “SELECT.” https://www.sqlite.org/lang_select.html.\n\n\nVirtanen, Pauli, Ralf Gommers, Travis E. Oliphant, et al. 2020.\n“SciPy 1.0: Fundamental Algorithms for Scientific Computing in\nPython.” Nature Methods 17 (3): 261–72. https://doi.org/10.1038/s41592-019-0686-2.\n\n\nVisual Studio Code Documentation. 2026a. “Getting Started with the\nTerminal.” https://code.visualstudio.com/docs/terminal/getting-started.\n\n\nVisual Studio Code Documentation. 2026b. “Source Control in VS\nCode.” https://code.visualstudio.com/docs/sourcecontrol/overview.\n\n\nVisual Studio Code Documentation. 2026c. “Tutorial: Get Started\nwith Visual Studio Code.” https://code.visualstudio.com/docs/getstarted/getting-started.\n\n\nVolini, Anthony. 2020. “A Perspective on Technology Education for\nLaw Students.” Santa Clara High Technology Law Journal\n36 (2): 165–98. https://digitalcommons.law.scu.edu/chtlj/vol36/iss2/2/.\n\n\nWhite, Stephen A., and Derek Miers. 2011. BPMN 2.0 Handbook:\nMethods, Concepts, Case Studies and Standards in Business Process\nManagement. Future Strategies.",
     "crumbs": [
       "<span class='chapter-number'>20</span>  <span class='chapter-title'>Referencias</span>"
     ]

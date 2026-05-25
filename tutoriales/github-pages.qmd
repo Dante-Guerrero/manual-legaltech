@@ -2,15 +2,17 @@
 
 ## ¿Para qué sirve este tutorial?
 
-GitHub Pages permite publicar sitios estáticos directamente desde un repositorio. En este curso resulta especialmente útil para la evaluación de página web personal.
+GitHub Pages permite publicar sitios estáticos directamente desde un repositorio. En este curso resulta especialmente útil porque une dos cosas que conviene no separar: la página visible y el proceso técnico que la produjo. Cuando el sitio se publica desde el mismo repositorio donde fue escrito, también queda trazabilidad sobre sus cambios [@githubpages2026].
 
 ## Qué necesitas antes
 
-- una cuenta en GitHub;
-- un repositorio con archivos HTML, CSS y, si hace falta, JavaScript;
-- cambios correctamente sincronizados.
+- una cuenta en GitHub y acceso estable al repositorio donde está el sitio [@githubpages2026];
+- un repositorio con archivos HTML, CSS y, si hace falta, JavaScript, porque GitHub Pages trabaja con sitios estáticos generados desde esos archivos [@githubpages2026; @mdnhtml2026; @mdncss2026];
+- cambios correctamente sincronizados, para que la versión publicada coincida con el estado real del proyecto [@chaconstraub2014progit].
 
 ## Flujo general
+
+La lógica de trabajo es simple: primero dejas estructurados los archivos del sitio, luego los sincronizas con el repositorio y finalmente activas la publicación desde GitHub. Esa secuencia evita confundir “tener archivos web” con “tener una página efectivamente accesible en línea” [@githubpages2026; @mdnhtml2026].
 
 1. crea o identifica tu repositorio;
 2. sube los archivos del sitio;
@@ -20,16 +22,16 @@ GitHub Pages permite publicar sitios estáticos directamente desde un repositori
 
 ::: {.callout-important}
 ## Evidencia mínima
-No basta con tener el repositorio. Debe existir un enlace público funcional al sitio publicado.
+No basta con tener el repositorio. Debe existir un enlace público funcional al sitio publicado, porque GitHub Pages se evalúa como publicación efectiva y no solo como intención de publicar [@githubpages2026].
 :::
 
 ## Qué revisar si no publica bien
 
-- que el archivo principal sea `index.html`;
-- que las rutas a CSS, imágenes o scripts estén bien escritas;
-- que los cambios estén realmente sincronizados;
-- que la configuración de Pages apunte a la rama correcta.
+- Revisa que el archivo principal sea `index.html`, porque HTML organiza el contenido de la página y ese nombre suele funcionar como punto de entrada del sitio [@mdnhtml2026].
+- Revisa que las rutas a CSS, imágenes o scripts estén bien escritas, ya que un sitio estático depende de archivos enlazados con precisión y GitHub Pages publica exactamente esa estructura [@githubpages2026; @mdncss2026].
+- Revisa que los cambios estén realmente sincronizados, porque la publicación se hace desde el repositorio remoto y no desde los archivos que quedaron solo en tu equipo [@chaconstraub2014progit].
+- Revisa que la configuración de Pages apunte a la rama correcta, para que el servicio publique la versión prevista y no otra [@githubpages2026].
 
 ## Recomendación final
 
-Publica temprano y corrige después. Esperar al último momento suele convertir errores pequeños en bloqueos innecesarios.
+Publica temprano y corrige después. En publicación web, muchos problemas no son conceptuales sino estructurales: nombres de archivo, rutas, sincronización o configuración del repositorio. Detectarlos con tiempo reduce bloqueos innecesarios y vuelve más claro el vínculo entre producto final y proceso de trabajo [@githubpages2026; @mdnhtml2026].
