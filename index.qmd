@@ -1,9 +1,10 @@
 ---
-title: "¡Bienvenidos/as!"
+title: ""
 page-layout: full
 title-block-style: none
 ---
 
+::: {.content-hidden when-profile="docx"}
 <div class="cover">
 <div class="cover-grid">
 
@@ -28,3 +29,10 @@ title-block-style: none
 
 </div>
 </div>
+:::
+
+::: {.content-visible when-profile="docx"}
+
+![](images/portada.png){fig-alt="Portada del manual Legal Tech" width="100%"}
+
+:::

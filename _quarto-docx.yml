@@ -1,0 +1,51 @@
+project:
+  output-dir: exports/docx
+  post-render:
+    - python3 scripts/normalize_docx_package.py exports/docx/legal-tech-manual-del-curso.docx
+
+title: ""
+title-block-style: none
+
+book:
+  title: ""
+  output-file: legal-tech-manual-del-curso
+  chapters:
+    - index.qmd
+    - bienvenida-docx.qmd
+    - toc-docx.qmd
+    - parte-0/profesores-docx.qmd
+    - parte-0/intro.qmd
+    - parte-1-modulo-1/00-presentacion.qmd
+    - parte-1-modulo-1/01-capitulo.qmd
+    - parte-1-modulo-1/02-capitulo.qmd
+    - parte-1-modulo-1/03-capitulo.qmd
+    - parte-1-modulo-1/04-capitulo.qmd
+    - parte-2-modulo-2/00-presentacion.qmd
+    - parte-2-modulo-2/05-capitulo.qmd
+    - parte-2-modulo-2/06-capitulo.qmd
+    - parte-3-modulo-3/00-presentacion.qmd
+    - parte-3-modulo-3/07-capitulo.qmd
+    - parte-3-modulo-3/08-capitulo.qmd
+    - parte-4-modulo-4/00-presentacion.qmd
+    - parte-4-modulo-4/09-capitulo.qmd
+    - parte-4-modulo-4/10-capitulo.qmd
+    - parte-4-modulo-4/11-capitulo.qmd
+    - tutoriales/00-presentacion.qmd
+    - tutoriales/instalar-python.qmd
+    - tutoriales/visual-studio-code.qmd
+    - tutoriales/git-y-github.qmd
+    - tutoriales/licencias-y-reutilizacion.qmd
+    - tutoriales/github-pages.qmd
+    - referencias.qmd
+
+suppress-bibliography: false
+
+format:
+  docx:
+    toc: false
+    number-sections: false
+    fig-align: center
+    link-citations: true
+    reference-doc: docx/reference.docx
+    filters:
+      - docx-book.lua

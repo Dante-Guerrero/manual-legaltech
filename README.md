@@ -39,17 +39,35 @@ Punto de entrada recomendado:
 
 ## Uso
 
-Renderizar el libro:
+Renderizar la versión web del libro:
 
 ```bash
 quarto render
 ```
 
-Vista previa local:
+También puedes usar explícitamente el perfil por defecto del proyecto:
+
+```bash
+quarto render --to html
+```
+
+La salida web queda en [docs](/Users/dante/github/manual-legaltech/docs).
+
+Renderizar la versión Word:
+
+```bash
+quarto render --profile docx --to docx
+```
+
+La salida `.docx` queda en `exports/docx/`.
+
+Vista previa local de la web:
 
 ```bash
 quarto preview
 ```
+
+Nota sobre Word: Quarto sí puede exportar el libro completo a `.docx`, pero en esa salida los `parts` del libro no se preservan como en la navegación HTML; Word recibe el contenido corrido del libro con sus capítulos.
 
 Convertir nuevos documentos agregados a una categoría de `+/y`:
 
