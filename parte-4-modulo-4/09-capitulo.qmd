@@ -5,144 +5,99 @@ title: "9. Fundamentos de inteligencia artificial"
 ::: {.callout-note}
 ## Qué aprenderás en esta sesión
 
-Esta sesión ofrece un mapa básico para hablar de inteligencia artificial sin mezclarlo todo. El objetivo es distinguir automatización, machine learning, IA generativa y modelos de lenguaje; reconocer qué hacen los LLM y qué no; identificar alucinaciones y sesgos; y aprender a probar herramientas con un mínimo de disciplina crítica.
+Esta sesión ofrece un mapa más preciso para hablar de inteligencia artificial sin mezclar automatización, aprendizaje automático, IA generativa y modelos de lenguaje. El objetivo es entender qué hace realmente un LLM, por qué una respuesta plausible puede seguir siendo errónea, qué riesgos se vuelven especialmente delicados en Derecho y cómo probar estas herramientas sin caer en confianza ingenua [@perezugena2024ia; @nistgaiprofile2024].
 :::
 
 ## La IA llegó antes que el vocabulario para discutirla
 
-La inteligencia artificial ya aparece en tareas de búsqueda, clasificación, resumen y redacción asistida. El problema es que muchas veces empezó a usarse antes de que existiera un lenguaje mínimamente preciso para evaluarla. Por eso abundan dos errores opuestos: exagerar sus capacidades o descartarla sin distinguir qué tipo de herramienta se está usando realmente.
+La inteligencia artificial se volvió visible para el gran público cuando empezó a escribir, resumir y conversar con una fluidez que parecía reservada al lenguaje humano. Sin embargo, la dificultad no comenzó con esas herramientas, sino con la pobreza de las categorías con las que solemos hablar de ellas. Muy pronto se volvió habitual llamar “IA” a cualquier proceso digital más o menos sofisticado, como si automatizar, clasificar, predecir y generar texto fueran operaciones equivalentes. Esa simplificación vuelve más torpe el análisis jurídico, porque impide distinguir entre tareas, riesgos y niveles de control que no son iguales [@perezugena2024ia; @oecdaiprinciples2026].
+
+Por eso conviene empezar por una advertencia de método. En este capítulo no interesa decidir si la IA impresiona o decepciona, sino volverla intelectualmente legible. Para un estudiante de Derecho, entender una tecnología no significa solo aprender qué promete, sino también en qué tipo de operación descansa, qué errores produce, qué derechos puede comprometer y qué clase de supervisión exige [@paez2025humancentered; @perezugena2024ia].
 
 ## Separar conceptos evita entusiasmos confusos
 
-Uno de los problemas más comunes cuando se habla de IA es que todo termina mezclado en una sola bolsa. Para trabajar con rigor conviene separar al menos estas ideas:
+La primera distinción importante es entre automatización e inteligencia artificial. Si un sistema aplica reglas explícitas del tipo “si falta firma, observar” o “si el plazo venció, alertar”, estamos ante una automatización basada en reglas. Esa clase de herramienta puede ser extraordinariamente útil y, de hecho, gran parte del valor práctico del legaltech sigue estando allí: en ordenar secuencias, reducir fricción, recuperar información y ejecutar criterios previamente definidos. No toda solución útil necesita aprender por sí misma ni producir lenguaje natural [@mapeolegaltechperu2025].
 
-- **automatización**: ejecución de reglas explícitas;
-- **machine learning**: modelos que aprenden patrones a partir de datos;
-- **IA generativa**: sistemas capaces de producir texto, imagen, audio u otros contenidos;
-- **LLM**: modelos de lenguaje entrenados para generar texto plausible a gran escala.
+El aprendizaje automático aparece cuando un sistema ya no depende solo de reglas escritas una por una, sino que identifica patrones a partir de datos. Sobre esa base, algunos sistemas clasifican, recomiendan, priorizan o predicen. La IA generativa da un paso adicional: produce contenido nuevo, como texto, imagen, audio o código, a partir de patrones aprendidos en grandes corpus. Los modelos de lenguaje de gran escala, o LLM, pertenecen a esta última familia y son especialmente relevantes para el trabajo jurídico porque operan justamente sobre el material con el que el Derecho piensa y decide: lenguaje, documentos, narrativas, citas y argumentos [@perezugena2024ia; @nistgaiprofile2024].
 
-Esta distinción importa porque no todo problema requiere IA, y no toda herramienta que parece inteligente funciona del mismo modo.
+## ¿Qué hace un modelo de lenguaje y qué no hace?
 
-## Por qué esta conversación importa en Derecho
+El perfil del NIST para IA generativa resulta útil porque ofrece una definición suficientemente sobria. Allí se presenta la IA generativa como una clase de modelos capaces de emular la estructura y las características de datos de entrada para producir contenido sintético derivado, y se explica que, en el caso de los LLM, buena parte del funcionamiento depende de predicción estadística sobre secuencias de texto [@nistgaiprofile2024]. Esta observación importa mucho más de lo que parece. Significa que el modelo no “piensa” una norma como la piensa un jurista, ni “comprende” una controversia en sentido institucional fuerte. Lo que hace es generar una continuación lingüística plausible bajo ciertas regularidades aprendidas.
 
-En una facultad de Derecho, hablar de IA no debería reducirse a fascinación tecnológica ni a temor abstracto. Importa porque estas herramientas ya influyen en tareas que tocan lectura, clasificación, redacción y análisis preliminar. Entender sus fundamentos permite usarlas con mayor criterio y, sobre todo, detectar cuándo una salida convincente sigue siendo insuficiente, riesgosa o directamente falsa.
+Ese mecanismo basta para producir efectos impresionantes. Un LLM puede resumir, reformular, clasificar, sugerir estructuras, traducir registros de lenguaje y construir borradores iniciales con gran rapidez. En el trabajo jurídico, eso explica por qué estas herramientas resultan atractivas para revisar documentos extensos, organizar consultas o producir primeras versiones de escritos. Pero la misma base estadística explica también su límite. Una respuesta puede estar bien escrita y mal fundada. Puede sonar jurídica sin haber controlado realmente la fuente, el contexto ni el alcance normativo del problema [@nistgaiprofile2024; @pinerospolo2024juezrobot].
 
 ::: {.callout-important}
 ## Antes de empezar
 
-Conviene leer esta sesión con una regla simple: toda herramienta debe probarse sobre tareas verificables y con fuentes que puedas contrastar. En derecho, una respuesta plausible no basta. La revisión humana y la trazabilidad de la prueba son parte del uso responsable, no un añadido opcional.
+En Derecho, una respuesta convincente no basta. Cada uso de IA generativa debería plantearse con una pregunta previa: ¿esta tarea admite una salida probable que luego revisaré, o exige desde el inicio exactitud, fuente verificable y control fino de contexto? La diferencia entre ambos escenarios cambia por completo la prudencia con la que conviene usar la herramienta [@oecdaiprinciples2026; @nistgaiprofile2024].
 :::
 
-## Automatización no es lo mismo que IA
+## Por qué el problema de las alucinaciones está mal nombrado y bien orientado
 
-Si un sistema aplica reglas claras como estas:
+En la conversación cotidiana se habla de “alucinaciones”, pero el NIST propone un término más útil: `confabulation`. Se trata de la producción de contenido falso o erróneo expresado con confianza, incluyendo respuestas que contradicen el propio prompt, el contexto previo o hechos verificables [@nistgaiprofile2024]. La ventaja de este lenguaje es doble. Primero, evita atribuir al sistema un estado mental humano. Segundo, subraya que no estamos ante un accidente extravagante, sino ante un riesgo estructural de modelos que generan texto aproximando distribuciones estadísticas de entrenamiento [@nistgaiprofile2024].
 
-- si falta firma, observar;
-- si el plazo venció, marcar alerta;
-- si el monto supera un umbral, escalar revisión;
+Esto adquiere una gravedad particular en Derecho. Una confabulación no siempre aparece como disparate visible. A veces se manifiesta como una cita plausible pero inexistente, una interpretación demasiado segura, una omisión decisiva o una cadena argumentativa internamente elegante y normativamente falsa. El problema no es solo que el modelo se equivoque, sino que lo haga con una seguridad verbal que puede inducir confianza indebida, sobre todo en tareas abiertas y dependientes de fuerte experticia contextual [@nistgaiprofile2024; @perezugena2024ia].
 
-entonces probablemente estamos ante automatización basada en reglas y no necesariamente ante IA. Eso no le quita valor. Muchas soluciones legaltech útiles son, en el fondo, buenas automatizaciones.
+## Sesgos, sobreconfianza e integridad de la información
 
-## ¿Qué hace un modelo de lenguaje?
+El riesgo de la IA generativa no se agota en fabricar datos falsos. El mismo perfil del NIST agrupa otros peligros que ayudan a pensar mejor el problema: sesgos perjudiciales, riesgos de privacidad, degradación de la integridad de la información, seguridad y formas de sobredependencia humana frente al sistema [@nistgaiprofile2024]. La OECD refuerza ese panorama al insistir en que una IA confiable debe respetar derechos humanos y valores democráticos, incorporar supervisión humana adecuada al contexto y dejar trazabilidad suficiente para someter sus resultados a control [@oecdaiprinciples2026].
 
-Un modelo de lenguaje como un LLM trabaja prediciendo texto plausible a partir de patrones aprendidos en grandes volúmenes de datos. Eso le permite:
+Aquí aparece un desplazamiento importante para el análisis jurídico. La pregunta no es solo si el sistema acierta mucho, sino qué tipo de daño produce cuando falla, a quién perjudica, qué información oculta sobre su funcionamiento y qué grado de revisión humana sigue siendo posible. Páez, Gutiérrez y Acosta-Navas insisten, desde una perspectiva centrada en las ciencias sociales, en que evaluar IA únicamente por rendimiento técnico deja fuera dimensiones humanas e institucionales decisivas, como desigualdad, reconfiguración de relaciones y efectos sobre burocracias y regímenes políticos [@paez2025humancentered].
 
-- resumir;
-- completar;
-- reformular;
-- clasificar;
-- contestar con lenguaje natural;
-- generar borradores.
+## El Derecho no usa lenguaje en abstracto
 
-Pero esa capacidad no equivale a comprensión jurídica en sentido humano. El modelo no entiende normas, contexto o responsabilidad como lo hace un profesional. Produce salidas plausibles según patrones estadísticos.
+La razón por la que estos riesgos importan tanto en Derecho es sencilla: el lenguaje jurídico no funciona como un texto cualquiera. No basta con sonar correcto. Hay que distinguir hechos, identificar fuentes, ponderar efectos, respetar garantías y entender que una palabra cambia de sentido según el procedimiento, la materia o el órgano que decide. El problema de la IA generativa no es solo que pueda equivocarse, sino que puede ocultar muy bien el punto exacto en el que empezó a equivocarse [@perezugena2024ia; @pinerospolo2024juezrobot].
+
+Por eso la discusión sobre IA en justicia y decisión pública no puede reducirse a eficiencia. La figura del “juez robot”, por ejemplo, funciona menos como proyecto inmediato que como experimento intelectual para recordar algo elemental: una decisión jurídicamente sensible incorpora motivación, interpretación, independencia y responsabilidad institucional que no se dejan traducir sin pérdida a una mera salida computable [@pinerospolo2024juezrobot]. Dicho en términos más sobrios, la IA parece mucho más defendible como apoyo operativo o documental que como sustitución integral del juicio jurídico.
+
+## RAG y el problema de la fuente verificable
+
+Uno de los desarrollos más interesantes para el mundo jurídico es RAG, esto es, la combinación entre recuperación de información y generación de respuesta. La lógica es simple: antes de responder, el sistema busca documentos relevantes y usa ese material como apoyo para producir una salida [@nistairmf2026]. No elimina los riesgos, pero sí permite reducir parte de la deriva puramente inventiva del modelo cuando la base documental está bien curada y la respuesta conserva trazabilidad.
+
+El ecosistema legaltech peruano ofrece un ejemplo útil para pensar esto. Según el *Mapeo LegalTech Perú 2025*, Juztina organiza la consulta jurídica como una conversación apoyada en fuentes oficiales curadas y técnicas de RAG, con la promesa de reducir horas de búsqueda sin renunciar a la trazabilidad de la respuesta [@mapeolegaltechperu2025]. Lo importante aquí no es solo el brillo del producto, sino la intuición metodológica: en Derecho, generar mejor muchas veces significa antes recuperar mejor. La calidad de la respuesta depende en buena medida de la calidad, delimitación y control del corpus sobre el que el sistema trabaja.
 
 ::: {.callout-note}
 ## Punto clave
 
-Que una respuesta suene convincente no significa que sea correcta, completa o jurídicamente fiable.
-:::
-
-## Modelos generativos y usos jurídicos
-
-En el ámbito jurídico, los modelos generativos pueden ayudar en tareas como:
-
-- resumir documentos largos;
-- proponer estructuras iniciales de escritos;
-- clasificar consultas frecuentes;
-- extraer temas o patrones preliminares;
-- apoyar revisión inicial de información.
-
-Eso puede ahorrar tiempo. Pero también puede generar riesgos:
-
-- inventar referencias;
-- omitir hechos relevantes;
-- simplificar demasiado;
-- reforzar sesgos;
-- dar apariencia de certeza donde debería haber cautela.
-
-## Alucinaciones, sesgos y límites
-
-Uno de los conceptos más importantes al trabajar con IA generativa es el de **alucinación**. En términos simples, se refiere a salidas que parecen coherentes pero contienen información falsa, inventada o no verificable.
-
-En derecho, ese riesgo es especialmente delicado porque:
-
-- una fuente inventada puede comprometer toda una argumentación;
-- una omisión relevante puede distorsionar el análisis;
-- una respuesta demasiado segura puede inducir confianza indebida.
-
-También conviene considerar que los modelos pueden reproducir sesgos presentes en datos, lenguaje o patrones de entrenamiento. No siempre veremos ese problema de manera evidente. Justamente por eso conviene trabajar con pruebas comparadas y con criterios de revisión.
-
-## ¿Qué es RAG, dicho sin humo?
-
-RAG suele referirse a sistemas que combinan recuperación de información con generación de respuesta. En términos sencillos:
-
-1. primero se busca información relevante en una base o conjunto de documentos;
-2. luego se usa esa información como apoyo para generar una respuesta.
-
-La ventaja esperada es que la respuesta se apoye mejor en fuentes concretas y reduzca algunas invenciones. Aun así, no desaparece la necesidad de verificación.
-
-::: {.callout-warning}
-## Advertencia importante
-
-En derecho, una salida incorrecta no es solo un error técnico. Puede convertirse en una mala decisión profesional.
+Un LLM aislado puede redactar con soltura. Un sistema jurídicamente útil necesita, además, fuente curada, contexto delimitado y una revisión humana capaz de detectar lo que el modelo no sabe que ignora [@nistgaiprofile2024; @mapeolegaltechperu2025].
 :::
 
 ## Cómo probar una herramienta sin autoengañarse
 
-Una buena práctica inicial consiste en no usar la herramienta de forma improvisada, sino hacer pruebas controladas. Por ejemplo:
+La mejor forma de empezar a usar estas herramientas no es pedirles “algo jurídico” y dejarse impresionar por el tono. Conviene construir pruebas pequeñas, repetibles y comparables. El mismo caso, dos o tres prompts distintos, una consigna clara de citación, una fuente conocida y una revisión posterior que anote aciertos, errores, omisiones y cambios de criterio. Ese registro convierte una intuición difusa en observación más seria [@nistairmf2026; @paez2025humancentered].
 
-- usar el mismo texto con distintos prompts;
-- comparar resultados;
-- revisar si cita correctamente;
-- anotar qué acierta y qué falla;
-- observar si cambia demasiado de tono o de criterio.
-
-Ese registro importa porque transforma una impresión subjetiva en una observación más seria.
+Un buen experimento de aula puede ser este: tomar una resolución breve o una norma conocida, pedir al sistema un resumen, luego un cuadro de problemas jurídicos y finalmente una explicación para público no especializado. Lo que interesa no es solo si el resultado “sirve”, sino en qué punto exagera, simplifica demasiado, inventa, pierde matices o cambia de tono sin razón visible. Cuando esa observación se documenta, el estudiante deja de usar la herramienta como oráculo y empieza a tratarla como objeto de evaluación.
 
 ## Práctica en editor
 
-Registra en un archivo de texto o Markdown varias pruebas controladas con prompts sobre una tarea jurídica simple. Compara resultados y anota:
+Registra en un archivo de texto o Markdown tres pruebas controladas sobre una misma fuente jurídica breve. Anota para cada una:
 
-- qué respondió;
-- qué pareció útil;
-- qué requería verificación;
-- qué errores o vacíos aparecieron.
+- el prompt utilizado;
+- la salida obtenida;
+- qué parte parecía útil;
+- qué parte exigía verificación;
+- qué errores, vacíos o invenciones aparecieron.
+
+Si quieres profundizar, añade una sexta columna o sección donde indiques si el problema fue de fuente, de contexto, de lenguaje o de confianza excesiva de la respuesta.
 
 ## Conclusiones del capítulo
 
-Hablar de IA con seriedad empieza por separar conceptos y bajar expectativas confusas. Cuando entiendes qué hace una automatización, qué hace un modelo generativo y dónde aparecen alucinaciones o sesgos, la discusión deja de ser retórica y se vuelve práctica. Para el trabajo jurídico, esa claridad es una condición mínima de uso responsable.
+Comprender la IA en un manual de Legal Tech no significa adorarlas ni temerlas, sino distinguir operaciones y riesgos con suficiente claridad como para usarlas con criterio. La automatización basada en reglas, el aprendizaje automático, la IA generativa y los LLM no son lo mismo. Tampoco comprometen las mismas garantías. En Derecho, esa diferencia importa porque el material de trabajo no es solo información, sino lenguaje normativo, justificación, responsabilidad y efectos sobre personas concretas [@perezugena2024ia; @oecdaiprinciples2026].
+
+La lección más importante de esta sesión puede formularse así: los modelos de lenguaje son herramientas poderosas para reorganizar, resumir y producir borradores, pero siguen siendo inseguros allí donde una apariencia de corrección puede ocultar un error de fuente, de contexto o de juicio. Por eso la competencia básica del jurista frente a IA no es la fascinación, sino la capacidad de probar, contrastar y decidir cuándo una salida puede servir como apoyo y cuándo debe ser descartada.
 
 ::: {.callout-tip}
 ## Ideas clave
 
-- distinguir conceptos evita exageraciones y malos usos;
-- la IA puede asistir, pero no reemplaza el juicio jurídico;
-- una salida plausible no equivale a una salida confiable;
-- documentar pruebas mejora la calidad del análisis.
+- no toda automatización es inteligencia artificial, y no toda IA es generativa;
+- un LLM produce texto plausible, no comprensión jurídica en sentido fuerte;
+- las `confabulaciones` son un riesgo estructural, no una rareza anecdótica;
+- en Derecho, fuente, contexto y revisión humana importan tanto como la fluidez de la respuesta;
+- sistemas como RAG pueden mejorar trazabilidad, pero no eliminan la necesidad de control.
 :::
 
 ::: {.callout-caution}
 ## Para pensar y reflexionar
 
-La pregunta importante no es si la IA impresiona, sino si puede integrarse con criterio en tareas donde importan fuente, contexto, responsabilidad y revisión. En Derecho, esa exigencia no frena la innovación: la vuelve intelectualmente seria.
+Cuando una herramienta responde con tono seguro, la tentación es evaluar solo su utilidad inmediata. El problema más serio empieza cuando dejamos de preguntarnos de dónde salió la respuesta, qué omitió y quién responderá por ella si se usa en una decisión con consecuencias jurídicas reales.
 :::

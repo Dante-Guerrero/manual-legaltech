@@ -5,156 +5,120 @@ title: "10. Evaluar, gobernar e integrar IA en contextos jurídicos"
 ::: {.callout-note}
 ## Qué aprenderás en esta sesión
 
-Esta sesión se concentra en el paso que sigue al entusiasmo inicial: evaluar, gobernar e integrar herramientas de IA con criterios jurídicos y operativos básicos. El objetivo es construir preguntas de evaluación, pensar control humano, documentar pruebas, identificar riesgos y distinguir cuándo una integración es razonable y cuándo no lo es.
+Esta sesión se concentra en el paso que sigue al interés inicial por la IA: cómo evaluarla, gobernarla e integrarla en flujos jurídicos sin convertir la novedad técnica en una fuente nueva de opacidad. El objetivo es construir criterios de evaluación, pensar el control humano, documentar pruebas, graduar controles según el riesgo y distinguir entre integraciones razonables y delegaciones imprudentes [@nistairmf2026; @euaiact2026; @oecdaiprinciples2026].
 :::
 
-## La pregunta no es solo si funciona
+## La pregunta relevante no es solo si funciona
 
-Una herramienta puede parecer impresionante en una demostración y resultar poco confiable en un contexto jurídico serio. Por eso, la pregunta relevante no es solo si produce algo útil, sino si conviene usarla, con qué límites, sobre qué tareas y bajo qué responsabilidad. Evaluar bien es una forma de frenar soluciones vistosas pero mal gobernadas.
+Una herramienta puede producir una demostración brillante y seguir siendo una mala candidata para el trabajo jurídico cotidiano. El entusiasmo tecnológico suele fijarse en la velocidad, el estilo o la comodidad de la interfaz. Pero el Derecho obliga a formular preguntas más incómodas: de dónde sale la respuesta, qué daño puede producir un error, quién revisa el resultado, con qué criterios se corrige y cómo queda trazado todo el proceso. Evaluar IA con seriedad significa desplazar la atención desde la espectacularidad del output hacia la calidad institucional de su uso [@paez2025humancentered; @perezugena2024ia].
 
-## Probar también es gobernar
+Ese desplazamiento es fundamental porque la integración de IA no es una cuestión puramente instrumental. Cada vez que una organización adopta una herramienta para resumir expedientes, clasificar consultas, priorizar alertas o asistir decisiones, está rediseñando relaciones entre personas, procesos, tiempos y responsabilidades. El problema jurídico no aparece al final, cuando algo falla. Aparece desde el inicio, cuando se decide cómo se usará la herramienta, qué tarea tocará, qué datos circularán y qué margen quedará para la revisión humana [@oecdaiprinciples2026; @nistplaybook2026].
 
-Gobernar una herramienta de IA significa decidir cómo se prueba, qué riesgos se aceptan, qué controles se exigen y quién responde por el resultado. Esa gobernanza no empieza cuando aparece un problema. Empieza mucho antes, cuando se diseña la prueba, se documentan errores y se decide si una tarea admite o no asistencia automatizada.
+## Gobernar también significa diseñar la prueba
 
-## Control humano, riesgo y responsabilidad
+El AI Risk Management Framework del NIST propone una idea especialmente útil para este capítulo: la pregunta responsable sobre IA no es solo si el sistema acierta, sino cómo se gestionan sus riesgos antes, durante y después del uso [@nistairmf2026]. Su Playbook aterriza ese principio en cuatro funciones que sirven mucho para pensar un flujo jurídico real: `Govern`, `Map`, `Measure` y `Manage` [@nistplaybook2026]. La traducción pedagógica es directa. Primero se definen responsabilidades y reglas. Luego se entiende el contexto de uso. Después se mide el comportamiento del sistema. Y finalmente se gestionan los riesgos detectados.
 
-En una facultad de Derecho, este tema importa porque el uso de IA no puede discutirse como si fuera neutral. Toda integración toca preguntas sobre calidad, trazabilidad, confidencialidad, sesgos y responsabilidad profesional. Aprender a evaluar una herramienta no solo prepara para usarla mejor; también prepara para rechazarla cuando sus límites son incompatibles con la tarea.
+Lo importante es que el propio Playbook advierte que esto no debe leerse como una checklist universal. No existe una secuencia idéntica para todos los casos, porque gobernar IA exige controles situados, proporcionales al riesgo y sensibles al tipo de tarea [@nistplaybook2026]. Esa observación es muy valiosa para estudiantes de Derecho: evita la ilusión de que la gobernanza consiste en llenar formularios. En realidad, consiste en elegir bien qué preguntas formular y qué evidencia pedirle al sistema antes de confiar en él.
 
 ::: {.callout-important}
 ## Antes de empezar
 
-Conviene elegir una tarea concreta y de riesgo controlado antes de evaluar cualquier herramienta. Una prueba pequeña, bien documentada y repetible enseña mucho más que una impresión general. También ayuda definir desde el inicio qué se considerará error, qué nivel de revisión humana será necesario y qué daño produciría una salida equivocada.
+Antes de evaluar una herramienta, conviene elegir una tarea pequeña, verificable y de riesgo controlado. También ayuda definir de antemano qué contará como error, quién hará la revisión humana, qué fuentes se considerarán suficientes y qué daño produciría una respuesta equivocada [@nistairmf2026; @oecdaiprinciples2026].
 :::
 
-## Criterios mínimos de evaluación
+## Criterios mínimos para una evaluación jurídicamente útil
 
-Una evaluación básica puede organizarse con preguntas como estas:
+Una primera evaluación puede organizarse en torno a cinco preguntas. La primera es si la herramienta ayuda realmente a la tarea o solo produce una ilusión de ayuda. La segunda es si reduce tiempo sin trasladar el costo a una revisión humana tan intensa que anule la ventaja. La tercera es si permite explicar de manera razonable cómo se llegó al resultado o, al menos, con qué insumos trabajó. La cuarta es qué daño produciría una salida equivocada. La quinta es si ese daño sería tolerable en ese contexto concreto [@nistairmf2026; @paez2025humancentered].
 
-- ¿la salida ayuda realmente a la tarea?;
-- ¿reduce tiempo sin comprometer calidad?;
-- ¿introduce errores frecuentes?;
-- ¿permite explicar cómo se llegó al resultado?;
-- ¿requiere supervisión intensa?;
-- ¿qué daño produciría una respuesta equivocada?
+La OECD añade aquí un criterio decisivo: una IA confiable exige transparencia significativa, supervisión humana adecuada al contexto y trazabilidad sobre datos, procesos y decisiones [@oecdaiprinciples2026]. Esto obliga a mirar más allá del rendimiento técnico. Un sistema rápido y elegante sigue siendo problemático si nadie puede revisar de manera inteligible sus límites, si el corpus que usa es opaco o si la organización no sabe responder quién es responsable cuando la salida se incorpora a una actuación con consecuencias jurídicas.
 
-Estos criterios no agotan la gobernanza, pero sí elevan el nivel del análisis.
+## El control humano no es mirar por encima
 
-## Control humano y responsabilidad
+Una de las expresiones más repetidas en estos debates es “human in the loop”. Pero en el trabajo jurídico esa fórmula solo tiene sentido si se la concreta. No basta con que una persona revise superficialmente el resultado. Hace falta saber quién revisa, qué revisa exactamente, con qué criterio valida, qué facultades tiene para corregir, descartar o escalar el caso, y cómo queda documentada esa intervención [@oecdaiprinciples2026; @nistplaybook2026].
 
-En derecho, uno de los puntos más delicados es el control humano. No basta con que una persona mire por encima una salida. Hay que poder responder:
-
-- quién revisa;
-- qué revisa exactamente;
-- con qué criterio valida;
-- cuándo se corrige o descarta la respuesta;
-- quién asume responsabilidad final.
-
-Sin esa capa, la herramienta puede terminar funcionando como una autoridad informal, lo cual es especialmente riesgoso.
+Este punto merece insistirse porque la automatización no elimina el problema del juicio; lo redistribuye. En entornos cada vez más asistidos por IA, la supervisión humana se vuelve más exigente justamente cuando la salida parece suficientemente buena como para desalentar la revisión cuidadosa. En IA generativa esa tensión es especialmente fuerte: revisar una salida plausible suele requerir más criterio que revisar una salida torpemente equivocada [@nistgaiprofile2024; @paez2025humancentered].
 
 ::: {.callout-note}
 ## Punto clave
 
-La gobernanza no empieza cuando aparece un problema. Empieza cuando decides cómo probar, usar y controlar una herramienta antes de incorporarla al trabajo.
+La supervisión humana solo vale como garantía cuando tiene contenido: criterio, tiempo, acceso a la fuente, autoridad para corregir y trazabilidad suficiente para reconstruir la decisión [@oecdaiprinciples2026; @nistplaybook2026].
 :::
 
-## Riesgos éticos, regulatorios y operativos
+## No toda tarea merece la misma intensidad de control
 
-En contextos jurídicos, una evaluación seria no puede limitarse al rendimiento técnico. También debe mirar riesgos como:
+El AI Act europeo ofrece una intuición regulatoria muy pedagógica: no toda IA merece el mismo tratamiento jurídico, porque los controles deben graduarse según el riesgo que el uso concreto plantea para salud, seguridad o derechos fundamentales [@euaiact2026]. La Comisión explica cuatro niveles: riesgo inaceptable, alto riesgo, riesgo limitado y riesgo mínimo o nulo [@euaiact2026]. Incluso si ese marco no se aplica directamente en todos los contextos latinoamericanos, su lógica ayuda mucho a pensar con orden.
 
-- fuga o exposición de información;
-- sesgos en clasificación o recomendación;
-- dependencia excesiva del sistema;
-- pérdida de trazabilidad;
-- errores en documentos o análisis preliminar;
-- incumplimientos respecto de confidencialidad o protección de datos.
+Llevado al aula, esto permite distinguir entre usos relativamente bajos en riesgo, como un primer resumen de lectura o una ayuda para lenguaje llano, y usos mucho más delicados, como sistemas que orienten acceso a beneficios, clasificación de personas, predicción de conducta o apoyo a decisiones jurisdiccionales. La primera pregunta de gobernanza, entonces, no es si la herramienta “usa IA”, sino qué tipo de daño podría producir y cuánta confianza institucional sería razonable depositar en ella [@euaiact2026; @perezugena2024ia].
 
-En algunos casos, una herramienta puede ser útil para tareas de muy bajo riesgo, pero no recomendable para otras de mayor impacto.
+## Transparencia, derechos y criterio jurídico
 
-## Bitácora de evaluación
+Evaluar IA en un entorno jurídico exige además un criterio material: qué derechos, garantías o posiciones jurídicas podrían verse afectados si el sistema se equivoca o si su lógica permanece opaca. Pérez-Ugena recuerda que la discusión regulatoria sobre IA solo cobra sentido pleno cuando se la conecta con derechos fundamentales, entre ellos igualdad, privacidad, libertad de expresión y tutela judicial efectiva [@perezugena2024ia]. Esa observación impide reducir la gobernanza a un problema administrativo.
 
-Una forma sencilla y muy útil de empezar a gobernar pruebas consiste en construir una bitácora. Esa bitácora puede incluir:
+En otras palabras, la evaluación no debe limitarse a decir “funciona bien”. Debe poder responder también “funciona bien para qué”, “con qué límites”, “sobre quiénes impacta” y “qué salvaguardas preservan los derechos comprometidos”. Un sistema útil para un flujo documental interno puede resultar improcedente cuando la salida condiciona defensa, acceso a beneficios, calificación registral o decisión judicial [@perezugena2024ia; @pinerospolo2024juezrobot].
 
-- tarea;
-- prompt o instrucción;
-- salida obtenida;
-- error detectado;
-- nivel de utilidad;
-- decisión final;
-- observaciones.
+## La gobernanza mejora cuando se observa en casos concretos
 
-Por ejemplo:
+El *Mapeo LegalTech Perú 2025* ofrece ejemplos especialmente didácticos porque muestra integraciones donde la IA se presenta como apoyo operativo y no como sustitución integral del criterio jurídico [@mapeolegaltechperu2025]. Juztina, por ejemplo, reduce fricción en el acceso a información jurídica mediante RAG y fuentes oficiales curadas. La lección no es solo tecnológica. Es metodológica: cuando el problema es localizar, explicar y contextualizar mejor la información, la combinación entre búsqueda estructurada y lenguaje natural puede generar valor sin ocultar del todo la fuente [@mapeolegaltechperu2025].
 
-| Tarea | Prompt | Resultado | Error detectado | Decision |
-|---|---|---|---|---|
-| Resumir resolucion | "Resume en 5 puntos" | resumen plausible | omitio base legal | usar con revision |
+La experiencia de SUNARP refuerza una regla todavía más importante. Allí la IA se usa para acelerar lectura de partidas, búsqueda de información y apoyo a ciertos trámites, pero la calificación final permanece en manos humanas [@mapeolegaltechperu2025]. Desde el punto de vista del diseño institucional, esta es una decisión muy instructiva. Automatiza traslados, organización y accesibilidad, pero no delega la responsabilidad registral ni la fe pública.
 
-La bitácora no solo organiza. También deja evidencia.
+YachAIbot ofrece otra variante. Su aporte principal no es decidir por la administración, sino bajar la barrera de entrada al marco normativo para funcionarios y ciudadanía [@mapeolegaltechperu2025]. Indecopi, en cambio, muestra un uso distinto: procesar millones de grabaciones para volver fiscalizable un volumen de evidencia que manualmente sería inabarcable [@mapeolegaltechperu2025]. En ambos casos, la pregunta de gobernanza no es si la herramienta “parece inteligente”, sino si expande capacidad institucional sin borrar trazabilidad, fuente ni control humano significativo.
 
-## Integraciones sencillas
+## Cuándo conviene decir no
 
-Hablar de integración no significa necesariamente construir un sistema complejo. A veces basta con un flujo simple:
+Una de las señales de madurez tecnológica consiste en saber no integrar una herramienta cuando el costo institucional del error es demasiado alto o cuando la opacidad del sistema vuelve ilusoria la revisión humana. La literatura sobre juez-robot funciona aquí como recordatorio límite: no toda función jurídicamente sensible puede transferirse sin pérdida a una lógica automatizada, porque la decisión incorpora motivación, independencia, imparcialidad y responsabilidad que no se dejan reducir a cálculo [@pinerospolo2024juezrobot].
 
-- texto de entrada;
-- prompt o instrucción;
-- revisión humana;
-- clasificación o salida documentada.
-
-En algunos casos, puede haber también integraciones básicas con Python:
-
-- leer una lista de documentos;
-- enviar bloques de texto a una herramienta;
-- registrar resultados;
-- guardar observaciones.
-
-Lo importante no es la sofisticación técnica, sino que la integración tenga sentido práctico y controles razonables.
-
-## ¿Cuándo no conviene integrar?
-
-También es una decisión válida concluir que una herramienta no debería usarse para determinada tarea. Por ejemplo, cuando:
-
-- el riesgo de error es demasiado alto;
-- no hay trazabilidad suficiente;
-- la revisión humana sería tan costosa que anula la ventaja;
-- la información es demasiado sensible;
-- el sistema se comporta de manera demasiado inconsistente.
+Esto no significa que la IA deba quedar expulsada del campo jurídico. Significa algo más interesante: que conviene distinguir entre asistir y sustituir. Asistir puede ser razonable en búsquedas, organización de expedientes, lenguaje llano, priorización documental o apoyo a borradores. Sustituir se vuelve mucho más problemático cuando lo que está en juego es una decisión que exige deliberación, explicación y asunción institucional de responsabilidad [@mapeolegaltechperu2025; @pinerospolo2024juezrobot].
 
 ::: {.callout-warning}
 ## Advertencia útil
 
-En innovación jurídica, a veces la decisión más responsable no es integrar más tecnología, sino integrar menos y mejor.
+En innovación jurídica, una mala integración no se define solo por bajo rendimiento técnico. También puede definirse por sobredependencia, pérdida de trazabilidad, falsa sensación de control o debilitamiento de garantías que el procedimiento no puede renunciar a proteger [@nistgaiprofile2024; @perezugena2024ia].
 :::
+
+## Bitácora mínima de evaluación
+
+Una forma muy útil de empezar a gobernar pruebas consiste en construir una bitácora sencilla. Lo importante no es su complejidad, sino la disciplina que impone. Un formato inicial podría ser este:
+
+| Tarea | Fuente o corpus | Prompt o instrucción | Resultado | Error o riesgo detectado | Revisión humana necesaria | Decisión |
+|---|---|---|---|---|---|---|
+| Resumir resolución | resolución conocida | "Resume en 5 puntos" | resumen plausible | omite base legal | alta | usar solo como borrador |
+| Buscar norma aplicable | base normativa curada | "Indica norma y artículo" | cita parcial | cita incompleta | media | corregir y documentar |
+
+Una bitácora así obliga a pensar con precisión: qué se le pidió al sistema, sobre qué corpus trabajó, qué produjo, qué falló y qué nivel de intervención humana fue necesario. En un curso de Legal Tech, ese registro enseña más que una lista de impresiones generales porque transforma la experiencia de uso en evidencia revisable [@nistplaybook2026; @oecdaiprinciples2026].
 
 ## Práctica en editor
 
-Construye una bitácora de evaluación con columnas o secciones como estas:
+Construye una bitácora de evaluación con al menos tres pruebas sobre una misma herramienta de IA aplicada a tareas jurídicas de bajo riesgo. Incluye:
 
 - tarea;
+- fuente o corpus empleado;
 - prompt o instrucción;
 - resultado;
-- error detectado;
+- error o riesgo detectado;
+- nivel de revisión humana requerido;
 - decisión final.
 
-Si quieres profundizar, añade:
-
-- nivel de riesgo;
-- necesidad de revisión humana;
-- observaciones de trazabilidad.
+Si quieres profundizar, añade una columna sobre el tipo de riesgo involucrado: precisión, fuente, privacidad, sesgo, trazabilidad o sobreconfianza.
 
 ## Conclusiones del capítulo
 
-Evaluar e integrar IA con criterio significa resistir la tentación de confundir novedad con conveniencia. Una buena gobernanza empieza en la prueba, continúa en la documentación y se vuelve seria cuando define límites de uso, responsabilidades y condiciones de revisión. En Derecho, ese trabajo no es burocracia: es parte del estándar profesional.
+Evaluar e integrar IA con criterio significa resistir dos tentaciones simétricas. La primera es creer que toda novedad útil merece entrar sin más en el flujo jurídico. La segunda es pensar que toda IA debe rechazarse por principio. Entre ambos extremos aparece el trabajo realmente importante: definir tareas, medir riesgos, graduar controles, preservar trazabilidad y decidir con cuidado dónde la herramienta amplía capacidad institucional y dónde empieza a comprometer garantías que no deberían relajarse [@nistairmf2026; @euaiact2026].
+
+La gobernanza de IA no es un añadido burocrático al final del proceso. Es la forma misma de decidir si una integración merece confianza. En contextos jurídicos, esa confianza no nace de la fluidez verbal del sistema, sino de una arquitectura de revisión, documentación, límites y responsabilidad. Por eso la pregunta decisiva no es si la herramienta parece inteligente, sino si la institución que la adopta sigue siendo capaz de explicar, controlar y asumir las consecuencias de su uso [@oecdaiprinciples2026; @perezugena2024ia].
 
 ::: {.callout-tip}
 ## Ideas clave
 
-- la gobernanza empieza en la prueba, no después del problema;
-- la trazabilidad importa tanto como el resultado;
-- una evaluación útil combina criterio técnico y criterio jurídico;
-- integrar IA sin controles suele ser peor que no integrarla.
+- gobernar IA empieza cuando se diseña la prueba, no cuando aparece el problema;
+- el control humano solo protege si tiene criterio, tiempo, autoridad y trazabilidad;
+- no toda tarea jurídica merece la misma intensidad de automatización o supervisión;
+- el enfoque basado en riesgo ayuda a distinguir integraciones razonables de delegaciones imprudentes;
+- los mejores ejemplos institucionales suelen ampliar capacidad sin desplazar la responsabilidad final.
 :::
 
 ::: {.callout-caution}
 ## Para pensar y reflexionar
 
-No toda herramienta útil en una demo merece entrar en un flujo jurídico real. Saber decir no, o saber limitar mucho el alcance de una integración, también es una forma de madurez tecnológica.
+La verdadera madurez tecnológica no se mide por cuántas herramientas se incorporan, sino por la capacidad de una organización para limitar su alcance cuando el riesgo supera lo que un procedimiento justo, explicable y responsable puede tolerar.
 :::
