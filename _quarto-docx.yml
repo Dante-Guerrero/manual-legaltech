@@ -2,8 +2,8 @@ project:
   output-dir: exports/docx
 
 title: "Legal Tech, Manual del Curso"
-subtitle: "Manual del Curso 2026"
-author: "Dante Guerrero"
+subtitle: "Para los profesionales que se atrevan a enfrentar el presente"
+author: "Dante Guerrero y Manuel Santa Cruz"
 title-block-style: default
 
 book:
