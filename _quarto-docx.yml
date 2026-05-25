@@ -1,7 +1,5 @@
 project:
   output-dir: exports/docx
-  post-render:
-    - python3 scripts/normalize_docx_package.py exports/docx/legal-tech-manual-del-curso.docx
 
 title: ""
 title-block-style: none
@@ -46,6 +44,3 @@ format:
     number-sections: false
     fig-align: center
     link-citations: true
-    reference-doc: docx/reference.docx
-    filters:
-      - docx-book.lua

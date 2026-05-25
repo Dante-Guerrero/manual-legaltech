@@ -1,9 +1,3 @@
----
-title: ""
-page-layout: full
-title-block-style: none
----
-
 ::: {.content-hidden when-profile="docx"}
 <div class="cover">
 <div class="cover-grid">
