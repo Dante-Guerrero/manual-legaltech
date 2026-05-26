@@ -1,0 +1,45 @@
+<!--
+Nombre: 03-tablas.html
+Tema: Tablas basicas
+Objetivo: Organizar informacion en filas y columnas.
+Como usarlo: abre 00-html/03-tablas.html en tu navegador
+
+Guia de lectura:
+- Fila 15: se agrega <table>; crea la estructura de la tabla.
+- Filas 16 a 20: se agrega la primera fila <tr> con celdas de encabezado <th>.
+- Filas 21 a 30: se agregan filas <tr> con celdas <td>; muestran datos reales.
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Tabla simple</title>
+  </head>
+  <body>
+    <h1>Registro de citas</h1>
+
+    <!-- Fila 15: <table> crea una tabla; su efecto es ordenar datos en una cuadricula. -->
+    <table border="1">
+      <!-- Fila 16: <tr> crea una fila horizontal dentro de la tabla. -->
+      <tr>
+        <!-- Filas 17 a 19: <th> crea celdas de encabezado en negrita. -->
+        <th>Persona</th>
+        <th>Fecha</th>
+        <th>Estado</th>
+      </tr>
+      <!-- Fila 21: una nueva fila <tr> muestra el primer registro. -->
+      <tr>
+        <!-- Filas 22 a 24: <td> agrega celdas normales con informacion. -->
+        <td>Ana Perez</td>
+        <td>2026-05-30</td>
+        <td>Confirmada</td>
+      </tr>
+      <!-- Fila 26: otra fila <tr> muestra un segundo registro. -->
+      <tr>
+        <td>Luis Rojas</td>
+        <td>2026-06-02</td>
+        <td>Pendiente</td>
+      </tr>
+    </table>
+  </body>
+</html>

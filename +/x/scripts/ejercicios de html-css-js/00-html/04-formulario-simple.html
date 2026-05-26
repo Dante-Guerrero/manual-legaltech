@@ -1,0 +1,54 @@
+<!--
+Nombre: 04-formulario-simple.html
+Tema: Formularios
+Objetivo: Conocer inputs, labels y botones.
+Como usarlo: abre 00-html/04-formulario-simple.html en tu navegador
+
+Guia de lectura:
+- Fila 15: se agrega <form>; agrupa campos de entrada.
+- Filas 16 y 17: se agregan <label> e <input>; sirven para escribir el nombre.
+- Filas 23 y 24: se agregan otro <label> e <input>; permiten escribir el correo.
+- Filas 30 y 32: se agregan <label> y <textarea>; permiten escribir un mensaje largo.
+- Fila 37: se agrega <button>; permite enviar el formulario.
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulario simple</title>
+  </head>
+  <body>
+    <h1>Formulario de contacto</h1>
+
+    <!-- Fila 15: <form> agrupa los campos; su efecto es crear una zona de captura de datos. -->
+    <form>
+      <!-- Fila 16: <label> nombra el campo para que el usuario sepa que escribir. -->
+      <label for="nombre">Nombre</label>
+      <!-- Fila 17: <input> crea una caja de una sola linea para escribir texto. -->
+      <input id="nombre" type="text" placeholder="Escribe tu nombre">
+
+      <br>
+      <br>
+
+      <!-- Fila 23: este <label> identifica el campo de correo. -->
+      <label for="correo">Correo</label>
+      <!-- Fila 24: este <input type="email"> sugiere que se escriba un correo. -->
+      <input id="correo" type="email" placeholder="correo@ejemplo.com">
+
+      <br>
+      <br>
+
+      <!-- Fila 30: <label> presenta el campo del mensaje. -->
+      <label for="mensaje">Mensaje</label>
+      <br>
+      <!-- Fila 32: <textarea> permite escribir varias lineas de texto. -->
+      <textarea id="mensaje" rows="4" cols="30"></textarea>
+
+      <br>
+      <br>
+
+      <!-- Fila 37: <button type="submit"> crea el boton para enviar el formulario. -->
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>

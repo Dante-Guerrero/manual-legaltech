@@ -1,0 +1,49 @@
+/*
+Guia de lectura:
+- Fila 1: body define el fondo general.
+- Fila 6: .contenedor crea la caja principal.
+- Fila 14: label, input y button se ponen en bloque.
+- Fila 19: input y button reciben espacio interno y externo.
+- Fila 27: button toma un color fuerte para destacar la accion.
+*/
+
+/* Fila 8: body cambia el fondo y la fuente de toda la pagina. */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+}
+
+/* Fila 14: .contenedor crea la tarjeta principal donde vive la calculadora. */
+.contenedor {
+  width: min(420px, calc(100% - 32px));
+  margin: 48px auto;
+  padding: 24px;
+  background: white;
+  border: 1px solid #cbd5e1;
+  border-radius: 16px;
+}
+
+/* Fila 23: estos selectores hacen que etiquetas y controles ocupen una linea completa. */
+label,
+input,
+button {
+  display: block;
+  width: 100%;
+}
+
+/* Fila 30: input y button reciben padding para ser mas comodos de usar. */
+input,
+button {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+/* Fila 38: button cambia color y elimina borde para destacar la accion principal. */
+button {
+  background: #0f766e;
+  color: white;
+  border: 0;
+}

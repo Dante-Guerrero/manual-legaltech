@@ -1,0 +1,51 @@
+<!--
+Nombre: 02-validar-formulario.html
+Tema: Validacion simple
+Objetivo: Revisar si un campo esta vacio antes de continuar.
+Como usarlo: abre 03-dom-formularios/02-validar-formulario.html en tu navegador
+
+Guia de lectura:
+- Fila 13: se agrega <input>; recibe el correo.
+- Fila 14: se agrega <button>; lanza la validacion.
+- Fila 15: se agrega <p id="mensaje">; muestra el resultado.
+- Filas 21 a 28: se usa if para detectar si el campo esta vacio.
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Validar formulario</title>
+  </head>
+  <body>
+    <h1>Registro rapido</h1>
+    <!-- Fila 13: <input type="email"> crea una caja para escribir el correo. -->
+    <input id="correo" type="email" placeholder="correo@ejemplo.com">
+    <!-- Fila 14: <button> permite revisar si el campo fue completado. -->
+    <button id="enviar">Validar</button>
+    <!-- Fila 15: <p> vacio mostrara mensajes de error o exito. -->
+    <p id="mensaje"></p>
+
+    <script>
+      // Fila 18: se busca el boton en el DOM.
+      const boton = document.getElementById("enviar");
+      // Fila 19: se busca el parrafo donde apareceran los mensajes.
+      const mensaje = document.getElementById("mensaje");
+
+      // Fila 21: el evento click ejecuta la validacion.
+      boton.addEventListener("click", function () {
+        // Fila 22: se obtiene lo escrito en el input.
+        const correo = document.getElementById("correo").value;
+
+        // Fila 24: if revisa si la cadena esta vacia.
+        if (correo === "") {
+          // Fila 25: si falta el correo, aparece un mensaje de advertencia.
+          mensaje.textContent = "Debes escribir un correo";
+          return;
+        }
+
+        // Fila 29: si el correo existe, el mensaje cambia a exito.
+        mensaje.textContent = "Formulario listo para enviar";
+      });
+    </script>
+  </body>
+</html>

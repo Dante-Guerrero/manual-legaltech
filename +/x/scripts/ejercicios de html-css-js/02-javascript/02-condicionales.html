@@ -1,0 +1,43 @@
+<!--
+Nombre: 02-condicionales.html
+Tema: Condicionales
+Objetivo: Tomar decisiones con if y else.
+Como usarlo: abre 02-javascript/02-condicionales.html en tu navegador
+
+Guia de lectura:
+- Fila 13: se agrega <h1>; presenta el caso del ejemplo.
+- Fila 14: se agrega <p id="resultado">; mostrara el texto final.
+- Filas 17 y 18: se crean variables base para la decision.
+- Filas 20 a 24: se usa if y else; su efecto es elegir un mensaje segun el valor.
+- Fila 26: se muestra el resultado dentro del parrafo.
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Condicionales</title>
+  </head>
+  <body>
+    <!-- Fila 13: <h1> muestra el tema que se evaluara. -->
+    <h1>Estado de pago</h1>
+    <!-- Fila 14: <p> vacio recibira el mensaje elegido por el condicional. -->
+    <p id="resultado"></p>
+
+    <script>
+      // Fila 17: deuda guarda el numero que vamos a evaluar.
+      const deuda = 0;
+      // Fila 18: mensaje empieza vacio para llenarse despues.
+      let mensaje = "";
+
+      // Filas 20 a 24: if/else decide que texto mostrar segun la deuda.
+      if (deuda > 0) {
+        mensaje = "Pago pendiente";
+      } else {
+        mensaje = "Sin deuda registrada";
+      }
+
+      // Fila 26: el contenido del parrafo cambia y ya se ve en pantalla.
+      document.getElementById("resultado").textContent = mensaje;
+    </script>
+  </body>
+</html>

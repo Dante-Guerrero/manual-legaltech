@@ -1,0 +1,46 @@
+<!--
+Nombre: 00-estilos-en-linea.html
+Tema: CSS en el mismo archivo
+Objetivo: Aplicar colores y espacios usando la etiqueta style.
+Como usarlo: abre 01-css/00-estilos-en-linea.html en tu navegador
+
+Guia de lectura:
+- Fila 11: se agrega la etiqueta <style>; contiene reglas CSS.
+- Filas 12 a 17: se agrega el selector body; cambia fuente, fondo y espacio exterior.
+- Filas 19 a 21: se agrega el selector h1; cambia el color del titulo.
+- Filas 23 a 26: se agrega el selector p; cambia color y separacion entre lineas.
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>CSS basico</title>
+    <!-- Fila 11: <style> permite escribir CSS dentro del mismo archivo HTML. -->
+    <style>
+      /* Fila 12: body afecta toda la pagina; cambia fuente, fondo y espaciado general. */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f7fb;
+        margin: 0;
+        padding: 24px;
+      }
+
+      /* Fila 19: h1 afecta el titulo principal; su efecto es cambiar el color del texto. */
+      h1 {
+        color: #1d3557;
+      }
+
+      /* Fila 23: p afecta los parrafos; mejora lectura con color suave y line-height. */
+      p {
+        color: #444;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Fila 31: <h1> muestra el titulo que sera afectado por la regla h1 del CSS. -->
+    <h1>Pagina con estilos</h1>
+    <!-- Fila 32: <p> muestra un texto que recibe los estilos del selector p. -->
+    <p>CSS permite cambiar la apariencia de una pagina web.</p>
+  </body>
+</html>

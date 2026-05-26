@@ -1,0 +1,39 @@
+<!--
+Nombre: index.html
+Tema: Mini proyecto de lista de tareas
+Objetivo: Agregar tareas nuevas a una lista usando JavaScript.
+Como usarlo: abre 04-mini-proyectos/03-lista-tareas/index.html en tu navegador
+
+Guia de lectura:
+- Fila 9: se agrega <main class="contenedor">; agrupa toda la interfaz.
+- Fila 11: se agrega <div class="fila">; pone input y boton en una misma fila.
+- Fila 12: se agrega <input>; permite escribir la tarea.
+- Fila 13: se agrega <button>; activa el agregado.
+- Fila 15: se agrega <ul id="lista">; recibira nuevos <li>.
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Fila 9: <main class="contenedor"> contiene toda la app de tareas. -->
+    <main class="contenedor">
+      <h1>Lista de tareas</h1>
+      <!-- Fila 11: <div class="fila"> agrupa input y boton en una sola linea. -->
+      <div class="fila">
+        <!-- Fila 12: <input> crea la caja para escribir una tarea nueva. -->
+        <input id="tarea" type="text" placeholder="Escribe una tarea">
+        <!-- Fila 13: <button> agrega la tarea escrita. -->
+        <button id="agregar">Agregar</button>
+      </div>
+      <!-- Fila 15: <ul> empieza vacia y recibira nuevas tareas como <li>. -->
+      <ul id="lista"></ul>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

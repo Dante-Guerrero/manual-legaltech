@@ -1,0 +1,41 @@
+<!--
+Nombre: index.html
+Tema: Mini proyecto de tarjeta de presentacion
+Objetivo: Unir estructura HTML, estilos CSS y evento con JavaScript.
+Como usarlo: abre 04-mini-proyectos/01-tarjeta-presentacion/index.html en tu navegador
+
+Guia de lectura:
+- Fila 9: se agrega <main class="tarjeta">; contiene toda la tarjeta visual.
+- Fila 10: se agrega <p class="etiqueta">; muestra una etiqueta corta superior.
+- Fila 11: se agrega <h1>; muestra el nombre principal.
+- Fila 14: se agrega <button>; permite cambiar el mensaje.
+- Fila 15: se agrega <p id="mensaje">; sera modificado por JavaScript.
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de presentacion</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Fila 9: <main class="tarjeta"> agrupa todo el contenido principal del proyecto. -->
+    <main class="tarjeta">
+      <!-- Fila 10: <p class="etiqueta"> agrega una linea corta de contexto. -->
+      <p class="etiqueta">Mini proyecto 1</p>
+      <!-- Fila 11: <h1> muestra el nombre principal con jerarquia alta. -->
+      <h1>Marina Soto</h1>
+      <!-- Fila 12: <p class="cargo"> agrega una descripcion breve del rol. -->
+      <p class="cargo">Asistente legal</p>
+      <!-- Fila 13: este <p> agrega una presentacion personal. -->
+      <p>Aprendiendo a combinar HTML, CSS y JavaScript en una pagina simple.</p>
+      <!-- Fila 14: <button> activa el cambio de mensaje. -->
+      <button id="boton">Cambiar mensaje</button>
+      <!-- Fila 15: <p id="mensaje"> mostrara el texto que cambia con JS. -->
+      <p id="mensaje">Disponible para nuevas ideas.</p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

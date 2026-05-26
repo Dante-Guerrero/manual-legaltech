@@ -1,0 +1,48 @@
+<!--
+Nombre: 03-cambiar-estilos.html
+Tema: Cambiar estilos con JavaScript
+Objetivo: Modificar colores o clases desde un evento.
+Como usarlo: abre 03-dom-formularios/03-cambiar-estilos.html en tu navegador
+
+Guia de lectura:
+- Filas 12 a 15: se agrega la clase .caja; da forma y color inicial al bloque.
+- Fila 20: se agrega <div id="caja" class="caja">; muestra el bloque visible.
+- Fila 24: se agrega <button>; activa el cambio.
+- Fila 30: se usa style.backgroundColor; cambia el color del bloque en tiempo real.
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cambiar estilos</title>
+    <style>
+      /* Fila 12: .caja define padding y color de fondo inicial del bloque. */
+      .caja {
+        padding: 20px;
+        background: #f3f4f6;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Fila 20: <div id="caja" class="caja"> crea el bloque que cambiara de color. -->
+    <div id="caja" class="caja">
+      Este cuadro puede cambiar de color.
+    </div>
+    <br>
+    <!-- Fila 24: <button> dispara el cambio de estilo. -->
+    <button id="cambiar">Cambiar color</button>
+
+    <script>
+      // Fila 27: se obtiene la referencia al boton.
+      const boton = document.getElementById("cambiar");
+      // Fila 28: se obtiene la referencia al div que cambiara de color.
+      const caja = document.getElementById("caja");
+
+      // Fila 30: cuando hay clic, se modifica el estilo inline del div.
+      boton.addEventListener("click", function () {
+        // Fila 31: backgroundColor cambia el color de fondo visible del bloque.
+        caja.style.backgroundColor = "#fde68a";
+      });
+    </script>
+  </body>
+</html>

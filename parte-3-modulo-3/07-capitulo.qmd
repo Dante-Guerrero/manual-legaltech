@@ -1,149 +1,913 @@
 ---
-title: "7. El internet y la nube"
+title: "7. HTML, CSS y JavaScript para una presencia web básica"
 ---
 
 ::: {.callout-note}
 ## Qué aprenderás en esta sesión
 
-Esta sesión introduce una capa de infraestructura que suele permanecer invisible cuando solo usamos plataformas y páginas ya hechas. El objetivo es distinguir internet, web, dominio, servidor, hosting y nube; entender la estructura mínima de una página; y advertir por qué publicar información digital también implica exposición, mantenimiento y criterio profesional.
+Esta sesión toma una idea central del módulo y la vuelve práctica: no basta con navegar la web; conviene entender cómo se construye una página sencilla. A través de una breve historia material de internet, de una explicación básica sobre servidores y nube, y de ejercicios progresivos de `HTML`, `CSS` y `JavaScript`, el objetivo es aprender a distinguir infraestructura, estructura, apariencia e interacción, y advertir por qué una presencia digital básica también forma parte de la alfabetización profesional del jurista.
 :::
 
-## La web también es infraestructura jurídica
+## Internet también tiene una historia material
 
-Muchos servicios jurídicos actuales se prestan, difunden o documentan a través de la web. Portales institucionales, formularios de atención, publicaciones regulatorias, sitios profesionales y sistemas de consulta conviven hoy con el trabajo legal cotidiano. Entender esa infraestructura no convierte a un jurista en ingeniero, pero sí le permite leer con más precisión el entorno donde circulan documentos, reputación y servicios.
+Con frecuencia hablamos de internet como si fuera una nube abstracta suspendida en ninguna parte. Pero la red tiene una materialidad mucho más concreta. Durante décadas, la conexión global ha dependido sobre todo de grandes cables submarinos y terrestres que rodean el mundo, enlazan continentes y transportan volúmenes inmensos de información entre ciudades, centros de datos y proveedores. Cuando alguien abre una página, envía un correo o consulta un expediente en línea, buena parte de ese recorrido suele pasar por infraestructura física tendida bajo el océano o enterrada en tierra firme.
 
-## Internet, web y nube no son lo mismo
+Esa historia no se ha detenido. En los últimos años se ha vuelto más visible otra capa complementaria: el internet satelital. No reemplaza por completo a los cables, pero sí amplía cobertura en zonas difíciles, remotas o menos atendidas por redes terrestres. Por eso conviene mirar el presente con algo de precisión: internet sigue descansando sobre cables de enorme importancia estratégica, pero al mismo tiempo incorpora más conectividad apoyada en satélites. La red, en otras palabras, no es un solo sistema homogéneo, sino una combinación de infraestructuras que transportan información de maneras distintas.
 
-En conversación cotidiana solemos mezclar estos términos como si fueran equivalentes, pero no lo son. Internet es la red general de comunicación; la web es uno de los servicios que funciona sobre esa red; el navegador es la herramienta de acceso; el servidor aloja el contenido; el dominio lo vuelve localizable; y el hosting o la nube hacen posible que ese contenido permanezca disponible desde infraestructura remota. Separar estas ideas importa porque publicar no es un acto abstracto: implica soporte técnico, acceso, exposición y dependencia de servicios concretos.
+## Compartir información, archivos y servicios
 
-## Publicar también es asumir exposición
+En su forma más básica, internet consiste en permitir que computadoras distintas compartan información a distancia. A veces esa información viaja como mensajes, a veces como video, a veces como bases de datos, y muchas veces como archivos. La web es una de las formas más visibles de ese intercambio: una computadora solicita un recurso y otra responde entregando contenido. En páginas sencillas, ese contenido suele empezar por un archivo `HTML`, al que luego pueden sumarse hojas de estilo `CSS`, scripts `JavaScript`, imágenes y otros recursos [@mdnhtml2026; @mdncss2026].
 
-Para una facultad de Derecho, este tema importa por dos razones. La primera es profesional: una parte creciente de la actividad jurídica se presenta, organiza o consulta desde entornos web. La segunda es formativa: entender cómo se publica algo ayuda a pensar mejor disponibilidad, reputación, control y seguridad de la información. Una página sencilla puede ser una pieza menor en términos técnicos y, al mismo tiempo, una pieza muy relevante en términos públicos.
+Ese detalle importa porque devuelve la web a algo muy concreto. Cuando visitas un sitio, no estás entrando en un espacio mágico. Estás pidiendo archivos y recibiendo archivos. El navegador toma ese material, lo interpreta y lo convierte en una página legible. Por eso aprender `HTML` no es solo aprender una sintaxis: es entender la forma más básica en que la web comparte contenido.
+
+## Servidores, cloud y presencia en línea
+
+Para que esos archivos puedan entregarse a otras personas, alguien debe alojarlos y servirlos. Allí aparece el rol del **servidor**: una máquina o servicio preparado para responder solicitudes y entregar contenido cuando un navegador lo pide. Si tu archivo `index.html` está solo en tu laptop, existe como archivo local. Si ese mismo archivo se aloja en un servidor accesible por internet, puede convertirse en una página pública.
+
+La **nube** o *cloud* no elimina esta lógica; la reorganiza. En lugar de depender siempre de una sola máquina identificable y gestionada por una organización concreta, muchos servicios cloud permiten alojar archivos, aplicaciones y datos en infraestructura remota más flexible, distribuida y escalable. Eso desplaza parte del control técnico, pero no elimina las responsabilidades sobre acceso, seguridad y tratamiento de la información [@pcm2021gobdigitalreglamento]. En términos pedagógicos, basta con retener una idea: cuando subes una página a GitHub Pages o a otro servicio similar, sigues publicando archivos desde servidores reales, aunque la infraestructura se te presente como servicio en la nube.
+
+## La web también se escribe
+
+Una parte importante del trabajo jurídico contemporáneo ya circula por interfaces que otras personas diseñaron: formularios, portales, sitios institucionales, páginas de estudios, servicios de consulta y repositorios públicos. Mientras esos entornos solo se usan como consumidor, parecen una superficie ya dada. Pero cuando se observa cómo están hechos, aparece otra intuición: una página web no es un espacio abstracto, sino una combinación de archivos, etiquetas, estilos y pequeñas reglas de comportamiento [@mdnhtml2026; @mdncss2026].
+
+Ese cambio de mirada importa en una facultad de Derecho por una razón sencilla. Entender lo mínimo de `HTML`, `CSS` y `JavaScript` no busca formar desarrolladores frontend, sino volver menos opaca la infraestructura más cotidiana de publicación digital. Una página personal, una ficha profesional, un formulario o una pequeña interfaz informativa pueden bastar para mostrar cómo se organiza contenido, cómo se presenta y cómo reacciona ante quien la usa.
+
+## Estructura, apariencia e interacción
+
+La separación entre `HTML`, `CSS` y `JavaScript` conviene entenderla desde el principio porque ordena todo el capítulo:
+
+- `HTML` define la estructura del contenido;
+- `CSS` controla la apariencia visual;
+- `JavaScript` agrega comportamiento e interacción.
+
+La utilidad pedagógica de esta división es inmediata. Obliga a no mezclar funciones. Si una página no se entiende, suele haber un problema de estructura. Si se entiende pero se ve mal, el problema suele ser visual. Si se ve bien pero no responde a la acción del usuario, el problema está en el comportamiento. Esa separación ayuda a pensar con más claridad también cuando después se usan herramientas más complejas.
+
+## Antes de entrar al código
+
+Antes de empezar con los ejercicios conviene ordenar bien la expectativa. Este capítulo no presupone experiencia previa en desarrollo web. La idea no es que memorices todas las etiquetas o propiedades, sino que entiendas una secuencia simple y repetible: escribir un archivo, guardarlo, abrirlo en el navegador, observar qué cambió y volver al editor para ajustar una parte pequeña. Aprender web al inicio consiste sobre todo en acortar esa distancia entre lo que escribes y lo que ves.
+
+También conviene trabajar con una lógica acumulativa. Primero verás `HTML`, porque sin estructura no hay página. Luego aparecerá `CSS`, porque una estructura sin estilo sigue siendo difícil de leer. Después entrará `JavaScript`, porque una página bien escrita y bien presentada todavía puede ser completamente estática. Si mantienes clara esa progresión, los ejercicios dejan de sentirse como piezas sueltas y empiezan a formar un recorrido comprensible.
 
 ::: {.callout-important}
 ## Antes de empezar
 
-Para esta sesión basta con una carpeta de trabajo simple, un archivo `index.html` y, si quieres separar estilos, un archivo `style.css`. La meta no es construir un sitio complejo, sino entender la relación entre estructura, apariencia y publicación. Si más adelante decides usar GitHub Pages, ese paso tendrá más sentido si primero comprendes qué estás publicando y cómo está organizado.
+Para trabajar esta sesión basta con una carpeta simple y un navegador. Lo más cómodo es usar una estructura como esta:
+
+- `index.html` para el archivo principal;
+- `style.css` cuando quieras separar estilos;
+- `script.js` cuando quieras mover el comportamiento fuera del HTML.
+
+Una forma especialmente cómoda de hacer esto es trabajar los archivos en **Visual Studio Code**, porque te permite abrir la carpeta completa, editar `HTML`, `CSS` y `JavaScript` en el mismo espacio y luego abrir o recargar el resultado en el navegador. Si todavía no tienes ese entorno listo, conviene revisar el tutorial [Visual Studio Code](/Users/dante/github/manual-legaltech/tutoriales/visual-studio-code.qmd).
+
+Cada ejercicio de este capítulo puede abrirse directamente en el navegador. La recomendación práctica es avanzar en orden, modificar una o dos líneas y recargar la página después de cada cambio. Si algo no cambia en pantalla, conviene revisar tres cosas antes de seguir: si el archivo quedó guardado, si abriste el archivo correcto y si el navegador recargó la versión más reciente.
+
+Una rutina útil para toda la sesión puede resumirse así:
+
+1. crear o abrir un archivo;
+2. copiar un ejemplo corto;
+3. guardar;
+4. abrir o recargar en el navegador;
+5. observar el resultado;
+6. volver al editor y cambiar un detalle pequeño.
+
+Esa disciplina evita un problema muy frecuente: copiar mucho código sin llegar a entender qué parte produjo qué efecto visible.
 :::
 
-## Estructura mínima de una página web
+## HTML: dar forma al contenido
 
-Una página simple suele combinar tres capas:
+### Ejercicio 1. La primera página: título y párrafo
 
-- **HTML**: estructura del contenido;
-- **CSS**: apariencia y estilo;
-- **JavaScript**: comportamiento o interacción cuando hace falta.
+El punto de partida más sobrio consiste en ver que una página ya existe cuando tiene una estructura mínima reconocible. Este primer archivo no hace mucho, pero enseña algo decisivo: todo lo visible en pantalla nace de etiquetas que indican qué tipo de contenido hay en cada lugar [@mdnhtml2026].
 
-HTML dice qué cosa es cada parte: un título, un párrafo, una lista o un enlace. CSS define cómo se ve: colores, márgenes, tipografía y disposición. JavaScript permite comportamiento dinámico, aunque en una sesión introductoria puede mantenerse al mínimo.
-
-## Un ejemplo muy básico con HTML
+Copia este código en un archivo como `00-hola-mundo.html`:
 
 ```html
 <!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8">
-    <title>Perfil Legal Tech</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola mundo</title>
   </head>
   <body>
-    <h1>Ana Perez</h1>
-    <p>Estudiante de Derecho interesada en tecnologia y regulacion.</p>
-    <a href="https://github.com/">Mi GitHub</a>
+    <h1>Hola, mundo</h1>
+    <p>Esta es mi primera pagina web.</p>
   </body>
 </html>
 ```
 
-Este archivo ya es, en sentido estricto, una página web muy simple.
+Aquí ya aparecen varias piezas fundacionales:
 
-## Qué hace CSS en este contexto
+- `<!DOCTYPE html>` declara el tipo de documento;
+- `<html>` envuelve toda la página;
+- `<head>` contiene metadatos;
+- `<body>` reúne lo visible;
+- `<h1>` marca el título principal;
+- `<p>` introduce un párrafo.
 
-Si agregamos CSS, la página puede verse más legible y ordenada:
+La utilidad del ejemplo no está en su espectacularidad, sino en mostrar que una página se compone de partes con jerarquía. Esa misma lógica reaparecerá en páginas más complejas.
 
-```css
-body {
-  font-family: Georgia, serif;
-  max-width: 720px;
-  margin: 2rem auto;
-  line-height: 1.6;
-}
+### Cómo se ve esto en el navegador
 
-h1 {
-  color: #1f3c88;
-}
+El punto decisivo es distinguir entre el archivo y su resultado visible. El navegador no muestra las etiquetas como texto normal. Las interpreta y las convierte en una página.
+
+<div class="browser-preview">
+<div class="browser-bar">
+  <div class="browser-dots" aria-hidden="true">● ● ●</div>
+  <div class="browser-url">00-hola-mundo.html</div>
+</div>
+<div class="browser-body">
+  <h1>Hola, mundo</h1>
+  <p>Esta es mi primera pagina web.</p>
+</div>
+</div>
+
+La diferencia parece simple, pero enseña algo fundamental. `HTML` describe la estructura del contenido y el navegador decide cómo presentarla. El `h1` aparece como encabezado principal; el `p` aparece como párrafo. Cuando abras el archivo en el navegador, no verás “código fuente”, sino la interpretación visual de ese código.
+
+### Ejercicio 2. Organizar información con títulos y secciones
+
+Cuando la página deja de ser un simple saludo, la pregunta cambia: ya no basta con mostrar algo, sino que conviene ordenarlo. Los títulos y subtítulos sirven justamente para eso.
+
+Copia este archivo:
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Texto y titulos</title>
+  </head>
+  <body>
+    <h1>Introduccion al derecho digital</h1>
+    <h2>Que estudia</h2>
+    <p>Estudia los efectos de la tecnologia en las normas, procesos y relaciones entre personas.</p>
+    <h2>Por que importa</h2>
+    <p>Ayuda a entender temas como privacidad, contratos electronicos y firma digital.</p>
+  </body>
+</html>
 ```
 
-No hace falta buscar complejidad visual de inmediato. Una página sobria, clara y profesional suele ser mucho más útil para el curso.
+La transición importante aquí es conceptual. `HTML` no sirve solo para “poner texto”, sino para indicar jerarquías. Un `h1` no cumple la misma función que un `h2`, y esa diferencia importa para legibilidad, accesibilidad y organización del contenido.
 
-## Páginas estáticas y dinámicas
+### Cómo se ve esto en el navegador
 
-También conviene distinguir dos ideas:
+Si abres este archivo, verás un título principal y, debajo, dos bloques de contenido más pequeños.
 
-- **página estática**: su contenido se sirve tal como fue escrito en archivos;
-- **página dinámica**: su contenido puede construirse o cambiar en tiempo real según base de datos, usuario u otras condiciones.
+<div class="browser-preview">
+<div class="browser-bar">
+  <div class="browser-dots" aria-hidden="true">● ● ●</div>
+  <div class="browser-url">01-texto-y-titulos.html</div>
+</div>
+<div class="browser-body">
+  <h1>Introduccion al derecho digital</h1>
+  <h2>Que estudia</h2>
+  <p>Estudia los efectos de la tecnologia en las normas, procesos y relaciones entre personas.</p>
+  <h2>Por que importa</h2>
+  <p>Ayuda a entender temas como privacidad, contratos electronicos y firma digital.</p>
+</div>
+</div>
 
-Para este curso, una página estática es ideal como punto de partida porque obliga a entender estructura, es fácil de publicar y permite concentrarse en fundamentos sin complejidad innecesaria.
+La página sigue siendo muy simple, pero ya no muestra una sola línea aislada. Empieza a parecerse a un texto organizado por secciones.
 
-## La nube, en términos simples
+### Ejercicio 3. Listas, enlaces y tablas como formas de trabajo
 
-Cuando hablamos de nube, muchas veces nos referimos a servicios que corren en infraestructura remota accesible por internet. No es magia: son servidores, almacenamiento y aplicaciones que no viven necesariamente en tu computadora personal. Desde una mirada pedagógica, basta con advertir tres cosas:
+Una parte significativa del trabajo jurídico se presenta como colección de elementos: tareas, documentos, citas, requisitos o registros. Por eso conviene ver tres estructuras muy comunes: listas, enlaces y tablas.
 
-- publicar un sitio suele implicar usar infraestructura ajena;
-- guardar archivos en plataformas también implica confiar en servicios remotos;
-- trabajar en la nube supone pensar en acceso, disponibilidad y seguridad.
+#### Lista y enlace
 
-::: {.callout-tip}
-## Criterio útil
+```html
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Listas y enlaces</title>
+  </head>
+  <body>
+    <h1>Tareas de hoy</h1>
+    <ul>
+      <li>Leer una resolucion</li>
+      <li>Ordenar expedientes</li>
+      <li>Enviar un correo</li>
+    </ul>
 
-Una buena página para este curso no necesita ser compleja. Necesita ser clara, legible, propia y públicamente accesible cuando decidas publicarla.
-:::
+    <p>
+      Puedes buscar mas informacion en
+      <a href="https://developer.mozilla.org/es/" target="_blank" rel="noreferrer">MDN en espanol</a>.
+    </p>
+  </body>
+</html>
+```
 
-## GitHub Pages como herramienta pedagógica
+#### Tabla simple
 
-GitHub Pages resulta especialmente útil porque conecta varias dimensiones a la vez:
+```html
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Tabla simple</title>
+  </head>
+  <body>
+    <h1>Registro de citas</h1>
+    <table border="1">
+      <tr>
+        <th>Persona</th>
+        <th>Fecha</th>
+        <th>Estado</th>
+      </tr>
+      <tr>
+        <td>Ana Perez</td>
+        <td>2026-05-30</td>
+        <td>Confirmada</td>
+      </tr>
+      <tr>
+        <td>Luis Rojas</td>
+        <td>2026-06-02</td>
+        <td>Pendiente</td>
+      </tr>
+    </table>
+  </body>
+</html>
+```
 
-- repositorio;
-- control de versiones;
-- publicación;
-- evidencia de trabajo.
+En estos ejemplos `HTML` deja ver algo más cercano al trabajo real: una lista sirve para agrupar elementos del mismo tipo, un enlace conecta la página con otro recurso y una tabla organiza información en filas y columnas. Aunque los ejemplos son pequeños, ya aparecen formas de representación muy útiles para portales, fichas y paneles sencillos.
 
-Eso lo vuelve adecuado para el curso, ya que el producto final no queda separado del proceso que lo produjo. El mismo entorno donde editas y versionas puede servir también para publicar.
+### Cómo se ve esto en el navegador
 
-## Qué se gana al publicar algo propio
+En el primer archivo verás un título, tres tareas con viñetas y un enlace. En el segundo, verás una tabla con tres columnas y dos registros.
 
-Publicar una página simple deja ver varias competencias al mismo tiempo:
+```{=html}
+<p class="browser-state-title">Vista de listas y enlaces</p>
+<div class="browser-preview">
+  <div class="browser-bar">
+    <div class="browser-dots" aria-hidden="true">● ● ●</div>
+    <div class="browser-url">02-listas-y-enlaces.html</div>
+  </div>
+  <div class="browser-body">
+    <h1>Tareas de hoy</h1>
+    <ul>
+      <li>Leer una resolucion</li>
+      <li>Ordenar expedientes</li>
+      <li>Enviar un correo</li>
+    </ul>
+    <p>Puedes buscar mas informacion en <a href="#">MDN en espanol</a>.</p>
+  </div>
+</div>
 
-- organización de contenido;
-- escritura con propósito;
-- estructura básica de HTML;
-- comprensión elemental de infraestructura web.
+<p class="browser-state-title">Vista de tabla</p>
+<div class="browser-preview">
+  <div class="browser-bar">
+    <div class="browser-dots" aria-hidden="true">● ● ●</div>
+    <div class="browser-url">03-tablas.html</div>
+  </div>
+  <div class="browser-body">
+    <h1>Registro de citas</h1>
+    <table style="border-collapse: collapse; width: 100%;">
+      <tr>
+        <th style="border: 1px solid #222; padding: 0.45rem; text-align: left;">Persona</th>
+        <th style="border: 1px solid #222; padding: 0.45rem; text-align: left;">Fecha</th>
+        <th style="border: 1px solid #222; padding: 0.45rem; text-align: left;">Estado</th>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #222; padding: 0.45rem;">Ana Perez</td>
+        <td style="border: 1px solid #222; padding: 0.45rem;">2026-05-30</td>
+        <td style="border: 1px solid #222; padding: 0.45rem;">Confirmada</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #222; padding: 0.45rem;">Luis Rojas</td>
+        <td style="border: 1px solid #222; padding: 0.45rem;">2026-06-02</td>
+        <td style="border: 1px solid #222; padding: 0.45rem;">Pendiente</td>
+      </tr>
+    </table>
+  </div>
+</div>
+```
 
-No se trata de formar diseñadores web en una sesión. Se trata de que el estudiante entienda cómo funciona una publicación digital básica y la use con sentido profesional.
+La utilidad de abrir ambos archivos es ver que `HTML` no solo sirve para redactar párrafos. También organiza elementos repetidos y datos comparables.
 
-## Práctica en editor
+### Ejercicio 4. Formularios: capturar información
 
-Crea una página mínima con:
+La web no solo publica; también recibe datos. Por eso los formularios son una pieza central de muchos servicios digitales.
 
-- un título;
-- una breve presentación;
-- una sección sobre intereses o experiencia;
-- un enlace;
-- un archivo HTML y, si es posible, un archivo CSS separado.
+```html
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulario simple</title>
+  </head>
+  <body>
+    <h1>Formulario de contacto</h1>
+    <form>
+      <label for="nombre">Nombre</label>
+      <input id="nombre" type="text" placeholder="Escribe tu nombre">
+
+      <br>
+      <br>
+
+      <label for="correo">Correo</label>
+      <input id="correo" type="email" placeholder="correo@ejemplo.com">
+
+      <br>
+      <br>
+
+      <label for="mensaje">Mensaje</label>
+      <br>
+      <textarea id="mensaje" rows="4" cols="30"></textarea>
+
+      <br>
+      <br>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
+```
+
+La enseñanza del ejemplo no está en enviar el formulario, sino en reconocer los bloques básicos de entrada: `label`, `input`, `textarea` y `button`. Muchos servicios jurídicos digitalizados dependen precisamente de esta lógica de captura estructurada.
+
+### Cómo se ve esto en el navegador
+
+Al abrirlo, verás un pequeño formulario: una etiqueta para `Nombre`, una caja de texto, otra para `Correo`, un área grande para `Mensaje` y un botón `Enviar`.
+
+<div class="browser-preview">
+<div class="browser-bar">
+  <div class="browser-dots" aria-hidden="true">● ● ●</div>
+  <div class="browser-url">04-formulario-simple.html</div>
+</div>
+<div class="browser-body">
+  <h1>Formulario de contacto</h1>
+  <form>
+    <label for="preview-nombre">Nombre</label><br>
+    <input id="preview-nombre" type="text" placeholder="Escribe tu nombre" style="margin: 0.35rem 0 1rem 0; padding: 0.45rem; width: min(320px, 100%);"><br>
+    <label for="preview-correo">Correo</label><br>
+    <input id="preview-correo" type="email" placeholder="correo@ejemplo.com" style="margin: 0.35rem 0 1rem 0; padding: 0.45rem; width: min(320px, 100%);"><br>
+    <label for="preview-mensaje">Mensaje</label><br>
+    <textarea id="preview-mensaje" rows="4" style="margin: 0.35rem 0 1rem 0; padding: 0.45rem; width: min(320px, 100%);"></textarea><br>
+    <button type="button" style="padding: 0.5rem 0.9rem;">Enviar</button>
+  </form>
+</div>
+</div>
+
+Todavía no ocurre ninguna validación ni se envían datos, pero ya aparece la estructura básica de muchas páginas de contacto o registro.
+
+## CSS: volver legible la página
+
+Una página correctamente estructurada puede seguir viéndose pobre o confusa. Allí entra `CSS`: no cambia qué cosa es cada bloque, pero sí cómo se presenta [@mdncss2026]. Eso importa porque en interfaces jurídicas y profesionales la legibilidad también forma parte de la calidad del servicio.
+
+### Ejercicio 5. Primeros estilos: fuente, fondo y color
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>CSS basico</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f7fb;
+        margin: 0;
+        padding: 24px;
+      }
+
+      h1 {
+        color: #1d3557;
+      }
+
+      p {
+        color: #444;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pagina con estilos</h1>
+    <p>CSS permite cambiar la apariencia de una pagina web.</p>
+  </body>
+</html>
+```
+
+Este archivo muestra una primera decisión importante: `CSS` puede escribirse dentro de `<style>` cuando el ejemplo es pequeño. El resultado visible suele ser inmediato. Cambia la tipografía, aparece un fondo y el texto gana legibilidad. La estructura sigue siendo la misma, pero la experiencia de lectura ya no es equivalente.
+
+### Cómo se ve esto en el navegador
+
+Sin `CSS`, el navegador mostraría algo muy simple: un título negro, un párrafo estándar y fondo blanco. Con las reglas anteriores, el resultado visible cambia de inmediato.
+
+<div class="browser-preview">
+<div class="browser-bar">
+  <div class="browser-dots" aria-hidden="true">● ● ●</div>
+  <div class="browser-url">00-estilos-en-linea.html</div>
+</div>
+<div class="browser-body" style="font-family: Arial, sans-serif; background-color: #f4f7fb; padding: 24px;">
+  <h1 style="color: #1d3557;">Pagina con estilos</h1>
+  <p style="color: #444; line-height: 1.6;">CSS permite cambiar la apariencia de una pagina web.</p>
+</div>
+</div>
+
+La utilidad de esta comparación está en que permite aislar el papel de `CSS`. El contenido sigue siendo exactamente el mismo. Lo que cambia es la forma en que se presenta: color, espacio y legibilidad.
+
+### Ejercicio 6. Colores, cajas y espaciado
+
+Cuando una página necesita destacar un mensaje o separar un bloque del resto, entra en juego el modelo de caja. Eso significa pensar en ancho, margen, relleno y bordes.
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cajas y espaciado</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #faf8f2;
+      }
+
+      .tarjeta {
+        width: 320px;
+        margin: 40px auto;
+        padding: 20px;
+        border: 2px solid #caa56a;
+        background: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tarjeta">
+      <h1>Expediente 204</h1>
+      <p>Esta tarjeta muestra como funciona el espacio interno y externo de un bloque.</p>
+    </div>
+  </body>
+</html>
+```
+
+La clase `.tarjeta` enseña algo fundamental: el contenido no solo se escribe, también se encierra en bloques visuales. Esa idea será útil después para fichas, avisos, paneles y formularios.
+
+Si lo abres en el navegador, no verás solo un texto suelto. Verás una especie de ficha o tarjeta centrada, con fondo blanco, borde visible y espacio interior. Ese efecto importa porque muestra que `CSS` no se limita a “pintar”; también organiza bloques y les da presencia visual.
+
+```{=html}
+<div class="browser-preview">
+  <div class="browser-bar">
+    <div class="browser-dots" aria-hidden="true">● ● ●</div>
+    <div class="browser-url">02-cajas-y-espaciado.html</div>
+  </div>
+  <div class="browser-body" style="font-family: Arial, sans-serif; background: #faf8f2; padding: 16px;">
+    <div style="width: 320px; margin: 20px auto; padding: 20px; border: 2px solid #caa56a; background: white;">
+      <h1>Expediente 204</h1>
+      <p>Esta tarjeta muestra como funciona el espacio interno y externo de un bloque.</p>
+    </div>
+  </div>
+</div>
+```
+
+### Ejercicio 7. Tipografía y flexbox
+
+El estilo también sirve para ordenar visualmente varios elementos a la vez. En el material base de esta sesión aparecen dos movimientos muy útiles: mejorar la tipografía y usar `flexbox` para alinear cajas en fila.
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Flexbox basico</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 24px;
+      }
+
+      .fila {
+        display: flex;
+        gap: 16px;
+      }
+
+      .bloque {
+        flex: 1;
+        padding: 20px;
+        background: #dbeafe;
+        border: 1px solid #60a5fa;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Panel de accesos</h1>
+    <div class="fila">
+      <div class="bloque">Agenda</div>
+      <div class="bloque">Clientes</div>
+      <div class="bloque">Pagos</div>
+    </div>
+  </body>
+</html>
+```
+
+Aquí el aprendizaje ya no es solo estético. `display: flex` permite distribuir elementos en una misma fila con una lógica mucho más controlable que el simple apilamiento vertical. Para interfaces simples, esta técnica basta para construir paneles bastante claros.
+
+En el navegador, la diferencia es muy visible: en lugar de aparecer una caja debajo de la otra, `Agenda`, `Clientes` y `Pagos` quedan alineadas horizontalmente como accesos de un pequeño panel. Eso deja ver que `CSS` también sirve para decidir cómo se acomodan los elementos entre sí.
+
+```{=html}
+<div class="browser-preview">
+  <div class="browser-bar">
+    <div class="browser-dots" aria-hidden="true">● ● ●</div>
+    <div class="browser-url">04-flexbox-basico.html</div>
+  </div>
+  <div class="browser-body" style="font-family: Arial, sans-serif; padding: 24px;">
+    <h1>Panel de accesos</h1>
+    <div style="display: flex; gap: 16px;">
+      <div style="flex: 1; padding: 20px; background: #dbeafe; border: 1px solid #60a5fa;">Agenda</div>
+      <div style="flex: 1; padding: 20px; background: #dbeafe; border: 1px solid #60a5fa;">Clientes</div>
+      <div style="flex: 1; padding: 20px; background: #dbeafe; border: 1px solid #60a5fa;">Pagos</div>
+    </div>
+  </div>
+</div>
+```
+
+## JavaScript: hacer que la página responda
+
+Hasta aquí la página muestra contenido y se ve mejor, pero sigue siendo estática. `JavaScript` introduce comportamiento: permite reaccionar, calcular, leer entradas y cambiar lo que aparece en pantalla.
+
+### Ejercicio 8. El primer script
+
+El primer paso conviene mantenerlo pequeño: comprobar que el navegador ya puede ejecutar instrucciones.
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Script basico</title>
+  </head>
+  <body>
+    <h1>Abre la consola del navegador</h1>
+
+    <script>
+      console.log("Hola desde JavaScript");
+    </script>
+  </body>
+</html>
+```
+
+El mensaje no aparece en la página, sino en la consola del navegador. Ese detalle es útil porque enseña a distinguir entre lo que el usuario ve y lo que el desarrollador usa para comprobar que el código está funcionando.
+
+En pantalla, por tanto, solo verás el texto `Abre la consola del navegador`. La acción de `JavaScript` ocurre fuera de la página visible y se comprueba en la consola. Ese primer paso es deliberado: antes de modificar la interfaz, conviene comprobar que el lenguaje ya está corriendo.
+
+<div class="browser-preview">
+<div class="browser-bar">
+  <div class="browser-dots" aria-hidden="true">● ● ●</div>
+  <div class="browser-url">00-script-basico.html</div>
+</div>
+<div class="browser-body">
+  <h1>Abre la consola del navegador</h1>
+</div>
+</div>
+
+### Ejercicio 9. Variables y condicionales
+
+Una vez que el script corre, puede guardar información y tomar decisiones.
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Condicionales</title>
+  </head>
+  <body>
+    <h1>Estado de pago</h1>
+    <p id="resultado"></p>
+
+    <script>
+      const deuda = 0;
+      let mensaje = "";
+
+      if (deuda > 0) {
+        mensaje = "Pago pendiente";
+      } else {
+        mensaje = "Sin deuda registrada";
+      }
+
+      document.getElementById("resultado").textContent = mensaje;
+    </script>
+  </body>
+</html>
+```
+
+Aquí aparece una transición importante: `JavaScript` no solo calcula, sino que también modifica el contenido visible a partir de una condición. Eso acerca mucho más el lenguaje a problemas reales de estado, validación y respuesta.
+
+Si abres este archivo en el navegador, verás un título que dice `Estado de pago` y, debajo, una línea de texto que el propio `JavaScript` rellenó. Como `deuda = 0`, el resultado visible será:
+
+<div class="browser-preview">
+<div class="browser-bar">
+  <div class="browser-dots" aria-hidden="true">● ● ●</div>
+  <div class="browser-url">02-condicionales.html</div>
+</div>
+<div class="browser-body">
+  <h1>Estado de pago</h1>
+  <p>Sin deuda registrada</p>
+</div>
+</div>
+
+Si cambias el valor de `deuda` a `10` y recargas, la línea cambiará a `Pago pendiente`. Esa pequeña prueba deja ver exactamente qué hace `JavaScript`: no cambia la estructura básica de la página, pero sí su contenido visible según una regla.
+
+### Ejercicio 10. Bucles, funciones y eventos
+
+Tres ideas del material de referencia merecen quedar juntas porque forman una secuencia muy natural:
+
+- un **bucle** repite una acción sobre varios elementos;
+- una **función** encapsula una operación reutilizable;
+- un **evento** espera la acción de la persona usuaria.
+
+#### Bucle para llenar una lista
+
+```html
+<ul id="lista"></ul>
+
+<script>
+  const tareas = ["Revisar contrato", "Llamar al cliente", "Enviar informe"];
+  const lista = document.getElementById("lista");
+
+  for (let i = 0; i < tareas.length; i += 1) {
+    const item = document.createElement("li");
+    item.textContent = tareas[i];
+    lista.appendChild(item);
+  }
+</script>
+```
+
+##### Cómo se ve esto en el navegador
+
+El archivo muestra una lista vacía en el código, pero `JavaScript` la llena al cargarse la página.
+
+<div class="browser-preview">
+<div class="browser-bar">
+  <div class="browser-dots" aria-hidden="true">● ● ●</div>
+  <div class="browser-url">03-bucles.html</div>
+</div>
+<div class="browser-body">
+  <ul>
+    <li>Revisar contrato</li>
+    <li>Llamar al cliente</li>
+    <li>Enviar informe</li>
+  </ul>
+</div>
+</div>
+
+#### Función para calcular una multa
+
+```html
+<p id="salida"></p>
+
+<script>
+  function calcularMulta(multaPorDia, dias) {
+    return multaPorDia * dias;
+  }
+
+  const total = calcularMulta(25, 4);
+  document.getElementById("salida").textContent = "Monto total: " + total;
+</script>
+```
+
+##### Cómo se ve esto en el navegador
+
+Aquí el cálculo no se ve como operación interna, sino como resultado visible en la página.
+
+<div class="browser-preview">
+<div class="browser-bar">
+  <div class="browser-dots" aria-hidden="true">● ● ●</div>
+  <div class="browser-url">04-funciones.html</div>
+</div>
+<div class="browser-body">
+  <p>Monto total: 100</p>
+</div>
+</div>
+
+#### Evento de clic
+
+```html
+<button id="boton">Haz clic aqui</button>
+<p id="mensaje"></p>
+
+<script>
+  const boton = document.getElementById("boton");
+  const mensaje = document.getElementById("mensaje");
+
+  boton.addEventListener("click", function () {
+    mensaje.textContent = "El boton fue presionado";
+  });
+</script>
+```
+
+##### Cómo se ve esto en el navegador
+
+Cuando abras el archivo, primero verás solo el botón y un espacio vacío debajo. Después del clic aparecerá el mensaje.
+
+```{=html}
+<p class="browser-state-title">Antes del clic</p>
+<div class="browser-preview">
+  <div class="browser-bar">
+    <div class="browser-dots" aria-hidden="true">● ● ●</div>
+    <div class="browser-url">05-eventos.html</div>
+  </div>
+  <div class="browser-body">
+    <button type="button" style="padding: 0.5rem 0.9rem;">Haz clic aqui</button>
+    <p style="min-height: 1.5rem; margin-top: 1rem;"></p>
+  </div>
+</div>
+
+<p class="browser-state-title">Después del clic</p>
+<div class="browser-preview">
+  <div class="browser-bar">
+    <div class="browser-dots" aria-hidden="true">● ● ●</div>
+    <div class="browser-url">05-eventos.html</div>
+  </div>
+  <div class="browser-body">
+    <button type="button" style="padding: 0.5rem 0.9rem;">Haz clic aqui</button>
+    <p style="margin-top: 1rem;">El boton fue presionado</p>
+  </div>
+</div>
+```
+
+Estos tres movimientos resumen buena parte de la lógica inicial de `JavaScript`: iterar, reutilizar y reaccionar. Con eso ya puede construirse una interfaz pequeña que no sea solo decorativa.
+
+En el navegador, sus efectos serían visibles de esta manera:
+
+- el bucle llena una lista vacía con tres tareas;
+- la función muestra un resultado como `Monto total: 100`;
+- el evento de clic deja inicialmente un botón solo y, después de pulsarlo, hace aparecer el mensaje `El boton fue presionado`.
+
+Lo importante aquí es no perder de vista el vínculo entre instrucción y resultado. `JavaScript` no es solo texto dentro de `<script>`: es la parte que introduce cambios, respuestas y cálculos en la pantalla.
+
+## DOM y formularios: leer lo que la persona escribe
+
+El siguiente paso consiste en conectar `JavaScript` con campos reales de la página. Allí aparece el DOM, es decir, la forma en que el navegador representa internamente el documento para que pueda ser leído y modificado.
+
+### Ejercicio 11. Leer un input y mostrar un saludo
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Leer input</title>
+  </head>
+  <body>
+    <h1>Saludo personalizado</h1>
+    <input id="nombre" type="text" placeholder="Escribe tu nombre">
+    <button id="mostrar">Mostrar saludo</button>
+    <p id="salida"></p>
+
+    <script>
+      const boton = document.getElementById("mostrar");
+      const salida = document.getElementById("salida");
+
+      boton.addEventListener("click", function () {
+        const nombre = document.getElementById("nombre").value;
+        salida.textContent = "Hola, " + nombre;
+      });
+    </script>
+  </body>
+</html>
+```
+
+La novedad aquí es el uso de `.value`, que permite leer lo que una persona escribió en un campo. La página deja de ser una pieza cerrada y empieza a reaccionar a una entrada externa.
+
+En el navegador verás una caja para escribir tu nombre, un botón y un espacio vacío. Si escribes `Lucía` y haces clic, el espacio vacío pasa a mostrar `Hola, Lucía`. Esa escena, tan simple, contiene una idea central de toda interfaz web: leer una entrada y devolver una salida visible.
+
+```{=html}
+<p class="browser-state-title">Antes de escribir</p>
+<div class="browser-preview">
+  <div class="browser-bar">
+    <div class="browser-dots" aria-hidden="true">● ● ●</div>
+    <div class="browser-url">01-leer-input.html</div>
+  </div>
+  <div class="browser-body">
+    <h1>Saludo personalizado</h1>
+    <input type="text" placeholder="Escribe tu nombre" style="padding: 0.45rem; width: min(280px, 100%);">
+    <button type="button" style="margin-left: 0.5rem; padding: 0.45rem 0.85rem;">Mostrar saludo</button>
+    <p style="margin-top: 1rem; min-height: 1.5rem;"></p>
+  </div>
+</div>
+
+<p class="browser-state-title">Después del clic</p>
+<div class="browser-preview">
+  <div class="browser-bar">
+    <div class="browser-dots" aria-hidden="true">● ● ●</div>
+    <div class="browser-url">01-leer-input.html</div>
+  </div>
+  <div class="browser-body">
+    <h1>Saludo personalizado</h1>
+    <input type="text" value="Lucía" style="padding: 0.45rem; width: min(280px, 100%);">
+    <button type="button" style="margin-left: 0.5rem; padding: 0.45rem 0.85rem;">Mostrar saludo</button>
+    <p style="margin-top: 1rem;">Hola, Lucía</p>
+  </div>
+</div>
+```
+
+### Ejercicio 12. Validar un formulario y cambiar estilos
+
+Dos ejercicios del repositorio base ayudan a cerrar esta etapa: revisar si un campo está vacío y modificar visualmente un bloque desde un evento.
+
+#### Validación simple
+
+```html
+<input id="correo" type="email" placeholder="correo@ejemplo.com">
+<button id="enviar">Validar</button>
+<p id="mensaje"></p>
+
+<script>
+  const boton = document.getElementById("enviar");
+  const mensaje = document.getElementById("mensaje");
+
+  boton.addEventListener("click", function () {
+    const correo = document.getElementById("correo").value;
+
+    if (correo === "") {
+      mensaje.textContent = "Debes escribir un correo";
+      return;
+    }
+
+    mensaje.textContent = "Formulario listo para enviar";
+  });
+</script>
+```
+
+##### Cómo se ve esto en el navegador
+
+Al inicio verás una caja para correo, un botón y un espacio vacío. Si presionas `Validar` sin escribir nada, aparecerá el mensaje de error. Si escribes un correo y vuelves a hacer clic, el mensaje cambia.
+
+#### Cambio de estilo
+
+```html
+<div id="caja" class="caja">Este cuadro puede cambiar de color.</div>
+<button id="cambiar">Cambiar color</button>
+
+<script>
+  const boton = document.getElementById("cambiar");
+  const caja = document.getElementById("caja");
+
+  boton.addEventListener("click", function () {
+    caja.style.backgroundColor = "#fde68a";
+  });
+</script>
+```
+
+##### Cómo se ve esto en el navegador
+
+Primero aparecerá un cuadro con color de fondo inicial y un botón debajo. Después del clic, el mismo cuadro cambia de color.
+
+Estas operaciones ya se parecen bastante a muchas microinteracciones reales: validar antes de seguir, mostrar mensajes contextuales y hacer visibles los cambios de estado.
+
+En términos visibles, los dos ejemplos hacen esto:
+
+```{=html}
+<p class="browser-state-title">Validación del formulario</p>
+<div class="browser-preview">
+  <div class="browser-bar">
+    <div class="browser-dots" aria-hidden="true">● ● ●</div>
+    <div class="browser-url">02-validar-formulario.html</div>
+  </div>
+  <div class="browser-body">
+    <input type="email" placeholder="correo@ejemplo.com" style="padding: 0.45rem; width: min(280px, 100%);">
+    <button type="button" style="margin-left: 0.5rem; padding: 0.45rem 0.85rem;">Validar</button>
+    <p style="margin-top: 1rem;">Debes escribir un correo</p>
+  </div>
+</div>
+
+<p class="browser-state-title">Cambio de estilo</p>
+<div class="browser-preview">
+  <div class="browser-bar">
+    <div class="browser-dots" aria-hidden="true">● ● ●</div>
+    <div class="browser-url">03-cambiar-estilos.html</div>
+  </div>
+  <div class="browser-body">
+    <div style="padding: 20px; background: #fde68a;">Este cuadro puede cambiar de color.</div>
+    <button type="button" style="margin-top: 1rem; padding: 0.45rem 0.85rem;">Cambiar color</button>
+  </div>
+</div>
+```
+
+Esa relación entre acción y respuesta es la razón por la cual `JavaScript` importa tanto en formularios, paneles y pequeñas herramientas de trabajo.
+
+## Del archivo local a la publicación
+
+Hasta aquí el trabajo ocurre en tu máquina: editas archivos y el navegador los abre localmente. El paso siguiente consiste en publicarlos para que otras personas puedan acceder a ellos desde internet. En este curso, la vía recomendada para hacerlo es [GitHub Pages](/Users/dante/github/manual-legaltech/tutoriales/github-pages.qmd), porque permite publicar sitios estáticos directamente desde un repositorio y mantener unidos archivo, versión y resultado visible.
+
+Ese tutorial conviene leerlo cuando ya entiendes qué hace `index.html`, cómo se enlaza un `style.css` y qué recursos necesita realmente la página. Publicar demasiado pronto, sin comprender esa estructura mínima, suele volver la experiencia más confusa de lo necesario.
 
 ## Conclusiones del capítulo
 
-Entender la web desde dentro cambia la relación con las plataformas que usamos todos los días. Lo que antes parecía un espacio abstracto empieza a verse como una combinación concreta de estructura, infraestructura y decisiones de publicación. Para una formación jurídica, esa mirada importa porque aclara dónde circula la información y bajo qué condiciones se vuelve visible.
+Aprender una base de `HTML`, `CSS` y `JavaScript` cambia la relación con la web porque vuelve visible su materialidad mínima. Una página deja de parecer un contenedor mágico y empieza a verse como una estructura de contenido, una capa de estilo y una serie de comportamientos simples pero controlables. Para estudiantes de Derecho, esa alfabetización no es ornamental. Ayuda a entender mejor el entorno donde hoy se presentan servicios, perfiles, formularios e información pública.
 
 ::: {.callout-tip}
 ## Ideas clave
 
-- internet, web y nube no son sinónimos;
-- una página web combina estructura, estilo y, cuando hace falta, comportamiento;
-- publicar información digital también implica exposición e infraestructura;
-- una página estática es un buen punto de entrada para aprender a publicar con criterio.
+- `HTML` organiza el contenido y le da jerarquía.
+- `CSS` mejora legibilidad, disposición y apariencia visual.
+- `JavaScript` permite calcular, reaccionar y modificar la página.
+- Los formularios muestran cómo la web captura y procesa entradas del usuario.
 :::
 
 ::: {.callout-caution}
 ## Para pensar y reflexionar
 
-Buena parte del trabajo jurídico contemporáneo ocurre en entornos que alguien diseñó, alojó y puso en línea. Entender esa materialidad técnica ayuda no solo a publicar mejor, sino también a evaluar con más criterio qué significa confiar información, identidad profesional o servicios a una plataforma.
+Buena parte del trabajo jurídico digital ocurre en interfaces que parecen naturales solo porque alguien ya tomó antes muchas decisiones de estructura, lenguaje y comportamiento. Aprender a construir versiones pequeñas de esas interfaces ayuda no solo a publicarlas mejor, sino también a leer con más criterio cómo funcionan los entornos que usamos todos los días.
 :::

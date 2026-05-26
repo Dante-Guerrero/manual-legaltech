@@ -1,0 +1,43 @@
+<!--
+Nombre: 02-cajas-y-espaciado.html
+Tema: Modelo de caja
+Objetivo: Entender margin, padding, border y width.
+Como usarlo: abre 01-css/02-cajas-y-espaciado.html en tu navegador
+
+Guia de lectura:
+- Filas 12 a 15: se agrega body; cambia fondo y fuente.
+- Filas 17 a 24: se agrega la clase .tarjeta; controla ancho, margen, relleno y borde.
+- Fila 28: se agrega <div class="tarjeta">; muestra claramente el modelo de caja.
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cajas y espaciado</title>
+    <style>
+      /* Fila 12: body aplica estilo base a toda la pagina. */
+      body {
+        font-family: Arial, sans-serif;
+        background: #faf8f2;
+      }
+
+      /* Fila 17: .tarjeta crea una caja visible para explicar width, margin y padding. */
+      .tarjeta {
+        width: 320px;
+        margin: 40px auto;
+        padding: 20px;
+        border: 2px solid #caa56a;
+        background: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Fila 28: <div class="tarjeta"> crea un bloque con borde y espacio interno. -->
+    <div class="tarjeta">
+      <!-- Fila 29: <h1> muestra el titulo dentro de la tarjeta. -->
+      <h1>Expediente 204</h1>
+      <!-- Fila 30: <p> muestra el contenido dentro del area con padding. -->
+      <p>Esta tarjeta muestra como funciona el espacio interno y externo de un bloque.</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!--
+Nombre: index.html
+Tema: Mini proyecto de calculadora
+Objetivo: Leer dos numeros, multiplicarlos y mostrar el resultado.
+Como usarlo: abre 04-mini-proyectos/02-calculadora-simple/index.html en tu navegador
+
+Guia de lectura:
+- Fila 9: se agrega <main class="contenedor">; agrupa toda la calculadora.
+- Filas 11 y 12: se agregan <label> e <input> para la multa por dia.
+- Filas 14 y 15: se agregan <label> e <input> para los dias.
+- Fila 17: se agrega <button>; activa el calculo.
+- Fila 18: se agrega <p id="resultado">; muestra el total.
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora simple</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Fila 9: <main class="contenedor"> crea el bloque principal del proyecto. -->
+    <main class="contenedor">
+      <h1>Calculadora de multa</h1>
+      <!-- Fila 11: <label> describe el primer campo numerico. -->
+      <label for="multa">Multa por dia</label>
+      <!-- Fila 12: <input> permite escribir o cambiar el valor de la multa. -->
+      <input id="multa" type="number" value="25">
+
+      <!-- Fila 14: este <label> describe el segundo campo numerico. -->
+      <label for="dias">Dias de retraso</label>
+      <!-- Fila 15: este <input> permite ingresar los dias de retraso. -->
+      <input id="dias" type="number" value="4">
+
+      <!-- Fila 17: <button> ejecuta el calculo usando JavaScript. -->
+      <button id="calcular">Calcular</button>
+      <!-- Fila 18: <p id="resultado"> muestra el monto total calculado. -->
+      <p id="resultado">Monto total: 100</p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

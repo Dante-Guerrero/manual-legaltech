@@ -1,0 +1,42 @@
+<!--
+Nombre: 03-bucles.html
+Tema: Bucles
+Objetivo: Repetir acciones con for.
+Como usarlo: abre 02-javascript/03-bucles.html en tu navegador
+
+Guia de lectura:
+- Fila 13: se agrega <h1>; presenta el resultado esperado.
+- Fila 14: se agrega <ul id="lista">; sera llenada con JavaScript.
+- Fila 17: se agrega un arreglo; guarda varias tareas.
+- Filas 20 a 24: se usa for; su efecto es crear un <li> por cada tarea.
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bucles</title>
+  </head>
+  <body>
+    <!-- Fila 13: <h1> muestra el titulo del ejemplo. -->
+    <h1>Lista generada con JavaScript</h1>
+    <!-- Fila 14: <ul> empieza vacia y recibira elementos <li> desde JS. -->
+    <ul id="lista"></ul>
+
+    <script>
+      // Fila 17: tareas es un arreglo con tres textos.
+      const tareas = ["Revisar contrato", "Llamar al cliente", "Enviar informe"];
+      // Fila 18: lista guarda la referencia a la etiqueta <ul>.
+      const lista = document.getElementById("lista");
+
+      // Fila 20: el for repite el mismo proceso para cada tarea del arreglo.
+      for (let i = 0; i < tareas.length; i += 1) {
+        // Fila 21: createElement("li") crea una nueva etiqueta <li> en memoria.
+        const item = document.createElement("li");
+        // Fila 22: textContent pone dentro del <li> el texto de la tarea actual.
+        item.textContent = tareas[i];
+        // Fila 23: appendChild agrega el <li> dentro de la <ul>, haciendolo visible.
+        lista.appendChild(item);
+      }
+    </script>
+  </body>
+</html>

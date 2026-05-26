@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>7. El internet y la nube – Legal Tech, Manual del Curso</title>
+<title>7. HTML, CSS y JavaScript para una presencia web básica – Legal Tech, Manual del Curso</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -128,7 +128,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-3-modulo-3/00-presentacion.html">III. Web, nube y seguridad para el sector legal</a></li><li class="breadcrumb-item"><a href="../parte-3-modulo-3/07-capitulo.html"><span class="chapter-title">7. El internet y la nube</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-3-modulo-3/00-presentacion.html">III. Web, nube y seguridad para el sector legal</a></li><li class="breadcrumb-item"><a href="../parte-3-modulo-3/07-capitulo.html"><span class="chapter-title">7. HTML, CSS y JavaScript para una presencia web básica</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -231,7 +231,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-3-modulo-3/07-capitulo.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">7. El internet y la nube</span></a>
+  <a href="../parte-3-modulo-3/07-capitulo.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">7. HTML, CSS y JavaScript para una presencia web básica</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -318,17 +318,42 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#la-web-también-es-infraestructura-jurídica" id="toc-la-web-también-es-infraestructura-jurídica" class="nav-link active" data-scroll-target="#la-web-también-es-infraestructura-jurídica">La web también es infraestructura jurídica</a></li>
-  <li><a href="#internet-web-y-nube-no-son-lo-mismo" id="toc-internet-web-y-nube-no-son-lo-mismo" class="nav-link" data-scroll-target="#internet-web-y-nube-no-son-lo-mismo">Internet, web y nube no son lo mismo</a></li>
-  <li><a href="#publicar-también-es-asumir-exposición" id="toc-publicar-también-es-asumir-exposición" class="nav-link" data-scroll-target="#publicar-también-es-asumir-exposición">Publicar también es asumir exposición</a></li>
-  <li><a href="#estructura-mínima-de-una-página-web" id="toc-estructura-mínima-de-una-página-web" class="nav-link" data-scroll-target="#estructura-mínima-de-una-página-web">Estructura mínima de una página web</a></li>
-  <li><a href="#un-ejemplo-muy-básico-con-html" id="toc-un-ejemplo-muy-básico-con-html" class="nav-link" data-scroll-target="#un-ejemplo-muy-básico-con-html">Un ejemplo muy básico con HTML</a></li>
-  <li><a href="#qué-hace-css-en-este-contexto" id="toc-qué-hace-css-en-este-contexto" class="nav-link" data-scroll-target="#qué-hace-css-en-este-contexto">Qué hace CSS en este contexto</a></li>
-  <li><a href="#páginas-estáticas-y-dinámicas" id="toc-páginas-estáticas-y-dinámicas" class="nav-link" data-scroll-target="#páginas-estáticas-y-dinámicas">Páginas estáticas y dinámicas</a></li>
-  <li><a href="#la-nube-en-términos-simples" id="toc-la-nube-en-términos-simples" class="nav-link" data-scroll-target="#la-nube-en-términos-simples">La nube, en términos simples</a></li>
-  <li><a href="#github-pages-como-herramienta-pedagógica" id="toc-github-pages-como-herramienta-pedagógica" class="nav-link" data-scroll-target="#github-pages-como-herramienta-pedagógica">GitHub Pages como herramienta pedagógica</a></li>
-  <li><a href="#qué-se-gana-al-publicar-algo-propio" id="toc-qué-se-gana-al-publicar-algo-propio" class="nav-link" data-scroll-target="#qué-se-gana-al-publicar-algo-propio">Qué se gana al publicar algo propio</a></li>
-  <li><a href="#práctica-en-editor" id="toc-práctica-en-editor" class="nav-link" data-scroll-target="#práctica-en-editor">Práctica en editor</a></li>
+  <li><a href="#internet-también-tiene-una-historia-material" id="toc-internet-también-tiene-una-historia-material" class="nav-link active" data-scroll-target="#internet-también-tiene-una-historia-material">Internet también tiene una historia material</a></li>
+  <li><a href="#compartir-información-archivos-y-servicios" id="toc-compartir-información-archivos-y-servicios" class="nav-link" data-scroll-target="#compartir-información-archivos-y-servicios">Compartir información, archivos y servicios</a></li>
+  <li><a href="#servidores-cloud-y-presencia-en-línea" id="toc-servidores-cloud-y-presencia-en-línea" class="nav-link" data-scroll-target="#servidores-cloud-y-presencia-en-línea">Servidores, cloud y presencia en línea</a></li>
+  <li><a href="#la-web-también-se-escribe" id="toc-la-web-también-se-escribe" class="nav-link" data-scroll-target="#la-web-también-se-escribe">La web también se escribe</a></li>
+  <li><a href="#estructura-apariencia-e-interacción" id="toc-estructura-apariencia-e-interacción" class="nav-link" data-scroll-target="#estructura-apariencia-e-interacción">Estructura, apariencia e interacción</a></li>
+  <li><a href="#antes-de-entrar-al-código" id="toc-antes-de-entrar-al-código" class="nav-link" data-scroll-target="#antes-de-entrar-al-código">Antes de entrar al código</a></li>
+  <li><a href="#html-dar-forma-al-contenido" id="toc-html-dar-forma-al-contenido" class="nav-link" data-scroll-target="#html-dar-forma-al-contenido">HTML: dar forma al contenido</a>
+  <ul class="collapse">
+  <li><a href="#ejercicio-1.-la-primera-página-título-y-párrafo" id="toc-ejercicio-1.-la-primera-página-título-y-párrafo" class="nav-link" data-scroll-target="#ejercicio-1.-la-primera-página-título-y-párrafo">Ejercicio 1. La primera página: título y párrafo</a></li>
+  <li><a href="#cómo-se-ve-esto-en-el-navegador" id="toc-cómo-se-ve-esto-en-el-navegador" class="nav-link" data-scroll-target="#cómo-se-ve-esto-en-el-navegador">Cómo se ve esto en el navegador</a></li>
+  <li><a href="#ejercicio-2.-organizar-información-con-títulos-y-secciones" id="toc-ejercicio-2.-organizar-información-con-títulos-y-secciones" class="nav-link" data-scroll-target="#ejercicio-2.-organizar-información-con-títulos-y-secciones">Ejercicio 2. Organizar información con títulos y secciones</a></li>
+  <li><a href="#cómo-se-ve-esto-en-el-navegador-1" id="toc-cómo-se-ve-esto-en-el-navegador-1" class="nav-link" data-scroll-target="#cómo-se-ve-esto-en-el-navegador-1">Cómo se ve esto en el navegador</a></li>
+  <li><a href="#ejercicio-3.-listas-enlaces-y-tablas-como-formas-de-trabajo" id="toc-ejercicio-3.-listas-enlaces-y-tablas-como-formas-de-trabajo" class="nav-link" data-scroll-target="#ejercicio-3.-listas-enlaces-y-tablas-como-formas-de-trabajo">Ejercicio 3. Listas, enlaces y tablas como formas de trabajo</a></li>
+  <li><a href="#cómo-se-ve-esto-en-el-navegador-2" id="toc-cómo-se-ve-esto-en-el-navegador-2" class="nav-link" data-scroll-target="#cómo-se-ve-esto-en-el-navegador-2">Cómo se ve esto en el navegador</a></li>
+  <li><a href="#ejercicio-4.-formularios-capturar-información" id="toc-ejercicio-4.-formularios-capturar-información" class="nav-link" data-scroll-target="#ejercicio-4.-formularios-capturar-información">Ejercicio 4. Formularios: capturar información</a></li>
+  <li><a href="#cómo-se-ve-esto-en-el-navegador-3" id="toc-cómo-se-ve-esto-en-el-navegador-3" class="nav-link" data-scroll-target="#cómo-se-ve-esto-en-el-navegador-3">Cómo se ve esto en el navegador</a></li>
+  </ul></li>
+  <li><a href="#css-volver-legible-la-página" id="toc-css-volver-legible-la-página" class="nav-link" data-scroll-target="#css-volver-legible-la-página">CSS: volver legible la página</a>
+  <ul class="collapse">
+  <li><a href="#ejercicio-5.-primeros-estilos-fuente-fondo-y-color" id="toc-ejercicio-5.-primeros-estilos-fuente-fondo-y-color" class="nav-link" data-scroll-target="#ejercicio-5.-primeros-estilos-fuente-fondo-y-color">Ejercicio 5. Primeros estilos: fuente, fondo y color</a></li>
+  <li><a href="#cómo-se-ve-esto-en-el-navegador-4" id="toc-cómo-se-ve-esto-en-el-navegador-4" class="nav-link" data-scroll-target="#cómo-se-ve-esto-en-el-navegador-4">Cómo se ve esto en el navegador</a></li>
+  <li><a href="#ejercicio-6.-colores-cajas-y-espaciado" id="toc-ejercicio-6.-colores-cajas-y-espaciado" class="nav-link" data-scroll-target="#ejercicio-6.-colores-cajas-y-espaciado">Ejercicio 6. Colores, cajas y espaciado</a></li>
+  <li><a href="#ejercicio-7.-tipografía-y-flexbox" id="toc-ejercicio-7.-tipografía-y-flexbox" class="nav-link" data-scroll-target="#ejercicio-7.-tipografía-y-flexbox">Ejercicio 7. Tipografía y flexbox</a></li>
+  </ul></li>
+  <li><a href="#javascript-hacer-que-la-página-responda" id="toc-javascript-hacer-que-la-página-responda" class="nav-link" data-scroll-target="#javascript-hacer-que-la-página-responda">JavaScript: hacer que la página responda</a>
+  <ul class="collapse">
+  <li><a href="#ejercicio-8.-el-primer-script" id="toc-ejercicio-8.-el-primer-script" class="nav-link" data-scroll-target="#ejercicio-8.-el-primer-script">Ejercicio 8. El primer script</a></li>
+  <li><a href="#ejercicio-9.-variables-y-condicionales" id="toc-ejercicio-9.-variables-y-condicionales" class="nav-link" data-scroll-target="#ejercicio-9.-variables-y-condicionales">Ejercicio 9. Variables y condicionales</a></li>
+  <li><a href="#ejercicio-10.-bucles-funciones-y-eventos" id="toc-ejercicio-10.-bucles-funciones-y-eventos" class="nav-link" data-scroll-target="#ejercicio-10.-bucles-funciones-y-eventos">Ejercicio 10. Bucles, funciones y eventos</a></li>
+  </ul></li>
+  <li><a href="#dom-y-formularios-leer-lo-que-la-persona-escribe" id="toc-dom-y-formularios-leer-lo-que-la-persona-escribe" class="nav-link" data-scroll-target="#dom-y-formularios-leer-lo-que-la-persona-escribe">DOM y formularios: leer lo que la persona escribe</a>
+  <ul class="collapse">
+  <li><a href="#ejercicio-11.-leer-un-input-y-mostrar-un-saludo" id="toc-ejercicio-11.-leer-un-input-y-mostrar-un-saludo" class="nav-link" data-scroll-target="#ejercicio-11.-leer-un-input-y-mostrar-un-saludo">Ejercicio 11. Leer un input y mostrar un saludo</a></li>
+  <li><a href="#ejercicio-12.-validar-un-formulario-y-cambiar-estilos" id="toc-ejercicio-12.-validar-un-formulario-y-cambiar-estilos" class="nav-link" data-scroll-target="#ejercicio-12.-validar-un-formulario-y-cambiar-estilos">Ejercicio 12. Validar un formulario y cambiar estilos</a></li>
+  </ul></li>
+  <li><a href="#del-archivo-local-a-la-publicación" id="toc-del-archivo-local-a-la-publicación" class="nav-link" data-scroll-target="#del-archivo-local-a-la-publicación">Del archivo local a la publicación</a></li>
   <li><a href="#conclusiones-del-capítulo" id="toc-conclusiones-del-capítulo" class="nav-link" data-scroll-target="#conclusiones-del-capítulo">Conclusiones del capítulo</a></li>
   </ul>
 </nav>
@@ -339,9 +364,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4DXS39K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-3-modulo-3/00-presentacion.html">III. Web, nube y seguridad para el sector legal</a></li><li class="breadcrumb-item"><a href="../parte-3-modulo-3/07-capitulo.html"><span class="chapter-title">7. El internet y la nube</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-3-modulo-3/00-presentacion.html">III. Web, nube y seguridad para el sector legal</a></li><li class="breadcrumb-item"><a href="../parte-3-modulo-3/07-capitulo.html"><span class="chapter-title">7. HTML, CSS y JavaScript para una presencia web básica</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">7. El internet y la nube</span></h1>
+<h1 class="title"><span class="chapter-title">7. HTML, CSS y JavaScript para una presencia web básica</span></h1>
 </div>
 
 
@@ -368,20 +393,43 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Esta sesión introduce una capa de infraestructura que suele permanecer invisible cuando solo usamos plataformas y páginas ya hechas. El objetivo es distinguir internet, web, dominio, servidor, hosting y nube; entender la estructura mínima de una página; y advertir por qué publicar información digital también implica exposición, mantenimiento y criterio profesional.</p>
+<p>Esta sesión toma una idea central del módulo y la vuelve práctica: no basta con navegar la web; conviene entender cómo se construye una página sencilla. A través de una breve historia material de internet, de una explicación básica sobre servidores y nube, y de ejercicios progresivos de <code>HTML</code>, <code>CSS</code> y <code>JavaScript</code>, el objetivo es aprender a distinguir infraestructura, estructura, apariencia e interacción, y advertir por qué una presencia digital básica también forma parte de la alfabetización profesional del jurista.</p>
 </div>
 </div>
-<section id="la-web-también-es-infraestructura-jurídica" class="level2">
-<h2 class="anchored" data-anchor-id="la-web-también-es-infraestructura-jurídica">La web también es infraestructura jurídica</h2>
-<p>Muchos servicios jurídicos actuales se prestan, difunden o documentan a través de la web. Portales institucionales, formularios de atención, publicaciones regulatorias, sitios profesionales y sistemas de consulta conviven hoy con el trabajo legal cotidiano. Entender esa infraestructura no convierte a un jurista en ingeniero, pero sí le permite leer con más precisión el entorno donde circulan documentos, reputación y servicios.</p>
+<section id="internet-también-tiene-una-historia-material" class="level2">
+<h2 class="anchored" data-anchor-id="internet-también-tiene-una-historia-material">Internet también tiene una historia material</h2>
+<p>Con frecuencia hablamos de internet como si fuera una nube abstracta suspendida en ninguna parte. Pero la red tiene una materialidad mucho más concreta. Durante décadas, la conexión global ha dependido sobre todo de grandes cables submarinos y terrestres que rodean el mundo, enlazan continentes y transportan volúmenes inmensos de información entre ciudades, centros de datos y proveedores. Cuando alguien abre una página, envía un correo o consulta un expediente en línea, buena parte de ese recorrido suele pasar por infraestructura física tendida bajo el océano o enterrada en tierra firme.</p>
+<p>Esa historia no se ha detenido. En los últimos años se ha vuelto más visible otra capa complementaria: el internet satelital. No reemplaza por completo a los cables, pero sí amplía cobertura en zonas difíciles, remotas o menos atendidas por redes terrestres. Por eso conviene mirar el presente con algo de precisión: internet sigue descansando sobre cables de enorme importancia estratégica, pero al mismo tiempo incorpora más conectividad apoyada en satélites. La red, en otras palabras, no es un solo sistema homogéneo, sino una combinación de infraestructuras que transportan información de maneras distintas.</p>
 </section>
-<section id="internet-web-y-nube-no-son-lo-mismo" class="level2">
-<h2 class="anchored" data-anchor-id="internet-web-y-nube-no-son-lo-mismo">Internet, web y nube no son lo mismo</h2>
-<p>En conversación cotidiana solemos mezclar estos términos como si fueran equivalentes, pero no lo son. Internet es la red general de comunicación; la web es uno de los servicios que funciona sobre esa red; el navegador es la herramienta de acceso; el servidor aloja el contenido; el dominio lo vuelve localizable; y el hosting o la nube hacen posible que ese contenido permanezca disponible desde infraestructura remota. Separar estas ideas importa porque publicar no es un acto abstracto: implica soporte técnico, acceso, exposición y dependencia de servicios concretos.</p>
+<section id="compartir-información-archivos-y-servicios" class="level2">
+<h2 class="anchored" data-anchor-id="compartir-información-archivos-y-servicios">Compartir información, archivos y servicios</h2>
+<p>En su forma más básica, internet consiste en permitir que computadoras distintas compartan información a distancia. A veces esa información viaja como mensajes, a veces como video, a veces como bases de datos, y muchas veces como archivos. La web es una de las formas más visibles de ese intercambio: una computadora solicita un recurso y otra responde entregando contenido. En páginas sencillas, ese contenido suele empezar por un archivo <code>HTML</code>, al que luego pueden sumarse hojas de estilo <code>CSS</code>, scripts <code>JavaScript</code>, imágenes y otros recursos <span class="citation" data-cites="mdnhtml2026 mdncss2026">(MDN Web Docs 2026a, 2026b)</span>.</p>
+<p>Ese detalle importa porque devuelve la web a algo muy concreto. Cuando visitas un sitio, no estás entrando en un espacio mágico. Estás pidiendo archivos y recibiendo archivos. El navegador toma ese material, lo interpreta y lo convierte en una página legible. Por eso aprender <code>HTML</code> no es solo aprender una sintaxis: es entender la forma más básica en que la web comparte contenido.</p>
 </section>
-<section id="publicar-también-es-asumir-exposición" class="level2">
-<h2 class="anchored" data-anchor-id="publicar-también-es-asumir-exposición">Publicar también es asumir exposición</h2>
-<p>Para una facultad de Derecho, este tema importa por dos razones. La primera es profesional: una parte creciente de la actividad jurídica se presenta, organiza o consulta desde entornos web. La segunda es formativa: entender cómo se publica algo ayuda a pensar mejor disponibilidad, reputación, control y seguridad de la información. Una página sencilla puede ser una pieza menor en términos técnicos y, al mismo tiempo, una pieza muy relevante en términos públicos.</p>
+<section id="servidores-cloud-y-presencia-en-línea" class="level2">
+<h2 class="anchored" data-anchor-id="servidores-cloud-y-presencia-en-línea">Servidores, cloud y presencia en línea</h2>
+<p>Para que esos archivos puedan entregarse a otras personas, alguien debe alojarlos y servirlos. Allí aparece el rol del <strong>servidor</strong>: una máquina o servicio preparado para responder solicitudes y entregar contenido cuando un navegador lo pide. Si tu archivo <code>index.html</code> está solo en tu laptop, existe como archivo local. Si ese mismo archivo se aloja en un servidor accesible por internet, puede convertirse en una página pública.</p>
+<p>La <strong>nube</strong> o <em>cloud</em> no elimina esta lógica; la reorganiza. En lugar de depender siempre de una sola máquina identificable y gestionada por una organización concreta, muchos servicios cloud permiten alojar archivos, aplicaciones y datos en infraestructura remota más flexible, distribuida y escalable. Eso desplaza parte del control técnico, pero no elimina las responsabilidades sobre acceso, seguridad y tratamiento de la información <span class="citation" data-cites="pcm2021gobdigitalreglamento">(Presidencia del Consejo de Ministros 2021)</span>. En términos pedagógicos, basta con retener una idea: cuando subes una página a GitHub Pages o a otro servicio similar, sigues publicando archivos desde servidores reales, aunque la infraestructura se te presente como servicio en la nube.</p>
+</section>
+<section id="la-web-también-se-escribe" class="level2">
+<h2 class="anchored" data-anchor-id="la-web-también-se-escribe">La web también se escribe</h2>
+<p>Una parte importante del trabajo jurídico contemporáneo ya circula por interfaces que otras personas diseñaron: formularios, portales, sitios institucionales, páginas de estudios, servicios de consulta y repositorios públicos. Mientras esos entornos solo se usan como consumidor, parecen una superficie ya dada. Pero cuando se observa cómo están hechos, aparece otra intuición: una página web no es un espacio abstracto, sino una combinación de archivos, etiquetas, estilos y pequeñas reglas de comportamiento <span class="citation" data-cites="mdnhtml2026 mdncss2026">(MDN Web Docs 2026a, 2026b)</span>.</p>
+<p>Ese cambio de mirada importa en una facultad de Derecho por una razón sencilla. Entender lo mínimo de <code>HTML</code>, <code>CSS</code> y <code>JavaScript</code> no busca formar desarrolladores frontend, sino volver menos opaca la infraestructura más cotidiana de publicación digital. Una página personal, una ficha profesional, un formulario o una pequeña interfaz informativa pueden bastar para mostrar cómo se organiza contenido, cómo se presenta y cómo reacciona ante quien la usa.</p>
+</section>
+<section id="estructura-apariencia-e-interacción" class="level2">
+<h2 class="anchored" data-anchor-id="estructura-apariencia-e-interacción">Estructura, apariencia e interacción</h2>
+<p>La separación entre <code>HTML</code>, <code>CSS</code> y <code>JavaScript</code> conviene entenderla desde el principio porque ordena todo el capítulo:</p>
+<ul>
+<li><code>HTML</code> define la estructura del contenido;</li>
+<li><code>CSS</code> controla la apariencia visual;</li>
+<li><code>JavaScript</code> agrega comportamiento e interacción.</li>
+</ul>
+<p>La utilidad pedagógica de esta división es inmediata. Obliga a no mezclar funciones. Si una página no se entiende, suele haber un problema de estructura. Si se entiende pero se ve mal, el problema suele ser visual. Si se ve bien pero no responde a la acción del usuario, el problema está en el comportamiento. Esa separación ayuda a pensar con más claridad también cuando después se usan herramientas más complejas.</p>
+</section>
+<section id="antes-de-entrar-al-código" class="level2">
+<h2 class="anchored" data-anchor-id="antes-de-entrar-al-código">Antes de entrar al código</h2>
+<p>Antes de empezar con los ejercicios conviene ordenar bien la expectativa. Este capítulo no presupone experiencia previa en desarrollo web. La idea no es que memorices todas las etiquetas o propiedades, sino que entiendas una secuencia simple y repetible: escribir un archivo, guardarlo, abrirlo en el navegador, observar qué cambió y volver al editor para ajustar una parte pequeña. Aprender web al inicio consiste sobre todo en acortar esa distancia entre lo que escribes y lo que ves.</p>
+<p>También conviene trabajar con una lógica acumulativa. Primero verás <code>HTML</code>, porque sin estructura no hay página. Luego aparecerá <code>CSS</code>, porque una estructura sin estilo sigue siendo difícil de leer. Después entrará <code>JavaScript</code>, porque una página bien escrita y bien presentada todavía puede ser completamente estática. Si mantienes clara esa progresión, los ejercicios dejan de sentirse como piezas sueltas y empiezan a formar un recorrido comprensible.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -392,118 +440,824 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Para esta sesión basta con una carpeta de trabajo simple, un archivo <code>index.html</code> y, si quieres separar estilos, un archivo <code>style.css</code>. La meta no es construir un sitio complejo, sino entender la relación entre estructura, apariencia y publicación. Si más adelante decides usar GitHub Pages, ese paso tendrá más sentido si primero comprendes qué estás publicando y cómo está organizado.</p>
-</div>
-</div>
-</section>
-<section id="estructura-mínima-de-una-página-web" class="level2">
-<h2 class="anchored" data-anchor-id="estructura-mínima-de-una-página-web">Estructura mínima de una página web</h2>
-<p>Una página simple suele combinar tres capas:</p>
+<p>Para trabajar esta sesión basta con una carpeta simple y un navegador. Lo más cómodo es usar una estructura como esta:</p>
 <ul>
-<li><strong>HTML</strong>: estructura del contenido;</li>
-<li><strong>CSS</strong>: apariencia y estilo;</li>
-<li><strong>JavaScript</strong>: comportamiento o interacción cuando hace falta.</li>
+<li><code>index.html</code> para el archivo principal;</li>
+<li><code>style.css</code> cuando quieras separar estilos;</li>
+<li><code>script.js</code> cuando quieras mover el comportamiento fuera del HTML.</li>
 </ul>
-<p>HTML dice qué cosa es cada parte: un título, un párrafo, una lista o un enlace. CSS define cómo se ve: colores, márgenes, tipografía y disposición. JavaScript permite comportamiento dinámico, aunque en una sesión introductoria puede mantenerse al mínimo.</p>
+<p>Una forma especialmente cómoda de hacer esto es trabajar los archivos en <strong>Visual Studio Code</strong>, porque te permite abrir la carpeta completa, editar <code>HTML</code>, <code>CSS</code> y <code>JavaScript</code> en el mismo espacio y luego abrir o recargar el resultado en el navegador. Si todavía no tienes ese entorno listo, conviene revisar el tutorial <a href="../Users/dante/github/manual-legaltech/tutoriales/visual-studio-code.qmd">Visual Studio Code</a>.</p>
+<p>Cada ejercicio de este capítulo puede abrirse directamente en el navegador. La recomendación práctica es avanzar en orden, modificar una o dos líneas y recargar la página después de cada cambio. Si algo no cambia en pantalla, conviene revisar tres cosas antes de seguir: si el archivo quedó guardado, si abriste el archivo correcto y si el navegador recargó la versión más reciente.</p>
+<p>Una rutina útil para toda la sesión puede resumirse así:</p>
+<ol type="1">
+<li>crear o abrir un archivo;</li>
+<li>copiar un ejemplo corto;</li>
+<li>guardar;</li>
+<li>abrir o recargar en el navegador;</li>
+<li>observar el resultado;</li>
+<li>volver al editor y cambiar un detalle pequeño.</li>
+</ol>
+<p>Esa disciplina evita un problema muy frecuente: copiar mucho código sin llegar a entender qué parte produjo qué efecto visible.</p>
+</div>
+</div>
 </section>
-<section id="un-ejemplo-muy-básico-con-html" class="level2">
-<h2 class="anchored" data-anchor-id="un-ejemplo-muy-básico-con-html">Un ejemplo muy básico con HTML</h2>
+<section id="html-dar-forma-al-contenido" class="level2">
+<h2 class="anchored" data-anchor-id="html-dar-forma-al-contenido">HTML: dar forma al contenido</h2>
+<section id="ejercicio-1.-la-primera-página-título-y-párrafo" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-1.-la-primera-página-título-y-párrafo">Ejercicio 1. La primera página: título y párrafo</h3>
+<p>El punto de partida más sobrio consiste en ver que una página ya existe cuando tiene una estructura mínima reconocible. Este primer archivo no hace mucho, pero enseña algo decisivo: todo lo visible en pantalla nace de etiquetas que indican qué tipo de contenido hay en cada lugar <span class="citation" data-cites="mdnhtml2026">(MDN Web Docs 2026a)</span>.</p>
+<p>Copia este código en un archivo como <code>00-hola-mundo.html</code>:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE</span> html<span class="dt">&gt;</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">html</span><span class="ot"> lang</span><span class="op">=</span><span class="st">"es"</span><span class="dt">&gt;</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">head</span><span class="dt">&gt;</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">meta</span><span class="ot"> charset</span><span class="op">=</span><span class="st">"UTF-8"</span><span class="dt">&gt;</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">title</span><span class="dt">&gt;</span>Perfil Legal Tech<span class="dt">&lt;/</span><span class="kw">title</span><span class="dt">&gt;</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">head</span><span class="dt">&gt;</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">body</span><span class="dt">&gt;</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">h1</span><span class="dt">&gt;</span>Ana Perez<span class="dt">&lt;/</span><span class="kw">h1</span><span class="dt">&gt;</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>Estudiante de Derecho interesada en tecnologia y regulacion.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">"https://github.com/"</span><span class="dt">&gt;</span>Mi GitHub<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">meta</span><span class="ot"> name</span><span class="op">=</span><span class="st">"viewport"</span><span class="ot"> content</span><span class="op">=</span><span class="st">"width=device-width, initial-scale=1.0"</span><span class="dt">&gt;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">title</span><span class="dt">&gt;</span>Hola mundo<span class="dt">&lt;/</span><span class="kw">title</span><span class="dt">&gt;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">h1</span><span class="dt">&gt;</span>Hola, mundo<span class="dt">&lt;/</span><span class="kw">h1</span><span class="dt">&gt;</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>Esta es mi primera pagina web.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">body</span><span class="dt">&gt;</span></span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Este archivo ya es, en sentido estricto, una página web muy simple.</p>
-</section>
-<section id="qué-hace-css-en-este-contexto" class="level2">
-<h2 class="anchored" data-anchor-id="qué-hace-css-en-este-contexto">Qué hace CSS en este contexto</h2>
-<p>Si agregamos CSS, la página puede verse más legible y ordenada:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>body {</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">font-family</span><span class="ch">:</span> <span class="dv">Georgia</span><span class="op">,</span> <span class="dv">serif</span><span class="op">;</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">max-width</span><span class="ch">:</span> <span class="dv">720</span><span class="dt">px</span><span class="op">;</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">margin</span><span class="ch">:</span> <span class="dv">2</span><span class="dt">rem</span> <span class="bu">auto</span><span class="op">;</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">line-height</span><span class="ch">:</span> <span class="dv">1.6</span><span class="op">;</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>h1 {</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="kw">color</span><span class="ch">:</span> <span class="cn">#1f3c88</span><span class="op">;</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>No hace falta buscar complejidad visual de inmediato. Una página sobria, clara y profesional suele ser mucho más útil para el curso.</p>
-</section>
-<section id="páginas-estáticas-y-dinámicas" class="level2">
-<h2 class="anchored" data-anchor-id="páginas-estáticas-y-dinámicas">Páginas estáticas y dinámicas</h2>
-<p>También conviene distinguir dos ideas:</p>
+<p>Aquí ya aparecen varias piezas fundacionales:</p>
 <ul>
-<li><strong>página estática</strong>: su contenido se sirve tal como fue escrito en archivos;</li>
-<li><strong>página dinámica</strong>: su contenido puede construirse o cambiar en tiempo real según base de datos, usuario u otras condiciones.</li>
+<li><code>&lt;!DOCTYPE html&gt;</code> declara el tipo de documento;</li>
+<li><code>&lt;html&gt;</code> envuelve toda la página;</li>
+<li><code>&lt;head&gt;</code> contiene metadatos;</li>
+<li><code>&lt;body&gt;</code> reúne lo visible;</li>
+<li><code>&lt;h1&gt;</code> marca el título principal;</li>
+<li><code>&lt;p&gt;</code> introduce un párrafo.</li>
 </ul>
-<p>Para este curso, una página estática es ideal como punto de partida porque obliga a entender estructura, es fácil de publicar y permite concentrarse en fundamentos sin complejidad innecesaria.</p>
+<p>La utilidad del ejemplo no está en su espectacularidad, sino en mostrar que una página se compone de partes con jerarquía. Esa misma lógica reaparecerá en páginas más complejas.</p>
 </section>
-<section id="la-nube-en-términos-simples" class="level2">
-<h2 class="anchored" data-anchor-id="la-nube-en-términos-simples">La nube, en términos simples</h2>
-<p>Cuando hablamos de nube, muchas veces nos referimos a servicios que corren en infraestructura remota accesible por internet. No es magia: son servidores, almacenamiento y aplicaciones que no viven necesariamente en tu computadora personal. Desde una mirada pedagógica, basta con advertir tres cosas:</p>
-<ul>
-<li>publicar un sitio suele implicar usar infraestructura ajena;</li>
-<li>guardar archivos en plataformas también implica confiar en servicios remotos;</li>
-<li>trabajar en la nube supone pensar en acceso, disponibilidad y seguridad.</li>
-</ul>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<section id="cómo-se-ve-esto-en-el-navegador" class="level3">
+<h3 class="anchored" data-anchor-id="cómo-se-ve-esto-en-el-navegador">Cómo se ve esto en el navegador</h3>
+<p>El punto decisivo es distinguir entre el archivo y su resultado visible. El navegador no muestra las etiquetas como texto normal. Las interpreta y las convierte en una página.</p>
+<div class="browser-preview">
+<div class="browser-bar">
+<div class="browser-dots" aria-hidden="true">
+● ● ●
 </div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Criterio útil
+<div class="browser-url">
+00-hola-mundo.html
 </div>
 </div>
-<div class="callout-body-container callout-body">
-<p>Una buena página para este curso no necesita ser compleja. Necesita ser clara, legible, propia y públicamente accesible cuando decidas publicarla.</p>
+<div class="browser-body">
+<h1>
+Hola, mundo
+</h1>
+<p>
+Esta es mi primera pagina web.
+</p>
+</div>
+</div>
+<p>La diferencia parece simple, pero enseña algo fundamental. <code>HTML</code> describe la estructura del contenido y el navegador decide cómo presentarla. El <code>h1</code> aparece como encabezado principal; el <code>p</code> aparece como párrafo. Cuando abras el archivo en el navegador, no verás “código fuente”, sino la interpretación visual de ese código.</p>
+</section>
+<section id="ejercicio-2.-organizar-información-con-títulos-y-secciones" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-2.-organizar-información-con-títulos-y-secciones">Ejercicio 2. Organizar información con títulos y secciones</h3>
+<p>Cuando la página deja de ser un simple saludo, la pregunta cambia: ya no basta con mostrar algo, sino que conviene ordenarlo. Los títulos y subtítulos sirven justamente para eso.</p>
+<p>Copia este archivo:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE</span> html<span class="dt">&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">html</span><span class="ot"> lang</span><span class="op">=</span><span class="st">"es"</span><span class="dt">&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">meta</span><span class="ot"> charset</span><span class="op">=</span><span class="st">"UTF-8"</span><span class="dt">&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">title</span><span class="dt">&gt;</span>Texto y titulos<span class="dt">&lt;/</span><span class="kw">title</span><span class="dt">&gt;</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">h1</span><span class="dt">&gt;</span>Introduccion al derecho digital<span class="dt">&lt;/</span><span class="kw">h1</span><span class="dt">&gt;</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">h2</span><span class="dt">&gt;</span>Que estudia<span class="dt">&lt;/</span><span class="kw">h2</span><span class="dt">&gt;</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>Estudia los efectos de la tecnologia en las normas, procesos y relaciones entre personas.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">h2</span><span class="dt">&gt;</span>Por que importa<span class="dt">&lt;/</span><span class="kw">h2</span><span class="dt">&gt;</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>Ayuda a entender temas como privacidad, contratos electronicos y firma digital.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>La transición importante aquí es conceptual. <code>HTML</code> no sirve solo para “poner texto”, sino para indicar jerarquías. Un <code>h1</code> no cumple la misma función que un <code>h2</code>, y esa diferencia importa para legibilidad, accesibilidad y organización del contenido.</p>
+</section>
+<section id="cómo-se-ve-esto-en-el-navegador-1" class="level3">
+<h3 class="anchored">Cómo se ve esto en el navegador</h3>
+<p>Si abres este archivo, verás un título principal y, debajo, dos bloques de contenido más pequeños.</p>
+<div class="browser-preview">
+<div class="browser-bar">
+<div class="browser-dots" aria-hidden="true">
+● ● ●
+</div>
+<div class="browser-url">
+01-texto-y-titulos.html
+</div>
+</div>
+<div class="browser-body">
+<h1>
+Introduccion al derecho digital
+</h1>
+<h2 class="anchored" data-anchor-id="cómo-se-ve-esto-en-el-navegador-1">
+Que estudia
+</h2>
+<p>
+Estudia los efectos de la tecnologia en las normas, procesos y relaciones entre personas.
+</p>
+<h2 class="anchored">
+Por que importa
+</h2>
+<p>
+Ayuda a entender temas como privacidad, contratos electronicos y firma digital.
+</p>
+</div>
+</div>
+<p>La página sigue siendo muy simple, pero ya no muestra una sola línea aislada. Empieza a parecerse a un texto organizado por secciones.</p>
+</section>
+<section id="ejercicio-3.-listas-enlaces-y-tablas-como-formas-de-trabajo" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-3.-listas-enlaces-y-tablas-como-formas-de-trabajo">Ejercicio 3. Listas, enlaces y tablas como formas de trabajo</h3>
+<p>Una parte significativa del trabajo jurídico se presenta como colección de elementos: tareas, documentos, citas, requisitos o registros. Por eso conviene ver tres estructuras muy comunes: listas, enlaces y tablas.</p>
+<section id="lista-y-enlace" class="level4">
+<h4 class="anchored" data-anchor-id="lista-y-enlace">Lista y enlace</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE</span> html<span class="dt">&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">html</span><span class="ot"> lang</span><span class="op">=</span><span class="st">"es"</span><span class="dt">&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">meta</span><span class="ot"> charset</span><span class="op">=</span><span class="st">"UTF-8"</span><span class="dt">&gt;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">title</span><span class="dt">&gt;</span>Listas y enlaces<span class="dt">&lt;/</span><span class="kw">title</span><span class="dt">&gt;</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">h1</span><span class="dt">&gt;</span>Tareas de hoy<span class="dt">&lt;/</span><span class="kw">h1</span><span class="dt">&gt;</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">ul</span><span class="dt">&gt;</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">li</span><span class="dt">&gt;</span>Leer una resolucion<span class="dt">&lt;/</span><span class="kw">li</span><span class="dt">&gt;</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">li</span><span class="dt">&gt;</span>Ordenar expedientes<span class="dt">&lt;/</span><span class="kw">li</span><span class="dt">&gt;</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">li</span><span class="dt">&gt;</span>Enviar un correo<span class="dt">&lt;/</span><span class="kw">li</span><span class="dt">&gt;</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">ul</span><span class="dt">&gt;</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>      Puedes buscar mas informacion en</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">"https://developer.mozilla.org/es/"</span><span class="ot"> target</span><span class="op">=</span><span class="st">"_blank"</span><span class="ot"> rel</span><span class="op">=</span><span class="st">"noreferrer"</span><span class="dt">&gt;</span>MDN en espanol<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span>.</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="tabla-simple" class="level4">
+<h4 class="anchored" data-anchor-id="tabla-simple">Tabla simple</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE</span> html<span class="dt">&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">html</span><span class="ot"> lang</span><span class="op">=</span><span class="st">"es"</span><span class="dt">&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">meta</span><span class="ot"> charset</span><span class="op">=</span><span class="st">"UTF-8"</span><span class="dt">&gt;</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">title</span><span class="dt">&gt;</span>Tabla simple<span class="dt">&lt;/</span><span class="kw">title</span><span class="dt">&gt;</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">h1</span><span class="dt">&gt;</span>Registro de citas<span class="dt">&lt;/</span><span class="kw">h1</span><span class="dt">&gt;</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">table</span><span class="ot"> border</span><span class="op">=</span><span class="st">"1"</span><span class="dt">&gt;</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;</span><span class="kw">th</span><span class="dt">&gt;</span>Persona<span class="dt">&lt;/</span><span class="kw">th</span><span class="dt">&gt;</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;</span><span class="kw">th</span><span class="dt">&gt;</span>Fecha<span class="dt">&lt;/</span><span class="kw">th</span><span class="dt">&gt;</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;</span><span class="kw">th</span><span class="dt">&gt;</span>Estado<span class="dt">&lt;/</span><span class="kw">th</span><span class="dt">&gt;</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;/</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>Ana Perez<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>2026-05-30<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>Confirmada<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;/</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>Luis Rojas<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>2026-06-02<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>Pendiente<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;/</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">table</span><span class="dt">&gt;</span></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>En estos ejemplos <code>HTML</code> deja ver algo más cercano al trabajo real: una lista sirve para agrupar elementos del mismo tipo, un enlace conecta la página con otro recurso y una tabla organiza información en filas y columnas. Aunque los ejemplos son pequeños, ya aparecen formas de representación muy útiles para portales, fichas y paneles sencillos.</p>
+</section>
+</section>
+<section id="cómo-se-ve-esto-en-el-navegador-2" class="level3">
+<h3 class="anchored" data-anchor-id="cómo-se-ve-esto-en-el-navegador-2">Cómo se ve esto en el navegador</h3>
+<p>En el primer archivo verás un título, tres tareas con viñetas y un enlace. En el segundo, verás una tabla con tres columnas y dos registros.</p>
+<p class="browser-state-title">Vista de listas y enlaces</p>
+<div class="browser-preview">
+  <div class="browser-bar">
+    <div class="browser-dots" aria-hidden="true">● ● ●</div>
+    <div class="browser-url">02-listas-y-enlaces.html</div>
+  </div>
+  <div class="browser-body">
+    <h1>Tareas de hoy</h1>
+    <ul>
+      <li>Leer una resolucion</li>
+      <li>Ordenar expedientes</li>
+      <li>Enviar un correo</li>
+    </ul>
+    <p>Puedes buscar mas informacion en <a href="#">MDN en espanol</a>.</p>
+  </div>
+</div>
+
+<p class="browser-state-title">Vista de tabla</p>
+<div class="browser-preview">
+  <div class="browser-bar">
+    <div class="browser-dots" aria-hidden="true">● ● ●</div>
+    <div class="browser-url">03-tablas.html</div>
+  </div>
+  <div class="browser-body">
+    <h1>Registro de citas</h1>
+    
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" style="text-align: left; border: 1px solid #222; padding: 0.45rem;">Persona</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; border: 1px solid #222; padding: 0.45rem;">Fecha</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; border: 1px solid #222; padding: 0.45rem;">Estado</th>
+</tr>
+<tr class="even">
+<td style="text-align: left; border: 1px solid #222; padding: 0.45rem;">Ana Perez</td>
+<td style="text-align: left; border: 1px solid #222; padding: 0.45rem;">2026-05-30</td>
+<td style="text-align: left; border: 1px solid #222; padding: 0.45rem;">Confirmada</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; border: 1px solid #222; padding: 0.45rem;">Luis Rojas</td>
+<td style="text-align: left; border: 1px solid #222; padding: 0.45rem;">2026-06-02</td>
+<td style="text-align: left; border: 1px solid #222; padding: 0.45rem;">Pendiente</td>
+</tr>
+</tbody>
+</table>
+
+  </div>
+</div>
+<p>La utilidad de abrir ambos archivos es ver que <code>HTML</code> no solo sirve para redactar párrafos. También organiza elementos repetidos y datos comparables.</p>
+</section>
+<section id="ejercicio-4.-formularios-capturar-información" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-4.-formularios-capturar-información">Ejercicio 4. Formularios: capturar información</h3>
+<p>La web no solo publica; también recibe datos. Por eso los formularios son una pieza central de muchos servicios digitales.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE</span> html<span class="dt">&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">html</span><span class="ot"> lang</span><span class="op">=</span><span class="st">"es"</span><span class="dt">&gt;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">meta</span><span class="ot"> charset</span><span class="op">=</span><span class="st">"UTF-8"</span><span class="dt">&gt;</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">title</span><span class="dt">&gt;</span>Formulario simple<span class="dt">&lt;/</span><span class="kw">title</span><span class="dt">&gt;</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">h1</span><span class="dt">&gt;</span>Formulario de contacto<span class="dt">&lt;/</span><span class="kw">h1</span><span class="dt">&gt;</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">form</span><span class="dt">&gt;</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">label</span><span class="ot"> for</span><span class="op">=</span><span class="st">"nombre"</span><span class="dt">&gt;</span>Nombre<span class="dt">&lt;/</span><span class="kw">label</span><span class="dt">&gt;</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">input</span><span class="ot"> id</span><span class="op">=</span><span class="st">"nombre"</span><span class="ot"> type</span><span class="op">=</span><span class="st">"text"</span><span class="ot"> placeholder</span><span class="op">=</span><span class="st">"Escribe tu nombre"</span><span class="dt">&gt;</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">label</span><span class="ot"> for</span><span class="op">=</span><span class="st">"correo"</span><span class="dt">&gt;</span>Correo<span class="dt">&lt;/</span><span class="kw">label</span><span class="dt">&gt;</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">input</span><span class="ot"> id</span><span class="op">=</span><span class="st">"correo"</span><span class="ot"> type</span><span class="op">=</span><span class="st">"email"</span><span class="ot"> placeholder</span><span class="op">=</span><span class="st">"correo@ejemplo.com"</span><span class="dt">&gt;</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">label</span><span class="ot"> for</span><span class="op">=</span><span class="st">"mensaje"</span><span class="dt">&gt;</span>Mensaje<span class="dt">&lt;/</span><span class="kw">label</span><span class="dt">&gt;</span></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">textarea</span><span class="ot"> id</span><span class="op">=</span><span class="st">"mensaje"</span><span class="ot"> rows</span><span class="op">=</span><span class="st">"4"</span><span class="ot"> cols</span><span class="op">=</span><span class="st">"30"</span><span class="dt">&gt;&lt;/</span><span class="kw">textarea</span><span class="dt">&gt;</span></span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">button</span><span class="ot"> type</span><span class="op">=</span><span class="st">"submit"</span><span class="dt">&gt;</span>Enviar<span class="dt">&lt;/</span><span class="kw">button</span><span class="dt">&gt;</span></span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">form</span><span class="dt">&gt;</span></span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>La enseñanza del ejemplo no está en enviar el formulario, sino en reconocer los bloques básicos de entrada: <code>label</code>, <code>input</code>, <code>textarea</code> y <code>button</code>. Muchos servicios jurídicos digitalizados dependen precisamente de esta lógica de captura estructurada.</p>
+</section>
+<section id="cómo-se-ve-esto-en-el-navegador-3" class="level3">
+<h3 class="anchored" data-anchor-id="cómo-se-ve-esto-en-el-navegador-3">Cómo se ve esto en el navegador</h3>
+<p>Al abrirlo, verás un pequeño formulario: una etiqueta para <code>Nombre</code>, una caja de texto, otra para <code>Correo</code>, un área grande para <code>Mensaje</code> y un botón <code>Enviar</code>.</p>
+<div class="browser-preview">
+<div class="browser-bar">
+<div class="browser-dots" aria-hidden="true">
+● ● ●
+</div>
+<div class="browser-url">
+04-formulario-simple.html
+</div>
+</div>
+<div class="browser-body">
+<h1>
+Formulario de contacto
+</h1>
+<form>
+<label for="preview-nombre">Nombre</label><br> <input id="preview-nombre" type="text" placeholder="Escribe tu nombre" style="margin: 0.35rem 0 1rem 0; padding: 0.45rem; width: min(320px, 100%);"><br> <label for="preview-correo">Correo</label><br> <input id="preview-correo" type="email" placeholder="correo@ejemplo.com" style="margin: 0.35rem 0 1rem 0; padding: 0.45rem; width: min(320px, 100%);"><br> <label for="preview-mensaje">Mensaje</label><br>
+<textarea id="preview-mensaje" rows="4" style="margin: 0.35rem 0 1rem 0; padding: 0.45rem; width: min(320px, 100%);"></textarea>
+<br> <button type="button" style="padding: 0.5rem 0.9rem;">Enviar</button>
+</form>
+</div>
+</div>
+<p>Todavía no ocurre ninguna validación ni se envían datos, pero ya aparece la estructura básica de muchas páginas de contacto o registro.</p>
+</section>
+</section>
+<section id="css-volver-legible-la-página" class="level2">
+<h2 class="anchored" data-anchor-id="css-volver-legible-la-página">CSS: volver legible la página</h2>
+<p>Una página correctamente estructurada puede seguir viéndose pobre o confusa. Allí entra <code>CSS</code>: no cambia qué cosa es cada bloque, pero sí cómo se presenta <span class="citation" data-cites="mdncss2026">(MDN Web Docs 2026b)</span>. Eso importa porque en interfaces jurídicas y profesionales la legibilidad también forma parte de la calidad del servicio.</p>
+<section id="ejercicio-5.-primeros-estilos-fuente-fondo-y-color" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-5.-primeros-estilos-fuente-fondo-y-color">Ejercicio 5. Primeros estilos: fuente, fondo y color</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE</span> html<span class="dt">&gt;</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">html</span><span class="ot"> lang</span><span class="op">=</span><span class="st">"es"</span><span class="dt">&gt;</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">meta</span><span class="ot"> charset</span><span class="op">=</span><span class="st">"UTF-8"</span><span class="dt">&gt;</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">title</span><span class="dt">&gt;</span>CSS basico<span class="dt">&lt;/</span><span class="kw">title</span><span class="dt">&gt;</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">style</span><span class="dt">&gt;</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>      body {</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>        <span class="kw">font-family</span><span class="ch">:</span> <span class="dv">Arial</span><span class="op">,</span> <span class="dv">sans-serif</span><span class="op">;</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>        <span class="kw">background-color</span><span class="ch">:</span> <span class="cn">#f4f7fb</span><span class="op">;</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>        <span class="kw">margin</span><span class="ch">:</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>        <span class="kw">padding</span><span class="ch">:</span> <span class="dv">24</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>      h1 {</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>        <span class="kw">color</span><span class="ch">:</span> <span class="cn">#1d3557</span><span class="op">;</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>      p {</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>        <span class="kw">color</span><span class="ch">:</span> <span class="cn">#444</span><span class="op">;</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>        <span class="kw">line-height</span><span class="ch">:</span> <span class="dv">1.6</span><span class="op">;</span></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">style</span><span class="dt">&gt;</span></span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">h1</span><span class="dt">&gt;</span>Pagina con estilos<span class="dt">&lt;/</span><span class="kw">h1</span><span class="dt">&gt;</span></span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>CSS permite cambiar la apariencia de una pagina web.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Este archivo muestra una primera decisión importante: <code>CSS</code> puede escribirse dentro de <code>&lt;style&gt;</code> cuando el ejemplo es pequeño. El resultado visible suele ser inmediato. Cambia la tipografía, aparece un fondo y el texto gana legibilidad. La estructura sigue siendo la misma, pero la experiencia de lectura ya no es equivalente.</p>
+</section>
+<section id="cómo-se-ve-esto-en-el-navegador-4" class="level3">
+<h3 class="anchored" data-anchor-id="cómo-se-ve-esto-en-el-navegador-4">Cómo se ve esto en el navegador</h3>
+<p>Sin <code>CSS</code>, el navegador mostraría algo muy simple: un título negro, un párrafo estándar y fondo blanco. Con las reglas anteriores, el resultado visible cambia de inmediato.</p>
+<div class="browser-preview">
+<div class="browser-bar">
+<div class="browser-dots" aria-hidden="true">
+● ● ●
+</div>
+<div class="browser-url">
+00-estilos-en-linea.html
+</div>
+</div>
+<div class="browser-body" style="font-family: Arial, sans-serif; background-color: #f4f7fb; padding: 24px;">
+<h1 style="color: #1d3557;">
+Pagina con estilos
+</h1>
+<p style="color: #444; line-height: 1.6;">
+CSS permite cambiar la apariencia de una pagina web.
+</p>
+</div>
+</div>
+<p>La utilidad de esta comparación está en que permite aislar el papel de <code>CSS</code>. El contenido sigue siendo exactamente el mismo. Lo que cambia es la forma en que se presenta: color, espacio y legibilidad.</p>
+</section>
+<section id="ejercicio-6.-colores-cajas-y-espaciado" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-6.-colores-cajas-y-espaciado">Ejercicio 6. Colores, cajas y espaciado</h3>
+<p>Cuando una página necesita destacar un mensaje o separar un bloque del resto, entra en juego el modelo de caja. Eso significa pensar en ancho, margen, relleno y bordes.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE</span> html<span class="dt">&gt;</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">html</span><span class="ot"> lang</span><span class="op">=</span><span class="st">"es"</span><span class="dt">&gt;</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">meta</span><span class="ot"> charset</span><span class="op">=</span><span class="st">"UTF-8"</span><span class="dt">&gt;</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">title</span><span class="dt">&gt;</span>Cajas y espaciado<span class="dt">&lt;/</span><span class="kw">title</span><span class="dt">&gt;</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">style</span><span class="dt">&gt;</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>      body {</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>        <span class="kw">font-family</span><span class="ch">:</span> <span class="dv">Arial</span><span class="op">,</span> <span class="dv">sans-serif</span><span class="op">;</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>        <span class="kw">background</span><span class="ch">:</span> <span class="cn">#faf8f2</span><span class="op">;</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>      <span class="fu">.tarjeta</span> {</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>        <span class="kw">width</span><span class="ch">:</span> <span class="dv">320</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>        <span class="kw">margin</span><span class="ch">:</span> <span class="dv">40</span><span class="dt">px</span> <span class="bu">auto</span><span class="op">;</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>        <span class="kw">padding</span><span class="ch">:</span> <span class="dv">20</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>        <span class="kw">border</span><span class="ch">:</span> <span class="dv">2</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#caa56a</span><span class="op">;</span></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>        <span class="kw">background</span><span class="ch">:</span> <span class="cn">white</span><span class="op">;</span></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">style</span><span class="dt">&gt;</span></span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"tarjeta"</span><span class="dt">&gt;</span></span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">h1</span><span class="dt">&gt;</span>Expediente 204<span class="dt">&lt;/</span><span class="kw">h1</span><span class="dt">&gt;</span></span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>Esta tarjeta muestra como funciona el espacio interno y externo de un bloque.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>La clase <code>.tarjeta</code> enseña algo fundamental: el contenido no solo se escribe, también se encierra en bloques visuales. Esa idea será útil después para fichas, avisos, paneles y formularios.</p>
+<p>Si lo abres en el navegador, no verás solo un texto suelto. Verás una especie de ficha o tarjeta centrada, con fondo blanco, borde visible y espacio interior. Ese efecto importa porque muestra que <code>CSS</code> no se limita a “pintar”; también organiza bloques y les da presencia visual.</p>
+<div class="browser-preview">
+  <div class="browser-bar">
+    <div class="browser-dots" aria-hidden="true">● ● ●</div>
+    <div class="browser-url">02-cajas-y-espaciado.html</div>
+  </div>
+  <div class="browser-body" style="font-family: Arial, sans-serif; background: #faf8f2; padding: 16px;">
+    <div style="width: 320px; margin: 20px auto; padding: 20px; border: 2px solid #caa56a; background: white;">
+      <h1>Expediente 204</h1>
+      <p>Esta tarjeta muestra como funciona el espacio interno y externo de un bloque.</p>
+    </div>
+  </div>
+</div>
+</section>
+<section id="ejercicio-7.-tipografía-y-flexbox" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-7.-tipografía-y-flexbox">Ejercicio 7. Tipografía y flexbox</h3>
+<p>El estilo también sirve para ordenar visualmente varios elementos a la vez. En el material base de esta sesión aparecen dos movimientos muy útiles: mejorar la tipografía y usar <code>flexbox</code> para alinear cajas en fila.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE</span> html<span class="dt">&gt;</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">html</span><span class="ot"> lang</span><span class="op">=</span><span class="st">"es"</span><span class="dt">&gt;</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">meta</span><span class="ot"> charset</span><span class="op">=</span><span class="st">"UTF-8"</span><span class="dt">&gt;</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">title</span><span class="dt">&gt;</span>Flexbox basico<span class="dt">&lt;/</span><span class="kw">title</span><span class="dt">&gt;</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">style</span><span class="dt">&gt;</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>      body {</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>        <span class="kw">font-family</span><span class="ch">:</span> <span class="dv">Arial</span><span class="op">,</span> <span class="dv">sans-serif</span><span class="op">;</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>        <span class="kw">padding</span><span class="ch">:</span> <span class="dv">24</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>      <span class="fu">.fila</span> {</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>        <span class="kw">display</span><span class="ch">:</span> <span class="dv">flex</span><span class="op">;</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>        <span class="kw">gap</span><span class="ch">:</span> <span class="dv">16</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>      <span class="fu">.bloque</span> {</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>        <span class="kw">flex</span><span class="ch">:</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>        <span class="kw">padding</span><span class="ch">:</span> <span class="dv">20</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>        <span class="kw">background</span><span class="ch">:</span> <span class="cn">#dbeafe</span><span class="op">;</span></span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>        <span class="kw">border</span><span class="ch">:</span> <span class="dv">1</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#60a5fa</span><span class="op">;</span></span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">style</span><span class="dt">&gt;</span></span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">h1</span><span class="dt">&gt;</span>Panel de accesos<span class="dt">&lt;/</span><span class="kw">h1</span><span class="dt">&gt;</span></span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"fila"</span><span class="dt">&gt;</span></span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"bloque"</span><span class="dt">&gt;</span>Agenda<span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"bloque"</span><span class="dt">&gt;</span>Clientes<span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"bloque"</span><span class="dt">&gt;</span>Pagos<span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Aquí el aprendizaje ya no es solo estético. <code>display: flex</code> permite distribuir elementos en una misma fila con una lógica mucho más controlable que el simple apilamiento vertical. Para interfaces simples, esta técnica basta para construir paneles bastante claros.</p>
+<p>En el navegador, la diferencia es muy visible: en lugar de aparecer una caja debajo de la otra, <code>Agenda</code>, <code>Clientes</code> y <code>Pagos</code> quedan alineadas horizontalmente como accesos de un pequeño panel. Eso deja ver que <code>CSS</code> también sirve para decidir cómo se acomodan los elementos entre sí.</p>
+<div class="browser-preview">
+  <div class="browser-bar">
+    <div class="browser-dots" aria-hidden="true">● ● ●</div>
+    <div class="browser-url">04-flexbox-basico.html</div>
+  </div>
+  <div class="browser-body" style="font-family: Arial, sans-serif; padding: 24px;">
+    <h1>Panel de accesos</h1>
+    <div style="display: flex; gap: 16px;">
+      <div style="flex: 1; padding: 20px; background: #dbeafe; border: 1px solid #60a5fa;">Agenda</div>
+      <div style="flex: 1; padding: 20px; background: #dbeafe; border: 1px solid #60a5fa;">Clientes</div>
+      <div style="flex: 1; padding: 20px; background: #dbeafe; border: 1px solid #60a5fa;">Pagos</div>
+    </div>
+  </div>
+</div>
+</section>
+</section>
+<section id="javascript-hacer-que-la-página-responda" class="level2">
+<h2 class="anchored" data-anchor-id="javascript-hacer-que-la-página-responda">JavaScript: hacer que la página responda</h2>
+<p>Hasta aquí la página muestra contenido y se ve mejor, pero sigue siendo estática. <code>JavaScript</code> introduce comportamiento: permite reaccionar, calcular, leer entradas y cambiar lo que aparece en pantalla.</p>
+<section id="ejercicio-8.-el-primer-script" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-8.-el-primer-script">Ejercicio 8. El primer script</h3>
+<p>El primer paso conviene mantenerlo pequeño: comprobar que el navegador ya puede ejecutar instrucciones.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE</span> html<span class="dt">&gt;</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">html</span><span class="ot"> lang</span><span class="op">=</span><span class="st">"es"</span><span class="dt">&gt;</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">meta</span><span class="ot"> charset</span><span class="op">=</span><span class="st">"UTF-8"</span><span class="dt">&gt;</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">title</span><span class="dt">&gt;</span>Script basico<span class="dt">&lt;/</span><span class="kw">title</span><span class="dt">&gt;</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">h1</span><span class="dt">&gt;</span>Abre la consola del navegador<span class="dt">&lt;/</span><span class="kw">h1</span><span class="dt">&gt;</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">script</span><span class="dt">&gt;</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>      <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">"Hola desde JavaScript"</span>)<span class="op">;</span></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">script</span><span class="dt">&gt;</span></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>El mensaje no aparece en la página, sino en la consola del navegador. Ese detalle es útil porque enseña a distinguir entre lo que el usuario ve y lo que el desarrollador usa para comprobar que el código está funcionando.</p>
+<p>En pantalla, por tanto, solo verás el texto <code>Abre la consola del navegador</code>. La acción de <code>JavaScript</code> ocurre fuera de la página visible y se comprueba en la consola. Ese primer paso es deliberado: antes de modificar la interfaz, conviene comprobar que el lenguaje ya está corriendo.</p>
+<div class="browser-preview">
+<div class="browser-bar">
+<div class="browser-dots" aria-hidden="true">
+● ● ●
+</div>
+<div class="browser-url">
+00-script-basico.html
+</div>
+</div>
+<div class="browser-body">
+<h1>
+Abre la consola del navegador
+</h1>
 </div>
 </div>
 </section>
-<section id="github-pages-como-herramienta-pedagógica" class="level2">
-<h2 class="anchored" data-anchor-id="github-pages-como-herramienta-pedagógica">GitHub Pages como herramienta pedagógica</h2>
-<p>GitHub Pages resulta especialmente útil porque conecta varias dimensiones a la vez:</p>
-<ul>
-<li>repositorio;</li>
-<li>control de versiones;</li>
-<li>publicación;</li>
-<li>evidencia de trabajo.</li>
-</ul>
-<p>Eso lo vuelve adecuado para el curso, ya que el producto final no queda separado del proceso que lo produjo. El mismo entorno donde editas y versionas puede servir también para publicar.</p>
+<section id="ejercicio-9.-variables-y-condicionales" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-9.-variables-y-condicionales">Ejercicio 9. Variables y condicionales</h3>
+<p>Una vez que el script corre, puede guardar información y tomar decisiones.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE</span> html<span class="dt">&gt;</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">html</span><span class="ot"> lang</span><span class="op">=</span><span class="st">"es"</span><span class="dt">&gt;</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">meta</span><span class="ot"> charset</span><span class="op">=</span><span class="st">"UTF-8"</span><span class="dt">&gt;</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">title</span><span class="dt">&gt;</span>Condicionales<span class="dt">&lt;/</span><span class="kw">title</span><span class="dt">&gt;</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">h1</span><span class="dt">&gt;</span>Estado de pago<span class="dt">&lt;/</span><span class="kw">h1</span><span class="dt">&gt;</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> id</span><span class="op">=</span><span class="st">"resultado"</span><span class="dt">&gt;&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">script</span><span class="dt">&gt;</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>      <span class="kw">const</span> deuda <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>      <span class="kw">let</span> mensaje <span class="op">=</span> <span class="st">""</span><span class="op">;</span></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> (deuda <span class="op">&gt;</span> <span class="dv">0</span>) {</span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>        mensaje <span class="op">=</span> <span class="st">"Pago pendiente"</span><span class="op">;</span></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>      } <span class="cf">else</span> {</span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>        mensaje <span class="op">=</span> <span class="st">"Sin deuda registrada"</span><span class="op">;</span></span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>      <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">"resultado"</span>)<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> mensaje<span class="op">;</span></span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">script</span><span class="dt">&gt;</span></span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Aquí aparece una transición importante: <code>JavaScript</code> no solo calcula, sino que también modifica el contenido visible a partir de una condición. Eso acerca mucho más el lenguaje a problemas reales de estado, validación y respuesta.</p>
+<p>Si abres este archivo en el navegador, verás un título que dice <code>Estado de pago</code> y, debajo, una línea de texto que el propio <code>JavaScript</code> rellenó. Como <code>deuda = 0</code>, el resultado visible será:</p>
+<div class="browser-preview">
+<div class="browser-bar">
+<div class="browser-dots" aria-hidden="true">
+● ● ●
+</div>
+<div class="browser-url">
+02-condicionales.html
+</div>
+</div>
+<div class="browser-body">
+<h1>
+Estado de pago
+</h1>
+<p>
+Sin deuda registrada
+</p>
+</div>
+</div>
+<p>Si cambias el valor de <code>deuda</code> a <code>10</code> y recargas, la línea cambiará a <code>Pago pendiente</code>. Esa pequeña prueba deja ver exactamente qué hace <code>JavaScript</code>: no cambia la estructura básica de la página, pero sí su contenido visible según una regla.</p>
 </section>
-<section id="qué-se-gana-al-publicar-algo-propio" class="level2">
-<h2 class="anchored" data-anchor-id="qué-se-gana-al-publicar-algo-propio">Qué se gana al publicar algo propio</h2>
-<p>Publicar una página simple deja ver varias competencias al mismo tiempo:</p>
+<section id="ejercicio-10.-bucles-funciones-y-eventos" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-10.-bucles-funciones-y-eventos">Ejercicio 10. Bucles, funciones y eventos</h3>
+<p>Tres ideas del material de referencia merecen quedar juntas porque forman una secuencia muy natural:</p>
 <ul>
-<li>organización de contenido;</li>
-<li>escritura con propósito;</li>
-<li>estructura básica de HTML;</li>
-<li>comprensión elemental de infraestructura web.</li>
+<li>un <strong>bucle</strong> repite una acción sobre varios elementos;</li>
+<li>una <strong>función</strong> encapsula una operación reutilizable;</li>
+<li>un <strong>evento</strong> espera la acción de la persona usuaria.</li>
 </ul>
-<p>No se trata de formar diseñadores web en una sesión. Se trata de que el estudiante entienda cómo funciona una publicación digital básica y la use con sentido profesional.</p>
+<section id="bucle-para-llenar-una-lista" class="level4">
+<h4 class="anchored" data-anchor-id="bucle-para-llenar-una-lista">Bucle para llenar una lista</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">ul</span><span class="ot"> id</span><span class="op">=</span><span class="st">"lista"</span><span class="dt">&gt;&lt;/</span><span class="kw">ul</span><span class="dt">&gt;</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">script</span><span class="dt">&gt;</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> tareas <span class="op">=</span> [<span class="st">"Revisar contrato"</span><span class="op">,</span> <span class="st">"Llamar al cliente"</span><span class="op">,</span> <span class="st">"Enviar informe"</span>]<span class="op">;</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> lista <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">"lista"</span>)<span class="op">;</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> tareas<span class="op">.</span><span class="at">length</span><span class="op">;</span> i <span class="op">+=</span> <span class="dv">1</span>) {</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> item <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">createElement</span>(<span class="st">"li"</span>)<span class="op">;</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>    item<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> tareas[i]<span class="op">;</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>    lista<span class="op">.</span><span class="fu">appendChild</span>(item)<span class="op">;</span></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">script</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="cómo-se-ve-esto-en-el-navegador-5" class="level5">
+<h5 class="anchored" data-anchor-id="cómo-se-ve-esto-en-el-navegador-5">Cómo se ve esto en el navegador</h5>
+<p>El archivo muestra una lista vacía en el código, pero <code>JavaScript</code> la llena al cargarse la página.</p>
+<div class="browser-preview">
+<div class="browser-bar">
+<div class="browser-dots" aria-hidden="true">
+● ● ●
+</div>
+<div class="browser-url">
+03-bucles.html
+</div>
+</div>
+<div class="browser-body">
+<ul>
+<li>
+Revisar contrato
+</li>
+<li>
+Llamar al cliente
+</li>
+<li>
+Enviar informe
+</li>
+</ul>
+</div>
+</div>
 </section>
-<section id="práctica-en-editor" class="level2">
-<h2 class="anchored" data-anchor-id="práctica-en-editor">Práctica en editor</h2>
-<p>Crea una página mínima con:</p>
+</section>
+<section id="función-para-calcular-una-multa" class="level4">
+<h4 class="anchored" data-anchor-id="función-para-calcular-una-multa">Función para calcular una multa</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> id</span><span class="op">=</span><span class="st">"salida"</span><span class="dt">&gt;&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">script</span><span class="dt">&gt;</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">function</span> <span class="fu">calcularMulta</span>(multaPorDia<span class="op">,</span> dias) {</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> multaPorDia <span class="op">*</span> dias<span class="op">;</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> total <span class="op">=</span> <span class="fu">calcularMulta</span>(<span class="dv">25</span><span class="op">,</span> <span class="dv">4</span>)<span class="op">;</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>  <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">"salida"</span>)<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> <span class="st">"Monto total: "</span> <span class="op">+</span> total<span class="op">;</span></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">script</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="cómo-se-ve-esto-en-el-navegador-6" class="level5">
+<h5 class="anchored" data-anchor-id="cómo-se-ve-esto-en-el-navegador-6">Cómo se ve esto en el navegador</h5>
+<p>Aquí el cálculo no se ve como operación interna, sino como resultado visible en la página.</p>
+<div class="browser-preview">
+<div class="browser-bar">
+<div class="browser-dots" aria-hidden="true">
+● ● ●
+</div>
+<div class="browser-url">
+04-funciones.html
+</div>
+</div>
+<div class="browser-body">
+<p>
+Monto total: 100
+</p>
+</div>
+</div>
+</section>
+</section>
+<section id="evento-de-clic" class="level4">
+<h4 class="anchored" data-anchor-id="evento-de-clic">Evento de clic</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">button</span><span class="ot"> id</span><span class="op">=</span><span class="st">"boton"</span><span class="dt">&gt;</span>Haz clic aqui<span class="dt">&lt;/</span><span class="kw">button</span><span class="dt">&gt;</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> id</span><span class="op">=</span><span class="st">"mensaje"</span><span class="dt">&gt;&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">script</span><span class="dt">&gt;</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> boton <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">"boton"</span>)<span class="op">;</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> mensaje <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">"mensaje"</span>)<span class="op">;</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>  boton<span class="op">.</span><span class="fu">addEventListener</span>(<span class="st">"click"</span><span class="op">,</span> <span class="kw">function</span> () {</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>    mensaje<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> <span class="st">"El boton fue presionado"</span><span class="op">;</span></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">script</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="cómo-se-ve-esto-en-el-navegador-7" class="level5">
+<h5 class="anchored" data-anchor-id="cómo-se-ve-esto-en-el-navegador-7">Cómo se ve esto en el navegador</h5>
+<p>Cuando abras el archivo, primero verás solo el botón y un espacio vacío debajo. Después del clic aparecerá el mensaje.</p>
+<p class="browser-state-title">Antes del clic</p>
+<div class="browser-preview">
+  <div class="browser-bar">
+    <div class="browser-dots" aria-hidden="true">● ● ●</div>
+    <div class="browser-url">05-eventos.html</div>
+  </div>
+  <div class="browser-body">
+    <button type="button" style="padding: 0.5rem 0.9rem;">Haz clic aqui</button>
+    <p style="min-height: 1.5rem; margin-top: 1rem;"></p>
+  </div>
+</div>
+
+<p class="browser-state-title">Después del clic</p>
+<div class="browser-preview">
+  <div class="browser-bar">
+    <div class="browser-dots" aria-hidden="true">● ● ●</div>
+    <div class="browser-url">05-eventos.html</div>
+  </div>
+  <div class="browser-body">
+    <button type="button" style="padding: 0.5rem 0.9rem;">Haz clic aqui</button>
+    <p style="margin-top: 1rem;">El boton fue presionado</p>
+  </div>
+</div>
+<p>Estos tres movimientos resumen buena parte de la lógica inicial de <code>JavaScript</code>: iterar, reutilizar y reaccionar. Con eso ya puede construirse una interfaz pequeña que no sea solo decorativa.</p>
+<p>En el navegador, sus efectos serían visibles de esta manera:</p>
 <ul>
-<li>un título;</li>
-<li>una breve presentación;</li>
-<li>una sección sobre intereses o experiencia;</li>
-<li>un enlace;</li>
-<li>un archivo HTML y, si es posible, un archivo CSS separado.</li>
+<li>el bucle llena una lista vacía con tres tareas;</li>
+<li>la función muestra un resultado como <code>Monto total: 100</code>;</li>
+<li>el evento de clic deja inicialmente un botón solo y, después de pulsarlo, hace aparecer el mensaje <code>El boton fue presionado</code>.</li>
 </ul>
+<p>Lo importante aquí es no perder de vista el vínculo entre instrucción y resultado. <code>JavaScript</code> no es solo texto dentro de <code>&lt;script&gt;</code>: es la parte que introduce cambios, respuestas y cálculos en la pantalla.</p>
+</section>
+</section>
+</section>
+</section>
+<section id="dom-y-formularios-leer-lo-que-la-persona-escribe" class="level2">
+<h2 class="anchored" data-anchor-id="dom-y-formularios-leer-lo-que-la-persona-escribe">DOM y formularios: leer lo que la persona escribe</h2>
+<p>El siguiente paso consiste en conectar <code>JavaScript</code> con campos reales de la página. Allí aparece el DOM, es decir, la forma en que el navegador representa internamente el documento para que pueda ser leído y modificado.</p>
+<section id="ejercicio-11.-leer-un-input-y-mostrar-un-saludo" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-11.-leer-un-input-y-mostrar-un-saludo">Ejercicio 11. Leer un input y mostrar un saludo</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE</span> html<span class="dt">&gt;</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">html</span><span class="ot"> lang</span><span class="op">=</span><span class="st">"es"</span><span class="dt">&gt;</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">meta</span><span class="ot"> charset</span><span class="op">=</span><span class="st">"UTF-8"</span><span class="dt">&gt;</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">title</span><span class="dt">&gt;</span>Leer input<span class="dt">&lt;/</span><span class="kw">title</span><span class="dt">&gt;</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">h1</span><span class="dt">&gt;</span>Saludo personalizado<span class="dt">&lt;/</span><span class="kw">h1</span><span class="dt">&gt;</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">input</span><span class="ot"> id</span><span class="op">=</span><span class="st">"nombre"</span><span class="ot"> type</span><span class="op">=</span><span class="st">"text"</span><span class="ot"> placeholder</span><span class="op">=</span><span class="st">"Escribe tu nombre"</span><span class="dt">&gt;</span></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">button</span><span class="ot"> id</span><span class="op">=</span><span class="st">"mostrar"</span><span class="dt">&gt;</span>Mostrar saludo<span class="dt">&lt;/</span><span class="kw">button</span><span class="dt">&gt;</span></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> id</span><span class="op">=</span><span class="st">"salida"</span><span class="dt">&gt;&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">script</span><span class="dt">&gt;</span></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>      <span class="kw">const</span> boton <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">"mostrar"</span>)<span class="op">;</span></span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>      <span class="kw">const</span> salida <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">"salida"</span>)<span class="op">;</span></span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>      boton<span class="op">.</span><span class="fu">addEventListener</span>(<span class="st">"click"</span><span class="op">,</span> <span class="kw">function</span> () {</span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>        <span class="kw">const</span> nombre <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">"nombre"</span>)<span class="op">.</span><span class="at">value</span><span class="op">;</span></span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a>        salida<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> <span class="st">"Hola, "</span> <span class="op">+</span> nombre<span class="op">;</span></span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>      })<span class="op">;</span></span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">script</span><span class="dt">&gt;</span></span>
+<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>La novedad aquí es el uso de <code>.value</code>, que permite leer lo que una persona escribió en un campo. La página deja de ser una pieza cerrada y empieza a reaccionar a una entrada externa.</p>
+<p>En el navegador verás una caja para escribir tu nombre, un botón y un espacio vacío. Si escribes <code>Lucía</code> y haces clic, el espacio vacío pasa a mostrar <code>Hola, Lucía</code>. Esa escena, tan simple, contiene una idea central de toda interfaz web: leer una entrada y devolver una salida visible.</p>
+<p class="browser-state-title">Antes de escribir</p>
+<div class="browser-preview">
+  <div class="browser-bar">
+    <div class="browser-dots" aria-hidden="true">● ● ●</div>
+    <div class="browser-url">01-leer-input.html</div>
+  </div>
+  <div class="browser-body">
+    <h1>Saludo personalizado</h1>
+    <input type="text" placeholder="Escribe tu nombre" style="padding: 0.45rem; width: min(280px, 100%);">
+    <button type="button" style="margin-left: 0.5rem; padding: 0.45rem 0.85rem;">Mostrar saludo</button>
+    <p style="margin-top: 1rem; min-height: 1.5rem;"></p>
+  </div>
+</div>
+
+<p class="browser-state-title">Después del clic</p>
+<div class="browser-preview">
+  <div class="browser-bar">
+    <div class="browser-dots" aria-hidden="true">● ● ●</div>
+    <div class="browser-url">01-leer-input.html</div>
+  </div>
+  <div class="browser-body">
+    <h1>Saludo personalizado</h1>
+    <input type="text" value="Lucía" style="padding: 0.45rem; width: min(280px, 100%);">
+    <button type="button" style="margin-left: 0.5rem; padding: 0.45rem 0.85rem;">Mostrar saludo</button>
+    <p style="margin-top: 1rem;">Hola, Lucía</p>
+  </div>
+</div>
+</section>
+<section id="ejercicio-12.-validar-un-formulario-y-cambiar-estilos" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-12.-validar-un-formulario-y-cambiar-estilos">Ejercicio 12. Validar un formulario y cambiar estilos</h3>
+<p>Dos ejercicios del repositorio base ayudan a cerrar esta etapa: revisar si un campo está vacío y modificar visualmente un bloque desde un evento.</p>
+<section id="validación-simple" class="level4">
+<h4 class="anchored" data-anchor-id="validación-simple">Validación simple</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">input</span><span class="ot"> id</span><span class="op">=</span><span class="st">"correo"</span><span class="ot"> type</span><span class="op">=</span><span class="st">"email"</span><span class="ot"> placeholder</span><span class="op">=</span><span class="st">"correo@ejemplo.com"</span><span class="dt">&gt;</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">button</span><span class="ot"> id</span><span class="op">=</span><span class="st">"enviar"</span><span class="dt">&gt;</span>Validar<span class="dt">&lt;/</span><span class="kw">button</span><span class="dt">&gt;</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> id</span><span class="op">=</span><span class="st">"mensaje"</span><span class="dt">&gt;&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">script</span><span class="dt">&gt;</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> boton <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">"enviar"</span>)<span class="op">;</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> mensaje <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">"mensaje"</span>)<span class="op">;</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>  boton<span class="op">.</span><span class="fu">addEventListener</span>(<span class="st">"click"</span><span class="op">,</span> <span class="kw">function</span> () {</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> correo <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">"correo"</span>)<span class="op">.</span><span class="at">value</span><span class="op">;</span></span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (correo <span class="op">===</span> <span class="st">""</span>) {</span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>      mensaje<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> <span class="st">"Debes escribir un correo"</span><span class="op">;</span></span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span><span class="op">;</span></span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>    mensaje<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> <span class="st">"Formulario listo para enviar"</span><span class="op">;</span></span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">script</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="cómo-se-ve-esto-en-el-navegador-8" class="level5">
+<h5 class="anchored" data-anchor-id="cómo-se-ve-esto-en-el-navegador-8">Cómo se ve esto en el navegador</h5>
+<p>Al inicio verás una caja para correo, un botón y un espacio vacío. Si presionas <code>Validar</code> sin escribir nada, aparecerá el mensaje de error. Si escribes un correo y vuelves a hacer clic, el mensaje cambia.</p>
+</section>
+</section>
+<section id="cambio-de-estilo" class="level4">
+<h4 class="anchored" data-anchor-id="cambio-de-estilo">Cambio de estilo</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> id</span><span class="op">=</span><span class="st">"caja"</span><span class="ot"> class</span><span class="op">=</span><span class="st">"caja"</span><span class="dt">&gt;</span>Este cuadro puede cambiar de color.<span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">button</span><span class="ot"> id</span><span class="op">=</span><span class="st">"cambiar"</span><span class="dt">&gt;</span>Cambiar color<span class="dt">&lt;/</span><span class="kw">button</span><span class="dt">&gt;</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">script</span><span class="dt">&gt;</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> boton <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">"cambiar"</span>)<span class="op">;</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> caja <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">"caja"</span>)<span class="op">;</span></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>  boton<span class="op">.</span><span class="fu">addEventListener</span>(<span class="st">"click"</span><span class="op">,</span> <span class="kw">function</span> () {</span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>    caja<span class="op">.</span><span class="at">style</span><span class="op">.</span><span class="at">backgroundColor</span> <span class="op">=</span> <span class="st">"#fde68a"</span><span class="op">;</span></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">script</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="cómo-se-ve-esto-en-el-navegador-9" class="level5">
+<h5 class="anchored" data-anchor-id="cómo-se-ve-esto-en-el-navegador-9">Cómo se ve esto en el navegador</h5>
+<p>Primero aparecerá un cuadro con color de fondo inicial y un botón debajo. Después del clic, el mismo cuadro cambia de color.</p>
+<p>Estas operaciones ya se parecen bastante a muchas microinteracciones reales: validar antes de seguir, mostrar mensajes contextuales y hacer visibles los cambios de estado.</p>
+<p>En términos visibles, los dos ejemplos hacen esto:</p>
+<p class="browser-state-title">Validación del formulario</p>
+<div class="browser-preview">
+  <div class="browser-bar">
+    <div class="browser-dots" aria-hidden="true">● ● ●</div>
+    <div class="browser-url">02-validar-formulario.html</div>
+  </div>
+  <div class="browser-body">
+    <input type="email" placeholder="correo@ejemplo.com" style="padding: 0.45rem; width: min(280px, 100%);">
+    <button type="button" style="margin-left: 0.5rem; padding: 0.45rem 0.85rem;">Validar</button>
+    <p style="margin-top: 1rem;">Debes escribir un correo</p>
+  </div>
+</div>
+
+<p class="browser-state-title">Cambio de estilo</p>
+<div class="browser-preview">
+  <div class="browser-bar">
+    <div class="browser-dots" aria-hidden="true">● ● ●</div>
+    <div class="browser-url">03-cambiar-estilos.html</div>
+  </div>
+  <div class="browser-body">
+    <div style="padding: 20px; background: #fde68a;">Este cuadro puede cambiar de color.</div>
+    <button type="button" style="margin-top: 1rem; padding: 0.45rem 0.85rem;">Cambiar color</button>
+  </div>
+</div>
+<p>Esa relación entre acción y respuesta es la razón por la cual <code>JavaScript</code> importa tanto en formularios, paneles y pequeñas herramientas de trabajo.</p>
+</section>
+</section>
+</section>
+</section>
+<section id="del-archivo-local-a-la-publicación" class="level2">
+<h2 class="anchored" data-anchor-id="del-archivo-local-a-la-publicación">Del archivo local a la publicación</h2>
+<p>Hasta aquí el trabajo ocurre en tu máquina: editas archivos y el navegador los abre localmente. El paso siguiente consiste en publicarlos para que otras personas puedan acceder a ellos desde internet. En este curso, la vía recomendada para hacerlo es <a href="../Users/dante/github/manual-legaltech/tutoriales/github-pages.qmd">GitHub Pages</a>, porque permite publicar sitios estáticos directamente desde un repositorio y mantener unidos archivo, versión y resultado visible.</p>
+<p>Ese tutorial conviene leerlo cuando ya entiendes qué hace <code>index.html</code>, cómo se enlaza un <code>style.css</code> y qué recursos necesita realmente la página. Publicar demasiado pronto, sin comprender esa estructura mínima, suele volver la experiencia más confusa de lo necesario.</p>
 </section>
 <section id="conclusiones-del-capítulo" class="level2">
 <h2 class="anchored" data-anchor-id="conclusiones-del-capítulo">Conclusiones del capítulo</h2>
-<p>Entender la web desde dentro cambia la relación con las plataformas que usamos todos los días. Lo que antes parecía un espacio abstracto empieza a verse como una combinación concreta de estructura, infraestructura y decisiones de publicación. Para una formación jurídica, esa mirada importa porque aclara dónde circula la información y bajo qué condiciones se vuelve visible.</p>
+<p>Aprender una base de <code>HTML</code>, <code>CSS</code> y <code>JavaScript</code> cambia la relación con la web porque vuelve visible su materialidad mínima. Una página deja de parecer un contenedor mágico y empieza a verse como una estructura de contenido, una capa de estilo y una serie de comportamientos simples pero controlables. Para estudiantes de Derecho, esa alfabetización no es ornamental. Ayuda a entender mejor el entorno donde hoy se presentan servicios, perfiles, formularios e información pública.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -515,10 +1269,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>internet, web y nube no son sinónimos;</li>
-<li>una página web combina estructura, estilo y, cuando hace falta, comportamiento;</li>
-<li>publicar información digital también implica exposición e infraestructura;</li>
-<li>una página estática es un buen punto de entrada para aprender a publicar con criterio.</li>
+<li><code>HTML</code> organiza el contenido y le da jerarquía.</li>
+<li><code>CSS</code> mejora legibilidad, disposición y apariencia visual.</li>
+<li><code>JavaScript</code> permite calcular, reaccionar y modificar la página.</li>
+<li>Los formularios muestran cómo la web captura y procesa entradas del usuario.</li>
 </ul>
 </div>
 </div>
@@ -532,7 +1286,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Buena parte del trabajo jurídico contemporáneo ocurre en entornos que alguien diseñó, alojó y puso en línea. Entender esa materialidad técnica ayuda no solo a publicar mejor, sino también a evaluar con más criterio qué significa confiar información, identidad profesional o servicios a una plataforma.</p>
+<p>Buena parte del trabajo jurídico digital ocurre en interfaces que parecen naturales solo porque alguien ya tomó antes muchas decisiones de estructura, lenguaje y comportamiento. Aprender a construir versiones pequeñas de esas interfaces ayuda no solo a publicarlas mejor, sino también a leer con más criterio cómo funcionan los entornos que usamos todos los días.</p>
 </div>
 </div>
 

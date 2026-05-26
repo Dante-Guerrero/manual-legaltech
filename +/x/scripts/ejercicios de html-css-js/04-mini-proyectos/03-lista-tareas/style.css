@@ -1,0 +1,50 @@
+/*
+Guia de lectura:
+- Fila 1: body crea el fondo general.
+- Fila 6: .contenedor crea la caja principal.
+- Fila 14: .fila usa flex para poner input y boton lado a lado.
+- Fila 19: input ocupa el espacio disponible.
+- Fila 24: button resalta la accion.
+- Fila 31: li separa visualmente cada tarea.
+*/
+
+/* Fila 9: body define fondo y fuente base. */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff7ed;
+}
+
+/* Fila 15: .contenedor crea una tarjeta blanca para la lista. */
+.contenedor {
+  width: min(540px, calc(100% - 32px));
+  margin: 48px auto;
+  background: white;
+  padding: 24px;
+  border-radius: 18px;
+}
+
+/* Fila 24: .fila pone el input y el boton en horizontal con separacion. */
+.fila {
+  display: flex;
+  gap: 12px;
+}
+
+/* Fila 29: input crece para ocupar casi todo el ancho de la fila. */
+input {
+  flex: 1;
+  padding: 12px;
+}
+
+/* Fila 34: button recibe color y padding para verse clicable. */
+button {
+  padding: 12px 18px;
+  border: 0;
+  background: #ea580c;
+  color: white;
+}
+
+/* Fila 41: li agrega espacio entre tareas para que la lista se lea mejor. */
+li {
+  margin-top: 12px;
+}

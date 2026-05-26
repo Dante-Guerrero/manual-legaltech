@@ -1,0 +1,40 @@
+<!--
+Nombre: 05-eventos.html
+Tema: Eventos
+Objetivo: Responder al clic de un boton.
+Como usarlo: abre 02-javascript/05-eventos.html en tu navegador
+
+Guia de lectura:
+- Fila 13: se agrega <button>; el usuario puede hacer clic.
+- Fila 14: se agrega <p id="mensaje">; mostrara la respuesta.
+- Filas 17 y 18: se buscan las etiquetas en el DOM.
+- Fila 20: se agrega addEventListener(); su efecto es reaccionar al clic.
+- Fila 21: se cambia el texto del parrafo cuando ocurre el evento.
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Eventos</title>
+  </head>
+  <body>
+    <h1>Boton con evento</h1>
+    <!-- Fila 13: <button> crea un control que el usuario puede presionar. -->
+    <button id="boton">Haz clic aqui</button>
+    <!-- Fila 14: <p> empieza vacio y recibira el mensaje despues del clic. -->
+    <p id="mensaje"></p>
+
+    <script>
+      // Fila 17: se obtiene una referencia al boton usando su id.
+      const boton = document.getElementById("boton");
+      // Fila 18: se obtiene una referencia al parrafo que se actualizara.
+      const mensaje = document.getElementById("mensaje");
+
+      // Fila 20: addEventListener escucha el evento "click" sobre el boton.
+      boton.addEventListener("click", function () {
+        // Fila 21: al hacer clic, cambia el contenido del parrafo y aparece en pantalla.
+        mensaje.textContent = "El boton fue presionado";
+      });
+    </script>
+  </body>
+</html>

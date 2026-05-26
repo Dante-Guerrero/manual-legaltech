@@ -1,0 +1,49 @@
+/* 
+Guia de lectura:
+- Fila 1: body centra la tarjeta y crea el fondo general.
+- Fila 9: .tarjeta crea la caja blanca principal.
+- Fila 18: .etiqueta cambia el color y peso del texto corto superior.
+- Fila 24: .cargo cambia el color del subtitulo.
+- Fila 28: button da forma y color al boton.
+*/
+
+/* Fila 9: body afecta toda la pagina; centra el contenido y pinta el fondo. */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, #f7efe5, #e7ecf5);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+/* Fila 17: .tarjeta crea la tarjeta visual con sombra, borde redondeado y ancho controlado. */
+.tarjeta {
+  width: min(420px, calc(100% - 32px));
+  background: white;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 18px 40px rgba(31, 41, 55, 0.15);
+}
+
+/* Fila 26: .etiqueta resalta el texto corto superior. */
+.etiqueta {
+  margin: 0 0 8px;
+  color: #9a3412;
+  font-weight: bold;
+}
+
+/* Fila 32: .cargo suaviza el color del subtitulo. */
+.cargo {
+  color: #475569;
+}
+
+/* Fila 36: button cambia la apariencia del boton para que destaque y parezca interactivo. */
+button {
+  background: #1d4ed8;
+  color: white;
+  border: 0;
+  padding: 12px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,43 @@
+<!--
+Nombre: 03-tipografia.html
+Tema: Tipografia
+Objetivo: Cambiar tamano, peso y alineacion del texto.
+Como usarlo: abre 01-css/03-tipografia.html en tu navegador
+
+Guia de lectura:
+- Filas 12 a 15: se agrega body; define fuente principal y espacio.
+- Filas 17 a 20: se agrega h1; aumenta el tamano y centra el titulo.
+- Filas 22 a 25: se agrega p; mejora lectura con tamano y altura de linea.
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Tipografia</title>
+    <style>
+      /* Fila 12: body cambia la familia tipografica de todo el documento. */
+      body {
+        font-family: Georgia, serif;
+        padding: 32px;
+      }
+
+      /* Fila 17: h1 aumenta el tamano y centra el encabezado principal. */
+      h1 {
+        font-size: 36px;
+        text-align: center;
+      }
+
+      /* Fila 22: p mejora la lectura del parrafo con mayor tamano y line-height. */
+      p {
+        font-size: 18px;
+        line-height: 1.7;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Fila 30: <h1> muestra un titulo afectado por las reglas tipograficas. -->
+    <h1>Lectura clara</h1>
+    <!-- Fila 31: <p> muestra el texto principal con mejor legibilidad. -->
+    <p>Con CSS puedes mejorar la legibilidad del contenido cambiando el tamano de letra, la distancia entre lineas y la alineacion del texto.</p>
+  </body>
+</html>

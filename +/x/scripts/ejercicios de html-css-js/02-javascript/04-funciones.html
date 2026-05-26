@@ -1,0 +1,39 @@
+<!--
+Nombre: 04-funciones.html
+Tema: Funciones
+Objetivo: Crear una funcion reutilizable.
+Como usarlo: abre 02-javascript/04-funciones.html en tu navegador
+
+Guia de lectura:
+- Fila 13: se agrega <h1>; introduce el ejemplo.
+- Fila 14: se agrega <p id="salida">; mostrara el calculo.
+- Filas 17 a 19: se agrega la funcion calcularMulta(); encapsula una operacion reutilizable.
+- Fila 21: se llama a la funcion con dos valores.
+- Fila 22: se muestra el resultado en la pagina.
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Funciones</title>
+  </head>
+  <body>
+    <!-- Fila 13: <h1> presenta el ejemplo de funcion. -->
+    <h1>Calculo simple</h1>
+    <!-- Fila 14: <p> vacio recibira el texto del resultado. -->
+    <p id="salida"></p>
+
+    <script>
+      // Fila 17: function crea un bloque reutilizable que recibe datos de entrada.
+      function calcularMulta(multaPorDia, dias) {
+        // Fila 18: return devuelve el producto para poder usarlo fuera de la funcion.
+        return multaPorDia * dias;
+      }
+
+      // Fila 21: aqui se llama a la funcion con 25 y 4.
+      const total = calcularMulta(25, 4);
+      // Fila 22: el resultado se escribe dentro del <p id="salida">.
+      document.getElementById("salida").textContent = "Monto total: " + total;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!--
+Nombre: 01-leer-input.html
+Tema: Leer valores de input
+Objetivo: Tomar texto escrito por el usuario y mostrarlo en pantalla.
+Como usarlo: abre 03-dom-formularios/01-leer-input.html en tu navegador
+
+Guia de lectura:
+- Fila 13: se agrega <input>; permite escribir el nombre.
+- Fila 14: se agrega <button>; dispara la accion.
+- Fila 15: se agrega <p id="salida">; mostrara el saludo.
+- Fila 21: se agrega el evento click.
+- Fila 22: se lee el valor del input.
+- Fila 23: se cambia el texto del parrafo.
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Leer input</title>
+  </head>
+  <body>
+    <h1>Saludo personalizado</h1>
+    <!-- Fila 13: <input> crea una caja donde el usuario escribe su nombre. -->
+    <input id="nombre" type="text" placeholder="Escribe tu nombre">
+    <!-- Fila 14: <button> permite ejecutar el saludo al hacer clic. -->
+    <button id="mostrar">Mostrar saludo</button>
+    <!-- Fila 15: <p> vacio mostrara el resultado final. -->
+    <p id="salida"></p>
+
+    <script>
+      // Fila 18: boton guarda la referencia al <button id="mostrar">.
+      const boton = document.getElementById("mostrar");
+      // Fila 19: salida guarda la referencia al <p id="salida">.
+      const salida = document.getElementById("salida");
+
+      // Fila 21: este evento se activa cuando el usuario hace clic en el boton.
+      boton.addEventListener("click", function () {
+        // Fila 22: .value lee lo que el usuario escribio en el <input id="nombre">.
+        const nombre = document.getElementById("nombre").value;
+        // Fila 23: textContent cambia el contenido del parrafo y muestra el saludo.
+        salida.textContent = "Hola, " + nombre;
+      });
+    </script>
+  </body>
+</html>

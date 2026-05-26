@@ -1,0 +1,50 @@
+<!--
+Nombre: 04-flexbox-basico.html
+Tema: Flexbox
+Objetivo: Alinear cajas en fila con flex.
+Como usarlo: abre 01-css/04-flexbox-basico.html en tu navegador
+
+Guia de lectura:
+- Filas 12 a 15: se agrega body; da espacio general a la pagina.
+- Filas 17 a 20: se agrega .fila; su efecto es poner los hijos en una misma fila.
+- Filas 22 a 27: se agrega .bloque; da color y tamano flexible a cada caja.
+- Fila 32: se agrega <div class="fila">; actua como contenedor flex.
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Flexbox basico</title>
+    <style>
+      /* Fila 12: body aplica fuente y padding general. */
+      body {
+        font-family: Arial, sans-serif;
+        padding: 24px;
+      }
+
+      /* Fila 17: .fila usa display:flex para alinear cajas horizontalmente. */
+      .fila {
+        display: flex;
+        gap: 16px;
+      }
+
+      /* Fila 22: .bloque da apariencia de tarjeta a cada elemento dentro de .fila. */
+      .bloque {
+        flex: 1;
+        padding: 20px;
+        background: #dbeafe;
+        border: 1px solid #60a5fa;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Panel de accesos</h1>
+    <!-- Fila 32: <div class="fila"> agrupa bloques y los convierte en columnas horizontales. -->
+    <div class="fila">
+      <!-- Filas 33 a 35: cada <div class="bloque"> aparece como una caja flexible. -->
+      <div class="bloque">Agenda</div>
+      <div class="bloque">Clientes</div>
+      <div class="bloque">Pagos</div>
+    </div>
+  </body>
+</html>

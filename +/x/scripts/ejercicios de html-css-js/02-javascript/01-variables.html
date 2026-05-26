@@ -1,0 +1,37 @@
+<!--
+Nombre: 01-variables.html
+Tema: Variables
+Objetivo: Guardar datos y usarlos en un mensaje.
+Como usarlo: abre 02-javascript/01-variables.html en tu navegador
+
+Guia de lectura:
+- Fila 13: se agrega <h1>; presenta el tema del ejemplo.
+- Fila 14: se agrega <p id="salida">; es la zona donde aparecera el resultado.
+- Filas 17 a 19: se crean variables con const; guardan datos reutilizables.
+- Fila 21: se cambia el texto del parrafo; su efecto es mostrar el mensaje en pantalla.
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Variables</title>
+  </head>
+  <body>
+    <!-- Fila 13: <h1> muestra el titulo principal del ejemplo. -->
+    <h1>Variables en JavaScript</h1>
+    <!-- Fila 14: <p> con id="salida" funciona como contenedor del resultado final. -->
+    <p id="salida"></p>
+
+    <script>
+      // Fila 17: const nombre guarda un texto en memoria.
+      const nombre = "Carla";
+      // Fila 18: const curso guarda otro valor que luego se combina con nombre.
+      const curso = "HTML y JavaScript";
+      // Fila 19: se crea una tercera variable uniendo los textos anteriores.
+      const mensaje = nombre + " esta aprendiendo " + curso;
+
+      // Fila 21: textContent cambia el contenido del <p id="salida"> y lo muestra en la pagina.
+      document.getElementById("salida").textContent = mensaje;
+    </script>
+  </body>
+</html>
