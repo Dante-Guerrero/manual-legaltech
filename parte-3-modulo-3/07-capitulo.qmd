@@ -40,7 +40,7 @@ La separación entre `HTML`, `CSS` y `JavaScript` conviene entenderla desde el p
 - `CSS` controla la apariencia visual;
 - `JavaScript` agrega comportamiento e interacción.
 
-La utilidad pedagógica de esta división es inmediata. Obliga a no mezclar funciones. Si una página no se entiende, suele haber un problema de estructura. Si se entiende pero se ve mal, el problema suele ser visual. Si se ve bien pero no responde a la acción del usuario, el problema está en el comportamiento. Esa separación ayuda a pensar con más claridad también cuando después se usan herramientas más complejas.
+La utilidad pedagógica de esta división es inmediata. Obliga a no mezclar funciones. Si una página no se entiende, suele haber un problema de estructura. Si se entiende pero se ve mal, el problema suele ser visual. Si se ve bien pero no responde a la acción del usuario, el problema está en el comportamiento. Esa separación ayuda a pensar con más claridad también cuando después se usan herramientas más complejas. Desde el punto de vista técnico, además, conviene recordar una idea básica: `HTML` organiza la estructura antes que la apariencia, y separar esa estructura de la capa visual facilita mantenimiento y revisión posterior [@mdnhtml2026; @mdncss2026].
 
 ## Antes de entrar al código
 
@@ -57,7 +57,7 @@ Para trabajar esta sesión basta con una carpeta simple y un navegador. Lo más 
 - `style.css` cuando quieras separar estilos;
 - `script.js` cuando quieras mover el comportamiento fuera del HTML.
 
-Una forma especialmente cómoda de hacer esto es trabajar los archivos en **Visual Studio Code**, porque te permite abrir la carpeta completa, editar `HTML`, `CSS` y `JavaScript` en el mismo espacio y luego abrir o recargar el resultado en el navegador. Si todavía no tienes ese entorno listo, conviene revisar el tutorial [Visual Studio Code](/Users/dante/github/manual-legaltech/tutoriales/visual-studio-code.qmd).
+Una forma especialmente cómoda de hacer esto es trabajar los archivos en **Visual Studio Code**, porque te permite abrir la carpeta completa, editar `HTML`, `CSS` y `JavaScript` en el mismo espacio y luego abrir o recargar el resultado en el navegador. Si todavía no tienes ese entorno listo, conviene revisar el tutorial [Visual Studio Code](../tutoriales/visual-studio-code.qmd).
 
 Cada ejercicio de este capítulo puede abrirse directamente en el navegador. La recomendación práctica es avanzar en orden, modificar una o dos líneas y recargar la página después de cada cambio. Si algo no cambia en pantalla, conviene revisar tres cosas antes de seguir: si el archivo quedó guardado, si abriste el archivo correcto y si el navegador recargó la versión más reciente.
 
@@ -111,6 +111,7 @@ La utilidad del ejemplo no está en su espectacularidad, sino en mostrar que una
 
 El punto decisivo es distinguir entre el archivo y su resultado visible. El navegador no muestra las etiquetas como texto normal. Las interpreta y las convierte en una página.
 
+<!-- preview: 00-hola-mundo -->
 <div class="browser-preview">
 <div class="browser-bar">
   <div class="browser-dots" aria-hidden="true">● ● ●</div>
@@ -121,6 +122,7 @@ El punto decisivo es distinguir entre el archivo y su resultado visible. El nave
   <p>Esta es mi primera pagina web.</p>
 </div>
 </div>
+<!-- /preview -->
 
 La diferencia parece simple, pero enseña algo fundamental. `HTML` describe la estructura del contenido y el navegador decide cómo presentarla. El `h1` aparece como encabezado principal; el `p` aparece como párrafo. Cuando abras el archivo en el navegador, no verás “código fuente”, sino la interpretación visual de ese código.
 
@@ -153,6 +155,7 @@ La transición importante aquí es conceptual. `HTML` no sirve solo para “pone
 
 Si abres este archivo, verás un título principal y, debajo, dos bloques de contenido más pequeños.
 
+<!-- preview: 01-texto-y-titulos -->
 <div class="browser-preview">
 <div class="browser-bar">
   <div class="browser-dots" aria-hidden="true">● ● ●</div>
@@ -166,6 +169,7 @@ Si abres este archivo, verás un título principal y, debajo, dos bloques de con
   <p>Ayuda a entender temas como privacidad, contratos electronicos y firma digital.</p>
 </div>
 </div>
+<!-- /preview -->
 
 La página sigue siendo muy simple, pero ya no muestra una sola línea aislada. Empieza a parecerse a un texto organizado por secciones.
 
@@ -236,6 +240,7 @@ En estos ejemplos `HTML` deja ver algo más cercano al trabajo real: una lista s
 
 En el primer archivo verás un título, tres tareas con viñetas y un enlace. En el segundo, verás una tabla con tres columnas y dos registros.
 
+<!-- preview: 02-listas-y-enlaces -->
 ```{=html}
 <p class="browser-state-title">Vista de listas y enlaces</p>
 <div class="browser-preview">
@@ -253,7 +258,11 @@ En el primer archivo verás un título, tres tareas con viñetas y un enlace. En
     <p>Puedes buscar mas informacion en <a href="#">MDN en espanol</a>.</p>
   </div>
 </div>
+```
+<!-- /preview -->
 
+<!-- preview: 03-tablas -->
+```{=html}
 <p class="browser-state-title">Vista de tabla</p>
 <div class="browser-preview">
   <div class="browser-bar">
@@ -282,6 +291,7 @@ En el primer archivo verás un título, tres tareas con viñetas y un enlace. En
   </div>
 </div>
 ```
+<!-- /preview -->
 
 La utilidad de abrir ambos archivos es ver que `HTML` no solo sirve para redactar párrafos. También organiza elementos repetidos y datos comparables.
 
@@ -330,6 +340,7 @@ La enseñanza del ejemplo no está en enviar el formulario, sino en reconocer lo
 
 Al abrirlo, verás un pequeño formulario: una etiqueta para `Nombre`, una caja de texto, otra para `Correo`, un área grande para `Mensaje` y un botón `Enviar`.
 
+<!-- preview: 04-formulario-simple -->
 <div class="browser-preview">
 <div class="browser-bar">
   <div class="browser-dots" aria-hidden="true">● ● ●</div>
@@ -348,6 +359,7 @@ Al abrirlo, verás un pequeño formulario: una etiqueta para `Nombre`, una caja 
   </form>
 </div>
 </div>
+<!-- /preview -->
 
 Todavía no ocurre ninguna validación ni se envían datos, pero ya aparece la estructura básica de muchas páginas de contacto o registro.
 
@@ -394,6 +406,7 @@ Este archivo muestra una primera decisión importante: `CSS` puede escribirse de
 
 Sin `CSS`, el navegador mostraría algo muy simple: un título negro, un párrafo estándar y fondo blanco. Con las reglas anteriores, el resultado visible cambia de inmediato.
 
+<!-- preview: 00-estilos-en-linea -->
 <div class="browser-preview">
 <div class="browser-bar">
   <div class="browser-dots" aria-hidden="true">● ● ●</div>
@@ -404,6 +417,7 @@ Sin `CSS`, el navegador mostraría algo muy simple: un título negro, un párraf
   <p style="color: #444; line-height: 1.6;">CSS permite cambiar la apariencia de una pagina web.</p>
 </div>
 </div>
+<!-- /preview -->
 
 La utilidad de esta comparación está en que permite aislar el papel de `CSS`. El contenido sigue siendo exactamente el mismo. Lo que cambia es la forma en que se presenta: color, espacio y legibilidad.
 
@@ -445,6 +459,7 @@ La clase `.tarjeta` enseña algo fundamental: el contenido no solo se escribe, t
 
 Si lo abres en el navegador, no verás solo un texto suelto. Verás una especie de ficha o tarjeta centrada, con fondo blanco, borde visible y espacio interior. Ese efecto importa porque muestra que `CSS` no se limita a “pintar”; también organiza bloques y les da presencia visual.
 
+<!-- preview: 02-cajas-y-espaciado -->
 ```{=html}
 <div class="browser-preview">
   <div class="browser-bar">
@@ -459,6 +474,7 @@ Si lo abres en el navegador, no verás solo un texto suelto. Verás una especie 
   </div>
 </div>
 ```
+<!-- /preview -->
 
 ### Ejercicio 7. Tipografía y flexbox
 
@@ -504,6 +520,7 @@ Aquí el aprendizaje ya no es solo estético. `display: flex` permite distribuir
 
 En el navegador, la diferencia es muy visible: en lugar de aparecer una caja debajo de la otra, `Agenda`, `Clientes` y `Pagos` quedan alineadas horizontalmente como accesos de un pequeño panel. Eso deja ver que `CSS` también sirve para decidir cómo se acomodan los elementos entre sí.
 
+<!-- preview: 04-flexbox-basico -->
 ```{=html}
 <div class="browser-preview">
   <div class="browser-bar">
@@ -520,6 +537,7 @@ En el navegador, la diferencia es muy visible: en lugar de aparecer una caja deb
   </div>
 </div>
 ```
+<!-- /preview -->
 
 ## JavaScript: hacer que la página responda
 
@@ -550,6 +568,7 @@ El mensaje no aparece en la página, sino en la consola del navegador. Ese detal
 
 En pantalla, por tanto, solo verás el texto `Abre la consola del navegador`. La acción de `JavaScript` ocurre fuera de la página visible y se comprueba en la consola. Ese primer paso es deliberado: antes de modificar la interfaz, conviene comprobar que el lenguaje ya está corriendo.
 
+<!-- preview: 00-script-basico -->
 <div class="browser-preview">
 <div class="browser-bar">
   <div class="browser-dots" aria-hidden="true">● ● ●</div>
@@ -559,6 +578,7 @@ En pantalla, por tanto, solo verás el texto `Abre la consola del navegador`. La
   <h1>Abre la consola del navegador</h1>
 </div>
 </div>
+<!-- /preview -->
 
 ### Ejercicio 9. Variables y condicionales
 
@@ -595,6 +615,7 @@ Aquí aparece una transición importante: `JavaScript` no solo calcula, sino que
 
 Si abres este archivo en el navegador, verás un título que dice `Estado de pago` y, debajo, una línea de texto que el propio `JavaScript` rellenó. Como `deuda = 0`, el resultado visible será:
 
+<!-- preview: 02-condicionales -->
 <div class="browser-preview">
 <div class="browser-bar">
   <div class="browser-dots" aria-hidden="true">● ● ●</div>
@@ -605,6 +626,7 @@ Si abres este archivo en el navegador, verás un título que dice `Estado de pag
   <p>Sin deuda registrada</p>
 </div>
 </div>
+<!-- /preview -->
 
 Si cambias el valor de `deuda` a `10` y recargas, la línea cambiará a `Pago pendiente`. Esa pequeña prueba deja ver exactamente qué hace `JavaScript`: no cambia la estructura básica de la página, pero sí su contenido visible según una regla.
 
@@ -637,12 +659,14 @@ Tres ideas del material de referencia merecen quedar juntas porque forman una se
 
 El archivo muestra una lista vacía en el código, pero `JavaScript` la llena al cargarse la página.
 
+<!-- preview: 03-bucles -->
 <div class="browser-preview">
 <div class="browser-bar">
   <div class="browser-dots" aria-hidden="true">● ● ●</div>
   <div class="browser-url">03-bucles.html</div>
 </div>
 <div class="browser-body">
+  <h1>Lista generada con JavaScript</h1>
   <ul>
     <li>Revisar contrato</li>
     <li>Llamar al cliente</li>
@@ -650,6 +674,7 @@ El archivo muestra una lista vacía en el código, pero `JavaScript` la llena al
   </ul>
 </div>
 </div>
+<!-- /preview -->
 
 #### Función para calcular una multa
 
@@ -670,15 +695,18 @@ El archivo muestra una lista vacía en el código, pero `JavaScript` la llena al
 
 Aquí el cálculo no se ve como operación interna, sino como resultado visible en la página.
 
+<!-- preview: 04-funciones -->
 <div class="browser-preview">
 <div class="browser-bar">
   <div class="browser-dots" aria-hidden="true">● ● ●</div>
   <div class="browser-url">04-funciones.html</div>
 </div>
 <div class="browser-body">
+  <h1>Calculo simple</h1>
   <p>Monto total: 100</p>
 </div>
 </div>
+<!-- /preview -->
 
 #### Evento de clic
 
@@ -698,8 +726,9 @@ Aquí el cálculo no se ve como operación interna, sino como resultado visible 
 
 ##### Cómo se ve esto en el navegador
 
-Cuando abras el archivo, primero verás solo el botón y un espacio vacío debajo. Después del clic aparecerá el mensaje.
+Cuando abras el archivo, primero verás un título, el botón y un espacio vacío debajo. Después del clic aparecerá el mensaje.
 
+<!-- preview: 05-eventos-antes -->
 ```{=html}
 <p class="browser-state-title">Antes del clic</p>
 <div class="browser-preview">
@@ -708,11 +737,16 @@ Cuando abras el archivo, primero verás solo el botón y un espacio vacío debaj
     <div class="browser-url">05-eventos.html</div>
   </div>
   <div class="browser-body">
+    <h1>Boton con evento</h1>
     <button type="button" style="padding: 0.5rem 0.9rem;">Haz clic aqui</button>
     <p style="min-height: 1.5rem; margin-top: 1rem;"></p>
   </div>
 </div>
+```
+<!-- /preview -->
 
+<!-- preview: 05-eventos-despues -->
+```{=html}
 <p class="browser-state-title">Después del clic</p>
 <div class="browser-preview">
   <div class="browser-bar">
@@ -720,11 +754,13 @@ Cuando abras el archivo, primero verás solo el botón y un espacio vacío debaj
     <div class="browser-url">05-eventos.html</div>
   </div>
   <div class="browser-body">
+    <h1>Boton con evento</h1>
     <button type="button" style="padding: 0.5rem 0.9rem;">Haz clic aqui</button>
     <p style="margin-top: 1rem;">El boton fue presionado</p>
   </div>
 </div>
 ```
+<!-- /preview -->
 
 Estos tres movimientos resumen buena parte de la lógica inicial de `JavaScript`: iterar, reutilizar y reaccionar. Con eso ya puede construirse una interfaz pequeña que no sea solo decorativa.
 
@@ -772,6 +808,7 @@ La novedad aquí es el uso de `.value`, que permite leer lo que una persona escr
 
 En el navegador verás una caja para escribir tu nombre, un botón y un espacio vacío. Si escribes `Lucía` y haces clic, el espacio vacío pasa a mostrar `Hola, Lucía`. Esa escena, tan simple, contiene una idea central de toda interfaz web: leer una entrada y devolver una salida visible.
 
+<!-- preview: 01-leer-input-antes -->
 ```{=html}
 <p class="browser-state-title">Antes de escribir</p>
 <div class="browser-preview">
@@ -786,7 +823,11 @@ En el navegador verás una caja para escribir tu nombre, un botón y un espacio 
     <p style="margin-top: 1rem; min-height: 1.5rem;"></p>
   </div>
 </div>
+```
+<!-- /preview -->
 
+<!-- preview: 01-leer-input-despues -->
+```{=html}
 <p class="browser-state-title">Después del clic</p>
 <div class="browser-preview">
   <div class="browser-bar">
@@ -801,6 +842,7 @@ En el navegador verás una caja para escribir tu nombre, un botón y un espacio 
   </div>
 </div>
 ```
+<!-- /preview -->
 
 ### Ejercicio 12. Validar un formulario y cambiar estilos
 
@@ -858,6 +900,7 @@ Estas operaciones ya se parecen bastante a muchas microinteracciones reales: val
 
 En términos visibles, los dos ejemplos hacen esto:
 
+<!-- preview: 02-validar-formulario -->
 ```{=html}
 <p class="browser-state-title">Validación del formulario</p>
 <div class="browser-preview">
@@ -866,12 +909,17 @@ En términos visibles, los dos ejemplos hacen esto:
     <div class="browser-url">02-validar-formulario.html</div>
   </div>
   <div class="browser-body">
+    <h1>Registro rapido</h1>
     <input type="email" placeholder="correo@ejemplo.com" style="padding: 0.45rem; width: min(280px, 100%);">
     <button type="button" style="margin-left: 0.5rem; padding: 0.45rem 0.85rem;">Validar</button>
     <p style="margin-top: 1rem;">Debes escribir un correo</p>
   </div>
 </div>
+```
+<!-- /preview -->
 
+<!-- preview: 03-cambiar-estilos -->
+```{=html}
 <p class="browser-state-title">Cambio de estilo</p>
 <div class="browser-preview">
   <div class="browser-bar">
@@ -884,12 +932,13 @@ En términos visibles, los dos ejemplos hacen esto:
   </div>
 </div>
 ```
+<!-- /preview -->
 
 Esa relación entre acción y respuesta es la razón por la cual `JavaScript` importa tanto en formularios, paneles y pequeñas herramientas de trabajo.
 
 ## Del archivo local a la publicación
 
-Hasta aquí el trabajo ocurre en tu máquina: editas archivos y el navegador los abre localmente. El paso siguiente consiste en publicarlos para que otras personas puedan acceder a ellos desde internet. En este curso, la vía recomendada para hacerlo es [GitHub Pages](/Users/dante/github/manual-legaltech/tutoriales/github-pages.qmd), porque permite publicar sitios estáticos directamente desde un repositorio y mantener unidos archivo, versión y resultado visible.
+Hasta aquí el trabajo ocurre en tu máquina: editas archivos y el navegador los abre localmente. El paso siguiente consiste en publicarlos para que otras personas puedan acceder a ellos desde internet. En este curso, la vía recomendada para hacerlo es [GitHub Pages](../tutoriales/github-pages.qmd), porque permite publicar sitios estáticos directamente desde un repositorio y mantener unidos archivo, versión y resultado visible. Esa unión entre repositorio, despliegue y sitio público importa pedagógicamente porque vuelve visible la trazabilidad del proceso de publicación y no solo su resultado final [@githubpages2026].
 
 Ese tutorial conviene leerlo cuando ya entiendes qué hace `index.html`, cómo se enlaza un `style.css` y qué recursos necesita realmente la página. Publicar demasiado pronto, sin comprender esa estructura mínima, suele volver la experiencia más confusa de lo necesario.
 

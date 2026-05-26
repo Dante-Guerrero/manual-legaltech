@@ -1,0 +1,201 @@
+[
+  {
+    "id": "00-hola-mundo",
+    "source": "+/x/scripts/ejercicios de html-css-js/00-html/00-hola-mundo.html",
+    "output": "parte-3-modulo-3/img/07-capitulo-docx/00-hola-mundo.png",
+    "caption": "Renderizado de `00-hola-mundo.html` en el navegador.",
+    "alt": "Vista del archivo Hola mundo con un título y un párrafo.",
+    "width": "85%",
+    "screenshot_selector": "body"
+  },
+  {
+    "id": "01-texto-y-titulos",
+    "source": "+/x/scripts/ejercicios de html-css-js/00-html/01-texto-y-titulos.html",
+    "output": "parte-3-modulo-3/img/07-capitulo-docx/01-texto-y-titulos.png",
+    "caption": "Renderizado de `01-texto-y-titulos.html` en el navegador.",
+    "alt": "Vista del archivo con un título principal y dos secciones con subtítulos.",
+    "width": "85%",
+    "screenshot_selector": "body"
+  },
+  {
+    "id": "02-listas-y-enlaces",
+    "source": "+/x/scripts/ejercicios de html-css-js/00-html/02-listas-y-enlaces.html",
+    "output": "parte-3-modulo-3/img/07-capitulo-docx/02-listas-y-enlaces.png",
+    "caption": "Renderizado de `02-listas-y-enlaces.html` en el navegador.",
+    "alt": "Vista del archivo con una lista de tareas y un enlace.",
+    "label": "Vista de listas y enlaces",
+    "width": "85%",
+    "screenshot_selector": "body"
+  },
+  {
+    "id": "03-tablas",
+    "source": "+/x/scripts/ejercicios de html-css-js/00-html/03-tablas.html",
+    "output": "parte-3-modulo-3/img/07-capitulo-docx/03-tablas.png",
+    "caption": "Renderizado de `03-tablas.html` en el navegador.",
+    "alt": "Vista del archivo con una tabla de registro de citas.",
+    "label": "Vista de tabla",
+    "width": "85%",
+    "screenshot_selector": "body"
+  },
+  {
+    "id": "04-formulario-simple",
+    "source": "+/x/scripts/ejercicios de html-css-js/00-html/04-formulario-simple.html",
+    "output": "parte-3-modulo-3/img/07-capitulo-docx/04-formulario-simple.png",
+    "caption": "Renderizado de `04-formulario-simple.html` en el navegador.",
+    "alt": "Vista del formulario de contacto con nombre, correo, mensaje y botón.",
+    "width": "85%",
+    "screenshot_selector": "body"
+  },
+  {
+    "id": "00-estilos-en-linea",
+    "source": "+/x/scripts/ejercicios de html-css-js/01-css/00-estilos-en-linea.html",
+    "output": "parte-3-modulo-3/img/07-capitulo-docx/00-estilos-en-linea.png",
+    "caption": "Renderizado de `00-estilos-en-linea.html` en el navegador.",
+    "alt": "Vista del archivo con estilos básicos de tipografía, fondo y color.",
+    "width": "85%",
+    "screenshot_selector": "body"
+  },
+  {
+    "id": "02-cajas-y-espaciado",
+    "source": "+/x/scripts/ejercicios de html-css-js/01-css/02-cajas-y-espaciado.html",
+    "output": "parte-3-modulo-3/img/07-capitulo-docx/02-cajas-y-espaciado.png",
+    "caption": "Renderizado de `02-cajas-y-espaciado.html` en el navegador.",
+    "alt": "Vista del archivo con una tarjeta centrada y borde visible.",
+    "width": "85%",
+    "screenshot_selector": "body"
+  },
+  {
+    "id": "04-flexbox-basico",
+    "source": "+/x/scripts/ejercicios de html-css-js/01-css/04-flexbox-basico.html",
+    "output": "parte-3-modulo-3/img/07-capitulo-docx/04-flexbox-basico.png",
+    "caption": "Renderizado de `04-flexbox-basico.html` en el navegador.",
+    "alt": "Vista del archivo con tres bloques alineados horizontalmente con flexbox.",
+    "width": "85%",
+    "screenshot_selector": "body"
+  },
+  {
+    "id": "00-script-basico",
+    "source": "+/x/scripts/ejercicios de html-css-js/02-javascript/00-script-basico.html",
+    "output": "parte-3-modulo-3/img/07-capitulo-docx/00-script-basico.png",
+    "caption": "Renderizado de `00-script-basico.html` en el navegador.",
+    "alt": "Vista del archivo que muestra el texto para abrir la consola del navegador.",
+    "width": "85%",
+    "screenshot_selector": "body"
+  },
+  {
+    "id": "02-condicionales",
+    "source": "+/x/scripts/ejercicios de html-css-js/02-javascript/02-condicionales.html",
+    "output": "parte-3-modulo-3/img/07-capitulo-docx/02-condicionales.png",
+    "caption": "Renderizado de `02-condicionales.html` en el navegador.",
+    "alt": "Vista del archivo con un título y el mensaje Sin deuda registrada.",
+    "width": "85%",
+    "screenshot_selector": "body"
+  },
+  {
+    "id": "03-bucles",
+    "source": "+/x/scripts/ejercicios de html-css-js/02-javascript/03-bucles.html",
+    "output": "parte-3-modulo-3/img/07-capitulo-docx/03-bucles.png",
+    "caption": "Renderizado de `03-bucles.html` en el navegador.",
+    "alt": "Vista del archivo con una lista generada por JavaScript.",
+    "width": "85%",
+    "screenshot_selector": "body"
+  },
+  {
+    "id": "04-funciones",
+    "source": "+/x/scripts/ejercicios de html-css-js/02-javascript/04-funciones.html",
+    "output": "parte-3-modulo-3/img/07-capitulo-docx/04-funciones.png",
+    "caption": "Renderizado de `04-funciones.html` en el navegador.",
+    "alt": "Vista del archivo con un cálculo simple y el monto total mostrado en pantalla.",
+    "width": "85%",
+    "screenshot_selector": "body"
+  },
+  {
+    "id": "05-eventos-antes",
+    "source": "+/x/scripts/ejercicios de html-css-js/02-javascript/05-eventos.html",
+    "output": "parte-3-modulo-3/img/07-capitulo-docx/05-eventos-antes.png",
+    "caption": "Estado inicial de `05-eventos.html` antes del clic.",
+    "alt": "Vista del archivo con un botón y sin mensaje todavía.",
+    "label": "Antes del clic",
+    "width": "85%",
+    "screenshot_selector": "body"
+  },
+  {
+    "id": "05-eventos-despues",
+    "source": "+/x/scripts/ejercicios de html-css-js/02-javascript/05-eventos.html",
+    "output": "parte-3-modulo-3/img/07-capitulo-docx/05-eventos-despues.png",
+    "caption": "Estado de `05-eventos.html` después del clic.",
+    "alt": "Vista del archivo con el mensaje El botón fue presionado después del clic.",
+    "label": "Después del clic",
+    "width": "85%",
+    "screenshot_selector": "body",
+    "actions": [
+      {
+        "type": "click",
+        "selector": "#boton"
+      }
+    ]
+  },
+  {
+    "id": "01-leer-input-antes",
+    "source": "+/x/scripts/ejercicios de html-css-js/03-dom-formularios/01-leer-input.html",
+    "output": "parte-3-modulo-3/img/07-capitulo-docx/01-leer-input-antes.png",
+    "caption": "Estado inicial de `01-leer-input.html` antes de escribir.",
+    "alt": "Vista del archivo con un campo de texto, un botón y un espacio vacío.",
+    "label": "Antes de escribir",
+    "width": "85%",
+    "screenshot_selector": "body"
+  },
+  {
+    "id": "01-leer-input-despues",
+    "source": "+/x/scripts/ejercicios de html-css-js/03-dom-formularios/01-leer-input.html",
+    "output": "parte-3-modulo-3/img/07-capitulo-docx/01-leer-input-despues.png",
+    "caption": "Estado de `01-leer-input.html` después de escribir y hacer clic.",
+    "alt": "Vista del archivo con el saludo Hola, Lucía después de pulsar el botón.",
+    "label": "Después del clic",
+    "width": "85%",
+    "screenshot_selector": "body",
+    "actions": [
+      {
+        "type": "fill",
+        "selector": "#nombre",
+        "value": "Lucía"
+      },
+      {
+        "type": "click",
+        "selector": "#mostrar"
+      }
+    ]
+  },
+  {
+    "id": "02-validar-formulario",
+    "source": "+/x/scripts/ejercicios de html-css-js/03-dom-formularios/02-validar-formulario.html",
+    "output": "parte-3-modulo-3/img/07-capitulo-docx/02-validar-formulario.png",
+    "caption": "Estado de `02-validar-formulario.html` al validar el formulario vacío.",
+    "alt": "Vista del archivo con el mensaje Debes escribir un correo.",
+    "label": "Validación del formulario",
+    "width": "85%",
+    "screenshot_selector": "body",
+    "actions": [
+      {
+        "type": "click",
+        "selector": "#enviar"
+      }
+    ]
+  },
+  {
+    "id": "03-cambiar-estilos",
+    "source": "+/x/scripts/ejercicios de html-css-js/03-dom-formularios/03-cambiar-estilos.html",
+    "output": "parte-3-modulo-3/img/07-capitulo-docx/03-cambiar-estilos.png",
+    "caption": "Estado de `03-cambiar-estilos.html` después de cambiar el color del cuadro.",
+    "alt": "Vista del archivo con un bloque amarillo después del clic.",
+    "label": "Cambio de estilo",
+    "width": "85%",
+    "screenshot_selector": "body",
+    "actions": [
+      {
+        "type": "click",
+        "selector": "#cambiar"
+      }
+    ]
+  }
+]

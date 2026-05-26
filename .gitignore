@@ -22,3 +22,6 @@ $RECYCLE.BIN/
 *.swp
 *.swo
 *~
+
+# Node dependencies
+node_modules/

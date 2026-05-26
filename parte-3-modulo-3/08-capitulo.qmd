@@ -10,7 +10,7 @@ Esta sesión introduce la ciberseguridad como una práctica cotidiana y no como 
 
 ## La seguridad empieza mucho antes del incidente
 
-Cuando se habla de ciberseguridad, a veces parece que el tema se reduce a ataques sofisticados o a escenas extraordinarias. En el trabajo real, sin embargo, muchas fallas nacen en rutinas comunes: contraseñas débiles, archivos enviados al destinatario equivocado, repositorios mal configurados, enlaces engañosos o documentos sensibles compartidos sin cuidado. La seguridad empieza mucho antes del daño visible.
+Cuando se habla de ciberseguridad, a veces parece que el tema se reduce a ataques sofisticados o a escenas extraordinarias. En el trabajo real, sin embargo, muchas fallas nacen en rutinas comunes: contraseñas débiles, archivos enviados al destinatario equivocado, repositorios mal configurados, enlaces engañosos o documentos sensibles compartidos sin cuidado. La seguridad empieza mucho antes del daño visible. En el propio marco peruano de gobierno digital, la seguridad aparece como parte del entramado de confianza que sostiene identidad, datos, servicios y relaciones electrónicas, no como una capa opcional añadida al final [@peru2018gobiernodigital; @pcm2021gobdigitalreglamento].
 
 ## Una facultad de Derecho también trabaja con riesgo digital
 
@@ -70,7 +70,7 @@ Uno de los puntos más básicos sigue siendo uno de los más importantes. Buenas
 - no compartir credenciales por mensajería informal;
 - usar un gestor de contraseñas si el contexto lo permite.
 
-Parece básico, y justamente por eso suele descuidarse.
+Parece básico, y justamente por eso suele descuidarse. La recomendación de activar segundo factor y preparar métodos de recuperación no es un lujo técnico: forma parte de la higiene mínima de cuentas que almacenan trabajo, evidencias o repositorios de curso [@github2fa2026].
 
 ## Phishing y errores de confianza
 
@@ -100,7 +100,7 @@ En un curso que usa Git y GitHub, también conviene pensar la seguridad desde lo
 - ¿hay archivos sensibles que no deberían estar versionados?;
 - ¿la estructura del proyecto distingue bien qué se comparte y qué no?
 
-No todo lo que puede subirse a un repositorio debería subirse.
+No todo lo que puede subirse a un repositorio debería subirse. La seguridad de la cuenta y la claridad sobre qué material es público, privado o recuperable forman parte del mismo problema práctico de control [@github2fa2026].
 
 ## Cómo pensar medidas de mitigación
 

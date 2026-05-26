@@ -12,7 +12,7 @@ Esta sesión se concentra en el paso que sigue al modelado de procesos: organiza
 
 En derecho y en gestión legal no basta con tener información. Hace falta ordenarla, formular preguntas sobre ella y producir salidas que ayuden a comprender una situación o a tomar decisiones mejores. Una tabla desordenada puede conservar muchos datos y, al mismo tiempo, no decir casi nada. Un reporte breve, en cambio, puede volver visible un patrón importante, una carga desigual, un plazo riesgoso o un conjunto de casos que merecen priorización.
 
-Ese paso, que parece técnico, también es intelectual. Entre el dato bruto y el documento útil existe una cadena de organización, descripción y reutilización que condiciona el valor final de la información [@mendo2013reutilizacion]. Trabajar con datos jurídicos no significa solo “pasar documentos a Excel”, sino aprender a distinguir campos, limpiar registros, construir indicadores y producir representaciones que tengan sentido para un problema concreto.
+Ese paso, que parece técnico, también es intelectual. Entre el dato bruto y el documento útil existe una cadena de organización, descripción y reutilización que condiciona el valor final de la información [@mendo2013reutilizacion]. Trabajar con datos jurídicos no significa solo “pasar documentos a Excel”, sino aprender a distinguir campos, limpiar registros, construir indicadores y producir representaciones que tengan sentido para un problema concreto. Esa disciplina prepara además una puerta de entrada útil hacia analítica legal más avanzada, donde el valor de los datos depende tanto de su estructura como de las preguntas que permiten formular [@savelka2021applied].
 
 La visualización entra después, no antes. Un gráfico puede revelar patrones con enorme potencia, pero sin contexto y lectura crítica también puede inducir interpretaciones equivocadas [@cairo2017visualizacion]. Por eso, el objetivo de esta sesión no es enseñar a decorar información. Es enseñar a explicarla y controlarla con mayor rigor.
 
@@ -164,7 +164,7 @@ El valor de este ejercicio está en que muestra cómo una lista de registros pue
 
 Cuando la información crece, mirar fila por fila deja de ser suficiente. Allí aparece la lógica de consulta. Incluso antes de aprender SQL formalmente, conviene comprender su intuición básica: seleccionar campos, filtrar registros, ordenar resultados y limitar la vista sobre un conjunto de datos.
 
-La lógica de `SELECT` ayuda justamente a enseñar que consultar no es lo mismo que modificar. Una consulta bien planteada vuelve los datos legibles desde una pregunta concreta sin alterar la base original [@sqlite2026select]. Ese detalle importa porque el trabajo con información jurídica y administrativa requiere a menudo distinguir entre lectura, edición y transformación.
+La lógica de `SELECT` ayuda justamente a enseñar que consultar no es lo mismo que modificar. Una consulta bien planteada vuelve los datos legibles desde una pregunta concreta sin alterar la base original [@sqlite2026select]. Ese detalle importa porque el trabajo con información jurídica y administrativa requiere a menudo distinguir entre lectura, edición y transformación. En el aprendizaje inicial, esa diferencia también refuerza una intuición metodológica importante: no toda intervención sobre datos debe empezar modificándolos; muchas veces conviene primero saber interrogarlos bien.
 
 ### Ejemplo 2. Intuición de consulta
 

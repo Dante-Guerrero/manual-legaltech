@@ -1,0 +1,10 @@
+{
+  "name": "manual-legaltech",
+  "private": true,
+  "scripts": {
+    "build:ch7-docx-assets": "node scripts/build_ch7_docx_assets.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.54.1"
+  }
+}

@@ -10,7 +10,7 @@ Este capítulo marca un cambio importante en el recorrido. Python deja de aparec
 
 ## ¿Por qué importa este tema?
 
-En la práctica jurídica, muchos problemas no se resuelven solo con definiciones abstractas. Hace falta revisar fechas, calcular días entre actos procesales, leer documentos, registrar observaciones, ordenar expedientes y mirar tablas con datos. Todo eso forma parte del trabajo real y, precisamente por eso, es un buen terreno para seguir aprendiendo Python.
+En la práctica jurídica, muchos problemas no se resuelven solo con definiciones abstractas. Hace falta revisar fechas, calcular días entre actos procesales, leer documentos, registrar observaciones, ordenar expedientes y mirar tablas con datos. Todo eso forma parte del trabajo real y, precisamente por eso, es un buen terreno para seguir aprendiendo Python. La programación gana poder pedagógico justamente cuando deja de sentirse como sintaxis aislada y empieza a vincularse con tareas reconocibles de la práctica [@contreras2020pedagogy].
 
 En la sesión anterior aparecieron variables, tipos de datos, condicionales, bucles, funciones, listas y texto. Ahora esas bases se desplazan hacia contextos más concretos. Manejar fechas, archivos y tablas con cierta soltura ya supone entrar en una forma de trabajo más próxima a la automatización básica y al análisis ordenado de información.
 
@@ -358,7 +358,7 @@ Cada línea aparece porque el bucle `for` toma una fila distinta del CSV y extra
 
 ## Datos tabulares: empezar a pensar con `pandas`
 
-Cuando las tablas crecen, leer fila por fila ya no siempre es la manera más cómoda de trabajar. Ahí aparece `pandas`, una biblioteca muy usada para manejar datos en forma de tabla. En esta parte del capítulo no se busca dominarla por completo, sino empezar a verla como una herramienta que permite observar, filtrar, contar y resumir información.
+Cuando las tablas crecen, leer fila por fila ya no siempre es la manera más cómoda de trabajar. Ahí aparece `pandas`, una biblioteca muy usada para manejar datos en forma de tabla. En esta parte del capítulo no se busca dominarla por completo, sino empezar a verla como una herramienta que permite observar, filtrar, contar y resumir información. Esa familiaridad con registros y tablas no es un desvío técnico: es una preparación útil para etapas posteriores de analítica legal, donde la información jurídica ya no se revisa solo caso por caso, sino también como conjunto estructurado [@savelka2021applied].
 
 ### Ejercicio 7. Crear una tabla simple en memoria
 
@@ -381,7 +381,7 @@ print(tabla)
 
 #### Qué hace este código
 
-El programa construye un diccionario con tres columnas y luego lo convierte en una tabla de `pandas`, que finalmente se muestra en la terminal.
+El programa construye un diccionario con tres columnas y luego lo convierte en una tabla de `pandas`, que finalmente se muestra en la terminal. Detrás de esta operación sencilla ya asoma una de las razones por las que Python se volvió tan importante para trabajar con datos: incluso ejercicios introductorios descansan sobre un ecosistema técnico amplio y maduro de bibliotecas interoperables [@pedregosa2011scikit; @virtanen2020scipy].
 
 #### Qué hace cada parte
 
