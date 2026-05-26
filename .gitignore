@@ -25,3 +25,8 @@ $RECYCLE.BIN/
 
 # Node dependencies
 node_modules/
+
+# Generated Word intermediates
+exports/docx/**
+!exports/docx/
+!exports/docx/*.docx

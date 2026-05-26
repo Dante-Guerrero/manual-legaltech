@@ -1,0 +1,18 @@
+[
+  {
+    "id": "ejemplo-1-admision",
+    "mermaid_index": 0,
+    "output": "parte-2-modulo-2/img/05-capitulo-docx/ejemplo-1-admision.png",
+    "caption": "Diagrama de admisión preliminar de una solicitud.",
+    "alt": "Flujo con recepción de solicitud, verificación de firma y documento, registro, decisión de competencia, admisión, derivación y espera de subsanación.",
+    "width": "90%"
+  },
+  {
+    "id": "ejemplo-2-revision",
+    "mermaid_index": 1,
+    "output": "parte-2-modulo-2/img/05-capitulo-docx/ejemplo-2-revision.png",
+    "caption": "Diagrama de revisión contractual.",
+    "alt": "Flujo con recepción de borrador de contrato, validación de anexos, revisión de cláusulas, observaciones, devolución para ajustes y aprobación.",
+    "width": "90%"
+  }
+]

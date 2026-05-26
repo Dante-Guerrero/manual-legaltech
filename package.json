@@ -2,6 +2,8 @@
   "name": "manual-legaltech",
   "private": true,
   "scripts": {
+    "build:docx-assets": "npm run build:ch5-docx-assets && npm run build:ch7-docx-assets",
+    "build:ch5-docx-assets": "node scripts/build_ch5_docx_assets.mjs",
     "build:ch7-docx-assets": "node scripts/build_ch7_docx_assets.mjs"
   },
   "dependencies": {

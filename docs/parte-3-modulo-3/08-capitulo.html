@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Dante Guerrero y Manuel Santa Cruz">
 
-<title>8. Ciberseguridad</title>
+<title>8. Ciberseguridad – Legal Tech, Manual del Curso</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -24,26 +23,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -54,7 +34,7 @@ div.csl-indent {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../parte-4-modulo-4/00-presentacion.html" rel="next">
-<link href="../parte-3-modulo-3/07-capitulo-docx.html" rel="prev">
+<link href="../parte-3-modulo-3/07-capitulo.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -113,7 +93,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-3-modulo-3/08-capitulo.html"><span class="chapter-title">8. Ciberseguridad</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-3-modulo-3/00-presentacion.html">III. Web, nube y seguridad para el sector legal</a></li><li class="breadcrumb-item"><a href="../parte-3-modulo-3/08-capitulo.html"><span class="chapter-title">8. Ciberseguridad</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -126,6 +106,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Legal Tech, Manual del Curso</a> 
+    </div>
+      </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
@@ -135,17 +120,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">index.html</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../bienvenida-docx.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Bienvenida</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../parte-0/profesores-docx.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Profesores</span></a>
+  <a href="../parte-0/profesores.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Profesores</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -153,114 +133,144 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <a href="../parte-0/intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducción</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../parte-1-modulo-1/00-presentacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parte-1-modulo-1/00-presentacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">I. Pensamiento computacional para juristas</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-1-modulo-1/01-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">1. Del bit al pseudocódigo</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-1-modulo-1/02-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">2. Primeros pasos con Python</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-1-modulo-1/03-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">3. Python para fechas, archivos y datos</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-1-modulo-1/04-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">4. Python para documentos, reportes y automatización jurídica básica</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../parte-2-modulo-2/00-presentacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parte-2-modulo-2/00-presentacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">II. Automatización y datos jurídicos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-2-modulo-2/05-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">5. Entender el negocio</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-2-modulo-2/06-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">6. Explicar y controlar los resultados</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parte-3-modulo-3/00-presentacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">III. Web, nube y seguridad para el sector legal</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-3-modulo-3/00-presentacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../parte-3-modulo-3/07-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">7. HTML, CSS y JavaScript para una presencia web básica</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../parte-3-modulo-3/07-capitulo-docx.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">7. HTML, CSS y JavaScript para una presencia web básica</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-3-modulo-3/08-capitulo.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">8. Ciberseguridad</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../parte-4-modulo-4/00-presentacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parte-4-modulo-4/00-presentacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">IV. Inteligencia artificial aplicada al Derecho</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-4-modulo-4/09-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">9. Fundamentos de inteligencia artificial</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-4-modulo-4/10-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">10. Evaluar, gobernar e integrar IA en contextos jurídicos</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-4-modulo-4/11-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">11. Proyectos Legal Tech peruanos</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../tutoriales/00-presentacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tutoriales</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutoriales/00-presentacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../tutoriales/instalar-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Instalar Python</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutoriales/instalar-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../tutoriales/visual-studio-code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Visual Studio Code</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutoriales/visual-studio-code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../tutoriales/git-y-github.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Git y GitHub</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutoriales/git-y-github.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../tutoriales/licencias-y-reutilizacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Licencias y reutilización responsable</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutoriales/licencias-y-reutilizacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../tutoriales/github-pages.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: GitHub Pages</span></a>
   </div>
 </li>
+      </ul>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutoriales/github-pages.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../referencias.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../referencias.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Referencias</span></a>
   </div>
 </li>
     </ul>
@@ -293,22 +303,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4DXS39K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-3-modulo-3/00-presentacion.html">III. Web, nube y seguridad para el sector legal</a></li><li class="breadcrumb-item"><a href="../parte-3-modulo-3/08-capitulo.html"><span class="chapter-title">8. Ciberseguridad</span></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-title">8. Ciberseguridad</span></h1>
-<p class="subtitle lead">Para los profesionales que se atrevan a enfrentar el presente</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Dante Guerrero y Manuel Santa Cruz </p>
-          </div>
-  </div>
     
   
     
@@ -334,7 +337,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 <section id="la-seguridad-empieza-mucho-antes-del-incidente" class="level2">
 <h2 class="anchored" data-anchor-id="la-seguridad-empieza-mucho-antes-del-incidente">La seguridad empieza mucho antes del incidente</h2>
-<p>Cuando se habla de ciberseguridad, a veces parece que el tema se reduce a ataques sofisticados o a escenas extraordinarias. En el trabajo real, sin embargo, muchas fallas nacen en rutinas comunes: contraseñas débiles, archivos enviados al destinatario equivocado, repositorios mal configurados, enlaces engañosos o documentos sensibles compartidos sin cuidado. La seguridad empieza mucho antes del daño visible. En el propio marco peruano de gobierno digital, la seguridad aparece como parte del entramado de confianza que sostiene identidad, datos, servicios y relaciones electrónicas, no como una capa opcional añadida al final <span class="citation" data-cites="peru2018gobiernodigital pcm2021gobdigitalreglamento">(<a href="../referencias.html#ref-peru2018gobiernodigital" role="doc-biblioref">Perú 2018</a>; <a href="../referencias.html#ref-pcm2021gobdigitalreglamento" role="doc-biblioref">Presidencia del Consejo de Ministros 2021</a>)</span>.</p>
+<p>Cuando se habla de ciberseguridad, a veces parece que el tema se reduce a ataques sofisticados o a escenas extraordinarias. En el trabajo real, sin embargo, muchas fallas nacen en rutinas comunes: contraseñas débiles, archivos enviados al destinatario equivocado, repositorios mal configurados, enlaces engañosos o documentos sensibles compartidos sin cuidado. La seguridad empieza mucho antes del daño visible. En el propio marco peruano de gobierno digital, la seguridad aparece como parte del entramado de confianza que sostiene identidad, datos, servicios y relaciones electrónicas, no como una capa opcional añadida al final <span class="citation" data-cites="peru2018gobiernodigital pcm2021gobdigitalreglamento">(Perú 2018; Presidencia del Consejo de Ministros 2021)</span>.</p>
 </section>
 <section id="una-facultad-de-derecho-también-trabaja-con-riesgo-digital" class="level2">
 <h2 class="anchored" data-anchor-id="una-facultad-de-derecho-también-trabaja-con-riesgo-digital">Una facultad de Derecho también trabaja con riesgo digital</h2>
@@ -409,7 +412,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li>no compartir credenciales por mensajería informal;</li>
 <li>usar un gestor de contraseñas si el contexto lo permite.</li>
 </ul>
-<p>Parece básico, y justamente por eso suele descuidarse. La recomendación de activar segundo factor y preparar métodos de recuperación no es un lujo técnico: forma parte de la higiene mínima de cuentas que almacenan trabajo, evidencias o repositorios de curso <span class="citation" data-cites="github2fa2026">(<a href="../referencias.html#ref-github2fa2026" role="doc-biblioref">GitHub Docs 2026</a>)</span>.</p>
+<p>Parece básico, y justamente por eso suele descuidarse. La recomendación de activar segundo factor y preparar métodos de recuperación no es un lujo técnico: forma parte de la higiene mínima de cuentas que almacenan trabajo, evidencias o repositorios de curso <span class="citation" data-cites="github2fa2026">(GitHub Docs 2026)</span>.</p>
 </section>
 <section id="phishing-y-errores-de-confianza" class="level2">
 <h2 class="anchored" data-anchor-id="phishing-y-errores-de-confianza">Phishing y errores de confianza</h2>
@@ -446,7 +449,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li>¿hay archivos sensibles que no deberían estar versionados?;</li>
 <li>¿la estructura del proyecto distingue bien qué se comparte y qué no?</li>
 </ul>
-<p>No todo lo que puede subirse a un repositorio debería subirse. La seguridad de la cuenta y la claridad sobre qué material es público, privado o recuperable forman parte del mismo problema práctico de control <span class="citation" data-cites="github2fa2026">(<a href="../referencias.html#ref-github2fa2026" role="doc-biblioref">GitHub Docs 2026</a>)</span>.</p>
+<p>No todo lo que puede subirse a un repositorio debería subirse. La seguridad de la cuenta y la claridad sobre qué material es público, privado o recuperable forman parte del mismo problema práctico de control <span class="citation" data-cites="github2fa2026">(GitHub Docs 2026)</span>.</p>
 </section>
 <section id="cómo-pensar-medidas-de-mitigación" class="level2">
 <h2 class="anchored" data-anchor-id="cómo-pensar-medidas-de-mitigación">Cómo pensar medidas de mitigación</h2>
@@ -526,17 +529,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
-<div id="ref-github2fa2026" class="csl-entry" role="listitem">
-GitHub Docs. 2026. <span>“About Two-Factor Authentication.”</span> <a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication">https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication</a>.
-</div>
-<div id="ref-peru2018gobiernodigital" class="csl-entry" role="listitem">
-Perú. 2018. <em>Decreto Legislativo n<span>ó</span> 1412, Ley de Gobierno Digital</em>.
-</div>
-<div id="ref-pcm2021gobdigitalreglamento" class="csl-entry" role="listitem">
-Presidencia del Consejo de Ministros. 2021. <em>Decreto Supremo n<span>ó</span> 029-2021-PCM, Reglamento Del Decreto Legislativo n<span>ó</span> 1412, Ley de Gobierno Digital</em>.
-</div>
-</div>
 </section>
 
 </main> <!-- /main -->
@@ -942,13 +934,13 @@ Presidencia del Consejo de Ministros. 2021. <em>Decreto Supremo n<span>ó</span>
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../parte-3-modulo-3/07-capitulo-docx.html" class="pagination-link" aria-label="7. HTML, CSS y JavaScript para una presencia web básica">
+      <a href="../parte-3-modulo-3/07-capitulo.html" class="pagination-link" aria-label="7. HTML, CSS y JavaScript para una presencia web básica">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">7. HTML, CSS y JavaScript para una presencia web básica</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../parte-4-modulo-4/00-presentacion.html" class="pagination-link" aria-label="Legal Tech, Manual del Curso">
-        <span class="nav-page-text"><span class="chapter-title">Legal Tech, Manual del Curso</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../parte-4-modulo-4/00-presentacion.html" class="pagination-link" aria-label="IV. Inteligencia artificial aplicada al Derecho">
+        <span class="nav-page-text">IV. Inteligencia artificial aplicada al Derecho</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

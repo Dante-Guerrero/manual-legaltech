@@ -19,6 +19,11 @@ Este subsistema existe para evitar cuatro problemas frecuentes:
 - [+/y](/Users/dante/github/manual-legaltech/+/y): repositorio documental clasificado.
 - [+/z](/Users/dante/github/manual-legaltech/+/z): capa de notas atómicas reutilizables.
 
+Puntos de entrada recomendados:
+
+- [+/x/README.md](/Users/dante/github/manual-legaltech/+/x/README.md)
+- [+/x/scripts/README.md](/Users/dante/github/manual-legaltech/+/x/scripts/README.md)
+
 ## Cómo funciona el sistema
 
 El funcionamiento completo de `+` puede entenderse como una secuencia de trabajo:
@@ -45,6 +50,11 @@ Contiene tres subcarpetas:
 - [+/x/instrucciones](/Users/dante/github/manual-legaltech/+/x/instrucciones): guías operativas, procedimientos y documentos de aplicación.
 - [+/x/editorial](/Users/dante/github/manual-legaltech/+/x/editorial): documentos normativos del manual que fijan criterios relativamente estables y no funcionan como instructivos.
 - [+/x/scripts](/Users/dante/github/manual-legaltech/+/x/scripts): scripts utilitarios para conversión y materiales de código asociados a este espacio de trabajo.
+
+Hay además dos archivos de orientación rápida:
+
+- [+/x/README.md](/Users/dante/github/manual-legaltech/+/x/README.md)
+- [+/x/scripts/README.md](/Users/dante/github/manual-legaltech/+/x/scripts/README.md)
 
 ### `+/y`
 
@@ -157,10 +167,11 @@ Este subsistema está pensado para apoyar el libro, no para invadirlo. Por eso:
 
 Si vas a continuar o retomar el trabajo, el orden más útil es este:
 
-1. [+/x/editorial/PLAN.md](/Users/dante/github/manual-legaltech/+/x/editorial/PLAN.md)
-2. [+/x/instrucciones/estructura-del-directorio.md](/Users/dante/github/manual-legaltech/+/x/instrucciones/estructura-del-directorio.md)
-3. [+/x/instrucciones/instrucciones-conversion-documentos.md](/Users/dante/github/manual-legaltech/+/x/instrucciones/instrucciones-conversion-documentos.md)
-4. [+/z/instrucciones.md](/Users/dante/github/manual-legaltech/+/z/instrucciones.md)
+1. [+/x/README.md](/Users/dante/github/manual-legaltech/+/x/README.md)
+2. [+/x/editorial/PLAN.md](/Users/dante/github/manual-legaltech/+/x/editorial/PLAN.md)
+3. [+/x/instrucciones/estructura-del-directorio.md](/Users/dante/github/manual-legaltech/+/x/instrucciones/estructura-del-directorio.md)
+4. [+/x/instrucciones/instrucciones-conversion-documentos.md](/Users/dante/github/manual-legaltech/+/x/instrucciones/instrucciones-conversion-documentos.md)
+5. [+/z/instrucciones.md](/Users/dante/github/manual-legaltech/+/z/instrucciones.md)
 
 ## Idea central
 

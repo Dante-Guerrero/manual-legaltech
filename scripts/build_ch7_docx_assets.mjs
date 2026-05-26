@@ -376,15 +376,7 @@ async function generateDocxChapter(manifest) {
     throw new Error("La versión docx generada todavía contiene bloques browser-preview. Revisa los marcadores.");
   }
 
-  const generatedHeader = [
-    "<!--",
-    "Este archivo es generado por scripts/build_ch7_docx_assets.mjs.",
-    "No lo edites a mano: regenera la versión docx del capítulo 7.",
-    "-->",
-    ""
-  ].join("\n");
-
-  await fs.writeFile(outputChapterPath, generatedHeader + output, "utf8");
+  await fs.writeFile(outputChapterPath, output, "utf8");
 }
 
 async function main() {

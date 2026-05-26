@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Dante Guerrero y Manuel Santa Cruz">
 
-<title>3. Python para fechas, archivos y datos</title>
+<title>3. Python para fechas, archivos y datos – Legal Tech, Manual del Curso</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -59,26 +58,7 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -148,7 +128,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-1-modulo-1/03-capitulo.html"><span class="chapter-title">3. Python para fechas, archivos y datos</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-1-modulo-1/00-presentacion.html">I. Pensamiento computacional para juristas</a></li><li class="breadcrumb-item"><a href="../parte-1-modulo-1/03-capitulo.html"><span class="chapter-title">3. Python para fechas, archivos y datos</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -161,6 +141,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Legal Tech, Manual del Curso</a> 
+    </div>
+      </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
@@ -170,17 +155,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">index.html</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../bienvenida-docx.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Bienvenida</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../parte-0/profesores-docx.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Profesores</span></a>
+  <a href="../parte-0/profesores.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Profesores</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -188,114 +168,144 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <a href="../parte-0/intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducción</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../parte-1-modulo-1/00-presentacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parte-1-modulo-1/00-presentacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">I. Pensamiento computacional para juristas</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-1-modulo-1/01-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">1. Del bit al pseudocódigo</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-1-modulo-1/02-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">2. Primeros pasos con Python</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-1-modulo-1/03-capitulo.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">3. Python para fechas, archivos y datos</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-1-modulo-1/04-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">4. Python para documentos, reportes y automatización jurídica básica</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../parte-2-modulo-2/00-presentacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parte-2-modulo-2/00-presentacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">II. Automatización y datos jurídicos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-2-modulo-2/05-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">5. Entender el negocio</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-2-modulo-2/06-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">6. Explicar y controlar los resultados</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parte-3-modulo-3/00-presentacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">III. Web, nube y seguridad para el sector legal</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-3-modulo-3/00-presentacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../parte-3-modulo-3/07-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">7. HTML, CSS y JavaScript para una presencia web básica</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../parte-3-modulo-3/07-capitulo-docx.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">7. HTML, CSS y JavaScript para una presencia web básica</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-3-modulo-3/08-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">8. Ciberseguridad</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../parte-4-modulo-4/00-presentacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parte-4-modulo-4/00-presentacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">IV. Inteligencia artificial aplicada al Derecho</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-4-modulo-4/09-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">9. Fundamentos de inteligencia artificial</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-4-modulo-4/10-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">10. Evaluar, gobernar e integrar IA en contextos jurídicos</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-4-modulo-4/11-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">11. Proyectos Legal Tech peruanos</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../tutoriales/00-presentacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tutoriales</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutoriales/00-presentacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../tutoriales/instalar-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Instalar Python</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutoriales/instalar-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../tutoriales/visual-studio-code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Visual Studio Code</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutoriales/visual-studio-code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../tutoriales/git-y-github.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Git y GitHub</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutoriales/git-y-github.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../tutoriales/licencias-y-reutilizacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Licencias y reutilización responsable</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutoriales/licencias-y-reutilizacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../tutoriales/github-pages.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: GitHub Pages</span></a>
   </div>
 </li>
+      </ul>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutoriales/github-pages.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../referencias.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../referencias.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Referencias</span></a>
   </div>
 </li>
     </ul>
@@ -341,22 +351,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4DXS39K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-1-modulo-1/00-presentacion.html">I. Pensamiento computacional para juristas</a></li><li class="breadcrumb-item"><a href="../parte-1-modulo-1/03-capitulo.html"><span class="chapter-title">3. Python para fechas, archivos y datos</span></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-title">3. Python para fechas, archivos y datos</span></h1>
-<p class="subtitle lead">Para los profesionales que se atrevan a enfrentar el presente</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Dante Guerrero y Manuel Santa Cruz </p>
-          </div>
-  </div>
     
   
     
@@ -382,7 +385,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 <section id="por-qué-importa-este-tema" class="level2">
 <h2 class="anchored" data-anchor-id="por-qué-importa-este-tema">¿Por qué importa este tema?</h2>
-<p>En la práctica jurídica, muchos problemas no se resuelven solo con definiciones abstractas. Hace falta revisar fechas, calcular días entre actos procesales, leer documentos, registrar observaciones, ordenar expedientes y mirar tablas con datos. Todo eso forma parte del trabajo real y, precisamente por eso, es un buen terreno para seguir aprendiendo Python. La programación gana poder pedagógico justamente cuando deja de sentirse como sintaxis aislada y empieza a vincularse con tareas reconocibles de la práctica <span class="citation" data-cites="contreras2020pedagogy">(<a href="../referencias.html#ref-contreras2020pedagogy" role="doc-biblioref">Contreras and McGrath 2020</a>)</span>.</p>
+<p>En la práctica jurídica, muchos problemas no se resuelven solo con definiciones abstractas. Hace falta revisar fechas, calcular días entre actos procesales, leer documentos, registrar observaciones, ordenar expedientes y mirar tablas con datos. Todo eso forma parte del trabajo real y, precisamente por eso, es un buen terreno para seguir aprendiendo Python. La programación gana poder pedagógico justamente cuando deja de sentirse como sintaxis aislada y empieza a vincularse con tareas reconocibles de la práctica <span class="citation" data-cites="contreras2020pedagogy">(Contreras and McGrath 2020)</span>.</p>
 <p>En la sesión anterior aparecieron variables, tipos de datos, condicionales, bucles, funciones, listas y texto. Ahora esas bases se desplazan hacia contextos más concretos. Manejar fechas, archivos y tablas con cierta soltura ya supone entrar en una forma de trabajo más próxima a la automatización básica y al análisis ordenado de información.</p>
 </section>
 <section id="del-fundamento-al-uso-práctico" class="level2">
@@ -689,7 +692,7 @@ EXP-003 - Resuelto - responsable: Carla Ruiz</code></pre>
 </section>
 <section id="datos-tabulares-empezar-a-pensar-con-pandas" class="level2">
 <h2 class="anchored" data-anchor-id="datos-tabulares-empezar-a-pensar-con-pandas">Datos tabulares: empezar a pensar con <code>pandas</code></h2>
-<p>Cuando las tablas crecen, leer fila por fila ya no siempre es la manera más cómoda de trabajar. Ahí aparece <code>pandas</code>, una biblioteca muy usada para manejar datos en forma de tabla. En esta parte del capítulo no se busca dominarla por completo, sino empezar a verla como una herramienta que permite observar, filtrar, contar y resumir información. Esa familiaridad con registros y tablas no es un desvío técnico: es una preparación útil para etapas posteriores de analítica legal, donde la información jurídica ya no se revisa solo caso por caso, sino también como conjunto estructurado <span class="citation" data-cites="savelka2021applied">(<a href="../referencias.html#ref-savelka2021applied" role="doc-biblioref">Ashley et al. 2021</a>)</span>.</p>
+<p>Cuando las tablas crecen, leer fila por fila ya no siempre es la manera más cómoda de trabajar. Ahí aparece <code>pandas</code>, una biblioteca muy usada para manejar datos en forma de tabla. En esta parte del capítulo no se busca dominarla por completo, sino empezar a verla como una herramienta que permite observar, filtrar, contar y resumir información. Esa familiaridad con registros y tablas no es un desvío técnico: es una preparación útil para etapas posteriores de analítica legal, donde la información jurídica ya no se revisa solo caso por caso, sino también como conjunto estructurado <span class="citation" data-cites="savelka2021applied">(Ashley et al. 2021)</span>.</p>
 <section id="ejercicio-7.-crear-una-tabla-simple-en-memoria" class="level3">
 <h3 class="anchored" data-anchor-id="ejercicio-7.-crear-una-tabla-simple-en-memoria">Ejercicio 7. Crear una tabla simple en memoria</h3>
 <p>Antes de leer archivos con <code>pandas</code>, conviene ver cómo se construye una tabla básica directamente desde Python. Este ejercicio introduce el objeto más importante de la biblioteca: el <code>DataFrame</code>.</p>
@@ -706,7 +709,7 @@ EXP-003 - Resuelto - responsable: Carla Ruiz</code></pre>
 <span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(tabla)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <section id="qué-hace-este-código-6" class="level4">
 <h4 class="anchored" data-anchor-id="qué-hace-este-código-6">Qué hace este código</h4>
-<p>El programa construye un diccionario con tres columnas y luego lo convierte en una tabla de <code>pandas</code>, que finalmente se muestra en la terminal. Detrás de esta operación sencilla ya asoma una de las razones por las que Python se volvió tan importante para trabajar con datos: incluso ejercicios introductorios descansan sobre un ecosistema técnico amplio y maduro de bibliotecas interoperables <span class="citation" data-cites="pedregosa2011scikit virtanen2020scipy">(<a href="../referencias.html#ref-pedregosa2011scikit" role="doc-biblioref">Pedregosa et al. 2011</a>; <a href="../referencias.html#ref-virtanen2020scipy" role="doc-biblioref">Virtanen et al. 2020</a>)</span>.</p>
+<p>El programa construye un diccionario con tres columnas y luego lo convierte en una tabla de <code>pandas</code>, que finalmente se muestra en la terminal. Detrás de esta operación sencilla ya asoma una de las razones por las que Python se volvió tan importante para trabajar con datos: incluso ejercicios introductorios descansan sobre un ecosistema técnico amplio y maduro de bibliotecas interoperables <span class="citation" data-cites="pedregosa2011scikit virtanen2020scipy">(Pedregosa et al. 2011; Virtanen et al. 2020)</span>.</p>
 </section>
 <section id="qué-hace-cada-parte-6" class="level4">
 <h4 class="anchored" data-anchor-id="qué-hace-cada-parte-6">Qué hace cada parte</h4>
@@ -898,20 +901,6 @@ Name: count, dtype: int64</code></pre>
 </div>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
-<div id="ref-savelka2021applied" class="csl-entry" role="listitem">
-Ashley, Kevin D., Jaromír Savelka, and Matthias Grabmair. 2021. <span>“A Law School Course in Applied Legal Analytics and AI.”</span> <em>Law in Context</em> 37 (1): 134–74. <a href="https://doi.org/10.26826/law-in-context.v37i1.125">https://doi.org/10.26826/law-in-context.v37i1.125</a>.
-</div>
-<div id="ref-contreras2020pedagogy" class="csl-entry" role="listitem">
-Contreras, Alfredo, and Joe McGrath. 2020. <span>“Law, Technology, and Pedagogy: Teaching Coding to Build a <span>‘Future-Proof’</span> Lawyer.”</span> <em>Minnesota Journal of Law, Science &amp; Technology</em> 21 (2): 297–347. <a href="https://doi.org/10.24926/15529541.3828">https://doi.org/10.24926/15529541.3828</a>.
-</div>
-<div id="ref-pedregosa2011scikit" class="csl-entry" role="listitem">
-Pedregosa, Fabian, Gaël Varoquaux, Alexandre Gramfort, et al. 2011. <span>“Scikit-Learn: Machine Learning in Python.”</span> <em>Journal of Machine Learning Research</em> 12: 2825–30. <a href="https://jmlr.org/papers/v12/pedregosa11a.html">https://jmlr.org/papers/v12/pedregosa11a.html</a>.
-</div>
-<div id="ref-virtanen2020scipy" class="csl-entry" role="listitem">
-Virtanen, Pauli, Ralf Gommers, Travis E. Oliphant, et al. 2020. <span>“SciPy 1.0: Fundamental Algorithms for Scientific Computing in Python.”</span> <em>Nature Methods</em> 17 (3): 261–72. <a href="https://doi.org/10.1038/s41592-019-0686-2">https://doi.org/10.1038/s41592-019-0686-2</a>.
-</div>
-</div>
 </section>
 
 </main> <!-- /main -->

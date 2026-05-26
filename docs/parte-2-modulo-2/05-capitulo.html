@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Dante Guerrero y Manuel Santa Cruz">
 
-<title>5. Entender el negocio</title>
+<title>5. Entender el negocio – Legal Tech, Manual del Curso</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -24,26 +23,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -99,6 +79,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id=GTM-P4DXS39K'+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-P4DXS39K');</script>
 <!-- End Google Tag Manager -->
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -113,7 +96,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-2-modulo-2/05-capitulo.html"><span class="chapter-title">5. Entender el negocio</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-2-modulo-2/00-presentacion.html">II. Automatización y datos jurídicos</a></li><li class="breadcrumb-item"><a href="../parte-2-modulo-2/05-capitulo.html"><span class="chapter-title">5. Entender el negocio</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -126,6 +109,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Legal Tech, Manual del Curso</a> 
+    </div>
+      </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
@@ -135,17 +123,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">index.html</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../bienvenida-docx.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Bienvenida</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../parte-0/profesores-docx.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Profesores</span></a>
+  <a href="../parte-0/profesores.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Profesores</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -153,114 +136,144 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <a href="../parte-0/intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducción</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../parte-1-modulo-1/00-presentacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parte-1-modulo-1/00-presentacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">I. Pensamiento computacional para juristas</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-1-modulo-1/01-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">1. Del bit al pseudocódigo</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-1-modulo-1/02-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">2. Primeros pasos con Python</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-1-modulo-1/03-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">3. Python para fechas, archivos y datos</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-1-modulo-1/04-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">4. Python para documentos, reportes y automatización jurídica básica</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../parte-2-modulo-2/00-presentacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parte-2-modulo-2/00-presentacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">II. Automatización y datos jurídicos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-2-modulo-2/05-capitulo.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">5. Entender el negocio</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-2-modulo-2/06-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">6. Explicar y controlar los resultados</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parte-3-modulo-3/00-presentacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">III. Web, nube y seguridad para el sector legal</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-3-modulo-3/00-presentacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../parte-3-modulo-3/07-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">7. HTML, CSS y JavaScript para una presencia web básica</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../parte-3-modulo-3/07-capitulo-docx.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">7. HTML, CSS y JavaScript para una presencia web básica</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-3-modulo-3/08-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">8. Ciberseguridad</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../parte-4-modulo-4/00-presentacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parte-4-modulo-4/00-presentacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">IV. Inteligencia artificial aplicada al Derecho</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-4-modulo-4/09-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">9. Fundamentos de inteligencia artificial</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-4-modulo-4/10-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">10. Evaluar, gobernar e integrar IA en contextos jurídicos</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-4-modulo-4/11-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">11. Proyectos Legal Tech peruanos</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../tutoriales/00-presentacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tutoriales</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutoriales/00-presentacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../tutoriales/instalar-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Instalar Python</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutoriales/instalar-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../tutoriales/visual-studio-code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Visual Studio Code</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutoriales/visual-studio-code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../tutoriales/git-y-github.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Git y GitHub</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutoriales/git-y-github.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../tutoriales/licencias-y-reutilizacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Licencias y reutilización responsable</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutoriales/licencias-y-reutilizacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../tutoriales/github-pages.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: GitHub Pages</span></a>
   </div>
 </li>
+      </ul>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutoriales/github-pages.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../referencias.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../referencias.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Referencias</span></a>
   </div>
 </li>
     </ul>
@@ -295,22 +308,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4DXS39K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-2-modulo-2/00-presentacion.html">II. Automatización y datos jurídicos</a></li><li class="breadcrumb-item"><a href="../parte-2-modulo-2/05-capitulo.html"><span class="chapter-title">5. Entender el negocio</span></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-title">5. Entender el negocio</span></h1>
-<p class="subtitle lead">Para los profesionales que se atrevan a enfrentar el presente</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Dante Guerrero y Manuel Santa Cruz </p>
-          </div>
-  </div>
     
   
     
@@ -337,7 +343,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <section id="antes-de-mejorar-hay-que-mirar-el-flujo" class="level2">
 <h2 class="anchored" data-anchor-id="antes-de-mejorar-hay-que-mirar-el-flujo">Antes de mejorar, hay que mirar el flujo</h2>
 <p>Muchos proyectos de innovación fracasan no porque la herramienta sea mala, sino porque el problema estaba mal descrito desde el inicio. Se automatiza una parte irrelevante, se digitaliza un trámite confuso o se produce un tablero vistoso para un flujo que nadie entiende bien. En contextos jurídicos y administrativos, ese error es especialmente costoso, porque los procesos suelen mezclar normas, documentos, responsables, tiempos, validaciones y criterios que no siempre están visibles en un mismo lugar.</p>
-<p>Por eso, antes de hablar de automatización documental o analítica, conviene detenerse en el proceso mismo. Representar un flujo con una notación compartida permite discutirlo, corregirlo y coordinarlo mejor que cuando existe solo como costumbre verbal o conocimiento disperso entre oficinas <span class="citation" data-cites="fischer2011bpmn">(<a href="../referencias.html#ref-fischer2011bpmn" role="doc-biblioref">White and Miers 2011</a>)</span>. Modernizar la gestión pública tampoco equivale simplemente a incorporar tecnología: exige revisar procesos, funciones y servicios con una lógica de mejora <span class="citation" data-cites="peru2002modernizacion pcm2002modernizacion">(<a href="../referencias.html#ref-peru2002modernizacion" role="doc-biblioref">Perú 2002</a>; <a href="../referencias.html#ref-pcm2002modernizacion" role="doc-biblioref">Presidencia del Consejo de Ministros 2002</a>)</span>. Cuando ese modelado logra volver el trabajo visible, el proceso deja de ser una caja negra organizacional y empieza a convertirse en un objeto discutible y mejorable.</p>
+<p>Por eso, antes de hablar de automatización documental o analítica, conviene detenerse en el proceso mismo. Representar un flujo con una notación compartida permite discutirlo, corregirlo y coordinarlo mejor que cuando existe solo como costumbre verbal o conocimiento disperso entre oficinas <span class="citation" data-cites="fischer2011bpmn">(White and Miers 2011)</span>. Modernizar la gestión pública tampoco equivale simplemente a incorporar tecnología: exige revisar procesos, funciones y servicios con una lógica de mejora <span class="citation" data-cites="peru2002modernizacion pcm2002modernizacion">(Perú 2002; Presidencia del Consejo de Ministros 2002)</span>. Cuando ese modelado logra volver el trabajo visible, el proceso deja de ser una caja negra organizacional y empieza a convertirse en un objeto discutible y mejorable.</p>
 <p>En términos simples, entender el negocio significa entender el proceso. Significa saber quién hace qué, con qué insumos, en qué orden, con qué decisiones críticas y con qué salidas.</p>
 </section>
 <section id="cuando-el-proceso-no-se-ve-el-problema-se-deforma" class="level2">
@@ -373,7 +379,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </section>
 <section id="un-flujo-visible-se-vuelve-discutible" class="level2">
 <h2 class="anchored" data-anchor-id="un-flujo-visible-se-vuelve-discutible">Un flujo visible se vuelve discutible</h2>
-<p>Cuando el trabajo se organiza en pasos explícitos, gana trazabilidad, reproducibilidad y posibilidad de revisión posterior <span class="citation" data-cites="gorgolewski2011nipype">(<a href="../referencias.html#ref-gorgolewski2011nipype" role="doc-biblioref"><span class="nocase">Gorgolewski et al.</span> 2011</a>)</span>. Ese principio no vale solo para pipelines científicos o scripts de análisis; también vale para procesos jurídicos. Si un trámite puede verse en etapas, si una revisión contractual puede separarse en momentos reconocibles y si una mesa de partes puede distinguir entre entradas, controles y salidas, entonces el flujo deja de depender exclusivamente de hábitos tácitos.</p>
+<p>Cuando el trabajo se organiza en pasos explícitos, gana trazabilidad, reproducibilidad y posibilidad de revisión posterior <span class="citation" data-cites="gorgolewski2011nipype">(<span class="nocase">Gorgolewski et al.</span> 2011)</span>. Ese principio no vale solo para pipelines científicos o scripts de análisis; también vale para procesos jurídicos. Si un trámite puede verse en etapas, si una revisión contractual puede separarse en momentos reconocibles y si una mesa de partes puede distinguir entre entradas, controles y salidas, entonces el flujo deja de depender exclusivamente de hábitos tácitos.</p>
 <p>Eso tiene dos consecuencias muy útiles. La primera es pedagógica: el proceso se vuelve enseñable. La segunda es organizacional: el proceso se vuelve mejorable. A partir de allí ya es posible identificar demoras, dobles revisiones, controles redundantes o decisiones sin criterio explícito.</p>
 </section>
 <section id="qué-elementos-conviene-reconocer-primero" class="level2">
@@ -403,26 +409,42 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </section>
 <section id="mermaid-como-herramienta-de-trabajo-no-como-adorno" class="level2">
 <h2 class="anchored" data-anchor-id="mermaid-como-herramienta-de-trabajo-no-como-adorno">Mermaid como herramienta de trabajo, no como adorno</h2>
-<p>No hace falta empezar con una suite compleja para modelar procesos. Mermaid resulta especialmente útil en este curso porque permite escribir diagramas dentro de archivos de texto o Markdown, lo que hace que el proceso mismo pueda versionarse, revisarse y corregirse como cualquier otro archivo de trabajo <span class="citation" data-cites="mermaid2026flowcharts">(<a href="../referencias.html#ref-mermaid2026flowcharts" role="doc-biblioref">Mermaid Documentation 2026</a>)</span>. Cuando el diagrama vive en texto, no queda fuera del repositorio: entra en la misma lógica de trazabilidad que el resto del proyecto <span class="citation" data-cites="mermaid2026flowcharts">(<a href="../referencias.html#ref-mermaid2026flowcharts" role="doc-biblioref">Mermaid Documentation 2026</a>)</span>. En otras palabras, diagramar en texto no solo simplifica el dibujo; también vuelve el flujo mismo un artefacto versionable.</p>
-<p>Ese rasgo dialoga bien con otra idea importante: dividir un flujo en módulos legibles facilita reutilización, control y comprensión de procesos complejos <span class="citation" data-cites="gorgolewski2011nipype">(<a href="../referencias.html#ref-gorgolewski2011nipype" role="doc-biblioref"><span class="nocase">Gorgolewski et al.</span> 2011</a>)</span>. Por eso, Mermaid no es solo una forma “bonita” de dibujar cajas y flechas. Es una herramienta compatible con una forma disciplinada de pensar y revisar procesos.</p>
+<p>No hace falta empezar con una suite compleja para modelar procesos. Mermaid resulta especialmente útil en este curso porque permite escribir diagramas dentro de archivos de texto o Markdown, lo que hace que el proceso mismo pueda versionarse, revisarse y corregirse como cualquier otro archivo de trabajo <span class="citation" data-cites="mermaid2026flowcharts">(Mermaid Documentation 2026)</span>. Cuando el diagrama vive en texto, no queda fuera del repositorio: entra en la misma lógica de trazabilidad que el resto del proyecto <span class="citation" data-cites="mermaid2026flowcharts">(Mermaid Documentation 2026)</span>. En otras palabras, diagramar en texto no solo simplifica el dibujo; también vuelve el flujo mismo un artefacto versionable.</p>
+<p>Ese rasgo dialoga bien con otra idea importante: dividir un flujo en módulos legibles facilita reutilización, control y comprensión de procesos complejos <span class="citation" data-cites="gorgolewski2011nipype">(<span class="nocase">Gorgolewski et al.</span> 2011)</span>. Por eso, Mermaid no es solo una forma “bonita” de dibujar cajas y flechas. Es una herramienta compatible con una forma disciplinada de pensar y revisar procesos.</p>
 </section>
 <section id="ejemplo-1.-admisión-preliminar-de-una-solicitud" class="level2">
 <h2 class="anchored" data-anchor-id="ejemplo-1.-admisión-preliminar-de-una-solicitud">Ejemplo 1. Admisión preliminar de una solicitud</h2>
 <p>Un flujo jurídico sencillo puede expresarse así:</p>
-<pre class="mermaid"><code>flowchart TD
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
   A[Recibir solicitud] --&gt; B{Tiene firma y documento?}
   B -- Si --&gt; C[Registrar ingreso]
   B -- No --&gt; D[Formular observacion]
   C --&gt; E{Corresponde a la unidad?}
   E -- Si --&gt; F[Admitir a tramite]
   E -- No --&gt; G[Derivar a unidad competente]
-  D --&gt; H[Esperar subsanacion]</code></pre>
+  D --&gt; H[Esperar subsanacion]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 <p>Este diagrama no agota toda la realidad del trámite. Pero ya permite ver algo decisivo: el flujo no es meramente lineal, porque contiene controles y decisiones que alteran la trayectoria del expediente. Precisamente allí empiezan a aparecer las preguntas útiles: ¿la observación se formula demasiado tarde?, ¿la derivación podría resolverse antes?, ¿la unidad revisa datos que otra ya había revisado?</p>
 </section>
 <section id="ejemplo-2.-revisión-contractual" class="level2">
 <h2 class="anchored" data-anchor-id="ejemplo-2.-revisión-contractual">Ejemplo 2. Revisión contractual</h2>
 <p>Un segundo caso, más cercano a una práctica profesional de estudio o asesoría, podría verse así:</p>
-<pre class="mermaid"><code>flowchart TD
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
   A[Recibir borrador de contrato] --&gt; B{Anexos completos?}
   B -- Si --&gt; C[Revisar clausulas criticas]
   B -- No --&gt; D[Solicitar anexos faltantes]
@@ -430,7 +452,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   E -- Si --&gt; F[Devolver para ajustes]
   E -- No --&gt; G[Aprobar version]
   D --&gt; H[Esperar nueva version]
-  F --&gt; H</code></pre>
+  F --&gt; H
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 <p>Aquí ya se vuelve visible un rasgo frecuente del trabajo legal: una parte relevante del tiempo no se consume en “analizar el derecho”, sino en esperar insumos, corregir versiones y manejar retornos del flujo. Ver eso con claridad cambia la conversación. El proceso deja de verse como una sola actividad abstracta de “revisión” y empieza a descomponerse en momentos distintos, algunos sustantivos y otros puramente logísticos.</p>
 </section>
 <section id="qué-vuelve-útil-a-un-diagrama" class="level2">
@@ -447,7 +475,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </section>
 <section id="del-modelado-a-la-mejora" class="level2">
 <h2 class="anchored" data-anchor-id="del-modelado-a-la-mejora">Del modelado a la mejora</h2>
-<p>Una vez representado el proceso, empiezan a aparecer posibilidades reales de intervención. A veces la mejora consistirá en adelantar un control. Otras veces, en estandarizar observaciones frecuentes, eliminar dobles validaciones o separar casos simples de casos complejos. En el sector público, además, parte de la innovación puede institucionalizarse mediante laboratorios orientados a cocrear y prototipar soluciones centradas en la ciudadanía <span class="citation" data-cites="peru2022laboratorio">(<a href="../referencias.html#ref-peru2022laboratorio" role="doc-biblioref">Perú 2022</a>)</span>. Esa idea también recuerda que la mejora de procesos no es una tarea puramente individual ni meramente tecnológica: requiere espacios de experimentación y aprendizaje organizacional.</p>
+<p>Una vez representado el proceso, empiezan a aparecer posibilidades reales de intervención. A veces la mejora consistirá en adelantar un control. Otras veces, en estandarizar observaciones frecuentes, eliminar dobles validaciones o separar casos simples de casos complejos. En el sector público, además, parte de la innovación puede institucionalizarse mediante laboratorios orientados a cocrear y prototipar soluciones centradas en la ciudadanía <span class="citation" data-cites="peru2022laboratorio">(Perú 2022)</span>. Esa idea también recuerda que la mejora de procesos no es una tarea puramente individual ni meramente tecnológica: requiere espacios de experimentación y aprendizaje organizacional.</p>
 <p>En ese punto aparece el verdadero puente con el resto del módulo. Solo después de entender un flujo tiene sentido preguntarse qué datos conviene capturar, qué indicadores sirven para seguirlo y qué parte podría automatizarse con prudencia.</p>
 </section>
 <section id="práctica-en-editor" class="level2">
@@ -505,26 +533,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
-<div id="ref-gorgolewski2011nipype" class="csl-entry" role="listitem">
-<span class="nocase">Gorgolewski, Krzysztof et al.</span> 2011. <span>“Nipype: A Flexible, Lightweight and Extensible Neuroimaging Data Processing Framework in Python.”</span> <em>Frontiers in Neuroinformatics</em> 5: 13. <a href="https://doi.org/10.3389/fninf.2011.00013">https://doi.org/10.3389/fninf.2011.00013</a>.
-</div>
-<div id="ref-mermaid2026flowcharts" class="csl-entry" role="listitem">
-Mermaid Documentation. 2026. <span>“Flowcharts: Basic Syntax.”</span> <a href="https://mermaid.js.org/syntax/flowchart.html">https://mermaid.js.org/syntax/flowchart.html</a>.
-</div>
-<div id="ref-peru2002modernizacion" class="csl-entry" role="listitem">
-Perú. 2002. <em>Ley Marco de Modernizaci<span>ó</span>n de La Gesti<span>ó</span>n Del Estado, Ley n<span>ó</span> 27658</em>.
-</div>
-<div id="ref-peru2022laboratorio" class="csl-entry" role="listitem">
-Perú. 2022. <em>Ley n<span>ó</span> 31449, Ley Que Fortalece El Laboratorio de Gobierno y Transformaci<span>ó</span>n Digital Del Estado</em>.
-</div>
-<div id="ref-pcm2002modernizacion" class="csl-entry" role="listitem">
-Presidencia del Consejo de Ministros. 2002. <em>Decreto Supremo n<span>ó</span> 030-2002-PCM, Reglamento de La Ley Marco de Modernizaci<span>ó</span>n de La Gesti<span>ó</span>n Del Estado</em>.
-</div>
-<div id="ref-fischer2011bpmn" class="csl-entry" role="listitem">
-White, Stephen A., and Derek Miers. 2011. <em>BPMN 2.0 Handbook: Methods, Concepts, Case Studies and Standards in Business Process Management</em>. Future Strategies.
-</div>
-</div>
 </section>
 
 </main> <!-- /main -->
@@ -930,8 +938,8 @@ White, Stephen A., and Derek Miers. 2011. <em>BPMN 2.0 Handbook: Methods, Concep
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../parte-2-modulo-2/00-presentacion.html" class="pagination-link" aria-label="Legal Tech, Manual del Curso">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Legal Tech, Manual del Curso</span></span>
+      <a href="../parte-2-modulo-2/00-presentacion.html" class="pagination-link" aria-label="II. Automatización y datos jurídicos">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">II. Automatización y datos jurídicos</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

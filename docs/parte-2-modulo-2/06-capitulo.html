@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Dante Guerrero y Manuel Santa Cruz">
 
-<title>6. Explicar y controlar los resultados</title>
+<title>6. Explicar y controlar los resultados – Legal Tech, Manual del Curso</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -59,26 +58,7 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -148,7 +128,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-2-modulo-2/06-capitulo.html"><span class="chapter-title">6. Explicar y controlar los resultados</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-2-modulo-2/00-presentacion.html">II. Automatización y datos jurídicos</a></li><li class="breadcrumb-item"><a href="../parte-2-modulo-2/06-capitulo.html"><span class="chapter-title">6. Explicar y controlar los resultados</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -161,6 +141,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Legal Tech, Manual del Curso</a> 
+    </div>
+      </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
@@ -170,17 +155,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">index.html</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../bienvenida-docx.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Bienvenida</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../parte-0/profesores-docx.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Profesores</span></a>
+  <a href="../parte-0/profesores.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Profesores</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -188,114 +168,144 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <a href="../parte-0/intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducción</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../parte-1-modulo-1/00-presentacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parte-1-modulo-1/00-presentacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">I. Pensamiento computacional para juristas</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-1-modulo-1/01-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">1. Del bit al pseudocódigo</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-1-modulo-1/02-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">2. Primeros pasos con Python</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-1-modulo-1/03-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">3. Python para fechas, archivos y datos</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-1-modulo-1/04-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">4. Python para documentos, reportes y automatización jurídica básica</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../parte-2-modulo-2/00-presentacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parte-2-modulo-2/00-presentacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">II. Automatización y datos jurídicos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-2-modulo-2/05-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">5. Entender el negocio</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-2-modulo-2/06-capitulo.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">6. Explicar y controlar los resultados</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parte-3-modulo-3/00-presentacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">III. Web, nube y seguridad para el sector legal</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-3-modulo-3/00-presentacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../parte-3-modulo-3/07-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">7. HTML, CSS y JavaScript para una presencia web básica</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../parte-3-modulo-3/07-capitulo-docx.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">7. HTML, CSS y JavaScript para una presencia web básica</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-3-modulo-3/08-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">8. Ciberseguridad</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../parte-4-modulo-4/00-presentacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parte-4-modulo-4/00-presentacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">IV. Inteligencia artificial aplicada al Derecho</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-4-modulo-4/09-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">9. Fundamentos de inteligencia artificial</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-4-modulo-4/10-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">10. Evaluar, gobernar e integrar IA en contextos jurídicos</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-4-modulo-4/11-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">11. Proyectos Legal Tech peruanos</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../tutoriales/00-presentacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tutoriales</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutoriales/00-presentacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../tutoriales/instalar-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Instalar Python</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutoriales/instalar-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../tutoriales/visual-studio-code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Visual Studio Code</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutoriales/visual-studio-code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../tutoriales/git-y-github.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Git y GitHub</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutoriales/git-y-github.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../tutoriales/licencias-y-reutilizacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Licencias y reutilización responsable</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutoriales/licencias-y-reutilizacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../tutoriales/github-pages.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: GitHub Pages</span></a>
   </div>
 </li>
+      </ul>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutoriales/github-pages.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../referencias.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../referencias.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Referencias</span></a>
   </div>
 </li>
     </ul>
@@ -334,22 +344,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4DXS39K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-2-modulo-2/00-presentacion.html">II. Automatización y datos jurídicos</a></li><li class="breadcrumb-item"><a href="../parte-2-modulo-2/06-capitulo.html"><span class="chapter-title">6. Explicar y controlar los resultados</span></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-title">6. Explicar y controlar los resultados</span></h1>
-<p class="subtitle lead">Para los profesionales que se atrevan a enfrentar el presente</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Dante Guerrero y Manuel Santa Cruz </p>
-          </div>
-  </div>
     
   
     
@@ -376,8 +379,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <section id="los-datos-no-hablan-solos" class="level2">
 <h2 class="anchored" data-anchor-id="los-datos-no-hablan-solos">Los datos no hablan solos</h2>
 <p>En derecho y en gestión legal no basta con tener información. Hace falta ordenarla, formular preguntas sobre ella y producir salidas que ayuden a comprender una situación o a tomar decisiones mejores. Una tabla desordenada puede conservar muchos datos y, al mismo tiempo, no decir casi nada. Un reporte breve, en cambio, puede volver visible un patrón importante, una carga desigual, un plazo riesgoso o un conjunto de casos que merecen priorización.</p>
-<p>Ese paso, que parece técnico, también es intelectual. Entre el dato bruto y el documento útil existe una cadena de organización, descripción y reutilización que condiciona el valor final de la información <span class="citation" data-cites="mendo2013reutilizacion">(<a href="../referencias.html#ref-mendo2013reutilizacion" role="doc-biblioref"><span class="nocase">Mendo et al.</span> 2013</a>)</span>. Trabajar con datos jurídicos no significa solo “pasar documentos a Excel”, sino aprender a distinguir campos, limpiar registros, construir indicadores y producir representaciones que tengan sentido para un problema concreto. Esa disciplina prepara además una puerta de entrada útil hacia analítica legal más avanzada, donde el valor de los datos depende tanto de su estructura como de las preguntas que permiten formular <span class="citation" data-cites="savelka2021applied">(<a href="../referencias.html#ref-savelka2021applied" role="doc-biblioref">Ashley et al. 2021</a>)</span>.</p>
-<p>La visualización entra después, no antes. Un gráfico puede revelar patrones con enorme potencia, pero sin contexto y lectura crítica también puede inducir interpretaciones equivocadas <span class="citation" data-cites="cairo2017visualizacion">(<a href="../referencias.html#ref-cairo2017visualizacion" role="doc-biblioref">Cairo 2017</a>)</span>. Por eso, el objetivo de esta sesión no es enseñar a decorar información. Es enseñar a explicarla y controlarla con mayor rigor.</p>
+<p>Ese paso, que parece técnico, también es intelectual. Entre el dato bruto y el documento útil existe una cadena de organización, descripción y reutilización que condiciona el valor final de la información <span class="citation" data-cites="mendo2013reutilizacion">(<span class="nocase">Mendo et al.</span> 2013)</span>. Trabajar con datos jurídicos no significa solo “pasar documentos a Excel”, sino aprender a distinguir campos, limpiar registros, construir indicadores y producir representaciones que tengan sentido para un problema concreto. Esa disciplina prepara además una puerta de entrada útil hacia analítica legal más avanzada, donde el valor de los datos depende tanto de su estructura como de las preguntas que permiten formular <span class="citation" data-cites="savelka2021applied">(Ashley et al. 2021)</span>.</p>
+<p>La visualización entra después, no antes. Un gráfico puede revelar patrones con enorme potencia, pero sin contexto y lectura crítica también puede inducir interpretaciones equivocadas <span class="citation" data-cites="cairo2017visualizacion">(Cairo 2017)</span>. Por eso, el objetivo de esta sesión no es enseñar a decorar información. Es enseñar a explicarla y controlarla con mayor rigor.</p>
 </section>
 <section id="del-registro-disperso-a-la-evidencia-útil" class="level2">
 <h2 class="anchored" data-anchor-id="del-registro-disperso-a-la-evidencia-útil">Del registro disperso a la evidencia útil</h2>
@@ -406,7 +409,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li>el <strong>registro</strong> es el conjunto de campos que describe un caso o una fila.</li>
 </ul>
 <p>Pensemos en una tabla de expedientes. Puede contener campos como <code>codigo</code>, <code>estado</code>, <code>fecha_ingreso</code>, <code>responsable</code> y <code>prioridad</code>. Cada fila será un registro. Y varios registros, organizados bajo las mismas columnas, ya permiten formular preguntas comparables: cuántos expedientes siguen pendientes, qué responsable concentra mayor carga o qué casos urgentes aún no han sido revisados.</p>
-<p>El punto importante es este: el valor de un dato no aparece solo. Depende de cómo se organiza, se relaciona y se transforma en información utilizable <span class="citation" data-cites="mendo2013reutilizacion">(<a href="../referencias.html#ref-mendo2013reutilizacion" role="doc-biblioref"><span class="nocase">Mendo et al.</span> 2013</a>)</span>.</p>
+<p>El punto importante es este: el valor de un dato no aparece solo. Depende de cómo se organiza, se relaciona y se transforma en información utilizable <span class="citation" data-cites="mendo2013reutilizacion">(<span class="nocase">Mendo et al.</span> 2013)</span>.</p>
 </section>
 <section id="ordenar-información-también-es-pensar-mejor" class="level2">
 <h2 class="anchored" data-anchor-id="ordenar-información-también-es-pensar-mejor">Ordenar información también es pensar mejor</h2>
@@ -492,7 +495,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </section>
 <section id="visualizar-no-es-decorar" class="level2">
 <h2 class="anchored" data-anchor-id="visualizar-no-es-decorar">Visualizar no es decorar</h2>
-<p>La visualización puede volver más comprensible una tabla, pero no sustituye el análisis. Los datos abiertos, por ejemplo, adquieren mayor utilidad pública cuando se traducen en representaciones comprensibles <span class="citation" data-cites="garciagarcia2021visualizacion">(<a href="../referencias.html#ref-garciagarcia2021visualizacion" role="doc-biblioref">García-García and Alonso-Magdaleno 2021</a>)</span>. Sin embargo, esa traducción no debe producir la ilusión de que el gráfico “habla por sí solo”. Una visualización vale mucho cuando hace visibles los datos, pero sigue necesitando contexto e interpretación para no convertirse en una falsa evidencia autosuficiente <span class="citation" data-cites="cairo2017visualizacion">(<a href="../referencias.html#ref-cairo2017visualizacion" role="doc-biblioref">Cairo 2017</a>)</span>.</p>
+<p>La visualización puede volver más comprensible una tabla, pero no sustituye el análisis. Los datos abiertos, por ejemplo, adquieren mayor utilidad pública cuando se traducen en representaciones comprensibles <span class="citation" data-cites="garciagarcia2021visualizacion">(García-García and Alonso-Magdaleno 2021)</span>. Sin embargo, esa traducción no debe producir la ilusión de que el gráfico “habla por sí solo”. Una visualización vale mucho cuando hace visibles los datos, pero sigue necesitando contexto e interpretación para no convertirse en una falsa evidencia autosuficiente <span class="citation" data-cites="cairo2017visualizacion">(Cairo 2017)</span>.</p>
 <p>Esto vale especialmente en el ámbito jurídico y público, donde un gráfico puede resumir tendencias útiles, pero también simplificar demasiado decisiones complejas. Por eso conviene formular tres preguntas antes de visualizar:</p>
 <ul>
 <li>¿qué quiero mostrar?;</li>
@@ -526,7 +529,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <section id="consultar-también-es-una-forma-de-explicar" class="level2">
 <h2 class="anchored" data-anchor-id="consultar-también-es-una-forma-de-explicar">Consultar también es una forma de explicar</h2>
 <p>Cuando la información crece, mirar fila por fila deja de ser suficiente. Allí aparece la lógica de consulta. Incluso antes de aprender SQL formalmente, conviene comprender su intuición básica: seleccionar campos, filtrar registros, ordenar resultados y limitar la vista sobre un conjunto de datos.</p>
-<p>La lógica de <code>SELECT</code> ayuda justamente a enseñar que consultar no es lo mismo que modificar. Una consulta bien planteada vuelve los datos legibles desde una pregunta concreta sin alterar la base original <span class="citation" data-cites="sqlite2026select">(<a href="../referencias.html#ref-sqlite2026select" role="doc-biblioref">SQLite Documentation 2026</a>)</span>. Ese detalle importa porque el trabajo con información jurídica y administrativa requiere a menudo distinguir entre lectura, edición y transformación. En el aprendizaje inicial, esa diferencia también refuerza una intuición metodológica importante: no toda intervención sobre datos debe empezar modificándolos; muchas veces conviene primero saber interrogarlos bien.</p>
+<p>La lógica de <code>SELECT</code> ayuda justamente a enseñar que consultar no es lo mismo que modificar. Una consulta bien planteada vuelve los datos legibles desde una pregunta concreta sin alterar la base original <span class="citation" data-cites="sqlite2026select">(SQLite Documentation 2026)</span>. Ese detalle importa porque el trabajo con información jurídica y administrativa requiere a menudo distinguir entre lectura, edición y transformación. En el aprendizaje inicial, esa diferencia también refuerza una intuición metodológica importante: no toda intervención sobre datos debe empezar modificándolos; muchas veces conviene primero saber interrogarlos bien.</p>
 <section id="ejemplo-2.-intuición-de-consulta" class="level3">
 <h3 class="anchored" data-anchor-id="ejemplo-2.-intuición-de-consulta">Ejemplo 2. Intuición de consulta</h3>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> codigo, estado, responsable</span>
@@ -538,7 +541,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </section>
 <section id="abrir-reutilizar-interpretar" class="level2">
 <h2 class="anchored" data-anchor-id="abrir-reutilizar-interpretar">Abrir, reutilizar, interpretar</h2>
-<p>En el sector público, trabajar con datos también supone pensar en acceso y reutilización. Abrir información no basta si los archivos siguen siendo opacos o difíciles de leer. Su valor público aumenta cuando pueden explorarse, combinarse y representarse de forma comprensible <span class="citation" data-cites="garciagarcia2021visualizacion">(<a href="../referencias.html#ref-garciagarcia2021visualizacion" role="doc-biblioref">García-García and Alonso-Magdaleno 2021</a>)</span>. Por eso, la cadena entre dato, documento, visualización e interpretación no es un asunto menor ni puramente técnico. Es parte de la manera en que una organización se vuelve más inteligible para sí misma y para quienes dependen de sus servicios.</p>
+<p>En el sector público, trabajar con datos también supone pensar en acceso y reutilización. Abrir información no basta si los archivos siguen siendo opacos o difíciles de leer. Su valor público aumenta cuando pueden explorarse, combinarse y representarse de forma comprensible <span class="citation" data-cites="garciagarcia2021visualizacion">(García-García and Alonso-Magdaleno 2021)</span>. Por eso, la cadena entre dato, documento, visualización e interpretación no es un asunto menor ni puramente técnico. Es parte de la manera en que una organización se vuelve más inteligible para sí misma y para quienes dependen de sus servicios.</p>
 </section>
 <section id="práctica-en-editor" class="level2">
 <h2 class="anchored" data-anchor-id="práctica-en-editor">Práctica en editor</h2>
@@ -587,23 +590,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
-<div id="ref-savelka2021applied" class="csl-entry" role="listitem">
-Ashley, Kevin D., Jaromír Savelka, and Matthias Grabmair. 2021. <span>“A Law School Course in Applied Legal Analytics and AI.”</span> <em>Law in Context</em> 37 (1): 134–74. <a href="https://doi.org/10.26826/law-in-context.v37i1.125">https://doi.org/10.26826/law-in-context.v37i1.125</a>.
-</div>
-<div id="ref-cairo2017visualizacion" class="csl-entry" role="listitem">
-Cairo, Alberto. 2017. <span>“Visualizaci<span>ó</span>n de Datos: Una Imagen Puede Valer m<span>á</span>s Que Mil n<span>ú</span>meros, Pero No Siempre m<span>á</span>s Que Mil Palabras.”</span> <em>El Profesional de La Informaci<span>ó</span>n</em> 26 (6): 1025–28. <a href="https://doi.org/10.3145/epi.2017.nov.02">https://doi.org/10.3145/epi.2017.nov.02</a>.
-</div>
-<div id="ref-garciagarcia2021visualizacion" class="csl-entry" role="listitem">
-García-García, Jesús, and María Luisa Alonso-Magdaleno. 2021. <span>“Herramientas de Visualizaci<span>ó</span>n Gr<span>á</span>fica Online Para Datos Abiertos Presupuestarios de Administraciones p<span>ú</span>blicas.”</span> <em>Revista Espa<span>ñ</span>ola de La Transparencia</em>.
-</div>
-<div id="ref-mendo2013reutilizacion" class="csl-entry" role="listitem">
-<span class="nocase">Mendo, Carmen et al.</span> 2013. <span>“Del Acceso a La Reutilizaci<span>ó</span>n, Del Dato Al Documento: Una Visi<span>ó</span>n Conceptual de La Informaci<span>ó</span>n p<span>ú</span>blica.”</span> <em>Revista Espa<span>ñ</span>ola de Documentaci<span>ó</span>n Cient<span>í</span>fica</em>.
-</div>
-<div id="ref-sqlite2026select" class="csl-entry" role="listitem">
-SQLite Documentation. 2026. <span>“SELECT.”</span> <a href="https://www.sqlite.org/lang_select.html">https://www.sqlite.org/lang_select.html</a>.
-</div>
-</div>
 </section>
 
 </main> <!-- /main -->
@@ -1014,8 +1000,8 @@ SQLite Documentation. 2026. <span>“SELECT.”</span> <a href="https://www.sqli
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../parte-3-modulo-3/00-presentacion.html" class="pagination-link" aria-label="Legal Tech, Manual del Curso">
-        <span class="nav-page-text"><span class="chapter-title">Legal Tech, Manual del Curso</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../parte-3-modulo-3/00-presentacion.html" class="pagination-link" aria-label="III. Web, nube y seguridad para el sector legal">
+        <span class="nav-page-text">III. Web, nube y seguridad para el sector legal</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

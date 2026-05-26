@@ -1,10 +1,10 @@
-# web-intro
+# Ejercicios de HTML, CSS y JavaScript
 
-Repositorio introductorio para aprender desarrollo web desde cero con ejemplos pequenos, comentados y ordenados por niveles.
+Colección local de ejercicios introductorios para aprender desarrollo web desde cero con ejemplos pequeños, comentados y ordenados por niveles.
 
 ## Proposito
 
-Este proyecto sirve como material de apoyo para dar los primeros pasos en `HTML`, `CSS` y `JavaScript`. Su objetivo es que una persona principiante pueda avanzar de forma gradual:
+Este material sirve como apoyo para dar los primeros pasos en `HTML`, `CSS` y `JavaScript`. Su objetivo es que una persona principiante pueda avanzar de forma gradual:
 
 - primero entendiendo la estructura de una pagina,
 - luego aplicando estilos,
@@ -12,6 +12,8 @@ Este proyecto sirve como material de apoyo para dar los primeros pasos en `HTML`
 - y finalmente manipulando el DOM y construyendo mini proyectos.
 
 No busca cubrir todo frontend, sino ofrecer una base clara, practica y facil de explorar en clase o de manera autodidacta.
+
+Dentro de este repositorio del manual, además, cumple una segunda función: sirve como fuente de referencia para [parte-3-modulo-3/07-capitulo.qmd](/Users/dante/github/manual-legaltech/parte-3-modulo-3/07-capitulo.qmd) y para la generación automática de capturas usadas en [07-capitulo-docx.qmd](/Users/dante/github/manual-legaltech/parte-3-modulo-3/07-capitulo-docx.qmd).
 
 ## Que contiene
 
@@ -43,19 +45,18 @@ Este repositorio esta pensado para personas que:
 - necesitan material de practica para clases introductorias,
 - quieren una secuencia simple antes de pasar a herramientas mas avanzadas.
 
-## Como usarlo
+## Como usarlo aqui
 
-1. Clona el repositorio:
+1. Abre la carpeta en tu editor, por ejemplo `VS Code`.
+2. Entra a cualquier archivo `.html`.
+3. Abre ese archivo en tu navegador o usa una extension como Live Server.
+4. Modifica textos, colores o comportamiento y recarga la pagina para observar los cambios.
+
+Si lo que quieres es regenerar las capturas que usa la versión Word del manual, el comando relevante se ejecuta en la raíz del proyecto:
 
 ```bash
-git clone https://github.com/TU-USUARIO/web-intro.git
-cd web-intro
+npm run build:ch7-docx-assets
 ```
-
-2. Abre la carpeta en tu editor, por ejemplo `VS Code`.
-3. Entra a cualquier archivo `.html`.
-4. Abre ese archivo en tu navegador o usa una extension como Live Server.
-5. Modifica textos, colores o comportamiento y recarga la pagina para observar los cambios.
 
 ## Orden recomendado
 
@@ -80,4 +81,4 @@ Desde ahi puedes seguir el resto de archivos en orden numerico.
 
 ## Idea central del repositorio
 
-El valor de este proyecto no esta solo en "leer codigo", sino en experimentar con cambios pequenos y frecuentes. Cada carpeta representa un paso en la construccion de una pagina web interactiva, y juntas forman una introduccion practica al desarrollo web.
+El valor de este material no esta solo en "leer codigo", sino en experimentar con cambios pequenos y frecuentes. Cada carpeta representa un paso en la construccion de una pagina web interactiva, y juntas forman una introduccion practica al desarrollo web que ademas alimenta el capitulo 7 del manual.

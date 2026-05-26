@@ -1,7 +1,3 @@
-<!--
-Este archivo es generado por scripts/build_ch7_docx_assets.mjs.
-No lo edites a mano: regenera la versión docx del capítulo 7.
--->
 ---
 title: "7. HTML, CSS y JavaScript para una presencia web básica"
 ---

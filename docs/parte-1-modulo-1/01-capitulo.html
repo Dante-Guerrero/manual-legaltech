@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Dante Guerrero y Manuel Santa Cruz">
 
-<title>1. Del bit al pseudocódigo</title>
+<title>1. Del bit al pseudocódigo – Legal Tech, Manual del Curso</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -24,26 +23,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -113,7 +93,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-1-modulo-1/01-capitulo.html"><span class="chapter-title">1. Del bit al pseudocódigo</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-1-modulo-1/00-presentacion.html">I. Pensamiento computacional para juristas</a></li><li class="breadcrumb-item"><a href="../parte-1-modulo-1/01-capitulo.html"><span class="chapter-title">1. Del bit al pseudocódigo</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -126,6 +106,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Legal Tech, Manual del Curso</a> 
+    </div>
+      </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
@@ -135,17 +120,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">index.html</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../bienvenida-docx.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Bienvenida</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../parte-0/profesores-docx.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Profesores</span></a>
+  <a href="../parte-0/profesores.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Profesores</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -153,114 +133,144 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <a href="../parte-0/intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducción</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../parte-1-modulo-1/00-presentacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parte-1-modulo-1/00-presentacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">I. Pensamiento computacional para juristas</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-1-modulo-1/01-capitulo.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">1. Del bit al pseudocódigo</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-1-modulo-1/02-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">2. Primeros pasos con Python</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-1-modulo-1/03-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">3. Python para fechas, archivos y datos</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-1-modulo-1/04-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">4. Python para documentos, reportes y automatización jurídica básica</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../parte-2-modulo-2/00-presentacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parte-2-modulo-2/00-presentacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">II. Automatización y datos jurídicos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-2-modulo-2/05-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">5. Entender el negocio</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-2-modulo-2/06-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">6. Explicar y controlar los resultados</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parte-3-modulo-3/00-presentacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">III. Web, nube y seguridad para el sector legal</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../parte-3-modulo-3/00-presentacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../parte-3-modulo-3/07-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">7. HTML, CSS y JavaScript para una presencia web básica</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../parte-3-modulo-3/07-capitulo-docx.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">7. HTML, CSS y JavaScript para una presencia web básica</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-3-modulo-3/08-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">8. Ciberseguridad</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../parte-4-modulo-4/00-presentacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parte-4-modulo-4/00-presentacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">IV. Inteligencia artificial aplicada al Derecho</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-4-modulo-4/09-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">9. Fundamentos de inteligencia artificial</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-4-modulo-4/10-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">10. Evaluar, gobernar e integrar IA en contextos jurídicos</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../parte-4-modulo-4/11-capitulo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">11. Proyectos Legal Tech peruanos</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../tutoriales/00-presentacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tutoriales</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutoriales/00-presentacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../tutoriales/instalar-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Instalar Python</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutoriales/instalar-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../tutoriales/visual-studio-code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Visual Studio Code</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutoriales/visual-studio-code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../tutoriales/git-y-github.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Git y GitHub</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutoriales/git-y-github.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../tutoriales/licencias-y-reutilizacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: Licencias y reutilización responsable</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutoriales/licencias-y-reutilizacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../tutoriales/github-pages.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tutorial: GitHub Pages</span></a>
   </div>
 </li>
+      </ul>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutoriales/github-pages.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../referencias.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Legal Tech, Manual del Curso</span></a>
+  <a href="../referencias.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Referencias</span></a>
   </div>
 </li>
     </ul>
@@ -308,22 +318,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4DXS39K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parte-1-modulo-1/00-presentacion.html">I. Pensamiento computacional para juristas</a></li><li class="breadcrumb-item"><a href="../parte-1-modulo-1/01-capitulo.html"><span class="chapter-title">1. Del bit al pseudocódigo</span></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-title">1. Del bit al pseudocódigo</span></h1>
-<p class="subtitle lead">Para los profesionales que se atrevan a enfrentar el presente</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Dante Guerrero y Manuel Santa Cruz </p>
-          </div>
-  </div>
     
   
     
@@ -349,8 +352,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 <section id="por-qué-empezar-por-aquí" class="level2">
 <h2 class="anchored" data-anchor-id="por-qué-empezar-por-aquí">¿Por qué empezar por aquí?</h2>
-<p>Cuando una computadora procesa un documento, una fecha o una instrucción, no “entiende” el contenido como lo hace una persona. Lo que hace es representar información de forma estable y operar sobre ella siguiendo reglas precisas. Por eso, antes de hablar de Python, automatización o inteligencia artificial, conviene detenerse en una idea más básica: toda operación digital depende de una forma de representar problemas, datos y secuencias con claridad <span class="citation" data-cites="padron2021computacional mongefallas2024pensamiento">(<a href="../referencias.html#ref-padron2021computacional" role="doc-biblioref"><span class="nocase">Padrón et al.</span> 2021</a>; <a href="../referencias.html#ref-mongefallas2024pensamiento" role="doc-biblioref"><span class="nocase">Monge-Fallas et al.</span> 2024</a>)</span>.</p>
-<p>Ese punto importa en un curso de Legal Tech porque una parte del trabajo jurídico contemporáneo ya convive con datos, formularios, expedientes digitales, plataformas y procedimientos que solo funcionan bien cuando las reglas están suficientemente explicitadas. El pensamiento computacional no se reduce a programar; supone aprender a descomponer problemas, abstraer estructuras y ordenar pasos verificables <span class="citation" data-cites="padron2021computacional mongefallas2024pensamiento">(<a href="../referencias.html#ref-padron2021computacional" role="doc-biblioref"><span class="nocase">Padrón et al.</span> 2021</a>; <a href="../referencias.html#ref-mongefallas2024pensamiento" role="doc-biblioref"><span class="nocase">Monge-Fallas et al.</span> 2024</a>)</span>. Para un jurista, esa capacidad tiene un valor inmediato: obliga a distinguir mejor entre condiciones, excepciones, entradas, salidas y criterios de decisión.</p>
+<p>Cuando una computadora procesa un documento, una fecha o una instrucción, no “entiende” el contenido como lo hace una persona. Lo que hace es representar información de forma estable y operar sobre ella siguiendo reglas precisas. Por eso, antes de hablar de Python, automatización o inteligencia artificial, conviene detenerse en una idea más básica: toda operación digital depende de una forma de representar problemas, datos y secuencias con claridad <span class="citation" data-cites="padron2021computacional mongefallas2024pensamiento">(<span class="nocase">Padrón et al.</span> 2021; <span class="nocase">Monge-Fallas et al.</span> 2024)</span>.</p>
+<p>Ese punto importa en un curso de Legal Tech porque una parte del trabajo jurídico contemporáneo ya convive con datos, formularios, expedientes digitales, plataformas y procedimientos que solo funcionan bien cuando las reglas están suficientemente explicitadas. El pensamiento computacional no se reduce a programar; supone aprender a descomponer problemas, abstraer estructuras y ordenar pasos verificables <span class="citation" data-cites="padron2021computacional mongefallas2024pensamiento">(<span class="nocase">Padrón et al.</span> 2021; <span class="nocase">Monge-Fallas et al.</span> 2024)</span>. Para un jurista, esa capacidad tiene un valor inmediato: obliga a distinguir mejor entre condiciones, excepciones, entradas, salidas y criterios de decisión.</p>
 <p>En otras palabras, este capítulo no presenta el binario como una curiosidad técnica. Lo presenta como una puerta de entrada a una manera de pensar que después reaparecerá en pseudocódigo, en scripts, en diagramas de procesos y en sistemas más complejos.</p>
 </section>
 <section id="la-computadora-trabaja-con-diferencias-elementales" class="level2">
@@ -389,7 +392,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <section id="convertir-también-es-aprender-a-descomponer" class="level2">
 <h2 class="anchored" data-anchor-id="convertir-también-es-aprender-a-descomponer">Convertir también es aprender a descomponer</h2>
 <p>Pasar de binario a decimal exige sumar las potencias de <code>2</code> correspondientes a los lugares donde aparece un <code>1</code>. Pasar de decimal a binario exige hacer el camino inverso: descomponer un número como suma de potencias de <code>2</code>. En ambos casos, la operación obliga a dividir el problema en partes y a comprobar si la secuencia elegida realmente produce el resultado esperado.</p>
-<p>Ese detalle importa más de lo que parece. Programar refuerza precisión y revisión porque obliga a descomponer problemas, hacer explícitos los pasos y verificar si la solución obtenida corresponde de verdad a la regla formulada <span class="citation" data-cites="ryan2021coding">(<a href="../referencias.html#ref-ryan2021coding" role="doc-biblioref">Ryan 2021</a>)</span>. Incluso en una operación aritmética elemental, aparece ya esa disciplina intelectual: no basta con “tener una idea” del resultado; hace falta justificarlo paso a paso.</p>
+<p>Ese detalle importa más de lo que parece. Programar refuerza precisión y revisión porque obliga a descomponer problemas, hacer explícitos los pasos y verificar si la solución obtenida corresponde de verdad a la regla formulada <span class="citation" data-cites="ryan2021coding">(Ryan 2021)</span>. Incluso en una operación aritmética elemental, aparece ya esa disciplina intelectual: no basta con “tener una idea” del resultado; hace falta justificarlo paso a paso.</p>
 <section id="ejemplo-1.-de-binario-a-decimal" class="level3">
 <h3 class="anchored" data-anchor-id="ejemplo-1.-de-binario-a-decimal">Ejemplo 1. De binario a decimal</h3>
 <p>Convierte <code>1101</code> a decimal:</p>
@@ -411,8 +414,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </section>
 <section id="el-texto-también-necesita-codificación" class="level2">
 <h2 class="anchored" data-anchor-id="el-texto-también-necesita-codificación">El texto también necesita codificación</h2>
-<p>Hasta aquí hemos trabajado con números. Pero una computadora también almacena letras, espacios, signos y símbolos jurídicos. Eso solo es posible porque el texto depende de estándares de codificación que asignan valores numéricos a los caracteres <span class="citation" data-cites="mdnunicode2026">(<a href="../referencias.html#ref-mdnunicode2026" role="doc-biblioref">MDN Web Docs 2026</a>)</span>. La máquina no “lee” directamente una palabra como <em>demanda</em> o <em>sentencia</em>; opera sobre codificaciones que vuelven esos caracteres almacenables y transmisibles de forma consistente <span class="citation" data-cites="mdnunicode2026">(<a href="../referencias.html#ref-mdnunicode2026" role="doc-biblioref">MDN Web Docs 2026</a>)</span>.</p>
-<p>Desde esa perspectiva, el texto digital tampoco entra intacto en la computadora. Primero necesita un sistema común de representación. En versiones históricas más limitadas, ese papel lo cumplieron esquemas como ASCII. En contextos más amplios y actuales, la referencia decisiva es Unicode, precisamente porque permite trabajar con alfabetos, signos y acentos que un entorno jurídico hispanohablante no puede tratar como detalles ornamentales <span class="citation" data-cites="mdnunicode2026">(<a href="../referencias.html#ref-mdnunicode2026" role="doc-biblioref">MDN Web Docs 2026</a>)</span>.</p>
+<p>Hasta aquí hemos trabajado con números. Pero una computadora también almacena letras, espacios, signos y símbolos jurídicos. Eso solo es posible porque el texto depende de estándares de codificación que asignan valores numéricos a los caracteres <span class="citation" data-cites="mdnunicode2026">(MDN Web Docs 2026)</span>. La máquina no “lee” directamente una palabra como <em>demanda</em> o <em>sentencia</em>; opera sobre codificaciones que vuelven esos caracteres almacenables y transmisibles de forma consistente <span class="citation" data-cites="mdnunicode2026">(MDN Web Docs 2026)</span>.</p>
+<p>Desde esa perspectiva, el texto digital tampoco entra intacto en la computadora. Primero necesita un sistema común de representación. En versiones históricas más limitadas, ese papel lo cumplieron esquemas como ASCII. En contextos más amplios y actuales, la referencia decisiva es Unicode, precisamente porque permite trabajar con alfabetos, signos y acentos que un entorno jurídico hispanohablante no puede tratar como detalles ornamentales <span class="citation" data-cites="mdnunicode2026">(MDN Web Docs 2026)</span>.</p>
 <section id="ejemplo-3.-del-carácter-al-número" class="level3">
 <h3 class="anchored" data-anchor-id="ejemplo-3.-del-carácter-al-número">Ejemplo 3. Del carácter al número</h3>
 <p>Si tomamos una tabla simplificada en la que:</p>
@@ -432,8 +435,8 @@ B = 01000010</code></pre>
 </section>
 <section id="no-toda-información-se-manipula-igual" class="level2">
 <h2 class="anchored" data-anchor-id="no-toda-información-se-manipula-igual">No toda información se manipula igual</h2>
-<p>Una de las lecciones centrales del pensamiento computacional consiste en no mezclar categorías sin cuidado. Texto, números, binario y valores lógicos no admiten las mismas operaciones ni producen los mismos efectos. La programación obliga a distinguir esas clases con precisión, porque buena parte de su rigor empieza exactamente ahí <span class="citation" data-cites="pythonbuiltintypes2026">(<a href="../referencias.html#ref-pythonbuiltintypes2026" role="doc-biblioref">Python Documentation 2026</a>)</span>.</p>
-<p>Esa distinción reaparecerá con fuerza en Python, pero conviene verla desde ahora. Una condición jurídica como “presentado dentro del plazo” no funciona igual que un nombre propio, una fecha o una secuencia de bytes. Saber qué tipo de información tienes cambia lo que puedes hacer con ella y también la forma en que debes validarla <span class="citation" data-cites="pythonbuiltintypes2026">(<a href="../referencias.html#ref-pythonbuiltintypes2026" role="doc-biblioref">Python Documentation 2026</a>)</span>.</p>
+<p>Una de las lecciones centrales del pensamiento computacional consiste en no mezclar categorías sin cuidado. Texto, números, binario y valores lógicos no admiten las mismas operaciones ni producen los mismos efectos. La programación obliga a distinguir esas clases con precisión, porque buena parte de su rigor empieza exactamente ahí <span class="citation" data-cites="pythonbuiltintypes2026">(Python Documentation 2026)</span>.</p>
+<p>Esa distinción reaparecerá con fuerza en Python, pero conviene verla desde ahora. Una condición jurídica como “presentado dentro del plazo” no funciona igual que un nombre propio, una fecha o una secuencia de bytes. Saber qué tipo de información tienes cambia lo que puedes hacer con ella y también la forma en que debes validarla <span class="citation" data-cites="pythonbuiltintypes2026">(Python Documentation 2026)</span>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -457,7 +460,7 @@ B = 01000010</code></pre>
 <section id="del-binario-al-pseudocódigo" class="level2">
 <h2 class="anchored" data-anchor-id="del-binario-al-pseudocódigo">Del binario al pseudocódigo</h2>
 <p>Sería absurdo pedirle a una persona que trabaje siempre al nivel del binario para resolver problemas complejos. Los lenguajes de programación existen precisamente porque necesitamos una capa de abstracción más legible. El pseudocódigo cumple una función parecida en el plano pedagógico: no es todavía un lenguaje ejecutable, pero sí una forma clara de representar secuencias, condiciones y decisiones.</p>
-<p>Ese paso es especialmente relevante para estudiantes de Derecho. Muchas tareas jurídicas no son reducibles a reglas fijas, pero sí contienen segmentos estructurables: verificar requisitos, ordenar un trámite, revisar si un plazo venció, clasificar expedientes o decidir si una solicitud queda admitida u observada. Aprender a expresar esa lógica con precisión no reemplaza la interpretación jurídica, pero sí vuelve más visible la parte del problema que puede formalizarse <span class="citation" data-cites="mongefallas2024pensamiento padron2021computacional">(<a href="../referencias.html#ref-mongefallas2024pensamiento" role="doc-biblioref"><span class="nocase">Monge-Fallas et al.</span> 2024</a>; <a href="../referencias.html#ref-padron2021computacional" role="doc-biblioref"><span class="nocase">Padrón et al.</span> 2021</a>)</span>.</p>
+<p>Ese paso es especialmente relevante para estudiantes de Derecho. Muchas tareas jurídicas no son reducibles a reglas fijas, pero sí contienen segmentos estructurables: verificar requisitos, ordenar un trámite, revisar si un plazo venció, clasificar expedientes o decidir si una solicitud queda admitida u observada. Aprender a expresar esa lógica con precisión no reemplaza la interpretación jurídica, pero sí vuelve más visible la parte del problema que puede formalizarse <span class="citation" data-cites="mongefallas2024pensamiento padron2021computacional">(<span class="nocase">Monge-Fallas et al.</span> 2024; <span class="nocase">Padrón et al.</span> 2021)</span>.</p>
 </section>
 <section id="pseudocódigo-pensar-antes-de-programar" class="level2">
 <h2 class="anchored" data-anchor-id="pseudocódigo-pensar-antes-de-programar">Pseudocódigo: pensar antes de programar</h2>
@@ -482,7 +485,7 @@ SI NO
 FIN SI
 
 FIN</code></pre>
-<p>El valor de este ejercicio no reside en su complejidad. Reside en que obliga a explicitar supuestos que, en otros contextos, podrían quedar tácitos <span class="citation" data-cites="ryan2021coding">(<a href="../referencias.html#ref-ryan2021coding" role="doc-biblioref">Ryan 2021</a>)</span>. ¿Qué cuenta como “tener firma”? ¿Qué ocurre si el documento es ilegible? ¿Qué pasa si el requisito depende del tipo de trámite? A medida que esas preguntas aparecen, el razonamiento se vuelve más fino.</p>
+<p>El valor de este ejercicio no reside en su complejidad. Reside en que obliga a explicitar supuestos que, en otros contextos, podrían quedar tácitos <span class="citation" data-cites="ryan2021coding">(Ryan 2021)</span>. ¿Qué cuenta como “tener firma”? ¿Qué ocurre si el documento es ilegible? ¿Qué pasa si el requisito depende del tipo de trámite? A medida que esas preguntas aparecen, el razonamiento se vuelve más fino.</p>
 </section>
 </section>
 <section id="ejercicios-prácticos-para-trabajar-con-representación-y-lógica" class="level2">
@@ -566,23 +569,6 @@ Si falta la firma o el plazo venció, debe observarse o rechazarse según corres
 </div>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
-<div id="ref-mdnunicode2026" class="csl-entry" role="listitem">
-MDN Web Docs. 2026. <span>“Unicode.”</span> <a href="https://developer.mozilla.org/en-US/docs/Glossary/Unicode">https://developer.mozilla.org/en-US/docs/Glossary/Unicode</a>.
-</div>
-<div id="ref-mongefallas2024pensamiento" class="csl-entry" role="listitem">
-<span class="nocase">Monge-Fallas, Luis et al.</span> 2024. <span>“Fundamentos y Perspectivas Del Pensamiento Computacional: Un an<span>á</span>lisis Integral Para La Investigaci<span>ó</span>n.”</span> <em>Revista Innovaciones Educativas</em>.
-</div>
-<div id="ref-padron2021computacional" class="csl-entry" role="listitem">
-<span class="nocase">Padrón, Carlos et al.</span> 2021. <span>“Aproximaci<span>ó</span>n a Una Definici<span>ó</span>n de Pensamiento Computacional.”</span> <em>RIED. Revista Iberoamericana de Educaci<span>ó</span>n a Distancia</em> 24 (1): 55–76.
-</div>
-<div id="ref-pythonbuiltintypes2026" class="csl-entry" role="listitem">
-Python Documentation. 2026. <span>“Built-in Types.”</span> <a href="https://docs.python.org/3/library/stdtypes.html">https://docs.python.org/3/library/stdtypes.html</a>.
-</div>
-<div id="ref-ryan2021coding" class="csl-entry" role="listitem">
-Ryan, Trevor. 2021. <span>“Coding for Critical Thinking: A Case Study in Embedding Complementary Skills in Legal Education.”</span> <em>Legal Education Review</em> 31 (1): 81–104. <a href="https://doi.org/10.53300/001c.36060">https://doi.org/10.53300/001c.36060</a>.
-</div>
-</div>
 </section>
 
 </main> <!-- /main -->
@@ -988,8 +974,8 @@ Ryan, Trevor. 2021. <span>“Coding for Critical Thinking: A Case Study in Embed
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../parte-1-modulo-1/00-presentacion.html" class="pagination-link" aria-label="Legal Tech, Manual del Curso">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Legal Tech, Manual del Curso</span></span>
+      <a href="../parte-1-modulo-1/00-presentacion.html" class="pagination-link" aria-label="I. Pensamiento computacional para juristas">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">I. Pensamiento computacional para juristas</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
